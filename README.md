@@ -1,0 +1,47 @@
+# CLIB_OpenEpiCentre.
+
+---
+## Branches.
+ - CLIBTemplate_OpenEpiCentre_LINUX.
+ - CLIBTemplate_OpenEpiCentre_WINDOWS
+   
+---
+## Using.
+### Ubuntu LINUX.
+version: Ubuntu 24.04.4 LTS.
+
+### Visual Studio Code.
+Version: 1.116.0.
+
+### Dependencies.
+ - #### GCC toolchain.
+````
+sudo apt install build-essential gdb
+````
+ - #### VS Code.
+````
+sudo snap install --classic code
+````
+ - #### C/C++ Extension Pack.
+````
+code --install-extension ms-vscode.cpptools-extension-pack
+````
+
+---
+## Building - Compiler Terminal Commands.
+### CLIB_OpenEpiCentre.so
+````
+g++ -fPIC -shared -o ./output/CLIB_OpenEpiCentre.so ./CLIB_OpenEpiCentre/CLIB_OpenEpiCentre.h
+````
+
+---
+## Implementation.
+### How To Guide - Stack Flow From Client Input Scanner To Server And Back To Client.
+ - [GitHub ReadMe - How To Guide.](https://github.com/OpenAvril/OpenAvrilCFSD-TEMPLATE-for-Concurrenct-Full-Stack-Development/blob/master/blob/How%20To%20Guide%20-%20Stack%20Flow%20From%20Client%20Input%20Scanner%20To%20Server%20And%20Back%20To%20Client.md)
+
+### Wrapper Imports and Native IO.
+ - Wrapper Imports and Native IO.
+
+---  
+## TestBench.
+- https://github.com/OpenAvril/TestBench_OpenAvril
