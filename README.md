@@ -27,7 +27,7 @@ sudo snap install intellij-idea-ultimate --classic
 ## Building - Compiler Terminal Commands.
 ### CLIB_OpenEpiCentre.so
 ````
-g++ -fPIC -shared -o ./output/CLIB_OpenEpiCentre.so ./CLIB_OpenEpiCentre/CLIB_OpenEpiCentre.h
+g++ -fPIC -shared -o ./output/CLIB_OpenEpiCentre.so CLIB_OpenEpiCentre.h
 ````
 
 ---
