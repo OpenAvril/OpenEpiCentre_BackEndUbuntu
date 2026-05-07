@@ -1,15 +1,18 @@
-#include <cstdint>
-namespace OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtSERVER
+#ifndef CLIB_LAUNCHENABLEFORCONCURRENTTHREADSAT_SERVER_LAUNCHENABLEFORCONCURRENTTHREADSAT_SERVER_GLOBAL_H
+#define CLIB_LAUNCHENABLEFORCONCURRENTTHREADSAT_SERVER_LAUNCHENABLEFORCONCURRENTTHREADSAT_SERVER_GLOBAL_H
+#include <array>
+
+namespace CLIBLaunchQueAtSERVER
 {
     class LaunchEnableForConcurrentThreadsAt_SERVER_Global
     {
     public:
         LaunchEnableForConcurrentThreadsAt_SERVER_Global();
         ~LaunchEnableForConcurrentThreadsAt_SERVER_Global();
-        static void boot0_CLASS_DECLAIRE_WriteEnableForThreadsAt_STACK_Global();
+        static void boot0_CLASS_DECLARE_WriteEnableForThreadsAt_STACK_Global();
         static void boot1_CLASS_DEFINE_WriteEnableForThreadsAt_STACK_Global();
         static void boot3_CLASS_INITIALISE_WriteEnableForThreadsAt_STACK_Global();
-        static void boot0_REG_DECLAIRE_WriteEnableForThreadsAt_STACK_Global();
+        static void boot0_REG_DECLARE_WriteEnableForThreadsAt_STACK_Global();
         void boot1_REG_DEFINE_WriteEnableForThreadsAt_STACK_Global();
         void boot2_REG_SUBSTANTIATE_WriteEnableForThreadsAt_STACK_Global();
         void boot3_REG_INITIALISE_WriteEnableForThreadsAt_STACK_Global();
@@ -36,3 +39,4 @@ namespace OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtSERVER
         static void stat_REG_set_number_Implemented_Threads(uint8_t coreId);
     };
 }
+#endif

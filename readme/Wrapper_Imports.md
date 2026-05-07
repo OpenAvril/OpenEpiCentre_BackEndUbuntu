@@ -27,7 +27,7 @@
 
 ````
 
-#### LIB_WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE.dll.
+#### LIB_WriteEnableForThreadsAt_CLIENTOUTPUTReceive.dll.
 ##### Header.
 ````
 
@@ -49,7 +49,7 @@
 
 ````
 
-#### JavaLIBWriteQue_ClientOutputRecieve.java.
+#### JavaLIBWriteQue_ClientOutputReceive.java.
 ````
 
 ````
@@ -65,7 +65,7 @@
 
 ````
 
-#### ImportCLIBWriteEnableForThreadsAtCLIENTOUTRECIEVE.cs.
+#### ImportCLIBWriteEnableForThreadsAtCLIENTOUTReceive.cs.
 ````
 
 ````
@@ -87,7 +87,7 @@
 
 ````
 
-#### LIB_WriteEnableForThreadsAt_SERVERINPUTRECIEVE.dll.
+#### LIB_WriteEnableForThreadsAt_SERVERINPUTReceive.dll.
 ##### Header.
 ````
 

@@ -113,12 +113,12 @@
             case true:
                 if (obj->dyn_CLASS_get_ptr_Server()->dyn_CLASS_get_ptr_Data()->dyn_CLASS_get_ptr_Data_Control()->dyn_REG_get_Item_flag_isLoaded_Stack_InputAction() == true)
                 {
-                    OpenAvrilCLIBWriteEnableForThreadsAtSERVERINPUTRECIEVE::CLIBWriteEnableForThreadsAtSERVERINPUTRECIEVE::app_FUNCT_write_Start(obj->dyn_CLASS_get_ptr_Server()->dyn_CLASS_get_ptr_Execute()->dyn_PGM_get_WriteEnable_ServerInputAction(), CLIBOpenEpiCentre::Global::stat_CONVERT_uint8_t_to_ByteArray((uint8_t)(concurrent_threadID + (uint8_t)1)));
+                    OpenAvrilCLIBWriteEnableForThreadsAtSERVERINPUTReceive::CLIBWriteEnableForThreadsAtSERVERINPUTReceive::app_FUNCT_write_Start(obj->dyn_CLASS_get_ptr_Server()->dyn_CLASS_get_ptr_Execute()->dyn_PGM_get_WriteEnable_ServerInputAction(), CLIBOpenEpiCentre::Global::stat_CONVERT_uint8_t_to_ByteArray((uint8_t)(concurrent_threadID + (uint8_t)1)));
                     //todo
                     obj->dyn_CLASS_get_ptr_Server()->dyn_CLASS_get_ptr_Data()->dyn_REG_get_ptr_Item_Of_list_Of_ptr_array_Of_buffer_Output_ReferenceForThread(concurrent_threadID)->dyn_CLASS_get_ptr_Output_Control()->app_select_And_Set_Output_Subset(obj, obj->dyn_CLASS_get_ptr_Server()->dyn_CLASS_get_ptr_Data()->dyn_REG_get_ptr_Item_Of_list_Of_ptr_array_Of_buffer_Output_ReferenceForThread(concurrent_threadID)->dyn_REG_get_ptr_Output_praiseEventId());
                     obj->dyn_CLASS_get_ptr_Server()->dyn_CLASS_get_ptr_Algorithms()->dyn_STRUCT_get_Item_On_list_Of_ptr_Concurrent(concurrent_threadID)->dyn_CLASS_get_ptr_Concurrent_Control()->app_selectset_Algorithm_Scubset(obj, obj->dyn_CLASS_get_ptr_Server()->dyn_CLASS_get_ptr_Data()->dyn_REG_get_ptr_Item_Of_list_Of_ptr_array_Of_buffer_Input_ReferenceForThread(concurrent_threadID)->dyn_REG_get_ptr_Input_praiseEventId(), concurrent_threadID);
                     obj->dyn_CLASS_get_ptr_Server()->dyn_CLASS_get_ptr_Data()->dyn_CLASS_get_ptr_Data_Control()->app_FUNCT_pop_From_Stack_Of_Input(obj, concurrent_threadID);
-                    OpenAvrilCLIBWriteEnableForThreadsAtSERVERINPUTRECIEVE::CLIBWriteEnableForThreadsAtSERVERINPUTRECIEVE::app_FUNCT_write_End(obj->dyn_CLASS_get_ptr_Server()->dyn_CLASS_get_ptr_Execute()->dyn_PGM_get_WriteEnable_ServerInputAction(), CLIBOpenEpiCentre::Global::stat_CONVERT_uint8_t_to_ByteArray((uint8_t)(concurrent_threadID + (uint8_t)1)));
+                    OpenAvrilCLIBWriteEnableForThreadsAtSERVERINPUTReceive::CLIBWriteEnableForThreadsAtSERVERINPUTReceive::app_FUNCT_write_End(obj->dyn_CLASS_get_ptr_Server()->dyn_CLASS_get_ptr_Execute()->dyn_PGM_get_WriteEnable_ServerInputAction(), CLIBOpenEpiCentre::Global::stat_CONVERT_uint8_t_to_ByteArray((uint8_t)(concurrent_threadID + (uint8_t)1)));
                     obj->dyn_CLASS_get_ptr_Server()->dyn_CLASS_get_ptr_Algorithms()->dyn_STRUCT_get_Item_On_list_Of_ptr_Concurrent(concurrent_threadID)->app_do_ConcurrentAlgorithm_For_PraiseEventId(
                         obj,
                         obj->dyn_CLASS_get_ptr_Server()->dyn_CLASS_get_ptr_Data()->dyn_REG_get_ptr_Item_Of_list_Of_ptr_array_Of_buffer_Input_ReferenceForThread(concurrent_threadID)->dyn_REG_get_ptr_Input_playerId(),
@@ -127,7 +127,7 @@
                         obj->dyn_CLASS_get_ptr_Server()->dyn_CLASS_get_ptr_Data()->dyn_REG_get_ptr_Item_Of_list_Of_ptr_array_Of_buffer_Input_ReferenceForThread(concurrent_threadID)->dyn_REG_get_ptr_Item_Of_ptr_Inputs_Subset(),
                         obj->dyn_CLASS_get_ptr_Server()->dyn_CLASS_get_ptr_Data()->dyn_REG_get_ptr_Item_Of_list_Of_ptr_array_Of_buffer_Output_ReferenceForThread(concurrent_threadID)->dyn_REG_get_ptr_Item_Of_ptr_Outputs_Subset()
                     );                    
-                    OpenAvrilCLIBWriteEnableForThreadsAtSERVEROUTPUTSEND::CLIBWriteEnableForThreadsAtSERVEROUTPUTSEND::app_FUNCT_write_Start(obj->dyn_CLASS_get_ptr_Server()->dyn_CLASS_get_ptr_Execute()->dyn_PGM_get_WriteEnable_ServerOutputRecieve(), CLIBOpenEpiCentre::Global::stat_CONVERT_uint8_t_to_ByteArray((uint8_t)(concurrent_threadID + (uint8_t)1)));
+                    OpenAvrilCLIBWriteEnableForThreadsAtSERVEROUTPUTSEND::CLIBWriteEnableForThreadsAtSERVEROUTPUTSEND::app_FUNCT_write_Start(obj->dyn_CLASS_get_ptr_Server()->dyn_CLASS_get_ptr_Execute()->dyn_PGM_get_WriteEnable_ServerOutputReceive(), CLIBOpenEpiCentre::Global::stat_CONVERT_uint8_t_to_ByteArray((uint8_t)(concurrent_threadID + (uint8_t)1)));
                     obj->dyn_CLASS_get_ptr_Server()->dyn_CLASS_get_ptr_Data()->dyn_CLASS_get_ptr_Data_Control()->app_FUNCT_push_To_STACK_Of_Output(obj, concurrent_threadID);
                     OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtSERVER::CLIBLaunchEnableForConcurrentThreadsAtSERVER::app_FUNCT_thread_End(obj->dyn_CLASS_get_ptr_Server()->dyn_CLASS_get_ptr_Execute()->dyn_PGM_get_ConcurrentQue_Server(), CLIBOpenEpiCentre::Global::stat_CONVERT_uint8_t_to_ByteArray(concurrent_threadID));
                     if (obj->dyn_CLASS_get_ptr_Server()->dyn_CLASS_get_ptr_Data()->dyn_CLASS_get_ptr_Data_Control()->dyn_REG_get_Item_flag_isLoaded_Stack_OutputSend() == true)
@@ -137,7 +137,7 @@
                             OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtSERVER::CLIBLaunchEnableForConcurrentThreadsAtSERVER::app_FUNCT_request_Wait_launch(obj->dyn_CLASS_get_ptr_Server()->dyn_CLASS_get_ptr_Execute()->dyn_PGM_get_ConcurrentQue_Server(), OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtSERVER::CLIBLaunchEnableForConcurrentThreadsAtSERVER::app_REG_get_coreId_To_launch(obj->dyn_CLASS_get_ptr_Server()->dyn_CLASS_get_ptr_Execute()->dyn_PGM_get_ConcurrentQue_Server()));
                         }
                     }
-                    OpenAvrilCLIBWriteEnableForThreadsAtSERVEROUTPUTSEND::CLIBWriteEnableForThreadsAtSERVEROUTPUTSEND::app_FUNCT_write_End(obj->dyn_CLASS_get_ptr_Server()->dyn_CLASS_get_ptr_Execute()->dyn_PGM_get_WriteEnable_ServerOutputRecieve(), CLIBOpenEpiCentre::Global::stat_CONVERT_uint8_t_to_ByteArray((uint8_t)(concurrent_threadID + (uint8_t)1)));
+                    OpenAvrilCLIBWriteEnableForThreadsAtSERVEROUTPUTSEND::CLIBWriteEnableForThreadsAtSERVEROUTPUTSEND::app_FUNCT_write_End(obj->dyn_CLASS_get_ptr_Server()->dyn_CLASS_get_ptr_Execute()->dyn_PGM_get_WriteEnable_ServerOutputReceive(), CLIBOpenEpiCentre::Global::stat_CONVERT_uint8_t_to_ByteArray((uint8_t)(concurrent_threadID + (uint8_t)1)));
                 }
                 break;
             }

@@ -1,5 +1,7 @@
+#ifndef CLIB_LAUNCHENABLEFORCONCURRENTTHREADSAT_SERVER_LAUNCHENABLEFORCONCURRENTTHREADSAT_SERVER_H
+#define CLIB_LAUNCHENABLEFORCONCURRENTTHREADSAT_SERVER_LAUNCHENABLEFORCONCURRENTTHREADSAT_SERVER_H
 #include <cstdint>
-namespace OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtSERVER
+namespace CLIBLaunchQueAtSERVER
 {
     class LaunchEnableForConcurrentThreadsAt_SERVER
     {
@@ -7,11 +9,11 @@ namespace OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtSERVER
         LaunchEnableForConcurrentThreadsAt_SERVER();
         virtual ~LaunchEnableForConcurrentThreadsAt_SERVER();
         void app_thread_Start(class LaunchEnableForConcurrentThreadsAt_SERVER_Framework* obj, uint8_t concurrentThreadID);
-        void app_thread_End(class LaunchEnableForConcurrentThreadsAt_SERVER_Framework* obj, uint8_t concurrentThreadID);
-        static void boot0_CLASS_DECLAIRE_LaunchEnableForConcurrentThreadsAt_SERVER();
+        void app_thread_SERVER(class LaunchEnableForConcurrentThreadsAt_SERVER_Framework* obj, uint8_t concurrentThreadID);
+        static void boot0_CLASS_DECLARE_LaunchEnableForConcurrentThreadsAt_SERVER();
         static void boot1_CLASS_DEFINE_LaunchEnableForConcurrentThreadsAt_SERVER();
         static void boot3_CLASS_INITIALISE_LaunchEnableForConcurrentThreadsAt_SERVER();
-        static void boot0_REG_DECLAIRE_LaunchEnableForConcurrentThreadsAt_SERVER();
+        static void boot0_REG_DECLARE_LaunchEnableForConcurrentThreadsAt_SERVER();
         void boot1_REG_DEFINE_LaunchEnableForConcurrentThreadsAt_SERVER();
         void boot2_REG_SUBSTANTIATE_LaunchEnableForConcurrentThreadsAt_SERVER();
         void boot3_REG_INITIALISE_LaunchEnableForConcurrentThreadsAt_SERVER();
@@ -29,3 +31,4 @@ namespace OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtSERVER
         static class LaunchEnableForConcurrentThreadsAt_SERVER_Control* stat_CLASS_get_ptr_LaunchConcurrency_Control();
     };
 }
+#endif

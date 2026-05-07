@@ -1,23 +1,26 @@
-namespace OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtSERVER
+#ifndef CLIB_LAUNCHENABLEFORCONCURRENTTHREADSAT_SERVER_LAUNCHENABLEFORCONCURRENTTHREADSAT_SERVER_FRAMEWORK_H
+#define CLIB_LAUNCHENABLEFORCONCURRENTTHREADSAT_SERVER_LAUNCHENABLEFORCONCURRENTTHREADSAT_SERVER_FRAMEWORK_H
+namespace CLIBLaunchQueAtSERVER
 {
     class LaunchEnableForConcurrentThreadsAt_SERVER_Framework
     {
     public:
         LaunchEnableForConcurrentThreadsAt_SERVER_Framework();
         virtual ~LaunchEnableForConcurrentThreadsAt_SERVER_Framework();
-        static void boot0_CLASS_DECLAIRE_LaunchEnableForConcurrentThreadsAt_SERVER_Framework();
+        static void boot0_CLASS_DECLARE_LaunchEnableForConcurrentThreadsAt_SERVER_Framework();
         static void boot1_CLASS_DEFINE_LaunchEnableForConcurrentThreadsAt_SERVER_Framework();
         static void boot3_CLASS_INITIALISE_LaunchEnableForConcurrentThreadsAt_SERVER_Framework();
-        static void boot0_REG_DECLAIRE_LaunchEnableForConcurrentThreadsAt_SERVER_Framework();
+        static void boot0_REG_DECLARE_LaunchEnableForConcurrentThreadsAt_SERVER_Framework();
         void boot1_REG_DEFINE_LaunchEnableForConcurrentThreadsAt_SERVER_Framework(class LaunchEnableForConcurrentThreadsAt_SERVER_Framework* obj);
         void boot2_REG_SUBSTANTIATE_LaunchEnableForConcurrentThreadsAt_SERVER_Framework(class LaunchEnableForConcurrentThreadsAt_SERVER_Framework* obj);
         void boot3_REG_INITIALISE_LaunchEnableForConcurrentThreadsAt_SERVER_Framework(class LaunchEnableForConcurrentThreadsAt_SERVER_Framework* obj);
         void boot4_PGM_INSTANTIATION_LaunchEnableForConcurrentThreadsAt_SERVER_Framework(class LaunchEnableForConcurrentThreadsAt_SERVER_Framework* obj);
         class LaunchEnableForConcurrentThreadsAt_SERVER* dyn_CLASS_get_ptr_LaunchConcurrency();
-        static class LaunchEnableForConcurrentThreadsAt_SERVER* stat_CLASS_get_ptr_LaunchConcurrency();
+        static LaunchEnableForConcurrentThreadsAt_SERVER* stat_CLASS_get_ptr_LaunchConcurrency();
     private:
-        static class LaunchEnableForConcurrentThreadsAt_SERVER* _stat_CLASS_ptr_LaunchConcurrency;
+        static LaunchEnableForConcurrentThreadsAt_SERVER* _stat_CLASS_ptr_LaunchConcurrency;
         static void stat_CLASS_boot1_DEFINE_LaunchEnableForConcurrentThreadsAt_SERVER();
         static void stat_CLASS_boot3_INITIALISE_LaunchEnableForConcurrentThreadsAt_SERVER();
     };
-}
+};
+#endif

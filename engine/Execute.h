@@ -13,7 +13,7 @@ namespace CLIBOpenEpiCentre
         void dyn_REG_boot4_INSTANTIATE_Execute(class Framework_Server* obj);
         void* dyn_PGM_get_ConcurrentQue_Server();
         void* dyn_PGM_get_WriteEnable_ServerInputAction();
-        void* dyn_PGM_get_WriteEnable_ServerOutputRecieve();
+        void* dyn_PGM_get_WriteEnable_ServerOutputReceive();
         static void stat_CLASS_boot0_DECLAIRE_Execute();
         static void stat_CLASS_boot1_DEFINE_Execute();
         static void stat_CLASS_boot3_INITIALISE_Execute();
@@ -24,7 +24,7 @@ namespace CLIBOpenEpiCentre
         static std::list<std::thread*>* _stat_REG_List_Of_Threads;
         static void* _stat_PGM_ConcurrentQue_Server;
         static void* _stat_PGM_WriteEnable_ServerInputAction;
-        static void* _stat_PGM_WriteEnable_ServerOutputRecieve;
+        static void* _stat_PGM_WriteEnable_ServerOutputReceive;
         static void stat_CLASS_boot1_DEFINE_Execute_Control();
         static void stat_CLASS_boot3_INITIALISE_Execute_Control();
         static class Execute_Control* stat_CLASS_get_ptr_Execute_Control();
@@ -34,12 +34,12 @@ namespace CLIBOpenEpiCentre
         static std::list<std::thread*>* stat_PGM_get_ptr_List_Of_Threads();
         static void stat_PGM_boot1_DEFINE_ConcurrentQue_Server();
         static void stat_PGM_boot1_DEFINE_ServerInputAction();
-        static void stat_PGM_boot1_DEFINE_ServerOutputRecieve();
+        static void stat_PGM_boot1_DEFINE_ServerOutputReceive();
         static void stat_PGM_boot3_INITIALISE_ConcurrentQue_Server();
         static void stat_PGM_boot3_INITIALISE_ServerInputAction();
-        static void stat_PGM_boot3_INITIALISE_ServerOutputRecieve();
+        static void stat_PGM_boot3_INITIALISE_ServerOutputReceive();
         static void* stat_PGM_get_ptr_ConcurrentQue_Server();
         static void* stat_PGM_get_ptr_WriteEnable_ServerInputAction();
-        static void* stat_PGM_get_ptr_WriteEnable_ServerOutputRecieve();
+        static void* stat_PGM_get_ptr_WriteEnable_ServerOutputReceive();
     };
 }

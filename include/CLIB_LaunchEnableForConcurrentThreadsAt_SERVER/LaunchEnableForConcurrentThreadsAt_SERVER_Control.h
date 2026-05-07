@@ -1,18 +1,22 @@
-namespace OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtSERVER
+#ifndef CLIB_LAUNCHENABLEFORCONCURRENTTHREADSAT_SERVER_LAUNCHENABLEFORCONCURRENTTHREADSAT_SERVER_CONTROL_H
+#define CLIB_LAUNCHENABLEFORCONCURRENTTHREADSAT_SERVER_LAUNCHENABLEFORCONCURRENTTHREADSAT_SERVER_CONTROL_H
+#include <cstdint>
+#include <list>
+namespace CLIBLaunchQueAtSERVER
 {
     class LaunchEnableForConcurrentThreadsAt_SERVER_Control
     {
     public:
         LaunchEnableForConcurrentThreadsAt_SERVER_Control();
         virtual ~LaunchEnableForConcurrentThreadsAt_SERVER_Control();
-        void app_launchEnable_Activate(class LaunchEnableForConcurrentThreadsAt_SERVER_Framework* obj);
-        void app_launchEnable_Request(class LaunchEnableForConcurrentThreadsAt_SERVER_Framework* obj, uint8_t concurrentThreadID);
-        void app_launchEnable_SortQue(class LaunchEnableForConcurrentThreadsAt_SERVER_Framework* obj, uint8_t number_Implemented_Threads);
-        void app_launchQue_Update(class LaunchEnableForConcurrentThreadsAt_SERVER_Framework* obj, uint8_t number_Implemented_Threads);
-        static void boot0_CLASS_DECLAIRE_WriteEnableForThreadsAt_STACK_Control();
+        void app_launchEnable_Activate(LaunchEnableForConcurrentThreadsAt_SERVER_Framework* obj);
+        void app_launchEnable_Request(LaunchEnableForConcurrentThreadsAt_SERVER_Framework* obj, uint8_t concurrentThreadID);
+        void app_launchEnable_SortQue(LaunchEnableForConcurrentThreadsAt_SERVER_Framework* obj, uint8_t number_Implemented_Threads);
+        void app_launchQue_Update(LaunchEnableForConcurrentThreadsAt_SERVER_Framework* obj, uint8_t number_Implemented_Threads);
+        static void boot0_CLASS_DECLARE_WriteEnableForThreadsAt_STACK_Control();
         static void boot1_CLASS_DEFINE_WriteEnableForThreadsAt_STACK_Control();
         static void boot3_CLASS_INITIALISE_WriteEnableForThreadsAt_STACK_Control();
-        static void boot0_REG_DECLAIRE_WriteEnableForThreadsAt_STACK_Control();
+        static void boot0_REG_DECLARE_WriteEnableForThreadsAt_STACK_Control();
         void boot1_REG_DEFINE_WriteEnableForThreadsAt_STACK_Control();
         void boot2_REG_SUBSTANTIATE_WriteEnableForThreadsAt_STACK_Control();
         void boot3_REG_INITIALISE_WriteEnableForThreadsAt_STACK_Control();
@@ -21,15 +25,15 @@ namespace OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtSERVER
         bool dyn_REG_get_flag_praisinglaunch();
         uint32_t dyn_REG_get_Item_On_list_Of_launchActive_Count_For_ThreadID(uint8_t threadID);
         uint32_t dyn_REG_get_Item_On_list_Of_launchIdle_Count_For_ThreadID(uint8_t threadID);
-        bool dyn_REG_get_Item_On_list_Of_STATE_For_ConcurrentCore(uint8_t concurrenct_threadID);
-        uint8_t dyn_REG_get_Item_On_list_for_Que_Of_CoreTolaunch(uint8_t concurrenct_threadID);
+        bool dyn_REG_get_Item_On_list_Of_STATE_For_ConcurrentCore(uint8_t concurrentThreadId);
+        uint8_t dyn_REG_get_Item_On_list_for_Que_Of_CoreTolaunch(uint8_t concurrentThreadId);
         uint8_t dyn_REG_get_new_concurrentCycle_Try_CoreId_Index();
         void set_concurrentCycle_Try_CoreId_Index(uint8_t newValue);
         void set_flag_praisinglaunch(bool newFlag);
-        void set_Item_On_list_Of_launchActive_Count_For_ThreadID(uint8_t concurrenctThreadID, uint32_t newValue);
-        void set_Item_On_list_Of_launchIdle_Count_For_ThreadID(uint8_t concurrenctThreadID, uint32_t newValue);
-        void set_Item_On_list_Of_STATE_For_ConcurrentCore(uint8_t concurrenct_threadID, bool newState);
-        void set_Item_On_list_for_Que_Of_CoreTolaunch(uint8_t slot, uint8_t concurrenct_threadID);
+        void set_Item_On_list_Of_launchActive_Count_For_ThreadID(uint8_t concurrentThreadId, uint32_t newValue);
+        void set_Item_On_list_Of_launchIdle_Count_For_ThreadID(uint8_t concurrentThreadId, uint32_t newValue);
+        void set_Item_On_list_Of_STATE_For_ConcurrentCore(uint8_t concurrentThreadId, bool newState);
+        void set_Item_On_list_for_Que_Of_CoreTolaunch(uint8_t slot, uint8_t concurrentThreadId);
         void set_new_concurrentCycle_Try_CoreId_Index(uint32_t newValue);
     private:
         void dynamicStagger(class LaunchEnableForConcurrentThreadsAt_SERVER_Framework* obj, uint8_t coreId);
@@ -71,10 +75,11 @@ namespace OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtSERVER
         static uint8_t* stat_REG_get_ptr_new_concurrentCycle_Try_CoreId_Index();
         static void stat_REG_set_concurrentCycle_Try_CoreId_Index(uint8_t newValue);
         static void stat_REG_set_flag_praisinglaunch(bool newFlag);
-        static void stat_REG_set_Item_On_list_Of_launchActive_Count_For_ThreadID(uint8_t concurrenctThreadID, uint32_t newValue);
-        static void stat_REG_set_Item_On_list_Of_launchIdle_Count_For_ThreadID(uint8_t concurrenctThreadID, uint32_t newValue);
-        static void stat_REG_set_Item_On_list_Of_STATE_For_ConcurrentCore(uint8_t concurrenct_threadID, bool newState);
-        static void stat_REG_set_Item_On_list_for_Que_Of_CoreTolaunch(uint8_t slot, uint8_t concurrenct_threadID);
+        static void stat_REG_set_Item_On_list_Of_launchActive_Count_For_ThreadID(uint8_t concurrentThreadId, uint32_t newValue);
+        static void stat_REG_set_Item_On_list_Of_launchIdle_Count_For_ThreadID(uint8_t concurrentThreadId, uint32_t newValue);
+        static void stat_REG_set_Item_On_list_Of_STATE_For_ConcurrentCore(uint8_t concurrentThreadId, bool newState);
+        static void stat_REG_set_Item_On_list_for_Que_Of_CoreTolaunch(uint8_t slot, uint8_t concurrentThreadId);
         static void stat_REG_set_new_concurrentCycle_Try_CoreId_Index(uint32_t newValue);
     };
 }
+#endif
