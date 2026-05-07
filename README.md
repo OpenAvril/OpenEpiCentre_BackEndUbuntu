@@ -19,18 +19,25 @@
 
 ---
 ### Dependencies.
- #### - IntelliJ IDEA.
+#### - IntelliJ IDEA. (https://www.jetbrains.com/idea/download/?section=linux)
 ````
-sudo snap install intellij-idea-ultimate --classic
+
 ````
- #### - C/C++ toolchain (compiler, debugger, and build system).
+#### - C/C++ toolchain (compiler, debugger, and build system).
 ````
-sudo apt update
-sudo apt install build-essential cmake gcc g++ gdb
+
 ````
- #### - CLion.
+#### - Native Build Tools. (https://plugins.jetbrains.com/plugin/28796-native-build-tools)
 ````
- sudo snap install clion --classic
+
+````
+#### - CMake. (https://plugins.jetbrains.com/plugin/28794-cmake)
+````
+
+````
+#### - CLion. (https://plugins.jetbrains.com/plugin/28804-clion-c-and-c-)
+````
+
 ````
 
 ---
