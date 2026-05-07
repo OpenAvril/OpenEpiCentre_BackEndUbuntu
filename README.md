@@ -44,7 +44,7 @@
 ## Building - Compiler Terminal Commands.
 ### CLIB_OpenEpiCentre.so
 ````
-g++ -fPIC -shared -o ./output/CLIB_OpenEpiCentre.so CLIB_OpenEpiCentre.h
+g++ -fPIC -shared -o ./output/CLIB_OpenEpiCentre.so ./src/CLIB_OpenEpiCentre.cpp
 ````
 
 ---
