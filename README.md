@@ -12,30 +12,17 @@
 ### IntelliJ IDEA.
 **Version:** 2026.1.1
 
-**Extensions:**
- - CMake.
- - CLion C and C++.
- - Native Build Tools.
-
 ---
 ### Dependencies.
 #### - JetBrains Toolbox App. (https://www.jetbrains.com/toolbox-app/)
 **Manage your IDEs the easy way: Tools TAB.**
  - IntelliJ IDEA. (https://www.jetbrains.com/idea/download/?section=linux)
  - CLion. (https://plugins.jetbrains.com/plugin/28804-clion-c-and-c-)
-   
-#### - C/C++ toolchain (compiler, debugger, and build system).
-````
 
-````
-#### - Native Build Tools. (https://plugins.jetbrains.com/plugin/28796-native-build-tools)
-````
-
-````
-#### - CMake. (https://plugins.jetbrains.com/plugin/28794-cmake)
-````
-
-````
+**Plugins - Marketplace.**
+ - Native Build Tools.
+ - CMake.
+ - CLoin C and C++.
 
 ---
 ## Building - Compiler Terminal Commands.
