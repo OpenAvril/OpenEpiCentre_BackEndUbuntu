@@ -19,10 +19,11 @@
 
 ---
 ### Dependencies.
-#### - IntelliJ IDEA. (https://www.jetbrains.com/idea/download/?section=linux)
-````
-
-````
+#### JetBrains Toolbox App. (https://www.jetbrains.com/toolbox-app/)
+**Manage your IDEs the easy way: Tools TAB.**
+ - IntelliJ IDEA. (https://www.jetbrains.com/idea/download/?section=linux)
+ - CLion. (https://plugins.jetbrains.com/plugin/28804-clion-c-and-c-)
+   
 #### - C/C++ toolchain (compiler, debugger, and build system).
 ````
 
@@ -32,10 +33,6 @@
 
 ````
 #### - CMake. (https://plugins.jetbrains.com/plugin/28794-cmake)
-````
-
-````
-#### - CLion. (https://plugins.jetbrains.com/plugin/28804-clion-c-and-c-)
 ````
 
 ````
