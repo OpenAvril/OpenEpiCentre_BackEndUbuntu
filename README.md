@@ -18,6 +18,10 @@
 ````
 sudo apt install build-essential gdb -y
 ````
+#### - CMake.
+````
+sudo apt install cmake
+````
 #### - snap.
 ````
 sudo apt install snapd
