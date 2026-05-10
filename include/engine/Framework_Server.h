@@ -1,4 +1,4 @@
-
+#pragma once
 namespace CLIBOpenEpiCentre
 {
     class Framework_Server
@@ -17,12 +17,12 @@ namespace CLIBOpenEpiCentre
         static struct User_Algorithm* dyn_STRUCT_get_User_Algorithm();
         static struct User_Input* dyn_STRUCT_get_User_Input();
         static struct User_Output* dyn_STRUCT_get_User_Output();
-        static void stat_CLASS_boot0_DECLAIRE_Framework_Server();
+        static void stat_CLASS_boot0_DECLARE_Framework_Server();
         static void stat_CLASS_boot1_DEFINE_Framework_Server();
         static void stat_CLASS_boot3_INITIALISE_Framework_Server();
         static void stat_CLASS_boot4_INSTANTIATE_Framework_Server();
-        static void stat_REG_boot0_DECLAIRE_Framework_Server();
-        static void stat_STRUCT_boot0_DECLAIRE();
+        static void stat_REG_boot0_DECLARE_Framework_Server();
+        static void stat_STRUCT_boot0_DECLARE();
         static void stat_STRUCT_boot1_DEFINE();
         static void stat_STRUCT_boot3_INITIALISE();
     private:
@@ -37,12 +37,12 @@ namespace CLIBOpenEpiCentre
         static void stat_CLASS_boot1_DEFINE_Server();
         static void stat_CLASS_boot3_INITIALISE_Server();
         static class Server* stat_CLASS_get_ptr_Server();
-        static void stat_STRUCT_boot0_DECLAIRE_User_Algorithm();
-        static void stat_STRUCT_boot0_DECLAIRE_User_Input();
-        static void stat_STRUCT_boot0_DECLAIRE_User_Output();
-        static void stat_STRUCT_boot0_DECLAIRE_Concurrent();
-        static void stat_STRUCT_boot0_DECLAIRE_Input();
-        static void stat_STRUCT_boot0_DECLAIRE_Output();
+        static void stat_STRUCT_boot0_DECLARE_User_Algorithm();
+        static void stat_STRUCT_boot0_DECLARE_User_Input();
+        static void stat_STRUCT_boot0_DECLARE_User_Output();
+        static void stat_STRUCT_boot0_DECLARE_Concurrent();
+        static void stat_STRUCT_boot0_DECLARE_Input();
+        static void stat_STRUCT_boot0_DECLARE_Output();
         static void stat_STRUCT_boot1_DEFINE_User_Algorithm();
         static void stat_STRUCT_boot1_DEFINE_User_Input();
         static void stat_STRUCT_boot1_DEFINE_User_Output();

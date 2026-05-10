@@ -1,4 +1,5 @@
-
+#pragma once
+#include <cstdint>
 namespace CLIBOpenEpiCentre
 {
 	struct User_Algorithm
@@ -9,11 +10,11 @@ namespace CLIBOpenEpiCentre
 		void dyn_REG_boot2_SUBSTANTIATE_User_Algorithm();
 		void dyn_REG_boot3_INITIALISE_User_Algorithm();
 		void dyn_REG_boot4_INSTANTIATE_User_Algorithm();
-		static void stat_CLASS_boot0_DECLAIRE_User_Algorithm();
+		static void stat_CLASS_boot0_DECLARE_User_Algorithm();
 		static void stat_CLASS_boot1_DEFINE_User_Algorithm();
 		static void stat_CLASS_boot3_INITIALISE_User_Algorithm();
 		static void stat_CLASS_boot4_INSTANTIATE_User_Algorithm();
-		static void stat_REG_boot0_DECLAIRE_User_Algorithm();
+		static void stat_REG_boot0_DECLARE_User_Algorithm();
 	private:
 		static struct Algorithm_praise0* _stat_CLASS_ptr_Algorithm_praise0;
 		static struct Algorithm_praise1* _stat_CLASS_ptr_Algorithm_praise1;

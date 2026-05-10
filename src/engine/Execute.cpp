@@ -1,26 +1,30 @@
-
+#include "engine/Algorithms.h"
+#include "engine/Execute.h"
+#include "engine/Execute_Control.h"
+#include "engine/Framework_Server.h"
+#include "engine/Global.h"
+#include "engine/Server.h"
+#include "structs/Concurrent.h"
+#include <iostream>
     CLIBOpenEpiCentre::Execute_Control* CLIBOpenEpiCentre::Execute::_stat_CLASS_ptr_Execute_Control;
     std::list<std::thread*>* CLIBOpenEpiCentre::Execute::_stat_REG_List_Of_Threads;
-    CLIBOpenEpiCentre::Execute::_stat_PGM_ConcurrentQue_Server;
-    CLIBOpenEpiCentre::Execute::_stat_PGM_WriteEnable_ServerInputAction;
-    CLIBOpenEpiCentre::Execute::_stat_PGM_WriteEnable_ServerOutputReceive;
+    void* CLIBOpenEpiCentre::Execute::_stat_PGM_ConcurrentQue_Server;
+    void* CLIBOpenEpiCentre::Execute::_stat_PGM_WriteEnable_ServerInputAction;
+    void* CLIBOpenEpiCentre::Execute::_stat_PGM_WriteEnable_ServerOutputReceive;
 // public.
     CLIBOpenEpiCentre::Execute::Execute()
     {
         std::cout << "entered CONSTRUCTOR of Execute()." << std::endl;
-        stat_CLASS_boot0_DECLAIRE_Execute();
+        stat_CLASS_boot0_DECLARE_Execute();
         stat_CLASS_boot1_DEFINE_Execute();
         stat_CLASS_boot3_INITIALISE_Execute();
-        stat_REG_boot0_DECLAIRE_Execute();
+        stat_REG_boot0_DECLARE_Execute();
         std::cout << "exiting CONSTRUCTOR of Execute()." << std::endl;
     }
         CLIBOpenEpiCentre::Execute::~Execute()
     {
         delete _stat_CLASS_ptr_Execute_Control;
         delete _stat_REG_List_Of_Threads;
-        delete _stat_PGM_ConcurrentQue_Server;
-        delete _stat_PGM_WriteEnable_ServerInputAction;
-        delete _stat_PGM_WriteEnable_ServerOutputReceive;
     }
     CLIBOpenEpiCentre::Execute_Control* CLIBOpenEpiCentre::Execute::dyn_CLASS_get_ptr_Execute_Control()
     {
@@ -50,23 +54,23 @@
 
         std::cout << "exiting dyn_REG_boot4_INSTANTIATE_Execute()" << std::endl;
     }
-    CLIBOpenEpiCentre::Execute::dyn_PGM_get_ConcurrentQue_Server()
+    void* CLIBOpenEpiCentre::Execute::dyn_PGM_get_ConcurrentQue_Server()
     {
         return stat_PGM_get_ptr_ConcurrentQue_Server();
     }
-    CLIBOpenEpiCentre::Execute::dyn_PGM_get_WriteEnable_ServerInputAction()
+    void* CLIBOpenEpiCentre::Execute::dyn_PGM_get_WriteEnable_ServerInputAction()
     {
         return stat_PGM_get_ptr_WriteEnable_ServerInputAction();
     }
-    CLIBOpenEpiCentre::Execute::dyn_PGM_get_WriteEnable_ServerOutputReceive()
+    void* CLIBOpenEpiCentre::Execute::dyn_PGM_get_WriteEnable_ServerOutputReceive()
     {
         return stat_PGM_get_ptr_WriteEnable_ServerOutputReceive();
     }
-    void CLIBOpenEpiCentre::Execute::stat_CLASS_boot0_DECLAIRE_Execute()
+    void CLIBOpenEpiCentre::Execute::stat_CLASS_boot0_DECLARE_Execute()
     {
-        std::cout << "entered stat_CLASS_boot0_DECLAIRE_Execute()" << std::endl;
+        std::cout << "entered stat_CLASS_boot0_DECLARE_Execute()" << std::endl;
 
-        std::cout << "exiting stat_CLASS_boot0_DECLAIRE_Execute()" << std::endl;
+        std::cout << "exiting stat_CLASS_boot0_DECLARE_Execute()" << std::endl;
     }
     void CLIBOpenEpiCentre::Execute::stat_CLASS_boot1_DEFINE_Execute()
     {
@@ -82,22 +86,14 @@
         std::cout << "entered stat_CLASS_boot3_INITIALISE_Execute()" << std::endl;
         stat_CLASS_boot3_INITIALISE_Execute_Control();
         stat_PGM_boot3_INITIALISE_ConcurrentQue_Server();
-        std::cout << "* booted. ConcurrentQue_Server()" << std::endl;
         stat_PGM_boot3_INITIALISE_ServerInputAction();
-        std::cout << "* booted. ServerInputAction()" << std::endl;
         stat_PGM_boot3_INITIALISE_ServerOutputReceive();
-        std::cout << "* booted. ServerOutputReceive()" << std::endl;
         std::cout << "exiting stat_CLASS_boot3_INITIALISE_Execute()" << std::endl;
     }
     void CLIBOpenEpiCentre::Execute::stat_CLASS_boot4_INSTANTIATE_Execute()
     {
         std::cout << "entered stat_CLASS_boot4_INSTANTIATE_Execute()" << std::endl;
-
-        std::cout << "exiting stat_CLASS_boot4_INSTANTIATE_Execute()" << std::endl;
-    }
-    void CLIBOpenEpiCentre::Execute::stat_REG_boot0_DECLAIRE_Execute()
-    {
-        std::cout << "entered stat_CLASS_boot4_INSTANTIATE_Execute()" << std::endl;
+        /*
         unsigned char* bytes_uint8_t = CLIBOpenEpiCentre::Global::stat_CONVERT_uint8_t_to_ByteArray(UINT8_MAX);
 
         std::cout << "entered CHECK memeber function of CLIBLaunchEnableForConcurrentThreadsAtSERVER() " << std::endl;
@@ -131,17 +127,22 @@
         std::cout << "done CHECK memeber function of CLIBWriteEnableForThreadsAtSERVEROUTPUTSEND() " << std::endl;
 
         delete bytes_uint8_t;
+        */
         std::cout << "exiting stat_CLASS_boot4_INSTANTIATE_Execute()" << std::endl;
+    }
+    void CLIBOpenEpiCentre::Execute::stat_REG_boot0_DECLARE_Execute()
+    {
+
     }
 // private.
     void CLIBOpenEpiCentre::Execute::stat_CLASS_boot1_DEFINE_Execute_Control()
     {
-        _stat_CLASS_ptr_Execute_Control = NULL;
+        _stat_CLASS_ptr_Execute_Control = nullptr;
     }
     void CLIBOpenEpiCentre::Execute::stat_CLASS_boot3_INITIALISE_Execute_Control()
     {
-        _stat_CLASS_ptr_Execute_Control = new CLIBOpenEpiCentre::Execute_Control();
-        while (stat_CLASS_get_ptr_Execute_Control() == NULL) {}
+        _stat_CLASS_ptr_Execute_Control = new Execute_Control();
+        while (stat_CLASS_get_ptr_Execute_Control() == nullptr) {}
     }
     CLIBOpenEpiCentre::Execute_Control* CLIBOpenEpiCentre::Execute::stat_CLASS_get_ptr_Execute_Control()
     {
@@ -149,21 +150,21 @@
     }
     void CLIBOpenEpiCentre::Execute::stat_REG_boot1_DEFINE_List_Of_Threads()
     {
-        _stat_REG_List_Of_Threads = NULL;
+        _stat_REG_List_Of_Threads = nullptr;
     }
-    void CLIBOpenEpiCentre::Execute::stat_REG_boot2_SUBSTANTIATE_List_Of_Threads(class Framework_Server* obj)
+    void CLIBOpenEpiCentre::Execute::stat_REG_boot2_SUBSTANTIATE_List_Of_Threads(Framework_Server* obj)
     {
         _stat_REG_List_Of_Threads = new std::list<std::thread*>();
-        while (stat_PGM_get_ptr_List_Of_Threads() == NULL) { }
+        while (stat_PGM_get_ptr_List_Of_Threads() == nullptr) { }
         stat_PGM_get_ptr_List_Of_Threads()->resize(obj->dyn_CLASS_get_ptr_Server()->dyn_CLASS_get_ptr_Global()->dyn_REG_get_Item_number_Of_Implemented_Cores() - 1);
         for (uint8_t threadId = 0; threadId < sizeof(*stat_PGM_get_ptr_List_Of_Threads()); threadId++)
         {
             auto temp = stat_PGM_get_ptr_List_Of_Threads()->begin();
             std::advance(temp, threadId);
-            *temp = NULL;
+            *temp = nullptr;
         }
     }
-    void CLIBOpenEpiCentre::Execute::stat_REG_boot3_INITIALISE_List_Of_Threads(class Framework_Server* obj)
+    void CLIBOpenEpiCentre::Execute::stat_REG_boot3_INITIALISE_List_Of_Threads(Framework_Server* obj)
     {
         for (uint8_t threadId = 0; threadId < sizeof(*stat_PGM_get_ptr_List_Of_Threads()); threadId++)
         {
@@ -178,40 +179,40 @@
     }
     void CLIBOpenEpiCentre::Execute::stat_PGM_boot1_DEFINE_ConcurrentQue_Server()
     {
-        _stat_PGM_ConcurrentQue_Server = NULL;
+        _stat_PGM_ConcurrentQue_Server = nullptr;
     }
     void CLIBOpenEpiCentre::Execute::stat_PGM_boot1_DEFINE_ServerInputAction()
     {
-        _stat_PGM_WriteEnable_ServerInputAction = NULL;
+        _stat_PGM_WriteEnable_ServerInputAction = nullptr;
     }
     void CLIBOpenEpiCentre::Execute::stat_PGM_boot1_DEFINE_ServerOutputReceive()
     {
-        _stat_PGM_WriteEnable_ServerOutputReceive = NULL;
+        _stat_PGM_WriteEnable_ServerOutputReceive = nullptr;
     }
     void CLIBOpenEpiCentre::Execute::stat_PGM_boot3_INITIALISE_ConcurrentQue_Server()
     {
         _stat_PGM_ConcurrentQue_Server = OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtSERVER::CLIBLaunchEnableForConcurrentThreadsAtSERVER::app_FUNCT_generate_Program();
-        while (stat_PGM_get_ptr_ConcurrentQue_Server() == NULL) {}
+        while (stat_PGM_get_ptr_ConcurrentQue_Server() == nullptr) {}
     }
     void CLIBOpenEpiCentre::Execute::stat_PGM_boot3_INITIALISE_ServerInputAction()
     {
         _stat_PGM_WriteEnable_ServerInputAction = OpenAvrilCLIBWriteEnableForThreadsAtSERVERINPUTReceive::CLIBWriteEnableForThreadsAtSERVERINPUTReceive::app_FUNCT_generate_Program();
-        while (stat_PGM_get_ptr_WriteEnable_ServerInputAction() == NULL) {}
+        while (stat_PGM_get_ptr_WriteEnable_ServerInputAction() == nullptr) {}
     }
     void CLIBOpenEpiCentre::Execute::stat_PGM_boot3_INITIALISE_ServerOutputReceive()
     {
         _stat_PGM_WriteEnable_ServerOutputReceive = OpenAvrilCLIBWriteEnableForThreadsAtSERVEROUTPUTSEND::CLIBWriteEnableForThreadsAtSERVEROUTPUTSEND::app_FUNCT_generate_Program();
-        while (stat_PGM_get_ptr_WriteEnable_ServerOutputReceive() == NULL) {}
+        while (stat_PGM_get_ptr_WriteEnable_ServerOutputReceive() == nullptr) {}
     }
-    CLIBOpenEpiCentre::Execute::stat_PGM_get_ptr_ConcurrentQue_Server()
-{
-    return _stat_PGM_ConcurrentQue_Server;
-}
-    CLIBOpenEpiCentre::Execute::stat_PGM_get_ptr_WriteEnable_ServerInputAction()
-{
-    return _stat_PGM_WriteEnable_ServerInputAction;
-}
-    CLIBOpenEpiCentre::Execute::stat_PGM_get_ptr_WriteEnable_ServerOutputReceive()
-{
-    return _stat_PGM_WriteEnable_ServerOutputReceive;
-}
+    void* CLIBOpenEpiCentre::Execute::stat_PGM_get_ptr_ConcurrentQue_Server()
+    {
+        return _stat_PGM_ConcurrentQue_Server;
+    }
+    void* CLIBOpenEpiCentre::Execute::stat_PGM_get_ptr_WriteEnable_ServerInputAction()
+    {
+        return _stat_PGM_WriteEnable_ServerInputAction;
+    }
+    void* CLIBOpenEpiCentre::Execute::stat_PGM_get_ptr_WriteEnable_ServerOutputReceive()
+    {
+        return _stat_PGM_WriteEnable_ServerOutputReceive;
+    }

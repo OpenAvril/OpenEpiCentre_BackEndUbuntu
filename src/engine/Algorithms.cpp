@@ -1,13 +1,17 @@
 
+#include "engine/Algorithms.h"
+#include "structs/Concurrent.h"
+#include <iostream>
+#include <list>
     std::list<CLIBOpenEpiCentre::Concurrent*>* CLIBOpenEpiCentre::Algorithms::_stat_REG_ptr_list_Of_ptr_Concurrent;
 // public.
     CLIBOpenEpiCentre::Algorithms::Algorithms()
     {
         std::cout << "entered CONSTRUCTOR of Algorithms()" << std::endl;
-        stat_CLASS_boot0_DECLAIRE_Algorithm();
+        stat_CLASS_boot0_DECLARE_Algorithm();
         stat_CLASS_boot1_DEFINE_Algorithm();
         stat_CLASS_boot3_INITIALISE_Algorithm();
-        stat_REG_boot0_DECLAIRE_Algorithm();
+        stat_REG_boot0_DECLARE_Algorithm();
         std::cout << "exiting CONSTRUCTOR of Algorithms()" << std::endl;
     }
     CLIBOpenEpiCentre::Algorithms::~Algorithms()
@@ -44,11 +48,11 @@
 
         std::cout << "exiting dyn_REG_boot4_INSTANTIATE_Algorithms()" << std::endl;
     }
-    void CLIBOpenEpiCentre::Algorithms::stat_CLASS_boot0_DECLAIRE_Algorithm()
+    void CLIBOpenEpiCentre::Algorithms::stat_CLASS_boot0_DECLARE_Algorithm()
     {
-        std::cout << "entered stat_CLASS_boot0_DECLAIRE_Algorithms()" << std::endl;
+        std::cout << "entered stat_CLASS_boot0_DECLARE_Algorithms()" << std::endl;
 
-        std::cout << "exiting stat_CLASS_boot0_DECLAIRE_Algorithms()" << std::endl;
+        std::cout << "exiting stat_CLASS_boot0_DECLARE_Algorithms()" << std::endl;
     }
     void CLIBOpenEpiCentre::Algorithms::stat_CLASS_boot1_DEFINE_Algorithm()
     {
@@ -64,31 +68,31 @@
     }
     void CLIBOpenEpiCentre::Algorithms::stat_CLASS_boot4_INSTANTIATE_Algorithm()
     {
-        std::cout << "entered stat_CLASS_boot0_REG_DECLAIRE_Algorithms()" << std::endl;
+        std::cout << "entered stat_CLASS_boot0_REG_DECLARE_Algorithms()" << std::endl;
 
-        std::cout << "exiting stat_CLASS_boot0_REG_DECLAIRE_Algorithms()" << std::endl;
+        std::cout << "exiting stat_CLASS_boot0_REG_DECLARE_Algorithms()" << std::endl;
     }
-    void CLIBOpenEpiCentre::Algorithms::stat_REG_boot0_DECLAIRE_Algorithm()
+    void CLIBOpenEpiCentre::Algorithms::stat_REG_boot0_DECLARE_Algorithm()
     {
-        std::cout << "entered stat_REG_boot0_DECLAIRE_Algorithm()" << std::endl;
+        std::cout << "entered stat_REG_boot0_DECLARE_Algorithm()" << std::endl;
 
-        std::cout << "exiting stat_REG_boot0_DECLAIRE_Algorithm()" << std::endl;
+        std::cout << "exiting stat_REG_boot0_DECLARE_Algorithm()" << std::endl;
     }
 // private.
     void CLIBOpenEpiCentre::Algorithms::stat_REG_boot1_DEFINE_List_Of_ptr_Concurrent()
     {
-        _stat_REG_ptr_list_Of_ptr_Concurrent = NULL;
+        _stat_REG_ptr_list_Of_ptr_Concurrent = nullptr;
     }
     void CLIBOpenEpiCentre::Algorithms::stat_REG_boot2_SUBSTANTIATE_list_Of_ptr_Concurrent(CLIBOpenEpiCentre::Framework_Server* obj)
     {
         _stat_REG_ptr_list_Of_ptr_Concurrent = new std::list<struct Concurrent*>();
-        while (stat_REG_get_ptr_list_Of_ptr_Concurrent() == NULL) {}
+        while (stat_REG_get_ptr_list_Of_ptr_Concurrent() == nullptr) {}
         stat_REG_get_ptr_list_Of_ptr_Concurrent()->resize(uint8_t(3));//NUMBER OF CONCURRENT THREADS.
         for (uint8_t concurrentThreadId = 0; concurrentThreadId < sizeof(*stat_REG_get_ptr_list_Of_ptr_Concurrent()); concurrentThreadId++)
         {
             auto temp = stat_REG_get_ptr_list_Of_ptr_Concurrent()->begin();
             std::advance(temp, concurrentThreadId);
-            *temp = NULL;
+            *temp = nullptr;
         }
     }
     void CLIBOpenEpiCentre::Algorithms::stat_REG_boot3_INITIALISE_list_Of_ptr_Concurrent(CLIBOpenEpiCentre::Framework_Server* obj, CLIBOpenEpiCentre::Concurrent* objConcurrent)

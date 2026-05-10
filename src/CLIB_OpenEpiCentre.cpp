@@ -1,5 +1,22 @@
 
-	class CLIBOpenEpiCentre::Framework_Server* _CLASS_ptr_Framework_Server;
+#include "CLIB_OpenEpiCentre.h"
+#include "engine/Algorithms.h"
+#include "engine/Data.h"
+#include "engine/Data_Control.h"
+#include "engine/Framework_Server.h"
+#include "engine/Global.h"
+#include "engine/Server.h"
+#include "structs/Concurrent.h"
+#include "structs/Input.h"
+#include "structs/Input_Control.h"
+#include "structs/Output.h"
+#include "structs/Output_Control.h"
+#include "structs/User_Algorithm.h"
+#include "structs/User_Input.h"
+#include "structs/User_Output.h"
+#include <cstdint>
+#include <iostream>
+class CLIBOpenEpiCentre::Framework_Server* _CLASS_ptr_Framework_Server;
 	bool* _stat_REG_get_flag_isMemberFunctionINSTANTIATED;
 // public.
 	void CLIBOpenEpiCentre::ConcurrentServerIO::app_FUNCT_flip_Input_DoubleBuffer()
@@ -16,13 +33,13 @@ void* CLIBOpenEpiCentre::ConcurrentServerIO::app_FUNCT_generate_Program()
 {
 	std::cout << "entered app_FUNCT_generate_Program()." << std::endl;
 
-	std::cout << "started CLASS(s) - DECLAIRE, DEFINE INITIALISE, Registers - DECLAIRE." << std::endl;
+	std::cout << "started CLASS(s) - DECLARE, DEFINE INITIALISE, Registers - DECLARE." << std::endl;
 	stat_CLASS_boot1_DEFINE_Framework();
 	stat_CLASS_boot3_INITIALISE_Framework();
-	std::cout << "done CLASS(s) - DECLAIRE, DEFINE INITIALISE, Registers - DECLAIRE." << std::endl;
+	std::cout << "done CLASS(s) - DECLARE, DEFINE INITIALISE, Registers - DECLARE." << std::endl;
 
-	std::cout << "started STRUCT(s) - DECLAIRE, DEFINE INITIALISE, Registers - DECLAIRE." << std::endl;
-	stat_CLASS_get_ptr_Framework_Server()->stat_STRUCT_boot0_DECLAIRE();
+	std::cout << "started STRUCT(s) - DECLARE, DEFINE INITIALISE, Registers - DECLARE." << std::endl;
+	stat_CLASS_get_ptr_Framework_Server()->stat_STRUCT_boot0_DECLARE();
 	stat_CLASS_get_ptr_Framework_Server()->stat_STRUCT_boot1_DEFINE();
 	stat_CLASS_get_ptr_Framework_Server()->stat_STRUCT_boot3_INITIALISE();
 
@@ -61,7 +78,7 @@ void* CLIBOpenEpiCentre::ConcurrentServerIO::app_FUNCT_generate_Program()
 	{
 		stat_CLASS_get_ptr_Framework_Server()->dyn_CLASS_get_ptr_Server()->dyn_CLASS_get_ptr_Algorithms()->dyn_STRUCT_get_Item_On_list_Of_ptr_Concurrent(concurrentThreadId)->dyn_CLASS_get_ptr_Concurrent_Control()->app_selectset_Algorithm_Scubset(stat_CLASS_get_ptr_Framework_Server(), (uint8_t)(0), concurrentThreadId);
 	}
-	std::cout << "done STRUCT(s) - DECLAIRE, DEFINE INITIALISE, Registers - DECLAIRE." << std::endl;
+	std::cout << "done STRUCT(s) - DECLARE, DEFINE INITIALISE, Registers - DECLARE." << std::endl;
 
 	std::cout << "started Registers - DEFINE" << std::endl;
 	stat_CLASS_get_ptr_Framework_Server()->dyn_REG_boot1_DEFINE_Framework_Server(stat_CLASS_get_ptr_Framework_Server());
@@ -99,7 +116,7 @@ void* CLIBOpenEpiCentre::ConcurrentServerIO::app_FUNCT_generate_Program()
 	std::cout << " " << std::endl;
 	return (void*)stat_CLASS_get_ptr_Framework_Server();
 }
-unsigned char* CLIBOpenEpiCentre::ConcurrentServerIO::app_FUNCT_get_flag_isPGM_INSTNATIATED()
+unsigned char* CLIBOpenEpiCentre::ConcurrentServerIO::app_FUNCT_get_flag_isPGM_INSTANTIATED()
 {
 	if (stat_REG_get_ptr_flag_isMemberFunctionINSTANTIATED()[2] == false) {
 		return CLIBOpenEpiCentre::Global::stat_CONVERT_bool_to_ByteArray(stat_REG_get_ptr_flag_isMemberFunctionINSTANTIATED()[0]);
@@ -123,7 +140,7 @@ void CLIBOpenEpiCentre::ConcurrentServerIO::app_FUNCT_terminate_Program()
 {
 	if (stat_REG_get_ptr_flag_isMemberFunctionINSTANTIATED()[4] == false) {
 		delete _CLASS_ptr_Framework_Server;
-		while (stat_CLASS_get_ptr_Framework_Server() != NULL) {}
+		while (stat_CLASS_get_ptr_Framework_Server() != nullptr) {}
 	}
 	else {
 		stat_REG_get_ptr_flag_isMemberFunctionINSTANTIATED()[4] = false;
@@ -159,7 +176,7 @@ void* CLIBOpenEpiCentre::ConcurrentServerIO::dyn_PGM_get_program_WriteEnableStac
 		stat_REG_get_ptr_flag_isMemberFunctionINSTANTIATED()[7] = false;
 		stat_app_FUNCT_Calc_IsAllINSTANTIATED();
 	}
-	return (void*)(NULL);
+	return (void*)(nullptr);
 }
 void* CLIBOpenEpiCentre::ConcurrentServerIO::dyn_PGM_get_program_WriteEnableStack_ServerOutputReceive()
 {
@@ -170,7 +187,7 @@ void* CLIBOpenEpiCentre::ConcurrentServerIO::dyn_PGM_get_program_WriteEnableStac
 		stat_REG_get_ptr_flag_isMemberFunctionINSTANTIATED()[8] = false;
 		stat_app_FUNCT_Calc_IsAllINSTANTIATED();
 	}
-	return (void*)(NULL);
+	return (void*)(nullptr);
 }
 unsigned char* CLIBOpenEpiCentre::ConcurrentServerIO::dyn_REG_get_flag_isStackLoaded_Server_InputSend()
 {
@@ -389,12 +406,12 @@ void CLIBOpenEpiCentre::ConcurrentServerIO::stat_app_FUNCT_Calc_IsAllINSTANTIATE
 }
 void CLIBOpenEpiCentre::ConcurrentServerIO::stat_CLASS_boot1_DEFINE_Framework()
 {
-	_CLASS_ptr_Framework_Server = NULL;
+	_CLASS_ptr_Framework_Server = nullptr;
 }
 void CLIBOpenEpiCentre::ConcurrentServerIO::stat_CLASS_boot3_INITIALISE_Framework()
 {
 	_CLASS_ptr_Framework_Server = new class CLIBOpenEpiCentre::Framework_Server();
-	while (stat_CLASS_get_ptr_Framework_Server() == NULL) {}
+	while (stat_CLASS_get_ptr_Framework_Server() == nullptr) {}
 }
 CLIBOpenEpiCentre::Framework_Server* CLIBOpenEpiCentre::ConcurrentServerIO::stat_CLASS_get_ptr_Framework_Server()
 {
@@ -402,12 +419,12 @@ CLIBOpenEpiCentre::Framework_Server* CLIBOpenEpiCentre::ConcurrentServerIO::stat
 }
 void CLIBOpenEpiCentre::ConcurrentServerIO::stat_REG_boot1_DEFINE_flag_isMemberFunctionINSTANTIATED()
 {
-	_stat_REG_get_flag_isMemberFunctionINSTANTIATED = NULL;
+	_stat_REG_get_flag_isMemberFunctionINSTANTIATED = nullptr;
 }
 void CLIBOpenEpiCentre::ConcurrentServerIO::stat_REG_boot2_SUBSTANTIATE_flag_isMemberFunctionINSTANTIATED()
 {
 	_stat_REG_get_flag_isMemberFunctionINSTANTIATED = new bool[28]();
-	while (stat_REG_get_ptr_flag_isMemberFunctionINSTANTIATED() == NULL) {}
+	while (stat_REG_get_ptr_flag_isMemberFunctionINSTANTIATED() == nullptr) {}
 	for (uint8_t index = 0; index < sizeof(*stat_REG_get_ptr_flag_isMemberFunctionINSTANTIATED()); index++)
 	{
 		stat_REG_get_ptr_flag_isMemberFunctionINSTANTIATED()[index] = true;

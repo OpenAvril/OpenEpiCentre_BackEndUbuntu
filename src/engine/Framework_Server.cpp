@@ -1,4 +1,18 @@
-
+#include "engine/Algorithms.h"
+#include "engine/Data.h"
+#include "engine/Data_Control.h"
+#include "engine/Execute.h"
+#include "engine/Execute_Control.h"
+#include "engine/Framework_Server.h"
+#include "engine/Global.h"
+#include "engine/Server.h"
+#include "structs/Concurrent.h"
+#include "structs/Input.h"
+#include "structs/Output.h"
+#include "structs/User_Algorithm.h"
+#include "structs/User_Input.h"
+#include "structs/User_Output.h"
+#include <iostream>
 	CLIBOpenEpiCentre::Server* CLIBOpenEpiCentre::Framework_Server::_stat_CLASS_ptr_Server;
 	CLIBOpenEpiCentre::Concurrent* CLIBOpenEpiCentre::Framework_Server::_stat_STRUCT_Concurrent;
 	CLIBOpenEpiCentre::Input* CLIBOpenEpiCentre::Framework_Server::_stat_STRUCT_Input;
@@ -10,10 +24,10 @@
 	CLIBOpenEpiCentre::Framework_Server::Framework_Server()
 	{
 		std::cout << "entered CONSTRUCTOR of Framework_Server()" << std::endl;
-		stat_CLASS_boot0_DECLAIRE_Framework_Server();
+		stat_CLASS_boot0_DECLARE_Framework_Server();
 		stat_CLASS_boot1_DEFINE_Framework_Server();
 		stat_CLASS_boot3_INITIALISE_Framework_Server();
-		stat_REG_boot0_DECLAIRE_Framework_Server();
+		stat_REG_boot0_DECLARE_Framework_Server();
 		std::cout << "exiting CONSTRUCTOR of Framework_Server()" << std::endl;
 	}
 	CLIBOpenEpiCentre::Framework_Server::~Framework_Server()
@@ -100,11 +114,11 @@
 	{
 		return stat_STRUCT_get_User_Output();
 	}
-	void CLIBOpenEpiCentre::Framework_Server::stat_CLASS_boot0_DECLAIRE_Framework_Server()
+	void CLIBOpenEpiCentre::Framework_Server::stat_CLASS_boot0_DECLARE_Framework_Server()
 	{
-		std::cout << "entered stat_CLASS_boot0_DECLAIRE_Framework_Server()" << std::endl;
+		std::cout << "entered stat_CLASS_boot0_DECLARE_Framework_Server()" << std::endl;
 
-		std::cout << "exiting stat_CLASS_boot0_DECLAIRE_Framework_Server()" << std::endl;
+		std::cout << "exiting stat_CLASS_boot0_DECLARE_Framework_Server()" << std::endl;
 	}
 	void CLIBOpenEpiCentre::Framework_Server::stat_CLASS_boot1_DEFINE_Framework_Server()
 	{
@@ -124,22 +138,22 @@
 
 		std::cout << "exiting stat_CLASS_boot4_INSTANTIATE_Framework_Server()" << std::endl;
 	}
-	void CLIBOpenEpiCentre::Framework_Server::stat_REG_boot0_DECLAIRE_Framework_Server()
+	void CLIBOpenEpiCentre::Framework_Server::stat_REG_boot0_DECLARE_Framework_Server()
 	{
-		std::cout << "entered stat_REG_boot0_DECLAIRE_Framework_Server()" << std::endl;
+		std::cout << "entered stat_REG_boot0_DECLARE_Framework_Server()" << std::endl;
 
-		std::cout << "exiting stat_REG_boot0_DECLAIRE_Framework_Server()" << std::endl;
+		std::cout << "exiting stat_REG_boot0_DECLARE_Framework_Server()" << std::endl;
 	}
-	void CLIBOpenEpiCentre::Framework_Server::stat_STRUCT_boot0_DECLAIRE()
+	void CLIBOpenEpiCentre::Framework_Server::stat_STRUCT_boot0_DECLARE()
 	{
-		std::cout << "entered stat_STRUCT_boot0_DECLAIRE()." << std::endl;
-		stat_STRUCT_boot0_DECLAIRE_User_Algorithm();
-		stat_STRUCT_boot0_DECLAIRE_User_Input();
-		stat_STRUCT_boot0_DECLAIRE_User_Output();
-		stat_STRUCT_boot0_DECLAIRE_Concurrent();
-		stat_STRUCT_boot0_DECLAIRE_Input();
-		stat_STRUCT_boot0_DECLAIRE_Output();
-		std::cout << "exiting stat_STRUCT_boot0_DECLAIRE()." << std::endl;
+		std::cout << "entered stat_STRUCT_boot0_DECLARE()." << std::endl;
+		stat_STRUCT_boot0_DECLARE_User_Algorithm();
+		stat_STRUCT_boot0_DECLARE_User_Input();
+		stat_STRUCT_boot0_DECLARE_User_Output();
+		stat_STRUCT_boot0_DECLARE_Concurrent();
+		stat_STRUCT_boot0_DECLARE_Input();
+		stat_STRUCT_boot0_DECLARE_Output();
+		std::cout << "exiting stat_STRUCT_boot0_DECLARE()." << std::endl;
 	}
 	void CLIBOpenEpiCentre::Framework_Server::stat_STRUCT_boot1_DEFINE()
 	{
@@ -166,129 +180,129 @@
 // private.
 	void CLIBOpenEpiCentre::Framework_Server::stat_CLASS_boot1_DEFINE_Server()
 	{
-		_stat_CLASS_ptr_Server = NULL;
+		_stat_CLASS_ptr_Server = nullptr;
 	}
 	void CLIBOpenEpiCentre::Framework_Server::stat_CLASS_boot3_INITIALISE_Server()
 	{
 		_stat_CLASS_ptr_Server = new CLIBOpenEpiCentre::Server();
-		while (stat_CLASS_get_ptr_Server() == NULL) {}
+		while (stat_CLASS_get_ptr_Server() == nullptr) {}
 	}
 	CLIBOpenEpiCentre::Server* CLIBOpenEpiCentre::Framework_Server::stat_CLASS_get_ptr_Server()
 	{
 		return _stat_CLASS_ptr_Server;
 	}
-	void CLIBOpenEpiCentre::Framework_Server::stat_STRUCT_boot0_DECLAIRE_User_Algorithm()
+	void CLIBOpenEpiCentre::Framework_Server::stat_STRUCT_boot0_DECLARE_User_Algorithm()
 	{
-		std::cout << "entered stat_STRUCT_boot0_DECLAIRE_User_Algorithm()." << std::endl;
+		std::cout << "entered stat_STRUCT_boot0_DECLARE_User_Algorithm()." << std::endl;
 
-		std::cout << "exiting stat_STRUCT_boot0_DECLAIRE_User_Algorithm()." << std::endl;
+		std::cout << "exiting stat_STRUCT_boot0_DECLARE_User_Algorithm()." << std::endl;
 	}
-	void CLIBOpenEpiCentre::Framework_Server::stat_STRUCT_boot0_DECLAIRE_User_Input()
+	void CLIBOpenEpiCentre::Framework_Server::stat_STRUCT_boot0_DECLARE_User_Input()
 	{
-		std::cout << "entered stat_STRUCT_boot0_DECLAIRE_User_Input()." << std::endl;
+		std::cout << "entered stat_STRUCT_boot0_DECLARE_User_Input()." << std::endl;
 
-		std::cout << "exiting stat_STRUCT_boot0_DECLAIRE_User_Input()." << std::endl;
+		std::cout << "exiting stat_STRUCT_boot0_DECLARE_User_Input()." << std::endl;
 	}
-	void CLIBOpenEpiCentre::Framework_Server::stat_STRUCT_boot0_DECLAIRE_User_Output()
+	void CLIBOpenEpiCentre::Framework_Server::stat_STRUCT_boot0_DECLARE_User_Output()
 	{
-		std::cout << "entered stat_STRUCT_boot0_DECLAIRE_User_Output()." << std::endl;
+		std::cout << "entered stat_STRUCT_boot0_DECLARE_User_Output()." << std::endl;
 
-		std::cout << "exiting stat_STRUCT_boot0_DECLAIRE_User_Output()." << std::endl;
+		std::cout << "exiting stat_STRUCT_boot0_DECLARE_User_Output()." << std::endl;
 	}
-	void CLIBOpenEpiCentre::Framework_Server::stat_STRUCT_boot0_DECLAIRE_Concurrent()
+	void CLIBOpenEpiCentre::Framework_Server::stat_STRUCT_boot0_DECLARE_Concurrent()
 	{
-		std::cout << "entered stat_STRUCT_boot0_DECLAIRE_Concurrent()." << std::endl;
+		std::cout << "entered stat_STRUCT_boot0_DECLARE_Concurrent()." << std::endl;
 
-		std::cout << "exiting stat_STRUCT_boot0_DECLAIRE_Concurrent()." << std::endl;
+		std::cout << "exiting stat_STRUCT_boot0_DECLARE_Concurrent()." << std::endl;
 	}
-	void CLIBOpenEpiCentre::Framework_Server::stat_STRUCT_boot0_DECLAIRE_Input()
+	void CLIBOpenEpiCentre::Framework_Server::stat_STRUCT_boot0_DECLARE_Input()
 	{
-		std::cout << "entered stat_STRUCT_boot0_DECLAIRE_Input()." << std::endl;
+		std::cout << "entered stat_STRUCT_boot0_DECLARE_Input()." << std::endl;
 
-		std::cout << "exiting stat_STRUCT_boot0_DECLAIRE_Input()." << std::endl;
+		std::cout << "exiting stat_STRUCT_boot0_DECLARE_Input()." << std::endl;
 	}
-	void CLIBOpenEpiCentre::Framework_Server::stat_STRUCT_boot0_DECLAIRE_Output()
+	void CLIBOpenEpiCentre::Framework_Server::stat_STRUCT_boot0_DECLARE_Output()
 	{
-		std::cout << "entered stat_STRUCT_boot0_DECLAIRE_Output()." << std::endl;
+		std::cout << "entered stat_STRUCT_boot0_DECLARE_Output()." << std::endl;
 
-		std::cout << "exiting stat_STRUCT_boot0_DECLAIRE_Output()." << std::endl;
+		std::cout << "exiting stat_STRUCT_boot0_DECLARE_Output()." << std::endl;
 	}
 	void CLIBOpenEpiCentre::Framework_Server::stat_STRUCT_boot1_DEFINE_User_Algorithm()
 	{
 		std::cout << "entered stat_STRUCT_boot1_DEFINE_User_Algorithm()" << std::endl;
-		_stat_CLASS_ptr_User_Algorithm = NULL;
+		_stat_CLASS_ptr_User_Algorithm = nullptr;
 		std::cout << "exiting stat_STRUCT_boot1_DEFINE_User_Algorithm()" << std::endl;
 	}
 	void CLIBOpenEpiCentre::Framework_Server::stat_STRUCT_boot1_DEFINE_User_Input()
 	{
 		std::cout << "entered stat_STRUCT_boot1_DEFINE_User_Input()" << std::endl;
-		_stat_STRUCT_User_Input = NULL;
+		_stat_STRUCT_User_Input = nullptr;
 		std::cout << "exiting stat_STRUCT_boot1_DEFINE_User_Input()" << std::endl;
 	}
 	void CLIBOpenEpiCentre::Framework_Server::stat_STRUCT_boot1_DEFINE_User_Output()
 	{
 		std::cout << "entered stat_STRUCT_boot1_DEFINE_User_Output()" << std::endl;
-		_stat_STRUCT_User_Output = NULL;
+		_stat_STRUCT_User_Output = nullptr;
 		std::cout << "exiting stat_STRUCT_boot1_DEFINE_User_Output()" << std::endl;
 	}
 	void CLIBOpenEpiCentre::Framework_Server::stat_STRUCT_boot1_DEFINE_Concurrent()
 	{
 		std::cout << "entered stat_STRUCT_boot1_DEFINE_Concurrent()" << std::endl;
-		_stat_STRUCT_Concurrent = NULL;
+		_stat_STRUCT_Concurrent = nullptr;
 		std::cout << "exiting stat_STRUCT_boot1_DEFINE_Concurrent()" << std::endl;
 	}
 	void CLIBOpenEpiCentre::Framework_Server::stat_STRUCT_boot1_DEFINE_Input()
 	{
 		std::cout << "entered stat_STRUCT_boot1_DEFINE_Input()" << std::endl;
-		_stat_STRUCT_Input = NULL;
+		_stat_STRUCT_Input = nullptr;
 		std::cout << "exiting stat_STRUCT_boot1_DEFINE_Input()" << std::endl;
 	}
 	void CLIBOpenEpiCentre::Framework_Server::stat_STRUCT_boot1_DEFINE_Output()
 	{
 		std::cout << "entered stat_STRUCT_boot1_DEFINE_Output()" << std::endl;
-		_stat_STRUCT_Output = NULL;
+		_stat_STRUCT_Output = nullptr;
 		std::cout << "exiting stat_STRUCT_boot1_DEFINE_Output()" << std::endl;
 	}
 	void CLIBOpenEpiCentre::Framework_Server::stat_STRUCT_boot3_INITIALISE_User_Algorithm()
 	{
 		std::cout << "entered stat_STRUCT_boot3_INITIALISE_User_Algorithm()" << std::endl;
 		_stat_CLASS_ptr_User_Algorithm = new struct CLIBOpenEpiCentre::User_Algorithm();
-		while (stat_STRUCT_get_User_Algorithm() == NULL) {}
+		while (stat_STRUCT_get_User_Algorithm() == nullptr) {}
 		std::cout << "exiting stat_STRUCT_boot3_INITIALISE_User_Algorithm()" << std::endl;
 	}
 	void CLIBOpenEpiCentre::Framework_Server::stat_STRUCT_boot3_INITIALISE_User_Input()
 	{
 		std::cout << "entered stat_STRUCT_boot3_INITIALISE_User_Input()" << std::endl;
 		_stat_STRUCT_User_Input = new struct CLIBOpenEpiCentre::User_Input();
-		while (stat_STRUCT_get_User_Input() == NULL) {}
+		while (stat_STRUCT_get_User_Input() == nullptr) {}
 		std::cout << "exiting stat_STRUCT_boot3_INITIALISE_User_Input()" << std::endl;
 	}
 	void CLIBOpenEpiCentre::Framework_Server::stat_STRUCT_boot3_INITIALISE_User_Output()
 	{
 		std::cout << "entered stat_STRUCT_boot3_INITIALISE_User_Output()" << std::endl;
 		_stat_STRUCT_User_Output = new struct CLIBOpenEpiCentre::User_Output();
-		while (stat_STRUCT_get_User_Output() == NULL) {}
+		while (stat_STRUCT_get_User_Output() == nullptr) {}
 		std::cout << "exiting stat_STRUCT_boot3_INITIALISE_User_Output()" << std::endl;
 	}
 	void CLIBOpenEpiCentre::Framework_Server::stat_STRUCT_boot3_INITIALISE_Concurrent()
 	{
 		std::cout << "entered stat_STRUCT_boot3_INITIALISE_Concurrent()" << std::endl;
 		_stat_STRUCT_Concurrent = new struct CLIBOpenEpiCentre::Concurrent();
-		while (stat_STRUCT_get_Concurrent() == NULL) {}
+		while (stat_STRUCT_get_Concurrent() == nullptr) {}
 		std::cout << "exiting stat_STRUCT_boot3_INITIALISE_Concurrent()" << std::endl;
 	}
 	void CLIBOpenEpiCentre::Framework_Server::stat_STRUCT_boot3_INITIALISE_Input()
 	{
 		std::cout << "entered stat_STRUCT_boot3_INITIALISE_Input()" << std::endl;
 		_stat_STRUCT_Input = new struct CLIBOpenEpiCentre::Input();
-		while (stat_STRUCT_get_Input() == NULL) {}
+		while (stat_STRUCT_get_Input() == nullptr) {}
 		std::cout << "exiting stat_STRUCT_boot3_INITIALISE_Input()" << std::endl;
 	}
 	void CLIBOpenEpiCentre::Framework_Server::stat_STRUCT_boot3_INITIALISE_Output()
 	{
 		std::cout << "entered stat_STRUCT_boot3_INITIALISE_Output()" << std::endl;
 		_stat_STRUCT_Output = new struct CLIBOpenEpiCentre::Output();
-		while (stat_STRUCT_get_Output() == NULL) {}
+		while (stat_STRUCT_get_Output() == nullptr) {}
 		std::cout << "exiting stat_STRUCT_boot3_INITIALISE_Output()" << std::endl;
 	}
 	CLIBOpenEpiCentre::Concurrent* CLIBOpenEpiCentre::Framework_Server::stat_STRUCT_get_Concurrent()

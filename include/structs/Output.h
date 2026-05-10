@@ -1,4 +1,4 @@
-
+#pragma once
 namespace CLIBOpenEpiCentre
 {
     struct Output
@@ -19,11 +19,11 @@ namespace CLIBOpenEpiCentre
         void dyn_REG_set_ptr_Item_Of_ptr_Outputs_Subset(class Output_praise2* objOutputSubset);
         void dyn_REG_set_ptr_Item_Of_ptr_Outputs_Subset(class Output_praise3* objOutputSubset);
         static void stat_app_thread_Concurrency(class Framework_Server* obj, uint8_t Output_threadID);
-        static void stat_CLASS_boot0_DECLAIRE_Output();
+        static void stat_CLASS_boot0_DECLARE_Output();
         static void stat_CLASS_boot1_DEFINE_Output();
         static void stat_CLASS_boot3_INITIALISE_Output();
         static void stat_CLASS_boot4_INSTANTIATE_Output();
-        static void stat_REG_boot0_DECLAIRE_Output();
+        static void stat_REG_boot0_DECLARE_Output();
     private:
         static class Output_Control* stat_CLASS_ptr_Output_Control;
         static uint8_t* _REG_ptr_Output_praiseEventId;

@@ -1,4 +1,4 @@
-
+#pragma once
 namespace CLIBOpenEpiCentre
 {
 	struct Algorithm_praise3
@@ -9,11 +9,11 @@ namespace CLIBOpenEpiCentre
 		void dyn_REG_boot2_SUBSTANTIATE_Algorithm_praise3(class Framework_Server* obj);
 		void dyn_REG_boot3_INITIALISE_Algorithm_praise3(class Framework_Server* obj);
 		void dyn_REG_boot4_INSTANTIATE_Algorithm_praise3(class Framework_Server* obj);
-		static void stat_CLASS_boot0_DECLAIRE_Algorithm_praise3();
+		static void stat_CLASS_boot0_DECLARE_Algorithm_praise3();
 		static void stat_CLASS_boot1_DEFINE_Algorithm_praise3();
 		static void stat_CLASS_boot3_INITIALISE_Algorithm_praise3();
 		static void stat_CLASS_boot4_INSTANTIATE_Algorithm_praise3();
-		static void stat_REG_boot0_DECLAIRE_Algorithm_praise3();
+		static void stat_REG_boot0_DECLARE_Algorithm_praise3();
 	private:
 
 	};

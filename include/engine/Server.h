@@ -1,4 +1,4 @@
-
+#pragma once
 namespace CLIBOpenEpiCentre
 {
     class Server
@@ -14,11 +14,11 @@ namespace CLIBOpenEpiCentre
         void dyn_REG_boot2_SUBSTANTIATE_Server(class Framework_Server* obj);
         void dyn_REG_boot3_INITIALISE_Server(class Framework_Server* obj);
         void dyn_REG_boot4_INSTANTIATE_Server(class Framework_Server* obj);
-        static void stat_CLASS_boot0_DECLAIRE_Server();
+        static void stat_CLASS_boot0_DECLARE_Server();
         static void stat_CLASS_boot1_DEFINE_Server();
         static void stat_CLASS_boot3_INITIALISE_Server();
         static void stat_CLASS_boot4_INSTANTIATE_Server();
-        static void stat_REG_boot0_DECLAIRE_Server();
+        static void stat_REG_boot0_DECLARE_Server();
     private:
         static class Algorithms* _stat_CLASS_ptr_Algorithms;
         static class Data* _stat_CLASS_ptr_Data;
@@ -31,7 +31,7 @@ namespace CLIBOpenEpiCentre
         static void stat_CLASS_boot3_INITIALISE_Algorithms();
         static void stat_CLASS_boot3_INITIALISE_Data();
         static void stat_CLASS_boot3_INITIALISE_Execute();
-        static void stat_CLASSS_boot3_INITIALISE_Global();
+        static void stat_CLASS_boot3_INITIALISE_Global();
         static class Algorithms* stat_CLASS_get_ptr_Algorithms();
         static class Data* stat_CLASS_get_ptr_Data();
         static class Execute* stat_CLASS_get_ptr_Execute();

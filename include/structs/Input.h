@@ -1,4 +1,4 @@
-
+#pragma once
 namespace CLIBOpenEpiCentre
 {
     struct Input
@@ -19,11 +19,11 @@ namespace CLIBOpenEpiCentre
         void dyn_REG_set_ptr_Item_Of_ptr_Inputs_Subset(class Input_praise2* objInputSubset);
         void dyn_REG_set_ptr_Item_Of_ptr_Inputs_Subset(class Input_praise3* objInputSubset);
         static void stat_app_thread_Concurrency(class Framework_Server* obj, uint8_t Input_threadID);
-        static void stat_CLASS_boot0_DECLAIRE_Input();
+        static void stat_CLASS_boot0_DECLARE_Input();
         static void stat_CLASS_boot1_DEFINE_Input();
         static void stat_CLASS_boot3_INITIALISE_Input();
         static void stat_CLASS_boot4_INSTANTIATE_Input();
-        static void stat_REG_boot0_DECLAIRE_Input();
+        static void stat_REG_boot0_DECLARE_Input();
     private:
         static class Input_Control* stat_CLASS_ptr_Input_Control;
         static uint8_t* _REG_ptr_Input_praiseEventId;
