@@ -1,4 +1,3 @@
-
 #include "engine/Global.h"
 #include <cstdint>
 #include <cstring>
@@ -95,47 +94,53 @@ enum Axis
 
         std::cout << "exiting stat_REG_boot0_DECLARE_Global()" << std::endl;
     }
-    int stat_CONVERT_Bool_To_Int(bool value)
+    int CLIBOpenEpiCentre::Global::stat_CONVERT_Bool_To_Int(bool value)
     {
-        switch(value) {
-            case true:
-                return static_cast<int>(1);
-                break;
-
-            case false:
-                return static_cast<int>(0);
-                break;
+        int* temp = nullptr;
+        *temp = 2;
+        if (value) {
+            *temp = 1;;
         }
+        if (!value) {
+            *temp = 0;
+        }
+        return *temp;
+        delete temp;
     }
-    unsigned char* stat_CONVERT_MsbBoolean_To_MsbByteArray(bool value)
+
+    unsigned char* CLIBOpenEpiCentre::Global::stat_CONVERT_MsbBoolean_To_MsbByteArray(bool value)
     {
         return 0;
     }
-    bool stat_CONVERT_MsbByteArray_To_MsbBoolean(unsigned char* byteArray)
+    bool CLIBOpenEpiCentre::Global::stat_CONVERT_MsbByteArray_To_MsbBoolean(unsigned char* byteArray)
     {
         return 0;
     }
-    double stat_CONVERT_MsbByteArray_To_MsbDouble(unsigned char* byteArray)
+    double CLIBOpenEpiCentre::Global::stat_CONVERT_MsbByteArray_To_MsbDouble(unsigned char* byteArray)
     {
         return 0;
     }
-    float stat_CONVERT_MsbByteArray_To_MsbFloat(unsigned char* byteArray)
+    float CLIBOpenEpiCentre::Global::stat_CONVERT_MsbByteArray_To_MsbFloat(unsigned char* byteArray)
     {
         return 0;
     }
-    uint8_t stat_CONVERT_MsbByteArray_To_MsbInt(unsigned char* byteArray)
+    uint8_t CLIBOpenEpiCentre::Global::stat_CONVERT_MsbByteArray_To_Msbuint8_t(unsigned char* byteArray)
     {
         return 0;
     }
-    unsigned char* stat_CONVERT_MsbInt_To_MsbByteArray(uint8_t value)
+    unsigned char* CLIBOpenEpiCentre::Global::stat_CONVERT_MsbInt_To_MsbByteArray(uint8_t value)
     {
         return 0;
     }
-    unsigned char* stat_CONVERT_MsbFloat_To_MsbByteArray(float value)
+    unsigned char* CLIBOpenEpiCentre::Global::stat_CONVERT_MsbFloat_To_MsbByteArray(float value)
     {
         return 0;
     }
-    unsigned char* stat_CONVERT_MsbDouble_To_MsbByteArray(double value)
+    unsigned char* CLIBOpenEpiCentre::Global::stat_CONVERT_MsbDouble_To_MsbByteArray(double value)
+    {
+        return 0;
+    }
+    unsigned char* CLIBOpenEpiCentre::Global::stat_CONVERT_uint8_t_to_ByteArray(uint8_t value)
     {
         return 0;
     }

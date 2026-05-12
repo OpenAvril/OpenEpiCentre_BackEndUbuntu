@@ -99,7 +99,8 @@
     std::advance(temp, Global::stat_CONVERT_Bool_To_Int(!obj->dyn_CLASS_get_ptr_Server()->dyn_CLASS_get_ptr_Data()->dyn_CLASS_get_ptr_Data_Control()->dyn_REG_get_Item_side_To_Write_For_array_Of_doubleBuffer_Output()));
     return *temp;
     }
-    CLIBOpenEpiCentre::Output* CLIBOpenEpiCentre::Data::dyn_REG_get_ptr_Item_array_Of_doubleBuffer_Output_WRITE(Framework_Server* obj)
+
+uint8_t CLIBOpenEpiCentre::Data::dyn_REG_get_ptr_Item_array_Of_doubleBuffer_Output_WRITE(Framework_Server *obj)
     {
     auto temp = stat_get_REG_ptr_array_Of_doubleBuffer_Output()->begin();
     std::advance(temp, Global::stat_CONVERT_Bool_To_Int(obj->dyn_CLASS_get_ptr_Server()->dyn_CLASS_get_ptr_Data()->dyn_CLASS_get_ptr_Data_Control()->dyn_REG_get_Item_side_To_Write_For_array_Of_doubleBuffer_Output()));

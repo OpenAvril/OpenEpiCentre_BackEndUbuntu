@@ -2,6 +2,8 @@
 #include <cstdint>
 #include <vector>
 
+#include "Framework_Server.h"
+
 namespace CLIBOpenEpiCentre
 {
     class Data
@@ -18,7 +20,8 @@ namespace CLIBOpenEpiCentre
         Input* dyn_REG_get_ptr_Item_array_Of_doubleBuffer_Input_READ(Framework_Server* obj);
         Input* dyn_REG_get_ptr_Item_array_Of_doubleBuffer_Input_WRITE(Framework_Server* obj);
         Output* dyn_REG_get_ptr_Item_array_Of_doubleBuffer_Output_READ(Framework_Server* obj);
-        Output* dyn_REG_get_ptr_Item_array_Of_doubleBuffer_Output_WRITE(Framework_Server* obj);
+
+        uint8_t dyn_REG_get_ptr_Item_array_Of_doubleBuffer_Output_WRITE(Framework_Server *obj);
         Input* dyn_REG_get_ptr_Item_Of_list_Of_ptr_array_Of_buffer_Input_ReferenceForThread(uint8_t concurrentThreadID);
         Output* dyn_REG_get_ptr_Item_Of_list_Of_ptr_array_Of_buffer_Output_ReferenceForThread(uint8_t concurrentThreadID);
         Input* dyn_REG_get_ptr_Item_On_vector_Of_stack_Of_InputPraise(uint8_t slot);

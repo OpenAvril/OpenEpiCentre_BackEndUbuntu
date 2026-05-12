@@ -36,13 +36,13 @@
 		delete _stat_STRUCT_Output;
 		delete _stat_CLASS_ptr_Global;
 	}
-	void dyn_CLASS_Create_Architecture()
+	void CLIBOpenEpiCentre::Framework_Server::dyn_CLASS_create_Architecture()
 	{
 		stat_CLASS_boot1_DEFINE_Framework_Server();
 		stat_CLASS_boot3_INITIALISE_Framework_Server();
 		stat_REG_boot0_DECLARE_Framework_Server();
 	}
-	void dyn_CLASS_create_Global_and_Settings()
+	void CLIBOpenEpiCentre::Framework_Server::dyn_CLASS_create_Global_and_Settings()
 	{
 		stat_CLASS_boot1_DEFINE_Global();
 		stat_CLASS_boot3_INITIALISE_Global();

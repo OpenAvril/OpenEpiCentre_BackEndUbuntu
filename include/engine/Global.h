@@ -19,15 +19,15 @@ namespace CLIBOpenEpiCentre
         static void stat_CLASS_boot4_INSTANTIATE_Global();
         static void stat_REG_boot0_DECLARE_Global();
         static int stat_CONVERT_Bool_To_Int(bool value);
-        unsigned char* stat_CONVERT_MsbBoolean_To_MsbByteArray(bool value);
-        bool stat_CONVERT_MsbByteArray_To_MsbBoolean(unsigned char* byteArray);
-        double stat_CONVERT_MsbByteArray_To_MsbDouble(unsigned char* byteArray);
-        float stat_CONVERT_MsbByteArray_To_MsbFloat(unsigned char* byteArray);
-        uint8_t stat_CONVERT_MsbByteArray_To_MsbInt(unsigned char* byteArray);
-        unsigned char* stat_CONVERT_MsbInt_To_MsbByteArray(uint8_t value);
-        unsigned char* stat_CONVERT_MsbFloat_To_MsbByteArray(float value);
-        unsigned char* stat_CONVERT_MsbDouble_To_MsbByteArray(double value);
-
+        static unsigned char* stat_CONVERT_MsbBoolean_To_MsbByteArray(bool value);
+        static bool stat_CONVERT_MsbByteArray_To_MsbBoolean(unsigned char* byteArray);
+        static double stat_CONVERT_MsbByteArray_To_MsbDouble(unsigned char* byteArray);
+        static float stat_CONVERT_MsbByteArray_To_MsbFloat(unsigned char* byteArray);
+        static uint8_t stat_CONVERT_MsbByteArray_To_Msbuint8_t(unsigned char* byteArray);
+        static unsigned char* stat_CONVERT_MsbInt_To_MsbByteArray(uint8_t value);
+        static unsigned char* stat_CONVERT_MsbFloat_To_MsbByteArray(float value);
+        static unsigned char* stat_CONVERT_MsbDouble_To_MsbByteArray(double value);
+        static unsigned char* stat_CONVERT_uint8_t_to_ByteArray(uint8_t value);
 
 
     private:
