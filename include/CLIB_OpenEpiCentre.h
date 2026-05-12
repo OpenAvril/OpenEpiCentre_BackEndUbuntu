@@ -1,10 +1,10 @@
-#ifndef CLIBOpenEpiCentre_CLIBCLIBConcurrentServerIO_H
-#define CLIBOpenEpiCentre_CLIBCLIBConcurrentServerIO_H
+#ifndef CLIBOpenEpiCentre_CLIBConcurrentServerIO_H
+#define CLIBOpenEpiCentre_CLIBConcurrentServerIO_H
 extern "C"
 {
 	namespace CLIBOpenEpiCentre
 	{
-		class CLIBCLIBConcurrentServerIO
+		class CLIBConcurrentServerIO
 		{
 		public:
 			static void app_FUNCT_flip_Input_DoubleBuffer();

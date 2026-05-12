@@ -47,11 +47,30 @@ add_library(CLIB_OpenEpiCentre SHARED
         include/CLIB_WriteQueForThreadsAt_SERVERINPUTRECIEVE/WriteEnableForThreadsAt_SERVERINPUTRECEIVE_Global.h
         include/CLIB_WriteQueForThreadsAt_SERVERINPUTRECIEVE/WriteEnableForThreadsAt_SERVERINPUTRECEIVE.h
         include/CLIB_WriteQueForThreadsAt_SERVERINPUTRECIEVE/WriteEnableForThreadsAt_SERVERINPUTRECEIVE_Control.h
-
+        include/CLIB_WriteQueForThreadsAt_SERVEROUTPUTSEND/CLIB_WriteEnableForThreadsAt_SERVEROUTPUTSEND.h
+        include/CLIB_WriteQueForThreadsAt_SERVEROUTPUTSEND/WriteEnableForThreadsAt_SERVEROUTPUTSEND_Framework.h
+        include/CLIB_WriteQueForThreadsAt_SERVEROUTPUTSEND/WriteEnableForThreadsAt_SERVEROUTPUTSEND_Global.h
+        include/CLIB_WriteQueForThreadsAt_SERVEROUTPUTSEND/WriteEnableForThreadsAt_SERVEROUTPUTSEND.h
+        include/CLIB_WriteQueForThreadsAt_SERVEROUTPUTSEND/WriteEnableForThreadsAt_SERVEROUTPUTSEND_Control.h
+        include/CLIB_LaunchEnableForConcurrentThreadsAt_SERVER/CLIB_LaunchEnableForConcurrentThreadsAt_SERVER.h
+        include/CLIB_LaunchEnableForConcurrentThreadsAt_SERVER/LaunchEnableForConcurrentThreadsAt_SERVER_Framework.h
+        include/CLIB_LaunchEnableForConcurrentThreadsAt_SERVER/LaunchEnableForConcurrentThreadsAt_SERVER_Global.h
+        include/CLIB_LaunchEnableForConcurrentThreadsAt_SERVER/LaunchEnableForConcurrentThreadsAt_SERVER.h
+        include/CLIB_LaunchEnableForConcurrentThreadsAt_SERVER/LaunchEnableForConcurrentThreadsAt_SERVER_Control.h
 )
 target_include_directories(CLIB_OpenEpiCentre PUBLIC include)
 
-# Define include directories for public headers
-target_link_libraries(CLIB_OpenEpiCentre PRIVATE CLIB_WriteEnableForThreadsAt_SERVERINPUTRECEIVE)
-target_link_libraries(CLIB_OpenEpiCentre PRIVATE CLIB_WriteEnableForThreadsAt_SERVEROUTPUTSEND)
+add_library(CLIB_WriteQueForThreadsAt_SERVERINPUTRECIEVE SHARED IMPORTED)
+set_property(TARGET CLIB_WriteQueForThreadsAt_SERVERINPUTRECIEVE PROPERTY
+        IMPORTED_LOCATION "CLIB_WriteQueForThreadsAt_SERVERINPUTRECIEVE.so")
+target_link_libraries(CLIB_OpenEpiCentre PRIVATE CLIB_WriteQueForThreadsAt_SERVERINPUTRECIEVE)
+
+add_library(CLIB_WriteQueForThreadsAt_SERVEROUTPUTSEND SHARED IMPORTED)
+set_property(TARGET CLIB_WriteQueForThreadsAt_SERVEROUTPUTSEND PROPERTY
+        IMPORTED_LOCATION "CLIB_WriteQueForThreadsAt_SERVEROUTPUTSEND.so")
+target_link_libraries(CLIB_OpenEpiCentre PRIVATE CLIB_WriteQueForThreadsAt_SERVEROUTPUTSEND)
+
+add_library(CLIB_LaunchEnableForConcurrentThreadsAt_SERVER SHARED IMPORTED)
+set_property(TARGET CLIB_LaunchEnableForConcurrentThreadsAt_SERVER PROPERTY
+        IMPORTED_LOCATION "CLIB_LaunchEnableForConcurrentThreadsAt_SERVER.so")
 target_link_libraries(CLIB_OpenEpiCentre PRIVATE CLIB_LaunchEnableForConcurrentThreadsAt_SERVER)
