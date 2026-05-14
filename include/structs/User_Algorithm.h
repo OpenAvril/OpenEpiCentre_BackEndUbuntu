@@ -1,9 +1,8 @@
 #pragma once
-#include "structs/praise_sets/Algorithm_praise0.h"
-#include "structs/praise_sets/Algorithm_praise1.h"
-#include "structs/praise_sets/Algorithm_praise2.h"
-#include "structs/praise_sets/Algorithm_praise3.h"
-#include <cstdint>
+#include "praise_sets/Algorithm_praise0.h"
+#include "praise_sets/Algorithm_praise1.h"
+#include "praise_sets/Algorithm_praise2.h"
+#include "praise_sets/Algorithm_praise3.h"
 namespace CLIBOpenEpiCentre
 {
 	struct User_Algorithm

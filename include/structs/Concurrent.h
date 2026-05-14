@@ -4,7 +4,7 @@ namespace CLIBOpenEpiCentre
     struct Concurrent
     {
     public:
-        void app_do_ConcurrentAlgorithm_For_PraiseEventId(Framework_Server obj, uint8_t playerId, uint8_t praiseEventId, class Object* ptr_Input_Subset, class Object* ptr_Output_Subset);
+        void app_do_Concurrent_Algorithm_For_PraiseEventId(Framework_Server obj, uint8_t playerId, uint8_t praiseEventId, class Object* ptr_Input_Subset, class Object* ptr_Output_Subset);
         void dyn_REG_boot1_DEFINE_Concurrent();
         void dyn_REG_boot2_SUBSTANTIATE_Concurrent();
         void dyn_REG_boot3_INITIALISE_Concurrent(Framework_Server* obj);

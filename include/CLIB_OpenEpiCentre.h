@@ -15,7 +15,7 @@ extern "C"
 			static void app_FUNCT_pop_From_Stack_Of_Output();
 			static void app_FUNCT_push_To_STACK_Of_Input();
 			static void* dyn_PGM_get_program_WriteEnableStack_ServerInputReveive();
-			static void* dyn_PGM_get_program_WriteEnableStack_ServerOutputReceive();
+			static void* dyn_PGM_get_program_WriteEnableStack_SERVEROUTPUTSEND();
 			static unsigned char* dyn_REG_get_flag_isStackLoaded_Server_InputSend();
 			static unsigned char* dyn_REG_get_flag_isStackLoaded_Server_OutputSend();
 			static unsigned char* dyn_REG_get_flag_IsInitialised_CLIBOpenEpiCentre();

@@ -12,8 +12,8 @@
     CLIBOpenEpiCentre::Execute_Control* CLIBOpenEpiCentre::Execute::_stat_CLASS_ptr_Execute_Control;
     std::list<std::thread*>* CLIBOpenEpiCentre::Execute::_stat_REG_List_Of_Threads;
     void* CLIBOpenEpiCentre::Execute::_stat_PGM_ConcurrentQue_Server;
-    void* CLIBOpenEpiCentre::Execute::_stat_PGM_WriteEnable_ServerInputAction;
-    void* CLIBOpenEpiCentre::Execute::_stat_PGM_WriteEnable_ServerOutputReceive;
+    void* CLIBOpenEpiCentre::Execute::_stat_PGM_WriteEnable_SERVERINPUTRECEIVE;
+    void* CLIBOpenEpiCentre::Execute::_stat_PGM_WriteEnable_SERVEROUTPUTSEND;
 // public.
     CLIBOpenEpiCentre::Execute::Execute()
     {
@@ -61,13 +61,13 @@
     {
         return stat_PGM_get_ptr_ConcurrentQue_Server();
     }
-    void* CLIBOpenEpiCentre::Execute::dyn_PGM_get_WriteEnable_ServerInputAction()
+    void* CLIBOpenEpiCentre::Execute::dyn_PGM_get_WriteEnable_SERVERINPUTRECEIVE()
     {
-        return stat_PGM_get_ptr_WriteEnable_ServerInputAction();
+        return stat_PGM_get_ptr_WriteEnable_SERVERINPUTRECEIVE();
     }
-    void* CLIBOpenEpiCentre::Execute::dyn_PGM_get_WriteEnable_ServerOutputReceive()
+    void* CLIBOpenEpiCentre::Execute::dyn_PGM_get_WriteEnable_SERVEROUTPUTSEND()
     {
-        return stat_PGM_get_ptr_WriteEnable_ServerOutputReceive();
+        return stat_PGM_get_ptr_WriteEnable_SERVEROUTPUTSEND();
     }
     void CLIBOpenEpiCentre::Execute::stat_CLASS_boot0_DECLARE_Execute()
     {
@@ -80,8 +80,8 @@
         std::cout << "entered stat_CLASS_boot1_DEFINE_Execute()" << std::endl;
         stat_CLASS_boot1_DEFINE_Execute_Control();
         stat_PGM_boot1_DEFINE_ConcurrentQue_Server();
-        stat_PGM_boot1_DEFINE_ServerInputAction();
-        stat_PGM_boot1_DEFINE_ServerOutputReceive();
+        stat_PGM_boot1_DEFINE_SERVERINPUTRECEIVE();
+        stat_PGM_boot1_DEFINE_SERVEROUTPUTSEND();
         std::cout << "exiting stat_CLASS_boot1_DEFINE_Execute()" << std::endl;
     }
     void CLIBOpenEpiCentre::Execute::stat_CLASS_boot3_INITIALISE_Execute()
@@ -182,13 +182,13 @@
     {
         _stat_PGM_ConcurrentQue_Server = nullptr;
     }
-    void CLIBOpenEpiCentre::Execute::stat_PGM_boot1_DEFINE_ServerInputAction()
+    void CLIBOpenEpiCentre::Execute::stat_PGM_boot1_DEFINE_SERVERINPUTRECEIVE()
     {
-        _stat_PGM_WriteEnable_ServerInputAction = nullptr;
+        _stat_PGM_WriteEnable_SERVERINPUTRECEIVE = nullptr;
     }
-    void CLIBOpenEpiCentre::Execute::stat_PGM_boot1_DEFINE_ServerOutputReceive()
+    void CLIBOpenEpiCentre::Execute::stat_PGM_boot1_DEFINE_SERVEROUTPUTSEND()
     {
-        _stat_PGM_WriteEnable_ServerOutputReceive = nullptr;
+        _stat_PGM_WriteEnable_SERVEROUTPUTSEND = nullptr;
     }
     void CLIBOpenEpiCentre::Execute::stat_PGM_boot3_INITIALISE_ConcurrentQue_Server()
     {
@@ -197,23 +197,23 @@
     }
     void CLIBOpenEpiCentre::Execute::stat_PGM_boot3_INITIALISE_SERVERINPUTRECEIVE()
     {
-        _stat_PGM_WriteEnable_ServerInputAction = CLIBWriteQueAtSERVERINPUTRECEIVE::CLIB_WriteEnableForThreadsAt_SERVERINPUTRECEIVE::app_FUNCT_generate_Program();
-        while (stat_PGM_get_ptr_WriteEnable_ServerInputAction() == nullptr) {}
+        _stat_PGM_WriteEnable_SERVERINPUTRECEIVE = CLIBWriteQueAtSERVERINPUTRECEIVE::CLIB_WriteEnableForThreadsAt_SERVERINPUTRECEIVE::app_FUNCT_generate_Program();
+        while (stat_PGM_get_ptr_WriteEnable_SERVERINPUTRECEIVE() == nullptr) {}
     }
     void CLIBOpenEpiCentre::Execute::stat_PGM_boot3_INITIALISE_SERVEROUTPUTSEND()
     {
-        _stat_PGM_WriteEnable_ServerOutputReceive = CLIBWriteQueAtSERVEROUTPUTSEND::CLIB_WriteEnableForThreadsAt_SERVEROUTPUTSEND::app_FUNCT_generate_Program();
-        while (stat_PGM_get_ptr_WriteEnable_ServerOutputReceive() == nullptr) {}
+        _stat_PGM_WriteEnable_SERVEROUTPUTSEND = CLIBWriteQueAtSERVEROUTPUTSEND::CLIB_WriteEnableForThreadsAt_SERVEROUTPUTSEND::app_FUNCT_generate_Program();
+        while (stat_PGM_get_ptr_WriteEnable_SERVEROUTPUTSEND() == nullptr) {}
     }
     void* CLIBOpenEpiCentre::Execute::stat_PGM_get_ptr_ConcurrentQue_Server()
     {
         return _stat_PGM_ConcurrentQue_Server;
     }
-    void* CLIBOpenEpiCentre::Execute::stat_PGM_get_ptr_WriteEnable_ServerInputAction()
+    void* CLIBOpenEpiCentre::Execute::stat_PGM_get_ptr_WriteEnable_SERVERINPUTRECEIVE()
     {
-        return _stat_PGM_WriteEnable_ServerInputAction;
+        return _stat_PGM_WriteEnable_SERVERINPUTRECEIVE;
     }
-    void* CLIBOpenEpiCentre::Execute::stat_PGM_get_ptr_WriteEnable_ServerOutputReceive()
+    void* CLIBOpenEpiCentre::Execute::stat_PGM_get_ptr_WriteEnable_SERVEROUTPUTSEND()
     {
-        return _stat_PGM_WriteEnable_ServerOutputReceive;
+        return _stat_PGM_WriteEnable_SERVEROUTPUTSEND;
     }
