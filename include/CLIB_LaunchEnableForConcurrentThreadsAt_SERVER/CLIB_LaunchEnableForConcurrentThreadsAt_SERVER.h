@@ -11,7 +11,7 @@ extern "C"
             static unsigned char* app_FUNCT_get_flag_isPGM_INSTANTIATED();
             static void app_FUNCT_request_Wait_launch(unsigned char* bytes);
             static void app_FUNCT_terminate_Progaram();
-            static void app_FUNCT_thread_End(unsigned char* bytes);
+            static void app_FUNCT_thread_SERVER(unsigned char* bytes);
             static unsigned char* app_REG_get_coreId_To_launch();
             static unsigned char* app_REG_get_Flag_Active();
             static unsigned char* app_REG_get_Flag_ConcurrentCoreState(unsigned char* bytes);

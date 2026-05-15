@@ -20,10 +20,10 @@ namespace CLIBOpenEpiCentre
         static void stat_REG_boot0_DECLARE_Global();
         static int stat_CONVERT_Bool_To_Int(bool value);
         static unsigned char* stat_CONVERT_MsbBoolean_To_MsbByteArray(bool value);
-        static bool stat_CONVERT_MsbByteArray_To_MsbBoolean(unsigned char* byteArray);
-        static double stat_CONVERT_MsbByteArray_To_MsbDouble(unsigned char* byteArray);
-        static float stat_CONVERT_MsbByteArray_To_MsbFloat(unsigned char* byteArray);
-        static uint8_t stat_CONVERT_MsbByteArray_To_Msbuint8_t(unsigned char* byteArray);
+        static bool stat_CONVERT_MsbByteArray_To_MsbBoolean(const unsigned char* byteArray);
+        static double stat_CONVERT_MsbByteArray_To_MsbDouble(const unsigned char* byteArray);
+        static float stat_CONVERT_MsbByteArray_To_MsbFloat(const unsigned char* byteArray);
+        static uint8_t stat_CONVERT_MsbByteArray_To_Msbuint8_t(const unsigned char* byteArray);
         static unsigned char* stat_CONVERT_MsbInt_To_MsbByteArray(uint8_t value);
         static unsigned char* stat_CONVERT_MsbFloat_To_MsbByteArray(float value);
         static unsigned char* stat_CONVERT_MsbDouble_To_MsbByteArray(double value);

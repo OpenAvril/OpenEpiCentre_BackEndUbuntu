@@ -105,44 +105,54 @@ enum Axis
             *temp = 0;
         }
         return *temp;
-        delete temp;
     }
-
     unsigned char* CLIBOpenEpiCentre::Global::stat_CONVERT_MsbBoolean_To_MsbByteArray(bool value)
     {
-        return 0;
+        unsigned char* buffer;
+        for (uint8_t bitIndex = 0; bitIndex < sizeof(unsigned char); bitIndex++) {
+            buffer[bitIndex] = static_cast<unsigned char>(value);
+        }
+        return buffer;
     }
-    bool CLIBOpenEpiCentre::Global::stat_CONVERT_MsbByteArray_To_MsbBoolean(unsigned char* byteArray)
+    bool CLIBOpenEpiCentre::Global::stat_CONVERT_MsbByteArray_To_MsbBoolean(const unsigned char* byteArray)
     {
-        return 0;
+        return (byteArray[7] & 1) != 0;
     }
-    double CLIBOpenEpiCentre::Global::stat_CONVERT_MsbByteArray_To_MsbDouble(unsigned char* byteArray)
+    double CLIBOpenEpiCentre::Global::stat_CONVERT_MsbByteArray_To_MsbDouble(const unsigned char* byteArray)
     {
-        return 0;
+        double temp;
+        std::memcpy(&temp, byteArray, sizeof(double));
+        return temp;
     }
-    float CLIBOpenEpiCentre::Global::stat_CONVERT_MsbByteArray_To_MsbFloat(unsigned char* byteArray)
+    float CLIBOpenEpiCentre::Global::stat_CONVERT_MsbByteArray_To_MsbFloat(const unsigned char* byteArray)
     {
-        return 0;
+        double temp;
+        std::memcpy(&temp, byteArray, sizeof(float));
+        return temp;
     }
-    uint8_t CLIBOpenEpiCentre::Global::stat_CONVERT_MsbByteArray_To_Msbuint8_t(unsigned char* byteArray)
+    uint8_t CLIBOpenEpiCentre::Global::stat_CONVERT_MsbByteArray_To_Msbuint8_t(const unsigned char* byteArray)
     {
-        return 0;
-    }
-    unsigned char* CLIBOpenEpiCentre::Global::stat_CONVERT_MsbInt_To_MsbByteArray(uint8_t value)
-    {
-        return 0;
+        double temp;
+        std::memcpy(&temp, byteArray, sizeof(uint8_t));
+        return temp;
     }
     unsigned char* CLIBOpenEpiCentre::Global::stat_CONVERT_MsbFloat_To_MsbByteArray(float value)
     {
-        return 0;
+        unsigned char* buffer;
+        std::memcpy(buffer, &value, sizeof(float));
+        return buffer;
     }
     unsigned char* CLIBOpenEpiCentre::Global::stat_CONVERT_MsbDouble_To_MsbByteArray(double value)
     {
-        return 0;
+        unsigned char* buffer;
+        std::memcpy(buffer, &value, sizeof(double));
+        return buffer;
     }
     unsigned char* CLIBOpenEpiCentre::Global::stat_CONVERT_uint8_t_to_ByteArray(uint8_t value)
     {
-        return 0;
+        unsigned char* buffer;
+        std::memcpy(buffer, &value, sizeof(uint8_t));
+        return buffer;
     }
 // private.
     void CLIBOpenEpiCentre::Global::stat_REG_boot1_DEFINE_number_Of_Implemented_Cores()
