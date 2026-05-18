@@ -56,31 +56,25 @@ add_library(CLIB_OpenEpiCentre SHARED
         include/CLIB_LaunchEnableForConcurrentThreadsAt_SERVER/LaunchEnableForConcurrentThreadsAt_SERVER.h
         include/CLIB_LaunchEnableForConcurrentThreadsAt_SERVER/LaunchEnableForConcurrentThreadsAt_SERVER_Control.h
 )
-find_library(CLIB_WriteEnableForThreadsAt_SERVERINPUTRECEIVE_LIB_PATH
+find_library(${CMAKE_CURRENT_SOURCE_DIR}/libs/CLIB_WriteEnableForThreadsAt_SERVERINPUTRECEIVE
         NAMES CLIB_WriteEnableForThreadsAt_SERVERINPUTRECEIVE
-        PATHS ${CMAKE_CURRENT_SOURCE_DIR}/libs/CLIB_WriteEnableForThreadsAt_SERVERINPUTRECEIVE
-        NO_DEFAULT_PATH
 )
 target_link_libraries(CLIB_OpenEpiCentre PRIVATE
-        ${CLIB_WriteEnableForThreadsAt_SERVERINPUTRECEIVE_LIB_PATH}
+        ${CMAKE_CURRENT_SOURCE_DIR}/libs/CLIB_WriteEnableForThreadsAt_SERVERINPUTRECEIVE
 )
 
-find_library(CLIB_WriteEnableForThreadsAt_SERVEROUTPUTSEND_LIB_PATH
+find_library(${CMAKE_CURRENT_SOURCE_DIR}/libs/CLIB_WriteEnableForThreadsAt_SERVEROUTPUTSEND
         NAMES CLIB_WriteEnableForThreadsAt_SERVEROUTPUTSEND          # Name without 'libs' or '.so'
-        PATHS ${CMAKE_CURRENT_SOURCE_DIR}/libs/CLIB_WriteEnableForThreadsAt_SERVEROUTPUTSEND
-        NO_DEFAULT_PATH
 )
 target_link_libraries(CLIB_OpenEpiCentre PRIVATE
-        ${CLIB_WriteEnableForThreadsAt_SERVEROUTPUTSEND_LIB_PATH}
+        ${CMAKE_CURRENT_SOURCE_DIR}/libs/CLIB_WriteEnableForThreadsAt_SERVEROUTPUTSEND
 )
 
-find_library(CLIB_LaunchEnableForConcurrentThreadsAt_SERVER_LIB_PATH
+find_library(${CMAKE_CURRENT_SOURCE_DIR}/libs/CLIB_LaunchEnableForConcurrentThreadsAt_SERVER
         NAMES CLIB_LaunchEnableForConcurrentThreadsAt_SERVER          # Name without 'libs' or '.so'
-        PATHS ${CMAKE_CURRENT_SOURCE_DIR}/libs/CLIB_LaunchEnableForConcurrentThreadsAt_SERVER
-        NO_DEFAULT_PATH
 )
 target_link_libraries(CLIB_OpenEpiCentre PRIVATE
-        ${CLIB_LaunchEnableForConcurrentThreadsAt_SERVER_LIB_PATH}
+        ${CMAKE_CURRENT_SOURCE_DIR}/libs/CLIB_LaunchEnableForConcurrentThreadsAt_SERVER
 )
 
 set_target_properties(${PROJECT_NAME} PROPERTIES
