@@ -1,0 +1,96 @@
+{
+	"configurations" : 
+	[
+		{
+			"abstractTargets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "CLIB_LaunchQueForThreadsAt_Server::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-CLIB_LaunchQueForThreadsAt_Server-Debug-636d330c8562237f10d4.json",
+					"name" : "CLIB_LaunchQueForThreadsAt_Server",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "CLIB_WriteQueForThreadsAt_ServerInputReceive::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-CLIB_WriteQueForThreadsAt_ServerInputReceive-Debug-c5488ced835b653ee575.json",
+					"name" : "CLIB_WriteQueForThreadsAt_ServerInputReceive",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "CLIB_WriteQueForThreadsAt_ServerOutputSend::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-CLIB_WriteQueForThreadsAt_ServerOutputSend-Debug-0bf90bb5f18f3060c76e.json",
+					"name" : "CLIB_WriteQueForThreadsAt_ServerOutputSend",
+					"projectIndex" : 0
+				}
+			],
+			"directories" : 
+			[
+				{
+					"abstractTargetIndexes" : 
+					[
+						0,
+						1,
+						2
+					],
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-9ad1a58d4644cf6543fa.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "4.2"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"abstractTargetIndexes" : 
+					[
+						0,
+						1,
+						2
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "CLIB_OpenEpiCentre",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "CLIB_OpenEpiCentre::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-CLIB_OpenEpiCentre-Debug-ddda77242ffb764c6c78.json",
+					"name" : "CLIB_OpenEpiCentre",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/cmake-build-debug",
+		"source" : "/home/brentonjames/CLionProjects/CLIB_OpenEpiCentre"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 9
+	}
+}

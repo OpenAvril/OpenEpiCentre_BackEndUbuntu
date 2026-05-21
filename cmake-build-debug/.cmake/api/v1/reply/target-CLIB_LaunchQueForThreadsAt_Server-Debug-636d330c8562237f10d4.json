@@ -1,0 +1,50 @@
+{
+	"abstract" : true,
+	"artifacts" : 
+	[
+		{
+			"path" : "/home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/libs/CLIB_LaunchQueForThreadsAt_Server.a"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library"
+		],
+		"files" : 
+		[
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 61,
+				"parent" : 0
+			}
+		]
+	},
+	"codemodelVersion" : 
+	{
+		"major" : 2,
+		"minor" : 9
+	},
+	"id" : "CLIB_LaunchQueForThreadsAt_Server::@6890427a1f51a3e7e1df",
+	"imported" : true,
+	"local" : true,
+	"name" : "CLIB_LaunchQueForThreadsAt_Server",
+	"nameOnDisk" : "CLIB_LaunchQueForThreadsAt_Server.a",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sources" : [],
+	"type" : "SHARED_LIBRARY"
+}
