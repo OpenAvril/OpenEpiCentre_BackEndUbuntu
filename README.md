@@ -2,46 +2,48 @@
 
 ---
 ## Branches.
- - CLIBTemplate_OpenEpiCentre_LINUX.
+ - **main.**
    
 ---
 ## Using.
 ### LINUX Ubuntu.
 **version:** Ubuntu 24.04.4 LTS.
 
-### IntelliJ IDEA.
-**Version:** 2026.1.1
+### CLion. 
+**Version:** 2026.1.2.
 
 ---
 ### Dependencies.
-#### - GCC toolchain.
-````
-sudo apt install build-essential gdb -y
-````
-#### - CMake.
-````
-sudo apt install cmake
-````
 #### - snap.
 ````
 sudo apt install snapd
 ````
 
-#### - IntelliJ IDEA.
+#### - GCC toolchain.
 ````
-sudo snap install intellij-idea-ultimate --classic
+sudo apt install build-essential
 ````
-**Plugins - Marketplace.**
- - Native Build Tools.
- - CMake.
- - CLoin C and C++.
+
+#### - CMake.
+````
+sudo apt install cmake
+````
+
+#### - CLion.
+````
+sudo snap install clion --classic
+````
 
 ---
 ## Building - Compiler Terminal Commands.
-### CLIB_OpenEpiCentre.so
+### CLIB_WriteEnableForThreadsAt_STACK.so
 ````
-g++ -fPIC -shared -o ./output/CLIB_OpenEpiCentre.so ./src/CLIB_OpenEpiCentre.cpp
+cmake -B build
 ````
+````
+cmake --build build
+````
+
 
 ---
 ## Implementation.
