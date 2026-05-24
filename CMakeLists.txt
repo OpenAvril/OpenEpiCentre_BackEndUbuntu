@@ -56,20 +56,20 @@ add_library(CLIB_OpenEpiCentre STATIC
         include/CLIB_LaunchQueForThreadsAt_Server/LaunchEnableForConcurrentThreadsAt_Server_Control.h
 )
 
-add_library(CLIB_WriteQueForThreadsAt_ServerInputReceive SHARED IMPORTED)
-add_library(CLIB_WriteQueForThreadsAt_ServerOutputSend SHARED IMPORTED)
-add_library(CLIB_LaunchQueForThreadsAt_Server SHARED IMPORTED)
+add_library(CLIB_WriteQueForThreadsAt_ServerInputReceive STATIC IMPORTED)
+add_library(CLIB_WriteQueForThreadsAt_ServerOutputSend STATIC IMPORTED)
+add_library(CLIB_LaunchQueForThreadsAt_Server STATIC IMPORTED)
 
 set_target_properties(CLIB_WriteQueForThreadsAt_ServerInputReceive PROPERTIES
-        IMPORTED_LOCATION "${CMAKE_CURRENT_SOURCE_DIR}/libs/CLIB_WriteQueForThreadsAt_ServerInputReceive.so"
+        IMPORTED_LOCATION "${CMAKE_CURRENT_SOURCE_DIR}/libs/libCLIB_WriteQueForThreadsAt_ServerInputReceive.a"
         INTERFACE_INCLUDE_DIRECTORIES "${CMAKE_CURRENT_SOURCE_DIR}/include/CLIB_WriteQueForThreadsAt_ServerInputReceive"
 )
 set_target_properties(CLIB_WriteQueForThreadsAt_ServerOutputSend PROPERTIES
-        IMPORTED_LOCATION "${CMAKE_CURRENT_SOURCE_DIR}/libs/CLIB_WriteQueForThreadsAt_ServerOutputSend.so"
+        IMPORTED_LOCATION "${CMAKE_CURRENT_SOURCE_DIR}/libs/libCLIB_WriteQueForThreadsAt_ServerOutputSend.a"
         INTERFACE_INCLUDE_DIRECTORIES "${CMAKE_CURRENT_SOURCE_DIR}/include/CLIB_WriteQueForThreadsAt_ServerOutputSend"
 )
 set_target_properties(CLIB_LaunchQueForThreadsAt_Server PROPERTIES
-        IMPORTED_LOCATION "${CMAKE_CURRENT_SOURCE_DIR}/libs/CLIB_LaunchQueForThreadsAt_Server.a"
+        IMPORTED_LOCATION "${CMAKE_CURRENT_SOURCE_DIR}/libs/libCLIB_LaunchQueForThreadsAt_Server.a"
         INTERFACE_INCLUDE_DIRECTORIES "${CMAKE_CURRENT_SOURCE_DIR}/include/CLIB_LaunchQueForThreadsAt_Server"
 )
 

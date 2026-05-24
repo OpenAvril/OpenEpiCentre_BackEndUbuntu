@@ -23,10 +23,10 @@ extern "C"
             static void stat_boot1_CLASS_DEFINE_LaunchEnableForConcurrentThreadsAt_Server_Framework();
             static void stat_boot3_CLASS_INITIALISE_LaunchEnableForConcurrentThreadsAt_Server_Framework();
             static class LaunchEnableForConcurrentThreadsAt_Server_Framework* stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server_Framework();
-            static void stat_REG_boot1_DEFINE_flag_isMemberFunctionINSTANTIATED();
-            static void stat_REG_boot2_SUBSTANTIATE_flag_isMemberFunctionINSTANTIATED();
-            static void stat_REG_boot3_INITIALISE_flag_isMemberFunctionINSTANTIATED();
-            static bool* stat_REG_get_ptr_flag_isMemberFunctionINSTANTIATED();
+            static void stat_REG_boot1_DEFINE_CLIBLaunchQueAtServer_isFlagINSTANTIATED();
+            static void stat_REG_boot2_SUBSTANTIATE_CLIBLaunchQueAtServer_isFlagINSTANTIATED();
+            static void stat_REG_boot3_INITIALISE_CLIBLaunchQueAtServer_isFlagINSTANTIATED();
+            static bool* stat_REG_get_CLIBLaunchQueAtServer_isFlagINSTANTIATED();
         };
     }
 }

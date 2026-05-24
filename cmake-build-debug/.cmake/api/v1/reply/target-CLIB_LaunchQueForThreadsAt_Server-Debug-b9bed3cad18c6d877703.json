@@ -3,7 +3,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "/home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/libs/CLIB_LaunchQueForThreadsAt_Server.a"
+			"path" : "/home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/libs/libCLIB_LaunchQueForThreadsAt_Server.a"
 		}
 	],
 	"backtrace" : 1,
@@ -39,12 +39,12 @@
 	"imported" : true,
 	"local" : true,
 	"name" : "CLIB_LaunchQueForThreadsAt_Server",
-	"nameOnDisk" : "CLIB_LaunchQueForThreadsAt_Server.a",
+	"nameOnDisk" : "libCLIB_LaunchQueForThreadsAt_Server.a",
 	"paths" : 
 	{
 		"build" : ".",
 		"source" : "."
 	},
 	"sources" : [],
-	"type" : "SHARED_LIBRARY"
+	"type" : "STATIC_LIBRARY"
 }

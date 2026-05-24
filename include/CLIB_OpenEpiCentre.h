@@ -38,10 +38,10 @@ extern "C"
 			static void stat_CLASS_boot1_DEFINE_Framework();
 			static void stat_CLASS_boot3_INITIALISE_Framework();
 			static class Framework_Server* stat_CLASS_get_ptr_Framework_Server();
-			static void stat_REG_boot1_DEFINE_flag_isMemberFunctionINSTANTIATED();
-			static void stat_REG_boot2_SUBSTANTIATE_flag_isMemberFunctionINSTANTIATED();
-			static void stat_REG_boot3_INITIALISE_flag_isMemberFunctionINSTANTIATED();
-			static bool* stat_REG_get_ptr_flag_isMemberFunctionINSTANTIATED();
+			static void stat_REG_boot1_DEFINE_CLIB_OpenEpiCentre_isFlagINSTANTIATED();
+			static void stat_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_isFlagINSTANTIATED();
+			static void stat_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_isFlagINSTANTIATED();
+			static bool* stat_REG_get_ptr_CLIB_OpenEpiCentre_isFlagINSTANTIATED();
 		};
 	}
 }
