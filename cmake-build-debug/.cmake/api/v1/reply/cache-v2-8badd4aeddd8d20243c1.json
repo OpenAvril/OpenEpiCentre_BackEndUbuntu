@@ -11,7 +11,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/cmake-build-debug"
+			"value" : "/home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/cmake-build-debug"
 		},
 		{
 			"name" : "CLIB_OpenEpiCentre_IS_TOP_LEVEL",
@@ -35,7 +35,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/brentonjames/CLionProjects/CLIB_OpenEpiCentre"
+			"value" : "/home/brenton-james/CLionProjects/CLIB_OpenEpiCentre"
 		},
 		{
 			"name" : "CMAKE_ADDR2LINE",
@@ -91,7 +91,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/cmake-build-debug"
+			"value" : "/home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -595,7 +595,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "/home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -655,7 +655,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/brentonjames/CLionProjects/CLIB_OpenEpiCentre"
+			"value" : "/home/brenton-james/CLionProjects/CLIB_OpenEpiCentre"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -923,6 +923,66 @@
 		},
 		{
 			"name" : "CMAKE_PROJECT_SPDX_LICENSE",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : ""
+		},
+		{
+			"name" : "CMAKE_PROJECT_VERSION",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "1.0"
+		},
+		{
+			"name" : "CMAKE_PROJECT_VERSION_MAJOR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "1"
+		},
+		{
+			"name" : "CMAKE_PROJECT_VERSION_MINOR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "0"
+		},
+		{
+			"name" : "CMAKE_PROJECT_VERSION_PATCH",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : ""
+		},
+		{
+			"name" : "CMAKE_PROJECT_VERSION_TWEAK",
 			"properties" : 
 			[
 				{

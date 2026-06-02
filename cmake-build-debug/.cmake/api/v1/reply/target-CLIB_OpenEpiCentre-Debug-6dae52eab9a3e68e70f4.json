@@ -12,7 +12,8 @@
 		"commands" : 
 		[
 			"add_library",
-			"target_link_libraries"
+			"target_link_libraries",
+			"target_include_directories"
 		],
 		"files" : 
 		[
@@ -32,19 +33,25 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 76,
+				"line" : 82,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 77,
+				"line" : 83,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 78,
+				"line" : 84,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 59,
 				"parent" : 0
 			}
 		]
@@ -81,19 +88,23 @@
 			"includes" : 
 			[
 				{
+					"backtrace" : 5,
+					"path" : "/home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/include"
+				},
+				{
 					"backtrace" : 2,
 					"isSystem" : true,
-					"path" : "/home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_WriteQueForThreadsAt_ServerInputReceive"
+					"path" : "/home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_WriteQueForThreadsAt_ServerInputReceive"
 				},
 				{
 					"backtrace" : 3,
 					"isSystem" : true,
-					"path" : "/home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_WriteQueForThreadsAt_ServerOutputSend"
+					"path" : "/home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_WriteQueForThreadsAt_ServerOutputSend"
 				},
 				{
 					"backtrace" : 4,
 					"isSystem" : true,
-					"path" : "/home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_LaunchQueForThreadsAt_Server"
+					"path" : "/home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_LaunchQueForThreadsAt_Server"
 				}
 			],
 			"language" : "CXX",

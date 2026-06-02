@@ -1,5 +1,5 @@
-cmake_minimum_required(VERSION 4.2)
-project(CLIB_OpenEpiCentre)
+cmake_minimum_required(VERSION 3.28.3)
+project(CLIB_OpenEpiCentre VERSION 1.0 LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 20)
 
@@ -54,6 +54,12 @@ add_library(CLIB_OpenEpiCentre STATIC
         include/CLIB_LaunchQueForThreadsAt_Server/LaunchEnableForConcurrentThreadsAt_Server_Global.h
         include/CLIB_LaunchQueForThreadsAt_Server/LaunchEnableForConcurrentThreadsAt_Server.h
         include/CLIB_LaunchQueForThreadsAt_Server/LaunchEnableForConcurrentThreadsAt_Server_Control.h
+)
+
+target_include_directories(${PROJECT_NAME}
+        PUBLIC
+        $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+        $<INSTALL_INTERFACE:include>
 )
 
 add_library(CLIB_WriteQueForThreadsAt_ServerInputReceive STATIC IMPORTED)

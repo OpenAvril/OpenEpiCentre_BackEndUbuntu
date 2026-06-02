@@ -3,7 +3,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "/home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/libs/libCLIB_WriteQueForThreadsAt_ServerOutputSend.a"
+			"path" : "/home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/libs/libCLIB_LaunchQueForThreadsAt_Server.a"
 		}
 	],
 	"backtrace" : 1,
@@ -25,7 +25,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 60,
+				"line" : 67,
 				"parent" : 0
 			}
 		]
@@ -35,11 +35,11 @@
 		"major" : 2,
 		"minor" : 9
 	},
-	"id" : "CLIB_WriteQueForThreadsAt_ServerOutputSend::@6890427a1f51a3e7e1df",
+	"id" : "CLIB_LaunchQueForThreadsAt_Server::@6890427a1f51a3e7e1df",
 	"imported" : true,
 	"local" : true,
-	"name" : "CLIB_WriteQueForThreadsAt_ServerOutputSend",
-	"nameOnDisk" : "libCLIB_WriteQueForThreadsAt_ServerOutputSend.a",
+	"name" : "CLIB_LaunchQueForThreadsAt_Server",
+	"nameOnDisk" : "libCLIB_LaunchQueForThreadsAt_Server.a",
 	"paths" : 
 	{
 		"build" : ".",

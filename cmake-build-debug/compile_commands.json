@@ -1,104 +1,104 @@
 [
 {
-  "directory": "/home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/cmake-build-debug",
-  "command": "/usr/bin/c++ -isystem /home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_WriteQueForThreadsAt_ServerInputReceive -isystem /home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_WriteQueForThreadsAt_ServerOutputSend -isystem /home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_LaunchQueForThreadsAt_Server -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/CLIB_OpenEpiCentre.dir/src/CLIB_OpenEpiCentre.cpp.o -c /home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/src/CLIB_OpenEpiCentre.cpp",
-  "file": "/home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/src/CLIB_OpenEpiCentre.cpp",
-  "output": "/home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/cmake-build-debug/CMakeFiles/CLIB_OpenEpiCentre.dir/src/CLIB_OpenEpiCentre.cpp.o"
+  "directory": "/home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/cmake-build-debug",
+  "command": "/usr/bin/c++ -I/home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/include -isystem /home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_WriteQueForThreadsAt_ServerInputReceive -isystem /home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_WriteQueForThreadsAt_ServerOutputSend -isystem /home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_LaunchQueForThreadsAt_Server -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/CLIB_OpenEpiCentre.dir/src/CLIB_OpenEpiCentre.cpp.o -c /home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/src/CLIB_OpenEpiCentre.cpp",
+  "file": "/home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/src/CLIB_OpenEpiCentre.cpp",
+  "output": "/home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/cmake-build-debug/CMakeFiles/CLIB_OpenEpiCentre.dir/src/CLIB_OpenEpiCentre.cpp.o"
 },
 {
-  "directory": "/home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/cmake-build-debug",
-  "command": "/usr/bin/c++ -isystem /home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_WriteQueForThreadsAt_ServerInputReceive -isystem /home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_WriteQueForThreadsAt_ServerOutputSend -isystem /home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_LaunchQueForThreadsAt_Server -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/Framework_Server.cpp.o -c /home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/src/engine/Framework_Server.cpp",
-  "file": "/home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/src/engine/Framework_Server.cpp",
-  "output": "/home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/cmake-build-debug/CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/Framework_Server.cpp.o"
+  "directory": "/home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/cmake-build-debug",
+  "command": "/usr/bin/c++ -I/home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/include -isystem /home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_WriteQueForThreadsAt_ServerInputReceive -isystem /home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_WriteQueForThreadsAt_ServerOutputSend -isystem /home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_LaunchQueForThreadsAt_Server -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/Framework_Server.cpp.o -c /home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/src/engine/Framework_Server.cpp",
+  "file": "/home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/src/engine/Framework_Server.cpp",
+  "output": "/home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/cmake-build-debug/CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/Framework_Server.cpp.o"
 },
 {
-  "directory": "/home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/cmake-build-debug",
-  "command": "/usr/bin/c++ -isystem /home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_WriteQueForThreadsAt_ServerInputReceive -isystem /home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_WriteQueForThreadsAt_ServerOutputSend -isystem /home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_LaunchQueForThreadsAt_Server -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/Global.cpp.o -c /home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/src/engine/Global.cpp",
-  "file": "/home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/src/engine/Global.cpp",
-  "output": "/home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/cmake-build-debug/CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/Global.cpp.o"
+  "directory": "/home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/cmake-build-debug",
+  "command": "/usr/bin/c++ -I/home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/include -isystem /home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_WriteQueForThreadsAt_ServerInputReceive -isystem /home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_WriteQueForThreadsAt_ServerOutputSend -isystem /home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_LaunchQueForThreadsAt_Server -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/Global.cpp.o -c /home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/src/engine/Global.cpp",
+  "file": "/home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/src/engine/Global.cpp",
+  "output": "/home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/cmake-build-debug/CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/Global.cpp.o"
 },
 {
-  "directory": "/home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/cmake-build-debug",
-  "command": "/usr/bin/c++ -isystem /home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_WriteQueForThreadsAt_ServerInputReceive -isystem /home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_WriteQueForThreadsAt_ServerOutputSend -isystem /home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_LaunchQueForThreadsAt_Server -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/Input.cpp.o -c /home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/src/structs/Input.cpp",
-  "file": "/home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/src/structs/Input.cpp",
-  "output": "/home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/cmake-build-debug/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/Input.cpp.o"
+  "directory": "/home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/cmake-build-debug",
+  "command": "/usr/bin/c++ -I/home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/include -isystem /home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_WriteQueForThreadsAt_ServerInputReceive -isystem /home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_WriteQueForThreadsAt_ServerOutputSend -isystem /home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_LaunchQueForThreadsAt_Server -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/Input.cpp.o -c /home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/src/structs/Input.cpp",
+  "file": "/home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/src/structs/Input.cpp",
+  "output": "/home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/cmake-build-debug/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/Input.cpp.o"
 },
 {
-  "directory": "/home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/cmake-build-debug",
-  "command": "/usr/bin/c++ -isystem /home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_WriteQueForThreadsAt_ServerInputReceive -isystem /home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_WriteQueForThreadsAt_ServerOutputSend -isystem /home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_LaunchQueForThreadsAt_Server -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/Output.cpp.o -c /home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/src/structs/Output.cpp",
-  "file": "/home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/src/structs/Output.cpp",
-  "output": "/home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/cmake-build-debug/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/Output.cpp.o"
+  "directory": "/home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/cmake-build-debug",
+  "command": "/usr/bin/c++ -I/home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/include -isystem /home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_WriteQueForThreadsAt_ServerInputReceive -isystem /home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_WriteQueForThreadsAt_ServerOutputSend -isystem /home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_LaunchQueForThreadsAt_Server -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/Output.cpp.o -c /home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/src/structs/Output.cpp",
+  "file": "/home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/src/structs/Output.cpp",
+  "output": "/home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/cmake-build-debug/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/Output.cpp.o"
 },
 {
-  "directory": "/home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/cmake-build-debug",
-  "command": "/usr/bin/c++ -isystem /home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_WriteQueForThreadsAt_ServerInputReceive -isystem /home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_WriteQueForThreadsAt_ServerOutputSend -isystem /home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_LaunchQueForThreadsAt_Server -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/Concurrent.cpp.o -c /home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/src/structs/Concurrent.cpp",
-  "file": "/home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/src/structs/Concurrent.cpp",
-  "output": "/home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/cmake-build-debug/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/Concurrent.cpp.o"
+  "directory": "/home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/cmake-build-debug",
+  "command": "/usr/bin/c++ -I/home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/include -isystem /home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_WriteQueForThreadsAt_ServerInputReceive -isystem /home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_WriteQueForThreadsAt_ServerOutputSend -isystem /home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_LaunchQueForThreadsAt_Server -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/Concurrent.cpp.o -c /home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/src/structs/Concurrent.cpp",
+  "file": "/home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/src/structs/Concurrent.cpp",
+  "output": "/home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/cmake-build-debug/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/Concurrent.cpp.o"
 },
 {
-  "directory": "/home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/cmake-build-debug",
-  "command": "/usr/bin/c++ -isystem /home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_WriteQueForThreadsAt_ServerInputReceive -isystem /home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_WriteQueForThreadsAt_ServerOutputSend -isystem /home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_LaunchQueForThreadsAt_Server -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/User_Input.cpp.o -c /home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/src/structs/User_Input.cpp",
-  "file": "/home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/src/structs/User_Input.cpp",
-  "output": "/home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/cmake-build-debug/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/User_Input.cpp.o"
+  "directory": "/home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/cmake-build-debug",
+  "command": "/usr/bin/c++ -I/home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/include -isystem /home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_WriteQueForThreadsAt_ServerInputReceive -isystem /home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_WriteQueForThreadsAt_ServerOutputSend -isystem /home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_LaunchQueForThreadsAt_Server -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/User_Input.cpp.o -c /home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/src/structs/User_Input.cpp",
+  "file": "/home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/src/structs/User_Input.cpp",
+  "output": "/home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/cmake-build-debug/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/User_Input.cpp.o"
 },
 {
-  "directory": "/home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/cmake-build-debug",
-  "command": "/usr/bin/c++ -isystem /home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_WriteQueForThreadsAt_ServerInputReceive -isystem /home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_WriteQueForThreadsAt_ServerOutputSend -isystem /home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_LaunchQueForThreadsAt_Server -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/User_Output.cpp.o -c /home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/src/structs/User_Output.cpp",
-  "file": "/home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/src/structs/User_Output.cpp",
-  "output": "/home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/cmake-build-debug/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/User_Output.cpp.o"
+  "directory": "/home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/cmake-build-debug",
+  "command": "/usr/bin/c++ -I/home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/include -isystem /home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_WriteQueForThreadsAt_ServerInputReceive -isystem /home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_WriteQueForThreadsAt_ServerOutputSend -isystem /home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_LaunchQueForThreadsAt_Server -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/User_Output.cpp.o -c /home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/src/structs/User_Output.cpp",
+  "file": "/home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/src/structs/User_Output.cpp",
+  "output": "/home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/cmake-build-debug/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/User_Output.cpp.o"
 },
 {
-  "directory": "/home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/cmake-build-debug",
-  "command": "/usr/bin/c++ -isystem /home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_WriteQueForThreadsAt_ServerInputReceive -isystem /home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_WriteQueForThreadsAt_ServerOutputSend -isystem /home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_LaunchQueForThreadsAt_Server -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/User_Algorithm.cpp.o -c /home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/src/structs/User_Algorithm.cpp",
-  "file": "/home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/src/structs/User_Algorithm.cpp",
-  "output": "/home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/cmake-build-debug/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/User_Algorithm.cpp.o"
+  "directory": "/home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/cmake-build-debug",
+  "command": "/usr/bin/c++ -I/home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/include -isystem /home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_WriteQueForThreadsAt_ServerInputReceive -isystem /home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_WriteQueForThreadsAt_ServerOutputSend -isystem /home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_LaunchQueForThreadsAt_Server -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/User_Algorithm.cpp.o -c /home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/src/structs/User_Algorithm.cpp",
+  "file": "/home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/src/structs/User_Algorithm.cpp",
+  "output": "/home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/cmake-build-debug/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/User_Algorithm.cpp.o"
 },
 {
-  "directory": "/home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/cmake-build-debug",
-  "command": "/usr/bin/c++ -isystem /home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_WriteQueForThreadsAt_ServerInputReceive -isystem /home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_WriteQueForThreadsAt_ServerOutputSend -isystem /home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_LaunchQueForThreadsAt_Server -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/praise_sets/Algorithm_praise0.cpp.o -c /home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/src/structs/praise_sets/Algorithm_praise0.cpp",
-  "file": "/home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/src/structs/praise_sets/Algorithm_praise0.cpp",
-  "output": "/home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/cmake-build-debug/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/praise_sets/Algorithm_praise0.cpp.o"
+  "directory": "/home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/cmake-build-debug",
+  "command": "/usr/bin/c++ -I/home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/include -isystem /home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_WriteQueForThreadsAt_ServerInputReceive -isystem /home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_WriteQueForThreadsAt_ServerOutputSend -isystem /home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_LaunchQueForThreadsAt_Server -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/praise_sets/Algorithm_praise0.cpp.o -c /home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/src/structs/praise_sets/Algorithm_praise0.cpp",
+  "file": "/home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/src/structs/praise_sets/Algorithm_praise0.cpp",
+  "output": "/home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/cmake-build-debug/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/praise_sets/Algorithm_praise0.cpp.o"
 },
 {
-  "directory": "/home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/cmake-build-debug",
-  "command": "/usr/bin/c++ -isystem /home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_WriteQueForThreadsAt_ServerInputReceive -isystem /home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_WriteQueForThreadsAt_ServerOutputSend -isystem /home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_LaunchQueForThreadsAt_Server -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/praise_sets/Input_praise0.cpp.o -c /home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/src/structs/praise_sets/Input_praise0.cpp",
-  "file": "/home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/src/structs/praise_sets/Input_praise0.cpp",
-  "output": "/home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/cmake-build-debug/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/praise_sets/Input_praise0.cpp.o"
+  "directory": "/home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/cmake-build-debug",
+  "command": "/usr/bin/c++ -I/home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/include -isystem /home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_WriteQueForThreadsAt_ServerInputReceive -isystem /home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_WriteQueForThreadsAt_ServerOutputSend -isystem /home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_LaunchQueForThreadsAt_Server -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/praise_sets/Input_praise0.cpp.o -c /home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/src/structs/praise_sets/Input_praise0.cpp",
+  "file": "/home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/src/structs/praise_sets/Input_praise0.cpp",
+  "output": "/home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/cmake-build-debug/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/praise_sets/Input_praise0.cpp.o"
 },
 {
-  "directory": "/home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/cmake-build-debug",
-  "command": "/usr/bin/c++ -isystem /home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_WriteQueForThreadsAt_ServerInputReceive -isystem /home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_WriteQueForThreadsAt_ServerOutputSend -isystem /home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_LaunchQueForThreadsAt_Server -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/praise_sets/Output_praise0.cpp.o -c /home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/src/structs/praise_sets/Output_praise0.cpp",
-  "file": "/home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/src/structs/praise_sets/Output_praise0.cpp",
-  "output": "/home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/cmake-build-debug/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/praise_sets/Output_praise0.cpp.o"
+  "directory": "/home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/cmake-build-debug",
+  "command": "/usr/bin/c++ -I/home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/include -isystem /home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_WriteQueForThreadsAt_ServerInputReceive -isystem /home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_WriteQueForThreadsAt_ServerOutputSend -isystem /home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_LaunchQueForThreadsAt_Server -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/praise_sets/Output_praise0.cpp.o -c /home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/src/structs/praise_sets/Output_praise0.cpp",
+  "file": "/home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/src/structs/praise_sets/Output_praise0.cpp",
+  "output": "/home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/cmake-build-debug/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/praise_sets/Output_praise0.cpp.o"
 },
 {
-  "directory": "/home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/cmake-build-debug",
-  "command": "/usr/bin/c++ -isystem /home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_WriteQueForThreadsAt_ServerInputReceive -isystem /home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_WriteQueForThreadsAt_ServerOutputSend -isystem /home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_LaunchQueForThreadsAt_Server -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/Server.cpp.o -c /home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/src/engine/Server.cpp",
-  "file": "/home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/src/engine/Server.cpp",
-  "output": "/home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/cmake-build-debug/CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/Server.cpp.o"
+  "directory": "/home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/cmake-build-debug",
+  "command": "/usr/bin/c++ -I/home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/include -isystem /home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_WriteQueForThreadsAt_ServerInputReceive -isystem /home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_WriteQueForThreadsAt_ServerOutputSend -isystem /home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_LaunchQueForThreadsAt_Server -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/Server.cpp.o -c /home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/src/engine/Server.cpp",
+  "file": "/home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/src/engine/Server.cpp",
+  "output": "/home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/cmake-build-debug/CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/Server.cpp.o"
 },
 {
-  "directory": "/home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/cmake-build-debug",
-  "command": "/usr/bin/c++ -isystem /home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_WriteQueForThreadsAt_ServerInputReceive -isystem /home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_WriteQueForThreadsAt_ServerOutputSend -isystem /home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_LaunchQueForThreadsAt_Server -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/Algorithms.cpp.o -c /home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/src/engine/Algorithms.cpp",
-  "file": "/home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/src/engine/Algorithms.cpp",
-  "output": "/home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/cmake-build-debug/CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/Algorithms.cpp.o"
+  "directory": "/home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/cmake-build-debug",
+  "command": "/usr/bin/c++ -I/home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/include -isystem /home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_WriteQueForThreadsAt_ServerInputReceive -isystem /home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_WriteQueForThreadsAt_ServerOutputSend -isystem /home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_LaunchQueForThreadsAt_Server -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/Algorithms.cpp.o -c /home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/src/engine/Algorithms.cpp",
+  "file": "/home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/src/engine/Algorithms.cpp",
+  "output": "/home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/cmake-build-debug/CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/Algorithms.cpp.o"
 },
 {
-  "directory": "/home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/cmake-build-debug",
-  "command": "/usr/bin/c++ -isystem /home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_WriteQueForThreadsAt_ServerInputReceive -isystem /home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_WriteQueForThreadsAt_ServerOutputSend -isystem /home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_LaunchQueForThreadsAt_Server -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/Data.cpp.o -c /home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/src/engine/Data.cpp",
-  "file": "/home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/src/engine/Data.cpp",
-  "output": "/home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/cmake-build-debug/CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/Data.cpp.o"
+  "directory": "/home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/cmake-build-debug",
+  "command": "/usr/bin/c++ -I/home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/include -isystem /home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_WriteQueForThreadsAt_ServerInputReceive -isystem /home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_WriteQueForThreadsAt_ServerOutputSend -isystem /home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_LaunchQueForThreadsAt_Server -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/Data.cpp.o -c /home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/src/engine/Data.cpp",
+  "file": "/home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/src/engine/Data.cpp",
+  "output": "/home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/cmake-build-debug/CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/Data.cpp.o"
 },
 {
-  "directory": "/home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/cmake-build-debug",
-  "command": "/usr/bin/c++ -isystem /home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_WriteQueForThreadsAt_ServerInputReceive -isystem /home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_WriteQueForThreadsAt_ServerOutputSend -isystem /home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_LaunchQueForThreadsAt_Server -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/Execute.cpp.o -c /home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/src/engine/Execute.cpp",
-  "file": "/home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/src/engine/Execute.cpp",
-  "output": "/home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/cmake-build-debug/CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/Execute.cpp.o"
+  "directory": "/home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/cmake-build-debug",
+  "command": "/usr/bin/c++ -I/home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/include -isystem /home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_WriteQueForThreadsAt_ServerInputReceive -isystem /home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_WriteQueForThreadsAt_ServerOutputSend -isystem /home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_LaunchQueForThreadsAt_Server -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/Execute.cpp.o -c /home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/src/engine/Execute.cpp",
+  "file": "/home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/src/engine/Execute.cpp",
+  "output": "/home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/cmake-build-debug/CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/Execute.cpp.o"
 },
 {
-  "directory": "/home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/cmake-build-debug",
-  "command": "/usr/bin/c++ -isystem /home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_WriteQueForThreadsAt_ServerInputReceive -isystem /home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_WriteQueForThreadsAt_ServerOutputSend -isystem /home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_LaunchQueForThreadsAt_Server -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/Execute_Control.cpp.o -c /home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/src/engine/Execute_Control.cpp",
-  "file": "/home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/src/engine/Execute_Control.cpp",
-  "output": "/home/brentonjames/CLionProjects/CLIB_OpenEpiCentre/cmake-build-debug/CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/Execute_Control.cpp.o"
+  "directory": "/home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/cmake-build-debug",
+  "command": "/usr/bin/c++ -I/home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/include -isystem /home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_WriteQueForThreadsAt_ServerInputReceive -isystem /home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_WriteQueForThreadsAt_ServerOutputSend -isystem /home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/include/CLIB_LaunchQueForThreadsAt_Server -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/Execute_Control.cpp.o -c /home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/src/engine/Execute_Control.cpp",
+  "file": "/home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/src/engine/Execute_Control.cpp",
+  "output": "/home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/cmake-build-debug/CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/Execute_Control.cpp.o"
 }
 ]
