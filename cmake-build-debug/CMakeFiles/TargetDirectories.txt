@@ -1,3 +1,0 @@
-/home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/cmake-build-debug/CMakeFiles/CLIB_OpenEpiCentre.dir
-/home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/brenton-james/CLionProjects/CLIB_OpenEpiCentre/cmake-build-debug/CMakeFiles/rebuild_cache.dir
