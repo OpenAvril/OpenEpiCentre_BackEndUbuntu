@@ -47,7 +47,6 @@ namespace CLIBOpenEpiCentre
         static void stat_REG_boot3_INITIALISE_flag_isLoaded_Stack_OutputSend();
         static void stat_REG_boot3_INITIALISE_array_Of_doubleBuffer_Input();
         static void stat_REG_boot3_INITIALISE_array_Of_doubleBuffer_Output();
-
         static bool* stat_REG_get_ptr_flag_isLoaded_Stack_InputAction();
         static bool* stat_REG_get_ptr_flag_isLoaded_Stack_OutputSend();
         static bool* stat_REG_get_ptr_side_To_Write_For_array_Of_doubleBuffer_Input();
