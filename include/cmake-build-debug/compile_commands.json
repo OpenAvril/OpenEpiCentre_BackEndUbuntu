@@ -1,8 +1,0 @@
-[
-{
-  "directory": "/home/brenton-james/CLionProjects/OpenEpiCentre_BackEndUbuntu/TestBench/cmake-build-debug",
-  "command": "/usr/bin/c++ -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/TestBench.dir/main.cpp.o -c /home/brenton-james/CLionProjects/OpenEpiCentre_BackEndUbuntu/TestBench/main.cpp",
-  "file": "/home/brenton-james/CLionProjects/OpenEpiCentre_BackEndUbuntu/TestBench/main.cpp",
-  "output": "/home/brenton-james/CLionProjects/OpenEpiCentre_BackEndUbuntu/TestBench/cmake-build-debug/CMakeFiles/TestBench.dir/main.cpp.o"
-}
-]
