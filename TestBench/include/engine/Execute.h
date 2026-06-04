@@ -11,8 +11,8 @@ namespace TestBench_Cpp_OpenEpiCentre
         virtual ~Execute();
         class Execute_Control* dyn_CLASS_get_ptr_Execute_Control();
         void dyn_REG_boot1_DEFINE_Execute();
-        void dyn_REG_boot2_SUBSTANTIATE_Execute(class Framework_Server* obj);
-        void dyn_REG_boot3_INITIALISE_Execute(class Framework_Server* obj);
+        void dyn_REG_boot2_SUBSTANTIATE_Execute(class Framework_App* obj);
+        void dyn_REG_boot3_INITIALISE_Execute(class Framework_App* obj);
         void dyn_REG_boot4_INSTANTIATE_Execute();
         static void stat_CLASS_boot0_DECLARE_Execute();
         static void stat_CLASS_boot1_DEFINE_Execute();
@@ -27,8 +27,8 @@ namespace TestBench_Cpp_OpenEpiCentre
         static void stat_CLASS_boot3_INITIALISE_Execute_Control();
         static Execute_Control* stat_CLASS_get_ptr_Execute_Control();
         static void stat_REG_boot1_DEFINE_List_Of_Threads();
-        static void stat_REG_boot2_SUBSTANTIATE_List_Of_Threads(class Framework_Server* obj);
-        static void stat_REG_boot3_INITIALISE_List_Of_Threads(class Framework_Server* obj);
+        static void stat_REG_boot2_SUBSTANTIATE_List_Of_Threads(class Framework_App* obj);
+        static void stat_REG_boot3_INITIALISE_List_Of_Threads(class Framework_App* obj);
         static std::list<std::thread*>* stat_PGM_get_ptr_List_Of_Threads();
         static void stat_PGM_boot1_DEFINE_OpenEpiCentre();
         static void stat_PGM_boot3_INITIALISE_OpenEpiCentre();

@@ -24,14 +24,14 @@
 		stat_REG_boot1_DEFINE_Flag_array_ThreadInitialised();
 		std::cout << "exiting dyn_REG_boot1_DEFINE_Execute_Control()" << std::endl;
 	}
-	void TestBench_Cpp_OpenEpiCentre::Execute_Control::dyn_REG_boot2_SUBSTANTIATE_Execute_Control(Framework_Server* obj)
+	void TestBench_Cpp_OpenEpiCentre::Execute_Control::dyn_REG_boot2_SUBSTANTIATE_Execute_Control(Framework_App* obj)
 	{
 		std::cout << "entered dyn_REG_boot2_SUBSTANTIATE_Execute_Control()" << std::endl;
 		stat_REG_boot2_SUBSTANTIATE_Flag_isSystemInitialised(obj);
 		stat_REG_boot2_SUBSTANTIATE_Flag_array_ThreadInitialised(obj);
 		std::cout << "exiting dyn_REG_boot2_SUBSTANTIATE_Execute_Control()" << std::endl;
 	}
-	void TestBench_Cpp_OpenEpiCentre::Execute_Control::dyn_REG_boot3_INITIALISE_Execute_Control(Framework_Server* obj)
+	void TestBench_Cpp_OpenEpiCentre::Execute_Control::dyn_REG_boot3_INITIALISE_Execute_Control(Framework_App* obj)
 	{
 		std::cout << "entered dyn_REG_boot3_INITIALISE_Execute_Control()" << std::endl;
 		stat_REG_boot3_INITIALISE_Flag_isSystemInitialised(obj);
@@ -93,12 +93,12 @@
 	{
 		_stat_REG_ptr_Flag_array_ThreadInitialised = nullptr;
 	}
-	void TestBench_Cpp_OpenEpiCentre::Execute_Control::stat_REG_boot2_SUBSTANTIATE_Flag_isSystemInitialised(TestBench_Cpp_OpenEpiCentre::Framework_Server* obj)
+	void TestBench_Cpp_OpenEpiCentre::Execute_Control::stat_REG_boot2_SUBSTANTIATE_Flag_isSystemInitialised(TestBench_Cpp_OpenEpiCentre::Framework_App* obj)
 	{
 		_stat_REG_ptr_Flag_isSystemInitialised = new bool();
 		*_stat_REG_ptr_Flag_isSystemInitialised = true;
 	}
-	void TestBench_Cpp_OpenEpiCentre::Execute_Control::stat_REG_boot2_SUBSTANTIATE_Flag_array_ThreadInitialised(TestBench_Cpp_OpenEpiCentre::Framework_Server* obj)
+	void TestBench_Cpp_OpenEpiCentre::Execute_Control::stat_REG_boot2_SUBSTANTIATE_Flag_array_ThreadInitialised(TestBench_Cpp_OpenEpiCentre::Framework_App* obj)
 	{
 		_stat_REG_ptr_Flag_array_ThreadInitialised = new std::array<bool, 4>();
 		while (stat_get_ptr_list_Of_flag_ThreadInitialised() == nullptr) { }
@@ -109,11 +109,11 @@
 			*temp = true;
 		}
 	}
-	void TestBench_Cpp_OpenEpiCentre::Execute_Control::stat_REG_boot3_INITIALISE_Flag_isSystemInitialised(TestBench_Cpp_OpenEpiCentre::Framework_Server* obj)
+	void TestBench_Cpp_OpenEpiCentre::Execute_Control::stat_REG_boot3_INITIALISE_Flag_isSystemInitialised(TestBench_Cpp_OpenEpiCentre::Framework_App* obj)
 	{
 		*_stat_REG_ptr_Flag_isSystemInitialised = true;
 	}
-	void TestBench_Cpp_OpenEpiCentre::Execute_Control::stat_REG_boot3_INITIALISE_Flag_array_ThreadInitialised(TestBench_Cpp_OpenEpiCentre::Framework_Server* obj)
+	void TestBench_Cpp_OpenEpiCentre::Execute_Control::stat_REG_boot3_INITIALISE_Flag_array_ThreadInitialised(TestBench_Cpp_OpenEpiCentre::Framework_App* obj)
 	{
 		for (uint8_t threadId = 0; threadId < sizeof(*stat_get_ptr_list_Of_flag_ThreadInitialised()); threadId++)
 		{
