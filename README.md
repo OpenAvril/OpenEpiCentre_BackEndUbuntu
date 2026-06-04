@@ -14,25 +14,31 @@
 
 ---
 ### Dependencies.
-#### - snap.
+#### Ubuntu Terminal.
 ````
-sudo apt install snapd
+sudo apt install git
 ````
 
-#### - GCC toolchain.
 ````
 sudo apt install build-essential
 ````
 
-#### - CMake.
 ````
 sudo apt install cmake
 ````
 
-#### - CLion.
+````
+sudo apt install snapd
+````
+
 ````
 sudo snap install clion --classic
 ````
+
+#### CLion plugins.
+- Native Build Tools.
+- Cmake.
+- CLion C and C++.
 
 ---
 ## Building - Compiler Terminal Commands.
