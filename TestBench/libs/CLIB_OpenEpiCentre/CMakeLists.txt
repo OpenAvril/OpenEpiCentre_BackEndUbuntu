@@ -36,11 +36,11 @@ add_library(CLIB_OpenEpiCentre STATIC
         include/engine/Data.h
         src/engine/Data.cpp
         include/engine/Data_Control.h
+        src/engine/Data_Control.cpp
         include/engine/Execute.h
         src/engine/Execute.cpp
         include/engine/Execute_Control.h
         src/engine/Execute_Control.cpp
 )
 
-# Optional: Add include directories so your main lib can find internal headers
 target_include_directories(CLIB_OpenEpiCentre PUBLIC ../CLIB_LaunchQueForThreadsAt_Server ../CLIB_WriteQueForThreadsAt_ServerInputReceive ../CLIB_WriteQueForThreadsAt_ServerOutputSend)

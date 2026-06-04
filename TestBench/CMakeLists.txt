@@ -7,10 +7,11 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 add_subdirectory(libs/CLIB_LaunchQueForThreadsAt_Server)
 add_subdirectory(libs/CLIB_WriteQueForThreadsAt_ServerInputReceive)
 add_subdirectory(libs/CLIB_WriteQueForThreadsAt_ServerOutputSend)
-add_subdirectory(libs/OpenEpiCentre)
+add_subdirectory(libs/CLIB_OpenEpiCentre)
 add_subdirectory(libs/CLIB_WriteQueForThreadsAt_SIMULATION)
 
-add_executable(TestBench main.cpp
+add_executable(TestBench Main.cpp
+        IO.cpp
         src/engine/Algorithms.cpp
         src/engine/App.cpp
         src/engine/Data.cpp

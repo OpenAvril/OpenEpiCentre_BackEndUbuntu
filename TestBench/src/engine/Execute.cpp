@@ -1,4 +1,4 @@
-#include "../../OpenEpiCentre/include/CLIB_OpenEpiCentre.h"
+#include "../../CLIB_OpenEpiCentre/include/CLIB_OpenEpiCentre.h"
 #include "../../include/engine/Execute.h"
 #include "../../include/engine/Execute_Control.h"
 #include "../../include/engine/Framework_App.h"
