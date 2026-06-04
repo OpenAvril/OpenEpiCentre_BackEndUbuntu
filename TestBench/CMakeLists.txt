@@ -20,6 +20,6 @@ add_executable(TestBench main.cpp
         src/engine/Global.cpp
 )
 
-target_link_libraries(TestBench PRIVATE OpenEpiCentre)
+target_link_libraries(TestBench PRIVATE CLIB_OpenEpiCentre)
 target_link_libraries(TestBench PRIVATE CLIB_WriteQueForThreadsAt_SIMULATION)
 
