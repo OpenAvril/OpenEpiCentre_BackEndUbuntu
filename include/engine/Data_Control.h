@@ -1,4 +1,5 @@
 #pragma once
+#include "Framework_Server.h"
 namespace CLIBOpenEpiCentre
 {
     class Data_Control
