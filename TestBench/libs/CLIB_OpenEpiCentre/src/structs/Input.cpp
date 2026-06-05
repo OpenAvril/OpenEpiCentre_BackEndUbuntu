@@ -1,6 +1,6 @@
+#include "../../include/engine/CLIB_OpenEpiCentre_App.h"
+#include "../../include/engine/CLIB_OpenEpiCentre_Framework_Server.h"
 #include "../../include/engine/Data.h"
-#include "../../include/engine/Framework_Server.h"
-#include "../../include/engine/Server.h"
 #include "../../include/structs/Input.h"
 #include "../../include/structs/User_Input.h"
 #include <cstdint>
@@ -10,7 +10,7 @@
     uint8_t* CLIBOpenEpiCentre::Input::_REG_ptr_Input_playerId;
     std::list<CLIBOpenEpiCentre::Object*>* CLIBOpenEpiCentre::Input::_REG_ptr_List_Of_PraiseInputSubset;
 // public.
-    void CLIBOpenEpiCentre::Input::app_select_And_Set_Input_Subset(Framework_Server* obj, uint8_t praiseEventId)
+    void CLIBOpenEpiCentre::Input::app_select_And_Set_Input_Subset(CLIB_OpenEpiCentre_Framework_Server* obj, uint8_t praiseEventId)
     {
         Input* bufferInputWRITE = obj->dyn_CLASS_get_ptr_Server()->dyn_CLASS_get_ptr_Data()->dyn_REG_get_ptr_Item_array_Of_doubleBuffer_Input_WRITE(obj);
         switch (praiseEventId)
@@ -180,7 +180,7 @@
     {
         *_REG_ptr_Input_playerId = static_cast<uint8_t>(0);
     }
-    void CLIBOpenEpiCentre::Input::stat_REG_boot3_INITIALISE_List_Of_PraiseInputSubset(Framework_Server* obj, uint8_t praiseId)
+    void CLIBOpenEpiCentre::Input::stat_REG_boot3_INITIALISE_List_Of_PraiseInputSubset(CLIB_OpenEpiCentre_Framework_Server* obj, uint8_t praiseId)
     {
         auto temp = stat_REG_get_ptr_Item_Of_ptr_Inputs_Subset()->begin();
         std::advance(temp, static_cast<uint8_t>(0));

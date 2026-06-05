@@ -14,6 +14,51 @@
 # EXTERNAL cache entries
 ########################
 
+//Value Computed by CMake
+CLIB_LaunchQueForThreadsAt_Server_BINARY_DIR:STATIC=/home/brenton-james/CLionProjects/OpenEpiCentre_BackEndUbuntu/TestBench/build/libs/CLIB_LaunchQueForThreadsAt_Server
+
+//Value Computed by CMake
+CLIB_LaunchQueForThreadsAt_Server_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+CLIB_LaunchQueForThreadsAt_Server_SOURCE_DIR:STATIC=/home/brenton-james/CLionProjects/OpenEpiCentre_BackEndUbuntu/TestBench/libs/CLIB_LaunchQueForThreadsAt_Server
+
+//Value Computed by CMake
+CLIB_OpenEpiCentre_BINARY_DIR:STATIC=/home/brenton-james/CLionProjects/OpenEpiCentre_BackEndUbuntu/TestBench/build/libs/CLIB_OpenEpiCentre
+
+//Value Computed by CMake
+CLIB_OpenEpiCentre_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+CLIB_OpenEpiCentre_SOURCE_DIR:STATIC=/home/brenton-james/CLionProjects/OpenEpiCentre_BackEndUbuntu/TestBench/libs/CLIB_OpenEpiCentre
+
+//Value Computed by CMake
+CLIB_WriteQueForThreadsAt_SIMULATION_BINARY_DIR:STATIC=/home/brenton-james/CLionProjects/OpenEpiCentre_BackEndUbuntu/TestBench/build/libs/CLIB_WriteQueForThreadsAt_SIMULATION
+
+//Value Computed by CMake
+CLIB_WriteQueForThreadsAt_SIMULATION_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+CLIB_WriteQueForThreadsAt_SIMULATION_SOURCE_DIR:STATIC=/home/brenton-james/CLionProjects/OpenEpiCentre_BackEndUbuntu/TestBench/libs/CLIB_WriteQueForThreadsAt_SIMULATION
+
+//Value Computed by CMake
+CLIB_WriteQueForThreadsAt_ServerInputReceive_BINARY_DIR:STATIC=/home/brenton-james/CLionProjects/OpenEpiCentre_BackEndUbuntu/TestBench/build/libs/CLIB_WriteQueForThreadsAt_ServerInputReceive
+
+//Value Computed by CMake
+CLIB_WriteQueForThreadsAt_ServerInputReceive_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+CLIB_WriteQueForThreadsAt_ServerInputReceive_SOURCE_DIR:STATIC=/home/brenton-james/CLionProjects/OpenEpiCentre_BackEndUbuntu/TestBench/libs/CLIB_WriteQueForThreadsAt_ServerInputReceive
+
+//Value Computed by CMake
+CLIB_WriteQueForThreadsAt_ServerOutputSend_BINARY_DIR:STATIC=/home/brenton-james/CLionProjects/OpenEpiCentre_BackEndUbuntu/TestBench/build/libs/CLIB_WriteQueForThreadsAt_ServerOutputSend
+
+//Value Computed by CMake
+CLIB_WriteQueForThreadsAt_ServerOutputSend_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+CLIB_WriteQueForThreadsAt_ServerOutputSend_SOURCE_DIR:STATIC=/home/brenton-james/CLionProjects/OpenEpiCentre_BackEndUbuntu/TestBench/libs/CLIB_WriteQueForThreadsAt_ServerOutputSend
+
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=/usr/bin/addr2line
 
@@ -302,7 +347,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=1
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=6
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

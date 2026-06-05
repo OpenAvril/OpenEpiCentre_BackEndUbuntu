@@ -6,7 +6,7 @@ namespace CLIBOpenEpiCentre
     struct Input
     {
     public:
-        void app_select_And_Set_Input_Subset(Framework_Server* obj, uint8_t praiseEventId);
+        void app_select_And_Set_Input_Subset(CLIB_OpenEpiCentre_Framework_Server* obj, uint8_t praiseEventId);
         void dyn_REG_boot1_DEFINE_Input();
         void dyn_REG_boot2_SUBSTANTIATE_Input();
         void dyn_REG_boot3_INITIALISE_Input(Framework_Server* obj);
@@ -37,7 +37,7 @@ namespace CLIBOpenEpiCentre
         static void stat_REG_boot2_SUBSTANTIATE_List_Of_PraiseInputSubset();
         static void stat_REG_boot3_INITIALISE_Input_praiseEventId();
         static void stat_REG_boot3_INITIALISE_Input_playerId();
-        static void stat_REG_boot3_INITIALISE_List_Of_PraiseInputSubset(Framework_Server* obj, uint8_t praiseId);
+        static void stat_REG_boot3_INITIALISE_List_Of_PraiseInputSubset(CLIB_OpenEpiCentre_Framework_Server* obj, uint8_t praiseId);
         static uint8_t* stat_REG_get_ptr_Input_playerId();
         static uint8_t* stat_REG_get_ptr_Input_praiseEventId();
         static std::list<Object*>* stat_REG_get_ptr_Item_Of_ptr_Inputs_Subset();
