@@ -6,7 +6,7 @@
 #include "../../include/engine/Data_Control.h"
 #include "../../include/engine/Execute.h"
 #include "../../include/engine/Execute_Control.h"
-#include "../../include/engine/Framework_Server.h"
+#include "../../include/engine/CLIB_OpenEpiCentre_Framework_Server.h"
 #include "../../include/engine/Global.h"
 #include "../../include/engine/Server.h"
 #include "../../include/structs/Concurrent.h"
@@ -20,7 +20,7 @@
 #include <cstdint>
 #include <iostream>
 // public.
-    void CLIBOpenEpiCentre::Concurrent::app_do_Concurrent_Algorithm_For_PraiseEventId(Framework_Server obj, uint8_t playerId, uint8_t praiseEventId, Object* ptr_Input_Subset, Object* ptr_Output_Subset)
+    void CLIBOpenEpiCentre::Concurrent::app_do_Concurrent_Algorithm_For_PraiseEventId(CLIB_OpenEpiCentre_Framework_Server obj, uint8_t playerId, uint8_t praiseEventId, Object* ptr_Input_Subset, Object* ptr_Output_Subset)
     {
         switch (praiseEventId)
         {
@@ -61,7 +61,7 @@
 
         std::cout << "exiting dyn_REG_boot2_SUBSTANTIATE_Concurrent()" << std::endl;
     }
-    void CLIBOpenEpiCentre::Concurrent::dyn_REG_boot3_INITIALISE_Concurrent(CLIBOpenEpiCentre::Framework_Server* obj)
+    void CLIBOpenEpiCentre::Concurrent::dyn_REG_boot3_INITIALISE_Concurrent(CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Framework_Server* obj)
     {
         std::cout << "entered dyn_REG_boot3_INITIALISE_Concurrent()" << std::endl;
 
@@ -73,7 +73,7 @@
 
         std::cout << "exiting dyn_REG_boot4_INSTANTIATE_Concurrent()" << std::endl;
     }
-    void CLIBOpenEpiCentre::Concurrent::stat_app_thread_Concurrency(Framework_Server* obj, uint8_t concurrent_threadID)
+    void CLIBOpenEpiCentre::Concurrent::stat_app_thread_Concurrency(CLIB_OpenEpiCentre_Framework_Server* obj, uint8_t concurrent_threadID)
     {
         bool* doneOnce = new bool(true);
         while (obj->dyn_CLASS_get_ptr_Server()->dyn_CLASS_get_ptr_Execute()->dyn_CLASS_get_ptr_Execute_Control()->dyn_REG_get_Item_On_List_Of_Flag_ThreadInitialised(concurrent_threadID) == true)

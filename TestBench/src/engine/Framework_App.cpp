@@ -7,7 +7,7 @@
 #include "../../include/engine/Global.h"
 #include <iostream>
 	TestBench_Cpp_OpenEpiCentre::App* TestBench_Cpp_OpenEpiCentre::Framework_App::_stat_CLASS_ptr_App;
-	TestBench_Cpp_OpenEpiCentre::Global* TestBench_Cpp_OpenEpiCentre::Framework_App::_stat_CLASS_ptr_Global_App;
+	TestBench_Cpp_OpenEpiCentre::Global* TestBench_Cpp_OpenEpiCentre::Framework_App::_stat_CLASS_ptr_Global;
 // public.
 	TestBench_Cpp_OpenEpiCentre::Framework_App::Framework_App()
 	{
@@ -19,7 +19,7 @@
 	TestBench_Cpp_OpenEpiCentre::Framework_App::~Framework_App()
 	{
 		delete _stat_CLASS_ptr_App;
-		delete _stat_CLASS_ptr_Global_App;
+		delete _stat_CLASS_ptr_Global;
 	}
 	void TestBench_Cpp_OpenEpiCentre::Framework_App::dyn_CLASS_create_Architecture()
 	{
@@ -36,7 +36,7 @@
 	{
 		return stat_CLASS_get_ptr_App();
 	}
-	TestBench_Cpp_OpenEpiCentre::Global* TestBench_Cpp_OpenEpiCentre::Framework_App::dyn_CLASS_get_ptr_Global_App()
+	TestBench_Cpp_OpenEpiCentre::Global* TestBench_Cpp_OpenEpiCentre::Framework_App::dyn_CLASS_get_ptr_Global()
 	{
 		return stat_CLASS_get_ptr_Global();
 	}
@@ -126,7 +126,7 @@
 // private.
 	void TestBench_Cpp_OpenEpiCentre::Framework_App::stat_CLASS_boot1_DEFINE_Global()
 	{
-		_stat_CLASS_ptr_Global_App = nullptr;
+		_stat_CLASS_ptr_Global = nullptr;
 	}
 	void TestBench_Cpp_OpenEpiCentre::Framework_App::stat_CLASS_boot1_DEFINE_App()
 	{
@@ -134,17 +134,17 @@
 	}
 	void TestBench_Cpp_OpenEpiCentre::Framework_App::stat_CLASS_boot3_INITIALISE_App()
 	{
-		_stat_CLASS_ptr_App = new App();
+		_stat_CLASS_ptr_App = new class TestBench_Cpp_OpenEpiCentre::App();
 		while (stat_CLASS_get_ptr_App() == nullptr) {}
 	}
 	void TestBench_Cpp_OpenEpiCentre::Framework_App::stat_CLASS_boot3_INITIALISE_Global()
 	{
-		_stat_CLASS_ptr_Global_App = new Global();
+		_stat_CLASS_ptr_Global = new TestBench_Cpp_OpenEpiCentre::Global();
 		while (stat_CLASS_get_ptr_Global() == nullptr) {}
 	}
 	TestBench_Cpp_OpenEpiCentre::Global* TestBench_Cpp_OpenEpiCentre::Framework_App::stat_CLASS_get_ptr_Global()
 	{
-		return _stat_CLASS_ptr_Global_App;
+		return _stat_CLASS_ptr_Global;
 	}
 	TestBench_Cpp_OpenEpiCentre::App* TestBench_Cpp_OpenEpiCentre::Framework_App::stat_CLASS_get_ptr_App()
 	{

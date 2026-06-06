@@ -17,28 +17,28 @@ bool* CLIBOpenEpiCentre::Execute_Control::_stat_REG_ptr_Flag_isSystemInitialised
 		delete _stat_REG_ptr_Flag_isSystemInitialised;
 		delete _stat_REG_ptr_Flag_array_ThreadInitialised;
 	}
-	void CLIBOpenEpiCentre::Execute_Control::dyn_REG_boot1_DEFINE_Execute_Control(CLIBOpenEpiCentre::Framework_Server* obj)
+	void CLIBOpenEpiCentre::Execute_Control::dyn_REG_boot1_DEFINE_Execute_Control(CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Framework_Server* obj)
 	{
 		std::cout << "entered dyn_REG_boot1_DEFINE_Execute_Control()" << std::endl;
 		stat_REG_boot1_DEFINE_Flag_isSystemInitialised();
 		stat_REG_boot1_DEFINE_Flag_array_ThreadInitialised();
 		std::cout << "exiting dyn_REG_boot1_DEFINE_Execute_Control()" << std::endl;
 	}
-	void CLIBOpenEpiCentre::Execute_Control::dyn_REG_boot2_SUBSTANTIATE_Execute_Control(CLIBOpenEpiCentre::Framework_Server* obj)
+	void CLIBOpenEpiCentre::Execute_Control::dyn_REG_boot2_SUBSTANTIATE_Execute_Control(CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Framework_Server* obj)
 	{
 		std::cout << "entered dyn_REG_boot2_SUBSTANTIATE_Execute_Control()" << std::endl;
 		stat_REG_boot2_SUBSTANTIATE_Flag_isSystemInitialised(obj);
 		stat_REG_boot2_SUBSTANTIATE_Flag_array_ThreadInitialised(obj);
 		std::cout << "exiting dyn_REG_boot2_SUBSTANTIATE_Execute_Control()" << std::endl;
 	}
-	void CLIBOpenEpiCentre::Execute_Control::dyn_REG_boot3_INITIALISE_Execute_Control(CLIBOpenEpiCentre::Framework_Server* obj)
+	void CLIBOpenEpiCentre::Execute_Control::dyn_REG_boot3_INITIALISE_Execute_Control(CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Framework_Server* obj)
 	{
 		std::cout << "entered dyn_REG_boot3_INITIALISE_Execute_Control()" << std::endl;
 		stat_REG_boot3_INITIALISE_Flag_isSystemInitialised(obj);
 		stat_REG_boot3_INITIALISE_Flag_array_ThreadInitialised(obj);
 		std::cout << "exiting dyn_REG_boot3_INITIALISE_Execute_Control()" << std::endl;
 	}
-	void CLIBOpenEpiCentre::Execute_Control::dyn_REG_boot4_INSTANTIATE_Execute_Control(CLIBOpenEpiCentre::Framework_Server* obj)
+	void CLIBOpenEpiCentre::Execute_Control::dyn_REG_boot4_INSTANTIATE_Execute_Control(CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Framework_Server* obj)
 	{
 		std::cout << "entered dyn_REG_boot4_INSTANTIATE_Execute_Control()" << std::endl;
 
@@ -93,12 +93,12 @@ bool* CLIBOpenEpiCentre::Execute_Control::_stat_REG_ptr_Flag_isSystemInitialised
 	{
 		_stat_REG_ptr_Flag_array_ThreadInitialised = nullptr;
 	}
-	void CLIBOpenEpiCentre::Execute_Control::stat_REG_boot2_SUBSTANTIATE_Flag_isSystemInitialised(CLIBOpenEpiCentre::Framework_Server* obj)
+	void CLIBOpenEpiCentre::Execute_Control::stat_REG_boot2_SUBSTANTIATE_Flag_isSystemInitialised(CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Framework_Server* obj)
 	{
 		_stat_REG_ptr_Flag_isSystemInitialised = new bool();
 		*_stat_REG_ptr_Flag_isSystemInitialised = true;
 	}
-	void CLIBOpenEpiCentre::Execute_Control::stat_REG_boot2_SUBSTANTIATE_Flag_array_ThreadInitialised(CLIBOpenEpiCentre::Framework_Server* obj)
+	void CLIBOpenEpiCentre::Execute_Control::stat_REG_boot2_SUBSTANTIATE_Flag_array_ThreadInitialised(CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Framework_Server* obj)
 	{
 		_stat_REG_ptr_Flag_array_ThreadInitialised = new std::array<bool, 4>();
 		while (stat_get_ptr_list_Of_flag_ThreadInitialised() == nullptr) { }
@@ -109,11 +109,11 @@ bool* CLIBOpenEpiCentre::Execute_Control::_stat_REG_ptr_Flag_isSystemInitialised
 			*temp = true;
 		}
 	}
-	void CLIBOpenEpiCentre::Execute_Control::stat_REG_boot3_INITIALISE_Flag_isSystemInitialised(CLIBOpenEpiCentre::Framework_Server* obj)
+	void CLIBOpenEpiCentre::Execute_Control::stat_REG_boot3_INITIALISE_Flag_isSystemInitialised(CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Framework_Server* obj)
 	{
 		*_stat_REG_ptr_Flag_isSystemInitialised = true;
 	}
-	void CLIBOpenEpiCentre::Execute_Control::stat_REG_boot3_INITIALISE_Flag_array_ThreadInitialised(CLIBOpenEpiCentre::Framework_Server* obj)
+	void CLIBOpenEpiCentre::Execute_Control::stat_REG_boot3_INITIALISE_Flag_array_ThreadInitialised(CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Framework_Server* obj)
 	{
 		for (uint8_t threadId = 0; threadId < sizeof(*stat_get_ptr_list_Of_flag_ThreadInitialised()); threadId++)
 		{

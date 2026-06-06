@@ -1,12 +1,6 @@
 #include "../include/CLIB_OpenEpiCentre.h"
-#include "../include/engine/CLIB_OpenEpiCentre_Algorithms.h"
-#include "../include/engine/CLIB_OpenEpiCentre_Data.h"
-#include "../include/engine/CLIB_OpenEpiCentre_Data_Control.h"
-#include "../include/engine/CLIB_OpenEpiCentre_Execute.h"
-#include "../include/engine/CLIB_OpenEpiCentre_Execute_Control.h"
 #include "../include/engine/CLIB_OpenEpiCentre_Framework_Server.h"
-#include "../include/engine/CLIB_OpenEpiCentre_Global.h"
-#include "../include/engine/CLIB_OpenEpiCentre_Server.h"
+#include "../include/engine/CLIB_OpenEpiCentre_App.h"
 #include "../include/structs/Concurrent.h"
 #include "../include/structs/Input.h"
 #include "../include/structs/Output.h"
@@ -24,13 +18,13 @@
 #include <cfloat>
 #include <cstdint>
 #include <iostream>
-	CLIBOpenEpiCentre::Framework_Server* _CLASS_ptr_CLIB_OpenEpiCentre_Framework_Server;
-	bool* _stat_REG_stat_REG_get_ptr_CLIB_OpenEpiCentre_isFlagINSTANTIATED;
+	CLIBOpenEpiCentre::Framework_App* _stat_CLASS_CLIB_OpenEpiCentre_Framework_Server;
+	bool* _stat_REG_get_ptr_CLIB_OpenEpiCentre_isFlagINSTANTIATED;
 // public.
 	void CLIBOpenEpiCentre::CLIBConcurrentServerIO::app_FUNCT_flip_Input_DoubleBuffer()
 	{
 		if (stat_REG_get_ptr_CLIB_OpenEpiCentre_isFlagINSTANTIATED()[1] == false) {
-			stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_Server()->dyn_CLASS_get_ptr_Server()->dyn_CLASS_get_ptr_Data()->dyn_CLASS_get_ptr_Data_Control()->app_FUNCT_flip_Input_DoubleBuffer();
+			stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App()->stat_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Data()->dyn_CLASS_get_ptr_Data_Control()->app_FUNCT_flip_Input_DoubleBuffer();
 		}
 		else {
 			stat_REG_get_ptr_CLIB_OpenEpiCentre_isFlagINSTANTIATED()[1] = false;
@@ -43,57 +37,57 @@ void* CLIBOpenEpiCentre::CLIBConcurrentServerIO::app_FUNCT_generate_Program()
 
 	std::cout << "started Architecture Framework CLASS - DECLARE DEFINE INITIALISE." << std::endl;
 	stat_CLASS_boot1_DEFINE_Framework();
-	stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_Server()->dyn_CLASS_create_Architecture();
+	stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App()->dyn_CLASS_create_Architecture();
 	std::cout << "started Architecture Framework CLASS - DECLARE DEFINE INITIALISE." << std::endl;
 
-	std::cout << "started Global Meta-Data and Settings." << std::endl;
-	stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_Server()->dyn_CLASS_create_Global_and_Settings();
-	stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_Server()->dyn_CLASS_get_ptr_Global()->dyn_REG_boot1_DEFINE_Global();
-	stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_Server()->dyn_CLASS_get_ptr_Global()->dyn_REG_boot2_SUBSTANTIATE_Global();
-	stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_Server()->dyn_CLASS_get_ptr_Global()->dyn_REG_boot3_INITIALISE_Global();
-	std::cout << "done Global Meta-Data and Settings." << std::endl;
+	std::cout << "started CLIB_OpenEpiCentre_Global Meta-Data and Settings." << std::endl;
+	stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App()->dyn_CLASS_create_CLIB_OpenEpiCentre_Global_and_Settings();
+	stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App()->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_Global()->dyn_REG_boot1_DEFINE_CLIB_OpenEpiCentre_Global();
+	stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App()->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_Global()->dyn_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_Global();
+	stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App()->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_Global()->dyn_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_Global();
+	std::cout << "done CLIB_OpenEpiCentre_Global Meta-Data and Settings." << std::endl;
 
 	std::cout << "started STRUCTS Generate." << std::endl;
 	std::cout << "started Independent STRUCT(s) - DECLARE DEFINE INITIALISE, Registers - DECLARE SUBSTANTIATE INITIALISE." << std::endl;
-	stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_Server()->dyn_STRUCT_get_User_Input()->dyn_REG_boot1_DEFINE_User_Input();
-	stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_Server()->dyn_STRUCT_get_User_Input()->dyn_REG_boot2_SUBSTANTIATE_User_Input();
-	stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_Server()->dyn_STRUCT_get_User_Input()->dyn_REG_boot3_INITIALISE_User_Input();
+	stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App()->dyn_STRUCT_get_User_Input()->dyn_REG_boot1_DEFINE_User_Input();
+	stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App()->dyn_STRUCT_get_User_Input()->dyn_REG_boot2_SUBSTANTIATE_User_Input();
+	stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App()->dyn_STRUCT_get_User_Input()->dyn_REG_boot3_INITIALISE_User_Input();
 
-	stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_Server()->dyn_STRUCT_get_User_Output()->dyn_REG_boot1_DEFINE_User_Output();
-	stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_Server()->dyn_STRUCT_get_User_Output()->dyn_REG_boot2_SUBSTANTIATE_User_Output();
-	stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_Server()->dyn_STRUCT_get_User_Output()->dyn_REG_boot3_INITIALISE_User_Output();
+	stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App()->dyn_STRUCT_get_User_Output()->dyn_REG_boot1_DEFINE_User_Output();
+	stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App()->dyn_STRUCT_get_User_Output()->dyn_REG_boot2_SUBSTANTIATE_User_Output();
+	stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App()->dyn_STRUCT_get_User_Output()->dyn_REG_boot3_INITIALISE_User_Output();
 
-	stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_Server()->dyn_STRUCT_get_User_Algorithm()->dyn_REG_boot1_DEFINE_User_Algorithm();
-	stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_Server()->dyn_STRUCT_get_User_Algorithm()->dyn_REG_boot2_SUBSTANTIATE_User_Algorithm();
-	stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_Server()->dyn_STRUCT_get_User_Algorithm()->dyn_REG_boot3_INITIALISE_User_Algorithm();
+	stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App()->dyn_STRUCT_get_User_Algorithm()->dyn_REG_boot1_DEFINE_User_Algorithm();
+	stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App()->dyn_STRUCT_get_User_Algorithm()->dyn_REG_boot2_SUBSTANTIATE_User_Algorithm();
+	stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App()->dyn_STRUCT_get_User_Algorithm()->dyn_REG_boot3_INITIALISE_User_Algorithm();
 
-	stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_Server()->dyn_STRUCT_get_Input()->dyn_REG_boot1_DEFINE_Input();
-	stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_Server()->dyn_STRUCT_get_Input()->dyn_REG_boot2_SUBSTANTIATE_Input();
-	stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_Server()->dyn_STRUCT_get_Input()->dyn_REG_boot3_INITIALISE_Input(stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_Server());
+	stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App()->dyn_STRUCT_get_Input()->dyn_REG_boot1_DEFINE_Input();
+	stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App()->dyn_STRUCT_get_Input()->dyn_REG_boot2_SUBSTANTIATE_Input();
+	stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App()->dyn_STRUCT_get_Input()->dyn_REG_boot3_INITIALISE_Input(stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App());
 
-	stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_Server()->dyn_STRUCT_get_Output()->dyn_REG_boot1_DEFINE_Output();
-	stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_Server()->dyn_STRUCT_get_Output()->dyn_REG_boot2_SUBSTANTIATE_Output();
-	stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_Server()->dyn_STRUCT_get_Output()->dyn_REG_boot3_INITIALISE_Output(stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_Server());
+	stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App()->dyn_STRUCT_get_Output()->dyn_REG_boot1_DEFINE_Output();
+	stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App()->dyn_STRUCT_get_Output()->dyn_REG_boot2_SUBSTANTIATE_Output();
+	stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App()->dyn_STRUCT_get_Output()->dyn_REG_boot3_INITIALISE_Output(stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App());
 
-	stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_Server()->dyn_STRUCT_get_Concurrent()->dyn_REG_boot1_DEFINE_Concurrent();
-	stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_Server()->dyn_STRUCT_get_Concurrent()->dyn_REG_boot2_SUBSTANTIATE_Concurrent();
-	stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_Server()->dyn_STRUCT_get_Concurrent()->dyn_REG_boot3_INITIALISE_Concurrent(stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_Server());
+	stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App()->dyn_STRUCT_get_Concurrent()->dyn_REG_boot1_DEFINE_Concurrent();
+	stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App()->dyn_STRUCT_get_Concurrent()->dyn_REG_boot2_SUBSTANTIATE_Concurrent();
+	stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App()->dyn_STRUCT_get_Concurrent()->dyn_REG_boot3_INITIALISE_Concurrent(stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App());
 	std::cout << "done Independent STRUCT(s) - DECLARE DEFINE INITIALISE, Registers - DECLARE SUBSTANTIATE INITIALISE." << std::endl;
 
 	std::cout << "started Architecture Application CLASS(s) - DECLARE DEFINE INITIALISE, Registers - DECLARE SUBSTANTIATE INITIALISE." << std::endl;
-	stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_Server()->dyn_CLASS_create_Architecture();
+	stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App()->dyn_CLASS_create_Architecture();
 
 	std::cout << "started Architecture Registers - DEFINE" << std::endl;
-	stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_Server()->dyn_REG_boot1_DEFINE_Framework_Server(stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_Server());
+	stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App()->dyn_REG_boot1_DEFINE_CLIB_OpenEpiCentre_Framework_App(stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App());
 	std::cout << "done Architecture Registers - DEFINE." << std::endl;
 
 	std::cout << "started Architecture Registers - SUBSTANTIATE." << std::endl;
 
-	stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_Server()->dyn_REG_boot2_SUBSTANTIATE_Framework_Server(stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_Server());
+	stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App()->dyn_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_Framework_App(stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App());
 	std::cout << "done Architecture Registers - SUBSTANTIATE." << std::endl;
 
 	std::cout << "started Architecture Registers - INITIALISE." << std::endl;
-	stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_Server()->dyn_REG_boot3_INITIALISE_Framework_Server(stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_Server());
+	stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App()->dyn_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_Framework_App(stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App());
 	std::cout << "done Architecture Registers - INITIALISE." << std::endl;
 	std::cout << "done Architecture Application CLASS(s) - DECLARE DEFINE INITIALISE, Registers - DECLARE SUBSTANTIATE INITIALISE." << std::endl;
 
@@ -101,7 +95,7 @@ void* CLIBOpenEpiCentre::CLIBConcurrentServerIO::app_FUNCT_generate_Program()
 	stat_REG_boot1_DEFINE_CLIB_OpenEpiCentre_isFlagINSTANTIATED();
 	stat_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_isFlagINSTANTIATED();
 	stat_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_isFlagINSTANTIATED();
-	stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_Server()->dyn_PGM_boot4_INSTANTIATE_Framework_Server(stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_Server());
+	stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App()->dyn_PGM_boot4_INSTANTIATE_CLIB_OpenEpiCentre_Framework_App(stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App());
 	std::cout << "done Program - INSTANTIATE." << std::endl;
 
 	std::cout << " " << std::endl;
@@ -118,7 +112,7 @@ void* CLIBOpenEpiCentre::CLIBConcurrentServerIO::app_FUNCT_generate_Program()
 	std::cout << "|/                //               \\| " << std::endl;
 	std::cout << "`                 V                 '" << std::endl;
 	std::cout << " " << std::endl;
-	return (void*)stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_Server();
+	return (void*)stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App();
 }
 unsigned char* CLIBOpenEpiCentre::CLIBConcurrentServerIO::app_FUNCT_get_flag_isPGM_INSTANTIATED()
 {
@@ -131,12 +125,12 @@ unsigned char* CLIBOpenEpiCentre::CLIBConcurrentServerIO::app_FUNCT_get_flag_isP
 	else {
 		stat_REG_get_ptr_CLIB_OpenEpiCentre_isFlagINSTANTIATED()[2] = false;
 	}
-	return Global::stat_CONVERT_MsbBoolean_To_MsbByteArray(temp);
+	return CLIB_OpenEpiCentre_Global::stat_CONVERT_MsbBoolean_To_MsbByteArray(temp);
 }
 void CLIBOpenEpiCentre::CLIBConcurrentServerIO::app_FUNCT_select_set_Intput_Subset(unsigned char* bytes)
 {
 	if (stat_REG_get_ptr_CLIB_OpenEpiCentre_isFlagINSTANTIATED()[3] == false) {
-		stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_Server()->dyn_CLASS_get_ptr_Server()->dyn_CLASS_get_ptr_Data()->dyn_REG_get_ptr_Item_array_Of_doubleBuffer_Input_WRITE(stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_Server())->app_select_And_Set_Input_Subset(stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_Server(), Global::stat_CONVERT_MsbByteArray_To_Msbuint8_t(bytes));
+		stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App()->dyn_CLASS_get_ptr_Server()->dyn_CLASS_get_ptr_Data()->dyn_REG_get_ptr_Item_array_Of_doubleBuffer_Input_WRITE(stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App())->app_select_And_Set_Input_Subset(stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App(), CLIB_OpenEpiCentre_Global::stat_CONVERT_MsbByteArray_To_Msbuint8_t(bytes));
 	}
 	else {
 		stat_REG_get_ptr_CLIB_OpenEpiCentre_isFlagINSTANTIATED()[3] = false;
@@ -146,8 +140,9 @@ void CLIBOpenEpiCentre::CLIBConcurrentServerIO::app_FUNCT_select_set_Intput_Subs
 void CLIBOpenEpiCentre::CLIBConcurrentServerIO::app_FUNCT_terminate_Program()
 {
 	if (stat_REG_get_ptr_CLIB_OpenEpiCentre_isFlagINSTANTIATED()[4] == false) {
-		delete _CLASS_ptr_Framework_Server;
-		while (stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_Server() != nullptr) {}
+		delete _stat_CLASS_CLIB_OpenEpiCentre_Framework_Server;
+		delete _stat_REG_get_ptr_CLIB_OpenEpiCentre_isFlagINSTANTIATED;;
+		while (stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App() != nullptr) {}
 	}
 	else {
 		stat_REG_get_ptr_CLIB_OpenEpiCentre_isFlagINSTANTIATED()[4] = false;
@@ -157,7 +152,7 @@ void CLIBOpenEpiCentre::CLIBConcurrentServerIO::app_FUNCT_terminate_Program()
 void CLIBOpenEpiCentre::CLIBConcurrentServerIO::app_FUNCT_pop_From_Stack_Of_Output()
 {
 	if (stat_REG_get_ptr_CLIB_OpenEpiCentre_isFlagINSTANTIATED()[5] == false) {
-		stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_Server()->dyn_CLASS_get_ptr_Server()->dyn_CLASS_get_ptr_Data()->dyn_CLASS_get_ptr_Data_Control()->app_FUNCT_pop_From_Stack_Of_Output(stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_Server());
+		stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App()->dyn_CLASS_get_ptr_Server()->dyn_CLASS_get_ptr_Data()->dyn_CLASS_get_ptr_Data_Control()->app_FUNCT_pop_From_Stack_Of_Output(stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App());
 	}
 	else {
 		stat_REG_get_ptr_CLIB_OpenEpiCentre_isFlagINSTANTIATED()[5] = false;
@@ -167,7 +162,7 @@ void CLIBOpenEpiCentre::CLIBConcurrentServerIO::app_FUNCT_pop_From_Stack_Of_Outp
 void CLIBOpenEpiCentre::CLIBConcurrentServerIO::app_FUNCT_push_To_STACK_Of_Input()
 {
 	if (stat_REG_get_ptr_CLIB_OpenEpiCentre_isFlagINSTANTIATED()[6] == false) {
-		stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_Server()->dyn_CLASS_get_ptr_Server()->dyn_CLASS_get_ptr_Data()->dyn_CLASS_get_ptr_Data_Control()->app_FUNCT_push_To_STACK_Of_Input(stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_Server());
+		stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App()->dyn_CLASS_get_ptr_Server()->dyn_CLASS_get_ptr_Data()->dyn_CLASS_get_ptr_Data_Control()->app_FUNCT_push_To_STACK_Of_Input(stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App());
 	}
 	else {
 		stat_REG_get_ptr_CLIB_OpenEpiCentre_isFlagINSTANTIATED()[6] = false;
@@ -177,7 +172,7 @@ void CLIBOpenEpiCentre::CLIBConcurrentServerIO::app_FUNCT_push_To_STACK_Of_Input
 void* CLIBOpenEpiCentre::CLIBConcurrentServerIO::dyn_PGM_get_program_WriteEnableStack_ServerInputReceive()
 {
 	if (stat_REG_get_ptr_CLIB_OpenEpiCentre_isFlagINSTANTIATED()[7] == false) {
-		return stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_Server()->dyn_CLASS_get_ptr_Server()->dyn_CLASS_get_ptr_Execute()->dyn_PGM_get_WriteEnable_ServerInputReceive();
+		return stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App()->dyn_CLASS_get_ptr_Server()->dyn_CLASS_get_ptr_Execute()->dyn_PGM_get_WriteEnable_ServerInputReceive();
 	}
 	else {
 		stat_REG_get_ptr_CLIB_OpenEpiCentre_isFlagINSTANTIATED()[7] = false;
@@ -190,7 +185,7 @@ void* CLIBOpenEpiCentre::CLIBConcurrentServerIO::dyn_PGM_get_program_WriteEnable
 	void* temp;
 	temp = nullptr;
 	if (stat_REG_get_ptr_CLIB_OpenEpiCentre_isFlagINSTANTIATED()[8] == false) {
-		temp = stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_Server()->dyn_CLASS_get_ptr_Server()->dyn_CLASS_get_ptr_Execute()->dyn_PGM_get_WriteEnable_ServerOutputSend();
+		temp = stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App()->dyn_CLASS_get_ptr_Server()->dyn_CLASS_get_ptr_Execute()->dyn_PGM_get_WriteEnable_ServerOutputSend();
 	}
 	else {
 		stat_REG_get_ptr_CLIB_OpenEpiCentre_isFlagINSTANTIATED()[8] = false;
@@ -203,39 +198,40 @@ unsigned char* CLIBOpenEpiCentre::CLIBConcurrentServerIO::dyn_REG_get_flag_isSta
 	bool* temp;
 	*temp = true;
 	if (stat_REG_get_ptr_CLIB_OpenEpiCentre_isFlagINSTANTIATED()[9] == false) {
-		*temp = stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_Server()->dyn_CLASS_get_ptr_Server()->dyn_CLASS_get_ptr_Data()->dyn_CLASS_get_ptr_Data_Control()->dyn_REG_get_Item_flag_isLoaded_Stack_InputAction();
+		*temp = stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App()->dyn_CLASS_get_ptr_Server()->dyn_CLASS_get_ptr_Data()->dyn_CLASS_get_ptr_Data_Control()->dyn_REG_get_Item_flag_isLoaded_Stack_InputAction();
 	}
 	else {
 		stat_REG_get_ptr_CLIB_OpenEpiCentre_isFlagINSTANTIATED()[9] = false;
 		stat_app_FUNCT_Calc_IsAllINSTANTIATED();
 	}
-	return Global::stat_CONVERT_MsbBoolean_To_MsbByteArray(*temp);
+	return CLIB_OpenEpiCentre_Global::stat_CONVERT_MsbBoolean_To_MsbByteArray(*temp);
 }
 unsigned char* CLIBOpenEpiCentre::CLIBConcurrentServerIO::dyn_REG_get_flag_isStackLoaded_ServerOutputSend()
 {
 	bool* temp;
 	*temp = true;
 	if (stat_REG_get_ptr_CLIB_OpenEpiCentre_isFlagINSTANTIATED()[10] == false) {
-		*temp = stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_Server()->dyn_CLASS_get_ptr_Server()->dyn_CLASS_get_ptr_Data()->dyn_CLASS_get_ptr_Data_Control()->dyn_REG_get_Item_flag_isLoaded_Stack_OutputSend();
+		*temp = stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App()->dyn_CLASS_get_ptr_Server()->dyn_CLASS_get_ptr_Data()->dyn_CLASS_get_ptr_Data_Control()->dyn_REG_get_Item_flag_isLoaded_Stack_OutputSend();
 	}
 	else {
 		stat_REG_get_ptr_CLIB_OpenEpiCentre_isFlagINSTANTIATED()[10] = false;
 		stat_app_FUNCT_Calc_IsAllINSTANTIATED();
 	}
-	return Global::stat_CONVERT_MsbBoolean_To_MsbByteArray(*temp);
+	return CLIB_OpenEpiCentre_Global::stat_CONVERT_MsbBoolean_To_MsbByteArray(*temp);
 }
 unsigned char* CLIBOpenEpiCentre::CLIBConcurrentServerIO::dyn_REG_get_flag_IsInitialised_CLIBOpenEpiCentre()
 {
 	bool* temp;
+	temp = nullptr;
 	*temp = true;
 	if (stat_REG_get_ptr_CLIB_OpenEpiCentre_isFlagINSTANTIATED()[11] == false) {
-		*temp = stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_Server()->dyn_CLASS_get_ptr_Server()->dyn_CLASS_get_ptr_Execute()->dyn_CLASS_get_ptr_Execute_Control()->dyn_REG_get_Flag_is_SystemInitialised();
+		*temp = stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App()->dyn_CLASS_get_ptr_Server()->dyn_CLASS_get_ptr_Execute()->dyn_CLASS_get_ptr_Execute_Control()->dyn_REG_get_Flag_is_SystemInitialised();
 	}
 	else {
 		stat_REG_get_ptr_CLIB_OpenEpiCentre_isFlagINSTANTIATED()[11] = false;
 		stat_app_FUNCT_Calc_IsAllINSTANTIATED();
 	}
-	return Global::stat_CONVERT_MsbBoolean_To_MsbByteArray(*temp);
+	return CLIB_OpenEpiCentre_Global::stat_CONVERT_MsbBoolean_To_MsbByteArray(*temp);
 }
 unsigned char* CLIBOpenEpiCentre::CLIBConcurrentServerIO::io_PRAISE_get_Item_Output_praise0_Value()
 {
@@ -243,16 +239,16 @@ unsigned char* CLIBOpenEpiCentre::CLIBConcurrentServerIO::io_PRAISE_get_Item_Out
 	temp = nullptr;
 	*temp = DBL_MAX;
 	if (stat_REG_get_ptr_CLIB_OpenEpiCentre_isFlagINSTANTIATED()[14] == false) {
-		Output_praise0* objOutput_praise0 = reinterpret_cast<Output_praise0 *>(stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_Server()->dyn_CLASS_get_ptr_Server()->
+		auto* objOutput_praise0 = reinterpret_cast<Output_praise0 *>(stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App()->dyn_CLASS_get_ptr_Server()->
 			dyn_CLASS_get_ptr_Data()->dyn_REG_get_ptr_Item_array_Of_doubleBuffer_Output_READ(
-				stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_Server()));
+				stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App()));
 		*temp = objOutput_praise0->dyn_REG_get_output_Value();
 	}
 	else {
 		stat_REG_get_ptr_CLIB_OpenEpiCentre_isFlagINSTANTIATED()[14] = false;
 		stat_app_FUNCT_Calc_IsAllINSTANTIATED();
 	}
-	return Global::stat_CONVERT_MsbDouble_To_MsbByteArray(*temp);
+	return CLIB_OpenEpiCentre_Global::stat_CONVERT_MsbDouble_To_MsbByteArray(*temp);
 }
 unsigned char* CLIBOpenEpiCentre::CLIBConcurrentServerIO::io_PRAISE_get_Item_Output_praise1_Value()
 {
@@ -260,14 +256,14 @@ unsigned char* CLIBOpenEpiCentre::CLIBConcurrentServerIO::io_PRAISE_get_Item_Out
 	temp = nullptr;
 	*temp = DBL_MAX;
 	if (stat_REG_get_ptr_CLIB_OpenEpiCentre_isFlagINSTANTIATED()[17] == false) {
-		Output_praise1* objOutput_praise1 = reinterpret_cast<Output_praise1 *>(stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_Server()->dyn_CLASS_get_ptr_Server()->dyn_CLASS_get_ptr_Data()->dyn_REG_get_ptr_Item_array_Of_doubleBuffer_Output_READ(stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_Server()));
+		auto* objOutput_praise1 = reinterpret_cast<Output_praise1 *>(stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App()->dyn_CLASS_get_ptr_Server()->dyn_CLASS_get_ptr_Data()->dyn_REG_get_ptr_Item_array_Of_doubleBuffer_Output_READ(stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App()));
 		*temp = objOutput_praise1->dyn_REG_get_output_Value();
 	}
 	else {
 		stat_REG_get_ptr_CLIB_OpenEpiCentre_isFlagINSTANTIATED()[17] = false;
 		stat_app_FUNCT_Calc_IsAllINSTANTIATED();
 	}
-	return Global::stat_CONVERT_MsbDouble_To_MsbByteArray(*temp);
+	return CLIB_OpenEpiCentre_Global::stat_CONVERT_MsbDouble_To_MsbByteArray(*temp);
 }
 unsigned char* CLIBOpenEpiCentre::CLIBConcurrentServerIO::io_PRAISE_get_Item_Output_praise2_Value()
 {
@@ -275,16 +271,16 @@ unsigned char* CLIBOpenEpiCentre::CLIBConcurrentServerIO::io_PRAISE_get_Item_Out
 	temp = nullptr;
 	*temp = DBL_MAX;
 	if (stat_REG_get_ptr_CLIB_OpenEpiCentre_isFlagINSTANTIATED()[20] == false) {
-		Output_praise2* objOutput_praise2 = reinterpret_cast<Output_praise2 *>(stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_Server()->dyn_CLASS_get_ptr_Server()->
+		auto* objOutput_praise2 = reinterpret_cast<Output_praise2 *>(stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App()->dyn_CLASS_get_ptr_Server()->
 			dyn_CLASS_get_ptr_Data()->dyn_REG_get_ptr_Item_array_Of_doubleBuffer_Output_READ(
-				stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_Server()));
+				stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App()));
 		*temp = objOutput_praise2->dyn_REG_get_output_Value();
 	}
 	else {
 		stat_REG_get_ptr_CLIB_OpenEpiCentre_isFlagINSTANTIATED()[20] = false;
 		stat_app_FUNCT_Calc_IsAllINSTANTIATED();
 	}
-	return Global::stat_CONVERT_MsbDouble_To_MsbByteArray(*temp);
+	return CLIB_OpenEpiCentre_Global::stat_CONVERT_MsbDouble_To_MsbByteArray(*temp);
 }
 unsigned char* CLIBOpenEpiCentre::CLIBConcurrentServerIO::io_PRAISE_get_Item_Output_praise3_Value()
 {
@@ -292,16 +288,16 @@ unsigned char* CLIBOpenEpiCentre::CLIBConcurrentServerIO::io_PRAISE_get_Item_Out
 	temp = nullptr;
 	*temp = DBL_MAX;
 	if (stat_REG_get_ptr_CLIB_OpenEpiCentre_isFlagINSTANTIATED()[25] == false) {
-		Output_praise3* objOutput_praise3 = reinterpret_cast<Output_praise3 *>(stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_Server()->dyn_CLASS_get_ptr_Server()->
+		auto* objOutput_praise3 = reinterpret_cast<Output_praise3 *>(stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App()->dyn_CLASS_get_ptr_Server()->
 			dyn_CLASS_get_ptr_Data()->dyn_REG_get_ptr_Item_array_Of_doubleBuffer_Output_READ(
-				stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_Server()));
+				stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App()));
 		*temp = objOutput_praise3->dyn_REG_get_output_Value();
 	}
 	else {
 		stat_REG_get_ptr_CLIB_OpenEpiCentre_isFlagINSTANTIATED()[25] = false;
 		stat_app_FUNCT_Calc_IsAllINSTANTIATED();
 	}
-	return Global::stat_CONVERT_MsbDouble_To_MsbByteArray(*temp);
+	return CLIB_OpenEpiCentre_Global::stat_CONVERT_MsbDouble_To_MsbByteArray(*temp);
 }
 unsigned char* CLIBOpenEpiCentre::CLIBConcurrentServerIO::io_PRAISE_get_MetaData_PraiseEventId()
 {
@@ -309,19 +305,19 @@ unsigned char* CLIBOpenEpiCentre::CLIBConcurrentServerIO::io_PRAISE_get_MetaData
 	temp = nullptr;
 	*temp = UINT8_MAX;
 	if (stat_REG_get_ptr_CLIB_OpenEpiCentre_isFlagINSTANTIATED()[12] == false) {
-		*temp = stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_Server()->dyn_CLASS_get_ptr_Server()->dyn_CLASS_get_ptr_Data()->dyn_REG_get_ptr_Item_array_Of_doubleBuffer_Output_WRITE(stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_Server())->dyn_REG_get_ptr_Output_praiseEventId();
+		*temp = stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App()->dyn_CLASS_get_ptr_Server()->dyn_CLASS_get_ptr_Data()->dyn_REG_get_ptr_Item_array_Of_doubleBuffer_Output_WRITE(stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App())->dyn_REG_get_ptr_Output_praiseEventId();
 	}
 	else {
 		stat_REG_get_ptr_CLIB_OpenEpiCentre_isFlagINSTANTIATED()[12] = false;
 		stat_app_FUNCT_Calc_IsAllINSTANTIATED();
 	}
-	return Global::stat_CONVERT_uint8_t_to_ByteArray(*temp);
+	return CLIB_OpenEpiCentre_Global::stat_CONVERT_uint8_t_to_ByteArray(*temp);
 }
 void CLIBOpenEpiCentre::CLIBConcurrentServerIO::io_PRAISE_set_Item_Input_praise0_Value_A(unsigned char* bytes)
 {
 	if (stat_REG_get_ptr_CLIB_OpenEpiCentre_isFlagINSTANTIATED()[15] == false) {
-		Input_praise0* objInput_praise0 = reinterpret_cast<Input_praise0 *>(stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_Server()->dyn_CLASS_get_ptr_Server()->dyn_CLASS_get_ptr_Data()->dyn_REG_get_ptr_Item_array_Of_doubleBuffer_Input_WRITE(stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_Server()));
-		objInput_praise0->dyn_REG_set_Item_Input_praise0_valueA(Global::stat_CONVERT_MsbByteArray_To_MsbFloat(bytes));
+		auto* objInput_praise0 = reinterpret_cast<Input_praise0 *>(stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App()->dyn_CLASS_get_ptr_Server()->dyn_CLASS_get_ptr_Data()->dyn_REG_get_ptr_Item_array_Of_doubleBuffer_Input_WRITE(stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App()));
+		objInput_praise0->dyn_REG_set_Item_Input_praise0_valueA(CLIB_OpenEpiCentre_Global::stat_CONVERT_MsbByteArray_To_MsbFloat(bytes));
 	}
 	else {
 		stat_REG_get_ptr_CLIB_OpenEpiCentre_isFlagINSTANTIATED()[15] = false;
@@ -331,10 +327,10 @@ void CLIBOpenEpiCentre::CLIBConcurrentServerIO::io_PRAISE_set_Item_Input_praise0
 void CLIBOpenEpiCentre::CLIBConcurrentServerIO::io_PRAISE_set_Item_Input_praise0_Value_B(unsigned char* bytes)
 {
 	if (stat_REG_get_ptr_CLIB_OpenEpiCentre_isFlagINSTANTIATED()[16] == false) {
-		Input_praise0* objInput_praise0 = reinterpret_cast<Input_praise0 *>(stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_Server()->dyn_CLASS_get_ptr_Server()->
+		auto* objInput_praise0 = reinterpret_cast<Input_praise0 *>(stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App()->dyn_CLASS_get_ptr_Server()->
 			dyn_CLASS_get_ptr_Data()->dyn_REG_get_ptr_Item_array_Of_doubleBuffer_Input_WRITE(
-				stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_Server()));
-		objInput_praise0->dyn_REG_set_Item_Input_praise0_valueB(Global::stat_CONVERT_MsbByteArray_To_MsbFloat(bytes));
+				stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App()));
+		objInput_praise0->dyn_REG_set_Item_Input_praise0_valueB(CLIB_OpenEpiCentre_Global::stat_CONVERT_MsbByteArray_To_MsbFloat(bytes));
 	}
 	else {
 		stat_REG_get_ptr_CLIB_OpenEpiCentre_isFlagINSTANTIATED()[16] = false;
@@ -344,10 +340,10 @@ void CLIBOpenEpiCentre::CLIBConcurrentServerIO::io_PRAISE_set_Item_Input_praise0
 void CLIBOpenEpiCentre::CLIBConcurrentServerIO::io_PRAISE_set_Item_Input_praise1_Value_A(unsigned char* bytes)
 {
 	if (stat_REG_get_ptr_CLIB_OpenEpiCentre_isFlagINSTANTIATED()[18] == false) {
-		Input_praise1* objInput_praise1 = reinterpret_cast<Input_praise1 *>(stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_Server()->dyn_CLASS_get_ptr_Server()->
+		auto* objInput_praise1 = reinterpret_cast<Input_praise1 *>(stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App()->dyn_CLASS_get_ptr_Server()->
 			dyn_CLASS_get_ptr_Data()->dyn_REG_get_ptr_Item_array_Of_doubleBuffer_Input_WRITE(
-				stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_Server()));
-		objInput_praise1->dyn_REG_set_Item_Input_praise1_valueA(Global::stat_CONVERT_MsbByteArray_To_MsbFloat(bytes));
+				stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App()));
+		objInput_praise1->dyn_REG_set_Item_Input_praise1_valueA(CLIB_OpenEpiCentre_Global::stat_CONVERT_MsbByteArray_To_MsbFloat(bytes));
 	}
 	else {
 		stat_REG_get_ptr_CLIB_OpenEpiCentre_isFlagINSTANTIATED()[18] = false;
@@ -357,8 +353,8 @@ void CLIBOpenEpiCentre::CLIBConcurrentServerIO::io_PRAISE_set_Item_Input_praise1
 void CLIBOpenEpiCentre::CLIBConcurrentServerIO::io_PRAISE_set_Item_Input_praise1_Value_B(unsigned char* bytes)
 {
 	if (stat_REG_get_ptr_CLIB_OpenEpiCentre_isFlagINSTANTIATED()[19] == false) {
-		Input_praise1* objInput_praise1 = reinterpret_cast<Input_praise1 *>(stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_Server()->dyn_CLASS_get_ptr_Server()->dyn_CLASS_get_ptr_Data()->dyn_REG_get_ptr_Item_array_Of_doubleBuffer_Input_WRITE(stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_Server()));
-		objInput_praise1->dyn_REG_set_Item_Input_praise1_valueB(Global::stat_CONVERT_MsbByteArray_To_MsbFloat(bytes));
+		auto* objInput_praise1 = reinterpret_cast<Input_praise1 *>(stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App()->dyn_CLASS_get_ptr_Server()->dyn_CLASS_get_ptr_Data()->dyn_REG_get_ptr_Item_array_Of_doubleBuffer_Input_WRITE(stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App()));
+		objInput_praise1->dyn_REG_set_Item_Input_praise1_valueB(CLIB_OpenEpiCentre_Global::stat_CONVERT_MsbByteArray_To_MsbFloat(bytes));
 	}
 	else {
 		stat_REG_get_ptr_CLIB_OpenEpiCentre_isFlagINSTANTIATED()[19] = false;
@@ -368,8 +364,8 @@ void CLIBOpenEpiCentre::CLIBConcurrentServerIO::io_PRAISE_set_Item_Input_praise1
 void CLIBOpenEpiCentre::CLIBConcurrentServerIO::io_PRAISE_set_Item_Input_praise2_Value_A(unsigned char* bytes)
 {
 	if (stat_REG_get_ptr_CLIB_OpenEpiCentre_isFlagINSTANTIATED()[23] == false) {
-		Input_praise2* objInput_praise2 = reinterpret_cast<Input_praise2 *>(stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_Server()->dyn_CLASS_get_ptr_Server()->dyn_CLASS_get_ptr_Data()->dyn_REG_get_ptr_Item_array_Of_doubleBuffer_Input_WRITE(stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_Server()));
-		objInput_praise2->dyn_REG_set_Item_Input_praise2_valueA(Global::stat_CONVERT_MsbByteArray_To_MsbFloat(bytes));
+		auto* objInput_praise2 = reinterpret_cast<Input_praise2 *>(stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App()->dyn_CLASS_get_ptr_Server()->dyn_CLASS_get_ptr_Data()->dyn_REG_get_ptr_Item_array_Of_doubleBuffer_Input_WRITE(stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App()));
+		objInput_praise2->dyn_REG_set_Item_Input_praise2_valueA(CLIB_OpenEpiCentre_Global::stat_CONVERT_MsbByteArray_To_MsbFloat(bytes));
 	}
 	else {
 		stat_REG_get_ptr_CLIB_OpenEpiCentre_isFlagINSTANTIATED()[23] = false;
@@ -379,8 +375,8 @@ void CLIBOpenEpiCentre::CLIBConcurrentServerIO::io_PRAISE_set_Item_Input_praise2
 void CLIBOpenEpiCentre::CLIBConcurrentServerIO::io_PRAISE_set_Item_Input_praise2_Value_B(unsigned char* bytes)
 {
 	if (stat_REG_get_ptr_CLIB_OpenEpiCentre_isFlagINSTANTIATED()[24] == false) {
-		Input_praise2* objInput_praise2 = reinterpret_cast<Input_praise2 *>(stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_Server()->dyn_CLASS_get_ptr_Server()->dyn_CLASS_get_ptr_Data()->dyn_REG_get_ptr_Item_array_Of_doubleBuffer_Input_WRITE(stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_Server()));
-		objInput_praise2->dyn_REG_set_Item_Input_praise2_valueB(Global::stat_CONVERT_MsbByteArray_To_MsbFloat(bytes));
+		auto* objInput_praise2 = reinterpret_cast<Input_praise2 *>(stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App()->dyn_CLASS_get_ptr_Server()->dyn_CLASS_get_ptr_Data()->dyn_REG_get_ptr_Item_array_Of_doubleBuffer_Input_WRITE(stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App()));
+		objInput_praise2->dyn_REG_set_Item_Input_praise2_valueB(CLIB_OpenEpiCentre_Global::stat_CONVERT_MsbByteArray_To_MsbFloat(bytes));
 	}
 	else {
 		stat_REG_get_ptr_CLIB_OpenEpiCentre_isFlagINSTANTIATED()[24] = false;
@@ -390,8 +386,8 @@ void CLIBOpenEpiCentre::CLIBConcurrentServerIO::io_PRAISE_set_Item_Input_praise2
 void CLIBOpenEpiCentre::CLIBConcurrentServerIO::io_PRAISE_set_Item_Input_praise3_Value_A(unsigned char* bytes)
 {
 	if (stat_REG_get_ptr_CLIB_OpenEpiCentre_isFlagINSTANTIATED()[26] == false) {
-		Input_praise3* objInput_praise3 = reinterpret_cast<Input_praise3 *>(stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_Server()->dyn_CLASS_get_ptr_Server()->dyn_CLASS_get_ptr_Data()->dyn_REG_get_ptr_Item_array_Of_doubleBuffer_Input_WRITE(stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_Server()));
-		objInput_praise3->dyn_REG_set_Item_Input_praise3_valueA(Global::stat_CONVERT_MsbByteArray_To_MsbFloat(bytes));
+		auto* objInput_praise3= reinterpret_cast<Input_praise3 *>(stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App()->dyn_CLASS_get_ptr_Server()->dyn_CLASS_get_ptr_Data()->dyn_REG_get_ptr_Item_array_Of_doubleBuffer_Input_WRITE(stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App()));
+		objInput_praise3->dyn_REG_set_Item_Input_praise3_valueA(CLIB_OpenEpiCentre_Global::stat_CONVERT_MsbByteArray_To_MsbFloat(bytes));
 	}
 	else {
 		stat_REG_get_ptr_CLIB_OpenEpiCentre_isFlagINSTANTIATED()[26] = false;
@@ -401,8 +397,8 @@ void CLIBOpenEpiCentre::CLIBConcurrentServerIO::io_PRAISE_set_Item_Input_praise3
 void CLIBOpenEpiCentre::CLIBConcurrentServerIO::io_PRAISE_set_Item_Input_praise3_Value_B(unsigned char* bytes)
 {
 	if (stat_REG_get_ptr_CLIB_OpenEpiCentre_isFlagINSTANTIATED()[27] == false) {
-		Input_praise3* objInput_praise3 = reinterpret_cast<Input_praise3 *>(stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_Server()->dyn_CLASS_get_ptr_Server()->dyn_CLASS_get_ptr_Data()->dyn_REG_get_ptr_Item_array_Of_doubleBuffer_Input_WRITE(stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_Server()));
-		objInput_praise3->dyn_REG_set_Item_Input_praise3_valueB(Global::stat_CONVERT_MsbByteArray_To_MsbFloat(bytes));
+		auto* objInput_praise3 = reinterpret_cast<Input_praise3 *>(stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App()->dyn_CLASS_get_ptr_Server()->dyn_CLASS_get_ptr_Data()->dyn_REG_get_ptr_Item_array_Of_doubleBuffer_Input_WRITE(stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App()));
+		objInput_praise3->dyn_REG_set_Item_Input_praise3_valueB(CLIB_OpenEpiCentre_Global::stat_CONVERT_MsbByteArray_To_MsbFloat(bytes));
 	}
 	else {
 		stat_REG_get_ptr_CLIB_OpenEpiCentre_isFlagINSTANTIATED()[27] = false;
@@ -412,7 +408,7 @@ void CLIBOpenEpiCentre::CLIBConcurrentServerIO::io_PRAISE_set_Item_Input_praise3
 void CLIBOpenEpiCentre::CLIBConcurrentServerIO::io_PRAISE_set_MetaData_PraiseEventId(unsigned char* bytes)
 {
 	if (stat_REG_get_ptr_CLIB_OpenEpiCentre_isFlagINSTANTIATED()[13] == false) {
-		stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_Server()->dyn_CLASS_get_ptr_Server()->dyn_CLASS_get_ptr_Data()->dyn_REG_get_ptr_Item_array_Of_doubleBuffer_Input_WRITE(stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_Server())->dyn_REG_set_ptr_Input_praiseEventId(Global::stat_CONVERT_MsbByteArray_To_Msbuint8_t(bytes));
+		stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App()->dyn_CLASS_get_ptr_Server()->dyn_CLASS_get_ptr_Data()->dyn_REG_get_ptr_Item_array_Of_doubleBuffer_Input_WRITE(stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App())->dyn_REG_set_ptr_Input_praiseEventId(CLIB_OpenEpiCentre_Global::stat_CONVERT_MsbByteArray_To_Msbuint8_t(bytes));
 	}
 	else {
 		stat_REG_get_ptr_CLIB_OpenEpiCentre_isFlagINSTANTIATED()[13] = false;
@@ -433,24 +429,24 @@ void CLIBOpenEpiCentre::CLIBConcurrentServerIO::stat_app_FUNCT_Calc_IsAllINSTANT
 }
 void CLIBOpenEpiCentre::CLIBConcurrentServerIO::stat_CLASS_boot1_DEFINE_Framework()
 {
-	_CLASS_ptr_CLIB_OpenEpiCentre_Framework_Server = nullptr;
+	_stat_CLASS_CLIB_OpenEpiCentre_Framework_Server = nullptr;
 }
 void CLIBOpenEpiCentre::CLIBConcurrentServerIO::stat_CLASS_boot3_INITIALISE_Framework()
 {
-	_CLASS_ptr_CLIB_OpenEpiCentre_Framework_Server = new class CLIB_OpenEpiCentre_Framework_Server();
-	while (stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_Server() == nullptr) {}
+	_stat_CLASS_CLIB_OpenEpiCentre_Framework_Server = new class CLIBOpenEpiCentre::Framework_App();
+	while (stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App() == nullptr) {}
 }
-CLIBOpenEpiCentre::Framework_Server* CLIBOpenEpiCentre::CLIBConcurrentServerIO::stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_Server()
+CLIBOpenEpiCentre::Framework_App* CLIBOpenEpiCentre::CLIBConcurrentServerIO::stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App()
 {
-	return _CLASS_ptr_CLIB_OpenEpiCentre_Framework_Server;
+	return _stat_CLASS_CLIB_OpenEpiCentre_Framework_Server;
 }
 void CLIBOpenEpiCentre::CLIBConcurrentServerIO::stat_REG_boot1_DEFINE_CLIB_OpenEpiCentre_isFlagINSTANTIATED()
 {
-	_stat_REG_stat_REG_get_ptr_CLIB_OpenEpiCentre_isFlagINSTANTIATED = nullptr;
+	_stat_REG_get_ptr_CLIB_OpenEpiCentre_isFlagINSTANTIATED = nullptr;
 }
 void CLIBOpenEpiCentre::CLIBConcurrentServerIO::stat_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_isFlagINSTANTIATED()
 {
-	_stat_REG_stat_REG_get_ptr_CLIB_OpenEpiCentre_isFlagINSTANTIATED = new bool[28]();
+	_stat_REG_get_ptr_CLIB_OpenEpiCentre_isFlagINSTANTIATED = new bool[28]();
 	while (stat_REG_get_ptr_CLIB_OpenEpiCentre_isFlagINSTANTIATED() == nullptr) {}
 	for (uint8_t index = 0; index < sizeof(*stat_REG_get_ptr_CLIB_OpenEpiCentre_isFlagINSTANTIATED()); index++)
 	{
@@ -466,5 +462,5 @@ void CLIBOpenEpiCentre::CLIBConcurrentServerIO::stat_REG_boot3_INITIALISE_CLIB_O
 }
 bool* CLIBOpenEpiCentre::CLIBConcurrentServerIO::stat_REG_get_ptr_CLIB_OpenEpiCentre_isFlagINSTANTIATED()
 {
-	return _stat_REG_stat_REG_get_ptr_CLIB_OpenEpiCentre_isFlagINSTANTIATED;
+	return _stat_REG_get_ptr_CLIB_OpenEpiCentre_isFlagINSTANTIATED;
 }

@@ -9,7 +9,7 @@ namespace CLIBOpenEpiCentre
         void app_select_And_Set_Input_Subset(CLIB_OpenEpiCentre_Framework_Server* obj, uint8_t praiseEventId);
         void dyn_REG_boot1_DEFINE_Input();
         void dyn_REG_boot2_SUBSTANTIATE_Input();
-        void dyn_REG_boot3_INITIALISE_Input(Framework_Server* obj);
+        void dyn_REG_boot3_INITIALISE_Input(CLIB_OpenEpiCentre_Framework_Server* obj);
         void dyn_REG_boot4_INSTANTIATE_Input();
         uint8_t dyn_REG_get_ptr_Input_playerId();
         uint8_t dyn_REG_get_ptr_Input_praiseEventId();

@@ -4,7 +4,7 @@
 #include "../../include/engine/CLIB_OpenEpiCentre_Algorithms.h"
 #include "../../include/engine/Execute.h"
 #include "../../include/engine/Execute_Control.h"
-#include "../../include/engine/Framework_Server.h"
+#include "../../include/engine/CLIB_OpenEpiCentre_Framework_Server.h"
 #include "../../include/engine/Global.h"
 #include "../../include/engine/Server.h"
 #include "../../include/structs/Concurrent.h"
@@ -33,25 +33,25 @@
     {
         return stat_CLASS_get_ptr_Execute_Control();
     }
-    void CLIBOpenEpiCentre::Execute::dyn_REG_boot1_DEFINE_Execute(CLIBOpenEpiCentre::Framework_Server* obj)
+    void CLIBOpenEpiCentre::Execute::dyn_REG_boot1_DEFINE_Execute(CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Framework_Server* obj)
     {
         std::cout << "entered dyn_REG_boot1_DEFINE_Execute()" << std::endl;
         stat_REG_boot1_DEFINE_List_Of_Threads();
         std::cout << "exiting dyn_REG_boot1_DEFINE_Execute()" << std::endl;
     }
-    void CLIBOpenEpiCentre::Execute::dyn_REG_boot2_SUBSTANTIATE_Execute(CLIBOpenEpiCentre::Framework_Server* obj)
+    void CLIBOpenEpiCentre::Execute::dyn_REG_boot2_SUBSTANTIATE_Execute(CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Framework_Server* obj)
     {
         std::cout << "entered dyn_REG_boot2_SUBSTANTIATE_Execute()" << std::endl;
         stat_REG_boot2_SUBSTANTIATE_List_Of_Threads(obj);
         std::cout << "exiting dyn_REG_boot2_SUBSTANTIATE_Execute()" << std::endl;
     }
-    void CLIBOpenEpiCentre::Execute::dyn_REG_boot3_INITIALISE_Execute(CLIBOpenEpiCentre::Framework_Server* obj)
+    void CLIBOpenEpiCentre::Execute::dyn_REG_boot3_INITIALISE_Execute(CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Framework_Server* obj)
     {
         std::cout << "entered dyn_REG_boot3_INITIALISE_Execute()" << std::endl;
         stat_REG_boot3_INITIALISE_List_Of_Threads(obj);
         std::cout << "exiting dyn_REG_boot3_INITIALISE_Execute()" << std::endl;
     }
-    void CLIBOpenEpiCentre::Execute::dyn_REG_boot4_INSTANTIATE_Execute(CLIBOpenEpiCentre::Framework_Server* obj)
+    void CLIBOpenEpiCentre::Execute::dyn_REG_boot4_INSTANTIATE_Execute(CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Framework_Server* obj)
     {
         std::cout << "entered dyn_REG_boot4_INSTANTIATE_Execute()" << std::endl;
 
@@ -153,7 +153,7 @@
     {
         _stat_REG_List_Of_Threads = nullptr;
     }
-    void CLIBOpenEpiCentre::Execute::stat_REG_boot2_SUBSTANTIATE_List_Of_Threads(Framework_Server* obj)
+    void CLIBOpenEpiCentre::Execute::stat_REG_boot2_SUBSTANTIATE_List_Of_Threads(CLIB_OpenEpiCentre_Framework_Server* obj)
     {
         _stat_REG_List_Of_Threads = new std::list<std::thread*>();
         while (stat_PGM_get_ptr_List_Of_Threads() == nullptr) { }
@@ -165,7 +165,7 @@
             *temp = nullptr;
         }
     }
-    void CLIBOpenEpiCentre::Execute::stat_REG_boot3_INITIALISE_List_Of_Threads(Framework_Server* obj)
+    void CLIBOpenEpiCentre::Execute::stat_REG_boot3_INITIALISE_List_Of_Threads(CLIB_OpenEpiCentre_Framework_Server* obj)
     {
         for (uint8_t threadId = 0; threadId < sizeof(*stat_PGM_get_ptr_List_Of_Threads()); threadId++)
         {

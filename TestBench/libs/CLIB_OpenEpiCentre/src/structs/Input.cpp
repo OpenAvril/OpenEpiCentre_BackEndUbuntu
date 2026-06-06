@@ -49,7 +49,7 @@
         stat_REG_boot2_SUBSTANTIATE_List_Of_PraiseInputSubset();
         std::cout << "exiting dyn_REG_boot2_SUBSTANTIATE_Input()" << std::endl;
     }
-    void CLIBOpenEpiCentre::Input::dyn_REG_boot3_INITIALISE_Input(CLIBOpenEpiCentre::Framework_Server* obj)
+    void CLIBOpenEpiCentre::Input::dyn_REG_boot3_INITIALISE_Input(CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Framework_Server* obj)
     {
         std::cout << "entered dyn_REG_boot3_INITIALISE_Input()" << std::endl;
         stat_REG_boot3_INITIALISE_Input_praiseEventId();

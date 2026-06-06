@@ -23,25 +23,25 @@
         std::advance(temp, concurrentThreadId);
         return *temp;
     }
-    void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Algorithms::dyn_REG_boot1_DEFINE_CLIB_OpenEpiCentre_Algorithm(CLIBOpenEpiCentre::Framework_Server* obj)
+    void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Algorithms::dyn_REG_boot1_DEFINE_CLIB_OpenEpiCentre_Algorithm(CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Framework_Server* obj)
     {
         std::cout << "entered dyn_REG_boot1_DEFINE_Algorithms()" << std::endl;
         stat_REG_boot1_DEFINE_List_Of_ptr_Concurrent();
         std::cout << "exiting dyn_REG_boot1_DEFINE_Algorithms()" << std::endl;
     }
-    void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Algorithms::dyn_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_Algorithm(CLIBOpenEpiCentre::Framework_Server* obj)
+    void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Algorithms::dyn_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_Algorithm(CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Framework_Server* obj)
     {
         std::cout << "entered dyn_REG_boot2_SUBSTANTIATE_Algorithms()" << std::endl;
         stat_REG_boot2_SUBSTANTIATE_list_Of_ptr_Concurrent(obj);
         std::cout << "exiting dyn_REG_boot2_SUBSTANTIATE_Algorithms()" << std::endl;
     }
-    void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Algorithms::dyn_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_Algorithm(CLIBOpenEpiCentre::Framework_Server* obj, CLIBOpenEpiCentre::Concurrent* objConcurrent)
+    void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Algorithms::dyn_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_Algorithm(CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Framework_Server* obj, CLIBOpenEpiCentre::Concurrent* objConcurrent)
     {
         std::cout << "entered dyn_REG_boot3_INITIALISE_Algorithm()" << std::endl;
         stat_REG_boot3_INITIALISE_list_Of_ptr_Concurrent(obj, objConcurrent);
         std::cout << "exiting dyn_REG_boot3_INITIALISE_Algorithms()" << std::endl;
     }
-    void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Algorithms::dyn_REG_boot4_INSTANTIATE_CLIB_OpenEpiCentre_Algorithm(CLIBOpenEpiCentre::Framework_Server* obj)
+    void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Algorithms::dyn_REG_boot4_INSTANTIATE_CLIB_OpenEpiCentre_Algorithm(CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Framework_Server* obj)
     {
         std::cout << "entered dyn_REG_boot4_INSTANTIATE_Algorithms()" << std::endl;
 
@@ -82,7 +82,7 @@
     {
         _stat_REG_ptr_list_Of_ptr_Concurrent = nullptr;
     }
-    void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Algorithms::stat_REG_boot2_SUBSTANTIATE_list_Of_ptr_Concurrent(CLIBOpenEpiCentre::Framework_Server* obj)
+    void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Algorithms::stat_REG_boot2_SUBSTANTIATE_list_Of_ptr_Concurrent(CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Framework_Server* obj)
     {
         _stat_REG_ptr_list_Of_ptr_Concurrent = new std::list<struct Concurrent*>();
         while (stat_REG_get_ptr_list_Of_ptr_Concurrent() == nullptr) {}
@@ -94,7 +94,7 @@
             *temp = nullptr;
         }
     }
-    void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Algorithms::stat_REG_boot3_INITIALISE_list_Of_ptr_Concurrent(CLIBOpenEpiCentre::Framework_Server* obj, CLIBOpenEpiCentre::Concurrent* objConcurrent)
+    void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Algorithms::stat_REG_boot3_INITIALISE_list_Of_ptr_Concurrent(CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Framework_Server* obj, CLIBOpenEpiCentre::Concurrent* objConcurrent)
     {
         for (uint8_t concurrentThreadId = 0; concurrentThreadId < sizeof(*stat_REG_get_ptr_list_Of_ptr_Concurrent()); concurrentThreadId++)
         {

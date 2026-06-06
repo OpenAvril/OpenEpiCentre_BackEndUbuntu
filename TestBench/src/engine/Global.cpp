@@ -126,13 +126,13 @@ enum Axis
     }
     float TestBench_Cpp_OpenEpiCentre::Global::stat_CONVERT_MsbByteArray_To_MsbFloat(const unsigned char* byteArray)
     {
-        double temp;
+        float temp;
         std::memcpy(&temp, byteArray, sizeof(float));
         return temp;
     }
     uint8_t TestBench_Cpp_OpenEpiCentre::Global::stat_CONVERT_MsbByteArray_To_Msbuint8_t(const unsigned char* byteArray)
     {
-        double temp;
+        uint8_t temp;
         std::memcpy(&temp, byteArray, sizeof(uint8_t));
         return temp;
     }

@@ -1,5 +1,5 @@
 #include "../../include/engine/Data.h"
-#include "../../include/engine/Framework_Server.h"
+#include "../../include/engine/CLIB_OpenEpiCentre_Framework_Server.h"
 #include "../../include/engine/Server.h"
 #include "../../include/structs/Output.h"
 #include "../../include/structs/User_Output.h"
@@ -10,7 +10,7 @@
     uint8_t* CLIBOpenEpiCentre::Output::_REG_ptr_Output_playerId;
     std::list<CLIBOpenEpiCentre::Object*>* CLIBOpenEpiCentre::Output::_REG_ptr_List_Of_PraiseOutputSubset;
 // public.
-    void CLIBOpenEpiCentre::Output::app_select_And_Set_Output_Subset(Framework_Server* obj, uint8_t praiseEventId)
+    void CLIBOpenEpiCentre::Output::app_select_And_Set_Output_Subset(CLIB_OpenEpiCentre_Framework_Server* obj, uint8_t praiseEventId)
     {
         Output* bufferOutputWRITE = obj->dyn_CLASS_get_ptr_Server()->dyn_CLASS_get_ptr_Data()->dyn_REG_get_ptr_Item_array_Of_doubleBuffer_Output_WRITE(obj);
         switch (praiseEventId)
@@ -49,7 +49,7 @@
         stat_REG_boot2_SUBSTANTIATE_List_Of_PraiseOutputSubset();
         std::cout << "exiting dyn_REG_boot2_SUBSTANTIATE_Output()" << std::endl;
     }
-    void CLIBOpenEpiCentre::Output::dyn_REG_boot3_INITIALISE_Output(CLIBOpenEpiCentre::Framework_Server* obj)
+    void CLIBOpenEpiCentre::Output::dyn_REG_boot3_INITIALISE_Output(CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Framework_Server* obj)
     {
         std::cout << "entered dyn_REG_boot3_INITIALISE_Output()" << std::endl;
         stat_REG_boot3_INITIALISE_Output_praiseEventId();
@@ -180,7 +180,7 @@
     {
         *_REG_ptr_Output_playerId = static_cast<uint8_t>(0);
     }
-    void CLIBOpenEpiCentre::Output::stat_REG_boot3_INITIALISE_List_Of_PraiseOutputSubset(Framework_Server* obj, uint8_t praiseId)
+    void CLIBOpenEpiCentre::Output::stat_REG_boot3_INITIALISE_List_Of_PraiseOutputSubset(CLIB_OpenEpiCentre_Framework_Server* obj, uint8_t praiseId)
     {
         auto temp = stat_REG_get_ptr_Item_Of_ptr_Outputs_Subset()->begin();
         std::advance(temp, static_cast<uint8_t>(0));
