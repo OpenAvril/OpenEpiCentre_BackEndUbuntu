@@ -2,14 +2,13 @@ cmake_minimum_required(VERSION 3.28.3)
 project(CLIB_OpenEpiCentre VERSION 1.0 LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 add_library(CLIB_OpenEpiCentre STATIC
         include/CLIB_OpenEpiCentre.h
         src/CLIB_OpenEpiCentre.cpp
-        include/engine/Framework_Server.h
-        src/engine/Framework_Server.cpp
-        include/engine/Global.h
-        src/engine/Global.cpp
+        include/engine/CLIB_OpenEpiCentre_Global.h
+        src/engine/CLIB_OpenEpiCentre_Global.cpp
         include/structs/Input.h
         src/structs/Input.cpp
         include/structs/Output.h
@@ -28,57 +27,20 @@ add_library(CLIB_OpenEpiCentre STATIC
         src/structs/praise_sets/Input_praise0.cpp
         include/structs/praise_sets/Output_praise0.h
         src/structs/praise_sets/Output_praise0.cpp
-        include/engine/Server.h
-        src/engine/Server.cpp
-        include/engine/Algorithms.h
-        src/engine/Algorithms.cpp
-        include/engine/Data.h
-        src/engine/Data.cpp
-        include/engine/Data_Control.h
-        include/engine/Execute.h
-        src/engine/Execute.cpp
-        include/engine/Execute_Control.h
-        src/engine/Execute_Control.cpp
-        include/CLIB_WriteQueForThreadsAt_ServerInputReceive/CLIB_WriteEnableForThreadsAt_ServerInputReceive.h
-        include/CLIB_WriteQueForThreadsAt_ServerInputReceive/WriteEnableForThreadsAt_ServerInputReceive_Framework.h
-        include/CLIB_WriteQueForThreadsAt_ServerInputReceive/WriteEnableForThreadsAt_ServerInputReceive_Global.h
-        include/CLIB_WriteQueForThreadsAt_ServerInputReceive/WriteEnableForThreadsAt_ServerInputReceive.h
-        include/CLIB_WriteQueForThreadsAt_ServerInputReceive/WriteEnableForThreadsAt_ServerInputReceive_Control.h
-        include/CLIB_WriteQueForThreadsAt_ServerOutputSend/CLIB_WriteEnableForThreadsAt_ServerOutputSend.h
-        include/CLIB_WriteQueForThreadsAt_ServerOutputSend/WriteEnableForThreadsAt_ServerOutputSend_Framework.h
-        include/CLIB_WriteQueForThreadsAt_ServerOutputSend/WriteEnableForThreadsAt_ServerOutputSend_Global.h
-        include/CLIB_WriteQueForThreadsAt_ServerOutputSend/WriteEnableForThreadsAt_ServerOutputSend.h
-        include/CLIB_WriteQueForThreadsAt_ServerOutputSend/WriteEnableForThreadsAt_ServerOutputSend_Control.h
-        include/CLIB_LaunchQueForThreadsAt_Server/CLIB_LaunchEnableForConcurrentThreadsAt_Server.h
-        include/CLIB_LaunchQueForThreadsAt_Server/LaunchEnableForConcurrentThreadsAt_Server_Framework.h
-        include/CLIB_LaunchQueForThreadsAt_Server/LaunchEnableForConcurrentThreadsAt_Server_Global.h
-        include/CLIB_LaunchQueForThreadsAt_Server/LaunchEnableForConcurrentThreadsAt_Server.h
-        include/CLIB_LaunchQueForThreadsAt_Server/LaunchEnableForConcurrentThreadsAt_Server_Control.h
+        include/engine/CLIB_OpenEpiCentre_Framework.h
+        src/engine/CLIB_OpenEpiCentre_Framework.cpp
+        include/engine/CLIB_OpenEpiCentre_App.h
+        src/engine/CLIB_OpenEpiCentre_App.cpp
+        include/engine/CLIB_OpenEpiCentre_Algorithms.h
+        src/engine/CLIB_OpenEpiCentre_Algorithms.cpp
+        include/engine/CLIB_OpenEpiCentre_Data.h
+        src/engine/CLIB_OpenEpiCentre_Data.cpp
+        include/engine/CLIB_OpenEpiCentre_Data_Control.h
+        src/engine/CLIB_OpenEpiCentre_Data_Control.cpp
+        include/engine/CLIB_OpenEpiCentre_Execute.h
+        src/engine/CLIB_OpenEpiCentre_Execute.cpp
+        include/engine/CLIB_OpenEpiCentre_Execute_Control.h
+        src/engine/CLIB_OpenEpiCentre_Execute_Control.cpp
 )
 
-target_include_directories(${PROJECT_NAME}
-        PUBLIC
-        $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
-        $<INSTALL_INTERFACE:include>
-)
-
-add_library(CLIB_WriteQueForThreadsAt_ServerInputReceive STATIC IMPORTED)
-add_library(CLIB_WriteQueForThreadsAt_ServerOutputSend STATIC IMPORTED)
-add_library(CLIB_LaunchQueForThreadsAt_Server STATIC IMPORTED)
-
-set_target_properties(CLIB_WriteQueForThreadsAt_ServerInputReceive PROPERTIES
-        IMPORTED_LOCATION "${CMAKE_CURRENT_SOURCE_DIR}/libs/libCLIB_WriteQueForThreadsAt_ServerInputReceive.a"
-        INTERFACE_INCLUDE_DIRECTORIES "${CMAKE_CURRENT_SOURCE_DIR}/include/CLIB_WriteQueForThreadsAt_ServerInputReceive"
-)
-set_target_properties(CLIB_WriteQueForThreadsAt_ServerOutputSend PROPERTIES
-        IMPORTED_LOCATION "${CMAKE_CURRENT_SOURCE_DIR}/libs/libCLIB_WriteQueForThreadsAt_ServerOutputSend.a"
-        INTERFACE_INCLUDE_DIRECTORIES "${CMAKE_CURRENT_SOURCE_DIR}/include/CLIB_WriteQueForThreadsAt_ServerOutputSend"
-)
-set_target_properties(CLIB_LaunchQueForThreadsAt_Server PROPERTIES
-        IMPORTED_LOCATION "${CMAKE_CURRENT_SOURCE_DIR}/libs/libCLIB_LaunchQueForThreadsAt_Server.a"
-        INTERFACE_INCLUDE_DIRECTORIES "${CMAKE_CURRENT_SOURCE_DIR}/include/CLIB_LaunchQueForThreadsAt_Server"
-)
-
-target_link_libraries(CLIB_OpenEpiCentre PRIVATE CLIB_WriteQueForThreadsAt_ServerInputReceive)
-target_link_libraries(CLIB_OpenEpiCentre PRIVATE CLIB_WriteQueForThreadsAt_ServerOutputSend)
-target_link_libraries(CLIB_OpenEpiCentre PRIVATE CLIB_LaunchQueForThreadsAt_Server)
+target_include_directories(CLIB_OpenEpiCentre PUBLIC ../CLIB_LaunchQueForThreadsAt_Server ../CLIB_WriteQueForThreadsAt_ServerInputReceive ../CLIB_WriteQueForThreadsAt_ServerOutputSend)
