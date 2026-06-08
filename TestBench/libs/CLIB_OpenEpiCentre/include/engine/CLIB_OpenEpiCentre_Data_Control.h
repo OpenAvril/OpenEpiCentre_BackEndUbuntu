@@ -1,6 +1,6 @@
-#pragma once
-#include "CLIB_OpenEpiCentre_Framework_Server.h"
-#include <cstdint>
+#ifndef OPENEPICENTRE_BACKENDUBUNTU_CLIB_OPENEPICENTRE_DATA_CONTROL_H
+#define OPENEPICENTRE_BACKENDUBUNTU_CLIB_OPENEPICENTRE_DATA_CONTROL_H
+#include "CLIB_OpenEpiCentre_Framework.h"
 namespace CLIBOpenEpiCentre
 {
     class CLIB_OpenEpiCentre_Data_Control
@@ -10,14 +10,14 @@ namespace CLIBOpenEpiCentre
         virtual ~CLIB_OpenEpiCentre_Data_Control();
         void app_FUNCT_flip_Input_DoubleBuffer();
         void app_FUNCT_Flip_Output_DoubleBuffer();
-        void app_FUNCT_pop_From_Stack_Of_Input(CLIB_OpenEpiCentre_Framework_Server* obj, uint8_t concurrentThreadID);
-        void app_FUNCT_pop_From_Stack_Of_Output(CLIB_OpenEpiCentre_Framework_Server* obj);
-        void app_FUNCT_push_To_STACK_Of_Input(CLIB_OpenEpiCentre_Framework_Server* obj);
-        void app_FUNCT_push_To_STACK_Of_Output(CLIB_OpenEpiCentre_Framework_Server* obj, uint8_t concurrentThreadID);
-        void dyn_REG_boot1_DEFINE_CLIB_OpenEpiCentre_Data_Control(CLIB_OpenEpiCentre_Framework_Server* obj);
-        void dyn_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_Data_Control(CLIB_OpenEpiCentre_Framework_Server* obj);
-        void dyn_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_Data_Control(CLIB_OpenEpiCentre_Framework_Server* obj);
-        void dyn_REG_boot4_INSTANTIATE_CLIB_OpenEpiCentre_Data_Control(CLIB_OpenEpiCentre_Framework_Server* obj);
+        void app_FUNCT_pop_From_Stack_Of_Input(CLIB_OpenEpiCentre_Framework* obj, uint8_t concurrentThreadID);
+        void app_FUNCT_pop_From_Stack_Of_Output(CLIB_OpenEpiCentre_Framework* obj);
+        void app_FUNCT_push_To_STACK_Of_Input(CLIB_OpenEpiCentre_Framework* obj);
+        void app_FUNCT_push_To_STACK_Of_Output(CLIB_OpenEpiCentre_Framework* obj, uint8_t concurrentThreadID);
+        void dyn_REG_boot1_DEFINE_CLIB_OpenEpiCentre_Data_Control(CLIB_OpenEpiCentre_Framework* obj);
+        void dyn_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_Data_Control(CLIB_OpenEpiCentre_Framework* obj);
+        void dyn_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_Data_Control(CLIB_OpenEpiCentre_Framework* obj);
+        void dyn_REG_boot4_INSTANTIATE_CLIB_OpenEpiCentre_Data_Control(CLIB_OpenEpiCentre_Framework* obj);
         bool dyn_REG_get_Item_flag_isLoaded_Stack_InputAction();
         bool dyn_REG_get_Item_flag_isLoaded_Stack_OutputSend();
         bool dyn_REG_get_Item_side_To_Write_For_array_Of_doubleBuffer_Input();
@@ -57,4 +57,5 @@ namespace CLIBOpenEpiCentre
         static void stat_REG_set_Item_side_To_Write_For_array_Of_doubleBuffer_Input(bool new_Bool);
         static void stat_REG_set_Item_side_To_Write_For_array_Of_doubleBuffer_Output(bool new_Bool);
     };
-}
+};
+#endif //OPENEPICENTRE_BACKENDUBUNTU_CLIB_OPENEPICENTRE_DATA_CONTROL_H

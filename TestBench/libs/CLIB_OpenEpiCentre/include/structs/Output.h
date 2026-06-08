@@ -6,10 +6,10 @@ namespace CLIBOpenEpiCentre
     struct Output
     {
     public:
-        void app_select_And_Set_Output_Subset(CLIB_OpenEpiCentre_Framework_Server* obj, uint8_t praiseEventId);
+        void app_select_And_Set_Output_Subset(CLIB_OpenEpiCentre_Framework* obj, uint8_t praiseEventId);
         void dyn_REG_boot1_DEFINE_Output();
         void dyn_REG_boot2_SUBSTANTIATE_Output();
-        void dyn_REG_boot3_INITIALISE_Output(CLIB_OpenEpiCentre_Framework_Server* obj);
+        void dyn_REG_boot3_INITIALISE_Output(CLIB_OpenEpiCentre_Framework* obj);
         void dyn_REG_boot4_INSTANTIATE_Output();
         uint8_t dyn_REG_get_ptr_Output_playerId();
         uint8_t dyn_REG_get_ptr_Output_praiseEventId();
@@ -37,7 +37,7 @@ namespace CLIBOpenEpiCentre
         static void stat_REG_boot2_SUBSTANTIATE_List_Of_PraiseOutputSubset();
         static void stat_REG_boot3_INITIALISE_Output_praiseEventId();
         static void stat_REG_boot3_INITIALISE_Output_playerId();
-        static void stat_REG_boot3_INITIALISE_List_Of_PraiseOutputSubset(CLIB_OpenEpiCentre_Framework_Server* obj, uint8_t praiseId);
+        static void stat_REG_boot3_INITIALISE_List_Of_PraiseOutputSubset(CLIB_OpenEpiCentre_Framework* obj, uint8_t praiseId);
         static uint8_t* stat_REG_get_ptr_Output_playerId();
         static uint8_t* stat_REG_get_ptr_Output_praiseEventId();
         static std::list<Object*>* stat_REG_get_ptr_Item_Of_ptr_Outputs_Subset();

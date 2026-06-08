@@ -1,4 +1,5 @@
-#pragma once
+#ifndef OPENEPICENTRE_BACKENDUBUNTU_CLIB_OPENEPICENTRE_GLOBAL_H
+#define OPENEPICENTRE_BACKENDUBUNTU_CLIB_OPENEPICENTRE_GLOBAL_H
 #include <cstdint>
 namespace CLIBOpenEpiCentre
 {
@@ -41,3 +42,4 @@ namespace CLIBOpenEpiCentre
         static uint8_t* stat_REG_get_Ptr_number_Of_Praise_Events();
     };
 }
+#endif //OPENEPICENTRE_BACKENDUBUNTU_CLIB_OPENEPICENTRE_GLOBAL_H

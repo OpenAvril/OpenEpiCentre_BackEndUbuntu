@@ -1,6 +1,7 @@
-#pragma once
+#ifndef TESTBENCH_CPP_OPENEPICENTRE_GLOBAL_H
+#define TESTBENCH_CPP_OPENEPICENTRE_GLOBAL_H
 #include <cstdint>
-namespace CLIBOpenEpiCentre
+namespace TestBench_Cpp_OpenEpiCentre
 {
     class Global
     {
@@ -24,7 +25,6 @@ namespace CLIBOpenEpiCentre
         static double stat_CONVERT_MsbByteArray_To_MsbDouble(const unsigned char* byteArray);
         static float stat_CONVERT_MsbByteArray_To_MsbFloat(const unsigned char* byteArray);
         static uint8_t stat_CONVERT_MsbByteArray_To_Msbuint8_t(const unsigned char* byteArray);
-        static unsigned char* stat_CONVERT_MsbInt_To_MsbByteArray(uint8_t value);
         static unsigned char* stat_CONVERT_MsbFloat_To_MsbByteArray(float value);
         static unsigned char* stat_CONVERT_MsbDouble_To_MsbByteArray(double value);
         static unsigned char* stat_CONVERT_uint8_t_to_ByteArray(uint8_t value);
@@ -43,3 +43,4 @@ namespace CLIBOpenEpiCentre
         static uint8_t* stat_REG_get_Ptr_number_Of_Praise_Events();
     };
 }
+#endif //TESTBENCH_CPP_OPENEPICENTRE_GLOBAL_H

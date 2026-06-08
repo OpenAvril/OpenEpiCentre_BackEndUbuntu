@@ -1,24 +1,23 @@
-
+#include "../../include/engine/CLIB_OpenEpiCentre_App.h"
 #include "../../include/engine/CLIB_OpenEpiCentre_Data.h"
 #include "../../include/engine/CLIB_OpenEpiCentre_Data_Control.h"
-#include "../../include/engine/CLIB_OpenEpiCentre_Framework_Server.h"
+#include "../../include/engine/CLIB_OpenEpiCentre_Framework.h"
 #include "../../include/engine/CLIB_OpenEpiCentre_Global.h"
-#include "../../include/engine/CLIB_OpenEpiCentre_Server.h"
 #include "../../include/structs/Input.h"
 #include "../../include/structs/Output.h"
 #include "../../include/structs/User_Input.h"
 #include "../../include/structs/User_Output.h"
 #include <array>
 #include <iostream>
-    CLIBOpenEpiCentre::Data_Control* CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data::_stat_CLASS_ptr_CLIB_OpenEpiCentre_Data_Control;
-    CLIBOpenEpiCentre::User_Input* CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data::_stat_CLASS_ptr_User_Input;
-    CLIBOpenEpiCentre::User_Output* CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data::_stat_CLASS_ptr_User_Output;
+    CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data_Control* CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data::_stat_CLASS_ptr_CLIB_OpenEpiCentre_Data_Control;
     std::array<CLIBOpenEpiCentre::Input*, 3>* CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data::_stat_REG_ptr_array_Of_buffer_Input_ReferenceForThread;//NUMBER OF CONCURRENT THREADS.
     std::array<CLIBOpenEpiCentre::Output*, 3>* CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data::_stat_REG_ptr_array_Of_buffer_Output_ReferenceForThread;//NUMBER OF CONCURRENT THREADS.
     std::array<CLIBOpenEpiCentre::Input*, 2>* CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data::_stat_REG_ptr_array_Of_doubleBuffer_Input;
     std::array<CLIBOpenEpiCentre::Output*, 2>* CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data::_stat_REG_ptr_array_Of_doubleBuffer_Output;
     std::vector<CLIBOpenEpiCentre::Input*>* CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data::_stat_REG_ptr_vector_Of_stack_Of_InputPraise;
     std::vector<CLIBOpenEpiCentre::Output*>* CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data::_stat_REG_ptr_vector_Of_stack_Of_OutputPraise;
+    CLIBOpenEpiCentre::User_Input* CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data::_stat_STRUCT_ptr_User_Input;
+    CLIBOpenEpiCentre::User_Output* CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data::_stat_STRUCT_ptr_User_Output;
 // public.
     CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data::CLIB_OpenEpiCentre_Data()
     {
@@ -32,8 +31,8 @@
     CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data::~CLIB_OpenEpiCentre_Data()
     {
         delete _stat_CLASS_ptr_CLIB_OpenEpiCentre_Data_Control;
-        delete _stat_CLASS_ptr_User_Input;
-        delete _stat_CLASS_ptr_User_Output;
+        delete _stat_STRUCT_ptr_User_Input;
+        delete _stat_STRUCT_ptr_User_Output;
         delete _stat_REG_ptr_array_Of_buffer_Input_ReferenceForThread;
         delete _stat_REG_ptr_array_Of_buffer_Output_ReferenceForThread;
         delete _stat_REG_ptr_array_Of_doubleBuffer_Input;
@@ -41,9 +40,9 @@
         delete _stat_REG_ptr_vector_Of_stack_Of_InputPraise;
         delete _stat_REG_ptr_vector_Of_stack_Of_OutputPraise;
         }
-    CLIBOpenEpiCentre::Data_Control* CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data::dyn_CLASS_get_ptr_Data_Control()
+    CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data_Control* CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data::dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_Data_Control()
     {
-    return stat_CLASS_get_ptr_Data_Control();
+    return stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Data_Control();
     }
     CLIBOpenEpiCentre::User_Input* CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data::dyn_CLASS_get_ptr_User_Input()
     {
@@ -53,7 +52,7 @@
     {
     return stat_CLASS_get_ptr_User_Output();
     }
-    void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data::dyn_REG_boot1_DEFINE_CLIB_OpenEpiCentre_Data(CLIB_OpenEpiCentre_Framework_Server* obj)
+    void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data::dyn_REG_boot1_DEFINE_CLIB_OpenEpiCentre_Data(CLIB_OpenEpiCentre_Framework* obj)
     {
         std::cout << "entered dyn_REG_boot1_DEFINE_Data()" << std::endl;
         stat_REG_boot1_DEFINE_buffer_Input_ReferenceForThread();
@@ -64,7 +63,7 @@
         stat_REG_boot1_DEFINE_buffer_stack_Of_OutputPraise();
         std::cout << "exiting dyn_REG_boot1_DEFINE_Data()" << std::endl;
     }
-    void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data::dyn_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_Data(CLIB_OpenEpiCentre_Framework_Server* obj, Input* objInput, Output* objOutput)
+    void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data::dyn_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_Data(CLIB_OpenEpiCentre_Framework* obj, Input* objInput, Output* objOutput)
     {
         std::cout << "entered dyn_REG_boot3_INITIALISE_Data()" << std::endl;
         stat_REG_boot3_INITIALISE_buffer_Input_ReferenceForThread(objInput);
@@ -75,35 +74,35 @@
         stat_REG_boot3_INITIALISE_stack_Of_OutputPraise(objOutput);
         std::cout << "exiting dyn_REG_boot3_INITIALISE_Data()" << std::endl;
     }
-    void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data::dyn_REG_boot4_INSTANTIATE_CLIB_OpenEpiCentre_Data(CLIB_OpenEpiCentre_Framework_Server* obj)
+    void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data::dyn_REG_boot4_INSTANTIATE_CLIB_OpenEpiCentre_Data(CLIB_OpenEpiCentre_Framework* obj)
     {
     std::cout << "entered dyn_REG_boot4_INSTANTIATE_Data()" << std::endl;
 
     std::cout << "exiting dyn_REG_boot4_INSTANTIATE_Data()" << std::endl;
     }
-    CLIBOpenEpiCentre::Input* CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data::dyn_REG_get_ptr_Item_array_Of_doubleBuffer_Input_READ(CLIB_OpenEpiCentre_Framework_Server* obj)
+    CLIBOpenEpiCentre::Input* CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data::dyn_REG_get_ptr_Item_array_Of_doubleBuffer_Input_READ(CLIB_OpenEpiCentre_Framework* obj)
     {
     auto temp = stat_get_REG_ptr_array_Of_doubleBuffer_Input()->begin();
-    std::advance(temp, CLIB_OpenEpiCentre_Global::stat_CONVERT_Bool_To_Int(!obj->dyn_CLASS_get_ptr_Server()->dyn_CLASS_get_ptr_Data()->dyn_CLASS_get_ptr_Data_Control()->dyn_REG_get_Item_side_To_Write_For_array_Of_doubleBuffer_Input()));
+    std::advance(temp, CLIB_OpenEpiCentre_Global::stat_CONVERT_Bool_To_Int(!obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Data()->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_Data_Control()->dyn_REG_get_Item_side_To_Write_For_array_Of_doubleBuffer_Input()));
     return *temp;
     }
-    CLIBOpenEpiCentre::Input* CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data::dyn_REG_get_ptr_Item_array_Of_doubleBuffer_Input_WRITE(CLIB_OpenEpiCentre_Framework_Server* obj)
+    CLIBOpenEpiCentre::Input* CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data::dyn_REG_get_ptr_Item_array_Of_doubleBuffer_Input_WRITE(CLIB_OpenEpiCentre_Framework* obj)
     {
     auto temp = stat_get_REG_ptr_array_Of_doubleBuffer_Input()->begin();
-    std::advance(temp, CLIB_OpenEpiCentre_Global::stat_CONVERT_Bool_To_Int(obj->dyn_CLASS_get_ptr_Server()->dyn_CLASS_get_ptr_Data()->dyn_CLASS_get_ptr_Data_Control()->dyn_REG_get_Item_side_To_Write_For_array_Of_doubleBuffer_Input()));
+    std::advance(temp, CLIB_OpenEpiCentre_Global::stat_CONVERT_Bool_To_Int(obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Data()->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_Data_Control()->dyn_REG_get_Item_side_To_Write_For_array_Of_doubleBuffer_Input()));
     return *temp;
     }
-    CLIBOpenEpiCentre::Output* CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data::dyn_REG_get_ptr_Item_array_Of_doubleBuffer_Output_READ(CLIB_OpenEpiCentre_Framework_Server* obj)
+    CLIBOpenEpiCentre::Output* CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data::dyn_REG_get_ptr_Item_array_Of_doubleBuffer_Output_READ(CLIB_OpenEpiCentre_Framework* obj)
     {
     auto temp = stat_get_REG_ptr_array_Of_doubleBuffer_Output()->begin();
-    std::advance(temp, CLIB_OpenEpiCentre_Global::stat_CONVERT_Bool_To_Int(!obj->dyn_CLASS_get_ptr_Server()->dyn_CLASS_get_ptr_Data()->dyn_CLASS_get_ptr_Data_Control()->dyn_REG_get_Item_side_To_Write_For_array_Of_doubleBuffer_Output()));
+    std::advance(temp, CLIB_OpenEpiCentre_Global::stat_CONVERT_Bool_To_Int(!obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Data()->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_Data_Control()->dyn_REG_get_Item_side_To_Write_For_array_Of_doubleBuffer_Output()));
     return *temp;
     }
 
-    CLIBOpenEpiCentre::Output* CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data::dyn_REG_get_ptr_Item_array_Of_doubleBuffer_Output_WRITE(CLIB_OpenEpiCentre_Framework_Server *obj)
+    CLIBOpenEpiCentre::Output* CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data::dyn_REG_get_ptr_Item_array_Of_doubleBuffer_Output_WRITE(CLIB_OpenEpiCentre_Framework *obj)
     {
     auto temp = stat_get_REG_ptr_array_Of_doubleBuffer_Output()->begin();
-    std::advance(temp, CLIB_OpenEpiCentre_Global::stat_CONVERT_Bool_To_Int(obj->dyn_CLASS_get_ptr_Server()->dyn_CLASS_get_ptr_Data()->dyn_CLASS_get_ptr_Data_Control()->dyn_REG_get_Item_side_To_Write_For_array_Of_doubleBuffer_Output()));
+    std::advance(temp, CLIB_OpenEpiCentre_Global::stat_CONVERT_Bool_To_Int(obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Data()->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_Data_Control()->dyn_REG_get_Item_side_To_Write_For_array_Of_doubleBuffer_Output()));
     return *temp;
     }
     CLIBOpenEpiCentre::Input* CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data::dyn_REG_get_ptr_Item_Of_list_Of_ptr_array_Of_buffer_Input_ReferenceForThread(uint8_t concurrentThreadID)
@@ -138,19 +137,19 @@
     {
         return stat_REG_get_ptr_vector_Of_stack_Of_OutputPraise();
     }
-    void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data::dyn_REG_set_Item_On_Array_Of_doubleBuffer_Input_READ(CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Framework_Server* obj, CLIBOpenEpiCentre::Input* newClass)
+    void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data::dyn_REG_set_Item_On_Array_Of_doubleBuffer_Input_READ(CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Framework* obj, CLIBOpenEpiCentre::Input* newClass)
     {
     stat_REG_set_Item_On_Array_Of_doubleBuffer_Input_READ(obj, newClass);
     }
-    void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data::dyn_REG_set_Item_On_Array_Of_doubleBuffer_Input_WRITE(CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Framework_Server* obj, CLIBOpenEpiCentre::Input* newClass)
+    void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data::dyn_REG_set_Item_On_Array_Of_doubleBuffer_Input_WRITE(CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Framework* obj, CLIBOpenEpiCentre::Input* newClass)
     {
     stat_REG_set_Item_On_Array_Of_doubleBuffer_Input_WRITE(obj, newClass);
     }
-    void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data::dyn_REG_set_Item_On_Array_Of_doubleBuffer_Output_READ(CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Framework_Server* obj, CLIBOpenEpiCentre::Output* newClass)
+    void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data::dyn_REG_set_Item_On_Array_Of_doubleBuffer_Output_READ(CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Framework* obj, CLIBOpenEpiCentre::Output* newClass)
     {
     stat_REG_set_Item_On_Array_Of_doubleBuffer_Output_READ(obj, newClass);
     }
-    void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data::dyn_REG_set_Item_On_Array_Of_doubleBuffer_Output_WRITE(CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Framework_Server* obj, CLIBOpenEpiCentre::Output* newClass)
+    void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data::dyn_REG_set_Item_On_Array_Of_doubleBuffer_Output_WRITE(CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Framework* obj, CLIBOpenEpiCentre::Output* newClass)
     {
     stat_REG_set_Item_On_Array_Of_doubleBuffer_Output_WRITE(obj, newClass);
     }
@@ -179,7 +178,7 @@
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data::stat_CLASS_boot1_DEFINE_CLIB_OpenEpiCentre_Data()
     {
     std::cout << "entered stat_CLASS_boot1_DEFINE_Data()" << std::endl;
-    stat_CLASS_boot1_DEFINE_Data_Control();
+    stat_CLASS_boot1_DEFINE_CLIB_OpenEpiCentre_Data_Control();
     stat_CLASS_boot1_DEFINE_User_Input();
     stat_CLASS_boot1_DEFINE_User_Output();
     std::cout << "exiting stat_CLASS_boot1_DEFINE_Data()" << std::endl;
@@ -187,7 +186,7 @@
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data::stat_CLASS_boot3_INITIALISE_CLIB_OpenEpiCentre_Data()
     {
     std::cout << "entered stat_CLASS_boot3_INITIALISE_Data()" << std::endl;
-    stat_CLASS_boot3_INITIALISE_Data_Control();
+    stat_CLASS_boot3_INITIALISE_CLIB_OpenEpiCentre_Data_Control();
     stat_CLASS_boot3_INITIALISE_User_Input();
     stat_CLASS_boot3_INITIALISE_User_Output();
     std::cout << "exiting stat_CLASS_boot3_INITIALISE_Data()" << std::endl;
@@ -207,42 +206,42 @@
 // private.
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data::stat_CLASS_boot1_DEFINE_CLIB_OpenEpiCentre_Data_Control()
     {
-        _stat_CLASS_ptr_Data_Control = nullptr;
+        _stat_CLASS_ptr_CLIB_OpenEpiCentre_Data_Control = nullptr;
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data::stat_CLASS_boot1_DEFINE_User_Input()
     {
-        _stat_CLASS_ptr_User_Input = nullptr;
+        _stat_STRUCT_ptr_User_Input = nullptr;
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data::stat_CLASS_boot1_DEFINE_User_Output()
     {
-        _stat_CLASS_ptr_User_Output = nullptr;
+        _stat_STRUCT_ptr_User_Output = nullptr;
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data::stat_CLASS_boot3_INITIALISE_CLIB_OpenEpiCentre_Data_Control()
     {
-        _stat_CLASS_ptr_Data_Control = new Data_Control();
-        while (stat_CLASS_get_ptr_Data_Control() == nullptr) {}
+        _stat_CLASS_ptr_CLIB_OpenEpiCentre_Data_Control = new CLIB_OpenEpiCentre_Data_Control();
+        while (stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Data_Control() == nullptr) {}
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data::stat_CLASS_boot3_INITIALISE_User_Input()
     {
-        _stat_CLASS_ptr_User_Input = new User_Input();
+        _stat_STRUCT_ptr_User_Input = new User_Input();
         while (stat_CLASS_get_ptr_User_Input() == nullptr) {}
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data::stat_CLASS_boot3_INITIALISE_User_Output()
     {
-        _stat_CLASS_ptr_User_Output = new User_Output();
+        _stat_STRUCT_ptr_User_Output = new User_Output();
         while (stat_CLASS_get_ptr_User_Output() == nullptr) {}
     }
-    CLIBOpenEpiCentre::Data_Control* CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data::stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Data_Control()
+    CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data_Control* CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data::stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Data_Control()
     {
         return _stat_CLASS_ptr_CLIB_OpenEpiCentre_Data_Control;
     }
     CLIBOpenEpiCentre::User_Input* CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data::stat_CLASS_get_ptr_User_Input()
     {
-        return _stat_CLASS_ptr_User_Input;
+        return _stat_STRUCT_ptr_User_Input;
     }
     CLIBOpenEpiCentre::User_Output* CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data::stat_CLASS_get_ptr_User_Output()
     {
-        return _stat_CLASS_ptr_User_Output;
+        return _stat_STRUCT_ptr_User_Output;
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data::stat_REG_boot1_DEFINE_buffer_Input_ReferenceForThread()
     {
@@ -346,28 +345,28 @@
         std::advance(temp, concurrentThreadID);
         *temp = newClass;
     }
-    void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data::stat_REG_set_Item_On_Array_Of_doubleBuffer_Input_READ(CLIB_OpenEpiCentre_Framework_Server* obj, CLIBOpenEpiCentre::Input* newClass)
+    void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data::stat_REG_set_Item_On_Array_Of_doubleBuffer_Input_READ(CLIB_OpenEpiCentre_Framework* obj, CLIBOpenEpiCentre::Input* newClass)
     {
         auto temp = stat_get_REG_ptr_array_Of_doubleBuffer_Input()->begin();
-        std::advance(temp, CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Global::stat_CONVERT_Bool_To_Int(!obj->dyn_CLASS_get_ptr_Server()->dyn_CLASS_get_ptr_Data()->dyn_CLASS_get_ptr_Data_Control()->dyn_REG_get_Item_side_To_Write_For_array_Of_doubleBuffer_Output()));
+        std::advance(temp, CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Global::stat_CONVERT_Bool_To_Int(!obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Data()->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_Data_Control()->dyn_REG_get_Item_side_To_Write_For_array_Of_doubleBuffer_Output()));
         *temp = newClass;
     }
-    void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data::stat_REG_set_Item_On_Array_Of_doubleBuffer_Input_WRITE(CLIB_OpenEpiCentre_Framework_Server* obj, CLIBOpenEpiCentre::Input* newClass)
+    void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data::stat_REG_set_Item_On_Array_Of_doubleBuffer_Input_WRITE(CLIB_OpenEpiCentre_Framework* obj, CLIBOpenEpiCentre::Input* newClass)
     {
         auto temp = stat_get_REG_ptr_array_Of_doubleBuffer_Input()->begin();
-        std::advance(temp, CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Global::stat_CONVERT_Bool_To_Int(obj->dyn_CLASS_get_ptr_Server()->dyn_CLASS_get_ptr_Data()->dyn_CLASS_get_ptr_Data_Control()->dyn_REG_get_Item_side_To_Write_For_array_Of_doubleBuffer_Input()));
+        std::advance(temp, CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Global::stat_CONVERT_Bool_To_Int(obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Data()->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_Data_Control()->dyn_REG_get_Item_side_To_Write_For_array_Of_doubleBuffer_Input()));
         *temp = newClass;
     }
-    void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data::stat_REG_set_Item_On_Array_Of_doubleBuffer_Output_READ(CLIB_OpenEpiCentre_Framework_Server* obj, CLIBOpenEpiCentre::Output* newClass)
+    void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data::stat_REG_set_Item_On_Array_Of_doubleBuffer_Output_READ(CLIB_OpenEpiCentre_Framework* obj, CLIBOpenEpiCentre::Output* newClass)
     {
         auto temp = stat_REG_get_ptr_vector_Of_stack_Of_OutputPraise()->begin();
-        std::advance(temp, CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Global::stat_CONVERT_Bool_To_Int(!obj->dyn_CLASS_get_ptr_Server()->dyn_CLASS_get_ptr_Data()->dyn_CLASS_get_ptr_Data_Control()->dyn_REG_get_Item_side_To_Write_For_array_Of_doubleBuffer_Output()));
+        std::advance(temp, CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Global::stat_CONVERT_Bool_To_Int(!obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Data()->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_Data_Control()->dyn_REG_get_Item_side_To_Write_For_array_Of_doubleBuffer_Output()));
         *temp = newClass;
     }
-    void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data::stat_REG_set_Item_On_Array_Of_doubleBuffer_Output_WRITE(CLIB_OpenEpiCentre_Framework_Server* obj, CLIBOpenEpiCentre::Output* newClass)
+    void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data::stat_REG_set_Item_On_Array_Of_doubleBuffer_Output_WRITE(CLIB_OpenEpiCentre_Framework* obj, CLIBOpenEpiCentre::Output* newClass)
     {
         auto temp = stat_REG_get_ptr_vector_Of_stack_Of_OutputPraise()->begin();
-        std::advance(temp, CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Global::stat_CONVERT_Bool_To_Int(obj->dyn_CLASS_get_ptr_Server()->dyn_CLASS_get_ptr_Data()->dyn_CLASS_get_ptr_Data_Control()->dyn_REG_get_Item_side_To_Write_For_array_Of_doubleBuffer_Output()));
+        std::advance(temp, CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Global::stat_CONVERT_Bool_To_Int(obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Data()->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_Data_Control()->dyn_REG_get_Item_side_To_Write_For_array_Of_doubleBuffer_Output()));
         *temp = newClass;
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data::stat_REG_set_Item_On_Vector_Of_stack_Of_InputPraise(uint8_t slot, Input* newClass)

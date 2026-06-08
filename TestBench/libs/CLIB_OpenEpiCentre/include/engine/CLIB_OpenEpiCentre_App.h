@@ -1,5 +1,8 @@
-#ifndef TESTBENCH_CPP_OPENEPICENTRE_CLIB_OpenEpiCentre_APP_H
-#define TESTBENCH_CPP_OPENEPICENTRE_CLIB_OpenEpiCentre_APP_H
+#ifndef OPENEPICENTRE_BACKENDUBUNTU_CLIB_OPENEPICENTRE_APP_H
+#define OPENEPICENTRE_BACKENDUBUNTU_CLIB_OPENEPICENTRE_APP_H
+#include "CLIB_OpenEpiCentre_Algorithms.h"
+#include "CLIB_OpenEpiCentre_Data.h"
+#include "CLIB_OpenEpiCentre_Execute.h"
 namespace CLIBOpenEpiCentre
 {
     class CLIB_OpenEpiCentre_App
@@ -33,5 +36,5 @@ namespace CLIBOpenEpiCentre
         static class CLIB_OpenEpiCentre_Data* stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Data();
         static class CLIB_OpenEpiCentre_Execute* stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Execute();
     };
-}
-#endif
+};
+#endif //OPENEPICENTRE_BACKENDUBUNTU_CLIB_OPENEPICENTRE_APP_H

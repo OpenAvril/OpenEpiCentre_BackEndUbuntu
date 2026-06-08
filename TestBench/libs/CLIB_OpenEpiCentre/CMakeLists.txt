@@ -7,8 +7,6 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 add_library(CLIB_OpenEpiCentre STATIC
         include/CLIB_OpenEpiCentre.h
         src/CLIB_OpenEpiCentre.cpp
-        include/engine/CLIB_OpenEpiCentre_Framework_Server.h
-        src/engine/CLIB_OpenEpiCentre_Framework_Server.cpp
         include/engine/CLIB_OpenEpiCentre_Global.h
         src/engine/CLIB_OpenEpiCentre_Global.cpp
         include/structs/Input.h
@@ -29,6 +27,8 @@ add_library(CLIB_OpenEpiCentre STATIC
         src/structs/praise_sets/Input_praise0.cpp
         include/structs/praise_sets/Output_praise0.h
         src/structs/praise_sets/Output_praise0.cpp
+        include/engine/CLIB_OpenEpiCentre_Framework.h
+        src/engine/CLIB_OpenEpiCentre_Framework.cpp
         include/engine/CLIB_OpenEpiCentre_App.h
         src/engine/CLIB_OpenEpiCentre_App.cpp
         include/engine/CLIB_OpenEpiCentre_Algorithms.h
