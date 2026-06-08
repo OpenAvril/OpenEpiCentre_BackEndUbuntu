@@ -8,8 +8,8 @@ namespace CLIBOpenEpiCentre
 		void dyn_REG_boot2_SUBSTANTIATE_Output_praise2();
 		void dyn_REG_boot3_INITIALISE_Output_praise2();
 		void dyn_REG_boot4_INSTANTIATE_Output_praise2();
-		double dyn_REG_get_output_Value();
-		void dyn_REG_set_output_Value(double newValue);
+		double dyn_REG_get_output_praise2_Value();
+		void dyn_REG_set_output_praise2_Value(double newValue);
 		static void stat_CLASS_boot2_DECLARE_Output_praise2();
 		static void stat_CLASS_boot1_DEFINE_Output_praise2();
 		static void stat_CLASS_boot3_INITIALISE_Output_praise2();
@@ -17,10 +17,10 @@ namespace CLIBOpenEpiCentre
 		static void stat_REG_boot2_DECLARE_Output_praise2();
 	private:
 		static double* _REG_ptr_output_praise2_Value;
-		void stat_REG_boot1_DEFINE_output_Value();
-		void stat_REG_boot2_SUBSTANTIATE_output_Value();
-		void stat_REG_boot3_INITIALISE_output_Value();
-		static double* stat_REG_get_ptr_output_Value();
-		static void stat_REG_set_Item_output_Value(double newValue);
+		void stat_REG_boot1_DEFINE_output_praise2_Value();
+		void stat_REG_boot2_SUBSTANTIATE_output_praise2_Value();
+		void stat_REG_boot3_INITIALISE_output_praise2_Value();
+		static double* stat_REG_get_ptr_output_praise2_Value();
+		static void stat_REG_set_Item_output_praise2_Value(double newValue);
 	};
 }
