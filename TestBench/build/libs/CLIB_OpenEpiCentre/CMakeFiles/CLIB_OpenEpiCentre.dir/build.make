@@ -83,24 +83,10 @@ libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/CLIB_OpenEpiCentre
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CLIB_OpenEpiCentre.dir/src/CLIB_OpenEpiCentre.cpp.s"
 	cd /home/brenton-james/CLionProjects/OpenEpiCentre_BackEndUbuntu/TestBench/build/libs/CLIB_OpenEpiCentre && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/brenton-james/CLionProjects/OpenEpiCentre_BackEndUbuntu/TestBench/libs/CLIB_OpenEpiCentre/src/CLIB_OpenEpiCentre.cpp -o CMakeFiles/CLIB_OpenEpiCentre.dir/src/CLIB_OpenEpiCentre.cpp.s
 
-libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/CLIB_OpenEpiCentre_Framework_Server.cpp.o: libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/flags.make
-libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/CLIB_OpenEpiCentre_Framework_Server.cpp.o: /home/brenton-james/CLionProjects/OpenEpiCentre_BackEndUbuntu/TestBench/libs/CLIB_OpenEpiCentre/src/engine/CLIB_OpenEpiCentre_Framework_Server.cpp
-libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/CLIB_OpenEpiCentre_Framework_Server.cpp.o: libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/brenton-james/CLionProjects/OpenEpiCentre_BackEndUbuntu/TestBench/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/CLIB_OpenEpiCentre_Framework_Server.cpp.o"
-	cd /home/brenton-james/CLionProjects/OpenEpiCentre_BackEndUbuntu/TestBench/build/libs/CLIB_OpenEpiCentre && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/CLIB_OpenEpiCentre_Framework_Server.cpp.o -MF CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/CLIB_OpenEpiCentre_Framework_Server.cpp.o.d -o CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/CLIB_OpenEpiCentre_Framework_Server.cpp.o -c /home/brenton-james/CLionProjects/OpenEpiCentre_BackEndUbuntu/TestBench/libs/CLIB_OpenEpiCentre/src/engine/CLIB_OpenEpiCentre_Framework_Server.cpp
-
-libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/CLIB_OpenEpiCentre_Framework_Server.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/CLIB_OpenEpiCentre_Framework_Server.cpp.i"
-	cd /home/brenton-james/CLionProjects/OpenEpiCentre_BackEndUbuntu/TestBench/build/libs/CLIB_OpenEpiCentre && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/brenton-james/CLionProjects/OpenEpiCentre_BackEndUbuntu/TestBench/libs/CLIB_OpenEpiCentre/src/engine/CLIB_OpenEpiCentre_Framework_Server.cpp > CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/CLIB_OpenEpiCentre_Framework_Server.cpp.i
-
-libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/CLIB_OpenEpiCentre_Framework_Server.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/CLIB_OpenEpiCentre_Framework_Server.cpp.s"
-	cd /home/brenton-james/CLionProjects/OpenEpiCentre_BackEndUbuntu/TestBench/build/libs/CLIB_OpenEpiCentre && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/brenton-james/CLionProjects/OpenEpiCentre_BackEndUbuntu/TestBench/libs/CLIB_OpenEpiCentre/src/engine/CLIB_OpenEpiCentre_Framework_Server.cpp -o CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/CLIB_OpenEpiCentre_Framework_Server.cpp.s
-
 libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/CLIB_OpenEpiCentre_Global.cpp.o: libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/flags.make
 libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/CLIB_OpenEpiCentre_Global.cpp.o: /home/brenton-james/CLionProjects/OpenEpiCentre_BackEndUbuntu/TestBench/libs/CLIB_OpenEpiCentre/src/engine/CLIB_OpenEpiCentre_Global.cpp
 libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/CLIB_OpenEpiCentre_Global.cpp.o: libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/brenton-james/CLionProjects/OpenEpiCentre_BackEndUbuntu/TestBench/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/CLIB_OpenEpiCentre_Global.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/brenton-james/CLionProjects/OpenEpiCentre_BackEndUbuntu/TestBench/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/CLIB_OpenEpiCentre_Global.cpp.o"
 	cd /home/brenton-james/CLionProjects/OpenEpiCentre_BackEndUbuntu/TestBench/build/libs/CLIB_OpenEpiCentre && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/CLIB_OpenEpiCentre_Global.cpp.o -MF CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/CLIB_OpenEpiCentre_Global.cpp.o.d -o CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/CLIB_OpenEpiCentre_Global.cpp.o -c /home/brenton-james/CLionProjects/OpenEpiCentre_BackEndUbuntu/TestBench/libs/CLIB_OpenEpiCentre/src/engine/CLIB_OpenEpiCentre_Global.cpp
 
 libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/CLIB_OpenEpiCentre_Global.cpp.i: cmake_force
@@ -114,7 +100,7 @@ libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/CLIB_OpenEp
 libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/Input.cpp.o: libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/flags.make
 libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/Input.cpp.o: /home/brenton-james/CLionProjects/OpenEpiCentre_BackEndUbuntu/TestBench/libs/CLIB_OpenEpiCentre/src/structs/Input.cpp
 libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/Input.cpp.o: libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/brenton-james/CLionProjects/OpenEpiCentre_BackEndUbuntu/TestBench/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/Input.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/brenton-james/CLionProjects/OpenEpiCentre_BackEndUbuntu/TestBench/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/Input.cpp.o"
 	cd /home/brenton-james/CLionProjects/OpenEpiCentre_BackEndUbuntu/TestBench/build/libs/CLIB_OpenEpiCentre && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/Input.cpp.o -MF CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/Input.cpp.o.d -o CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/Input.cpp.o -c /home/brenton-james/CLionProjects/OpenEpiCentre_BackEndUbuntu/TestBench/libs/CLIB_OpenEpiCentre/src/structs/Input.cpp
 
 libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/Input.cpp.i: cmake_force
@@ -128,7 +114,7 @@ libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/Input.cpp.
 libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/Output.cpp.o: libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/flags.make
 libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/Output.cpp.o: /home/brenton-james/CLionProjects/OpenEpiCentre_BackEndUbuntu/TestBench/libs/CLIB_OpenEpiCentre/src/structs/Output.cpp
 libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/Output.cpp.o: libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/brenton-james/CLionProjects/OpenEpiCentre_BackEndUbuntu/TestBench/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/Output.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/brenton-james/CLionProjects/OpenEpiCentre_BackEndUbuntu/TestBench/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/Output.cpp.o"
 	cd /home/brenton-james/CLionProjects/OpenEpiCentre_BackEndUbuntu/TestBench/build/libs/CLIB_OpenEpiCentre && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/Output.cpp.o -MF CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/Output.cpp.o.d -o CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/Output.cpp.o -c /home/brenton-james/CLionProjects/OpenEpiCentre_BackEndUbuntu/TestBench/libs/CLIB_OpenEpiCentre/src/structs/Output.cpp
 
 libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/Output.cpp.i: cmake_force
@@ -142,7 +128,7 @@ libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/Output.cpp
 libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/Concurrent.cpp.o: libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/flags.make
 libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/Concurrent.cpp.o: /home/brenton-james/CLionProjects/OpenEpiCentre_BackEndUbuntu/TestBench/libs/CLIB_OpenEpiCentre/src/structs/Concurrent.cpp
 libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/Concurrent.cpp.o: libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/brenton-james/CLionProjects/OpenEpiCentre_BackEndUbuntu/TestBench/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/Concurrent.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/brenton-james/CLionProjects/OpenEpiCentre_BackEndUbuntu/TestBench/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/Concurrent.cpp.o"
 	cd /home/brenton-james/CLionProjects/OpenEpiCentre_BackEndUbuntu/TestBench/build/libs/CLIB_OpenEpiCentre && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/Concurrent.cpp.o -MF CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/Concurrent.cpp.o.d -o CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/Concurrent.cpp.o -c /home/brenton-james/CLionProjects/OpenEpiCentre_BackEndUbuntu/TestBench/libs/CLIB_OpenEpiCentre/src/structs/Concurrent.cpp
 
 libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/Concurrent.cpp.i: cmake_force
@@ -156,7 +142,7 @@ libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/Concurrent
 libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/User_Input.cpp.o: libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/flags.make
 libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/User_Input.cpp.o: /home/brenton-james/CLionProjects/OpenEpiCentre_BackEndUbuntu/TestBench/libs/CLIB_OpenEpiCentre/src/structs/User_Input.cpp
 libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/User_Input.cpp.o: libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/brenton-james/CLionProjects/OpenEpiCentre_BackEndUbuntu/TestBench/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/User_Input.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/brenton-james/CLionProjects/OpenEpiCentre_BackEndUbuntu/TestBench/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/User_Input.cpp.o"
 	cd /home/brenton-james/CLionProjects/OpenEpiCentre_BackEndUbuntu/TestBench/build/libs/CLIB_OpenEpiCentre && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/User_Input.cpp.o -MF CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/User_Input.cpp.o.d -o CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/User_Input.cpp.o -c /home/brenton-james/CLionProjects/OpenEpiCentre_BackEndUbuntu/TestBench/libs/CLIB_OpenEpiCentre/src/structs/User_Input.cpp
 
 libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/User_Input.cpp.i: cmake_force
@@ -170,7 +156,7 @@ libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/User_Input
 libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/User_Output.cpp.o: libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/flags.make
 libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/User_Output.cpp.o: /home/brenton-james/CLionProjects/OpenEpiCentre_BackEndUbuntu/TestBench/libs/CLIB_OpenEpiCentre/src/structs/User_Output.cpp
 libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/User_Output.cpp.o: libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/brenton-james/CLionProjects/OpenEpiCentre_BackEndUbuntu/TestBench/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/User_Output.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/brenton-james/CLionProjects/OpenEpiCentre_BackEndUbuntu/TestBench/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/User_Output.cpp.o"
 	cd /home/brenton-james/CLionProjects/OpenEpiCentre_BackEndUbuntu/TestBench/build/libs/CLIB_OpenEpiCentre && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/User_Output.cpp.o -MF CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/User_Output.cpp.o.d -o CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/User_Output.cpp.o -c /home/brenton-james/CLionProjects/OpenEpiCentre_BackEndUbuntu/TestBench/libs/CLIB_OpenEpiCentre/src/structs/User_Output.cpp
 
 libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/User_Output.cpp.i: cmake_force
@@ -184,7 +170,7 @@ libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/User_Outpu
 libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/User_Algorithm.cpp.o: libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/flags.make
 libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/User_Algorithm.cpp.o: /home/brenton-james/CLionProjects/OpenEpiCentre_BackEndUbuntu/TestBench/libs/CLIB_OpenEpiCentre/src/structs/User_Algorithm.cpp
 libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/User_Algorithm.cpp.o: libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/brenton-james/CLionProjects/OpenEpiCentre_BackEndUbuntu/TestBench/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/User_Algorithm.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/brenton-james/CLionProjects/OpenEpiCentre_BackEndUbuntu/TestBench/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/User_Algorithm.cpp.o"
 	cd /home/brenton-james/CLionProjects/OpenEpiCentre_BackEndUbuntu/TestBench/build/libs/CLIB_OpenEpiCentre && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/User_Algorithm.cpp.o -MF CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/User_Algorithm.cpp.o.d -o CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/User_Algorithm.cpp.o -c /home/brenton-james/CLionProjects/OpenEpiCentre_BackEndUbuntu/TestBench/libs/CLIB_OpenEpiCentre/src/structs/User_Algorithm.cpp
 
 libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/User_Algorithm.cpp.i: cmake_force
@@ -198,7 +184,7 @@ libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/User_Algor
 libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/praise_sets/Algorithm_praise0.cpp.o: libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/flags.make
 libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/praise_sets/Algorithm_praise0.cpp.o: /home/brenton-james/CLionProjects/OpenEpiCentre_BackEndUbuntu/TestBench/libs/CLIB_OpenEpiCentre/src/structs/praise_sets/Algorithm_praise0.cpp
 libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/praise_sets/Algorithm_praise0.cpp.o: libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/brenton-james/CLionProjects/OpenEpiCentre_BackEndUbuntu/TestBench/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/praise_sets/Algorithm_praise0.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/brenton-james/CLionProjects/OpenEpiCentre_BackEndUbuntu/TestBench/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/praise_sets/Algorithm_praise0.cpp.o"
 	cd /home/brenton-james/CLionProjects/OpenEpiCentre_BackEndUbuntu/TestBench/build/libs/CLIB_OpenEpiCentre && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/praise_sets/Algorithm_praise0.cpp.o -MF CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/praise_sets/Algorithm_praise0.cpp.o.d -o CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/praise_sets/Algorithm_praise0.cpp.o -c /home/brenton-james/CLionProjects/OpenEpiCentre_BackEndUbuntu/TestBench/libs/CLIB_OpenEpiCentre/src/structs/praise_sets/Algorithm_praise0.cpp
 
 libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/praise_sets/Algorithm_praise0.cpp.i: cmake_force
@@ -212,7 +198,7 @@ libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/praise_set
 libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/praise_sets/Input_praise0.cpp.o: libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/flags.make
 libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/praise_sets/Input_praise0.cpp.o: /home/brenton-james/CLionProjects/OpenEpiCentre_BackEndUbuntu/TestBench/libs/CLIB_OpenEpiCentre/src/structs/praise_sets/Input_praise0.cpp
 libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/praise_sets/Input_praise0.cpp.o: libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/brenton-james/CLionProjects/OpenEpiCentre_BackEndUbuntu/TestBench/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/praise_sets/Input_praise0.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/brenton-james/CLionProjects/OpenEpiCentre_BackEndUbuntu/TestBench/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/praise_sets/Input_praise0.cpp.o"
 	cd /home/brenton-james/CLionProjects/OpenEpiCentre_BackEndUbuntu/TestBench/build/libs/CLIB_OpenEpiCentre && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/praise_sets/Input_praise0.cpp.o -MF CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/praise_sets/Input_praise0.cpp.o.d -o CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/praise_sets/Input_praise0.cpp.o -c /home/brenton-james/CLionProjects/OpenEpiCentre_BackEndUbuntu/TestBench/libs/CLIB_OpenEpiCentre/src/structs/praise_sets/Input_praise0.cpp
 
 libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/praise_sets/Input_praise0.cpp.i: cmake_force
@@ -226,7 +212,7 @@ libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/praise_set
 libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/praise_sets/Output_praise0.cpp.o: libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/flags.make
 libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/praise_sets/Output_praise0.cpp.o: /home/brenton-james/CLionProjects/OpenEpiCentre_BackEndUbuntu/TestBench/libs/CLIB_OpenEpiCentre/src/structs/praise_sets/Output_praise0.cpp
 libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/praise_sets/Output_praise0.cpp.o: libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/brenton-james/CLionProjects/OpenEpiCentre_BackEndUbuntu/TestBench/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/praise_sets/Output_praise0.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/brenton-james/CLionProjects/OpenEpiCentre_BackEndUbuntu/TestBench/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/praise_sets/Output_praise0.cpp.o"
 	cd /home/brenton-james/CLionProjects/OpenEpiCentre_BackEndUbuntu/TestBench/build/libs/CLIB_OpenEpiCentre && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/praise_sets/Output_praise0.cpp.o -MF CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/praise_sets/Output_praise0.cpp.o.d -o CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/praise_sets/Output_praise0.cpp.o -c /home/brenton-james/CLionProjects/OpenEpiCentre_BackEndUbuntu/TestBench/libs/CLIB_OpenEpiCentre/src/structs/praise_sets/Output_praise0.cpp
 
 libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/praise_sets/Output_praise0.cpp.i: cmake_force
@@ -236,6 +222,20 @@ libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/praise_set
 libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/praise_sets/Output_praise0.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/praise_sets/Output_praise0.cpp.s"
 	cd /home/brenton-james/CLionProjects/OpenEpiCentre_BackEndUbuntu/TestBench/build/libs/CLIB_OpenEpiCentre && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/brenton-james/CLionProjects/OpenEpiCentre_BackEndUbuntu/TestBench/libs/CLIB_OpenEpiCentre/src/structs/praise_sets/Output_praise0.cpp -o CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/praise_sets/Output_praise0.cpp.s
+
+libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/CLIB_OpenEpiCentre_Framework.cpp.o: libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/flags.make
+libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/CLIB_OpenEpiCentre_Framework.cpp.o: /home/brenton-james/CLionProjects/OpenEpiCentre_BackEndUbuntu/TestBench/libs/CLIB_OpenEpiCentre/src/engine/CLIB_OpenEpiCentre_Framework.cpp
+libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/CLIB_OpenEpiCentre_Framework.cpp.o: libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/brenton-james/CLionProjects/OpenEpiCentre_BackEndUbuntu/TestBench/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/CLIB_OpenEpiCentre_Framework.cpp.o"
+	cd /home/brenton-james/CLionProjects/OpenEpiCentre_BackEndUbuntu/TestBench/build/libs/CLIB_OpenEpiCentre && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/CLIB_OpenEpiCentre_Framework.cpp.o -MF CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/CLIB_OpenEpiCentre_Framework.cpp.o.d -o CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/CLIB_OpenEpiCentre_Framework.cpp.o -c /home/brenton-james/CLionProjects/OpenEpiCentre_BackEndUbuntu/TestBench/libs/CLIB_OpenEpiCentre/src/engine/CLIB_OpenEpiCentre_Framework.cpp
+
+libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/CLIB_OpenEpiCentre_Framework.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/CLIB_OpenEpiCentre_Framework.cpp.i"
+	cd /home/brenton-james/CLionProjects/OpenEpiCentre_BackEndUbuntu/TestBench/build/libs/CLIB_OpenEpiCentre && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/brenton-james/CLionProjects/OpenEpiCentre_BackEndUbuntu/TestBench/libs/CLIB_OpenEpiCentre/src/engine/CLIB_OpenEpiCentre_Framework.cpp > CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/CLIB_OpenEpiCentre_Framework.cpp.i
+
+libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/CLIB_OpenEpiCentre_Framework.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/CLIB_OpenEpiCentre_Framework.cpp.s"
+	cd /home/brenton-james/CLionProjects/OpenEpiCentre_BackEndUbuntu/TestBench/build/libs/CLIB_OpenEpiCentre && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/brenton-james/CLionProjects/OpenEpiCentre_BackEndUbuntu/TestBench/libs/CLIB_OpenEpiCentre/src/engine/CLIB_OpenEpiCentre_Framework.cpp -o CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/CLIB_OpenEpiCentre_Framework.cpp.s
 
 libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/CLIB_OpenEpiCentre_App.cpp.o: libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/flags.make
 libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/CLIB_OpenEpiCentre_App.cpp.o: /home/brenton-james/CLionProjects/OpenEpiCentre_BackEndUbuntu/TestBench/libs/CLIB_OpenEpiCentre/src/engine/CLIB_OpenEpiCentre_App.cpp
@@ -324,7 +324,6 @@ libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/CLIB_OpenEp
 # Object files for target CLIB_OpenEpiCentre
 CLIB_OpenEpiCentre_OBJECTS = \
 "CMakeFiles/CLIB_OpenEpiCentre.dir/src/CLIB_OpenEpiCentre.cpp.o" \
-"CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/CLIB_OpenEpiCentre_Framework_Server.cpp.o" \
 "CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/CLIB_OpenEpiCentre_Global.cpp.o" \
 "CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/Input.cpp.o" \
 "CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/Output.cpp.o" \
@@ -335,6 +334,7 @@ CLIB_OpenEpiCentre_OBJECTS = \
 "CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/praise_sets/Algorithm_praise0.cpp.o" \
 "CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/praise_sets/Input_praise0.cpp.o" \
 "CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/praise_sets/Output_praise0.cpp.o" \
+"CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/CLIB_OpenEpiCentre_Framework.cpp.o" \
 "CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/CLIB_OpenEpiCentre_App.cpp.o" \
 "CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/CLIB_OpenEpiCentre_Algorithms.cpp.o" \
 "CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/CLIB_OpenEpiCentre_Data.cpp.o" \
@@ -346,7 +346,6 @@ CLIB_OpenEpiCentre_OBJECTS = \
 CLIB_OpenEpiCentre_EXTERNAL_OBJECTS =
 
 libs/CLIB_OpenEpiCentre/libCLIB_OpenEpiCentre.a: libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/CLIB_OpenEpiCentre.cpp.o
-libs/CLIB_OpenEpiCentre/libCLIB_OpenEpiCentre.a: libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/CLIB_OpenEpiCentre_Framework_Server.cpp.o
 libs/CLIB_OpenEpiCentre/libCLIB_OpenEpiCentre.a: libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/CLIB_OpenEpiCentre_Global.cpp.o
 libs/CLIB_OpenEpiCentre/libCLIB_OpenEpiCentre.a: libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/Input.cpp.o
 libs/CLIB_OpenEpiCentre/libCLIB_OpenEpiCentre.a: libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/Output.cpp.o
@@ -357,6 +356,7 @@ libs/CLIB_OpenEpiCentre/libCLIB_OpenEpiCentre.a: libs/CLIB_OpenEpiCentre/CMakeFi
 libs/CLIB_OpenEpiCentre/libCLIB_OpenEpiCentre.a: libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/praise_sets/Algorithm_praise0.cpp.o
 libs/CLIB_OpenEpiCentre/libCLIB_OpenEpiCentre.a: libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/praise_sets/Input_praise0.cpp.o
 libs/CLIB_OpenEpiCentre/libCLIB_OpenEpiCentre.a: libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/praise_sets/Output_praise0.cpp.o
+libs/CLIB_OpenEpiCentre/libCLIB_OpenEpiCentre.a: libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/CLIB_OpenEpiCentre_Framework.cpp.o
 libs/CLIB_OpenEpiCentre/libCLIB_OpenEpiCentre.a: libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/CLIB_OpenEpiCentre_App.cpp.o
 libs/CLIB_OpenEpiCentre/libCLIB_OpenEpiCentre.a: libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/CLIB_OpenEpiCentre_Algorithms.cpp.o
 libs/CLIB_OpenEpiCentre/libCLIB_OpenEpiCentre.a: libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/CLIB_OpenEpiCentre_Data.cpp.o

@@ -298,29 +298,29 @@ src/engine/CLIB_OpenEpiCentre_Execute_Control.cpp.s:
 	cd /home/brenton-james/CLionProjects/OpenEpiCentre_BackEndUbuntu/TestBench/build && $(MAKE) $(MAKESILENT) -f libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/build.make libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/CLIB_OpenEpiCentre_Execute_Control.cpp.s
 .PHONY : src/engine/CLIB_OpenEpiCentre_Execute_Control.cpp.s
 
-src/engine/CLIB_OpenEpiCentre_Framework_Server.o: src/engine/CLIB_OpenEpiCentre_Framework_Server.cpp.o
-.PHONY : src/engine/CLIB_OpenEpiCentre_Framework_Server.o
+src/engine/CLIB_OpenEpiCentre_Framework.o: src/engine/CLIB_OpenEpiCentre_Framework.cpp.o
+.PHONY : src/engine/CLIB_OpenEpiCentre_Framework.o
 
 # target to build an object file
-src/engine/CLIB_OpenEpiCentre_Framework_Server.cpp.o:
-	cd /home/brenton-james/CLionProjects/OpenEpiCentre_BackEndUbuntu/TestBench/build && $(MAKE) $(MAKESILENT) -f libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/build.make libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/CLIB_OpenEpiCentre_Framework_Server.cpp.o
-.PHONY : src/engine/CLIB_OpenEpiCentre_Framework_Server.cpp.o
+src/engine/CLIB_OpenEpiCentre_Framework.cpp.o:
+	cd /home/brenton-james/CLionProjects/OpenEpiCentre_BackEndUbuntu/TestBench/build && $(MAKE) $(MAKESILENT) -f libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/build.make libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/CLIB_OpenEpiCentre_Framework.cpp.o
+.PHONY : src/engine/CLIB_OpenEpiCentre_Framework.cpp.o
 
-src/engine/CLIB_OpenEpiCentre_Framework_Server.i: src/engine/CLIB_OpenEpiCentre_Framework_Server.cpp.i
-.PHONY : src/engine/CLIB_OpenEpiCentre_Framework_Server.i
+src/engine/CLIB_OpenEpiCentre_Framework.i: src/engine/CLIB_OpenEpiCentre_Framework.cpp.i
+.PHONY : src/engine/CLIB_OpenEpiCentre_Framework.i
 
 # target to preprocess a source file
-src/engine/CLIB_OpenEpiCentre_Framework_Server.cpp.i:
-	cd /home/brenton-james/CLionProjects/OpenEpiCentre_BackEndUbuntu/TestBench/build && $(MAKE) $(MAKESILENT) -f libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/build.make libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/CLIB_OpenEpiCentre_Framework_Server.cpp.i
-.PHONY : src/engine/CLIB_OpenEpiCentre_Framework_Server.cpp.i
+src/engine/CLIB_OpenEpiCentre_Framework.cpp.i:
+	cd /home/brenton-james/CLionProjects/OpenEpiCentre_BackEndUbuntu/TestBench/build && $(MAKE) $(MAKESILENT) -f libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/build.make libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/CLIB_OpenEpiCentre_Framework.cpp.i
+.PHONY : src/engine/CLIB_OpenEpiCentre_Framework.cpp.i
 
-src/engine/CLIB_OpenEpiCentre_Framework_Server.s: src/engine/CLIB_OpenEpiCentre_Framework_Server.cpp.s
-.PHONY : src/engine/CLIB_OpenEpiCentre_Framework_Server.s
+src/engine/CLIB_OpenEpiCentre_Framework.s: src/engine/CLIB_OpenEpiCentre_Framework.cpp.s
+.PHONY : src/engine/CLIB_OpenEpiCentre_Framework.s
 
 # target to generate assembly for a file
-src/engine/CLIB_OpenEpiCentre_Framework_Server.cpp.s:
-	cd /home/brenton-james/CLionProjects/OpenEpiCentre_BackEndUbuntu/TestBench/build && $(MAKE) $(MAKESILENT) -f libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/build.make libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/CLIB_OpenEpiCentre_Framework_Server.cpp.s
-.PHONY : src/engine/CLIB_OpenEpiCentre_Framework_Server.cpp.s
+src/engine/CLIB_OpenEpiCentre_Framework.cpp.s:
+	cd /home/brenton-james/CLionProjects/OpenEpiCentre_BackEndUbuntu/TestBench/build && $(MAKE) $(MAKESILENT) -f libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/build.make libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/CLIB_OpenEpiCentre_Framework.cpp.s
+.PHONY : src/engine/CLIB_OpenEpiCentre_Framework.cpp.s
 
 src/engine/CLIB_OpenEpiCentre_Global.o: src/engine/CLIB_OpenEpiCentre_Global.cpp.o
 .PHONY : src/engine/CLIB_OpenEpiCentre_Global.o
@@ -592,9 +592,9 @@ help:
 	@echo "... src/engine/CLIB_OpenEpiCentre_Execute_Control.o"
 	@echo "... src/engine/CLIB_OpenEpiCentre_Execute_Control.i"
 	@echo "... src/engine/CLIB_OpenEpiCentre_Execute_Control.s"
-	@echo "... src/engine/CLIB_OpenEpiCentre_Framework_Server.o"
-	@echo "... src/engine/CLIB_OpenEpiCentre_Framework_Server.i"
-	@echo "... src/engine/CLIB_OpenEpiCentre_Framework_Server.s"
+	@echo "... src/engine/CLIB_OpenEpiCentre_Framework.o"
+	@echo "... src/engine/CLIB_OpenEpiCentre_Framework.i"
+	@echo "... src/engine/CLIB_OpenEpiCentre_Framework.s"
 	@echo "... src/engine/CLIB_OpenEpiCentre_Global.o"
 	@echo "... src/engine/CLIB_OpenEpiCentre_Global.i"
 	@echo "... src/engine/CLIB_OpenEpiCentre_Global.s"
