@@ -132,7 +132,7 @@
     {
         _stat_REG_List_Of_Threads = new std::list<std::thread*>();
         while (stat_PGM_get_ptr_List_Of_Threads() == nullptr) { }
-        stat_PGM_get_ptr_List_Of_Threads()->resize(obj->dyn_CLASS_get_ptr_Global_App()->dyn_REG_get_Item_number_Of_Implemented_Cores() - 1);
+        stat_PGM_get_ptr_List_Of_Threads()->resize(obj->dyn_CLASS_get_ptr_Global()->dyn_REG_get_Item_number_Of_Implemented_Cores() - 1);
         for (uint8_t threadId = 0; threadId < sizeof(*stat_PGM_get_ptr_List_Of_Threads()); threadId++)
         {
             auto temp = stat_PGM_get_ptr_List_Of_Threads()->begin();

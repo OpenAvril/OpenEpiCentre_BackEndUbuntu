@@ -14,9 +14,9 @@
 
 		std::cout << "started Global Meta-Data and Settings." << std::endl;
 		stat_CLASS_get_ptr_Framework_App()->dyn_CLASS_create_Global_and_Settings();
-		stat_CLASS_get_ptr_Framework_App()->dyn_CLASS_get_ptr_Global_App()->dyn_REG_boot1_DEFINE_Global();
-		stat_CLASS_get_ptr_Framework_App()->dyn_CLASS_get_ptr_Global_App()->dyn_REG_boot2_SUBSTANTIATE_Global();
-		stat_CLASS_get_ptr_Framework_App()->dyn_CLASS_get_ptr_Global_App()->dyn_REG_boot3_INITIALISE_Global();
+		stat_CLASS_get_ptr_Framework_App()->dyn_CLASS_get_ptr_Global()->dyn_REG_boot1_DEFINE_Global();
+		stat_CLASS_get_ptr_Framework_App()->dyn_CLASS_get_ptr_Global()->dyn_REG_boot2_SUBSTANTIATE_Global();
+		stat_CLASS_get_ptr_Framework_App()->dyn_CLASS_get_ptr_Global()->dyn_REG_boot3_INITIALISE_Global();
 		std::cout << "done Global Meta-Data and Settings." << std::endl;
 
 		std::cout << "started STRUCTS Generate." << std::endl;
