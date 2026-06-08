@@ -77,7 +77,7 @@
 		{
 			obj->stat_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Algorithms()->dyn_STRUCT_get_Item_On_list_Of_ptr_Concurrent(concurrentThreadId)->dyn_REG_boot2_SUBSTANTIATE_Concurrent();
 		}
-		obj->stat_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Data()->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_Data_Control()->dyn_REG_boot2_SUBSTANTIATE_Data_Control(obj);
+		obj->stat_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Data()->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_Data_Control()->dyn_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_Data_Control(obj);
 		obj->stat_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Execute()->dyn_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_Execute(obj);
 		obj->stat_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Execute()->dyn_CLASS_get_ptr_Execute_Control()->dyn_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_Execute_Control(obj);
 		std::cout << "exiting dyn_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_Framework()" << std::endl;
@@ -93,7 +93,7 @@
 			obj->stat_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Algorithms()->dyn_STRUCT_get_Item_On_list_Of_ptr_Concurrent(concurrentThreadId)->dyn_REG_boot3_INITIALISE_Concurrent(obj);
 		}
 		obj->stat_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Data()->dyn_REG_boot1_DEFINE_CLIB_OpenEpiCentre_Data(obj);
-		obj->stat_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Data()->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_Data_Control()->dyn_REG_boot3_INITIALISE_Data_Control(obj);
+		obj->stat_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Data()->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_Data_Control()->dyn_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_Data_Control(obj);
 		obj->stat_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Execute()->dyn_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_Execute(obj);
 		obj->stat_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Execute()->dyn_CLASS_get_ptr_Execute_Control()->dyn_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_Execute_Control(obj);
 		std::cout << "exiting dyn_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_Framework()" << std::endl;
