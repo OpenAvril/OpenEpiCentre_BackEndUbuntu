@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.28.3)
+cmake_minimum_required(VERSION 4.2.3)
 project(CLIB_OpenEpiCentre VERSION 1.0 LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 20)
@@ -27,6 +27,24 @@ add_library(CLIB_OpenEpiCentre STATIC
         src/structs/praise_sets/Input_praise0.cpp
         include/structs/praise_sets/Output_praise0.h
         src/structs/praise_sets/Output_praise0.cpp
+        include/structs/praise_sets/Algorithm_praise1.h
+        src/structs/praise_sets/Algorithm_praise1.cpp
+        include/structs/praise_sets/Input_praise1.h
+        src/structs/praise_sets/Input_praise1.cpp
+        include/structs/praise_sets/Output_praise1.h
+        src/structs/praise_sets/Output_praise1.cpp
+        include/structs/praise_sets/Algorithm_praise2.h
+        src/structs/praise_sets/Algorithm_praise2.cpp
+        include/structs/praise_sets/Input_praise2.h
+        src/structs/praise_sets/Input_praise2.cpp
+        include/structs/praise_sets/Output_praise2.h
+        src/structs/praise_sets/Output_praise2.cpp
+        include/structs/praise_sets/Algorithm_praise3.h
+        src/structs/praise_sets/Algorithm_praise3.cpp
+        include/structs/praise_sets/Input_praise3.h
+        src/structs/praise_sets/Input_praise3.cpp
+        include/structs/praise_sets/Output_praise3.h
+        src/structs/praise_sets/Output_praise3.cpp
         include/engine/CLIB_OpenEpiCentre_Framework.h
         src/engine/CLIB_OpenEpiCentre_Framework.cpp
         include/engine/CLIB_OpenEpiCentre_App.h

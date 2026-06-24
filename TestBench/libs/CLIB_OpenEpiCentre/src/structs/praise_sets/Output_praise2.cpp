@@ -35,7 +35,7 @@ double* CLIBOpenEpiCentre::Output_praise2::_REG_ptr_output_praise2_Value;
 	{
 		stat_REG_set_Item_output_praise2_Value(newValue);
 	}
-	void CLIBOpenEpiCentre::Output_praise2::stat_CLASS_boot2_DECLARE_Output_praise2()
+	void CLIBOpenEpiCentre::Output_praise2::stat_CLASS_boot0_DECLARE_Output_praise2()
 	{
 		std::cout << "entered stat_CLASS_boot2_DECLARE_Output_praise2()" << std::endl;
 
@@ -59,7 +59,7 @@ double* CLIBOpenEpiCentre::Output_praise2::_REG_ptr_output_praise2_Value;
 
 		std::cout << "exiting stat_CLASS_boot4_INSTANTIATE_Output_praise2()" << std::endl;
 	}
-	void CLIBOpenEpiCentre::Output_praise2::stat_REG_boot2_DECLARE_Output_praise2()
+	void CLIBOpenEpiCentre::Output_praise2::stat_REG_boot0_DECLARE_Output_praise2()
 	{
 		std::cout << "entered stat_REG_boot2_DECLARE_Output_praise2()" << std::endl;
 

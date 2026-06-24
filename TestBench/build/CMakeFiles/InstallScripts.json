@@ -1,0 +1,12 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/brentonjames/CLionProjects/OpenEpiCentre_BackEndUbuntu/TestBench/build/cmake_install.cmake",
+		"/home/brentonjames/CLionProjects/OpenEpiCentre_BackEndUbuntu/TestBench/build/libs/CLIB_LaunchQueForThreadsAt_Server/cmake_install.cmake",
+		"/home/brentonjames/CLionProjects/OpenEpiCentre_BackEndUbuntu/TestBench/build/libs/CLIB_WriteQueForThreadsAt_ServerInputReceive/cmake_install.cmake",
+		"/home/brentonjames/CLionProjects/OpenEpiCentre_BackEndUbuntu/TestBench/build/libs/CLIB_WriteQueForThreadsAt_ServerOutputSend/cmake_install.cmake",
+		"/home/brentonjames/CLionProjects/OpenEpiCentre_BackEndUbuntu/TestBench/build/libs/CLIB_OpenEpiCentre/cmake_install.cmake",
+		"/home/brentonjames/CLionProjects/OpenEpiCentre_BackEndUbuntu/TestBench/build/libs/CLIB_WriteQueForThreadsAt_SIMULATION/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
