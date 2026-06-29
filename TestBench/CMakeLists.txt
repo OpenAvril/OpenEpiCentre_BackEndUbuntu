@@ -19,6 +19,14 @@ add_executable(TestBench Main.cpp
         src/engine/Execute_Control.cpp
         src/engine/Framework_App.cpp
         src/engine/Global.cpp
+        src/io/OpenEpiCentre.cpp
+        include/io/OpenEpiCentre.h
+        src/io/LaunchQue_Server.cpp
+        include/io/LaunchQue_Server.h
+        src/io/WriteQue_ServerInputRecieve.cpp
+        include/io/WriteQue_ServerInputRecieve.h
+        src/io/WriteQue_ServerOutputSend.cpp
+        include/io/WriteQue_ServerOutputSend.h
 )
 
 target_link_libraries(TestBench PRIVATE CLIB_OpenEpiCentre)
