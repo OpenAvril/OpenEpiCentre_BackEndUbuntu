@@ -5,7 +5,7 @@
 #include "../include/WriteEnableForThreadsAt_ServerInputReceive_Framework.h"
 #include "../include/WriteEnableForThreadsAt_ServerInputReceive_Global.h"
 	CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceive_Framework* _stat_REG_ptr_Framework_WriteEnableForThreadsAt_ServerInputReceive;
-	bool* _stat_REG_flag_isMemberFunctionINSTANTIATED;
+	bool* CLIB_WriteEnableForThreadsAt_ServerInputReceive__stat_REG_flag_isMemberFunctionINSTANTIATED;
 // public.
 void* CLIBWriteQueAtServerInputReceive::CLIB_WriteEnableForThreadsAt_ServerInputReceive::CLIB_WriteEnableForThreadsAt_ServerInputReceive__app_FUNCT_generate_Program()
 {
@@ -87,10 +87,10 @@ void CLIBWriteQueAtServerInputReceive::CLIB_WriteEnableForThreadsAt_ServerInputR
 	}
 	else {
 		CLIB_WriteEnableForThreadsAt_ServerInputReceive__stat_REG_get_CLIBLaunchQueAtServerInputReceive_isFlagINSTANTIATED()[4] = false;
-		CLIB_WriteEnableForThreadsAt_ServerInputReceive__stat_app_FUNCT_Calc_IsAllINSTANTIATED();//INSTANTIATE this member function last.
+		CLIB_WriteEnableForThreadsAt_ServerOutputSend__stat_app_FUNCT_Calc_IsAllINSTANTIATED();//INSTANTIATE this member function last.
 	}
 }
-void CLIBWriteQueAtServerInputReceive::CLIB_WriteEnableForThreadsAt_ServerInputReceive::CLIB_WriteEnableForThreadsAt_ServerInputReceive__stat_app_FUNCT_Calc_IsAllINSTANTIATED()
+void CLIBWriteQueAtServerInputReceive::CLIB_WriteEnableForThreadsAt_ServerInputReceive::CLIB_WriteEnableForThreadsAt_ServerOutputSend__stat_app_FUNCT_Calc_IsAllINSTANTIATED()
 {
 	CLIB_WriteEnableForThreadsAt_ServerInputReceive__stat_REG_get_CLIBLaunchQueAtServerInputReceive_isFlagINSTANTIATED()[0] = false;
 	for (uint8_t memberFunctionId = 1; memberFunctionId < sizeof(_stat_REG_ptr_Framework_WriteEnableForThreadsAt_ServerInputReceive); memberFunctionId++)
@@ -116,25 +116,25 @@ CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceive_Fra
 }
 void CLIBWriteQueAtServerInputReceive::CLIB_WriteEnableForThreadsAt_ServerInputReceive::CLIB_WriteEnableForThreadsAt_ServerInputReceive__stat_REG_boot1_DEFINE_CLIBLaunchQueAtServerInputReceive_isFlagINSTANTIATED()
 {
-	_stat_REG_flag_isMemberFunctionINSTANTIATED = NULL;
+	CLIB_WriteEnableForThreadsAt_ServerInputReceive__stat_REG_flag_isMemberFunctionINSTANTIATED = NULL;
 }
 void CLIBWriteQueAtServerInputReceive::CLIB_WriteEnableForThreadsAt_ServerInputReceive::CLIB_WriteEnableForThreadsAt_ServerInputReceive__stat_REG_boot2_SUBSTANTIATE_CLIBLaunchQueAtServerInputReceive_isFlagINSTANTIATED()
 {
-	_stat_REG_flag_isMemberFunctionINSTANTIATED = new bool[5]();
+	CLIB_WriteEnableForThreadsAt_ServerInputReceive__stat_REG_flag_isMemberFunctionINSTANTIATED = new bool[5]();
 	while (CLIB_WriteEnableForThreadsAt_ServerInputReceive__stat_REG_get_CLIBLaunchQueAtServerInputReceive_isFlagINSTANTIATED() == NULL) {}
 	for (uint8_t index = 0; index < sizeof(*CLIB_WriteEnableForThreadsAt_ServerInputReceive__stat_REG_get_CLIBLaunchQueAtServerInputReceive_isFlagINSTANTIATED()); index++)
 	{
-		_stat_REG_flag_isMemberFunctionINSTANTIATED[index] = true;
+		CLIB_WriteEnableForThreadsAt_ServerInputReceive__stat_REG_flag_isMemberFunctionINSTANTIATED[index] = true;
 	}
 }
 void CLIBWriteQueAtServerInputReceive::CLIB_WriteEnableForThreadsAt_ServerInputReceive::CLIB_WriteEnableForThreadsAt_ServerInputReceive__stat_REG_boot3_INITIALISE_CLIBLaunchQueAtServerInputReceive_isFlagINSTANTIATED()
 {
 	for (uint8_t index = 0; index < sizeof(*CLIB_WriteEnableForThreadsAt_ServerInputReceive__stat_REG_get_CLIBLaunchQueAtServerInputReceive_isFlagINSTANTIATED()); index++)
 	{
-		_stat_REG_flag_isMemberFunctionINSTANTIATED[index] = true;
+		CLIB_WriteEnableForThreadsAt_ServerInputReceive__stat_REG_flag_isMemberFunctionINSTANTIATED[index] = true;
 	}
 }
 bool* CLIBWriteQueAtServerInputReceive::CLIB_WriteEnableForThreadsAt_ServerInputReceive::CLIB_WriteEnableForThreadsAt_ServerInputReceive__stat_REG_get_CLIBLaunchQueAtServerInputReceive_isFlagINSTANTIATED()
 {
-	return _stat_REG_flag_isMemberFunctionINSTANTIATED;
+	return CLIB_WriteEnableForThreadsAt_ServerInputReceive__stat_REG_flag_isMemberFunctionINSTANTIATED;
 }

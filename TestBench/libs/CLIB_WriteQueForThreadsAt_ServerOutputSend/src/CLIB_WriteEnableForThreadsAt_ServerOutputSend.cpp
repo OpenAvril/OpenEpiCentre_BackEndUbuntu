@@ -4,8 +4,8 @@
 #include "../include/WriteEnableForThreadsAt_ServerOutputSend.h"
 #include "../include/WriteEnableForThreadsAt_ServerOutputSend_Framework.h"
 #include "../include/WriteEnableForThreadsAt_ServerOutputSend_Global.h"
-CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend_Framework* _stat_REG_ptr_Framework_WriteEnableForThreadsAt_ServerOutputSend;
-	bool* _stat_REG_flag_isMemberFunctionINSTANTIATED;
+	CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend_Framework* _stat_REG_ptr_Framework_WriteEnableForThreadsAt_ServerOutputSend;
+	bool* CLIB_WriteEnableForThreadsAt_ServerOutputSend___stat_REG_flag_isMemberFunctionINSTANTIATED;
 // public.
 void* CLIBWriteQueAtServerOutputSend::CLIB_WriteEnableForThreadsAt_ServerOutputSend::CLIB_WriteEnableForThreadsAt_ServerOutputSend__app_FUNCT_generate_Program()
 {
@@ -116,25 +116,25 @@ CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend_Framewo
 }
 void CLIBWriteQueAtServerOutputSend::CLIB_WriteEnableForThreadsAt_ServerOutputSend::CLIB_WriteEnableForThreadsAt_ServerOutputSend__stat_REG_boot1_DEFINE_CLIBLaunchQueAtServerOutputSend_isFlagINSTANTIATED()
 {
-	_stat_REG_flag_isMemberFunctionINSTANTIATED = NULL;
+	CLIB_WriteEnableForThreadsAt_ServerOutputSend___stat_REG_flag_isMemberFunctionINSTANTIATED = NULL;
 }
 void CLIBWriteQueAtServerOutputSend::CLIB_WriteEnableForThreadsAt_ServerOutputSend::CLIB_WriteEnableForThreadsAt_ServerOutputSend__stat_REG_boot2_SUBSTANTIATE_CLIBLaunchQueAtServerOutputSend_isFlagINSTANTIATED()
 {
-	_stat_REG_flag_isMemberFunctionINSTANTIATED = new bool[5]();
+	CLIB_WriteEnableForThreadsAt_ServerOutputSend___stat_REG_flag_isMemberFunctionINSTANTIATED = new bool[5]();
 	while (CLIB_WriteEnableForThreadsAt_ServerOutputSend__stat_REG_get_CLIBLaunchQueAtServerOutputSend_isFlagINSTANTIATED() == NULL) {}
 	for (uint8_t index = 0; index < sizeof(*CLIB_WriteEnableForThreadsAt_ServerOutputSend__stat_REG_get_CLIBLaunchQueAtServerOutputSend_isFlagINSTANTIATED()); index++)
 	{
-		_stat_REG_flag_isMemberFunctionINSTANTIATED[index] = true;
+		CLIB_WriteEnableForThreadsAt_ServerOutputSend___stat_REG_flag_isMemberFunctionINSTANTIATED[index] = true;
 	}
 }
 void CLIBWriteQueAtServerOutputSend::CLIB_WriteEnableForThreadsAt_ServerOutputSend::CLIB_WriteEnableForThreadsAt_ServerOutputSend__stat_REG_boot3_INITIALISE_CLIBLaunchQueAtServerOutputSend_isFlagINSTANTIATED()
 {
 	for (uint8_t index = 0; index < sizeof(*CLIB_WriteEnableForThreadsAt_ServerOutputSend__stat_REG_get_CLIBLaunchQueAtServerOutputSend_isFlagINSTANTIATED()); index++)
 	{
-		_stat_REG_flag_isMemberFunctionINSTANTIATED[index] = true;
+		CLIB_WriteEnableForThreadsAt_ServerOutputSend___stat_REG_flag_isMemberFunctionINSTANTIATED[index] = true;
 	}
 }
 bool* CLIBWriteQueAtServerOutputSend::CLIB_WriteEnableForThreadsAt_ServerOutputSend::CLIB_WriteEnableForThreadsAt_ServerOutputSend__stat_REG_get_CLIBLaunchQueAtServerOutputSend_isFlagINSTANTIATED()
 {
-	return _stat_REG_flag_isMemberFunctionINSTANTIATED;
+	return CLIB_WriteEnableForThreadsAt_ServerOutputSend___stat_REG_flag_isMemberFunctionINSTANTIATED;
 }

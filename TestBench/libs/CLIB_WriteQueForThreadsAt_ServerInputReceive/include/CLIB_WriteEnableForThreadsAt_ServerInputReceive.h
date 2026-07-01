@@ -13,6 +13,7 @@ extern "C"
             static void CLIB_WriteEnableForThreadsAt_ServerInputReceive__app_FUNCT_write_End(unsigned char* bytes);
             static void CLIB_WriteEnableForThreadsAt_ServerInputReceive__app_FUNCT_write_Start(unsigned char* bytes);
         private:
+		    static void CLIB_WriteEnableForThreadsAt_ServerOutputSend__stat_app_FUNCT_Calc_IsAllINSTANTIATED();//INSTANTIATE this member function last.
             static void CLIB_WriteEnableForThreadsAt_ServerInputReceive__stat_app_FUNCT_Calc_IsAllINSTANTIATED();
             static void CLIB_WriteEnableForThreadsAt_ServerInputReceive__stat_boot1_CLASS_DEFINE_Framework();
             static void CLIB_WriteEnableForThreadsAt_ServerInputReceive__stat_boot3_CLASS_INITIALISE_Framework();

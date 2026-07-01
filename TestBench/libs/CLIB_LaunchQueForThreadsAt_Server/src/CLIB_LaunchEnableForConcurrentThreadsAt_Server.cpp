@@ -5,7 +5,7 @@
 #include "../include/LaunchEnableForConcurrentThreadsAt_Server_Framework.h"
 #include "../include/LaunchEnableForConcurrentThreadsAt_Server_Global.h"
     CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server_Framework* _ptr_Framework_LaunchEnableForConcurrentThreadsAt_Server;
-    bool* _stat_CLIBLaunchQueAtServer_REG_isFlagINSTANTIATED;
+    bool* CLIB_LaunchEnableForConcurrentThreadsAt_Server__stat_CLIBLaunchQueAtServer_REG_isFlagINSTANTIATED;
 // public.
     void* CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server__app_FUNCT_generate_Program()
     {
@@ -150,7 +150,7 @@
     void CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server__stat_app_FUNCT_Calc_IsAllINSTANTIATED()
     {
         CLIB_LaunchEnableForConcurrentThreadsAt_Server__stat_REG_get_CLIBLaunchQueAtServer_isFlagINSTANTIATED()[0] = false;
-        for (uint8_t memberFunctionId = 1; memberFunctionId < sizeof(*CLIB_LaunchEnableForConcurrentThreadsAt_Server__stat_REG_get_CLIBLaunchQueAtServer_isFlagINSTANTIATED()); memberFunctionId++)
+        for (uint8_t memberFunctionId = 1; memberFunctionId < sizeof(CLIB_LaunchEnableForConcurrentThreadsAt_Server__stat_CLIBLaunchQueAtServer_REG_isFlagINSTANTIATED); memberFunctionId++)
         {
             if (CLIB_LaunchEnableForConcurrentThreadsAt_Server__stat_REG_get_CLIBLaunchQueAtServer_isFlagINSTANTIATED()[memberFunctionId] == true)
             {
@@ -173,24 +173,24 @@
     }
     void CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server__stat_REG_boot1_DEFINE_CLIBLaunchQueAtServer_isFlagINSTANTIATED()
     {
-        _stat_CLIBLaunchQueAtServer_REG_isFlagINSTANTIATED = nullptr;
+        CLIB_LaunchEnableForConcurrentThreadsAt_Server__stat_CLIBLaunchQueAtServer_REG_isFlagINSTANTIATED = nullptr;
     }
     void CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server__stat_REG_boot2_SUBSTANTIATE_CLIBLaunchQueAtServer_isFlagINSTANTIATED()
     {
-        _stat_CLIBLaunchQueAtServer_REG_isFlagINSTANTIATED = new bool[11]();
+        CLIB_LaunchEnableForConcurrentThreadsAt_Server__stat_CLIBLaunchQueAtServer_REG_isFlagINSTANTIATED = new bool[11]();
         for (uint8_t index = 0; index < sizeof(*CLIB_LaunchEnableForConcurrentThreadsAt_Server__stat_REG_get_CLIBLaunchQueAtServer_isFlagINSTANTIATED()); index++)
         {
-            _stat_CLIBLaunchQueAtServer_REG_isFlagINSTANTIATED[index] = true;
+            CLIB_LaunchEnableForConcurrentThreadsAt_Server__stat_CLIBLaunchQueAtServer_REG_isFlagINSTANTIATED[index] = true;
         }
     }
     void CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server__stat_REG_boot3_INITIALISE_CLIBLaunchQueAtServer_isFlagINSTANTIATED()
     {
         for (uint8_t index = 0; index < sizeof(*CLIB_LaunchEnableForConcurrentThreadsAt_Server__stat_REG_get_CLIBLaunchQueAtServer_isFlagINSTANTIATED()); index++)
         {
-            _stat_CLIBLaunchQueAtServer_REG_isFlagINSTANTIATED[index] = true;
+            CLIB_LaunchEnableForConcurrentThreadsAt_Server__stat_CLIBLaunchQueAtServer_REG_isFlagINSTANTIATED[index] = true;
         }
     }
     bool* CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server__stat_REG_get_CLIBLaunchQueAtServer_isFlagINSTANTIATED()
     {
-        return _stat_CLIBLaunchQueAtServer_REG_isFlagINSTANTIATED;
+        return CLIB_LaunchEnableForConcurrentThreadsAt_Server__stat_CLIBLaunchQueAtServer_REG_isFlagINSTANTIATED;
     }
