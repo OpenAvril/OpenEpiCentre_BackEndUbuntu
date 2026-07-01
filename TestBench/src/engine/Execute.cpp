@@ -77,6 +77,8 @@
     std::cout << "entered stat_CLASS_boot4_INSTANTIATE_Execute()" << std::endl;
         unsigned char* bytes_uint8_t = TestBench_Cpp_OpenEpiCentre::Global::stat_CONVERT_uint8_t_to_ByteArray(UINT8_MAX);
 
+
+
         //CLIBOpenEpiCentre::CLIBConcurrentServerIO::app_FUNCT_generate_Program();
         CLIBOpenEpiCentre::CLIBConcurrentServerIO::app_FUNCT_flip_Input_DoubleBuffer();
         CLIBOpenEpiCentre::CLIBConcurrentServerIO::app_FUNCT_select_set_Intput_Subset(bytes_uint8_t);
@@ -85,7 +87,7 @@
         CLIBOpenEpiCentre::CLIBConcurrentServerIO::app_FUNCT_push_To_STACK_Of_Input();
         CLIBOpenEpiCentre::CLIBConcurrentServerIO::dyn_PGM_get_program_WriteEnableStack_ServerInputReceive();
         CLIBOpenEpiCentre::CLIBConcurrentServerIO::dyn_PGM_get_program_WriteEnableStack_ServerOutputSend();
-        CLIBOpenEpiCentre::CLIBConcurrentServerIO::dyn_REG_get_flag_isStackLoaded_ServerInputSend();
+        CLIBOpenEpiCentre::CLIBConcurrentServerIO::dyn_REG_get_flag_isStackLoaded_ServerInputReceive();
         CLIBOpenEpiCentre::CLIBConcurrentServerIO::dyn_REG_get_flag_isStackLoaded_ServerOutputSend();
         CLIBOpenEpiCentre::CLIBConcurrentServerIO::dyn_REG_get_flag_IsInitialised_CLIBOpenEpiCentre();
         CLIBOpenEpiCentre::CLIBConcurrentServerIO::io_PRAISE_get_Item_Output_praise0_Value();
