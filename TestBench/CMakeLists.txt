@@ -12,6 +12,11 @@ add_subdirectory(libs/CLIB_WriteQueForThreadsAt_SIMULATION)
 
 add_executable(TestBench Main.cpp
         IO.cpp
+        libs/CLIB_WriteQueForThreadsAt_ServerInputReceive/src/CLIB_WriteEnableForThreadsAt_ServerInputReceive.cpp
+        libs/CLIB_LaunchQueForThreadsAt_Server/src/CLIB_LaunchEnableForConcurrentThreadsAt_Server.cpp
+        libs/CLIB_WriteQueForThreadsAt_ServerOutputSend/src/CLIB_WriteEnableForThreadsAt_ServerOutputSend.cpp
+        libs/CLIB_OpenEpiCentre/src/CLIB_OpenEpiCentre.cpp
+        libs/CLIB_WriteQueForThreadsAt_SIMULATION/src/CLIB_WriteEnableForThreadsAt_SIMULATION.cpp
         src/engine/Algorithms.cpp
         src/engine/App.cpp
         src/engine/Data.cpp
@@ -19,14 +24,14 @@ add_executable(TestBench Main.cpp
         src/engine/Execute_Control.cpp
         src/engine/Framework_App.cpp
         src/engine/Global.cpp
-        src/io/OpenEpiCentre.cpp
-        include/io/OpenEpiCentre.h
-        src/io/LaunchQue_Server.cpp
-        include/io/LaunchQue_Server.h
-        src/io/WriteQue_ServerInputRecieve.cpp
-        include/io/WriteQue_ServerInputRecieve.h
-        src/io/WriteQue_ServerOutputSend.cpp
-        include/io/WriteQue_ServerOutputSend.h
+#       src/io/OpenEpiCentre.cpp
+#        include/io/OpenEpiCentre.h
+#        src/io/LaunchQue_Server.cpp
+#        include/io/LaunchQue_Server.h
+#        src/io/WriteQue_ServerInputRecieve.cpp
+#        include/io/WriteQue_ServerInputRecieve.h
+#        src/io/WriteQue_ServerOutputSend.cpp
+#        include/io/WriteQue_ServerOutputSend.h
 )
 
 target_link_libraries(TestBench PRIVATE CLIB_OpenEpiCentre)
