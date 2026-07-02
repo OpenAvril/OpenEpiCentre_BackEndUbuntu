@@ -1,4 +1,5 @@
-#include "../../CLIB_OpenEpiCentre/include/CLIB_OpenEpiCentre.h"
+#include "../../libs/CLIB_OpenEpiCentre/include/CLIB_OpenEpiCentre.h"
+#include "../../libs/CLIB_WriteQueForThreadsAt_SIMULATION/include/CLIB_WriteEnableForThreadsAt_SIMULATION.h"
 #include "../../include/engine/Execute.h"
 #include "../../include/engine/Execute_Control.h"
 #include "../../include/engine/Framework_App.h"
@@ -6,7 +7,9 @@
 #include <iostream>
 #include <list>
 #include <thread>
-    TestBench_Cpp_OpenEpiCentre::Execute_Control* TestBench_Cpp_OpenEpiCentre::Execute::_stat_CLASS_ptr_Execute_Control;
+
+#include "../../libs/CLIB_WriteQueForThreadsAt_SIMULATION/include/CLIB_WriteEnableForThreadsAt_SIMULATION.h"
+TestBench_Cpp_OpenEpiCentre::Execute_Control* TestBench_Cpp_OpenEpiCentre::Execute::_stat_CLASS_ptr_Execute_Control;
     std::list<std::thread*>* TestBench_Cpp_OpenEpiCentre::Execute::_stat_REG_List_Of_Threads;
     void* TestBench_Cpp_OpenEpiCentre::Execute::_stat_PGM_OpenEpiCentre;
 // public.
@@ -77,8 +80,6 @@
     std::cout << "entered stat_CLASS_boot4_INSTANTIATE_Execute()" << std::endl;
         unsigned char* bytes_uint8_t = TestBench_Cpp_OpenEpiCentre::Global::stat_CONVERT_uint8_t_to_ByteArray(UINT8_MAX);
 
-
-
         //CLIBOpenEpiCentre::CLIBConcurrentServerIO::app_FUNCT_generate_Program();
         CLIBOpenEpiCentre::CLIBConcurrentServerIO::CLIBConcurrentServerIO__app_FUNCT_flip_Input_DoubleBuffer();
         CLIBOpenEpiCentre::CLIBConcurrentServerIO::CLIBConcurrentServerIO__app_FUNCT_select_set_Intput_Subset(bytes_uint8_t);
@@ -105,6 +106,11 @@
         CLIBOpenEpiCentre::CLIBConcurrentServerIO::CLIBConcurrentServerIO__io_PRAISE_set_Item_Input_praise0_Value_A(bytes_uint8_t);
         CLIBOpenEpiCentre::CLIBConcurrentServerIO::CLIBConcurrentServerIO__io_PRAISE_set_MetaData_PraiseEventId(bytes_uint8_t);
 
+        //CLIBWriteQueAtSIMULATION::CLIB_WriteEnableForThreadsAt_SIMULATION::CLIB_WriteEnableForThreadsAt_SIMULATION__app_FUNCT_generate_Program();
+        CLIBWriteQueAtSIMULATION::CLIB_WriteEnableForThreadsAt_SIMULATION::CLIB_WriteEnableForThreadsAt_SIMULATION__app_FUNCT_get_flag_isPGM_INSTANTIATED();
+        CLIBWriteQueAtSIMULATION::CLIB_WriteEnableForThreadsAt_SIMULATION::CLIB_WriteEnableForThreadsAt_SIMULATION__app_FUNCT_terminate_Program();
+        CLIBWriteQueAtSIMULATION::CLIB_WriteEnableForThreadsAt_SIMULATION::CLIB_WriteEnableForThreadsAt_SIMULATION__app_FUNCT_write_End(bytes_uint8_t);
+        CLIBWriteQueAtSIMULATION::CLIB_WriteEnableForThreadsAt_SIMULATION::CLIB_WriteEnableForThreadsAt_SIMULATION__app_FUNCT_write_Start(bytes_uint8_t);
         delete bytes_uint8_t;
     std::cout << "exiting stat_CLASS_boot4_INSTANTIATE_Execute()" << std::endl;
     }
@@ -146,9 +152,9 @@
     {
         for (uint8_t threadId = 0; threadId < sizeof(*stat_PGM_get_ptr_List_Of_Threads()); threadId++)
         {
-            auto temp = stat_PGM_get_ptr_List_Of_Threads()->begin();
-            std::advance(temp, threadId);
-            *temp = new std::thread();
+            //auto temp = stat_PGM_get_ptr_List_Of_Threads()->begin();
+            //std::advance(temp, threadId);
+            //*temp = new std::thread();
         }
     }
     std::list<std::thread*>* TestBench_Cpp_OpenEpiCentre::Execute::stat_PGM_get_ptr_List_Of_Threads()
