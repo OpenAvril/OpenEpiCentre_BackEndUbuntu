@@ -78,4 +78,3 @@ add_executable(TestBench Main.cpp
 
 target_link_libraries(TestBench PRIVATE CLIB_OpenEpiCentre)
 target_link_libraries(TestBench PRIVATE CLIB_WriteQueForThreadsAt_SIMULATION)
-
