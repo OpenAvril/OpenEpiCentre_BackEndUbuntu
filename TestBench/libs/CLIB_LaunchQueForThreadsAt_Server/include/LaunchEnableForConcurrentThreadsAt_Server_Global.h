@@ -1,6 +1,7 @@
 #ifndef CLIB_LAUNCHENABLEFORCONCURRENTTHREADSAT_Server_LAUNCHENABLEFORCONCURRENTTHREADSAT_Server_GLOBAL_H
 #define CLIB_LAUNCHENABLEFORCONCURRENTTHREADSAT_Server_LAUNCHENABLEFORCONCURRENTTHREADSAT_Server_GLOBAL_H
 #include <array>
+#include <cstdint>
 
 namespace CLIBLaunchQueAtServer
 {
@@ -25,7 +26,7 @@ namespace CLIBLaunchQueAtServer
         static bool stat_CONVERT_ByteArray_To_bool(unsigned char* bytes);
         static uint8_t stat_CONVERT_ByteArray_To_uint8_t(unsigned char* bytes);
     private:
-        static std::array<bool, 3>* _stat_REG_ptr_flag_thread_2STATE;//NUMBER OF CONCURRENT THREADS.
+        static bool* _stat_REG_ptr_flag_thread_2STATE;//NUMBER OF CONCURRENT THREADS.
         static uint8_t* _stat_REG_ptr_number_Implemented_Threads;
         static void stat_REG_boot1_DEFINE_flag_thread_2STATE();
         static void stat_REG_boot1_DEFINE_number_Implemented_Threads();
@@ -33,10 +34,10 @@ namespace CLIBLaunchQueAtServer
         static void stat_REG_boot2_SUBSTANTIATE_number_Implemented_Threads();
         static void stat_REG_boot3_INITIALISE_flag_thread_2STATE();
         static void stat_REG_boot3_INITIALISE_number_Implemented_Threads();
-        static std::array<bool, 3>* stat_REG_get_ptr_flag_thread_2STATE();
+        static bool* stat_REG_get_ptr_flag_thread_2STATE();
         static uint8_t* stat_REG_get_ptr_number_Implemented_Threads();
-        static void stat_REG_set_flag_thread_2STATE_ACTIVE(std::array<bool, 3>* bitArray);
+        static void stat_REG_set_flag_thread_2STATE_ACTIVE(bool* bit);
         static void stat_REG_set_number_Implemented_Threads(uint8_t coreId);
-    };
+     };
 }
 #endif
