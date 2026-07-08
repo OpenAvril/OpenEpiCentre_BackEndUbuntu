@@ -4,10 +4,10 @@
 #include <cstdint>
 #include <cstring>
 #include <iostream>
-std::array<bool,2>* _stat_REG_CONST_WriteEnableForThreadsAt_SIMULATION__2bitFLAG_IDLE;
-std::array<bool,2>* _stat_REG_CONST_WriteEnableForThreadsAt_SIMULATION__2bitFLAG_WAIT;
-std::array<bool,2>* _stat_REG_CONST_WriteEnableForThreadsAt_SIMULATION__2bitFLAG_WRITE;
-uint8_t* _stat_REG_ptr_WriteEnableForThreadsAt_SIMULATION__number_Of_Implemented_Threads;
+std::array<bool,2>* CLIBWriteQueAtSIMULATION::WriteEnableForThreadsAt_SIMULATION__Global::_stat_REG_CONST_WriteEnableForThreadsAt_SIMULATION__2bitFLAG_IDLE;
+std::array<bool,2>* CLIBWriteQueAtSIMULATION::WriteEnableForThreadsAt_SIMULATION__Global::_stat_REG_CONST_WriteEnableForThreadsAt_SIMULATION__2bitFLAG_WAIT;
+std::array<bool,2>* CLIBWriteQueAtSIMULATION::WriteEnableForThreadsAt_SIMULATION__Global::_stat_REG_CONST_WriteEnableForThreadsAt_SIMULATION__2bitFLAG_WRITE;
+uint8_t* CLIBWriteQueAtSIMULATION::WriteEnableForThreadsAt_SIMULATION__Global::_stat_REG_ptr_WriteEnableForThreadsAt_SIMULATION__number_Of_Implemented_Threads;
 CLIBWriteQueAtSIMULATION::WriteEnableForThreadsAt_SIMULATION__Global::WriteEnableForThreadsAt_SIMULATION__Global()
 {
 
@@ -70,6 +70,15 @@ uint8_t CLIBWriteQueAtSIMULATION::WriteEnableForThreadsAt_SIMULATION__Global::dy
 int CLIBWriteQueAtSIMULATION::WriteEnableForThreadsAt_SIMULATION__Global::stat_APP_CONVERT_WriteEnableForThreadsAt_SIMULATION__Bool_To_Int(bool value)
 {
     return pr_stat_APP_CONVERT_WriteEnableForThreadsAt_SIMULATION__Bool_To_Int(value);
+}
+unsigned char* CLIBWriteQueAtSIMULATION::WriteEnableForThreadsAt_SIMULATION__Global::stat_APP_CONVERT_WriteEnableForThreadsAt_SIMULATION__MsbFloat_To_MsbByteArray(float value) {
+    return pr_stat_APP_CONVERT_WriteEnableForThreadsAt_SIMULATION__MsbFloat_To_MsbByteArray(value);
+}
+unsigned char* CLIBWriteQueAtSIMULATION::WriteEnableForThreadsAt_SIMULATION__Global::stat_APP_CONVERT_WriteEnableForThreadsAt_SIMULATION__MsbDouble_To_MsbByteArray(double value) {
+    return pr_stat_APP_CONVERT_WriteEnableForThreadsAt_SIMULATION__MsbDouble_To_MsbByteArray(value);
+}
+unsigned char* CLIBWriteQueAtSIMULATION::WriteEnableForThreadsAt_SIMULATION__Global::stat_APP_CONVERT_WriteEnableForThreadsAt_SIMULATION__Msb_uint8_t_to_MsbByteArray(uint8_t value) {
+    return pr_stat_APP_CONVERT_WriteEnableForThreadsAt_SIMULATION__Msb_uint8_t_to_MsbByteArray(value);
 }
 unsigned char* CLIBWriteQueAtSIMULATION::WriteEnableForThreadsAt_SIMULATION__Global::stat_APP_CONVERT_WriteEnableForThreadsAt_SIMULATION__MsbBoolean_To_MsbByteArray(bool value)
 {
