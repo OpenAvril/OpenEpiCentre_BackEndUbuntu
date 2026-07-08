@@ -7,14 +7,14 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 add_library(CLIB_WriteQueForThreadsAt_SIMULATION STATIC
         include/CLIB_WriteEnableForThreadsAt_SIMULATION.h
         src/CLIB_WriteEnableForThreadsAt_SIMULATION.cpp
-        include/WriteEnableForThreadsAt_SIMULATION_Framework.h
-        src/WriteEnableForThreadsAt_SIMULATION_Framework.cpp
-        include/WriteEnableForThreadsAt_SIMULATION_Global.h
-        src/WriteEnableForThreadsAt_SIMULATION_Global.cpp
-        include/WriteEnableForThreadsAt_SIMULATION.h
-        src/WriteEnableForThreadsAt_SIMULATION.cpp
-        include/WriteEnableForThreadsAt_SIMULATION_Control.h
-        src/WriteEnableForThreadsAt_SIMULATION_Control.cpp
+        include/WriteEnableForThreadsAt_SIMULATION__Framework.h
+        src/WriteEnableForThreadsAt_SIMULATION__Framework.cpp
+        include/WriteEnableForThreadsAt_SIMULATION__Global.h
+        src/WriteEnableForThreadsAt_SIMULATION__Global.cpp
+        include/WriteEnableForThreadsAt_SIMULATION__App.h
+        src/WriteEnableForThreadsAt_SIMULATION__App.cpp
+        include/WriteEnableForThreadsAt_SIMULATION__Control.h
+        src/WriteEnableForThreadsAt_SIMULATION__Control.cpp
 )
 
 target_include_directories(${PROJECT_NAME}

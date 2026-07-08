@@ -107,10 +107,10 @@ TestBench_Cpp_OpenEpiCentre::Execute_Control* TestBench_Cpp_OpenEpiCentre::Execu
         CLIBOpenEpiCentre::CLIBConcurrentServerIO::CLIBConcurrentServerIO__io_PRAISE_set_MetaData_PraiseEventId(bytes_uint8_t);
 
         //CLIBWriteQueAtSIMULATION::CLIB_WriteEnableForThreadsAt_SIMULATION::CLIB_WriteEnableForThreadsAt_SIMULATION__app_FUNCT_generate_Program();
-        CLIBWriteQueAtSIMULATION::CLIB_WriteEnableForThreadsAt_SIMULATION::CLIB_WriteEnableForThreadsAt_SIMULATION__app_FUNCT_get_flag_isPGM_INSTANTIATED();
-        CLIBWriteQueAtSIMULATION::CLIB_WriteEnableForThreadsAt_SIMULATION::CLIB_WriteEnableForThreadsAt_SIMULATION__app_FUNCT_terminate_Program();
-        CLIBWriteQueAtSIMULATION::CLIB_WriteEnableForThreadsAt_SIMULATION::CLIB_WriteEnableForThreadsAt_SIMULATION__app_FUNCT_write_End(bytes_uint8_t);
-        CLIBWriteQueAtSIMULATION::CLIB_WriteEnableForThreadsAt_SIMULATION::CLIB_WriteEnableForThreadsAt_SIMULATION__app_FUNCT_write_Start(bytes_uint8_t);
+        CLIBWriteQueAtSIMULATION::CLIB_WriteEnableForThreadsAt_SIMULATION::CLIB_WriteEnableForThreadsAt_SIMULATION__App_FUNCT_get_flag_isPGM_INSTANTIATED();
+        CLIBWriteQueAtSIMULATION::CLIB_WriteEnableForThreadsAt_SIMULATION::CLIB_WriteEnableForThreadsAt_SIMULATION__App_FUNCT_terminate_Program();
+        CLIBWriteQueAtSIMULATION::CLIB_WriteEnableForThreadsAt_SIMULATION::CLIB_WriteEnableForThreadsAt_SIMULATION__App_FUNCT_write_End(bytes_uint8_t);
+        CLIBWriteQueAtSIMULATION::CLIB_WriteEnableForThreadsAt_SIMULATION::CLIB_WriteEnableForThreadsAt_SIMULATION__App_FUNCT_write_Start(bytes_uint8_t);
         delete bytes_uint8_t;
     std::cout << "exiting stat_CLASS_boot4_INSTANTIATE_Execute()" << std::endl;
     }
