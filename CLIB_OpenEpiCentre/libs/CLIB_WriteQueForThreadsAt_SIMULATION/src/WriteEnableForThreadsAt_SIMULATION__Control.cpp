@@ -410,15 +410,15 @@ void CLIBWriteQueAtSIMULATION::WriteEnableForThreadsAt_SIMULATION__Control::stat
 }
 void CLIBWriteQueAtSIMULATION::WriteEnableForThreadsAt_SIMULATION__Control::stat_REG_boot3_INITIALISE_ptr_WriteEnableForThreadsAt_SIMULATION__Control__WriteACTIVE_Count_For_ThreadId()
 {
-    *_stat_REG_LIST_Of_WriteEnableForThreadsAt_SIMULATION__Control__WriteACTIVE_Count_For_ThreadId = { static_cast<uint32_t>(0), static_cast<uint32_t>(0), static_cast<uint32_t>(0), static_cast<uint32_t>(0), static_cast<uint32_t>(0) };
+    *_stat_REG_LIST_Of_WriteEnableForThreadsAt_SIMULATION__Control__WriteACTIVE_Count_For_ThreadId = { static_cast<uint32_t>(0), static_cast<uint32_t>(0), static_cast<uint32_t>(0), static_cast<uint32_t>(0) };
 }
 void CLIBWriteQueAtSIMULATION::WriteEnableForThreadsAt_SIMULATION__Control::stat_REG_boot3_INITIALISE_ptr_WriteEnableForThreadsAt_SIMULATION__Control__WriteIDLE_Count_For_ThreadId()
 {
-    *_stat_REG_LIST_Of_WriteEnableForThreadsAt_SIMULATION__Control__WriteIDLE_Count_For_ThreadId = { static_cast<uint32_t>(0), static_cast<uint32_t>(0), static_cast<uint32_t>(0), static_cast<uint32_t>(0), static_cast<uint32_t>(0) };
+    *_stat_REG_LIST_Of_WriteEnableForThreadsAt_SIMULATION__Control__WriteIDLE_Count_For_ThreadId = { static_cast<uint32_t>(0), static_cast<uint32_t>(0), static_cast<uint32_t>(0), static_cast<uint32_t>(0) };
 }
 void CLIBWriteQueAtSIMULATION::WriteEnableForThreadsAt_SIMULATION__Control::stat_REG_boot3_INITIALISE_ptr_WriteEnableForThreadsAt_SIMULATION__Control__WriteWAIT_Count_For_ThreadIdd()
 {
-    *_stat_REG_LIST_Of_WriteEnableForThreadsAt_SIMULATION__Control__WriteWAIT_Count_For_ThreadId = { static_cast<uint32_t>(0), static_cast<uint32_t>(0), static_cast<uint32_t>(0), static_cast<uint32_t>(0), static_cast<uint32_t>(0) };
+    *_stat_REG_LIST_Of_WriteEnableForThreadsAt_SIMULATION__Control__WriteWAIT_Count_For_ThreadId = { static_cast<uint32_t>(0), static_cast<uint32_t>(0), static_cast<uint32_t>(0), static_cast<uint32_t>(0) };
 }
 void CLIBWriteQueAtSIMULATION::WriteEnableForThreadsAt_SIMULATION__Control::stat_REG_boot3_INITIALISE_ptr_WriteEnableForThreadsAt_SIMULATION__Control__new_writeCycle_Try_ThreadId_Index()
 {
@@ -426,7 +426,7 @@ void CLIBWriteQueAtSIMULATION::WriteEnableForThreadsAt_SIMULATION__Control::stat
 }
 void CLIBWriteQueAtSIMULATION::WriteEnableForThreadsAt_SIMULATION__Control::stat_REG_boot3_INITIALISE_ptr_WriteEnableForThreadsAt_SIMULATION__Control__ptr_QUE_Of_ThreadID_To_WRITE()
 {
-    *_stat_REG_QUE_Of_WriteEnableForThreadsAt_SIMULATION__Control__ThreadID_To_WRITE = { static_cast<uint8_t>(0), static_cast<uint8_t>(1), static_cast<uint8_t>(2), static_cast<uint8_t>(3), static_cast<uint8_t>(4) };
+    *_stat_REG_QUE_Of_WriteEnableForThreadsAt_SIMULATION__Control__ThreadID_To_WRITE = { static_cast<uint8_t>(0), static_cast<uint8_t>(1), static_cast<uint8_t>(2), static_cast<uint8_t>(3) };
 }
 void CLIBWriteQueAtSIMULATION::WriteEnableForThreadsAt_SIMULATION__Control::stat_REG_boot3_INITIALISE_ptr_WriteEnableForThreadsAt_SIMULATION__Control__writeCycle_Try_ThreadId_Index()
 {

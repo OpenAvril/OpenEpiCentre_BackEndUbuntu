@@ -17,9 +17,9 @@ namespace CLIBWriteQueAtServerOutputSend
         std::array<bool,2> dyn_REG_get_ptr_CONST_WriteEnableForThreadsAt_ServerOutputSend__2bitFLAG_WAIT();
         std::array<bool,2> dyn_REG_get_ptr_CONST_WriteEnableForThreadsAt_ServerOutputSend__2bitFLAG_WRITE();
         uint8_t dyn_REG_get_WriteEnableForThreadsAt_ServerOutputSend__number_Of_Implemented_Threads();
-        static unsigned char* stat_APP_CONVERT_WriteEnableForThreadsAt_ServerOutputSend__MsbFloat_To_MsbByteArray(float value);
-        static unsigned char* stat_APP_CONVERT_WriteEnableForThreadsAt_ServerOutputSend__MsbDouble_To_MsbByteArray(double value);
-        static unsigned char* stat_APP_CONVERT_WriteEnableForThreadsAt_ServerOutputSend__Msb_uint8_t_to_MsbByteArray(uint8_t value);
+        unsigned char* stat_APP_CONVERT_WriteEnableForThreadsAt_ServerOutputSend__MsbFloat_To_MsbByteArray(float value);
+        unsigned char* stat_APP_CONVERT_WriteEnableForThreadsAt_ServerOutputSend__MsbDouble_To_MsbByteArray(double value);
+        unsigned char* stat_APP_CONVERT_WriteEnableForThreadsAt_ServerOutputSend__Msb_uint8_t_to_MsbByteArray(uint8_t value);
         static int stat_APP_CONVERT_WriteEnableForThreadsAt_ServerOutputSend__Bool_To_Int(bool value);
         static unsigned char* stat_APP_CONVERT_WriteEnableForThreadsAt_ServerOutputSend__MsbBoolean_To_MsbByteArray(bool value);
         static bool stat_APP_CONVERT_WriteEnableForThreadsAt_ServerOutputSend__MsbByteArray_To_MsbBoolean(const unsigned char* byteArray);

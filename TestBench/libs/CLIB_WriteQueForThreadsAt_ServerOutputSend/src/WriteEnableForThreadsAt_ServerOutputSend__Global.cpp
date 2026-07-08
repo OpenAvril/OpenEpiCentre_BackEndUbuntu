@@ -67,18 +67,18 @@ uint8_t CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend
 {
     return *stat_REG_get_ptr_WriteEnableForThreadsAt_ServerOutputSend__number_Of_Implemented_Threads();
 }
+int CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Global::stat_APP_CONVERT_WriteEnableForThreadsAt_ServerOutputSend__Bool_To_Int(bool value)
+{
+    return pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerOutputSend__Bool_To_Int(value);
+}
 unsigned char* CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Global::stat_APP_CONVERT_WriteEnableForThreadsAt_ServerOutputSend__MsbFloat_To_MsbByteArray(float value) {
-    return pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerOutputSend__MsbBoolean_To_MsbByteArray(value);
+    return pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerOutputSend__MsbFloat_To_MsbByteArray(value);
 }
 unsigned char* CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Global::stat_APP_CONVERT_WriteEnableForThreadsAt_ServerOutputSend__MsbDouble_To_MsbByteArray(double value) {
     return pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerOutputSend__MsbDouble_To_MsbByteArray(value);
 }
 unsigned char* CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Global::stat_APP_CONVERT_WriteEnableForThreadsAt_ServerOutputSend__Msb_uint8_t_to_MsbByteArray(uint8_t value) {
     return pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerOutputSend__Msb_uint8_t_to_MsbByteArray(value);
-}
-int CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Global::stat_APP_CONVERT_WriteEnableForThreadsAt_ServerOutputSend__Bool_To_Int(bool value)
-{
-    return pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerOutputSend__Bool_To_Int(value);
 }
 unsigned char* CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Global::stat_APP_CONVERT_WriteEnableForThreadsAt_ServerOutputSend__MsbBoolean_To_MsbByteArray(bool value)
 {
@@ -200,7 +200,7 @@ void CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__G
 }
 void CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Global::stat_REG_boot3_INITIALISE_ptr_WriteEnableForThreadsAt_ServerOutputSend__number_Of_Implemented_Threads()
 {
-    *_stat_REG_ptr_WriteEnableForThreadsAt_ServerOutputSend__number_Of_Implemented_Threads = static_cast<uint8_t>(4);
+    *_stat_REG_ptr_WriteEnableForThreadsAt_ServerOutputSend__number_Of_Implemented_Threads = static_cast<uint8_t>(5);
 }
 std::array<bool,2>* CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Global::stat_REG_get_ptr_CONST_WriteEnableForThreadsAt_ServerOutputSend__2bitFLAG_IDLE()
 {

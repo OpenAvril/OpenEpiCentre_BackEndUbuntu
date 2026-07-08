@@ -1,8 +1,8 @@
 #ifndef CLIB_WRITEENABLEFORTHREADSAT_SIMULATION_WRITEENABLEFORTHREADSAT_SIMULATION__FRAMEWORK_H
 #define CLIB_WRITEENABLEFORTHREADSAT_SIMULATION_WRITEENABLEFORTHREADSAT_SIMULATION__FRAMEWORK_H
-#include "WriteEnableForThreadsAt_SIMULATION__App.h"
-#include "WriteEnableForThreadsAt_SIMULATION__Global.h"
-#include "WriteEnableForThreadsAt_SIMULATION__Framework.h"
+#include "../include/WriteEnableForThreadsAt_SIMULATION__App.h"
+#include "../include/WriteEnableForThreadsAt_SIMULATION__Global.h"
+#include "../include/WriteEnableForThreadsAt_SIMULATION__Framework.h"
 namespace CLIBWriteQueAtSIMULATION
 {
     class WriteEnableForThreadsAt_SIMULATION__Framework

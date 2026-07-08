@@ -1,4 +1,4 @@
-#include "../include/WriteEnableForThreadsAt_ServerInputReceive__Framework.h"
+#include "WriteEnableForThreadsAt_ServerInputReceive__Framework.h"
 #include "../include/WriteEnableForThreadsAt_ServerInputReceive__App.h"
 #include "../include/WriteEnableForThreadsAt_ServerInputReceive__Control.h"
 #include "../include/WriteEnableForThreadsAt_ServerInputReceive__Global.h"

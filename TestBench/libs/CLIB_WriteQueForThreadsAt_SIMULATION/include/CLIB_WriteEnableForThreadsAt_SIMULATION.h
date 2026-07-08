@@ -1,6 +1,6 @@
 #ifndef CLIB_WRITEENABLEFORTHREADSAT_SIMULATION_H
 #define CLIB_WRITEENABLEFORTHREADSAT_SIMULATION_H
-#include "WriteEnableForThreadsAt_SIMULATION__Framework.h"
+#include "../include/WriteEnableForThreadsAt_SIMULATION__Framework.h"
 extern "C"
 {
     namespace CLIBWriteQueAtSIMULATION
@@ -14,6 +14,7 @@ extern "C"
             static void CLIB_WriteEnableForThreadsAt_SIMULATION__App_FUNCT_write_End(unsigned char* bytes);
             static void CLIB_WriteEnableForThreadsAt_SIMULATION__App_FUNCT_write_Start(unsigned char* bytes);
         private:
+		    static void CLIB_WriteEnableForThreadsAt_ServerOutputSend__dyn_APP_FUNCT_Calc_IsAllINSTANTIATED();
             static void CLIB_WriteEnableForThreadsAt_SIMULATION__dyn_APP_FUNCT_Calc_IsAllINSTANTIATED();
             static void CLIB_WriteEnableForThreadsAt_SIMULATION__stat_CLASS_boot1_DEFINE_Framework();
             static void CLIB_WriteEnableForThreadsAt_SIMULATION__stat_CLASS_boot3_INITIALISE_Framework();

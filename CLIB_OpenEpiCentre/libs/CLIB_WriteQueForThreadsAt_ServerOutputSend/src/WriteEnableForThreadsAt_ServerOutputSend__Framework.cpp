@@ -1,4 +1,4 @@
-#include "../include/WriteEnableForThreadsAt_ServerOutputSend__Framework.h"
+#include "WriteEnableForThreadsAt_ServerOutputSend__Framework.h"
 #include "../include/WriteEnableForThreadsAt_ServerOutputSend__App.h"
 #include "../include/WriteEnableForThreadsAt_ServerOutputSend__Control.h"
 #include "../include/WriteEnableForThreadsAt_ServerOutputSend__Global.h"
