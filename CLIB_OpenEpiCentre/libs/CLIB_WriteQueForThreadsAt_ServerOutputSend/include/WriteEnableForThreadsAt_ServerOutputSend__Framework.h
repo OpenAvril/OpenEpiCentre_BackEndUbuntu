@@ -2,7 +2,6 @@
 #define CLIB_WRITEENABLEFORTHREADSAT_ServerOutputSend_WRITEENABLEFORTHREADSAT_ServerOutputSend__FRAMEWORK_H
 #include "WriteEnableForThreadsAt_ServerOutputSend__App.h"
 #include "WriteEnableForThreadsAt_ServerOutputSend__Global.h"
-#include "WriteEnableForThreadsAt_ServerOutputSend__Framework.h"
 namespace CLIBWriteQueAtServerOutputSend
 {
     class WriteEnableForThreadsAt_ServerOutputSend__Framework

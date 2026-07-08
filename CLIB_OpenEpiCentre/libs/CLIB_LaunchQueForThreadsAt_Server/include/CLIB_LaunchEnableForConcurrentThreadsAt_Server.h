@@ -20,10 +20,10 @@ extern "C"
             static void CLIB_LaunchEnableForConcurrentThreadsAt_Server__app_REG_set_Flag_ConcurrentCoreState(unsigned char* bytesThreadId, unsigned char* byteBool);
         private:
             static void CLIB_LaunchEnableForConcurrentThreadsAt_Server__stat_app_FUNCT_Calc_IsAllINSTANTIATED();
-            static void CLIB_LaunchEnableForConcurrentThreadsAt_Server__stat_boot1_CLASS_DEFINE_LaunchEnableForConcurrentThreadsAt_Server_Framework();
-            static void CLIB_LaunchEnableForConcurrentThreadsAt_Server__stat_boot3_CLASS_INITIALISE_LaunchEnableForConcurrentThreadsAt_Server_Framework();
-            static class LaunchEnableForConcurrentThreadsAt_Server_Framework* CLIB_LaunchEnableForConcurrentThreadsAt_Server__stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server_Framework();
-            static void CLIB_LaunchEnableForConcurrentThreadsAt_Server__stat_REG_boot1_DEFINE_CLIBLaunchQueAtServer_isFlagINSTANTIATED();
+            static void CLIB_LaunchEnableForConcurrentThreadsAt_Server__stat_CLASS_boot1_DEFINE_LaunchEnableForConcurrentThreadsAt_Server__Framework();
+            static void CLIB_LaunchEnableForConcurrentThreadsAt_Server__stat_CLASS_boot3_INITIALISE_LaunchEnableForConcurrentThreadsAt_Server__Framework();
+            static class LaunchEnableForConcurrentThreadsAt_Server__Framework* CLIB_LaunchEnableForConcurrentThreadsAt_Server__stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__Framework();
+            static void CLIB_LaunchEnableForConcurrentThreadsAt_Server__stat_dyn_REG_boot1_DEFINE_CLIBLaunchQueAtServer_isFlagINSTANTIATED();
             static void CLIB_LaunchEnableForConcurrentThreadsAt_Server__stat_REG_boot2_SUBSTANTIATE_CLIBLaunchQueAtServer_isFlagINSTANTIATED();
             static void CLIB_LaunchEnableForConcurrentThreadsAt_Server__stat_REG_boot3_INITIALISE_CLIBLaunchQueAtServer_isFlagINSTANTIATED();
             static bool* CLIB_LaunchEnableForConcurrentThreadsAt_Server__stat_REG_get_CLIBLaunchQueAtServer_isFlagINSTANTIATED();
