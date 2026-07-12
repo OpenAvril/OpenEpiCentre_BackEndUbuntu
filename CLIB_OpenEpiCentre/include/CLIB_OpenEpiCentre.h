@@ -19,10 +19,10 @@ extern "C"
 			static unsigned char* CLIBConcurrentServerIO__dyn_REG_get_flag_isStackLoaded_ServerInputReceive();
 			static unsigned char* CLIBConcurrentServerIO__dyn_REG_get_flag_isStackLoaded_ServerOutputSend();
 			static unsigned char* CLIBConcurrentServerIO__dyn_REG_get_flag_IsInitialised_CLIBOpenEpiCentre();
-			static unsigned char* CLIBConcurrentServerIO__io_PRAISE_get_Item_Output_praise0_Value();
-			static unsigned char* CLIBConcurrentServerIO__io_PRAISE_get_Item_Output_praise1_Value();
-			static unsigned char* CLIBConcurrentServerIO__io_PRAISE_get_Item_Output_praise2_Value();
-			static unsigned char* CLIBConcurrentServerIO__io_PRAISE_get_Item_Output_praise3_Value();
+			static unsigned char* CLIBConcurrentServerIO__io_PRAISE_get_Item_CLIB_OpenEpiCentre_STRUCT__Output_praise0_Value();
+			static unsigned char* CLIBConcurrentServerIO__io_PRAISE_get_Item_CLIB_OpenEpiCentre_STRUCT__Output_praise1_Value();
+			static unsigned char* CLIBConcurrentServerIO__io_PRAISE_get_Item_CLIB_OpenEpiCentre_STRUCT__Output_praise2_Value();
+			static unsigned char* CLIBConcurrentServerIO__io_PRAISE_get_Item_CLIB_OpenEpiCentre_STRUCT__Output_praise3_Value();
 			static unsigned char* CLIBConcurrentServerIO__io_PRAISE_get_MetaData_PraiseEventId();
 			static void CLIBConcurrentServerIO__io_PRAISE_set_Item_Input_praise0_Value_A(unsigned char* bytes);
 			static void CLIBConcurrentServerIO__io_PRAISE_set_Item_Input_praise0_Value_B(unsigned char* bytes);
@@ -37,7 +37,7 @@ extern "C"
 			static void CLIBConcurrentServerIO__stat_app_FUNCT_Calc_IsAllINSTANTIATED();
 			static void CLIBConcurrentServerIO__stat_CLASS_boot1_DEFINE_Framework();
 			static void CLIBConcurrentServerIO__stat_CLASS_boot3_INITIALISE_Framework();
-			static class CLIB_OpenEpiCentre_Framework* CLIBConcurrentServerIO__stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework();
+			static class CLIB_OpenEpiCentre__Framework* CLIBConcurrentServerIO__stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework();
 			static void CLIBConcurrentServerIO__stat_REG_boot1_DEFINE_CLIB_OpenEpiCentre_isFlagINSTANTIATED();
 			static void CLIBConcurrentServerIO__stat_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_isFlagINSTANTIATED();
 			static void CLIBConcurrentServerIO__stat_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_isFlagINSTANTIATED();
