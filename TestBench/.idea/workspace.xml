@@ -18,7 +18,14 @@
     <option name="reloaded" value="true" />
   </component>
   <component name="CMakeRunConfigurationManager">
-    <generated />
+    <generated>
+      <config projectName="TestBench" targetName="TestBench" />
+      <config projectName="TestBench" targetName="CLIB_WriteQueForThreadsAt_SIMULATION" />
+      <config projectName="TestBench" targetName="CLIB_LaunchQueForThreadsAt_Server" />
+      <config projectName="TestBench" targetName="CLIB_WriteQueForThreadsAt_ServerOutputSend" />
+      <config projectName="TestBench" targetName="CLIB_OpenEpiCentre" />
+      <config projectName="TestBench" targetName="CLIB_WriteQueForThreadsAt_ServerInputReceive" />
+    </generated>
   </component>
   <component name="CMakeSettings">
     <configurations>
@@ -26,7 +33,153 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="624d5e05-826e-42a3-b63d-564269a2e25e" name="Changes" comment="DEVELOPMENT_2026_07_08_1724, &lt;COMPILE_SUCCESS&gt;.&#10;&#10;cmake -B build&#10;-- The CXX compiler identification is GNU 15.2.0&#10;-- Detecting CXX compiler ABI info&#10;-- Detecting CXX compiler ABI info - done&#10;-- Check for working CXX compiler: /usr/bin/c++ - skipped&#10;-- Detecting CXX compile features&#10;-- Detecting CXX compile features - done&#10;-- Configuring done (0.4s)&#10;-- Generating done (0.1s)&#10;-- Build files have been written to: &#10;&#10;cmake --build build&#10;[  1%] Building CXX object libs/CLIB_WriteQueForThreadsAt_SIMULATION/CMakeFiles/CLIB_WriteQueForThreadsAt_SIMULATION.dir/src/CLIB_WriteEnableForThreadsAt_SIMULATION.cpp.o&#10;[  2%] Building CXX object libs/CLIB_WriteQueForThreadsAt_SIMULATION/CMakeFiles/CLIB_WriteQueForThreadsAt_SIMULATION.dir/src/WriteEnableForThreadsAt_SIMULATION__Framework.cpp.o&#10;[  2%] Building CXX object libs/CLIB_WriteQueForThreadsAt_SIMULATION/CMakeFiles/CLIB_WriteQueForThreadsAt_SIMULATION.dir/src/WriteEnableForThreadsAt_SIMULATION__Global.cpp.o&#10;[  3%] Building CXX object libs/CLIB_WriteQueForThreadsAt_SIMULATION/CMakeFiles/CLIB_WriteQueForThreadsAt_SIMULATION.dir/src/WriteEnableForThreadsAt_SIMULATION__App.cpp.o&#10;[  4%] Building CXX object libs/CLIB_WriteQueForThreadsAt_SIMULATION/CMakeFiles/CLIB_WriteQueForThreadsAt_SIMULATION.dir/src/WriteEnableForThreadsAt_SIMULATION__Control.cpp.o&#10;[  5%] Linking CXX static library libCLIB_WriteQueForThreadsAt_SIMULATION.a&#10;[  5%] Built target CLIB_WriteQueForThreadsAt_SIMULATION&#10;[  6%] Building CXX object libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/CLIB_OpenEpiCentre.cpp.o&#10;[  7%] Building CXX object libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/CLIB_OpenEpiCentre_Global.cpp.o&#10;[  8%] Building CXX object libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/Input.cpp.o&#10;[  9%] Building CXX object libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/Output.cpp.o&#10;[ 10%] Building CXX object libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/Concurrent.cpp.o&#10;[ 11%] Building CXX object libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/User_Input.cpp.o&#10;[ 11%] Building CXX object libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/User_Output.cpp.o&#10;[ 12%] Building CXX object libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/User_Algorithm.cpp.o&#10;[ 13%] Building CXX object libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/praise_sets/Algorithm_praise0.cpp.o&#10;[ 14%] Building CXX object libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/praise_sets/Input_praise0.cpp.o&#10;[ 15%] Building CXX object libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/praise_sets/Output_praise0.cpp.o&#10;[ 16%] Building CXX object libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/praise_sets/Algorithm_praise1.cpp.o&#10;[ 17%] Building CXX object libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/praise_sets/Input_praise1.cpp.o&#10;[ 18%] Building CXX object libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/praise_sets/Output_praise1.cpp.o&#10;[ 19%] Building CXX object libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/praise_sets/Algorithm_praise2.cpp.o&#10;[ 20%] Building CXX object libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/praise_sets/Input_praise2.cpp.o&#10;[ 21%] Building CXX object libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/praise_sets/Output_praise2.cpp.o&#10;[ 22%] Building CXX object libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/praise_sets/Algorithm_praise3.cpp.o&#10;[ 22%] Building CXX object libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/praise_sets/Input_praise3.cpp.o&#10;[ 23%] Building CXX object libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/praise_sets/Output_praise3.cpp.o&#10;[ 24%] Building CXX object libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/CLIB_OpenEpiCentre_Framework.cpp.o&#10;[ 25%] Building CXX object libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/CLIB_OpenEpiCentre_App.cpp.o&#10;[ 26%] Building CXX object libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/CLIB_OpenEpiCentre_Algorithms.cpp.o&#10;[ 27%] Building CXX object libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/CLIB_OpenEpiCentre_Data.cpp.o&#10;[ 28%] Building CXX object libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/CLIB_OpenEpiCentre_Data_Control.cpp.o&#10;[ 29%] Building CXX object libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/CLIB_OpenEpiCentre_Execute.cpp.o&#10;[ 30%] Building CXX object libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/CLIB_OpenEpiCentre_Execute_Control.cpp.o&#10;[ 31%] Linking CXX static library libCLIB_OpenEpiCentre.a&#10;[ 31%] Built target CLIB_OpenEpiCentre&#10;[ 32%] Building CXX object CMakeFiles/TestBench.dir/Main.cpp.o&#10;[ 33%] Building CXX object CMakeFiles/TestBench.dir/IO.cpp.o&#10;[ 34%] Building CXX object CMakeFiles/TestBench.dir/libs/CLIB_WriteQueForThreadsAt_ServerInputReceive/src/CLIB_WriteEnableForThreadsAt_ServerInputReceive.cpp.o&#10;[ 35%] Building CXX object CMakeFiles/TestBench.dir/libs/CLIB_WriteQueForThreadsAt_ServerInputReceive/src/WriteEnableForThreadsAt_ServerInputReceive__Framework.cpp.o&#10;[ 36%] Building CXX object CMakeFiles/TestBench.dir/libs/CLIB_WriteQueForThreadsAt_ServerInputReceive/src/WriteEnableForThreadsAt_ServerInputReceive__Global.cpp.o&#10;[ 37%] Building CXX object CMakeFiles/TestBench.dir/libs/CLIB_WriteQueForThreadsAt_ServerInputReceive/src/WriteEnableForThreadsAt_ServerInputReceive__App.cpp.o&#10;[ 38%] Building CXX object CMakeFiles/TestBench.dir/libs/CLIB_WriteQueForThreadsAt_ServerInputReceive/src/WriteEnableForThreadsAt_ServerInputReceive__Control.cpp.o&#10;[ 39%] Building CXX object CMakeFiles/TestBench.dir/libs/CLIB_LaunchQueForThreadsAt_Server/src/CLIB_LaunchEnableForConcurrentThreadsAt_Server.cpp.o&#10;[ 39%] Building CXX object CMakeFiles/TestBench.dir/libs/CLIB_LaunchQueForThreadsAt_Server/src/LaunchEnableForConcurrentThreadsAt_Server__App.cpp.o&#10;[ 40%] Building CXX object CMakeFiles/TestBench.dir/libs/CLIB_LaunchQueForThreadsAt_Server/src/LaunchEnableForConcurrentThreadsAt_Server__Control.cpp.o&#10;[ 41%] Building CXX object CMakeFiles/TestBench.dir/libs/CLIB_LaunchQueForThreadsAt_Server/src/LaunchEnableForConcurrentThreadsAt_Server__Framework.cpp.o&#10;[ 42%] Building CXX object CMakeFiles/TestBench.dir/libs/CLIB_LaunchQueForThreadsAt_Server/src/LaunchEnableForConcurrentThreadsAt_Server__Global.cpp.o&#10;[ 43%] Building CXX object CMakeFiles/TestBench.dir/libs/CLIB_WriteQueForThreadsAt_ServerOutputSend/src/CLIB_WriteEnableForThreadsAt_ServerOutputSend.cpp.o&#10;[ 44%] Building CXX object CMakeFiles/TestBench.dir/libs/CLIB_WriteQueForThreadsAt_ServerOutputSend/src/WriteEnableForThreadsAt_ServerOutputSend__Framework.cpp.o&#10;[ 45%] Building CXX object CMakeFiles/TestBench.dir/libs/CLIB_WriteQueForThreadsAt_ServerOutputSend/src/WriteEnableForThreadsAt_ServerOutputSend__Global.cpp.o&#10;[ 46%] Building CXX object CMakeFiles/TestBench.dir/libs/CLIB_WriteQueForThreadsAt_ServerOutputSend/src/WriteEnableForThreadsAt_ServerOutputSend__App.cpp.o&#10;[ 47%] Building CXX object CMakeFiles/TestBench.dir/libs/CLIB_WriteQueForThreadsAt_ServerOutputSend/src/WriteEnableForThreadsAt_ServerOutputSend__Control.cpp.o&#10;[ 48%] Building CXX object CMakeFiles/TestBench.dir/libs/CLIB_OpenEpiCentre/src/CLIB_OpenEpiCentre.cpp.o&#10;[ 49%] Building CXX object CMakeFiles/TestBench.dir/libs/CLIB_OpenEpiCentre/src/engine/CLIB_OpenEpiCentre_Algorithms.cpp.o&#10;[ 50%] Building CXX object CMakeFiles/TestBench.dir/libs/CLIB_OpenEpiCentre/src/engine/CLIB_OpenEpiCentre_App.cpp.o&#10;[ 50%] Building CXX object CMakeFiles/TestBench.dir/libs/CLIB_OpenEpiCentre/src/engine/CLIB_OpenEpiCentre_Data.cpp.o&#10;[ 51%] Building CXX object CMakeFiles/TestBench.dir/libs/CLIB_OpenEpiCentre/src/engine/CLIB_OpenEpiCentre_Data_Control.cpp.o&#10;[ 52%] Building CXX object CMakeFiles/TestBench.dir/libs/CLIB_OpenEpiCentre/src/engine/CLIB_OpenEpiCentre_Execute.cpp.o&#10;[ 53%] Building CXX object CMakeFiles/TestBench.dir/libs/CLIB_OpenEpiCentre/src/engine/CLIB_OpenEpiCentre_Execute_Control.cpp.o&#10;[ 54%] Building CXX object CMakeFiles/TestBench.dir/libs/CLIB_OpenEpiCentre/src/engine/CLIB_OpenEpiCentre_Framework.cpp.o&#10;[ 55%] Building CXX object CMakeFiles/TestBench.dir/libs/CLIB_OpenEpiCentre/src/engine/CLIB_OpenEpiCentre_Global.cpp.o&#10;[ 56%] Building CXX object CMakeFiles/TestBench.dir/libs/CLIB_OpenEpiCentre/src/structs/Concurrent.cpp.o&#10;[ 57%] Building CXX object CMakeFiles/TestBench.dir/libs/CLIB_OpenEpiCentre/src/structs/Input.cpp.o&#10;[ 58%] Building CXX object CMakeFiles/TestBench.dir/libs/CLIB_OpenEpiCentre/src/structs/Output.cpp.o&#10;[ 59%] Building CXX object CMakeFiles/TestBench.dir/libs/CLIB_OpenEpiCentre/src/structs/User_Algorithm.cpp.o&#10;[ 60%] Building CXX object CMakeFiles/TestBench.dir/libs/CLIB_OpenEpiCentre/src/structs/User_Input.cpp.o&#10;[ 61%] Building CXX object CMakeFiles/TestBench.dir/libs/CLIB_OpenEpiCentre/src/structs/User_Output.cpp.o&#10;[ 61%] Building CXX object CMakeFiles/TestBench.dir/libs/CLIB_OpenEpiCentre/src/structs/praise_sets/Algorithm_praise0.cpp.o&#10;[ 62%] Building CXX object CMakeFiles/TestBench.dir/libs/CLIB_OpenEpiCentre/src/structs/praise_sets/Algorithm_praise1.cpp.o&#10;[ 63%] Building CXX object CMakeFiles/TestBench.dir/libs/CLIB_OpenEpiCentre/src/structs/praise_sets/Algorithm_praise2.cpp.o&#10;[ 64%] Building CXX object CMakeFiles/TestBench.dir/libs/CLIB_OpenEpiCentre/src/structs/praise_sets/Algorithm_praise3.cpp.o&#10;[ 65%] Building CXX object CMakeFiles/TestBench.dir/libs/CLIB_OpenEpiCentre/src/structs/praise_sets/Input_praise0.cpp.o&#10;[ 66%] Building CXX object CMakeFiles/TestBench.dir/libs/CLIB_OpenEpiCentre/src/structs/praise_sets/Input_praise1.cpp.o&#10;[ 67%] Building CXX object CMakeFiles/TestBench.dir/libs/CLIB_OpenEpiCentre/src/structs/praise_sets/Input_praise2.cpp.o&#10;[ 68%] Building CXX object CMakeFiles/TestBench.dir/libs/CLIB_OpenEpiCentre/src/structs/praise_sets/Input_praise3.cpp.o&#10;[ 69%] Building CXX object CMakeFiles/TestBench.dir/libs/CLIB_OpenEpiCentre/src/structs/praise_sets/Output_praise0.cpp.o&#10;[ 70%] Building CXX object CMakeFiles/TestBench.dir/libs/CLIB_OpenEpiCentre/src/structs/praise_sets/Output_praise1.cpp.o&#10;[ 71%] Building CXX object CMakeFiles/TestBench.dir/libs/CLIB_OpenEpiCentre/src/structs/praise_sets/Output_praise2.cpp.o&#10;[ 72%] Building CXX object CMakeFiles/TestBench.dir/libs/CLIB_OpenEpiCentre/src/structs/praise_sets/Output_praise3.cpp.o&#10;[ 72%] Building CXX object CMakeFiles/TestBench.dir/libs/CLIB_WriteQueForThreadsAt_SIMULATION/src/CLIB_WriteEnableForThreadsAt_SIMULATION.cpp.o&#10;[ 73%] Building CXX object CMakeFiles/TestBench.dir/libs/CLIB_WriteQueForThreadsAt_SIMULATION/src/WriteEnableForThreadsAt_SIMULATION__Framework.cpp.o&#10;[ 74%] Building CXX object CMakeFiles/TestBench.dir/libs/CLIB_WriteQueForThreadsAt_SIMULATION/src/WriteEnableForThreadsAt_SIMULATION__Global.cpp.o&#10;[ 75%] Building CXX object CMakeFiles/TestBench.dir/libs/CLIB_WriteQueForThreadsAt_SIMULATION/src/WriteEnableForThreadsAt_SIMULATION__App.cpp.o&#10;[ 76%] Building CXX object CMakeFiles/TestBench.dir/libs/CLIB_WriteQueForThreadsAt_SIMULATION/src/WriteEnableForThreadsAt_SIMULATION__Control.cpp.o&#10;[ 77%] Building CXX object CMakeFiles/TestBench.dir/src/engine/Algorithms.cpp.o&#10;[ 78%] Building CXX object CMakeFiles/TestBench.dir/src/engine/App.cpp.o&#10;[ 79%] Building CXX object CMakeFiles/TestBench.dir/src/engine/Data.cpp.o&#10;[ 80%] Building CXX object CMakeFiles/TestBench.dir/src/engine/Execute.cpp.o&#10;[ 81%] Building CXX object CMakeFiles/TestBench.dir/src/engine/Execute_Control.cpp.o&#10;[ 82%] Building CXX object CMakeFiles/TestBench.dir/src/engine/Framework_App.cpp.o&#10;[ 83%] Building CXX object CMakeFiles/TestBench.dir/src/engine/Global.cpp.o&#10;[ 84%] Linking CXX executable TestBench&#10;[ 84%] Built target TestBench&#10;[ 84%] Building CXX object libs/CLIB_LaunchQueForThreadsAt_Server/CMakeFiles/CLIB_LaunchQueForThreadsAt_Server.dir/src/CLIB_LaunchEnableForConcurrentThreadsAt_Server.cpp.o&#10;[ 85%] Building CXX object libs/CLIB_LaunchQueForThreadsAt_Server/CMakeFiles/CLIB_LaunchQueForThreadsAt_Server.dir/src/LaunchEnableForConcurrentThreadsAt_Server__App.cpp.o&#10;[ 86%] Building CXX object libs/CLIB_LaunchQueForThreadsAt_Server/CMakeFiles/CLIB_LaunchQueForThreadsAt_Server.dir/src/LaunchEnableForConcurrentThreadsAt_Server__Control.cpp.o&#10;[ 87%] Building CXX object libs/CLIB_LaunchQueForThreadsAt_Server/CMakeFiles/CLIB_LaunchQueForThreadsAt_Server.dir/src/LaunchEnableForConcurrentThreadsAt_Server__Framework.cpp.o&#10;[ 88%] Building CXX object libs/CLIB_LaunchQueForThreadsAt_Server/CMakeFiles/CLIB_LaunchQueForThreadsAt_Server.dir/src/LaunchEnableForConcurrentThreadsAt_Server__Global.cpp.o&#10;[ 89%] Linking CXX static library libCLIB_LaunchQueForThreadsAt_Server.a&#10;[ 89%] Built target CLIB_LaunchQueForThreadsAt_Server&#10;[ 90%] Building CXX object libs/CLIB_WriteQueForThreadsAt_ServerInputReceive/CMakeFiles/CLIB_WriteQueForThreadsAt_ServerInputReceive.dir/src/CLIB_WriteEnableForThreadsAt_ServerInputReceive.cpp.o&#10;[ 91%] Building CXX object libs/CLIB_WriteQueForThreadsAt_ServerInputReceive/CMakeFiles/CLIB_WriteQueForThreadsAt_ServerInputReceive.dir/src/WriteEnableForThreadsAt_ServerInputReceive__Framework.cpp.o&#10;[ 92%] Building CXX object libs/CLIB_WriteQueForThreadsAt_ServerInputReceive/CMakeFiles/CLIB_WriteQueForThreadsAt_ServerInputReceive.dir/src/WriteEnableForThreadsAt_ServerInputReceive__Global.cpp.o&#10;[ 93%] Building CXX object libs/CLIB_WriteQueForThreadsAt_ServerInputReceive/CMakeFiles/CLIB_WriteQueForThreadsAt_ServerInputReceive.dir/src/WriteEnableForThreadsAt_ServerInputReceive__App.cpp.o&#10;[ 94%] Building CXX object libs/CLIB_WriteQueForThreadsAt_ServerInputReceive/CMakeFiles/CLIB_WriteQueForThreadsAt_ServerInputReceive.dir/src/WriteEnableForThreadsAt_ServerInputReceive__Control.cpp.o&#10;[ 95%] Linking CXX static library libCLIB_WriteQueForThreadsAt_ServerInputReceive.a&#10;[ 95%] Built target CLIB_WriteQueForThreadsAt_ServerInputReceive&#10;[ 96%] Building CXX object libs/CLIB_WriteQueForThreadsAt_ServerOutputSend/CMakeFiles/CLIB_WriteQueForThreadsAt_ServerOutputSend.dir/src/CLIB_WriteEnableForThreadsAt_ServerOutputSend.cpp.o&#10;[ 97%] Building CXX object libs/CLIB_WriteQueForThreadsAt_ServerOutputSend/CMakeFiles/CLIB_WriteQueForThreadsAt_ServerOutputSend.dir/src/WriteEnableForThreadsAt_ServerOutputSend__Framework.cpp.o&#10;[ 97%] Building CXX object libs/CLIB_WriteQueForThreadsAt_ServerOutputSend/CMakeFiles/CLIB_WriteQueForThreadsAt_ServerOutputSend.dir/src/WriteEnableForThreadsAt_ServerOutputSend__Global.cpp.o&#10;[ 98%] Building CXX object libs/CLIB_WriteQueForThreadsAt_ServerOutputSend/CMakeFiles/CLIB_WriteQueForThreadsAt_ServerOutputSend.dir/src/WriteEnableForThreadsAt_ServerOutputSend__App.cpp.o&#10;[ 99%] Building CXX object libs/CLIB_WriteQueForThreadsAt_ServerOutputSend/CMakeFiles/CLIB_WriteQueForThreadsAt_ServerOutputSend.dir/src/WriteEnableForThreadsAt_ServerOutputSend__Control.cpp.o&#10;[100%] Linking CXX static library libCLIB_WriteQueForThreadsAt_ServerOutputSend.a&#10;[100%] Built target CLIB_WriteQueForThreadsAt_ServerOutputSend" />
+    <list default="true" id="624d5e05-826e-42a3-b63d-564269a2e25e" name="Changes" comment="DEVELOPMENT_2026_07_08_1724, &lt;COMPILE_SUCCESS&gt;.&#10;&#10;cmake -B build&#10;-- The CXX compiler identification is GNU 15.2.0&#10;-- Detecting CXX compiler ABI info&#10;-- Detecting CXX compiler ABI info - done&#10;-- Check for working CXX compiler: /usr/bin/c++ - skipped&#10;-- Detecting CXX compile features&#10;-- Detecting CXX compile features - done&#10;-- Configuring done (0.4s)&#10;-- Generating done (0.1s)&#10;-- Build files have been written to: &#10;&#10;cmake --build build&#10;[  1%] Building CXX object libs/CLIB_WriteQueForThreadsAt_SIMULATION/CMakeFiles/CLIB_WriteQueForThreadsAt_SIMULATION.dir/src/CLIB_WriteEnableForThreadsAt_SIMULATION.cpp.o&#10;[  2%] Building CXX object libs/CLIB_WriteQueForThreadsAt_SIMULATION/CMakeFiles/CLIB_WriteQueForThreadsAt_SIMULATION.dir/src/WriteEnableForThreadsAt_SIMULATION__Framework.cpp.o&#10;[  2%] Building CXX object libs/CLIB_WriteQueForThreadsAt_SIMULATION/CMakeFiles/CLIB_WriteQueForThreadsAt_SIMULATION.dir/src/WriteEnableForThreadsAt_SIMULATION__Global.cpp.o&#10;[  3%] Building CXX object libs/CLIB_WriteQueForThreadsAt_SIMULATION/CMakeFiles/CLIB_WriteQueForThreadsAt_SIMULATION.dir/src/WriteEnableForThreadsAt_SIMULATION__App.cpp.o&#10;[  4%] Building CXX object libs/CLIB_WriteQueForThreadsAt_SIMULATION/CMakeFiles/CLIB_WriteQueForThreadsAt_SIMULATION.dir/src/WriteEnableForThreadsAt_SIMULATION__Control.cpp.o&#10;[  5%] Linking CXX static library libCLIB_WriteQueForThreadsAt_SIMULATION.a&#10;[  5%] Built target CLIB_WriteQueForThreadsAt_SIMULATION&#10;[  6%] Building CXX object libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/CLIB_OpenEpiCentre.cpp.o&#10;[  7%] Building CXX object libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/CLIB_OpenEpiCentre_Global.cpp.o&#10;[  8%] Building CXX object libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/Input.cpp.o&#10;[  9%] Building CXX object libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/Output.cpp.o&#10;[ 10%] Building CXX object libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/Concurrent.cpp.o&#10;[ 11%] Building CXX object libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/User_Input.cpp.o&#10;[ 11%] Building CXX object libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/User_Output.cpp.o&#10;[ 12%] Building CXX object libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/User_Algorithm.cpp.o&#10;[ 13%] Building CXX object libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/praise_sets/Algorithm_praise0.cpp.o&#10;[ 14%] Building CXX object libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/praise_sets/Input_praise0.cpp.o&#10;[ 15%] Building CXX object libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/praise_sets/Output_praise0.cpp.o&#10;[ 16%] Building CXX object libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/praise_sets/Algorithm_praise1.cpp.o&#10;[ 17%] Building CXX object libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/praise_sets/Input_praise1.cpp.o&#10;[ 18%] Building CXX object libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/praise_sets/Output_praise1.cpp.o&#10;[ 19%] Building CXX object libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/praise_sets/Algorithm_praise2.cpp.o&#10;[ 20%] Building CXX object libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/praise_sets/Input_praise2.cpp.o&#10;[ 21%] Building CXX object libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/praise_sets/Output_praise2.cpp.o&#10;[ 22%] Building CXX object libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/praise_sets/Algorithm_praise3.cpp.o&#10;[ 22%] Building CXX object libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/praise_sets/Input_praise3.cpp.o&#10;[ 23%] Building CXX object libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/praise_sets/Output_praise3.cpp.o&#10;[ 24%] Building CXX object libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/CLIB_OpenEpiCentre_Framework.cpp.o&#10;[ 25%] Building CXX object libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/CLIB_OpenEpiCentre_App.cpp.o&#10;[ 26%] Building CXX object libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/CLIB_OpenEpiCentre_Algorithms.cpp.o&#10;[ 27%] Building CXX object libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/CLIB_OpenEpiCentre_Data.cpp.o&#10;[ 28%] Building CXX object libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/CLIB_OpenEpiCentre_Data_Control.cpp.o&#10;[ 29%] Building CXX object libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/CLIB_OpenEpiCentre_Execute.cpp.o&#10;[ 30%] Building CXX object libs/CLIB_OpenEpiCentre/CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/CLIB_OpenEpiCentre_Execute_Control.cpp.o&#10;[ 31%] Linking CXX static library libCLIB_OpenEpiCentre.a&#10;[ 31%] Built target CLIB_OpenEpiCentre&#10;[ 32%] Building CXX object CMakeFiles/TestBench.dir/Main.cpp.o&#10;[ 33%] Building CXX object CMakeFiles/TestBench.dir/IO.cpp.o&#10;[ 34%] Building CXX object CMakeFiles/TestBench.dir/libs/CLIB_WriteQueForThreadsAt_ServerInputReceive/src/CLIB_WriteEnableForThreadsAt_ServerInputReceive.cpp.o&#10;[ 35%] Building CXX object CMakeFiles/TestBench.dir/libs/CLIB_WriteQueForThreadsAt_ServerInputReceive/src/WriteEnableForThreadsAt_ServerInputReceive__Framework.cpp.o&#10;[ 36%] Building CXX object CMakeFiles/TestBench.dir/libs/CLIB_WriteQueForThreadsAt_ServerInputReceive/src/WriteEnableForThreadsAt_ServerInputReceive__Global.cpp.o&#10;[ 37%] Building CXX object CMakeFiles/TestBench.dir/libs/CLIB_WriteQueForThreadsAt_ServerInputReceive/src/WriteEnableForThreadsAt_ServerInputReceive__App.cpp.o&#10;[ 38%] Building CXX object CMakeFiles/TestBench.dir/libs/CLIB_WriteQueForThreadsAt_ServerInputReceive/src/WriteEnableForThreadsAt_ServerInputReceive__Control.cpp.o&#10;[ 39%] Building CXX object CMakeFiles/TestBench.dir/libs/CLIB_LaunchQueForThreadsAt_Server/src/CLIB_LaunchEnableForConcurrentThreadsAt_Server.cpp.o&#10;[ 39%] Building CXX object CMakeFiles/TestBench.dir/libs/CLIB_LaunchQueForThreadsAt_Server/src/LaunchEnableForConcurrentThreadsAt_Server__App.cpp.o&#10;[ 40%] Building CXX object CMakeFiles/TestBench.dir/libs/CLIB_LaunchQueForThreadsAt_Server/src/LaunchEnableForConcurrentThreadsAt_Server__Control.cpp.o&#10;[ 41%] Building CXX object CMakeFiles/TestBench.dir/libs/CLIB_LaunchQueForThreadsAt_Server/src/LaunchEnableForConcurrentThreadsAt_Server__Framework.cpp.o&#10;[ 42%] Building CXX object CMakeFiles/TestBench.dir/libs/CLIB_LaunchQueForThreadsAt_Server/src/LaunchEnableForConcurrentThreadsAt_Server__Global.cpp.o&#10;[ 43%] Building CXX object CMakeFiles/TestBench.dir/libs/CLIB_WriteQueForThreadsAt_ServerOutputSend/src/CLIB_WriteEnableForThreadsAt_ServerOutputSend.cpp.o&#10;[ 44%] Building CXX object CMakeFiles/TestBench.dir/libs/CLIB_WriteQueForThreadsAt_ServerOutputSend/src/WriteEnableForThreadsAt_ServerOutputSend__Framework.cpp.o&#10;[ 45%] Building CXX object CMakeFiles/TestBench.dir/libs/CLIB_WriteQueForThreadsAt_ServerOutputSend/src/WriteEnableForThreadsAt_ServerOutputSend__Global.cpp.o&#10;[ 46%] Building CXX object CMakeFiles/TestBench.dir/libs/CLIB_WriteQueForThreadsAt_ServerOutputSend/src/WriteEnableForThreadsAt_ServerOutputSend__App.cpp.o&#10;[ 47%] Building CXX object CMakeFiles/TestBench.dir/libs/CLIB_WriteQueForThreadsAt_ServerOutputSend/src/WriteEnableForThreadsAt_ServerOutputSend__Control.cpp.o&#10;[ 48%] Building CXX object CMakeFiles/TestBench.dir/libs/CLIB_OpenEpiCentre/src/CLIB_OpenEpiCentre.cpp.o&#10;[ 49%] Building CXX object CMakeFiles/TestBench.dir/libs/CLIB_OpenEpiCentre/src/engine/CLIB_OpenEpiCentre_Algorithms.cpp.o&#10;[ 50%] Building CXX object CMakeFiles/TestBench.dir/libs/CLIB_OpenEpiCentre/src/engine/CLIB_OpenEpiCentre_App.cpp.o&#10;[ 50%] Building CXX object CMakeFiles/TestBench.dir/libs/CLIB_OpenEpiCentre/src/engine/CLIB_OpenEpiCentre_Data.cpp.o&#10;[ 51%] Building CXX object CMakeFiles/TestBench.dir/libs/CLIB_OpenEpiCentre/src/engine/CLIB_OpenEpiCentre_Data_Control.cpp.o&#10;[ 52%] Building CXX object CMakeFiles/TestBench.dir/libs/CLIB_OpenEpiCentre/src/engine/CLIB_OpenEpiCentre_Execute.cpp.o&#10;[ 53%] Building CXX object CMakeFiles/TestBench.dir/libs/CLIB_OpenEpiCentre/src/engine/CLIB_OpenEpiCentre_Execute_Control.cpp.o&#10;[ 54%] Building CXX object CMakeFiles/TestBench.dir/libs/CLIB_OpenEpiCentre/src/engine/CLIB_OpenEpiCentre_Framework.cpp.o&#10;[ 55%] Building CXX object CMakeFiles/TestBench.dir/libs/CLIB_OpenEpiCentre/src/engine/CLIB_OpenEpiCentre_Global.cpp.o&#10;[ 56%] Building CXX object CMakeFiles/TestBench.dir/libs/CLIB_OpenEpiCentre/src/structs/Concurrent.cpp.o&#10;[ 57%] Building CXX object CMakeFiles/TestBench.dir/libs/CLIB_OpenEpiCentre/src/structs/Input.cpp.o&#10;[ 58%] Building CXX object CMakeFiles/TestBench.dir/libs/CLIB_OpenEpiCentre/src/structs/Output.cpp.o&#10;[ 59%] Building CXX object CMakeFiles/TestBench.dir/libs/CLIB_OpenEpiCentre/src/structs/User_Algorithm.cpp.o&#10;[ 60%] Building CXX object CMakeFiles/TestBench.dir/libs/CLIB_OpenEpiCentre/src/structs/User_Input.cpp.o&#10;[ 61%] Building CXX object CMakeFiles/TestBench.dir/libs/CLIB_OpenEpiCentre/src/structs/User_Output.cpp.o&#10;[ 61%] Building CXX object CMakeFiles/TestBench.dir/libs/CLIB_OpenEpiCentre/src/structs/praise_sets/Algorithm_praise0.cpp.o&#10;[ 62%] Building CXX object CMakeFiles/TestBench.dir/libs/CLIB_OpenEpiCentre/src/structs/praise_sets/Algorithm_praise1.cpp.o&#10;[ 63%] Building CXX object CMakeFiles/TestBench.dir/libs/CLIB_OpenEpiCentre/src/structs/praise_sets/Algorithm_praise2.cpp.o&#10;[ 64%] Building CXX object CMakeFiles/TestBench.dir/libs/CLIB_OpenEpiCentre/src/structs/praise_sets/Algorithm_praise3.cpp.o&#10;[ 65%] Building CXX object CMakeFiles/TestBench.dir/libs/CLIB_OpenEpiCentre/src/structs/praise_sets/Input_praise0.cpp.o&#10;[ 66%] Building CXX object CMakeFiles/TestBench.dir/libs/CLIB_OpenEpiCentre/src/structs/praise_sets/Input_praise1.cpp.o&#10;[ 67%] Building CXX object CMakeFiles/TestBench.dir/libs/CLIB_OpenEpiCentre/src/structs/praise_sets/Input_praise2.cpp.o&#10;[ 68%] Building CXX object CMakeFiles/TestBench.dir/libs/CLIB_OpenEpiCentre/src/structs/praise_sets/Input_praise3.cpp.o&#10;[ 69%] Building CXX object CMakeFiles/TestBench.dir/libs/CLIB_OpenEpiCentre/src/structs/praise_sets/Output_praise0.cpp.o&#10;[ 70%] Building CXX object CMakeFiles/TestBench.dir/libs/CLIB_OpenEpiCentre/src/structs/praise_sets/Output_praise1.cpp.o&#10;[ 71%] Building CXX object CMakeFiles/TestBench.dir/libs/CLIB_OpenEpiCentre/src/structs/praise_sets/Output_praise2.cpp.o&#10;[ 72%] Building CXX object CMakeFiles/TestBench.dir/libs/CLIB_OpenEpiCentre/src/structs/praise_sets/Output_praise3.cpp.o&#10;[ 72%] Building CXX object CMakeFiles/TestBench.dir/libs/CLIB_WriteQueForThreadsAt_SIMULATION/src/CLIB_WriteEnableForThreadsAt_SIMULATION.cpp.o&#10;[ 73%] Building CXX object CMakeFiles/TestBench.dir/libs/CLIB_WriteQueForThreadsAt_SIMULATION/src/WriteEnableForThreadsAt_SIMULATION__Framework.cpp.o&#10;[ 74%] Building CXX object CMakeFiles/TestBench.dir/libs/CLIB_WriteQueForThreadsAt_SIMULATION/src/WriteEnableForThreadsAt_SIMULATION__Global.cpp.o&#10;[ 75%] Building CXX object CMakeFiles/TestBench.dir/libs/CLIB_WriteQueForThreadsAt_SIMULATION/src/WriteEnableForThreadsAt_SIMULATION__App.cpp.o&#10;[ 76%] Building CXX object CMakeFiles/TestBench.dir/libs/CLIB_WriteQueForThreadsAt_SIMULATION/src/WriteEnableForThreadsAt_SIMULATION__Control.cpp.o&#10;[ 77%] Building CXX object CMakeFiles/TestBench.dir/src/engine/Algorithms.cpp.o&#10;[ 78%] Building CXX object CMakeFiles/TestBench.dir/src/engine/App.cpp.o&#10;[ 79%] Building CXX object CMakeFiles/TestBench.dir/src/engine/Data.cpp.o&#10;[ 80%] Building CXX object CMakeFiles/TestBench.dir/src/engine/Execute.cpp.o&#10;[ 81%] Building CXX object CMakeFiles/TestBench.dir/src/engine/Execute_Control.cpp.o&#10;[ 82%] Building CXX object CMakeFiles/TestBench.dir/src/engine/Framework_App.cpp.o&#10;[ 83%] Building CXX object CMakeFiles/TestBench.dir/src/engine/Global.cpp.o&#10;[ 84%] Linking CXX executable TestBench&#10;[ 84%] Built target TestBench&#10;[ 84%] Building CXX object libs/CLIB_LaunchQueForThreadsAt_Server/CMakeFiles/CLIB_LaunchQueForThreadsAt_Server.dir/src/CLIB_LaunchEnableForConcurrentThreadsAt_Server.cpp.o&#10;[ 85%] Building CXX object libs/CLIB_LaunchQueForThreadsAt_Server/CMakeFiles/CLIB_LaunchQueForThreadsAt_Server.dir/src/LaunchEnableForConcurrentThreadsAt_Server__App.cpp.o&#10;[ 86%] Building CXX object libs/CLIB_LaunchQueForThreadsAt_Server/CMakeFiles/CLIB_LaunchQueForThreadsAt_Server.dir/src/LaunchEnableForConcurrentThreadsAt_Server__Control.cpp.o&#10;[ 87%] Building CXX object libs/CLIB_LaunchQueForThreadsAt_Server/CMakeFiles/CLIB_LaunchQueForThreadsAt_Server.dir/src/LaunchEnableForConcurrentThreadsAt_Server__Framework.cpp.o&#10;[ 88%] Building CXX object libs/CLIB_LaunchQueForThreadsAt_Server/CMakeFiles/CLIB_LaunchQueForThreadsAt_Server.dir/src/LaunchEnableForConcurrentThreadsAt_Server__Global.cpp.o&#10;[ 89%] Linking CXX static library libCLIB_LaunchQueForThreadsAt_Server.a&#10;[ 89%] Built target CLIB_LaunchQueForThreadsAt_Server&#10;[ 90%] Building CXX object libs/CLIB_WriteQueForThreadsAt_ServerInputReceive/CMakeFiles/CLIB_WriteQueForThreadsAt_ServerInputReceive.dir/src/CLIB_WriteEnableForThreadsAt_ServerInputReceive.cpp.o&#10;[ 91%] Building CXX object libs/CLIB_WriteQueForThreadsAt_ServerInputReceive/CMakeFiles/CLIB_WriteQueForThreadsAt_ServerInputReceive.dir/src/WriteEnableForThreadsAt_ServerInputReceive__Framework.cpp.o&#10;[ 92%] Building CXX object libs/CLIB_WriteQueForThreadsAt_ServerInputReceive/CMakeFiles/CLIB_WriteQueForThreadsAt_ServerInputReceive.dir/src/WriteEnableForThreadsAt_ServerInputReceive__Global.cpp.o&#10;[ 93%] Building CXX object libs/CLIB_WriteQueForThreadsAt_ServerInputReceive/CMakeFiles/CLIB_WriteQueForThreadsAt_ServerInputReceive.dir/src/WriteEnableForThreadsAt_ServerInputReceive__App.cpp.o&#10;[ 94%] Building CXX object libs/CLIB_WriteQueForThreadsAt_ServerInputReceive/CMakeFiles/CLIB_WriteQueForThreadsAt_ServerInputReceive.dir/src/WriteEnableForThreadsAt_ServerInputReceive__Control.cpp.o&#10;[ 95%] Linking CXX static library libCLIB_WriteQueForThreadsAt_ServerInputReceive.a&#10;[ 95%] Built target CLIB_WriteQueForThreadsAt_ServerInputReceive&#10;[ 96%] Building CXX object libs/CLIB_WriteQueForThreadsAt_ServerOutputSend/CMakeFiles/CLIB_WriteQueForThreadsAt_ServerOutputSend.dir/src/CLIB_WriteEnableForThreadsAt_ServerOutputSend.cpp.o&#10;[ 97%] Building CXX object libs/CLIB_WriteQueForThreadsAt_ServerOutputSend/CMakeFiles/CLIB_WriteQueForThreadsAt_ServerOutputSend.dir/src/WriteEnableForThreadsAt_ServerOutputSend__Framework.cpp.o&#10;[ 97%] Building CXX object libs/CLIB_WriteQueForThreadsAt_ServerOutputSend/CMakeFiles/CLIB_WriteQueForThreadsAt_ServerOutputSend.dir/src/WriteEnableForThreadsAt_ServerOutputSend__Global.cpp.o&#10;[ 98%] Building CXX object libs/CLIB_WriteQueForThreadsAt_ServerOutputSend/CMakeFiles/CLIB_WriteQueForThreadsAt_ServerOutputSend.dir/src/WriteEnableForThreadsAt_ServerOutputSend__App.cpp.o&#10;[ 99%] Building CXX object libs/CLIB_WriteQueForThreadsAt_ServerOutputSend/CMakeFiles/CLIB_WriteQueForThreadsAt_ServerOutputSend.dir/src/WriteEnableForThreadsAt_ServerOutputSend__Control.cpp.o&#10;[100%] Linking CXX static library libCLIB_WriteQueForThreadsAt_ServerOutputSend.a&#10;[100%] Built target CLIB_WriteQueForThreadsAt_ServerOutputSend">
+      <change afterPath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/include/engine/CLIB_OpenEpiCentre__Execute__Control.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/include/structs/praise_sets/CLIB_OpenEpiCentre_STRUCT__Algorithm_praise0.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/include/structs/praise_sets/CLIB_OpenEpiCentre_STRUCT__Algorithm_praise1.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/include/structs/praise_sets/CLIB_OpenEpiCentre_STRUCT__Algorithm_praise2.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/include/structs/praise_sets/CLIB_OpenEpiCentre_STRUCT__Algorithm_praise3.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/include/structs/praise_sets/CLIB_OpenEpiCentre_STRUCT__Output_praise0.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/include/structs/praise_sets/CLIB_OpenEpiCentre_STRUCT__Output_praise1.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/include/structs/praise_sets/CLIB_OpenEpiCentre_STRUCT__Output_praise2.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/include/structs/praise_sets/CLIB_OpenEpiCentre_STRUCT__Output_praise3.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/src/engine/CLIB_OpenEpiCentre__Execute__Control.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/src/structs/praise_sets/CLIB_OpenEpiCentre_STRUCT__Algorithm_praise0.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/src/structs/praise_sets/CLIB_OpenEpiCentre_STRUCT__Algorithm_praise1.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/src/structs/praise_sets/CLIB_OpenEpiCentre_STRUCT__Algorithm_praise2.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/src/structs/praise_sets/CLIB_OpenEpiCentre_STRUCT__Algorithm_praise3.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/src/structs/praise_sets/CLIB_OpenEpiCentre_STRUCT__Input_praise0.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/src/structs/praise_sets/CLIB_OpenEpiCentre_STRUCT__Input_praise1.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/src/structs/praise_sets/CLIB_OpenEpiCentre_STRUCT__Input_praise2.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/src/structs/praise_sets/CLIB_OpenEpiCentre_STRUCT__Input_praise3.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/src/structs/praise_sets/CLIB_OpenEpiCentre_STRUCT__Output_praise0.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/src/structs/praise_sets/CLIB_OpenEpiCentre_STRUCT__Output_praise1.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/src/structs/praise_sets/CLIB_OpenEpiCentre_STRUCT__Output_praise2.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/src/structs/praise_sets/CLIB_OpenEpiCentre_STRUCT__Output_praise3.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IO.h" beforeDir="false" afterPath="$PROJECT_DIR$/IO.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/build/CMakeCache.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/build/CMakeFiles/3.28.3/CMakeCXXCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/build/CMakeFiles/3.28.3/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/build/CMakeFiles/3.28.3/CMakeSystem.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/build/CMakeFiles/3.28.3/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/build/CMakeFiles/3.28.3/CompilerIdCXX/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/build/CMakeFiles/CLIB_OpenEpiCentre.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/build/CMakeFiles/CLIB_OpenEpiCentre.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/build/CMakeFiles/CLIB_OpenEpiCentre.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/build/CMakeFiles/CLIB_OpenEpiCentre.dir/cmake_clean_target.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/build/CMakeFiles/CLIB_OpenEpiCentre.dir/compiler_depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/build/CMakeFiles/CLIB_OpenEpiCentre.dir/compiler_depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/build/CMakeFiles/CLIB_OpenEpiCentre.dir/compiler_depend.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/build/CMakeFiles/CLIB_OpenEpiCentre.dir/depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/build/CMakeFiles/CLIB_OpenEpiCentre.dir/flags.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/build/CMakeFiles/CLIB_OpenEpiCentre.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/build/CMakeFiles/CLIB_OpenEpiCentre.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/build/CMakeFiles/CLIB_OpenEpiCentre.dir/src/CLIB_OpenEpiCentre.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/build/CMakeFiles/CLIB_OpenEpiCentre.dir/src/CLIB_OpenEpiCentre.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/build/CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/CLIB_OpenEpiCentre_Algorithms.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/build/CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/CLIB_OpenEpiCentre_Algorithms.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/build/CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/CLIB_OpenEpiCentre_App.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/build/CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/CLIB_OpenEpiCentre_App.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/build/CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/CLIB_OpenEpiCentre_Data.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/build/CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/CLIB_OpenEpiCentre_Data.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/build/CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/CLIB_OpenEpiCentre_Data_Control.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/build/CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/CLIB_OpenEpiCentre_Data_Control.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/build/CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/CLIB_OpenEpiCentre_Execute.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/build/CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/CLIB_OpenEpiCentre_Execute.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/build/CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/CLIB_OpenEpiCentre_Execute_Control.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/build/CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/CLIB_OpenEpiCentre_Execute_Control.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/build/CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/CLIB_OpenEpiCentre_Framework.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/build/CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/CLIB_OpenEpiCentre_Framework.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/build/CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/CLIB_OpenEpiCentre_Global.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/build/CMakeFiles/CLIB_OpenEpiCentre.dir/src/engine/CLIB_OpenEpiCentre_Global.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/build/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/Concurrent.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/build/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/Concurrent.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/build/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/Input.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/build/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/Input.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/build/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/Output.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/build/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/Output.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/build/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/User_Algorithm.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/build/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/User_Algorithm.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/build/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/User_Input.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/build/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/User_Input.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/build/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/User_Output.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/build/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/User_Output.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/build/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/praise_sets/Algorithm_praise0.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/build/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/praise_sets/Algorithm_praise0.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/build/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/praise_sets/Input_praise0.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/build/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/praise_sets/Input_praise0.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/build/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/praise_sets/Output_praise0.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/build/CMakeFiles/CLIB_OpenEpiCentre.dir/src/structs/praise_sets/Output_praise0.cpp.o.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/build/CMakeFiles/CMakeConfigureLog.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/build/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/build/CMakeFiles/Makefile.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/build/CMakeFiles/Makefile2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/build/CMakeFiles/TargetDirectories.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/build/CMakeFiles/cmake.check_cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/build/CMakeFiles/progress.marks" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/build/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/build/cmake_install.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/build/libCLIB_OpenEpiCentre.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/include/CLIB_OpenEpiCentre.h" beforeDir="false" afterPath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/include/CLIB_OpenEpiCentre.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/include/engine/CLIB_OpenEpiCentre_Algorithms.h" beforeDir="false" afterPath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/include/engine/CLIB_OpenEpiCentre__Algorithms.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/include/engine/CLIB_OpenEpiCentre_App.h" beforeDir="false" afterPath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/include/engine/CLIB_OpenEpiCentre__App.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/include/engine/CLIB_OpenEpiCentre_Data.h" beforeDir="false" afterPath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/include/engine/CLIB_OpenEpiCentre__Data.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/include/engine/CLIB_OpenEpiCentre_Data_Control.h" beforeDir="false" afterPath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/include/engine/CLIB_OpenEpiCentre__Data__Control.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/include/engine/CLIB_OpenEpiCentre_Execute.h" beforeDir="false" afterPath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/include/engine/CLIB_OpenEpiCentre__Execute.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/include/engine/CLIB_OpenEpiCentre_Execute_Control.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/include/engine/CLIB_OpenEpiCentre_Framework.h" beforeDir="false" afterPath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/include/engine/CLIB_OpenEpiCentre__Framework.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/include/engine/CLIB_OpenEpiCentre_Global.h" beforeDir="false" afterPath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/include/engine/CLIB_OpenEpiCentre__Global.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/include/structs/Concurrent.h" beforeDir="false" afterPath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/include/structs/CLIB_OpenEpiCentre_STRUCT__Concurrent.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/include/structs/Input.h" beforeDir="false" afterPath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/include/structs/CLIB_OpenEpiCentre_STRUCT__Input.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/include/structs/Output.h" beforeDir="false" afterPath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/include/structs/CLIB_OpenEpiCentre_STRUCT__Output.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/include/structs/User_Algorithm.h" beforeDir="false" afterPath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/include/structs/CLIB_OpenEpiCentre_STRUCT__User_Algorithm.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/include/structs/User_Input.h" beforeDir="false" afterPath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/include/structs/CLIB_OpenEpiCentre_STRUCT__User_Input.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/include/structs/User_Output.h" beforeDir="false" afterPath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/include/structs/CLIB_OpenEpiCentre_STRUCT__User_Output.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/include/structs/praise_sets/Algorithm_praise0.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/include/structs/praise_sets/Algorithm_praise1.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/include/structs/praise_sets/Algorithm_praise2.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/include/structs/praise_sets/Algorithm_praise3.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/include/structs/praise_sets/Input_praise0.h" beforeDir="false" afterPath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/include/structs/praise_sets/CLIB_OpenEpiCentre_STRUCT__Input_praise0.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/include/structs/praise_sets/Input_praise1.h" beforeDir="false" afterPath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/include/structs/praise_sets/CLIB_OpenEpiCentre_STRUCT__Input_praise1.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/include/structs/praise_sets/Input_praise2.h" beforeDir="false" afterPath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/include/structs/praise_sets/CLIB_OpenEpiCentre_STRUCT__Input_praise2.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/include/structs/praise_sets/Input_praise3.h" beforeDir="false" afterPath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/include/structs/praise_sets/CLIB_OpenEpiCentre_STRUCT__Input_praise3.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/include/structs/praise_sets/Output_praise0.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/include/structs/praise_sets/Output_praise1.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/include/structs/praise_sets/Output_praise2.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/include/structs/praise_sets/Output_praise3.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/src/CLIB_OpenEpiCentre.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/src/CLIB_OpenEpiCentre.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/src/engine/CLIB_OpenEpiCentre_Algorithms.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/src/engine/CLIB_OpenEpiCentre__Algorithms.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/src/engine/CLIB_OpenEpiCentre_App.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/src/engine/CLIB_OpenEpiCentre__App.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/src/engine/CLIB_OpenEpiCentre_Data.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/src/engine/CLIB_OpenEpiCentre__Data.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/src/engine/CLIB_OpenEpiCentre_Data_Control.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/src/engine/CLIB_OpenEpiCentre__Data__Control.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/src/engine/CLIB_OpenEpiCentre_Execute.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/src/engine/CLIB_OpenEpiCentre__Execute.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/src/engine/CLIB_OpenEpiCentre_Execute_Control.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/src/engine/CLIB_OpenEpiCentre_Framework.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/src/engine/CLIB_OpenEpiCentre__Framework.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/src/engine/CLIB_OpenEpiCentre_Global.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/src/engine/CLIB_OpenEpiCentre__Global.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/src/structs/Concurrent.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/src/structs/CLIB_OpenEpiCentre_STRUCT__Concurrent.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/src/structs/Input.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/src/structs/CLIB_OpenEpiCentre_STRUCT__Input.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/src/structs/Output.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/src/structs/CLIB_OpenEpiCentre_STRUCT__Output.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/src/structs/User_Algorithm.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/src/structs/CLIB_OpenEpiCentre_STRUCT__User_Algorithm.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/src/structs/User_Input.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/src/structs/CLIB_OpenEpiCentre_STRUCT__User_Input.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/src/structs/User_Output.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/src/structs/CLIB_OpenEpiCentre_STRUCT__User_Output.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/src/structs/praise_sets/Algorithm_praise0.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/src/structs/praise_sets/Algorithm_praise1.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/src/structs/praise_sets/Algorithm_praise2.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/src/structs/praise_sets/Algorithm_praise3.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/src/structs/praise_sets/Input_praise0.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/src/structs/praise_sets/Input_praise1.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/src/structs/praise_sets/Input_praise2.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/src/structs/praise_sets/Input_praise3.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/src/structs/praise_sets/Output_praise0.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/src/structs/praise_sets/Output_praise1.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/src/structs/praise_sets/Output_praise2.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/src/structs/praise_sets/Output_praise3.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engine/Execute.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/Execute.cpp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,6 +205,12 @@
 }</component>
   <component name="MacroExpansionManager">
     <option name="directoryName" value="CTokbUvL" />
+  </component>
+  <component name="ProjectApplicationVersion">
+    <option name="ide" value="CLion" />
+    <option name="majorVersion" value="2026" />
+    <option name="minorVersion" value="1.4" />
+    <option name="productBranch" value="Classic" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4,
@@ -81,7 +240,7 @@
     "cidr.known.project.marker": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/brenton-james/CLionProjects/OpenEpiCentre_BackEndUbuntu/CLIB_OpenEpiCentre",
+    "last_opened_file_path": "/home/brenton-james/CLionProjects/OpenEpiCentre_BackEndUbuntu/TestBench/libs/CLIB_WriteQueForThreadsAt_SIMULATION",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -92,27 +251,91 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/libs/CLIB_LaunchQueForThreadsAt_Server/src" />
-      <recent name="$PROJECT_DIR$/libs/CLIB_LaunchQueForThreadsAt_Server/include" />
       <recent name="$PROJECT_DIR$/libs/CLIB_WriteQueForThreadsAt_SIMULATION" />
       <recent name="$PROJECT_DIR$/libs/CLIB_WriteQueForThreadsAt_ServerOutputSend" />
       <recent name="$PROJECT_DIR$/libs/CLIB_WriteQueForThreadsAt_ServerInputReceive" />
+      <recent name="$PROJECT_DIR$/libs/CLIB_LaunchQueForThreadsAt_Server" />
+      <recent name="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/include" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/libs/CLIB_LaunchQueForThreadsAt_Server" />
-      <recent name="$PROJECT_DIR$/include" />
-      <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/include/io" />
+      <recent name="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/src/engine" />
+      <recent name="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/src/structs/praise_sets" />
+      <recent name="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/src/structs" />
+      <recent name="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/include/structs" />
+      <recent name="$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/src" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="C/C++ File.Main.cpp">
+    <configuration default="true" type="CMakeBoostTestRunConfigurationType" factoryName="Boost Test" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" TEST_MODE="SUITE_TEST">
+      <method v="2">
+        <option name="BeforeTestRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="CMakeCatchTestRunConfigurationType" factoryName="Catch Test" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" TEST_MODE="SUITE_TEST">
+      <method v="2">
+        <option name="BeforeTestRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="CMakeDoctestTestRunConfigurationType" factoryName="doctest Test" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" TEST_MODE="SUITE_TEST">
+      <method v="2">
+        <option name="BeforeTestRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" TEST_MODE="SUITE_TEST">
+      <method v="2">
+        <option name="BeforeTestRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CLIB_LaunchQueForThreadsAt_Server" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="TestBench" TARGET_NAME="CLIB_LaunchQueForThreadsAt_Server" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CLIB_OpenEpiCentre" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="TestBench" TARGET_NAME="CLIB_OpenEpiCentre" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CLIB_WriteQueForThreadsAt_SIMULATION" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="TestBench" TARGET_NAME="CLIB_WriteQueForThreadsAt_SIMULATION" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CLIB_WriteQueForThreadsAt_ServerInputReceive" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="TestBench" TARGET_NAME="CLIB_WriteQueForThreadsAt_ServerInputReceive" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CLIB_WriteQueForThreadsAt_ServerOutputSend" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="TestBench" TARGET_NAME="CLIB_WriteQueForThreadsAt_ServerOutputSend" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestBench" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="TestBench" TARGET_NAME="TestBench" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="TestBench" RUN_TARGET_NAME="TestBench">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main.cpp" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="TestBench" TARGET_NAME="Main.cpp" CONFIG_NAME="Main.cpp">
       <option name="sourceFile" value="Main.cpp" />
       <method v="2">
         <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="C/C++ File.Main.cpp" />
+      <item itemvalue="CMake Application.TestBench" />
+      <item itemvalue="CMake Application.CLIB_LaunchQueForThreadsAt_Server" />
+      <item itemvalue="CMake Application.CLIB_OpenEpiCentre" />
+      <item itemvalue="CMake Application.CLIB_WriteQueForThreadsAt_ServerInputReceive" />
+      <item itemvalue="CMake Application.CLIB_WriteQueForThreadsAt_ServerOutputSend" />
+      <item itemvalue="CMake Application.CLIB_WriteQueForThreadsAt_SIMULATION" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="C/C++ File.Main.cpp" />
@@ -144,6 +367,21 @@
       <workItem from="1783300576842" duration="216000" />
       <workItem from="1783479852011" duration="3411000" />
       <workItem from="1783495300565" duration="213000" />
+      <workItem from="1783503777167" duration="1624000" />
+      <workItem from="1783550776258" duration="909000" />
+      <workItem from="1783559989863" duration="426000" />
+      <workItem from="1783562164871" duration="295000" />
+      <workItem from="1783563262953" duration="1160000" />
+      <workItem from="1783643825775" duration="22000" />
+      <workItem from="1783651431991" duration="998000" />
+      <workItem from="1783654697887" duration="683000" />
+      <workItem from="1783655468683" duration="4454000" />
+      <workItem from="1783673862200" duration="6246000" />
+      <workItem from="1783748306771" duration="3996000" />
+      <workItem from="1783812911123" duration="3875000" />
+      <workItem from="1783818392890" duration="2519000" />
+      <workItem from="1783820931806" duration="2137000" />
+      <workItem from="1783823174247" duration="2881000" />
     </task>
     <task id="LOCAL-00001" summary="DEVELOPMENT_2026_06_24_1021, &lt;COMPILE_ERRORS&gt;.&#10;&#10;LINKING ERROR:&#10;undefined reference to `CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::app_REG_get_Flag_ConcurrentCoreState(unsigned char*)'&#10;&#10;IMPLEMENTED:&#10;- defined member function(s), renamed as called, in structs outout(s).">
       <option name="closed" value="true" />
@@ -307,14 +545,38 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/src/engine/CLIB_OpenEpiCentre_Execute.cpp</url>
-          <line>53</line>
+          <url>file://$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/src/engine/CLIB_OpenEpiCentre__Execute.cpp</url>
+          <line>52</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/libs/CLIB_WriteQueForThreadsAt_ServerOutputSend/include/WriteEnableForThreadsAt_ServerOutputSend__Framework.h</url>
           <line>2</line>
           <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/include/engine/CLIB_OpenEpiCentre__App.h</url>
+          <line>2</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/include/structs/CLIB_OpenEpiCentre_STRUCT__User_Output.h</url>
+          <line>2</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/include/structs/praise_sets/CLIB_OpenEpiCentre_STRUCT__Output_praise1.h</url>
+          <line>27</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/include/structs/praise_sets/CLIB_OpenEpiCentre_STRUCT__Output_praise2.h</url>
+          <line>27</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/libs/CLIB_OpenEpiCentre/src/structs/praise_sets/CLIB_OpenEpiCentre_STRUCT__Output_praise3.cpp</url>
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
