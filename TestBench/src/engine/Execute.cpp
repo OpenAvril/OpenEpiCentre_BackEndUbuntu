@@ -2,7 +2,7 @@
 #include "../../libs/CLIB_WriteQueForThreadsAt_SIMULATION/include/CLIB_WriteEnableForThreadsAt_SIMULATION.h"
 #include "../../include/engine/Execute.h"
 #include "../../include/engine/Execute_Control.h"
-#include "../../include/engine/Framework_App.h"
+#include "../../include/engine/Framework.h"
 #include "../../include/engine/Global.h"
 #include <iostream>
 #include <list>
@@ -37,13 +37,13 @@ TestBench_Cpp_OpenEpiCentre::Execute_Control* TestBench_Cpp_OpenEpiCentre::Execu
         stat_REG_boot1_DEFINE_List_Of_Threads();
         std::cout << "exiting dyn_REG_boot1_DEFINE_Execute()" << std::endl;
     }
-    void TestBench_Cpp_OpenEpiCentre::Execute::dyn_REG_boot2_SUBSTANTIATE_Execute(Framework_App* obj)
+    void TestBench_Cpp_OpenEpiCentre::Execute::dyn_REG_boot2_SUBSTANTIATE_Execute(Framework* obj)
     {
         std::cout << "entered dyn_REG_boot2_SUBSTANTIATE_Execute()" << std::endl;
         stat_REG_boot2_SUBSTANTIATE_List_Of_Threads(obj);
         std::cout << "exiting dyn_REG_boot2_SUBSTANTIATE_Execute()" << std::endl;
     }
-    void TestBench_Cpp_OpenEpiCentre::Execute::dyn_REG_boot3_INITIALISE_Execute(Framework_App* obj)
+    void TestBench_Cpp_OpenEpiCentre::Execute::dyn_REG_boot3_INITIALISE_Execute(Framework* obj)
     {
         std::cout << "entered dyn_REG_boot3_INITIALISE_Execute()" << std::endl;
         stat_REG_boot3_INITIALISE_List_Of_Threads(obj);
@@ -91,10 +91,10 @@ TestBench_Cpp_OpenEpiCentre::Execute_Control* TestBench_Cpp_OpenEpiCentre::Execu
         CLIBOpenEpiCentre::CLIBConcurrentServerIO::CLIBConcurrentServerIO__dyn_REG_get_flag_isStackLoaded_ServerInputReceive();
         CLIBOpenEpiCentre::CLIBConcurrentServerIO::CLIBConcurrentServerIO__dyn_REG_get_flag_isStackLoaded_ServerOutputSend();
         CLIBOpenEpiCentre::CLIBConcurrentServerIO::CLIBConcurrentServerIO__dyn_REG_get_flag_IsInitialised_CLIBOpenEpiCentre();
-        CLIBOpenEpiCentre::CLIBConcurrentServerIO::CLIBConcurrentServerIO__io_PRAISE_get_Item_Output_praise0_Value();
-        CLIBOpenEpiCentre::CLIBConcurrentServerIO::CLIBConcurrentServerIO__io_PRAISE_get_Item_Output_praise1_Value();
-        CLIBOpenEpiCentre::CLIBConcurrentServerIO::CLIBConcurrentServerIO__io_PRAISE_get_Item_Output_praise2_Value();
-        CLIBOpenEpiCentre::CLIBConcurrentServerIO::CLIBConcurrentServerIO__io_PRAISE_get_Item_Output_praise3_Value();
+        CLIBOpenEpiCentre::CLIBConcurrentServerIO::CLIBConcurrentServerIO__io_PRAISE_get_Item_CLIB_OpenEpiCentre_STRUCT__Output_praise0_Value();
+        CLIBOpenEpiCentre::CLIBConcurrentServerIO::CLIBConcurrentServerIO__io_PRAISE_get_Item_CLIB_OpenEpiCentre_STRUCT__Output_praise1_Value();
+        CLIBOpenEpiCentre::CLIBConcurrentServerIO::CLIBConcurrentServerIO__io_PRAISE_get_Item_CLIB_OpenEpiCentre_STRUCT__Output_praise2_Value();
+        CLIBOpenEpiCentre::CLIBConcurrentServerIO::CLIBConcurrentServerIO__io_PRAISE_get_Item_CLIB_OpenEpiCentre_STRUCT__Output_praise3_Value();
         CLIBOpenEpiCentre::CLIBConcurrentServerIO::CLIBConcurrentServerIO__io_PRAISE_set_Item_Input_praise0_Value_A(bytes_uint8_t);
         CLIBOpenEpiCentre::CLIBConcurrentServerIO::CLIBConcurrentServerIO__io_PRAISE_set_Item_Input_praise0_Value_B(bytes_uint8_t);
         CLIBOpenEpiCentre::CLIBConcurrentServerIO::CLIBConcurrentServerIO__io_PRAISE_set_Item_Input_praise1_Value_A(bytes_uint8_t);
@@ -136,7 +136,7 @@ TestBench_Cpp_OpenEpiCentre::Execute_Control* TestBench_Cpp_OpenEpiCentre::Execu
     {
         _stat_REG_List_Of_Threads = nullptr;
     }
-    void TestBench_Cpp_OpenEpiCentre::Execute::stat_REG_boot2_SUBSTANTIATE_List_Of_Threads(class Framework_App* obj)
+    void TestBench_Cpp_OpenEpiCentre::Execute::stat_REG_boot2_SUBSTANTIATE_List_Of_Threads(class Framework* obj)
     {
         _stat_REG_List_Of_Threads = new std::list<std::thread*>();
         while (stat_PGM_get_ptr_List_Of_Threads() == nullptr) { }
@@ -148,7 +148,7 @@ TestBench_Cpp_OpenEpiCentre::Execute_Control* TestBench_Cpp_OpenEpiCentre::Execu
             *temp = nullptr;
         }
     }
-    void TestBench_Cpp_OpenEpiCentre::Execute::stat_REG_boot3_INITIALISE_List_Of_Threads(class Framework_App* obj)
+    void TestBench_Cpp_OpenEpiCentre::Execute::stat_REG_boot3_INITIALISE_List_Of_Threads(class Framework* obj)
     {
         for (uint8_t threadId = 0; threadId < sizeof(*stat_PGM_get_ptr_List_Of_Threads()); threadId++)
         {
