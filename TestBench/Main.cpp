@@ -1,6 +1,5 @@
 #include "IO.h"
 #include "include/engine/Framework.h"
-namespace TestBench_Cpp_OpenEpiCentre {
     int main()
     {
         TestBench_Cpp_OpenEpiCentre::Framework* pgm = nullptr;
@@ -9,4 +8,3 @@ namespace TestBench_Cpp_OpenEpiCentre {
 
         return 0;
     }
-}
