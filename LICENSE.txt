@@ -1,7 +1,7 @@
 MIT License
 
-Copyright (c) 2026 OpenAvril - OpenEpiCentre: Concurrent Input / Output
-Server. King Brenton James Maddocks BEng(CompSys).
+Copyright (c) 2022 - 2026 OpenAvrilCLIB - OpenEpiCentre - Concurrent Server 
+with IO wrapper. King Brenton James Maddocks BEng(CompSys).
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -74,8 +74,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 MIT License
 
-Copyright (c) 2022 - 2026 OpenAvrilCLIB - Library for Request, Wait, Write for
-Threads at Stacks. Crown Brenton James Maddocks BEng(CompSys).
+Copyright (c) 2026, CLIB Write Que For Threads At Register Sets. SWINBURNE 
+University of Technology - Peter O'Donoghue and King Brenton James Maddocks 
+Crown of Queensland BEng(CompSys).
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
