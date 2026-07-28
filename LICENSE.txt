@@ -1,6 +1,7 @@
 MIT License
 
-Copyright (c) 2026 OpenEpiCentre - Concurrent Input/Output Server. Brenton James Maddocks BEng(CompSys).
+Copyright (c) 2026 OpenAvril - OpenEpiCentre: Concurrent Input / Output
+Server. King Brenton James Maddocks BEng(CompSys).
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -24,7 +25,8 @@ SOFTWARE.
 
 MIT License
 
-Copyright (c) 2022 - 2026 OpenAvril - Library for Request, Wait & Launch Next Free Concurrent Thread At Ends. Brenton James Maddocks BEng(CompSys).
+Copyright (c) 2022 - 2026 OpenAvrilCLIB - Library for Request, Wait, & Launch 
+Next Free Concurrent Thread At Ends. King Brenton James Maddocks BEng(CompSys).
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -72,7 +74,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 MIT License
 
-Copyright (c) 2022 - 2026 OpenAvril - Library for Request, Wait, Write for Threads at Stacks. Brenton James Maddocks BEng(CompSys).
+Copyright (c) 2022 - 2026 OpenAvrilCLIB - Library for Request, Wait, Write for
+Threads at Stacks. Crown Brenton James Maddocks BEng(CompSys).
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -91,5 +94,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
-
