@@ -6,7 +6,7 @@
 	CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT__Output_praise2* CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT__User_Output::_stat_CLASS_ptr_CLIB_OpenEpiCentre_STRUCT__Output_praise2;
 	CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT__Output_praise3* CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT__User_Output::_stat_CLASS_ptr_CLIB_OpenEpiCentre_STRUCT__Output_praise3;
 // public.
-	CLIBOpenEpiCentre::Object* CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT__User_Output::dyn_CLASS_get_Item_On_List_Of_ptr_PraiseOutputSubsets(uint8_t praiseId)
+	CLIBOpenEpiCentre::Object* CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT__User_Output::dyn_CLASS_get_Item_On_List_Of_ptr_PraiseOutputSubsets(int32_t praiseId)
 	{
 		switch (praiseId)
 		{
