@@ -1,5 +1,6 @@
 #ifndef CLIB_LAUNCHENABLEFORCONCURRENTTHREADSAT_Server_CLIB_LAUNCHENABLEFORCONCURRENTTHREADSAT_Server_H
 #define CLIB_LAUNCHENABLEFORCONCURRENTTHREADSAT_Server_CLIB_LAUNCHENABLEFORCONCURRENTTHREADSAT_Server_H
+#include "LaunchEnableForConcurrentThreadsAt_Server__Framework.h"
 extern "C"
 {
     namespace CLIBLaunchQueAtServer
@@ -22,7 +23,7 @@ extern "C"
             static void CLIB_LaunchEnableForConcurrentThreadsAt_Server__stat_app_FUNCT_Calc_IsAllINSTANTIATED();
             static void CLIB_LaunchEnableForConcurrentThreadsAt_Server__stat_CLASS_boot1_DEFINE_LaunchEnableForConcurrentThreadsAt_Server__Framework();
             static void CLIB_LaunchEnableForConcurrentThreadsAt_Server__stat_CLASS_boot3_INITIALISE_LaunchEnableForConcurrentThreadsAt_Server__Framework();
-            static class LaunchEnableForConcurrentThreadsAt_Server__Framework* CLIB_LaunchEnableForConcurrentThreadsAt_Server__stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__Framework();
+            static LaunchEnableForConcurrentThreadsAt_Server__Framework* CLIB_LaunchEnableForConcurrentThreadsAt_Server__stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__Framework();
             static void CLIB_LaunchEnableForConcurrentThreadsAt_Server__stat_dyn_REG_boot1_DEFINE_CLIBLaunchQueAtServer_isFlagINSTANTIATED();
             static void CLIB_LaunchEnableForConcurrentThreadsAt_Server__stat_REG_boot2_SUBSTANTIATE_CLIBLaunchQueAtServer_isFlagINSTANTIATED();
             static void CLIB_LaunchEnableForConcurrentThreadsAt_Server__stat_REG_boot3_INITIALISE_CLIBLaunchQueAtServer_isFlagINSTANTIATED();

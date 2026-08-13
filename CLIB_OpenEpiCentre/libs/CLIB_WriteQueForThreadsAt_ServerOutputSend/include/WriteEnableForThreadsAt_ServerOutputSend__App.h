@@ -9,8 +9,8 @@ namespace CLIBWriteQueAtServerOutputSend
     public:
         WriteEnableForThreadsAt_ServerOutputSend__App();
         virtual ~WriteEnableForThreadsAt_ServerOutputSend__App();
-        void dyn_APP_FUNCT_write_End(WriteEnableForThreadsAt_ServerOutputSend__Framework* obj, int32_t coreId);
-        void dyn_APP_FUNCT_write_Start(WriteEnableForThreadsAt_ServerOutputSend__Framework* obj, int32_t coreId);
+        void dyn_APP_FUNCT_write_End(WriteEnableForThreadsAt_ServerOutputSend__Framework* obj, uint64_t coreId);
+        void dyn_APP_FUNCT_write_Start(WriteEnableForThreadsAt_ServerOutputSend__Framework* obj, uint64_t coreId);
         WriteEnableForThreadsAt_ServerOutputSend__Control* dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerOutputSend__App__Control();
         void REG_boot1_DEFINE_WriteEnableForThreadsAt_ServerOutputSend__App(WriteEnableForThreadsAt_ServerOutputSend__Framework* obj);
         void REG_boot2_SUBSTANTIATE_WriteEnableForThreadsAt_ServerOutputSend__App(WriteEnableForThreadsAt_ServerOutputSend__Framework* obj);

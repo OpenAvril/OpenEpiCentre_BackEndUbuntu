@@ -10,7 +10,7 @@ namespace CLIBOpenEpiCentre
 	struct CLIB_OpenEpiCentre_STRUCT__User_Input
 	{
 	public:
-		class Object* dyn_CLASS_get_Item_On_List_Of_ptr_PraiseInputSubsets(int32_t praiseId);
+		class Object* dyn_CLASS_get_Item_On_List_Of_ptr_PraiseInputSubsets(uint64_t praiseId);
 		void dyn_REG_boot1_DEFINE_User_Input();
 		void dyn_REG_boot2_SUBSTANTIATE_User_Input();
 		void dyn_REG_boot3_INITIALISE_User_Input();

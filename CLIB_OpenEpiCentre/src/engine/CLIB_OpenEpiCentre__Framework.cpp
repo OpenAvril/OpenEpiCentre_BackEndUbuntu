@@ -65,7 +65,7 @@
 		obj->stat_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_App();
 		obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_Global()->dyn_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_Global();
 		obj->stat_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Algorithms()->dyn_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_Algorithm(obj);
-		for (int32_t concurrentThreadId = 0; concurrentThreadId < static_cast<int32_t>(3); concurrentThreadId++)//NUMBER OF CONCURRENT THREADS.
+		for (uint64_t concurrentThreadId = 0; concurrentThreadId < static_cast<uint64_t>(3); concurrentThreadId++)//NUMBER OF CONCURRENT THREADS.
 		{
 			obj->stat_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Algorithms()->dyn_STRUCT_get_Item_On_list_Of_ptr_Concurrent(concurrentThreadId)->dyn_REG_boot2_SUBSTANTIATE_Concurrent();
 		}
@@ -80,7 +80,7 @@
 		obj->stat_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_App();
 		obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_Global()->dyn_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_Global();
 		obj->stat_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Algorithms()->dyn_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_Algorithm(obj, stat_STRUCT_get_Concurrent());
-		for (int32_t concurrentThreadId = 0; concurrentThreadId < static_cast<int32_t>(3); concurrentThreadId++)//NUMBER OF CONCURRENT THREADS.
+		for (uint64_t concurrentThreadId = 0; concurrentThreadId < static_cast<uint64_t>(3); concurrentThreadId++)//NUMBER OF CONCURRENT THREADS.
 		{
 			obj->stat_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Algorithms()->dyn_STRUCT_get_Item_On_list_Of_ptr_Concurrent(concurrentThreadId)->dyn_REG_boot3_INITIALISE_Concurrent(obj);
 		}

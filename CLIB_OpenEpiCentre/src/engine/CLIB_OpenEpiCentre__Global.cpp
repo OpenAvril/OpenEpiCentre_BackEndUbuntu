@@ -11,8 +11,8 @@ enum Axis
     {
         ADDER
     };
-    int32_t* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::_stat_REG_ptr_number_Of_Implemented_Cores;
-    int32_t* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::_stat_REG__ptr_number_Of_Praise_Events;
+    std::byte* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::_stat_REG_ptr_number_Of_Implemented_Cores;
+    int64_t* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::_stat_REG_ptr_number_Of_Praise_Events;
 // public.
     CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::CLIB_OpenEpiCentre__Global()
     {
@@ -26,7 +26,7 @@ enum Axis
     CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::~CLIB_OpenEpiCentre__Global()
     {
         delete _stat_REG_ptr_number_Of_Implemented_Cores;
-        delete _stat_REG__ptr_number_Of_Praise_Events;
+        delete _stat_REG_ptr_number_Of_Praise_Events;
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::dyn_REG_boot1_DEFINE_CLIB_OpenEpiCentre_Global()
     {
@@ -55,11 +55,11 @@ enum Axis
 
         std::cout << "exiting dyn_REG_boot4_INSTANTIATE_CLIB_OpenEpiCentre_Global()" << std::endl;
     }
-    int32_t CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::dyn_REG_get_Item_number_Of_Implemented_Cores()
+    std::byte CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::dyn_REG_get_Item_number_Of_Implemented_Cores()
     {
         return *stat_REG_get_Ptr_number_Of_Implemented_Cores();
     }
-    int32_t CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::dyn_REG_get_Item_number_Of_Praise_Events()
+    int64_t CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::dyn_REG_get_Item_number_Of_Praise_Events()
     {
         return *stat_REG_get_Ptr_number_Of_Praise_Events();
     }
@@ -108,7 +108,7 @@ enum Axis
     unsigned char* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::stat_CONVERT_MsbBoolean_To_MsbByteArray(bool value)
     {
         unsigned char* buffer;
-        for (int32_t bitIndex = 0; bitIndex < sizeof(unsigned char); bitIndex++) {
+        for (uint64_t bitIndex = 0; bitIndex < sizeof(unsigned char); bitIndex++) {
             buffer[bitIndex] = static_cast<unsigned char>(value);
         }
         return buffer;
@@ -129,10 +129,10 @@ enum Axis
         std::memcpy(&temp, byteArray, sizeof(float));
         return temp;
     }
-    int32_t CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::stat_CONVERT_MsbByteArray_To_Msbint32_t(const unsigned char* byteArray)
+    uint64_t CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::stat_CONVERT_MsbByteArray_To_Msbuint64_t(const unsigned char* byteArray)
     {
-        int32_t temp;
-        std::memcpy(&temp, byteArray, sizeof(int32_t));
+        uint64_t temp;
+        std::memcpy(&temp, byteArray, sizeof(uint64_t));
         return temp;
     }
     unsigned char* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::stat_CONVERT_MsbFloat_To_MsbByteArray(float value)
@@ -147,10 +147,10 @@ enum Axis
         std::memcpy(buffer, &value, sizeof(double));
         return buffer;
     }
-    unsigned char* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::stat_CONVERT_int32_t_to_ByteArray(int32_t value)
+    unsigned char* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::stat_CONVERT_uint64_t_to_ByteArray(uint64_t value)
     {
         unsigned char* buffer;
-        std::memcpy(buffer, &value, sizeof(int32_t));
+        std::memcpy(buffer, &value, sizeof(uint64_t));
         return buffer;
     }
 // private.
@@ -160,31 +160,31 @@ enum Axis
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::stat_REG_boot1_DEFINE_number_Of_Praise_Events()
     {
-        _stat_REG__ptr_number_Of_Praise_Events = nullptr;
+        _stat_REG_ptr_number_Of_Praise_Events = nullptr;
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::stat_REG_boot2_SUBSTANTIATE_number_Of_Implemented_Cores()
     {
-        _stat_REG_ptr_number_Of_Implemented_Cores = new int32_t();
-        *_stat_REG_ptr_number_Of_Implemented_Cores = static_cast<int32_t>(UINT8_MAX);
+        _stat_REG_ptr_number_Of_Implemented_Cores = new std::byte();
+        *_stat_REG_ptr_number_Of_Implemented_Cores = static_cast<std::byte>(255);
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::stat_REG_boot2_SUBSTANTIATE_number_Of_Praise_Events()
     {
-        _stat_REG__ptr_number_Of_Praise_Events = new int32_t();
-        *_stat_REG__ptr_number_Of_Praise_Events = static_cast<int32_t>(UINT8_MAX);
+        _stat_REG_ptr_number_Of_Praise_Events = new int64_t();
+        *_stat_REG_ptr_number_Of_Praise_Events = static_cast<uint64_t>(INT64_MAX);
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::stat_REG_boot3_INITIALISE_number_Of_Implemented_Cores()
     {
-        *_stat_REG_ptr_number_Of_Implemented_Cores = static_cast<int32_t>(4);
+        *_stat_REG_ptr_number_Of_Implemented_Cores = static_cast<std::byte>(4);
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::stat_REG_boot3_INITIALISE_number_Of_Praise_Events()
     {
-        *_stat_REG__ptr_number_Of_Praise_Events = static_cast<int32_t>(1);
+        *_stat_REG_ptr_number_Of_Praise_Events = static_cast<int64_t>(1);
     }
-    int32_t* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::stat_REG_get_Ptr_number_Of_Implemented_Cores()
+    std::byte* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::stat_REG_get_Ptr_number_Of_Implemented_Cores()
     {
         return _stat_REG_ptr_number_Of_Implemented_Cores;
     }
-    int32_t* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::stat_REG_get_Ptr_number_Of_Praise_Events()
+    int64_t* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::stat_REG_get_Ptr_number_Of_Praise_Events()
     {
-        return _stat_REG__ptr_number_Of_Praise_Events;
+        return _stat_REG_ptr_number_Of_Praise_Events;
     }

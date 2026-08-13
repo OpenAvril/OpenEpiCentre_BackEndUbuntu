@@ -1,5 +1,6 @@
 #ifndef OPENEPICENTRE_BACKENDUBUNTU_CLIB_OPENEPICENTRE__GLOBAL_H
 #define OPENEPICENTRE_BACKENDUBUNTU_CLIB_OPENEPICENTRE__GLOBAL_H
+#include <cstddef>
 #include <cstdint>
 namespace CLIBOpenEpiCentre
 {
@@ -12,8 +13,8 @@ namespace CLIBOpenEpiCentre
         void dyn_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_Global();
         void dyn_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_Global();
         void dyn_REG_boot4_INSTANTIATE_CLIB_OpenEpiCentre_Global();
-        int32_t dyn_REG_get_Item_number_Of_Implemented_Cores();
-        int32_t dyn_REG_get_Item_number_Of_Praise_Events();
+        std::byte dyn_REG_get_Item_number_Of_Implemented_Cores();
+        int64_t dyn_REG_get_Item_number_Of_Praise_Events();
         static void stat_CLASS_boot0_DECLARE_CLIB_OpenEpiCentre_Global();
         static void stat_CLASS_boot1_DEFINE_CLIB_OpenEpiCentre_Global();
         static void stat_CLASS_boot3_INITIALISE_CLIB_OpenEpiCentre_Global();
@@ -24,22 +25,22 @@ namespace CLIBOpenEpiCentre
         static bool stat_CONVERT_MsbByteArray_To_MsbBoolean(const unsigned char* byteArray);
         static double stat_CONVERT_MsbByteArray_To_MsbDouble(const unsigned char* byteArray);
         static float stat_CONVERT_MsbByteArray_To_MsbFloat(const unsigned char* byteArray);
-        static int32_t stat_CONVERT_MsbByteArray_To_Msbint32_t(const unsigned char* byteArray);
-        static unsigned char* stat_CONVERT_MsbInt_To_MsbByteArray(int32_t value);
+        static uint64_t stat_CONVERT_MsbByteArray_To_Msbuint64_t(const unsigned char* byteArray);
+        static unsigned char* stat_CONVERT_MsbInt_To_MsbByteArray(uint64_t value);
         static unsigned char* stat_CONVERT_MsbFloat_To_MsbByteArray(float value);
         static unsigned char* stat_CONVERT_MsbDouble_To_MsbByteArray(double value);
-        static unsigned char* stat_CONVERT_int32_t_to_ByteArray(int32_t value);
+        static unsigned char* stat_CONVERT_uint64_t_to_ByteArray(uint64_t value);
     private:
-        static int32_t* _stat_REG_ptr_number_Of_Implemented_Cores;
-        static int32_t* _stat_REG__ptr_number_Of_Praise_Events;
+        static std::byte* _stat_REG_ptr_number_Of_Implemented_Cores;
+        static int64_t* _stat_REG_ptr_number_Of_Praise_Events;
         static void stat_REG_boot1_DEFINE_number_Of_Implemented_Cores();
         static void stat_REG_boot1_DEFINE_number_Of_Praise_Events();
         static void stat_REG_boot2_SUBSTANTIATE_number_Of_Implemented_Cores();
         static void stat_REG_boot2_SUBSTANTIATE_number_Of_Praise_Events();
         static void stat_REG_boot3_INITIALISE_number_Of_Implemented_Cores();
         static void stat_REG_boot3_INITIALISE_number_Of_Praise_Events();
-        static int32_t* stat_REG_get_Ptr_number_Of_Implemented_Cores();
-        static int32_t* stat_REG_get_Ptr_number_Of_Praise_Events();
+        static std::byte* stat_REG_get_Ptr_number_Of_Implemented_Cores();
+        static int64_t* stat_REG_get_Ptr_number_Of_Praise_Events();
     };
 }
 #endif //OPENEPICENTRE_BACKENDUBUNTU_CLIB_OPENEPICENTRE_GLOBAL_H
