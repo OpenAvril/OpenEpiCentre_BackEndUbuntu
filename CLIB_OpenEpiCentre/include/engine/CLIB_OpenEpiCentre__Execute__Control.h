@@ -15,7 +15,7 @@ namespace CLIBOpenEpiCentre
         void dyn_REG_boot3_INITIALISE_CLIB_OpenEpiCentre__Execute__Control(class CLIB_OpenEpiCentre__Framework* obj);
         void dyn_REG_boot4_INSTANTIATE_CLIB_OpenEpiCentre__Execute__Control(class CLIB_OpenEpiCentre__Framework* obj);
         bool dyn_REG_get_Flag_is_SystemInitialised();
-        bool dyn_REG_get_Item_On_List_Of_Flag_ThreadInitialised(uint64_t threadID);
+        bool dyn_REG_get_Item_On_List_Of_Flag_ThreadInitialised(unsigned long long threadID);
         static void stat_CLASS_boot0_DECLARE_CLIB_OpenEpiCentre__Execute__Control();
         static void stat_CLASS_boot1_DEFINE_CLIB_OpenEpiCentre__Execute__Control();
         static void stat_CLASS_boot3_INITIALISE_CLIB_OpenEpiCentre__Execute__Control();

@@ -12,16 +12,16 @@ namespace CLIBOpenEpiCentre
     struct CLIB_OpenEpiCentre_STRUCT__Output
     {
     public:
-        void app_select_And_Set_Output_Subset(CLIB_OpenEpiCentre__Framework* obj, uint64_t praiseEventId);
+        void app_select_And_Set_Output_Subset(CLIB_OpenEpiCentre__Framework* obj, unsigned long long praiseEventId);
         void dyn_REG_boot1_DEFINE_Output();
         void dyn_REG_boot2_SUBSTANTIATE_Output();
         void dyn_REG_boot3_INITIALISE_Output(CLIB_OpenEpiCentre__Framework* obj);
         void dyn_REG_boot4_INSTANTIATE_Output();
-        uint64_t dyn_REG_get_ptr_Output_playerId();
-        uint64_t dyn_REG_get_ptr_CLIB_OpenEpiCentre_STRUCT__Output_praiseEventId();
+        unsigned long long dyn_REG_get_ptr_Output_playerId();
+        unsigned long long dyn_REG_get_ptr_CLIB_OpenEpiCentre_STRUCT__Output_praiseEventId();
         class Object* dyn_REG_get_ptr_Item_Of_ptr_Outputs_Subset();
-        void dyn_REG_set_Output_playerId(uint64_t newPraiseId);
-        void dyn_REG_set_ptr_CLIB_OpenEpiCentre_STRUCT__Output_praiseEventId(uint64_t new_uint64_t);
+        void dyn_REG_set_Output_playerId(unsigned long long newPraiseId);
+        void dyn_REG_set_ptr_CLIB_OpenEpiCentre_STRUCT__Output_praiseEventId(unsigned long long new_unsignedLongLong);
         void dyn_REG_set_ptr_Item_Of_ptr_Outputs_Subset(class CLIB_OpenEpiCentre_STRUCT__Output_praise0* objOutputSubset);
         void dyn_REG_set_ptr_Item_Of_ptr_Outputs_Subset(class CLIB_OpenEpiCentre_STRUCT__Output_praise1* objOutputSubset);
         void dyn_REG_set_ptr_Item_Of_ptr_Outputs_Subset(class CLIB_OpenEpiCentre_STRUCT__Output_praise2* objOutputSubset);
@@ -32,8 +32,8 @@ namespace CLIBOpenEpiCentre
         static void stat_CLASS_boot4_INSTANTIATE_Output();
         static void stat_REG_boot0_DECLARE_Output();
     private:
-        static uint64_t* _REG_ptr_CLIB_OpenEpiCentre_STRUCT__Output_praiseEventId;
-        static uint64_t* _REG_ptr_Output_playerId;
+        static unsigned long* _REG_ptr_CLIB_OpenEpiCentre_STRUCT__Output_praiseEventId;
+        static unsigned long* _REG_ptr_Output_playerId;
         static std::list<Object*>* _REG_ptr_List_Of_PraiseOutputSubset;
         static void stat_REG_boot1_DEFINE_CLIB_OpenEpiCentre_STRUCT__Output_praiseEventId();
         static void stat_REG_boot1_DEFINE_Output_playerId();
@@ -43,9 +43,9 @@ namespace CLIBOpenEpiCentre
         static void stat_REG_boot2_SUBSTANTIATE_List_Of_PraiseOutputSubset();
         static void stat_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_STRUCT__Output_praiseEventId();
         static void stat_REG_boot3_INITIALISE_Output_playerId();
-        static void stat_REG_boot3_INITIALISE_List_Of_PraiseOutputSubset(CLIB_OpenEpiCentre__Framework* obj, uint64_t praiseId);
-        static uint64_t* stat_REG_get_ptr_Output_playerId();
-        static uint64_t* stat_REG_get_ptr_CLIB_OpenEpiCentre_STRUCT__Output_praiseEventId();
+        static void stat_REG_boot3_INITIALISE_List_Of_PraiseOutputSubset(CLIB_OpenEpiCentre__Framework* obj, unsigned long long praiseId);
+        static unsigned long* stat_REG_get_ptr_Output_playerId();
+        static unsigned long* stat_REG_get_ptr_CLIB_OpenEpiCentre_STRUCT__Output_praiseEventId();
         static std::list<Object*>* stat_REG_get_ptr_Item_Of_ptr_Outputs_Subset();
     };
 }

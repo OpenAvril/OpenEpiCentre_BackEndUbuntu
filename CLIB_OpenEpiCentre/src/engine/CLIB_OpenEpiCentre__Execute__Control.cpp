@@ -48,7 +48,7 @@ bool* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Execute__Control::_stat_REG_ptr_Fla
 	{
 		return stat_REG_get_ptr_Flag_is_SystemInitialised();
 	}
-	bool CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Execute__Control::dyn_REG_get_Item_On_List_Of_Flag_ThreadInitialised(uint64_t threadID)
+	bool CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Execute__Control::dyn_REG_get_Item_On_List_Of_Flag_ThreadInitialised(unsigned long long threadID)
 	{
 		auto temp = stat_get_ptr_list_Of_flag_ThreadInitialised()->begin();
 		std::advance(temp, threadID);
@@ -102,7 +102,7 @@ bool* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Execute__Control::_stat_REG_ptr_Fla
 	{
 		_stat_REG_ptr_Flag_array_ThreadInitialised = new std::array<bool, 4>();
 		while (stat_get_ptr_list_Of_flag_ThreadInitialised() == nullptr) { }
-		for (uint64_t threadId = 0; threadId < sizeof(*stat_get_ptr_list_Of_flag_ThreadInitialised()); threadId++)
+		for (unsigned long long threadId = 0; threadId < sizeof(*stat_get_ptr_list_Of_flag_ThreadInitialised()); threadId++)
 		{
 			auto temp = stat_get_ptr_list_Of_flag_ThreadInitialised()->begin();
 			std::advance(temp, threadId);
@@ -115,7 +115,7 @@ bool* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Execute__Control::_stat_REG_ptr_Fla
 	}
 	void CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Execute__Control::stat_REG_boot3_INITIALISE_Flag_array_ThreadInitialised(CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Framework* obj)
 	{
-		for (uint64_t threadId = 0; threadId < sizeof(*stat_get_ptr_list_Of_flag_ThreadInitialised()); threadId++)
+		for (unsigned long long threadId = 0; threadId < sizeof(*stat_get_ptr_list_Of_flag_ThreadInitialised()); threadId++)
 		{
 			auto temp = stat_get_ptr_list_Of_flag_ThreadInitialised()->begin();
 			std::advance(temp, threadId);
@@ -126,7 +126,7 @@ bool* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Execute__Control::_stat_REG_ptr_Fla
 	{
 		bool* temp = nullptr;
 		temp = new bool(false);
-		for (uint64_t threadID = 0; threadID < sizeof(*stat_get_ptr_list_Of_flag_ThreadInitialised()); threadID++)
+		for (unsigned long long threadID = 0; threadID < sizeof(*stat_get_ptr_list_Of_flag_ThreadInitialised()); threadID++)
 		{
 			auto temp = stat_get_ptr_list_Of_flag_ThreadInitialised()->begin();
 			std::advance(temp, threadID);

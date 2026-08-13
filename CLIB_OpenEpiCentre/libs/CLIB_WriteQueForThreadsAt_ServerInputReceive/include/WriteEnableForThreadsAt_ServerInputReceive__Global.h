@@ -16,30 +16,30 @@ namespace CLIBWriteQueAtServerInputReceive
         std::array<bool,2> dyn_REG_get_ptr_CONST_WriteEnableForThreadsAt_ServerInputReceive__2bitFLAG_IDLE();
         std::array<bool,2> dyn_REG_get_ptr_CONST_WriteEnableForThreadsAt_ServerInputReceive__2bitFLAG_WAIT();
         std::array<bool,2> dyn_REG_get_ptr_CONST_WriteEnableForThreadsAt_ServerInputReceive__2bitFLAG_WRITE();
-        uint64_t dyn_REG_get_WriteEnableForThreadsAt_ServerInputReceive__number_Of_Implemented_Threads();
+        unsigned long long dyn_REG_get_WriteEnableForThreadsAt_ServerInputReceive__number_Of_Implemented_Threads();
         unsigned char* stat_APP_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__MsbFloat_To_MsbByteArray(float value);
         unsigned char* stat_APP_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__MsbDouble_To_MsbByteArray(double value);
-        unsigned char* stat_APP_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__Msb_uint64_t_to_MsbByteArray(uint64_t value);
+        unsigned char* stat_APP_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__Msb_unsignedLongLong_to_MsbByteArray(unsigned long long value);
         static int stat_APP_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__Bool_To_Int(bool value);
         static unsigned char* stat_APP_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__MsbBoolean_To_MsbByteArray(bool value);
         static bool stat_APP_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__MsbByteArray_To_MsbBoolean(const unsigned char* byteArray);
         static double stat_APP_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__MsbByteArray_To_MsbDouble(const unsigned char* byteArray);
         static float stat_APP_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__MsbByteArray_To_MsbFloat(const unsigned char* byteArray);
-        static uint64_t stat_APP_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__MsbByteArray_To_Msbuint64_t(const unsigned char* byteArray);
+        static unsigned long long stat_APP_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__MsbByteArray_To_MsbunsignedLongLong(const unsigned char* byteArray);
     private:
         static std::array<bool,2>* _stat_REG_CONST_WriteEnableForThreadsAt_ServerInputReceive__2bitFLAG_IDLE;
         static std::array<bool,2>* _stat_REG_CONST_WriteEnableForThreadsAt_ServerInputReceive__2bitFLAG_WAIT;
         static std::array<bool,2>* _stat_REG_CONST_WriteEnableForThreadsAt_ServerInputReceive__2bitFLAG_WRITE;
-        static uint64_t* _stat_REG_ptr_WriteEnableForThreadsAt_ServerInputReceive__number_Of_Implemented_Threads;
+        static unsigned long* _stat_REG_ptr_WriteEnableForThreadsAt_ServerInputReceive__number_Of_Implemented_Threads;
         static int pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__Bool_To_Int(bool value);
         static unsigned char* pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__MsbBoolean_To_MsbByteArray(bool value);
         static bool pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__MsbByteArray_To_MsbBoolean(const unsigned char* byteArray);
         static double pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__MsbByteArray_To_MsbDouble(const unsigned char* byteArray);
         static float pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__MsbByteArray_To_MsbFloat(const unsigned char* byteArray);
-        static uint64_t pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__MsbByteArray_To_Msbuint64_t(const unsigned char* byteArray);
+        static unsigned long long pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__MsbByteArray_To_MsbunsignedLongLong(const unsigned char* byteArray);
         static unsigned char* pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__MsbFloat_To_MsbByteArray(float value);
         static unsigned char* pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__MsbDouble_To_MsbByteArray(double value);
-        static unsigned char* pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__Msb_uint64_t_to_MsbByteArray(uint64_t value);
+        static unsigned char* pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__Msb_unsignedLongLong_to_MsbByteArray(unsigned long long value);
         static void stat_REG_boot1_DEFINE_CONST_WriteEnableForThreadsAt_ServerInputReceive__2bitFLAG_IDLE();
         static void stat_REG_boot1_DEFINE_CONST_WriteEnableForThreadsAt_ServerInputReceive__2bitFLAG_WAIT();
         static void stat_REG_boot1_DEFINE_CONST_WriteEnableForThreadsAt_ServerInputReceive__2bitFLAG_WRITE();
@@ -55,7 +55,7 @@ namespace CLIBWriteQueAtServerInputReceive
         static std::array<bool,2>* stat_REG_get_ptr_CONST_WriteEnableForThreadsAt_ServerInputReceive__2bitFLAG_IDLE();
         static std::array<bool,2>* stat_REG_get_ptr_CONST_WriteEnableForThreadsAt_ServerInputReceive__2bitFLAG_WAIT();
         static std::array<bool,2>* stat_REG_get_ptr_CONST_WriteEnableForThreadsAt_ServerInputReceive__2bitFLAG_WRITE();
-        static uint64_t* stat_REG_get_ptr_WriteEnableForThreadsAt_ServerInputReceive__number_Of_Implemented_Threads();
+        static unsigned long* stat_REG_get_ptr_WriteEnableForThreadsAt_ServerInputReceive__number_Of_Implemented_Threads();
     };
 }
 #endif

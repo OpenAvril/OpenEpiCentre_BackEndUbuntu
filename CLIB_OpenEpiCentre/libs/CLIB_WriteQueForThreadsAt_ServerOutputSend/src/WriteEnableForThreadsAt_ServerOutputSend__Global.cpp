@@ -6,7 +6,7 @@
 std::array<bool,2>* CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Global::_stat_REG_CONST_WriteEnableForThreadsAt_ServerOutputSend__2bitFLAG_IDLE;
 std::array<bool,2>* CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Global::_stat_REG_CONST_WriteEnableForThreadsAt_ServerOutputSend__2bitFLAG_WAIT;
 std::array<bool,2>* CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Global::_stat_REG_CONST_WriteEnableForThreadsAt_ServerOutputSend__2bitFLAG_WRITE;
-uint64_t* CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Global::_stat_REG_ptr_WriteEnableForThreadsAt_ServerOutputSend__number_Of_Implemented_Threads;
+unsigned long* CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Global::_stat_REG_ptr_WriteEnableForThreadsAt_ServerOutputSend__number_Of_Implemented_Threads;
 CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Global::WriteEnableForThreadsAt_ServerOutputSend__Global()
 {
 
@@ -62,7 +62,7 @@ std::array<bool,2> CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_Serve
 {
     return *stat_REG_get_ptr_CONST_WriteEnableForThreadsAt_ServerOutputSend__2bitFLAG_WRITE();
 }
-uint64_t CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Global::dyn_REG_get_WriteEnableForThreadsAt_ServerOutputSend__number_Of_Implemented_Threads()
+unsigned long long CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Global::dyn_REG_get_WriteEnableForThreadsAt_ServerOutputSend__number_Of_Implemented_Threads()
 {
     return *stat_REG_get_ptr_WriteEnableForThreadsAt_ServerOutputSend__number_Of_Implemented_Threads();
 }
@@ -76,8 +76,8 @@ unsigned char* CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOut
 unsigned char* CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Global::stat_APP_CONVERT_WriteEnableForThreadsAt_ServerOutputSend__MsbDouble_To_MsbByteArray(double value) {
     return pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerOutputSend__MsbDouble_To_MsbByteArray(value);
 }
-unsigned char* CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Global::stat_APP_CONVERT_WriteEnableForThreadsAt_ServerOutputSend__Msb_uint64_t_to_MsbByteArray(uint64_t value) {
-    return pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerOutputSend__Msb_uint64_t_to_MsbByteArray(value);
+unsigned char* CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Global::stat_APP_CONVERT_WriteEnableForThreadsAt_ServerOutputSend__Msb_unsignedLongLong_to_MsbByteArray(unsigned long long value) {
+    return pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerOutputSend__Msb_unsignedLongLong_to_MsbByteArray(value);
 }
 unsigned char* CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Global::stat_APP_CONVERT_WriteEnableForThreadsAt_ServerOutputSend__MsbBoolean_To_MsbByteArray(bool value)
 {
@@ -95,9 +95,9 @@ float CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__
 {
     return pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerOutputSend__MsbByteArray_To_MsbFloat(byteArray);
 }
-uint64_t CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Global::stat_APP_CONVERT_WriteEnableForThreadsAt_ServerOutputSend__MsbByteArray_To_Msbuint64_t(const unsigned char* byteArray)
+unsigned long long CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Global::stat_APP_CONVERT_WriteEnableForThreadsAt_ServerOutputSend__MsbByteArray_To_MsbunsignedLongLong(const unsigned char* byteArray)
 {
-    return pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerOutputSend__MsbByteArray_To_Msbuint64_t(byteArray);
+    return pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerOutputSend__MsbByteArray_To_MsbunsignedLongLong(byteArray);
 }
 int CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Global::pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerOutputSend__Bool_To_Int(bool value) {
     int* temp = nullptr;
@@ -113,7 +113,7 @@ int CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Gl
 unsigned char* CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Global::pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerOutputSend__MsbBoolean_To_MsbByteArray(bool value) {
     unsigned char* buffer = nullptr;
     buffer = new unsigned char[1];
-    for (uint64_t bitIndex = 0; bitIndex < sizeof(unsigned char); bitIndex++) {
+    for (unsigned long long bitIndex = 0; bitIndex < sizeof(unsigned char); bitIndex++) {
         buffer[bitIndex] = static_cast<unsigned char>(value);
     }
     return buffer;
@@ -131,9 +131,9 @@ float CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__
     std::memcpy(&temp, byteArray, sizeof(float));
     return temp;
 }
-uint64_t CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Global::pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerOutputSend__MsbByteArray_To_Msbuint64_t(const unsigned char* byteArray) {
-    uint64_t temp;
-    std::memcpy(&temp, byteArray, sizeof(uint64_t));
+unsigned long long CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Global::pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerOutputSend__MsbByteArray_To_MsbunsignedLongLong(const unsigned char* byteArray) {
+    unsigned long long temp;
+    std::memcpy(&temp, byteArray, sizeof(unsigned long));
     return temp;
 }
 unsigned char* CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Global::pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerOutputSend__MsbFloat_To_MsbByteArray(float value) {
@@ -148,10 +148,10 @@ unsigned char* CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOut
     std::memcpy(buffer, &value, sizeof(double));
     return buffer;
 }
-unsigned char* CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Global::pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerOutputSend__Msb_uint64_t_to_MsbByteArray(uint64_t value) {
+unsigned char* CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Global::pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerOutputSend__Msb_unsignedLongLong_to_MsbByteArray(unsigned long long value) {
     unsigned char* buffer = nullptr;
     buffer = new unsigned char[1] { UCHAR_MAX };
-    std::memcpy(buffer, &value, sizeof(uint64_t));
+    std::memcpy(buffer, &value, sizeof(unsigned long));
     return buffer;
 }
 void CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Global::stat_REG_boot1_DEFINE_CONST_WriteEnableForThreadsAt_ServerOutputSend__2bitFLAG_IDLE()
@@ -184,7 +184,7 @@ void CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__G
 }
 void CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Global::stat_REG_boot2_SUBSTANTIATE_ptr_WriteEnableForThreadsAt_ServerOutputSend__number_Of_Implemented_Threads()
 {
-    _stat_REG_ptr_WriteEnableForThreadsAt_ServerOutputSend__number_Of_Implemented_Threads = new uint64_t(UINT8_MAX);
+    _stat_REG_ptr_WriteEnableForThreadsAt_ServerOutputSend__number_Of_Implemented_Threads = new unsigned long(UINT8_MAX);
 }
 void CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Global::stat_REG_boot3_INITIALISE_CONST_WriteEnableForThreadsAt_ServerOutputSend__2bitFLAG_IDLE() {
     *_stat_REG_CONST_WriteEnableForThreadsAt_ServerOutputSend__2bitFLAG_IDLE = {false, false};
@@ -199,7 +199,7 @@ void CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__G
 }
 void CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Global::stat_REG_boot3_INITIALISE_ptr_WriteEnableForThreadsAt_ServerOutputSend__number_Of_Implemented_Threads()
 {
-    *_stat_REG_ptr_WriteEnableForThreadsAt_ServerOutputSend__number_Of_Implemented_Threads = static_cast<uint64_t>(4);
+    *_stat_REG_ptr_WriteEnableForThreadsAt_ServerOutputSend__number_Of_Implemented_Threads = static_cast<unsigned long>(4);
 }
 std::array<bool,2>* CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Global::stat_REG_get_ptr_CONST_WriteEnableForThreadsAt_ServerOutputSend__2bitFLAG_IDLE()
 {
@@ -213,7 +213,7 @@ std::array<bool,2>* CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_Serv
 {
     return _stat_REG_CONST_WriteEnableForThreadsAt_ServerOutputSend__2bitFLAG_WRITE;
 }
-uint64_t* CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Global::stat_REG_get_ptr_WriteEnableForThreadsAt_ServerOutputSend__number_Of_Implemented_Threads()
+unsigned long* CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Global::stat_REG_get_ptr_WriteEnableForThreadsAt_ServerOutputSend__number_Of_Implemented_Threads()
 {
     return _stat_REG_ptr_WriteEnableForThreadsAt_ServerOutputSend__number_Of_Implemented_Threads;
 }

@@ -11,10 +11,10 @@ namespace CLIBOpenEpiCentre
         virtual ~CLIB_OpenEpiCentre__Data__Control();
         void app_FUNCT_flip_Input_DoubleBuffer();
         void app_FUNCT_Flip_Output_DoubleBuffer();
-        void app_FUNCT_pop_From_Stack_Of_Input(class CLIB_OpenEpiCentre__Framework* obj, __uint64_t concurrentThreadID);
+        void app_FUNCT_pop_From_Stack_Of_Input(class CLIB_OpenEpiCentre__Framework* obj, unsigned long long concurrentThreadID);
         void app_FUNCT_pop_From_Stack_Of_Output(class CLIB_OpenEpiCentre__Framework* obj);
         void app_FUNCT_push_To_STACK_Of_Input(class CLIB_OpenEpiCentre__Framework* obj);
-        void app_FUNCT_push_To_STACK_Of_Output(class CLIB_OpenEpiCentre__Framework* obj, uint64_t concurrentThreadID);
+        void app_FUNCT_push_To_STACK_Of_Output(class CLIB_OpenEpiCentre__Framework* obj, unsigned long long concurrentThreadID);
         void dyn_REG_boot1_DEFINE_CLIB_OpenEpiCentre__Data__Control(class CLIB_OpenEpiCentre__Framework* obj);
         void dyn_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre__Data__Control(class CLIB_OpenEpiCentre__Framework* obj);
         void dyn_REG_boot3_INITIALISE_CLIB_OpenEpiCentre__Data__Control(class CLIB_OpenEpiCentre__Framework* obj);

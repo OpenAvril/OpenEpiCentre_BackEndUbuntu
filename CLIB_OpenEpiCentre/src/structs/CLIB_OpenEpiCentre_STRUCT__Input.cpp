@@ -5,11 +5,11 @@
 #include <cstdint>
 #include <iostream>
 #include <list>
-    uint64_t* CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT__Input::_REG_ptr_Input_praiseEventId;
-    uint64_t* CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT__Input::_REG_ptr_Input_playerId;
+    unsigned long* CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT__Input::_REG_ptr_Input_praiseEventId;
+    unsigned long* CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT__Input::_REG_ptr_Input_playerId;
     std::list<CLIBOpenEpiCentre::Object*>* CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT__Input::_REG_ptr_List_Of_PraiseInputSubset;
 // public.
-    void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT__Input::app_select_And_Set_Input_Subset(CLIB_OpenEpiCentre__Framework* obj, uint64_t praiseEventId)
+    void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT__Input::app_select_And_Set_Input_Subset(CLIB_OpenEpiCentre__Framework* obj, unsigned long long praiseEventId)
     {
         CLIB_OpenEpiCentre_STRUCT__Input* bufferInputWRITE = obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Data()->dyn_REG_get_ptr_Item_array_Of_doubleBuffer_Input_WRITE(obj);
         switch (praiseEventId)
@@ -53,7 +53,7 @@
         std::cout << "entered dyn_REG_boot3_INITIALISE_Input()" << std::endl;
         stat_REG_boot3_INITIALISE_Input_praiseEventId();
         stat_REG_boot3_INITIALISE_Input_playerId();
-        stat_REG_boot3_INITIALISE_List_Of_PraiseInputSubset(obj, (uint64_t)(0));
+        stat_REG_boot3_INITIALISE_List_Of_PraiseInputSubset(obj, (unsigned long)(0));
         std::cout << "exiting dyn_REG_boot3_INITIALISE_Input()" << std::endl;
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT__Input::dyn_REG_boot4_INSTANTIATE_Input()
@@ -62,11 +62,11 @@
 
         std::cout << "exiting dyn_REG_boot4_INSTANTIATE_Input()" << std::endl;
     }
-    uint64_t CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT__Input::dyn_REG_get_ptr_Input_playerId()
+    unsigned long long CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT__Input::dyn_REG_get_ptr_Input_playerId()
     {
         return *stat_REG_get_ptr_Input_praiseEventId();
     }
-    uint64_t CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT__Input::dyn_REG_get_ptr_Input_praiseEventId()
+    unsigned long long CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT__Input::dyn_REG_get_ptr_Input_praiseEventId()
     {
         return *stat_REG_get_ptr_Input_playerId();
     }
@@ -76,13 +76,13 @@
         std::advance(temp, 0);
         return *temp;
     }
-    void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT__Input::dyn_REG_set_Input_playerId(uint64_t newPlayerId)
+    void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT__Input::dyn_REG_set_Input_playerId(unsigned long long newPlayerId)
     {
         *stat_REG_get_ptr_Input_playerId() = newPlayerId;
     }
-    void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT__Input::dyn_REG_set_ptr_Input_praiseEventId(uint64_t new_uint64_t)
+    void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT__Input::dyn_REG_set_ptr_Input_praiseEventId(unsigned long long new_unsignedLongLong)
     {
-        *stat_REG_get_ptr_Input_praiseEventId() = new_uint64_t;
+        *stat_REG_get_ptr_Input_praiseEventId() = new_unsignedLongLong;
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT__Input::dyn_REG_set_ptr_Item_Of_ptr_Inputs_Subset(CLIB_OpenEpiCentre_STRUCT__Input_praise0* objInputSubset)
     {
@@ -154,13 +154,13 @@
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT__Input::stat_REG_boot2_SUBSTANTIATE_Input_praiseEventId()
     {
-        _REG_ptr_Input_praiseEventId = new uint64_t();
-        *_REG_ptr_Input_praiseEventId = static_cast<uint64_t>((UINT8_MAX));
+        _REG_ptr_Input_praiseEventId = new unsigned long();
+        *_REG_ptr_Input_praiseEventId = static_cast<unsigned long>((UINT8_MAX));
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT__Input::stat_REG_boot2_SUBSTANTIATE_Input_playerId()
     {
-        _REG_ptr_Input_playerId = new uint64_t();
-        *_REG_ptr_Input_playerId = static_cast<uint64_t>((UINT8_MAX));
+        _REG_ptr_Input_playerId = new unsigned long();
+        *_REG_ptr_Input_playerId = static_cast<unsigned long>((UINT8_MAX));
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT__Input::stat_REG_boot2_SUBSTANTIATE_List_Of_PraiseInputSubset()
     {
@@ -168,28 +168,28 @@
         while (stat_REG_get_ptr_Item_Of_ptr_Inputs_Subset() == nullptr) { }
         stat_REG_get_ptr_Item_Of_ptr_Inputs_Subset()->resize(1);
         auto temp = stat_REG_get_ptr_Item_Of_ptr_Inputs_Subset()->begin();
-        std::advance(temp, static_cast<uint64_t>(0));
+        std::advance(temp, static_cast<unsigned long>(0));
         *temp = nullptr;
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT__Input::stat_REG_boot3_INITIALISE_Input_praiseEventId()
     {
-        *_REG_ptr_Input_praiseEventId = static_cast<uint64_t>(0);
+        *_REG_ptr_Input_praiseEventId = static_cast<unsigned long>(0);
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT__Input::stat_REG_boot3_INITIALISE_Input_playerId()
     {
-        *_REG_ptr_Input_playerId = static_cast<uint64_t>(0);
+        *_REG_ptr_Input_playerId = static_cast<unsigned long>(0);
     }
-    void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT__Input::stat_REG_boot3_INITIALISE_List_Of_PraiseInputSubset(CLIB_OpenEpiCentre__Framework* obj, uint64_t praiseId)
+    void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT__Input::stat_REG_boot3_INITIALISE_List_Of_PraiseInputSubset(CLIB_OpenEpiCentre__Framework* obj, unsigned long long praiseId)
     {
         auto temp = stat_REG_get_ptr_Item_Of_ptr_Inputs_Subset()->begin();
-        std::advance(temp, static_cast<uint64_t>(0));
+        std::advance(temp, static_cast<unsigned long>(0));
         *temp = obj->dyn_STRUCT_get_User_Input()->dyn_CLASS_get_Item_On_List_Of_ptr_PraiseInputSubsets(praiseId);
     }
-    uint64_t* CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT__Input::stat_REG_get_ptr_Input_praiseEventId()
+    unsigned long* CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT__Input::stat_REG_get_ptr_Input_praiseEventId()
     {
         return _REG_ptr_Input_praiseEventId;
     }
-    uint64_t* CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT__Input::stat_REG_get_ptr_Input_playerId()
+    unsigned long* CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT__Input::stat_REG_get_ptr_Input_playerId()
     {
         return _REG_ptr_Input_playerId;
     }

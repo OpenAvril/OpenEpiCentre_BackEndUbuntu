@@ -11,7 +11,7 @@ namespace CLIBOpenEpiCentre
     public:
         CLIB_OpenEpiCentre__Algorithms();
         virtual ~CLIB_OpenEpiCentre__Algorithms();
-        struct CLIB_OpenEpiCentre_STRUCT__Concurrent* dyn_STRUCT_get_Item_On_list_Of_ptr_Concurrent(uint64_t concurrentThreadId);
+        struct CLIB_OpenEpiCentre_STRUCT__Concurrent* dyn_STRUCT_get_Item_On_list_Of_ptr_Concurrent(unsigned long long concurrentThreadId);
         void dyn_REG_boot1_DEFINE_CLIB_OpenEpiCentre_Algorithm(class CLIB_OpenEpiCentre__Framework* obj);
         void dyn_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_Algorithm(class CLIB_OpenEpiCentre__Framework* obj);
         void dyn_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_Algorithm(class CLIB_OpenEpiCentre__Framework* obj, struct CLIB_OpenEpiCentre_STRUCT__Concurrent* objConcurrent);

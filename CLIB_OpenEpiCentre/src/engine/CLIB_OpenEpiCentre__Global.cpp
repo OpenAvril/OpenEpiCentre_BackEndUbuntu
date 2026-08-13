@@ -12,7 +12,7 @@ enum Axis
         ADDER
     };
     std::byte* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::_stat_REG_ptr_number_Of_Implemented_Cores;
-    int64_t* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::_stat_REG_ptr_number_Of_Praise_Events;
+    unsigned long long* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::_stat_REG_ptr_number_Of_Praise_Events;
 // public.
     CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::CLIB_OpenEpiCentre__Global()
     {
@@ -59,7 +59,7 @@ enum Axis
     {
         return *stat_REG_get_Ptr_number_Of_Implemented_Cores();
     }
-    int64_t CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::dyn_REG_get_Item_number_Of_Praise_Events()
+    unsigned long long CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::dyn_REG_get_Item_number_Of_Praise_Events()
     {
         return *stat_REG_get_Ptr_number_Of_Praise_Events();
     }
@@ -108,7 +108,7 @@ enum Axis
     unsigned char* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::stat_CONVERT_MsbBoolean_To_MsbByteArray(bool value)
     {
         unsigned char* buffer;
-        for (uint64_t bitIndex = 0; bitIndex < sizeof(unsigned char); bitIndex++) {
+        for (unsigned long long bitIndex = 0; bitIndex < sizeof(unsigned char); bitIndex++) {
             buffer[bitIndex] = static_cast<unsigned char>(value);
         }
         return buffer;
@@ -129,10 +129,10 @@ enum Axis
         std::memcpy(&temp, byteArray, sizeof(float));
         return temp;
     }
-    uint64_t CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::stat_CONVERT_MsbByteArray_To_Msbuint64_t(const unsigned char* byteArray)
+    unsigned long long CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::stat_CONVERT_MsbByteArray_To_MsbunsignedLongLong(const unsigned char* byteArray)
     {
-        uint64_t temp;
-        std::memcpy(&temp, byteArray, sizeof(uint64_t));
+        unsigned long long temp;
+        std::memcpy(&temp, byteArray, sizeof(unsigned long));
         return temp;
     }
     unsigned char* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::stat_CONVERT_MsbFloat_To_MsbByteArray(float value)
@@ -147,10 +147,10 @@ enum Axis
         std::memcpy(buffer, &value, sizeof(double));
         return buffer;
     }
-    unsigned char* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::stat_CONVERT_uint64_t_to_ByteArray(uint64_t value)
+    unsigned char* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::stat_CONVERT_unsignedLongLong_to_ByteArray(unsigned long long value)
     {
         unsigned char* buffer;
-        std::memcpy(buffer, &value, sizeof(uint64_t));
+        std::memcpy(buffer, &value, sizeof(unsigned long));
         return buffer;
     }
 // private.
@@ -169,8 +169,8 @@ enum Axis
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::stat_REG_boot2_SUBSTANTIATE_number_Of_Praise_Events()
     {
-        _stat_REG_ptr_number_Of_Praise_Events = new int64_t();
-        *_stat_REG_ptr_number_Of_Praise_Events = static_cast<uint64_t>(INT64_MAX);
+        _stat_REG_ptr_number_Of_Praise_Events = new unsigned long long();
+        *_stat_REG_ptr_number_Of_Praise_Events = UINT64_MAX;
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::stat_REG_boot3_INITIALISE_number_Of_Implemented_Cores()
     {
@@ -178,13 +178,13 @@ enum Axis
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::stat_REG_boot3_INITIALISE_number_Of_Praise_Events()
     {
-        *_stat_REG_ptr_number_Of_Praise_Events = static_cast<int64_t>(1);
+        *_stat_REG_ptr_number_Of_Praise_Events = static_cast<unsigned long long>(1);
     }
     std::byte* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::stat_REG_get_Ptr_number_Of_Implemented_Cores()
     {
         return _stat_REG_ptr_number_Of_Implemented_Cores;
     }
-    int64_t* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::stat_REG_get_Ptr_number_Of_Praise_Events()
+    unsigned long long* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::stat_REG_get_Ptr_number_Of_Praise_Events()
     {
         return _stat_REG_ptr_number_Of_Praise_Events;
     }
