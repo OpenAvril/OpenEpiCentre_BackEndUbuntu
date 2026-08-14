@@ -292,9 +292,22 @@
 	unsigned char* CLIBOpenEpiCentre::CLIBConcurrentServerIO::CLIBConcurrentServerIO__io_PRAISE_get_MetaData_PraiseEventId()
 	{
 		unsigned long long* temp;
-		*temp = UINT64_MAX;
+		*temp = ULLONG_MAX;
 		if (CLIBConcurrentServerIO__stat_REG_get_ptr_CLIB_OpenEpiCentre_isFlagINSTANTIATED()[12] == false) {
 			*temp = CLIBConcurrentServerIO__stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework()->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Data()->dyn_REG_get_ptr_Item_array_Of_doubleBuffer_Output_WRITE(CLIBConcurrentServerIO__stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework())->dyn_REG_get_ptr_CLIB_OpenEpiCentre_STRUCT__Output_praiseEventId();
+			std::cout << "*" << std::endl;
+			std::cout << "*" << std::endl;
+			std::cout << "*" << std::endl;
+			std::cout << "*" << std::endl;
+			std::cout << "*" << std::endl;
+			std::cout << "*" << std::endl;
+			std::cout << "temp (unsigned long long) = " << temp << std::endl;
+			std::cout << "*" << std::endl;
+			std::cout << "*" << std::endl;
+			std::cout << "*" << std::endl;
+			std::cout << "*" << std::endl;
+			std::cout << "*" << std::endl;
+			std::cout << "*" << std::endl;
 		}
 		else {
 			CLIBConcurrentServerIO__stat_REG_get_ptr_CLIB_OpenEpiCentre_isFlagINSTANTIATED()[12] = false;

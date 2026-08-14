@@ -3,6 +3,7 @@
 #include "../include/WriteEnableForThreadsAt_ServerOutputSend__Framework.h"
 #include "../include/WriteEnableForThreadsAt_ServerOutputSend__Global.h"
 #include <array>
+#include <climits>
 #include <cstdint>
 #include <iostream>
 #include <iterator>
@@ -370,7 +371,7 @@ void CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__C
     {
         auto temp = stat_REG_get_ptr_list_Of_WriteEnableForThreadsAt_ServerOutputSend__Control__WriteIdle_Count_For_ThreadId()->begin();
         std::advance(temp, threadId);
-        *temp = UINT64_MAX;
+        *temp = ULLONG_MAX;
     }
 }
 void CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Control::stat_REG_boot2_SUBSTANTIATE_ptr_WriteEnableForThreadsAt_ServerOutputSend__Control__WriteWAIT_Count_For_ThreadId(CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Framework* obj)
@@ -382,7 +383,7 @@ void CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__C
     {
         auto temp = stat_REG_get_ptr_list_Of_WriteEnableForThreadsAt_ServerOutputSend__Control__WriteWait_Count_For_ThreadId()->begin();
         std::advance(temp, threadId);
-        *temp = UINT64_MAX;
+        *temp = ULLONG_MAX;
     }
 }
 void CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Control::stat_REG_boot2_SUBSTANTIATE_ptr_WriteEnableForThreadsAt_ServerOutputSend__Control__new_writeCycle_Try_ThreadId_Index()
