@@ -2,6 +2,9 @@
 #include <iostream>
 #include "../include/LaunchEnableForConcurrentThreadsAt_Server__App.h"
 #include "../include/LaunchEnableForConcurrentThreadsAt_Server__Control.h"
+
+#include <climits>
+
 #include "../include/LaunchEnableForConcurrentThreadsAt_Server__Framework.h"
 #include "../include/LaunchEnableForConcurrentThreadsAt_Server__Global.h"
 std::byte* CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Control::_stat_REG_ptr_LaunchEnableForConcurrentThreadsAt_Server__Control__concurrentCycle_Try_CoreId_Index;
@@ -292,12 +295,12 @@ void CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Control::
 void CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Control::stat_REG_boot2_SUBSTANTIATE_ptr_LaunchEnableForConcurrentThreadsAt_Server__Control__list_Of_launchActive_Count_For_ThreadID()
 {
     _stat_REG_ptr_LaunchEnableForConcurrentThreadsAt_Server__Control__list_Of_launchActive_Count_For_ThreadID = new std::list<unsigned long>();
-    *_stat_REG_ptr_LaunchEnableForConcurrentThreadsAt_Server__Control__list_Of_launchActive_Count_For_ThreadID = { UINT64_MAX, UINT64_MAX, UINT64_MAX };
+    *_stat_REG_ptr_LaunchEnableForConcurrentThreadsAt_Server__Control__list_Of_launchActive_Count_For_ThreadID = { ULLONG_MAX, ULLONG_MAX, ULLONG_MAX };
 }
 void CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Control::stat_REG_boot2_SUBSTANTIATE_ptr_LaunchEnableForConcurrentThreadsAt_Server__Control__list_Of_launchIdle_Count_For_ThreadID()
 {
     _stat_REG_ptr_LaunchEnableForConcurrentThreadsAt_Server__Control__list_Of_launchIdle_Count_For_ThreadID = new std::list<unsigned long>();
-    *_stat_REG_ptr_LaunchEnableForConcurrentThreadsAt_Server__Control__list_Of_launchIdle_Count_For_ThreadID = { UINT64_MAX, UINT64_MAX, UINT64_MAX };
+    *_stat_REG_ptr_LaunchEnableForConcurrentThreadsAt_Server__Control__list_Of_launchIdle_Count_For_ThreadID = { ULLONG_MAX, ULLONG_MAX, ULLONG_MAX };
 }
 void CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Control::stat_REG_boot2_SUBSTANTIATE_ptr_LaunchEnableForConcurrentThreadsAt_Server__Control__list_Of_STATE_For_ConcurrentCore()
 {

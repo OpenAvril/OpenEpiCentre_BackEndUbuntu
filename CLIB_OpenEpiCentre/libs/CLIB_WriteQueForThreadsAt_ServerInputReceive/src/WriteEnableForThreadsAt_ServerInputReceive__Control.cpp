@@ -3,6 +3,7 @@
 #include "../include/WriteEnableForThreadsAt_ServerInputReceive__Framework.h"
 #include "../include/WriteEnableForThreadsAt_ServerInputReceive__Global.h"
 #include <array>
+#include <climits>
 #include <cstdint>
 #include <iostream>
 #include <iterator>
@@ -370,7 +371,7 @@ void CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceiv
     {
         auto temp = stat_REG_get_ptr_list_Of_WriteEnableForThreadsAt_ServerInputReceive__Control__WriteIdle_Count_For_ThreadId()->begin();
         std::advance(temp, threadId);
-        *temp = UINT64_MAX;
+        *temp = ULLONG_MAX;
     }
 
 }
@@ -383,7 +384,7 @@ void CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceiv
     {
         auto temp = stat_REG_get_ptr_list_Of_WriteEnableForThreadsAt_ServerInputReceive__Control__WriteWait_Count_For_ThreadId()->begin();
         std::advance(temp, threadId);
-        *temp = UINT64_MAX;
+        *temp = ULLONG_MAX;
     }
 }
 void CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceive__Control::stat_REG_boot2_SUBSTANTIATE_ptr_WriteEnableForThreadsAt_ServerInputReceive__Control__new_writeCycle_Try_ThreadId_Index()

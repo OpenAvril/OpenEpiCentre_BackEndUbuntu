@@ -1,4 +1,5 @@
 #include "../../include/engine/CLIB_OpenEpiCentre__Global.h"
+#include <climits>
 #include <cstring>
 #include <iostream>
 enum Axis
@@ -137,19 +138,19 @@ enum Axis
     }
     unsigned char* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::stat_CONVERT_MsbFloat_To_MsbByteArray(float value)
     {
-        unsigned char* buffer;
+        unsigned char* buffer = nullptr;
         std::memcpy(buffer, &value, sizeof(float));
         return buffer;
     }
     unsigned char* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::stat_CONVERT_MsbDouble_To_MsbByteArray(double value)
     {
-        unsigned char* buffer;
+        unsigned char* buffer = nullptr;
         std::memcpy(buffer, &value, sizeof(double));
         return buffer;
     }
     unsigned char* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::stat_CONVERT_unsignedLongLong_to_ByteArray(unsigned long long value)
     {
-        unsigned char* buffer;
+        unsigned char* buffer = nullptr;
         std::memcpy(buffer, &value, sizeof(unsigned long));
         return buffer;
     }
@@ -170,7 +171,7 @@ enum Axis
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::stat_REG_boot2_SUBSTANTIATE_number_Of_Praise_Events()
     {
         _stat_REG_ptr_number_Of_Praise_Events = new unsigned long long();
-        *_stat_REG_ptr_number_Of_Praise_Events = UINT64_MAX;
+        *_stat_REG_ptr_number_Of_Praise_Events = ULLONG_MAX;
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::stat_REG_boot3_INITIALISE_number_Of_Implemented_Cores()
     {
