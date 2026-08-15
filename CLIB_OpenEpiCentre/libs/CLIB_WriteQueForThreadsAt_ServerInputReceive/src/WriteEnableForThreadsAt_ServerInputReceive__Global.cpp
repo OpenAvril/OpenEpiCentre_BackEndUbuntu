@@ -88,6 +88,10 @@ bool CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceiv
 {
     return pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__MsbByteArray_To_MsbBoolean(byteArray);
 }
+std::byte CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceive__Global::stat_APP_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__MsbByteArray_To_MsbByte(const unsigned char* byteArray)
+{
+    return *pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__MsbByteArray_To_MsbByte(byteArray);
+}
 double CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceive__Global::stat_APP_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__MsbByteArray_To_MsbDouble(const unsigned char* byteArray)
 {
     return pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__MsbByteArray_To_MsbDouble(byteArray);
@@ -121,6 +125,12 @@ unsigned char* CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerI
 }
 bool CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceive__Global::pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__MsbByteArray_To_MsbBoolean(const unsigned char* byteArray) {
     return (byteArray[7] & 1) != 0;
+}
+std::byte* CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceive__Global::pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__MsbByteArray_To_MsbByte(const unsigned char* byteArray)
+{
+    std::byte* temp;
+    std::memcpy(&temp, byteArray, sizeof(std::byte));
+    return temp;
 }
 double CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceive__Global::pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__MsbByteArray_To_MsbDouble(const unsigned char* byteArray) {
     double temp;

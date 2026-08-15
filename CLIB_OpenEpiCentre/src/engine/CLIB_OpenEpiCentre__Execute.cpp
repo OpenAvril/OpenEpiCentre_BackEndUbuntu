@@ -168,9 +168,10 @@
     {
         for (int threadId = 0; threadId < sizeof(*stat_PGM_get_ptr_List_Of_Threads()); threadId++)
         {
+            obj->dyn_STRUCT_get_Concurrent()->dyn_REG_set_CLIB_OpenEpiCentre__Concurrent__threadId(static_cast<std::byte>(threadId));
             auto temp = stat_PGM_get_ptr_List_Of_Threads()->begin();
             std::advance(temp, threadId);
-            *temp = new std::thread(obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Algorithms()->dyn_STRUCT_get_Item_On_list_Of_ptr_Concurrent(static_cast<std::byte>(0))->stat_app_thread_Concurrency, obj, threadId);
+            *temp = new std::thread(obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Algorithms()->dyn_STRUCT_get_Item_On_list_Of_ptr_Concurrent(obj->dyn_STRUCT_get_Concurrent()->dyn_REG_get_CLIB_OpenEpiCentre__Concurrent__threadId())->stat_app_thread_Concurrency, obj, obj->dyn_STRUCT_get_Concurrent()->dyn_REG_get_CLIB_OpenEpiCentre__Concurrent__threadId());
         }
     }
     std::list<std::thread*>* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Execute::stat_PGM_get_ptr_List_Of_Threads()

@@ -20,6 +20,7 @@
 #include "../../libs/CLIB_WriteQueForThreadsAt_ServerInputReceive/include/CLIB_WriteEnableForThreadsAt_ServerInputReceive.h"
 #include "../../libs/CLIB_WriteQueForThreadsAt_ServerOutputSend/include/CLIB_WriteEnableForThreadsAt_ServerOutputSend.h"
 #include <iostream>
+    std::byte* CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT__Concurrent::_stat_REG_CLIB_OpenEpiCentre__Concurrent__threadId;
 // public.
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT__Concurrent::app_do_Concurrent_Algorithm_For_PraiseEventId(CLIB_OpenEpiCentre__Framework* obj, std::byte playerId, unsigned long long praiseEventId, Object* ptr_Input_Subset, Object* ptr_Output_Subset)
     {
@@ -53,13 +54,14 @@
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT__Concurrent::dyn_REG_boot1_DEFINE_Concurrent()
     {
         std::cout << "entered dyn_REG_boot1_DEFINE_Concurrent()" << std::endl;
-
+        _stat_REG_CLIB_OpenEpiCentre__Concurrent__threadId = nullptr;
         std::cout << "exiting dyn_REG_boot1_DEFINE_Concurrent()" << std::endl;
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT__Concurrent::dyn_REG_boot2_SUBSTANTIATE_Concurrent()
     {
         std::cout << "entered dyn_REG_boot2_SUBSTANTIATE_Concurrent()" << std::endl;
-
+        _stat_REG_CLIB_OpenEpiCentre__Concurrent__threadId = new std::byte();
+        *_stat_REG_CLIB_OpenEpiCentre__Concurrent__threadId = static_cast<std::byte>(255);
         std::cout << "exiting dyn_REG_boot2_SUBSTANTIATE_Concurrent()" << std::endl;
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT__Concurrent::dyn_REG_boot3_INITIALISE_Concurrent(CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Framework* obj)
@@ -73,6 +75,14 @@
         std::cout << "entered dyn_REG_boot4_INSTANTIATE_Concurrent()" << std::endl;
 
         std::cout << "exiting dyn_REG_boot4_INSTANTIATE_Concurrent()" << std::endl;
+    }
+    std::byte CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT__Concurrent::dyn_REG_get_CLIB_OpenEpiCentre__Concurrent__threadId()
+    {
+        return *_stat_REG_CLIB_OpenEpiCentre__Concurrent__threadId;
+    }
+    void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT__Concurrent::dyn_REG_set_CLIB_OpenEpiCentre__Concurrent__threadId(std::byte praiseId)
+    {
+        *_stat_REG_CLIB_OpenEpiCentre__Concurrent__threadId = praiseId;
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT__Concurrent::stat_app_thread_Concurrency(CLIB_OpenEpiCentre__Framework* obj, std::byte concurrent_threadID)
     {

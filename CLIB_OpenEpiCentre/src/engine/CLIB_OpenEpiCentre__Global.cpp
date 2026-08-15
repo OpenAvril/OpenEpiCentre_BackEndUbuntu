@@ -108,8 +108,8 @@ enum Axis
     }
     unsigned char* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::stat_CONVERT_MsbBoolean_To_MsbByteArray(bool value)
     {
-        unsigned char* buffer;
-        for (unsigned long long bitIndex = 0; bitIndex < sizeof(unsigned char); bitIndex++) {
+        unsigned char* buffer = nullptr;
+        for (int bitIndex = 0; bitIndex < sizeof(unsigned char); bitIndex++) {
             buffer[bitIndex] = static_cast<unsigned char>(value);
         }
         return buffer;
@@ -117,6 +117,12 @@ enum Axis
     bool CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::stat_CONVERT_MsbByteArray_To_MsbBoolean(const unsigned char* byteArray)
     {
         return (byteArray[7] & 1) != 0;
+    }
+    std::byte CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::stat_CONVERT_MsbByteArray_To_MsbByte(const unsigned char* byteArray)
+    {
+        std::byte temp;
+        std::memcpy(&temp, byteArray, sizeof(std::byte));
+        return temp;
     }
     double CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::stat_CONVERT_MsbByteArray_To_MsbDouble(const unsigned char* byteArray)
     {

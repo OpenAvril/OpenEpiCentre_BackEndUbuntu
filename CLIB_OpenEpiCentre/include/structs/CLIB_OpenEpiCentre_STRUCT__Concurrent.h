@@ -12,6 +12,8 @@ namespace CLIBOpenEpiCentre
         void dyn_REG_boot2_SUBSTANTIATE_Concurrent();
         void dyn_REG_boot3_INITIALISE_Concurrent(CLIB_OpenEpiCentre__Framework* obj);
         void dyn_REG_boot4_INSTANTIATE_Concurrent();
+        std::byte dyn_REG_get_CLIB_OpenEpiCentre__Concurrent__threadId();
+        void dyn_REG_set_CLIB_OpenEpiCentre__Concurrent__threadId(std::byte praiseId);
         static void stat_app_thread_Concurrency(CLIB_OpenEpiCentre__Framework* obj, std::byte concurrent_threadID);
         static void stat_CLASS_boot0_DECLARE_Concurrent();
         static void stat_CLASS_boot1_DEFINE_Concurrent();
@@ -19,6 +21,7 @@ namespace CLIBOpenEpiCentre
         static void stat_CLASS_boot4_INSTANTIATE_Concurrent();
         static void stat_REG_boot0_DECLARE_Concurrent();
     private:
+        static std::byte* _stat_REG_CLIB_OpenEpiCentre__Concurrent__threadId;
      };
 }
 #endif

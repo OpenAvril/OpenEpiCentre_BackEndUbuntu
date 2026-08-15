@@ -23,6 +23,7 @@ namespace CLIBWriteQueAtServerInputReceive
         static int stat_APP_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__Bool_To_Int(bool value);
         static unsigned char* stat_APP_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__MsbBoolean_To_MsbByteArray(bool value);
         static bool stat_APP_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__MsbByteArray_To_MsbBoolean(const unsigned char* byteArray);
+        static std::byte stat_APP_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__MsbByteArray_To_MsbByte(const unsigned char* byteArray);
         static double stat_APP_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__MsbByteArray_To_MsbDouble(const unsigned char* byteArray);
         static float stat_APP_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__MsbByteArray_To_MsbFloat(const unsigned char* byteArray);
         static unsigned long long stat_APP_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__MsbByteArray_To_MsbunsignedLongLong(const unsigned char* byteArray);
@@ -34,6 +35,7 @@ namespace CLIBWriteQueAtServerInputReceive
         static int pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__Bool_To_Int(bool value);
         static unsigned char* pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__MsbBoolean_To_MsbByteArray(bool value);
         static bool pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__MsbByteArray_To_MsbBoolean(const unsigned char* byteArray);
+        static std::byte* pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__MsbByteArray_To_MsbByte(const unsigned char* byteArray);
         static double pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__MsbByteArray_To_MsbDouble(const unsigned char* byteArray);
         static float pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__MsbByteArray_To_MsbFloat(const unsigned char* byteArray);
         static unsigned long long pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__MsbByteArray_To_MsbunsignedLongLong(const unsigned char* byteArray);
