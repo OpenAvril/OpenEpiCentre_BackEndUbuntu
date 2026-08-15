@@ -11,7 +11,7 @@ namespace CLIBLaunchQueAtServer
         LaunchEnableForConcurrentThreadsAt_Server__Control();
         virtual ~LaunchEnableForConcurrentThreadsAt_Server__Control();
         void dyn_App_LaunchEnableForConcurrentThreadsAt_Server__Control__launchEnable_Activate(LaunchEnableForConcurrentThreadsAt_Server__Framework* obj);
-        void dyn_App_LaunchEnableForConcurrentThreadsAt_Server__Control__launchEnable_Request(LaunchEnableForConcurrentThreadsAt_Server__Framework* obj, std::byte concurrentThreadID);
+        void dyn_App_LaunchEnableForConcurrentThreadsAt_Server__Control__launchEnable_Request(LaunchEnableForConcurrentThreadsAt_Server__Framework* obj, std::byte concurrentThreadId);
         void dyn_App_LaunchEnableForConcurrentThreadsAt_Server__Control__launchEnable_SortQue(LaunchEnableForConcurrentThreadsAt_Server__Framework* obj, std::byte number_Implemented_Threads);
         void dyn_App_LaunchEnableForConcurrentThreadsAt_Server__Control__launchQue_Update(LaunchEnableForConcurrentThreadsAt_Server__Framework* obj, std::byte number_Implemented_Threads);
         void dyn_REG_boot1_DEFINE_LaunchEnableForConcurrentThreadsAt_Server__Control();
@@ -34,7 +34,7 @@ namespace CLIBLaunchQueAtServer
         void dyn_REG_set_LaunchEnableForConcurrentThreadsAt_Server__new_concurrentCycle_Try_CoreId_Index(std::byte newValue);
     private:
         void dynamicStagger(class LaunchEnableForConcurrentThreadsAt_Server__Framework* obj, std::byte coreId);
-        void launchEnable_ShiftQueValues(class LaunchEnableForConcurrentThreadsAt_Server__Framework* obj, std::byte concurrentThreadID_A, std::byte concurrentThreadID_B);
+        void launchEnable_ShiftQueValues(class LaunchEnableForConcurrentThreadsAt_Server__Framework* obj, std::byte concurrentThreadId_A, std::byte concurrentThreadId_B);
         static std::byte* _stat_REG_ptr_LaunchEnableForConcurrentThreadsAt_Server__Control__concurrentCycle_Try_CoreId_Index;
         static bool* _stat_REG_ptr_flag_LaunchEnableForConcurrentThreadsAt_Server__Control__praisingLaunch;
         static std::list<unsigned long>* _stat_REG_ptr_LaunchEnableForConcurrentThreadsAt_Server__Control__list_Of_launchActive_Count_For_ThreadID;

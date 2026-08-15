@@ -11,8 +11,8 @@ namespace CLIBLaunchQueAtServer
      public:
         LaunchEnableForConcurrentThreadsAt_Server__App();
         virtual ~LaunchEnableForConcurrentThreadsAt_Server__App();
-        void dyn_APP_LaunchEnableForConcurrentThreadsAt_Server__thread_Start(LaunchEnableForConcurrentThreadsAt_Server__Framework* obj, std::byte concurrentThreadID);
-        void dyn_APP_LaunchEnableForConcurrentThreadsAt_Server__thread_End(LaunchEnableForConcurrentThreadsAt_Server__Framework* obj, std::byte concurrentThreadID);
+        void dyn_APP_LaunchEnableForConcurrentThreadsAt_Server__thread_Start(LaunchEnableForConcurrentThreadsAt_Server__Framework* obj, std::byte concurrentThreadId);
+        void dyn_APP_LaunchEnableForConcurrentThreadsAt_Server__thread_End(LaunchEnableForConcurrentThreadsAt_Server__Framework* obj, std::byte concurrentThreadId);
          LaunchEnableForConcurrentThreadsAt_Server__Control* dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__Control();
     private:
         static LaunchEnableForConcurrentThreadsAt_Server__Control* _stat_CLASS_ptr_LaunchEnableForConcurrentThreadsAt_Server__LaunchConcurrency_Control;

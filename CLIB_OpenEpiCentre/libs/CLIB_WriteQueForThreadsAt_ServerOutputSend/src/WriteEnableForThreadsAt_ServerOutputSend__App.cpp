@@ -62,7 +62,7 @@
     {
         //if thread primed and system initialised, exit, else wait.
     }
-    void CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__App::dyn_APP_FUNCT_write_End(WriteEnableForThreadsAt_ServerOutputSend__Framework* obj, unsigned long long coreId)
+    void CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__App::dyn_APP_FUNCT_write_End(WriteEnableForThreadsAt_ServerOutputSend__Framework* obj, std::byte coreId)
     {
         obj->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerOutputSend__App()->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerOutputSend__App__Control()->dyn_REG_set_Item_On_list_Of_WriteEnableForThreadsAt_ServerOutputSend__Control__2ibt_flag_WriteState(coreId, obj->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerOutputSend__Global()->dyn_REG_get_ptr_CONST_WriteEnableForThreadsAt_ServerOutputSend__2bitFLAG_IDLE());
         obj->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerOutputSend__App()->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerOutputSend__App__Control()->dyn_REG_set_WriteEnableForThreadsAt_ServerOutputSend__Control__new_writeCycle_Try_ThreadId_Index(obj->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerOutputSend__App()->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerOutputSend__App__Control()->dyn_REG_get_Item_On_WriteEnableForThreadsAt_ServerOutputSend__Control__list_Of_WriteActive_Count_For_ThreadId(coreId) + 1);
@@ -74,7 +74,7 @@
         obj->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerOutputSend__App()->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerOutputSend__App__Control()->dyn_APP_FUNCT_WriteEnableForThreadsAt_ServerOutputSend__Control__writeEnable_SortQue(obj);
         obj->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerOutputSend__App()->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerOutputSend__App__Control()->dyn_REG_set_flag_WriteEnableForThreadsAt_ServerOutputSend__Control__praisingWrite(false);
     }
-    void CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__App::dyn_APP_FUNCT_write_Start(WriteEnableForThreadsAt_ServerOutputSend__Framework* obj, unsigned long long coreId)
+    void CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__App::dyn_APP_FUNCT_write_Start(WriteEnableForThreadsAt_ServerOutputSend__Framework* obj, std::byte coreId)
     {
         obj->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerOutputSend__App()->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerOutputSend__App__Control()->dyn_APP_FUNCT_WriteEnableForThreadsAt_ServerOutputSend__Control__writeEnable_Request(obj, coreId);
         obj->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerOutputSend__App()->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerOutputSend__App__Control()->dyn_APP_FUNCT_WriteEnableForThreadsAt_ServerOutputSend__Control__writeQue_Update(obj);

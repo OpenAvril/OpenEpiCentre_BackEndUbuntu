@@ -13,9 +13,9 @@ std::array<std::array<bool, 2>, 3>* CLIBWriteQueAtServerOutputSend::WriteEnableF
 std::list<unsigned long>* CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Control::_stat_REG_LIST_Of_WriteEnableForThreadsAt_ServerOutputSend__Control__WriteACTIVE_Count_For_ThreadId;
 std::list<unsigned long>* CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Control::_stat_REG_LIST_Of_WriteEnableForThreadsAt_ServerOutputSend__Control__WriteIDLE_Count_For_ThreadId;
 std::list<unsigned long>* CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Control::_stat_REG_LIST_Of_WriteEnableForThreadsAt_ServerOutputSend__Control__WriteWAIT_Count_For_ThreadId;
-unsigned long* CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Control::_stat_REG_ptr_WriteEnableForThreadsAt_ServerOutputSend__Control__new_writeCycle_Try_ThreadId_Index;
+unsigned long long* CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Control::_stat_REG_ptr_WriteEnableForThreadsAt_ServerOutputSend__Control__new_writeCycle_Try_ThreadId_Index;
 std::list<unsigned long>* CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Control::_stat_REG_QUE_Of_WriteEnableForThreadsAt_ServerOutputSend__Control__ThreadID_To_WRITE;
-unsigned long* CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Control::_stat_REG_ptr_WriteEnableForThreadsAt_ServerOutputSend__Control__writeCycle_Try_ThreadId_Index;
+unsigned long long* CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Control::_stat_REG_ptr_WriteEnableForThreadsAt_ServerOutputSend__Control__writeCycle_Try_ThreadId_Index;
 bool* CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Control::_stat_REG_ptr_flag_WriteEnableForThreadsAt_ServerOutputSend__Control__praisingWrite;
 CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Control::WriteEnableForThreadsAt_ServerOutputSend__Control()
 {
@@ -79,7 +79,7 @@ void CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__C
     {
         //if thread primed and system initialised, exit, else wait.
     }
-void CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Control::dyn_APP_FUNCT_WriteEnableForThreadsAt_ServerOutputSend__Control__dynamicStagger(WriteEnableForThreadsAt_ServerOutputSend__Framework* obj, unsigned long long coreId)
+void CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Control::dyn_APP_FUNCT_WriteEnableForThreadsAt_ServerOutputSend__Control__dynamicStagger(WriteEnableForThreadsAt_ServerOutputSend__Framework* obj, std::byte coreId)
     {
         stat_REG_set_flag_WriteEnableForThreadsAt_ServerOutputSend__flag_Control__isCurrentThreadRELEASED(false);
         if (*stat_REG_get_ptr_WriteEnableForThreadsAt_ServerOutputSend__Control__writeCycle_Try_ThreadId_Index() == coreId) {
@@ -91,11 +91,11 @@ void CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__C
             }
         }
     }
-void CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Control::dyn_APP_FUNCT_WriteEnableForThreadsAt_ServerOutputSend__Control__writeEnable_Activate(WriteEnableForThreadsAt_ServerOutputSend__Framework* obj, unsigned long long coreId)
+void CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Control::dyn_APP_FUNCT_WriteEnableForThreadsAt_ServerOutputSend__Control__writeEnable_Activate(WriteEnableForThreadsAt_ServerOutputSend__Framework* obj, std::byte coreId)
     {
         obj->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerOutputSend__App()->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerOutputSend__App__Control()->dyn_REG_set_Item_On_list_Of_WriteEnableForThreadsAt_ServerOutputSend__Control__2ibt_flag_WriteState(coreId, obj->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerOutputSend__Global()->dyn_REG_get_ptr_CONST_WriteEnableForThreadsAt_ServerOutputSend__2bitFLAG_WAIT());
     }
-void CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Control::dyn_APP_FUNCT_WriteEnableForThreadsAt_ServerOutputSend__Control__writeEnable_ShiftQueValues(WriteEnableForThreadsAt_ServerOutputSend__Framework* obj, unsigned long long coreId_A, unsigned long long coreId_B)
+void CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Control::dyn_APP_FUNCT_WriteEnableForThreadsAt_ServerOutputSend__Control__writeEnable_ShiftQueValues(WriteEnableForThreadsAt_ServerOutputSend__Framework* obj, std::byte coreId_A, std::byte coreId_B)
     {
         auto temp_A = static_cast<unsigned long>(0);
         temp_A = obj->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerOutputSend__App()->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerOutputSend__App__Control()->dyn_REG_get_Item_On_WriteEnableForThreadsAt_ServerOutputSend__Control__list_Of_WriteActive_Count_For_ThreadId(coreId_A);
@@ -163,7 +163,7 @@ void CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__C
             }
         }
     }
-void CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Control::dyn_APP_FUNCT_WriteEnableForThreadsAt_ServerOutputSend__Control__writeEnable_Request(WriteEnableForThreadsAt_ServerOutputSend__Framework* obj, unsigned long long coreId)
+void CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Control::dyn_APP_FUNCT_WriteEnableForThreadsAt_ServerOutputSend__Control__writeEnable_Request(WriteEnableForThreadsAt_ServerOutputSend__Framework* obj, std::byte coreId)
     {
         while (obj->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerOutputSend__App()->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerOutputSend__App__Control()->dyn_REG_get_ptr_flag_WriteEnableForThreadsAt_ServerOutputSend__Control__praisingWrite() == true)
         {
@@ -219,28 +219,28 @@ bool CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__C
     }
 
 
-std::array<bool, 2> CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Control::dyn_REG_get_ptr_WriteEnableForThreadsAt_ServerOutputSend__Control__list_Of_2ibt_flag_WriteState(unsigned long long concurrentThreadID)
+std::array<bool, 2> CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Control::dyn_REG_get_ptr_WriteEnableForThreadsAt_ServerOutputSend__Control__list_Of_2ibt_flag_WriteState(std::byte concurrentThreadId)
 {
     auto temp = stat_REG_get_ptr_Array_Of_WriteEnableForThreadsAt_ServerOutputSend__Control__3STATE_flag_WriteState()->begin();
-    std::advance(temp, concurrentThreadID);
+    std::advance(temp, concurrentThreadId);
     return *temp;
 }
-unsigned long long CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Control::dyn_REG_get_Item_On_WriteEnableForThreadsAt_ServerOutputSend__Control__list_Of_WriteActive_Count_For_ThreadId(unsigned long long concurrentThreadID)
+unsigned long long CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Control::dyn_REG_get_Item_On_WriteEnableForThreadsAt_ServerOutputSend__Control__list_Of_WriteActive_Count_For_ThreadId(std::byte concurrentThreadId)
 {
     auto temp = stat_REG_get_ptr_list_Of_WriteEnableForThreadsAt_ServerOutputSend__Control__WriteActive_Count_For_ThreadId()->begin();
-    std::advance(temp, concurrentThreadID);
+    std::advance(temp, concurrentThreadId);
     return *temp;
 }
-unsigned long long CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Control::dyn_REG_get_Item_On_WriteEnableForThreadsAt_ServerOutputSend__Control__list_Of_WriteIdle_Count_For_ThreadId(unsigned long long concurrentThreadID)
+unsigned long long CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Control::dyn_REG_get_Item_On_WriteEnableForThreadsAt_ServerOutputSend__Control__list_Of_WriteIdle_Count_For_ThreadId(std::byte concurrentThreadId)
 {
     auto temp = stat_REG_get_ptr_list_Of_WriteEnableForThreadsAt_ServerOutputSend__Control__WriteIdle_Count_For_ThreadId()->begin();
-    std::advance(temp, concurrentThreadID);
+    std::advance(temp, concurrentThreadId);
     return *temp;
 }
-unsigned long long CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Control::dyn_REG_get_Item_On_WriteEnableForThreadsAt_ServerOutputSend__Control__list_Of_WriteWait_Count_For_ThreadId(unsigned long long concurrentThreadID)
+unsigned long long CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Control::dyn_REG_get_Item_On_WriteEnableForThreadsAt_ServerOutputSend__Control__list_Of_WriteWait_Count_For_ThreadId(std::byte concurrentThreadId)
 {
     auto temp = stat_REG_get_ptr_list_Of_WriteEnableForThreadsAt_ServerOutputSend__Control__WriteWait_Count_For_ThreadId()->begin();
-    std::advance(temp, concurrentThreadID);
+    std::advance(temp, concurrentThreadId);
     return *temp;
 }
 unsigned long long CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Control::dyn_REG_get_Item_WriteEnableForThreadsAt_ServerOutputSend__Control__new_writeCycle_Try_ThreadId_Index()
@@ -261,21 +261,21 @@ void CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__C
 {
     stat_REG_set_flag_WriteEnableForThreadsAt_ServerOutputSend__Control__praisingWrite(newBoolValue);
 }
-void CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Control::dyn_REG_set_Item_On_list_Of_WriteEnableForThreadsAt_ServerOutputSend__Control__2ibt_flag_WriteState(unsigned long long concurrentThreadID, std::array<bool, 2> new2bitState)
+void CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Control::dyn_REG_set_Item_On_list_Of_WriteEnableForThreadsAt_ServerOutputSend__Control__2ibt_flag_WriteState(std::byte concurrentThreadId, std::array<bool, 2> new2bitState)
 {
-    stat_REG_set_Item_On_Of_WriteEnableForThreadsAt_ServerOutputSend__Control__3STATE_flag_WriteState(concurrentThreadID, new2bitState);
+    stat_REG_set_Item_On_Of_WriteEnableForThreadsAt_ServerOutputSend__Control__3STATE_flag_WriteState(concurrentThreadId, new2bitState);
 }
-void CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Control::dyn_REG_set_Item_On_list_Of_WriteEnableForThreadsAt_ServerOutputSend__Control__WriteActive_Count_For_ThreadId(unsigned long long concurrentThreadID, unsigned long long newCount)
+void CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Control::dyn_REG_set_Item_On_list_Of_WriteEnableForThreadsAt_ServerOutputSend__Control__WriteActive_Count_For_ThreadId(std::byte concurrentThreadId, unsigned long long newCount)
 {
-    stat_REG_set_Item_On_list_Of_WriteEnableForThreadsAt_ServerOutputSend__Control__WriteACTIVE_Count_For_ThreadId(concurrentThreadID, newCount);
+    stat_REG_set_Item_On_list_Of_WriteEnableForThreadsAt_ServerOutputSend__Control__WriteACTIVE_Count_For_ThreadId(concurrentThreadId, newCount);
 }
-void CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Control::dyn_REG_set_Item_On_list_Of_WriteEnableForThreadsAt_ServerOutputSend__Control__WriteIdle_Count_For_ThreadId(unsigned long long concurrentThreadID, unsigned long long newCount)
+void CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Control::dyn_REG_set_Item_On_list_Of_WriteEnableForThreadsAt_ServerOutputSend__Control__WriteIdle_Count_For_ThreadId(std::byte concurrentThreadId, unsigned long long newCount)
 {
-    stat_REG_set_Item_On_list_Of_WriteEnableForThreadsAt_ServerOutputSend__Control__WriteIdle_Count_For_ThreadId(concurrentThreadID, newCount);
+    stat_REG_set_Item_On_list_Of_WriteEnableForThreadsAt_ServerOutputSend__Control__WriteIdle_Count_For_ThreadId(concurrentThreadId, newCount);
 }
-void CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Control::dyn_REG_set_Item_On_list_Of_WriteEnableForThreadsAt_ServerOutputSend__Control__WriteWait_Count_For_ThreadId(unsigned long long concurrentThreadID, unsigned long long newCount)
+void CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Control::dyn_REG_set_Item_On_list_Of_WriteEnableForThreadsAt_ServerOutputSend__Control__WriteWait_Count_For_ThreadId(std::byte concurrentThreadId, unsigned long long newCount)
 {
-    stat_REG_set_Item_On_list_Of_WriteEnableForThreadsAt_ServerOutputSend__Control__WriteWait_Count_For_ThreadId(concurrentThreadID, newCount);
+    stat_REG_set_Item_On_list_Of_WriteEnableForThreadsAt_ServerOutputSend__Control__WriteWait_Count_For_ThreadId(concurrentThreadId, newCount);
 }
 void CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Control::dyn_REG_set_WriteEnableForThreadsAt_ServerOutputSend__Control__new_writeCycle_Try_ThreadId_Index(unsigned long long newID)
 {
@@ -458,7 +458,7 @@ std::list<unsigned long>* CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsA
 {
     return _stat_REG_LIST_Of_WriteEnableForThreadsAt_ServerOutputSend__Control__WriteWAIT_Count_For_ThreadId;
 }
-unsigned long* CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Control::stat_REG_get_ptr_WriteEnableForThreadsAt_ServerOutputSend__Control__new_writeCycle_Try_ThreadId_Index()
+unsigned long long* CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Control::stat_REG_get_ptr_WriteEnableForThreadsAt_ServerOutputSend__Control__new_writeCycle_Try_ThreadId_Index()
 {
     return _stat_REG_ptr_WriteEnableForThreadsAt_ServerOutputSend__Control__new_writeCycle_Try_ThreadId_Index;
 }
@@ -466,7 +466,7 @@ std::list<unsigned long>* CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsA
 {
     return _stat_REG_QUE_Of_WriteEnableForThreadsAt_ServerOutputSend__Control__ThreadID_To_WRITE;
 }
-unsigned long* CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Control::stat_REG_get_ptr_WriteEnableForThreadsAt_ServerOutputSend__Control__writeCycle_Try_ThreadId_Index()
+unsigned long long* CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Control::stat_REG_get_ptr_WriteEnableForThreadsAt_ServerOutputSend__Control__writeCycle_Try_ThreadId_Index()
 {
     return _stat_REG_ptr_WriteEnableForThreadsAt_ServerOutputSend__Control__writeCycle_Try_ThreadId_Index;
 }
@@ -474,39 +474,39 @@ void CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__C
 {
     *_stat_REG_ptr_flag_WriteEnableForThreadsAt_ServerOutputSend__Control__praisingWrite = newFlag;
 }
-void CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Control::stat_REG_set_Item_On_Of_WriteEnableForThreadsAt_ServerOutputSend__Control__3STATE_flag_WriteState(unsigned long long concurrentThreadID, std::array<bool, 2> new2bitState)
+void CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Control::stat_REG_set_Item_On_Of_WriteEnableForThreadsAt_ServerOutputSend__Control__3STATE_flag_WriteState(std::byte concurrentThreadId, std::array<bool, 2> new2bitState)
 {
     auto temp = stat_REG_get_ptr_Array_Of_WriteEnableForThreadsAt_ServerOutputSend__Control__3STATE_flag_WriteState()->begin();
-    std::advance(temp, concurrentThreadID);
+    std::advance(temp, concurrentThreadId);
     *temp = new2bitState;
 }
-void CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Control::stat_REG_set_Item_On_list_Of_WriteEnableForThreadsAt_ServerOutputSend__Control__WriteACTIVE_Count_For_ThreadId(unsigned long long concurrentThreadID, unsigned long long newCount)
+void CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Control::stat_REG_set_Item_On_list_Of_WriteEnableForThreadsAt_ServerOutputSend__Control__WriteACTIVE_Count_For_ThreadId(std::byte concurrentThreadId, unsigned long long newCount)
 {
     auto temp = stat_REG_get_ptr_list_Of_WriteEnableForThreadsAt_ServerOutputSend__Control__WriteActive_Count_For_ThreadId()->begin();
-    std::advance(temp, concurrentThreadID);
+    std::advance(temp, concurrentThreadId);
     *temp = newCount;
 }
-void CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Control::stat_REG_set_Item_On_list_Of_WriteEnableForThreadsAt_ServerOutputSend__Control__WriteIdle_Count_For_ThreadId(unsigned long long concurrentThreadID, unsigned long long newCount)
+void CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Control::stat_REG_set_Item_On_list_Of_WriteEnableForThreadsAt_ServerOutputSend__Control__WriteIdle_Count_For_ThreadId(std::byte concurrentThreadId, unsigned long long newCount)
 {
     auto temp = stat_REG_get_ptr_list_Of_WriteEnableForThreadsAt_ServerOutputSend__Control__WriteIdle_Count_For_ThreadId()->begin();
-    std::advance(temp, concurrentThreadID);
+    std::advance(temp, concurrentThreadId);
     *temp = newCount;
 }
-void CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Control::stat_REG_set_Item_On_list_Of_WriteEnableForThreadsAt_ServerOutputSend__Control__WriteWait_Count_For_ThreadId(unsigned long long concurrentThreadID, unsigned long long newCount)
+void CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Control::stat_REG_set_Item_On_list_Of_WriteEnableForThreadsAt_ServerOutputSend__Control__WriteWait_Count_For_ThreadId(std::byte concurrentThreadId, unsigned long long newCount)
 {
     auto temp = stat_REG_get_ptr_list_Of_WriteEnableForThreadsAt_ServerOutputSend__Control__WriteWait_Count_For_ThreadId()->begin();
-    std::advance(temp, concurrentThreadID);
+    std::advance(temp, concurrentThreadId);
     *temp = newCount;
 }
 void CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Control::stat_REG_set_WriteEnableForThreadsAt_ServerOutputSend__Control__new_writeCycle_Try_ThreadId_Index(unsigned long long newValue)
 {
     *_stat_REG_ptr_WriteEnableForThreadsAt_ServerOutputSend__Control__new_writeCycle_Try_ThreadId_Index = newValue;
 }
-void CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Control::stat_REG_set_Item_On_QUE_WriteEnableForThreadsAt_ServerOutputSend__Control__List_Of_ThreadToWrite(unsigned long long slotID, unsigned long long concurrentThreadID)
+void CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Control::stat_REG_set_Item_On_QUE_WriteEnableForThreadsAt_ServerOutputSend__Control__List_Of_ThreadToWrite(unsigned long long slotID, std::byte concurrentThreadId)
 {
     auto temp = stat_REG_get_ptr_QUE_WriteEnableForThreadsAt_ServerOutputSend__Control__List_Of_ThreadToWrite()->begin();
     std::advance(temp, slotID);
-    *temp = concurrentThreadID;
+    *temp = concurrentThreadId;
 }
 void CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Control::stat_REG_set_WriteEnableForThreadsAt_ServerOutputSend__Control__writeCycle_Try_ThreadId_Index(unsigned long long newValue)
 {

@@ -15,10 +15,10 @@
     {
         delete _stat_REG_ptr_list_Of_ptr_Concurrent;
     }
-    CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT__Concurrent* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Algorithms::dyn_STRUCT_get_Item_On_list_Of_ptr_Concurrent(unsigned long long concurrentThreadId)
+    CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT__Concurrent* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Algorithms::dyn_STRUCT_get_Item_On_list_Of_ptr_Concurrent(std::byte concurrentThreadId)
     {
         auto temp = stat_REG_get_ptr_list_Of_ptr_Concurrent()->begin();
-        std::advance(temp, concurrentThreadId);
+        std::advance(temp, static_cast<int>(concurrentThreadId));
         return *temp;
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Algorithms::dyn_REG_boot1_DEFINE_CLIB_OpenEpiCentre_Algorithm(CLIB_OpenEpiCentre__Framework* obj)
@@ -85,7 +85,7 @@
         _stat_REG_ptr_list_Of_ptr_Concurrent = new std::list<CLIB_OpenEpiCentre_STRUCT__Concurrent*>();
         while (stat_REG_get_ptr_list_Of_ptr_Concurrent() == nullptr) {}
         stat_REG_get_ptr_list_Of_ptr_Concurrent()->resize(static_cast<unsigned long>(3));//NUMBER OF CONCURRENT THREADS.
-        for (unsigned long long concurrentThreadId = 0; concurrentThreadId < sizeof(*stat_REG_get_ptr_list_Of_ptr_Concurrent()); concurrentThreadId++)
+        for (int concurrentThreadId = 0; concurrentThreadId < sizeof(*stat_REG_get_ptr_list_Of_ptr_Concurrent()); concurrentThreadId++)
         {
             auto temp = stat_REG_get_ptr_list_Of_ptr_Concurrent()->begin();
             std::advance(temp, concurrentThreadId);
@@ -94,7 +94,7 @@
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Algorithms::stat_REG_boot3_INITIALISE_list_Of_ptr_Concurrent(CLIB_OpenEpiCentre__Framework* obj, CLIB_OpenEpiCentre_STRUCT__Concurrent* objConcurrent)
     {
-        for (unsigned long long concurrentThreadId = 0; concurrentThreadId < sizeof(*stat_REG_get_ptr_list_Of_ptr_Concurrent()); concurrentThreadId++)
+        for (int concurrentThreadId = 0; concurrentThreadId < sizeof(*stat_REG_get_ptr_list_Of_ptr_Concurrent()); concurrentThreadId++)
         {
             auto temp = stat_REG_get_ptr_list_Of_ptr_Concurrent()->begin();
             std::advance(temp, concurrentThreadId);

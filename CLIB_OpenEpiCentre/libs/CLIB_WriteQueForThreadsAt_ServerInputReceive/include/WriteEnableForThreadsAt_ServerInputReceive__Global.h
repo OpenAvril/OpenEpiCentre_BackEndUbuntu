@@ -16,7 +16,7 @@ namespace CLIBWriteQueAtServerInputReceive
         std::array<bool,2> dyn_REG_get_ptr_CONST_WriteEnableForThreadsAt_ServerInputReceive__2bitFLAG_IDLE();
         std::array<bool,2> dyn_REG_get_ptr_CONST_WriteEnableForThreadsAt_ServerInputReceive__2bitFLAG_WAIT();
         std::array<bool,2> dyn_REG_get_ptr_CONST_WriteEnableForThreadsAt_ServerInputReceive__2bitFLAG_WRITE();
-        unsigned long long dyn_REG_get_WriteEnableForThreadsAt_ServerInputReceive__number_Of_Implemented_Threads();
+        std::byte dyn_REG_get_WriteEnableForThreadsAt_ServerInputReceive__number_Of_Implemented_Threads();
         unsigned char* stat_APP_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__MsbFloat_To_MsbByteArray(float value);
         unsigned char* stat_APP_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__MsbDouble_To_MsbByteArray(double value);
         unsigned char* stat_APP_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__Msb_unsignedLongLong_to_MsbByteArray(unsigned long long value);
@@ -30,7 +30,7 @@ namespace CLIBWriteQueAtServerInputReceive
         static std::array<bool,2>* _stat_REG_CONST_WriteEnableForThreadsAt_ServerInputReceive__2bitFLAG_IDLE;
         static std::array<bool,2>* _stat_REG_CONST_WriteEnableForThreadsAt_ServerInputReceive__2bitFLAG_WAIT;
         static std::array<bool,2>* _stat_REG_CONST_WriteEnableForThreadsAt_ServerInputReceive__2bitFLAG_WRITE;
-        static unsigned long* _stat_REG_ptr_WriteEnableForThreadsAt_ServerInputReceive__number_Of_Implemented_Threads;
+        static std::byte* _stat_REG_ptr_WriteEnableForThreadsAt_ServerInputReceive__number_Of_Implemented_Threads;
         static int pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__Bool_To_Int(bool value);
         static unsigned char* pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__MsbBoolean_To_MsbByteArray(bool value);
         static bool pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__MsbByteArray_To_MsbBoolean(const unsigned char* byteArray);
@@ -55,7 +55,7 @@ namespace CLIBWriteQueAtServerInputReceive
         static std::array<bool,2>* stat_REG_get_ptr_CONST_WriteEnableForThreadsAt_ServerInputReceive__2bitFLAG_IDLE();
         static std::array<bool,2>* stat_REG_get_ptr_CONST_WriteEnableForThreadsAt_ServerInputReceive__2bitFLAG_WAIT();
         static std::array<bool,2>* stat_REG_get_ptr_CONST_WriteEnableForThreadsAt_ServerInputReceive__2bitFLAG_WRITE();
-        static unsigned long* stat_REG_get_ptr_WriteEnableForThreadsAt_ServerInputReceive__number_Of_Implemented_Threads();
+        static std::byte* stat_REG_get_ptr_WriteEnableForThreadsAt_ServerInputReceive__number_Of_Implemented_Threads();
     };
 }
 #endif

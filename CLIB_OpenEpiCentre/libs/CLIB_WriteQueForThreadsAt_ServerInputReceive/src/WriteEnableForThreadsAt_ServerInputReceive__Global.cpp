@@ -6,7 +6,7 @@
 std::array<bool,2>* CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceive__Global::_stat_REG_CONST_WriteEnableForThreadsAt_ServerInputReceive__2bitFLAG_IDLE;
 std::array<bool,2>* CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceive__Global::_stat_REG_CONST_WriteEnableForThreadsAt_ServerInputReceive__2bitFLAG_WAIT;
 std::array<bool,2>* CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceive__Global::_stat_REG_CONST_WriteEnableForThreadsAt_ServerInputReceive__2bitFLAG_WRITE;
-unsigned long* CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceive__Global::_stat_REG_ptr_WriteEnableForThreadsAt_ServerInputReceive__number_Of_Implemented_Threads;
+std::byte* CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceive__Global::_stat_REG_ptr_WriteEnableForThreadsAt_ServerInputReceive__number_Of_Implemented_Threads;
 CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceive__Global::WriteEnableForThreadsAt_ServerInputReceive__Global()
 {
 
@@ -62,7 +62,8 @@ std::array<bool,2> CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_Ser
 {
     return *stat_REG_get_ptr_CONST_WriteEnableForThreadsAt_ServerInputReceive__2bitFLAG_WRITE();
 }
-unsigned long long CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceive__Global::dyn_REG_get_WriteEnableForThreadsAt_ServerInputReceive__number_Of_Implemented_Threads()
+
+std::byte CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceive__Global::dyn_REG_get_WriteEnableForThreadsAt_ServerInputReceive__number_Of_Implemented_Threads()
 {
     return *stat_REG_get_ptr_WriteEnableForThreadsAt_ServerInputReceive__number_Of_Implemented_Threads();
 }
@@ -184,7 +185,8 @@ void CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceiv
 }
 void CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceive__Global::stat_REG_boot2_SUBSTANTIATE_ptr_WriteEnableForThreadsAt_ServerInputReceive__number_Of_Implemented_Threads()
 {
-    _stat_REG_ptr_WriteEnableForThreadsAt_ServerInputReceive__number_Of_Implemented_Threads = new unsigned long(UINT8_MAX);
+    _stat_REG_ptr_WriteEnableForThreadsAt_ServerInputReceive__number_Of_Implemented_Threads = new std::byte();
+    *_stat_REG_ptr_WriteEnableForThreadsAt_ServerInputReceive__number_Of_Implemented_Threads = static_cast<std::byte>(255);
 }
 void CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceive__Global::stat_REG_boot3_INITIALISE_CONST_WriteEnableForThreadsAt_ServerInputReceive__2bitFLAG_IDLE() {
     *_stat_REG_CONST_WriteEnableForThreadsAt_ServerInputReceive__2bitFLAG_IDLE = {false, false};
@@ -199,7 +201,7 @@ void CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceiv
 }
 void CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceive__Global::stat_REG_boot3_INITIALISE_ptr_WriteEnableForThreadsAt_ServerInputReceive__number_Of_Implemented_Threads()
 {
-    *_stat_REG_ptr_WriteEnableForThreadsAt_ServerInputReceive__number_Of_Implemented_Threads = static_cast<unsigned long>(4);
+    *_stat_REG_ptr_WriteEnableForThreadsAt_ServerInputReceive__number_Of_Implemented_Threads = static_cast<std::byte>(4);
 }
 std::array<bool,2>* CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceive__Global::stat_REG_get_ptr_CONST_WriteEnableForThreadsAt_ServerInputReceive__2bitFLAG_IDLE()
 {
@@ -213,7 +215,8 @@ std::array<bool,2>* CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_Se
 {
     return _stat_REG_CONST_WriteEnableForThreadsAt_ServerInputReceive__2bitFLAG_WRITE;
 }
-unsigned long* CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceive__Global::stat_REG_get_ptr_WriteEnableForThreadsAt_ServerInputReceive__number_Of_Implemented_Threads()
+
+std::byte* CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceive__Global::stat_REG_get_ptr_WriteEnableForThreadsAt_ServerInputReceive__number_Of_Implemented_Threads()
 {
     return _stat_REG_ptr_WriteEnableForThreadsAt_ServerInputReceive__number_Of_Implemented_Threads;
 }
