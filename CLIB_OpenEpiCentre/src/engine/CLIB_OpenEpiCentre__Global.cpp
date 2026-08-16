@@ -139,7 +139,7 @@ enum Axis
     unsigned long long CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::stat_CONVERT_MsbByteArray_To_MsbunsignedLongLong(const unsigned char* byteArray)
     {
         unsigned long long temp;
-        std::memcpy(&temp, byteArray, sizeof(unsigned long));
+        std::memcpy(&temp, byteArray, sizeof(unsigned long long));
         return temp;
     }
     unsigned char* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::stat_CONVERT_MsbByte_To_MsbByteArray(std::byte byte) {
