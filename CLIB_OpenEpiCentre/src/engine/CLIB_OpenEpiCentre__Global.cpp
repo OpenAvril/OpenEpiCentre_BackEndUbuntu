@@ -142,6 +142,11 @@ enum Axis
         std::memcpy(&temp, byteArray, sizeof(unsigned long));
         return temp;
     }
+    unsigned char* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::stat_CONVERT_MsbByte_To_MsbByteArray(std::byte byte) {
+        unsigned char* temp;
+        std::memcpy(&temp, &byte, sizeof(std::byte));
+        return temp;
+    }
     unsigned char* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::stat_CONVERT_MsbFloat_To_MsbByteArray(float value)
     {
         unsigned char* buffer = nullptr;

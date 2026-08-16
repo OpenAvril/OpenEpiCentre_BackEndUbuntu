@@ -15,10 +15,17 @@ namespace CLIBLaunchQueAtServer
         bool dyn_REG_get_ptr_flag_LaunchEnableForConcurrentThreadsAt_Server__thread_2STATE_ACTIVE();
         bool dyn_REG_get_ptr_flag_LaunchEnableForConcurrentThreadsAt_Server__thread_2STATE_IDLE();
         std::byte dyn_REG_get_LaunchEnableForConcurrentThreadsAt_Server__number_Implemented_Threads();
-        static unsigned char* stat_APP_CONVERT_LaunchEnableForConcurrentThreadsAt_Server__bool_to_ByteArray(bool bool_Value);
-        static unsigned char* stat_APP_CONVERT_LaunchEnableForConcurrentThreadsAt_Server__uint8_t_To_ByteArray(uint8_t byte_Value);
-        static bool stat_APP_CONVERT_LaunchEnableForConcurrentThreadsAt_Server__ByteArray_To_bool(unsigned char* bytes);
-        static std::byte stat_APP_CONVERT_LaunchEnableForConcurrentThreadsAt_Server__ByteArray_To_uint8_t(unsigned char* bytes);
+        static int stat_CONVERT_LaunchEnableForConcurrentThreadsAt_Server__Bool_To_Int(bool value);
+        static unsigned char* stat_CONVERT_LaunchEnableForConcurrentThreadsAt_Server__MsbBoolean_To_MsbByteArray(bool value);
+        static bool stat_CONVERT_LaunchEnableForConcurrentThreadsAt_Server__MsbByteArray_To_MsbBoolean(const unsigned char* byteArray);
+        static std::byte stat_CONVERT_LaunchEnableForConcurrentThreadsAt_Server__MsbByteArray_To_MsbByte(const unsigned char* byteArray);
+        static double stat_CONVERT_LaunchEnableForConcurrentThreadsAt_Server__MsbByteArray_To_MsbDouble(const unsigned char* byteArray);
+        static float stat_CONVERT_LaunchEnableForConcurrentThreadsAt_Server__MsbByteArray_To_MsbFloat(const unsigned char* byteArray);
+        static unsigned long long stat_CONVERT_LaunchEnableForConcurrentThreadsAt_Server__MsbByteArray_To_MsbunsignedLongLong(const unsigned char* byteArray);
+        static unsigned char* stat_CONVERT_LaunchEnableForConcurrentThreadsAt_Server__MsbByte_To_MsbByteArray(const std::byte byte);
+        static unsigned char* stat_CONVERT_LaunchEnableForConcurrentThreadsAt_Server__MsbFloat_To_MsbByteArray(float value);
+        static unsigned char* stat_CONVERT_LaunchEnableForConcurrentThreadsAt_Server__MsbDouble_To_MsbByteArray(double value);
+        static unsigned char* stat_CONVERT_LaunchEnableForConcurrentThreadsAt_Server__unsignedLongLong_to_ByteArray(unsigned long long value);
     private:
         static bool* _stat_REG_ptr_flag_LaunchEnableForConcurrentThreadsAt_Server__thread_2STATE;//NUMBER OF CONCURRENT THREADS.
         static std::byte* _stat_REG_ptr_LaunchEnableForConcurrentThreadsAt_Server__number_Implemented_Threads;

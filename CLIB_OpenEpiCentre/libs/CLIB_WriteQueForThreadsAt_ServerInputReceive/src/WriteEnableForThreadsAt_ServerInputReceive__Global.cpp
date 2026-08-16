@@ -67,44 +67,78 @@ std::byte CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputR
 {
     return *stat_REG_get_ptr_WriteEnableForThreadsAt_ServerInputReceive__number_Of_Implemented_Threads();
 }
-int CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceive__Global::stat_APP_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__Bool_To_Int(bool value)
-{
-    return pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__Bool_To_Int(value);
-}
-unsigned char* CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceive__Global::stat_APP_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__MsbFloat_To_MsbByteArray(float value) {
-    return pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__MsbFloat_To_MsbByteArray(value);
-}
-unsigned char* CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceive__Global::stat_APP_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__MsbDouble_To_MsbByteArray(double value) {
-    return pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__MsbDouble_To_MsbByteArray(value);
-}
-unsigned char* CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceive__Global::stat_APP_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__Msb_unsignedLongLong_to_MsbByteArray(unsigned long long value) {
-    return pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__Msb_unsignedLongLong_to_MsbByteArray(value);
-}
-unsigned char* CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceive__Global::stat_APP_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__MsbBoolean_To_MsbByteArray(bool value)
-{
-    return pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__MsbBoolean_To_MsbByteArray(value);
-}
-bool CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceive__Global::stat_APP_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__MsbByteArray_To_MsbBoolean(const unsigned char* byteArray)
-{
-    return pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__MsbByteArray_To_MsbBoolean(byteArray);
-}
-std::byte CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceive__Global::stat_APP_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__MsbByteArray_To_MsbByte(const unsigned char* byteArray)
-{
-    return *pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__MsbByteArray_To_MsbByte(byteArray);
-}
-double CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceive__Global::stat_APP_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__MsbByteArray_To_MsbDouble(const unsigned char* byteArray)
-{
-    return pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__MsbByteArray_To_MsbDouble(byteArray);
-}
-float CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceive__Global::stat_APP_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__MsbByteArray_To_MsbFloat(const unsigned char* byteArray)
-{
-    return pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__MsbByteArray_To_MsbFloat(byteArray);
-}
-unsigned long long CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceive__Global::stat_APP_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__MsbByteArray_To_MsbunsignedLongLong(const unsigned char* byteArray)
-{
-    return pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__MsbByteArray_To_MsbunsignedLongLong(byteArray);
-}
-int CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceive__Global::pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__Bool_To_Int(bool value) {
+    int CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceive__Global::stat_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__Bool_To_Int(bool value)
+    {
+        int* temp = nullptr;
+        *temp = 2;
+        if (value) {
+            *temp = 1;;
+        }
+        if (!value) {
+            *temp = 0;
+        }
+        return *temp;
+    }
+    unsigned char* CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceive__Global::stat_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__MsbBoolean_To_MsbByteArray(bool value)
+    {
+        unsigned char* buffer = nullptr;
+        for (int bitIndex = 0; bitIndex < sizeof(unsigned char); bitIndex++) {
+            buffer[bitIndex] = static_cast<unsigned char>(value);
+        }
+        return buffer;
+    }
+    bool CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceive__Global::stat_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__MsbByteArray_To_MsbBoolean(const unsigned char* byteArray)
+    {
+        return (byteArray[7] & 1) != 0;
+    }
+    std::byte CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceive__Global::stat_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__MsbByteArray_To_MsbByte(const unsigned char* byteArray)
+    {
+        std::byte temp;
+        std::memcpy(&temp, byteArray, sizeof(std::byte));
+        return temp;
+    }
+    double CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceive__Global::stat_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__MsbByteArray_To_MsbDouble(const unsigned char* byteArray)
+    {
+        double temp;
+        std::memcpy(&temp, byteArray, sizeof(double));
+        return temp;
+    }
+    float CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceive__Global::stat_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__MsbByteArray_To_MsbFloat(const unsigned char* byteArray)
+    {
+        float temp;
+        std::memcpy(&temp, byteArray, sizeof(float));
+        return temp;
+    }
+    unsigned long long CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceive__Global::stat_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__MsbByteArray_To_MsbunsignedLongLong(const unsigned char* byteArray)
+    {
+        unsigned long long temp;
+        std::memcpy(&temp, byteArray, sizeof(unsigned long));
+        return temp;
+    }
+    unsigned char* CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceive__Global::stat_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__MsbByte_To_MsbByteArray(std::byte byte) {
+        unsigned char* temp;
+        std::memcpy(&temp, &byte, sizeof(std::byte));
+        return temp;
+    }
+    unsigned char* CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceive__Global::stat_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__MsbFloat_To_MsbByteArray(float value)
+    {
+        unsigned char* buffer = nullptr;
+        std::memcpy(buffer, &value, sizeof(float));
+        return buffer;
+    }
+    unsigned char* CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceive__Global::stat_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__MsbDouble_To_MsbByteArray(double value)
+    {
+        unsigned char* buffer = nullptr;
+        std::memcpy(buffer, &value, sizeof(double));
+        return buffer;
+    }
+    unsigned char* CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceive__Global::stat_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__unsignedLongLong_to_ByteArray(unsigned long long value)
+    {
+        unsigned char* buffer = nullptr;
+        std::memcpy(buffer, &value, sizeof(unsigned long));
+        return buffer;
+    }
+int CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceive__Global::pr_stat_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__Bool_To_Int(bool value) {
     int* temp = nullptr;
     *temp = 2;
     if (value) {
@@ -115,7 +149,7 @@ int CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceive
     }
     return *temp;
 }
-unsigned char* CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceive__Global::pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__MsbBoolean_To_MsbByteArray(bool value) {
+unsigned char* CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceive__Global::pr_stat_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__MsbBoolean_To_MsbByteArray(bool value) {
     unsigned char* buffer = nullptr;
     buffer = new unsigned char[1];
     for (unsigned long long bitIndex = 0; bitIndex < sizeof(unsigned char); bitIndex++) {
@@ -123,43 +157,43 @@ unsigned char* CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerI
     }
     return buffer;
 }
-bool CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceive__Global::pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__MsbByteArray_To_MsbBoolean(const unsigned char* byteArray) {
+bool CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceive__Global::pr_stat_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__MsbByteArray_To_MsbBoolean(const unsigned char* byteArray) {
     return (byteArray[7] & 1) != 0;
 }
-std::byte* CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceive__Global::pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__MsbByteArray_To_MsbByte(const unsigned char* byteArray)
+std::byte* CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceive__Global::pr_stat_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__MsbByteArray_To_MsbByte(const unsigned char* byteArray)
 {
     std::byte* temp;
     std::memcpy(&temp, byteArray, sizeof(std::byte));
     return temp;
 }
-double CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceive__Global::pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__MsbByteArray_To_MsbDouble(const unsigned char* byteArray) {
+double CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceive__Global::pr_stat_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__MsbByteArray_To_MsbDouble(const unsigned char* byteArray) {
     double temp;
     std::memcpy(&temp, byteArray, sizeof(double));
     return temp;
 }
-float CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceive__Global::pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__MsbByteArray_To_MsbFloat(const unsigned char* byteArray) {
+float CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceive__Global::pr_stat_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__MsbByteArray_To_MsbFloat(const unsigned char* byteArray) {
     float temp;
     std::memcpy(&temp, byteArray, sizeof(float));
     return temp;
 }
-unsigned long long CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceive__Global::pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__MsbByteArray_To_MsbunsignedLongLong(const unsigned char* byteArray) {
+unsigned long long CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceive__Global::pr_stat_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__MsbByteArray_To_MsbunsignedLongLong(const unsigned char* byteArray) {
     unsigned long long temp;
     std::memcpy(&temp, byteArray, sizeof(unsigned long));
     return temp;
 }
-unsigned char* CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceive__Global::pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__MsbFloat_To_MsbByteArray(float value) {
+unsigned char* CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceive__Global::pr_stat_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__MsbFloat_To_MsbByteArray(float value) {
     unsigned char* buffer = nullptr;
     buffer = new unsigned char[4] { UCHAR_MAX, UCHAR_MAX, UCHAR_MAX, UCHAR_MAX};
     std::memcpy(buffer, &value, sizeof(float));
     return buffer;
 }
-unsigned char* CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceive__Global::pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__MsbDouble_To_MsbByteArray(double value) {
+unsigned char* CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceive__Global::pr_stat_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__MsbDouble_To_MsbByteArray(double value) {
     unsigned char* buffer = nullptr;
     buffer = new unsigned char[8] { UCHAR_MAX, UCHAR_MAX, UCHAR_MAX, UCHAR_MAX, UCHAR_MAX, UCHAR_MAX, UCHAR_MAX, UCHAR_MAX};
     std::memcpy(buffer, &value, sizeof(double));
     return buffer;
 }
-unsigned char* CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceive__Global::pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__Msb_unsignedLongLong_to_MsbByteArray(unsigned long long value) {
+unsigned char* CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceive__Global::pr_stat_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__Msb_unsignedLongLong_to_MsbByteArray(unsigned long long value) {
     unsigned char* buffer = nullptr;
     buffer = new unsigned char[1] { UCHAR_MAX };
     std::memcpy(buffer, &value, sizeof(unsigned long));

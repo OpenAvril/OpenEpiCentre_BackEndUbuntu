@@ -50,18 +50,18 @@
     unsigned char* CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server__app_FUNCT_get_flag_isPGM_INSTANTIATED()
     {
         if (CLIB_LaunchEnableForConcurrentThreadsAt_Server__stat_REG_get_CLIBLaunchQueAtServer_isFlagINSTANTIATED()[1] == false) {
-            return LaunchEnableForConcurrentThreadsAt_Server__Global::stat_APP_CONVERT_LaunchEnableForConcurrentThreadsAt_Server__bool_to_ByteArray(CLIB_LaunchEnableForConcurrentThreadsAt_Server__stat_REG_get_CLIBLaunchQueAtServer_isFlagINSTANTIATED()[0]);
+            return LaunchEnableForConcurrentThreadsAt_Server__Global::stat_CONVERT_LaunchEnableForConcurrentThreadsAt_Server__MsbBoolean_To_MsbByteArray(CLIB_LaunchEnableForConcurrentThreadsAt_Server__stat_REG_get_CLIBLaunchQueAtServer_isFlagINSTANTIATED()[0]);
         }
         else {
             CLIB_LaunchEnableForConcurrentThreadsAt_Server__stat_REG_get_CLIBLaunchQueAtServer_isFlagINSTANTIATED()[1] = false;
             CLIB_LaunchEnableForConcurrentThreadsAt_Server__stat_app_FUNCT_Calc_IsAllINSTANTIATED();
-            return LaunchEnableForConcurrentThreadsAt_Server__Global::stat_APP_CONVERT_LaunchEnableForConcurrentThreadsAt_Server__bool_to_ByteArray(true);
+            return LaunchEnableForConcurrentThreadsAt_Server__Global::stat_CONVERT_LaunchEnableForConcurrentThreadsAt_Server__MsbBoolean_To_MsbByteArray(true);
         }
     }
     void CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server__app_FUNCT_request_Wait_launch(unsigned char* bytes)
     {
         if (CLIB_LaunchEnableForConcurrentThreadsAt_Server__stat_REG_get_CLIBLaunchQueAtServer_isFlagINSTANTIATED()[2] == false) {
-            CLIB_LaunchEnableForConcurrentThreadsAt_Server__stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__Framework()->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__App()->dyn_APP_LaunchEnableForConcurrentThreadsAt_Server__thread_Start(CLIB_LaunchEnableForConcurrentThreadsAt_Server__stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__Framework(), LaunchEnableForConcurrentThreadsAt_Server__Global::stat_APP_CONVERT_LaunchEnableForConcurrentThreadsAt_Server__ByteArray_To_uint8_t(bytes));
+            CLIB_LaunchEnableForConcurrentThreadsAt_Server__stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__Framework()->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__App()->dyn_APP_LaunchEnableForConcurrentThreadsAt_Server__thread_Start(CLIB_LaunchEnableForConcurrentThreadsAt_Server__stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__Framework(), LaunchEnableForConcurrentThreadsAt_Server__Global::stat_CONVERT_LaunchEnableForConcurrentThreadsAt_Server__MsbByteArray_To_MsbByte(bytes));
         }
         else {
             CLIB_LaunchEnableForConcurrentThreadsAt_Server__stat_REG_get_CLIBLaunchQueAtServer_isFlagINSTANTIATED()[2] = false;
@@ -91,63 +91,63 @@
     unsigned char* CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server__app_REG_get_coreId_To_launch()
     {
         if (CLIB_LaunchEnableForConcurrentThreadsAt_Server__stat_REG_get_CLIBLaunchQueAtServer_isFlagINSTANTIATED()[5] == false) {
-            return CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Global::stat_APP_CONVERT_LaunchEnableForConcurrentThreadsAt_Server__uint8_t_To_ByteArray(CLIB_LaunchEnableForConcurrentThreadsAt_Server__stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__Framework()->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__App()->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__Control()->dyn_REG_get_LaunchEnableForConcurrentThreadsAt_Server__Item_On_list_for_Que_Of_CoreTolaunch(static_cast<std::byte>(0)));
+            return CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Global::stat_CONVERT_LaunchEnableForConcurrentThreadsAt_Server__MsbByte_To_MsbByteArray(CLIB_LaunchEnableForConcurrentThreadsAt_Server__stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__Framework()->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__App()->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__Control()->dyn_REG_get_LaunchEnableForConcurrentThreadsAt_Server__Item_On_list_for_Que_Of_CoreTolaunch(static_cast<std::byte>(0)));
         }
         else {
             CLIB_LaunchEnableForConcurrentThreadsAt_Server__stat_REG_get_CLIBLaunchQueAtServer_isFlagINSTANTIATED()[5] = false;
             CLIB_LaunchEnableForConcurrentThreadsAt_Server__stat_app_FUNCT_Calc_IsAllINSTANTIATED();
-            return CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Global::stat_APP_CONVERT_LaunchEnableForConcurrentThreadsAt_Server__uint8_t_To_ByteArray(UINT8_MAX);
+            return CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Global::stat_CONVERT_LaunchEnableForConcurrentThreadsAt_Server__MsbByte_To_MsbByteArray(static_cast<std::byte>(255));
         }
     }
     unsigned char* CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server__app_REG_get_Flag_Active()
     {
         if (CLIB_LaunchEnableForConcurrentThreadsAt_Server__stat_REG_get_CLIBLaunchQueAtServer_isFlagINSTANTIATED()[6] == false) {
-            return LaunchEnableForConcurrentThreadsAt_Server__Global::stat_APP_CONVERT_LaunchEnableForConcurrentThreadsAt_Server__bool_to_ByteArray(CLIB_LaunchEnableForConcurrentThreadsAt_Server__stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__Framework()->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__Global()->dyn_REG_get_ptr_flag_LaunchEnableForConcurrentThreadsAt_Server__thread_2STATE_ACTIVE());
+            return LaunchEnableForConcurrentThreadsAt_Server__Global::stat_CONVERT_LaunchEnableForConcurrentThreadsAt_Server__MsbBoolean_To_MsbByteArray(CLIB_LaunchEnableForConcurrentThreadsAt_Server__stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__Framework()->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__Global()->dyn_REG_get_ptr_flag_LaunchEnableForConcurrentThreadsAt_Server__thread_2STATE_ACTIVE());
         }
         else {
             CLIB_LaunchEnableForConcurrentThreadsAt_Server__stat_REG_get_CLIBLaunchQueAtServer_isFlagINSTANTIATED()[6] = false;
             CLIB_LaunchEnableForConcurrentThreadsAt_Server__stat_app_FUNCT_Calc_IsAllINSTANTIATED();
-            return LaunchEnableForConcurrentThreadsAt_Server__Global::stat_APP_CONVERT_LaunchEnableForConcurrentThreadsAt_Server__bool_to_ByteArray(true);
+            return LaunchEnableForConcurrentThreadsAt_Server__Global::stat_CONVERT_LaunchEnableForConcurrentThreadsAt_Server__MsbBoolean_To_MsbByteArray(true);
         }
     }
     unsigned char* CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server__app_REG_get_Flag_ConcurrentCoreState(unsigned char* bytes)
     {
         if (CLIB_LaunchEnableForConcurrentThreadsAt_Server__stat_REG_get_CLIBLaunchQueAtServer_isFlagINSTANTIATED()[7] == false) {
-            return LaunchEnableForConcurrentThreadsAt_Server__Global::stat_APP_CONVERT_LaunchEnableForConcurrentThreadsAt_Server__bool_to_ByteArray(CLIB_LaunchEnableForConcurrentThreadsAt_Server__stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__Framework()->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__App()->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__Control()->dyn_REG_get_LaunchEnableForConcurrentThreadsAt_Server__Item_On_list_Of_STATE_For_ConcurrentCore(CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Global::stat_APP_CONVERT_LaunchEnableForConcurrentThreadsAt_Server__ByteArray_To_uint8_t(bytes)));
+            return LaunchEnableForConcurrentThreadsAt_Server__Global::stat_CONVERT_LaunchEnableForConcurrentThreadsAt_Server__MsbBoolean_To_MsbByteArray(CLIB_LaunchEnableForConcurrentThreadsAt_Server__stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__Framework()->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__App()->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__Control()->dyn_REG_get_LaunchEnableForConcurrentThreadsAt_Server__Item_On_list_Of_STATE_For_ConcurrentCore(CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Global::stat_CONVERT_LaunchEnableForConcurrentThreadsAt_Server__MsbByteArray_To_MsbByte(bytes)));
         }
         else {
             CLIB_LaunchEnableForConcurrentThreadsAt_Server__stat_REG_get_CLIBLaunchQueAtServer_isFlagINSTANTIATED()[7] = false;
             CLIB_LaunchEnableForConcurrentThreadsAt_Server__stat_app_FUNCT_Calc_IsAllINSTANTIATED();
-            return LaunchEnableForConcurrentThreadsAt_Server__Global::stat_APP_CONVERT_LaunchEnableForConcurrentThreadsAt_Server__bool_to_ByteArray(true);
+            return LaunchEnableForConcurrentThreadsAt_Server__Global::stat_CONVERT_LaunchEnableForConcurrentThreadsAt_Server__MsbBoolean_To_MsbByteArray(true);
         }
     }
     unsigned char* CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server__app_REG_get_Flag_Idle()
     {
         if (CLIB_LaunchEnableForConcurrentThreadsAt_Server__stat_REG_get_CLIBLaunchQueAtServer_isFlagINSTANTIATED()[8] == false) {
-            return LaunchEnableForConcurrentThreadsAt_Server__Global::stat_APP_CONVERT_LaunchEnableForConcurrentThreadsAt_Server__bool_to_ByteArray(CLIB_LaunchEnableForConcurrentThreadsAt_Server__stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__Framework()->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__Global()->dyn_REG_get_ptr_flag_LaunchEnableForConcurrentThreadsAt_Server__thread_2STATE_IDLE());
+            return LaunchEnableForConcurrentThreadsAt_Server__Global::stat_CONVERT_LaunchEnableForConcurrentThreadsAt_Server__MsbBoolean_To_MsbByteArray(CLIB_LaunchEnableForConcurrentThreadsAt_Server__stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__Framework()->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__Global()->dyn_REG_get_ptr_flag_LaunchEnableForConcurrentThreadsAt_Server__thread_2STATE_IDLE());
         }
         else {
             CLIB_LaunchEnableForConcurrentThreadsAt_Server__stat_REG_get_CLIBLaunchQueAtServer_isFlagINSTANTIATED()[8] = false;
             CLIB_LaunchEnableForConcurrentThreadsAt_Server__stat_app_FUNCT_Calc_IsAllINSTANTIATED();
-            return LaunchEnableForConcurrentThreadsAt_Server__Global::stat_APP_CONVERT_LaunchEnableForConcurrentThreadsAt_Server__bool_to_ByteArray(LaunchEnableForConcurrentThreadsAt_Server__Global::stat_APP_CONVERT_LaunchEnableForConcurrentThreadsAt_Server__bool_to_ByteArray(true));
+            return LaunchEnableForConcurrentThreadsAt_Server__Global::stat_CONVERT_LaunchEnableForConcurrentThreadsAt_Server__MsbBoolean_To_MsbByteArray(LaunchEnableForConcurrentThreadsAt_Server__Global::stat_CONVERT_LaunchEnableForConcurrentThreadsAt_Server__MsbBoolean_To_MsbByteArray(true));
         }
     }
     unsigned char* CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server__app_REG_get_State_launchBit()
     {
         if (CLIB_LaunchEnableForConcurrentThreadsAt_Server__stat_REG_get_CLIBLaunchQueAtServer_isFlagINSTANTIATED()[9] == false) {
-            return LaunchEnableForConcurrentThreadsAt_Server__Global::stat_APP_CONVERT_LaunchEnableForConcurrentThreadsAt_Server__bool_to_ByteArray(CLIB_LaunchEnableForConcurrentThreadsAt_Server__stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__Framework()->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__App()->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__Control()->dyn_REG_get_LaunchEnableForConcurrentThreadsAt_Server__Item_On_list_Of_STATE_For_ConcurrentCore(static_cast<std::byte>(CLIB_LaunchEnableForConcurrentThreadsAt_Server__stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__Framework()->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__App()->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__Control()->dyn_REG_get_LaunchEnableForConcurrentThreadsAt_Server__Item_On_list_for_Que_Of_CoreTolaunch(static_cast<std::byte>(0)))));
+            return LaunchEnableForConcurrentThreadsAt_Server__Global::stat_CONVERT_LaunchEnableForConcurrentThreadsAt_Server__MsbBoolean_To_MsbByteArray(CLIB_LaunchEnableForConcurrentThreadsAt_Server__stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__Framework()->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__App()->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__Control()->dyn_REG_get_LaunchEnableForConcurrentThreadsAt_Server__Item_On_list_Of_STATE_For_ConcurrentCore(static_cast<std::byte>(CLIB_LaunchEnableForConcurrentThreadsAt_Server__stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__Framework()->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__App()->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__Control()->dyn_REG_get_LaunchEnableForConcurrentThreadsAt_Server__Item_On_list_for_Que_Of_CoreTolaunch(static_cast<std::byte>(0)))));
         }
         else {
             CLIB_LaunchEnableForConcurrentThreadsAt_Server__stat_REG_get_CLIBLaunchQueAtServer_isFlagINSTANTIATED()[9] = false;
             CLIB_LaunchEnableForConcurrentThreadsAt_Server__stat_app_FUNCT_Calc_IsAllINSTANTIATED();
-            return LaunchEnableForConcurrentThreadsAt_Server__Global::stat_APP_CONVERT_LaunchEnableForConcurrentThreadsAt_Server__bool_to_ByteArray(true);
+            return LaunchEnableForConcurrentThreadsAt_Server__Global::stat_CONVERT_LaunchEnableForConcurrentThreadsAt_Server__MsbBoolean_To_MsbByteArray(true);
         }
     }
 
     void CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server__app_REG_set_Flag_ConcurrentCoreState(unsigned char* bytesThreadId, unsigned char* byteBool)
     {
         if (CLIB_LaunchEnableForConcurrentThreadsAt_Server__stat_REG_get_CLIBLaunchQueAtServer_isFlagINSTANTIATED()[10] == false) {
-            CLIB_LaunchEnableForConcurrentThreadsAt_Server__stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__Framework()->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__App()->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__Control()->dyn_REG_set_LaunchEnableForConcurrentThreadsAt_Server__Item_On_list_Of_STATE_For_ConcurrentCore(LaunchEnableForConcurrentThreadsAt_Server__Global::stat_APP_CONVERT_LaunchEnableForConcurrentThreadsAt_Server__ByteArray_To_uint8_t(bytesThreadId), byteBool);
+            CLIB_LaunchEnableForConcurrentThreadsAt_Server__stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__Framework()->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__App()->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__Control()->dyn_REG_set_LaunchEnableForConcurrentThreadsAt_Server__Item_On_list_Of_STATE_For_ConcurrentCore(LaunchEnableForConcurrentThreadsAt_Server__Global::stat_CONVERT_LaunchEnableForConcurrentThreadsAt_Server__MsbByteArray_To_MsbByte(bytesThreadId), byteBool);
         }
         else {
             CLIB_LaunchEnableForConcurrentThreadsAt_Server__stat_REG_get_CLIBLaunchQueAtServer_isFlagINSTANTIATED()[10] = false;

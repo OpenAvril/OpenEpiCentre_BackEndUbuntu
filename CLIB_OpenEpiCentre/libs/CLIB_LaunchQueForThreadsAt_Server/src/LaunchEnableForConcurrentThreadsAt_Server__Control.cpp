@@ -176,10 +176,10 @@ bool CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Control::
     return *temp;
 }
 
-uint8_t CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Control::dyn_REG_get_LaunchEnableForConcurrentThreadsAt_Server__Item_On_list_for_Que_Of_CoreTolaunch(std::byte concurrentThreadId) {
+std::byte CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Control::dyn_REG_get_LaunchEnableForConcurrentThreadsAt_Server__Item_On_list_for_Que_Of_CoreTolaunch(std::byte concurrentThreadId) {
     auto temp = stat_REG_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__Control__List_QUE_Of_CoreTolaunch()->begin();
-    std::advance(temp, (long)concurrentThreadId);
-    return static_cast<uint8_t>(*temp);
+    std::advance(temp, static_cast<int>(concurrentThreadId));
+    return *temp;
 }
 std::byte CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Control::dyn_REG_get_LaunchEnableForConcurrentThreadsAt_Server__new_concurrentCycle_Try_CoreId_Index()
 {

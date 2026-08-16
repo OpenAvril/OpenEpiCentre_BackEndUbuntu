@@ -27,7 +27,7 @@ namespace CLIBOpenEpiCentre
         static double stat_CONVERT_MsbByteArray_To_MsbDouble(const unsigned char* byteArray);
         static float stat_CONVERT_MsbByteArray_To_MsbFloat(const unsigned char* byteArray);
         static unsigned long long stat_CONVERT_MsbByteArray_To_MsbunsignedLongLong(const unsigned char* byteArray);
-        static unsigned char* stat_CONVERT_MsbInt_To_MsbByteArray(unsigned long long value);
+        static unsigned char* stat_CONVERT_MsbByte_To_MsbByteArray(const std::byte byte);
         static unsigned char* stat_CONVERT_MsbFloat_To_MsbByteArray(float value);
         static unsigned char* stat_CONVERT_MsbDouble_To_MsbByteArray(double value);
         static unsigned char* stat_CONVERT_unsignedLongLong_to_ByteArray(unsigned long long value);

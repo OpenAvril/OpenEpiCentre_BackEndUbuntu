@@ -21,7 +21,7 @@ namespace CLIBWriteQueAtServerInputReceive
         void dyn_APP_FUNCT_WriteEnableForThreadsAt_ServerInputReceive__Control__writeEnable_Request(class WriteEnableForThreadsAt_ServerInputReceive__Framework* obj, std::byte coreId);
         void dyn_APP_FUNCT_WriteEnableForThreadsAt_ServerInputReceive__Control__writeQue_Update(class WriteEnableForThreadsAt_ServerInputReceive__Framework* obj);
         bool dyn_REG_get_ptr_flag_WriteEnableForThreadsAt_ServerInputReceive__Control__praisingWrite();
-        std::array<bool, 2> dyn_REG_get_ptr_WriteEnableForThreadsAt_ServerInputReceive__Control__list_Of_2ibt_flag_WriteState(std::byte concurrentThreadId);
+        std::array<bool, 2> dyn_REG_get_ptr_WriteEnableForThreadsAt_ServerInputReceive__Control__list_Of_2bit_flag_WriteState(std::byte concurrentThreadId);
         unsigned long long dyn_REG_get_Item_On_WriteEnableForThreadsAt_ServerInputReceive__Control__list_Of_WriteActive_Count_For_ThreadId(std::byte concurrentThreadId);
         unsigned long long dyn_REG_get_Item_On_WriteEnableForThreadsAt_ServerInputReceive__Control__list_Of_WriteIdle_Count_For_ThreadId(std::byte concurrentThreadId);
         unsigned long long dyn_REG_get_Item_On_WriteEnableForThreadsAt_ServerInputReceive__Control__list_Of_WriteWait_Count_For_ThreadId(std::byte concurrentThreadId);
@@ -29,7 +29,7 @@ namespace CLIBWriteQueAtServerInputReceive
         std::byte dyn_REG_get_Item_On_QUE_WriteEnableForThreadsAt_ServerInputReceive__Control__List_Of_ThreadToWrite(std::byte slotID);
         std::byte dyn_REG_get_Item_WriteEnableForThreadsAt_ServerInputReceive__Control__writeCycle_Try_ThreadId_Index();
         void dyn_REG_set_flag_WriteEnableForThreadsAt_ServerInputReceive__Control__praisingWrite(bool newBoolValue);
-        void dyn_REG_set_Item_On_list_Of_WriteEnableForThreadsAt_ServerInputReceive__Control__2ibt_flag_WriteState(std::byte concurrentThreadId, std::array<bool, 2> new2bitState);
+        void dyn_REG_set_Item_On_list_Of_WriteEnableForThreadsAt_ServerInputReceive__Control__2bit_flag_WriteState(std::byte concurrentThreadId, std::array<bool, 2> new2bitState);
         void dyn_REG_set_Item_On_list_Of_WriteEnableForThreadsAt_ServerInputReceive__Control__WriteActive_Count_For_ThreadId(std::byte concurrentThreadId, unsigned long long newCount);
         void dyn_REG_set_Item_On_list_Of_WriteEnableForThreadsAt_ServerInputReceive__Control__WriteIdle_Count_For_ThreadId(std::byte concurrentThreadId, unsigned long long newCount);
         void dyn_REG_set_Item_On_list_Of_WriteEnableForThreadsAt_ServerInputReceive__Control__WriteWait_Count_For_ThreadId(std::byte concurrentThreadId, unsigned long long newCount);
@@ -41,11 +41,11 @@ namespace CLIBWriteQueAtServerInputReceive
     private:
         static bool* _stat_REG_ptr_flag_WriteEnableForThreadsAt_ServerInputReceive__flag_Control__isCurrentThreadRELEASED;
         static std::array<std::array<bool, 2>, 3>* _stat_REG_CONST_WriteEnableForThreadsAt_ServerInputReceive__Control__2bitFLAG_STATE;
-        static std::list<unsigned long>* _stat_REG_LIST_Of_WriteEnableForThreadsAt_ServerInputReceive__Control__WriteACTIVE_Count_For_ThreadId;
-        static std::list<unsigned long>* _stat_REG_LIST_Of_WriteEnableForThreadsAt_ServerInputReceive__Control__WriteIDLE_Count_For_ThreadId;
-        static std::list<unsigned long>* _stat_REG_LIST_Of_WriteEnableForThreadsAt_ServerInputReceive__Control__WriteWAIT_Count_For_ThreadId;
+        static std::list<unsigned long long>* _stat_REG_LIST_Of_WriteEnableForThreadsAt_ServerInputReceive__Control__WriteACTIVE_Count_For_ThreadId;
+        static std::list<unsigned long long>* _stat_REG_LIST_Of_WriteEnableForThreadsAt_ServerInputReceive__Control__WriteIDLE_Count_For_ThreadId;
+        static std::list<unsigned long long>* _stat_REG_LIST_Of_WriteEnableForThreadsAt_ServerInputReceive__Control__WriteWAIT_Count_For_ThreadId;
         static std::byte* _stat_REG_ptr_WriteEnableForThreadsAt_ServerInputReceive__Control__new_writeCycle_Try_ThreadId_Index;
-        static std::list<unsigned long>* _stat_REG_QUE_Of_WriteEnableForThreadsAt_ServerInputReceive__Control__ThreadID_To_WRITE;
+        static std::list<std::byte>* _stat_REG_QUE_Of_WriteEnableForThreadsAt_ServerInputReceive__Control__ThreadID_To_WRITE;
         static std::byte* _stat_REG_ptr_WriteEnableForThreadsAt_ServerInputReceive__Control__writeCycle_Try_ThreadId_Index;
         static bool* _stat_REG_ptr_flag_WriteEnableForThreadsAt_ServerInputReceive__Control__praisingWrite;
         static void stat_App_FUNCT_set_flag_isCurrentThreadRELEASED(bool flagState);
@@ -75,11 +75,11 @@ namespace CLIBWriteQueAtServerInputReceive
         static void stat_REG_boot3_INITIALISE_ptr_WriteEnableForThreadsAt_ServerInputReceive__Control__writeCycle_Try_ThreadId_Index();
         static bool stat_REG_get_flag_WriteEnableForThreadsAt_ServerInputReceive__flag_Control__isCurrentThreadRELEASED();
         static std::array <std::array<bool, 2>, 3>* stat_REG_get_ptr_Array_Of_WriteEnableForThreadsAt_ServerInputReceive__Control__3STATE_flag_WriteState();
-        static std::list<unsigned long>* stat_REG_get_ptr_list_Of_WriteEnableForThreadsAt_ServerInputReceive__Control__WriteActive_Count_For_ThreadId();
-        static std::list<unsigned long>* stat_REG_get_ptr_list_Of_WriteEnableForThreadsAt_ServerInputReceive__Control__WriteIdle_Count_For_ThreadId();
-        static std::list<unsigned long>* stat_REG_get_ptr_list_Of_WriteEnableForThreadsAt_ServerInputReceive__Control__WriteWait_Count_For_ThreadId();
+        static std::list<unsigned long long>* stat_REG_get_ptr_list_Of_WriteEnableForThreadsAt_ServerInputReceive__Control__WriteActive_Count_For_ThreadId();
+        static std::list<unsigned long long>* stat_REG_get_ptr_list_Of_WriteEnableForThreadsAt_ServerInputReceive__Control__WriteIdle_Count_For_ThreadId();
+        static std::list<unsigned long long>* stat_REG_get_ptr_list_Of_WriteEnableForThreadsAt_ServerInputReceive__Control__WriteWait_Count_For_ThreadId();
         static std::byte* stat_REG_get_ptr_WriteEnableForThreadsAt_ServerInputReceive__Control__new_writeCycle_Try_ThreadId_Index();
-        static std::list<unsigned long>* stat_REG_get_ptr_QUE_WriteEnableForThreadsAt_ServerInputReceive__Control__List_Of_ThreadToWrite();
+        static std::list<std::byte>* stat_REG_get_ptr_QUE_WriteEnableForThreadsAt_ServerInputReceive__Control__List_Of_ThreadToWrite();
         static std::byte* stat_REG_get_ptr_WriteEnableForThreadsAt_ServerInputReceive__Control__writeCycle_Try_ThreadId_Index();
         static bool* stat_REG_get_ptr_flag_WriteEnableForThreadsAt_ServerInputReceive__Control__praisingWrite();
         static void stat_REG_set_flag_WriteEnableForThreadsAt_ServerInputReceive__flag_Control__isCurrentThreadRELEASED(bool flagState);

@@ -22,8 +22,7 @@ namespace CLIBLaunchQueAtServer
         unsigned long long dyn_REG_get_LaunchEnableForConcurrentThreadsAt_Server__Item_On_list_Of_launchActive_Count_For_ThreadID(std::byte threadID);
         unsigned long long dyn_REG_get_LaunchEnableForConcurrentThreadsAt_Server__Item_On_list_Of_launchIdle_Count_For_ThreadID(std::byte threadID);
         bool dyn_REG_get_LaunchEnableForConcurrentThreadsAt_Server__Item_On_list_Of_STATE_For_ConcurrentCore(std::byte concurrentThreadId);
-        uint8_t dyn_REG_get_LaunchEnableForConcurrentThreadsAt_Server__Item_On_list_for_Que_Of_CoreTolaunch(
-            std::byte concurrentThreadId);
+        std::byte dyn_REG_get_LaunchEnableForConcurrentThreadsAt_Server__Item_On_list_for_Que_Of_CoreTolaunch(std::byte concurrentThreadId);
         std::byte dyn_REG_get_LaunchEnableForConcurrentThreadsAt_Server__new_concurrentCycle_Try_CoreId_Index();
         void dyn_REG_set_LaunchEnableForConcurrentThreadsAt_Server__concurrentCycle_Try_CoreId_Index(std::byte newValue);
         void dyn_REG_set_flag_LaunchEnableForConcurrentThreadsAt_Server__praisinglaunch(bool newFlag);

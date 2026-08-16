@@ -48,27 +48,77 @@ std::byte CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Glob
 {
     return *stat_REG_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__number_Implemented_Threads();
 }
-unsigned char* CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Global::stat_APP_CONVERT_LaunchEnableForConcurrentThreadsAt_Server__bool_to_ByteArray(bool bool_Value)
-{
-    return reinterpret_cast<unsigned char*>(bool_Value);
-}
-unsigned char* CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Global::stat_APP_CONVERT_LaunchEnableForConcurrentThreadsAt_Server__uint8_t_To_ByteArray(uint8_t byte_Value)
-{
-    unsigned char* bytes_array;
-    std::memcpy(&bytes_array, &byte_Value, sizeof(byte_Value));
-    return bytes_array;
-}
-bool CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Global::stat_APP_CONVERT_LaunchEnableForConcurrentThreadsAt_Server__ByteArray_To_bool(unsigned char* bytes)
-{
-    return bytes[1] != 0;
-}
-std::byte CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Global::stat_APP_CONVERT_LaunchEnableForConcurrentThreadsAt_Server__ByteArray_To_uint8_t(unsigned char* bytes)
-{
-    std::byte* cpp_byte_Value;
-    cpp_byte_Value = new std::byte();
-    std::memcpy(&cpp_byte_Value, bytes, sizeof(cpp_byte_Value));
-    return *cpp_byte_Value;
-}
+    int CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Global::stat_CONVERT_LaunchEnableForConcurrentThreadsAt_Server__Bool_To_Int(bool value)
+    {
+        int* temp = nullptr;
+        *temp = 2;
+        if (value) {
+            *temp = 1;;
+        }
+        if (!value) {
+            *temp = 0;
+        }
+        return *temp;
+    }
+    unsigned char* CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Global::stat_CONVERT_LaunchEnableForConcurrentThreadsAt_Server__MsbBoolean_To_MsbByteArray(bool value)
+    {
+        unsigned char* buffer = nullptr;
+        for (int bitIndex = 0; bitIndex < sizeof(unsigned char); bitIndex++) {
+            buffer[bitIndex] = static_cast<unsigned char>(value);
+        }
+        return buffer;
+    }
+    bool CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Global::stat_CONVERT_LaunchEnableForConcurrentThreadsAt_Server__MsbByteArray_To_MsbBoolean(const unsigned char* byteArray)
+    {
+        return (byteArray[7] & 1) != 0;
+    }
+    std::byte CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Global::stat_CONVERT_LaunchEnableForConcurrentThreadsAt_Server__MsbByteArray_To_MsbByte(const unsigned char* byteArray)
+    {
+        std::byte temp;
+        std::memcpy(&temp, byteArray, sizeof(std::byte));
+        return temp;
+    }
+    double CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Global::stat_CONVERT_LaunchEnableForConcurrentThreadsAt_Server__MsbByteArray_To_MsbDouble(const unsigned char* byteArray)
+    {
+        double temp;
+        std::memcpy(&temp, byteArray, sizeof(double));
+        return temp;
+    }
+    float CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Global::stat_CONVERT_LaunchEnableForConcurrentThreadsAt_Server__MsbByteArray_To_MsbFloat(const unsigned char* byteArray)
+    {
+        float temp;
+        std::memcpy(&temp, byteArray, sizeof(float));
+        return temp;
+    }
+    unsigned long long CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Global::stat_CONVERT_LaunchEnableForConcurrentThreadsAt_Server__MsbByteArray_To_MsbunsignedLongLong(const unsigned char* byteArray)
+    {
+        unsigned long long temp;
+        std::memcpy(&temp, byteArray, sizeof(unsigned long));
+        return temp;
+    }
+    unsigned char* CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Global::stat_CONVERT_LaunchEnableForConcurrentThreadsAt_Server__MsbByte_To_MsbByteArray(std::byte byte) {
+        unsigned char* temp;
+        std::memcpy(&temp, &byte, sizeof(std::byte));
+        return temp;
+    }
+    unsigned char* CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Global::stat_CONVERT_LaunchEnableForConcurrentThreadsAt_Server__MsbFloat_To_MsbByteArray(float value)
+    {
+        unsigned char* buffer = nullptr;
+        std::memcpy(buffer, &value, sizeof(float));
+        return buffer;
+    }
+    unsigned char* CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Global::stat_CONVERT_LaunchEnableForConcurrentThreadsAt_Server__MsbDouble_To_MsbByteArray(double value)
+    {
+        unsigned char* buffer = nullptr;
+        std::memcpy(buffer, &value, sizeof(double));
+        return buffer;
+    }
+    unsigned char* CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Global::stat_CONVERT_LaunchEnableForConcurrentThreadsAt_Server__unsignedLongLong_to_ByteArray(unsigned long long value)
+    {
+        unsigned char* buffer = nullptr;
+        std::memcpy(buffer, &value, sizeof(unsigned long));
+        return buffer;
+    }
 // private.
 void CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Global::stat_dyn_REG_boot1_DEFINE_flag_LaunchEnableForConcurrentThreadsAt_Server__thread_2STATE()
 {
