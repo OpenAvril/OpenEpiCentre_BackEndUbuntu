@@ -156,7 +156,7 @@
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT__Output::stat_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_STRUCT__Output_praiseEventId()
     {
         _REG_ptr_CLIB_OpenEpiCentre_STRUCT__Output_praiseEventId = new unsigned long long();
-        *_REG_ptr_CLIB_OpenEpiCentre_STRUCT__Output_praiseEventId = static_cast<unsigned long>(ULONG_LONG_MAX);
+        *_REG_ptr_CLIB_OpenEpiCentre_STRUCT__Output_praiseEventId = ULONG_LONG_MAX;
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT__Output::stat_REG_boot2_SUBSTANTIATE_Output_playerId()
     {

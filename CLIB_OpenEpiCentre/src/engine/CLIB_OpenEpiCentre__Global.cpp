@@ -162,7 +162,7 @@ enum Axis
     unsigned char* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::stat_CONVERT_unsignedLongLong_to_ByteArray(unsigned long long value)
     {
         unsigned char* buffer = nullptr;
-        std::memcpy(buffer, &value, sizeof(unsigned long));
+        std::memcpy(buffer, &value, sizeof(unsigned long long));
         return buffer;
     }
 // private.
