@@ -50,9 +50,8 @@ bool* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data__Control::_stat_REG_ptr_flag_i
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data__Control::app_FUNCT_pop_From_Stack_Of_Output(CLIB_OpenEpiCentre__Framework* obj)
     {
-        CLIB_OpenEpiCentre_STRUCT__Output* distributeBuffer = obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Data()->dyn_REG_get_ptr_Item_array_Of_doubleBuffer_Output_READ(obj);
         std::vector<class CLIB_OpenEpiCentre_STRUCT__Output*>* ptr_outputStack = obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Data()->dyn_REG_get_ptr_vector_Of_stack_Of_OutputPraise();
-        distributeBuffer = ptr_outputStack->at(1);
+        obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Data()->dyn_REG_set_Item_On_Array_Of_doubleBuffer_Output_READ(obj, ptr_outputStack->at(1));
         ptr_outputStack->erase(ptr_outputStack->begin()+1);
         if (sizeof(ptr_outputStack) < 2)
         {
@@ -62,15 +61,13 @@ bool* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data__Control::_stat_REG_ptr_flag_i
         {
             stat_REG_set_Item_flag_isLoaded_Stack_OutputSend(true);
         }
-        delete distributeBuffer;
         delete ptr_outputStack;
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data__Control::app_FUNCT_push_To_STACK_Of_Input(CLIB_OpenEpiCentre__Framework* obj)
     {
         std::vector<CLIB_OpenEpiCentre_STRUCT__Input*>* ptr_InputStack = obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Data()->dyn_REG_get_ptr_vector_Of_stack_Of_InputPraise();
-        CLIB_OpenEpiCentre_STRUCT__Input* ptr_Buffer_Praise = obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Data()->dyn_REG_get_ptr_Item_array_Of_doubleBuffer_Input_WRITE(obj);
         ptr_InputStack->push_back(ptr_InputStack->at(0));
-        ptr_InputStack->at(ptr_InputStack->size()) = ptr_Buffer_Praise;
+        ptr_InputStack->at(ptr_InputStack->size()) = obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Data()->dyn_REG_get_ptr_Item_array_Of_doubleBuffer_Input_WRITE(obj);
         if (sizeof(ptr_InputStack) < 2)
         {
             stat_REG_set_Item_flag_isLoaded_Stack_InputAction(false);
@@ -80,7 +77,6 @@ bool* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data__Control::_stat_REG_ptr_flag_i
             stat_REG_set_Item_flag_isLoaded_Stack_InputAction(true);
         }
         delete ptr_InputStack;
-        delete ptr_Buffer_Praise;
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data__Control::app_FUNCT_push_To_STACK_Of_Output(CLIB_OpenEpiCentre__Framework* obj, std::byte concurrentThreadId)
     {

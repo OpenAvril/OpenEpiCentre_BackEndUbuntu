@@ -170,7 +170,7 @@
         while (stat_REG_get_ptr_Item_Of_ptr_Inputs_Subset() == nullptr) { }
         stat_REG_get_ptr_Item_Of_ptr_Inputs_Subset()->resize(1);
         auto temp = stat_REG_get_ptr_Item_Of_ptr_Inputs_Subset()->begin();
-        std::advance(temp, static_cast<unsigned long>(0));
+        std::advance(temp, static_cast<unsigned long long>(0));
         *temp = nullptr;
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT__Input::stat_REG_boot3_INITIALISE_Input_praiseEventId()
