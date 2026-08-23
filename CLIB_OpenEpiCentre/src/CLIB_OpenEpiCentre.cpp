@@ -408,6 +408,13 @@
 	void CLIBOpenEpiCentre::CLIBConcurrentServerIO::CLIBConcurrentServerIO__io_PRAISE_set_MetaData_PraiseEventId(unsigned char* bytes)
 	{
 		if (CLIBConcurrentServerIO__stat_REG_get_ptr_CLIB_OpenEpiCentre_isFlagINSTANTIATED()[13] == false) {
+			std::cout << "<<< LIBRARY :: CLIBOpenEpiCentre::CLIBConcurrentServerIO::" << std::endl;
+			std::cout << "<<< LIBRARY :: CLIBOpenEpiCentre::CLIBConcurrentServerIO::" << std::endl;
+			std::cout << "<<< LIBRARY :: CLIBOpenEpiCentre::CLIBConcurrentServerIO::" << std::endl;
+			std::cout << "<<< LIBRARY :: CLIBConcurrentServerIO__io_PRAISE_set_MetaData_PraiseEventId = " << CLIB_OpenEpiCentre__Global::stat_CONVERT_MsbByteArray_To_MsbunsignedLongLong(bytes) << std::endl;
+			std::cout << "<<< LIBRARY :: CLIBOpenEpiCentre::CLIBConcurrentServerIO::" << std::endl;
+			std::cout << "<<< LIBRARY :: CLIBOpenEpiCentre::CLIBConcurrentServerIO::" << std::endl;
+			std::cout << "<<< LIBRARY :: CLIBOpenEpiCentre::CLIBConcurrentServerIO::" << std::endl;
 			CLIBConcurrentServerIO__stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework()->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Data()->dyn_REG_get_ptr_Item_array_Of_doubleBuffer_Input_WRITE(CLIBConcurrentServerIO__stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework())->dyn_REG_set_ptr_Input_praiseEventId(CLIB_OpenEpiCentre__Global::stat_CONVERT_MsbByteArray_To_MsbunsignedLongLong(bytes));
 		}
 		else {
