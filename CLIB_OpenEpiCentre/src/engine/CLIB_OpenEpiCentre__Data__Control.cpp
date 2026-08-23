@@ -33,9 +33,8 @@ bool* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data__Control::_stat_REG_ptr_flag_i
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data__Control::app_FUNCT_pop_From_Stack_Of_Input(CLIB_OpenEpiCentre__Framework* obj, std::byte concurrentThreadId)
     {
-        CLIB_OpenEpiCentre_STRUCT__Input* referenceForCore = obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Data()->dyn_REG_get_ptr_Item_Of_list_Of_ptr_array_Of_buffer_Input_ReferenceForThread(concurrentThreadId);
         std::vector<CLIB_OpenEpiCentre_STRUCT__Input*>* ptr_inputStack = obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Data()->dyn_REG_get_ptr_vector_Of_stack_Of_InputPraise();
-        referenceForCore = ptr_inputStack->at(1);
+        obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Data()->dyn_REG_set_Item_On_Array_Of_buffer_Input_ReferenceForThread(concurrentThreadId, ptr_inputStack->at(1));
         ptr_inputStack->erase(ptr_inputStack->begin()+1);
         if (sizeof(ptr_inputStack) < 2)
         {
@@ -45,7 +44,6 @@ bool* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data__Control::_stat_REG_ptr_flag_i
         {
             stat_REG_set_Item_flag_isLoaded_Stack_InputAction(true);
         }
-        delete referenceForCore;
         delete ptr_inputStack;
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data__Control::app_FUNCT_pop_From_Stack_Of_Output(CLIB_OpenEpiCentre__Framework* obj)
@@ -81,9 +79,8 @@ bool* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data__Control::_stat_REG_ptr_flag_i
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data__Control::app_FUNCT_push_To_STACK_Of_Output(CLIB_OpenEpiCentre__Framework* obj, std::byte concurrentThreadId)
     {
         std::vector<CLIB_OpenEpiCentre_STRUCT__Output*>* ptr_outputStack = obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Data()->dyn_REG_get_ptr_vector_Of_stack_Of_OutputPraise();
-        CLIB_OpenEpiCentre_STRUCT__Output* ptr_referenceForCore = obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Data()->dyn_REG_get_ptr_Item_Of_list_Of_ptr_array_Of_buffer_Output_ReferenceForThread(concurrentThreadId);
         ptr_outputStack->push_back(ptr_outputStack->at(0));
-        ptr_outputStack->at(ptr_outputStack->size()) = ptr_referenceForCore;
+        ptr_outputStack->at(ptr_outputStack->size()) = obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Data()->dyn_REG_get_ptr_Item_Of_list_Of_ptr_array_Of_buffer_Output_ReferenceForThread(concurrentThreadId);
         if (sizeof(ptr_outputStack) < 2)
         {
             stat_REG_set_Item_flag_isLoaded_Stack_OutputSend(false);
@@ -93,7 +90,6 @@ bool* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data__Control::_stat_REG_ptr_flag_i
             stat_REG_set_Item_flag_isLoaded_Stack_OutputSend(true);
         }
         delete ptr_outputStack;
-        delete ptr_referenceForCore;
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data__Control::dyn_REG_boot1_DEFINE_CLIB_OpenEpiCentre__Data__Control(CLIB_OpenEpiCentre__Framework* obj)
     {
