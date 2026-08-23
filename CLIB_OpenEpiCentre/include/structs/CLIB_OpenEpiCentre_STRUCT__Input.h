@@ -32,8 +32,9 @@ namespace CLIBOpenEpiCentre
         static void stat_CLASS_boot4_INSTANTIATE_Input();
         static void stat_REG_boot0_DECLARE_Input();
     private:
-        static unsigned long long* _REG_ptr_Input_praiseEventId;
         static std::byte* _REG_ptr_Input_playerId;
+        static unsigned long long* _REG_ptr_Input_praiseEventId;
+
         static std::list<Object*>* _REG_ptr_List_Of_PraiseInputSubset;
         static void stat_REG_boot1_DEFINE_Input_praiseEventId();
         static void stat_REG_boot1_DEFINE_Input_playerId();
