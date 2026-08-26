@@ -1,5 +1,5 @@
 # CLIBOpenEpiCentre.
-# BackEndEbuntu.
+# BackEndUbuntu.
 # SiliconLifeHub
 
 ---
