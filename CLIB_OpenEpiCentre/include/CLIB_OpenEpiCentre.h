@@ -14,8 +14,10 @@ extern "C"
 			static void CLIBConcurrentServerIO__app_FUNCT_terminate_Program();
 			static void CLIBConcurrentServerIO__app_FUNCT_pop_From_Stack_Of_Output();
 			static void CLIBConcurrentServerIO__app_FUNCT_push_To_STACK_Of_Input();
-			static void* CLIBConcurrentServerIO__dyn_PGM_get_program_WriteEnableStack_ServerInputReceive();
-			static void* CLIBConcurrentServerIO__dyn_PGM_get_program_WriteEnableStack_ServerOutputSend();
+			static void CLIBConcurrentServerIO__dyn_PGM_WriteEnableStack_ServerInputReceive_Injection__write_End();
+			static void CLIBConcurrentServerIO__dyn_PGM_WriteEnableStack_ServerInputReceive_Injection__write_Start();
+			static void CLIBConcurrentServerIO__dyn_PGM_WriteEnableStack_ServerOutputSend_Extraction__write_End();
+			static void CLIBConcurrentServerIO__dyn_PGM_WriteEnableStack_ServerOutputSend_Extraction__write_Start();
 			static unsigned char* CLIBConcurrentServerIO__dyn_REG_get_flag_isStackLoaded_ServerInputReceive();
 			static unsigned char* CLIBConcurrentServerIO__dyn_REG_get_flag_isStackLoaded_ServerOutputSend();
 			static unsigned char* CLIBConcurrentServerIO__dyn_REG_get_flag_IsInitialised_CLIBOpenEpiCentre();
