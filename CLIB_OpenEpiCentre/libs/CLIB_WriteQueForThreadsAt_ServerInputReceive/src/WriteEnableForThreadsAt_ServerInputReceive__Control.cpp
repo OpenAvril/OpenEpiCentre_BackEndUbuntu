@@ -77,7 +77,7 @@ void CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceiv
     }
 void CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceive__Control::dyn_APP_FUNCT_WriteEnableForThreadsAt_ServerInputReceive__Control__dynamicStagger(WriteEnableForThreadsAt_ServerInputReceive__Framework* obj, std::byte coreId)
     {
-        stat_REG_set_flag_WriteEnableForThreadsAt_ServerInputReceive__flag_Control__isCurrentThreadRELEASED(false);
+        obj->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerInputReceive__App()->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerInputReceive__App__Control()->dyn_App_FUNCT_set_flag_isCurrentThreadRELEASED(false);
         if (*stat_REG_get_ptr_WriteEnableForThreadsAt_ServerInputReceive__Control__writeCycle_Try_ThreadId_Index() == coreId) {
 
         }

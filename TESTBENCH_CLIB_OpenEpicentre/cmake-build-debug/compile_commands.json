@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/home/brenton-james/CLionProjects/OpenEpiCentre_BackEndUbuntu/TESTBENCH_CLIB_OpenEpicentre/cmake-build-debug",
+  "command": "/usr/bin/c++ -g -std=gnu++20 -fdiagnostics-color=always -fmodules-ts -fmodule-mapper=CMakeFiles/TESTBENCH_CLIB_OpenEpicentre.dir/main.cpp.o.modmap -MD -fdeps-format=p1689r5 -x c++ -o CMakeFiles/TESTBENCH_CLIB_OpenEpicentre.dir/main.cpp.o -c /home/brenton-james/CLionProjects/OpenEpiCentre_BackEndUbuntu/TESTBENCH_CLIB_OpenEpicentre/main.cpp",
+  "file": "/home/brenton-james/CLionProjects/OpenEpiCentre_BackEndUbuntu/TESTBENCH_CLIB_OpenEpicentre/main.cpp",
+  "output": "/home/brenton-james/CLionProjects/OpenEpiCentre_BackEndUbuntu/TESTBENCH_CLIB_OpenEpicentre/cmake-build-debug/CMakeFiles/TESTBENCH_CLIB_OpenEpicentre.dir/main.cpp.o"
+}
+]
