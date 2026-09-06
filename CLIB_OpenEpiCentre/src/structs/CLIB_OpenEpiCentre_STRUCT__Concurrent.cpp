@@ -87,7 +87,7 @@
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT__Concurrent::stat_app_thread_Concurrency(CLIB_OpenEpiCentre__Framework* obj, std::byte concurrent_threadID)
     {
         bool* doneOnce = new bool(true);
-        while (obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Execute()->dyn_CLASS_get_ptr_Execute_Control()->dyn_REG_get_Item_On_List_Of_Flag_ThreadInitialised(static_cast<int>(concurrent_threadID)) == true)
+        while (obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Execute()->dyn_CLASS_get_ptr_Execute_Control()->dyn_REG_get_Item_On_List_Of_FLAG_ThreadInitialised(static_cast<int>(concurrent_threadID)) == true)
         {
             if (*doneOnce == true)
             {
@@ -96,19 +96,19 @@
             }
         }
         //std::cout << "Thread Initialised: ID=" << (concurrent_threadID) << " => Thread_Concurrency()" << std::endl;//TestBench
-        while (obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Execute()->dyn_CLASS_get_ptr_Execute_Control()->dyn_REG_get_Flag_is_SystemInitialised() == true)
+        while (obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Execute()->dyn_CLASS_get_ptr_Execute_Control()->dyn_REG_get_FLAG_is_SystemInitialised() == true)
         {
 
         }
         //std::cout << "Thread Starting " << (concurrent_threadID) << " => Thread_Concurrency()" << std::endl;//TestBench
-        while (obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Execute()->dyn_CLASS_get_ptr_Execute_Control()->dyn_REG_get_Item_On_List_Of_Flag_ThreadInitialised(static_cast<int>(concurrent_threadID)) == false)
+        while (obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Execute()->dyn_CLASS_get_ptr_Execute_Control()->dyn_REG_get_Item_On_List_Of_FLAG_ThreadInitialised(static_cast<int>(concurrent_threadID)) == false)
         {
-            switch (CLIB_OpenEpiCentre__Global::stat_CONVERT_MsbByteArray_To_MsbunsignedLongLong(CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server__app_REG_get_Flag_ConcurrentCoreState(CLIB_OpenEpiCentre__Global::stat_CONVERT_unsignedLongLong_to_ByteArray(static_cast<int>(concurrent_threadID))))) {
+            switch (CLIB_OpenEpiCentre__Global::stat_CONVERT_MsbByteArray_To_MsbunsignedLongLong(CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server__app_REG_get_FLAG_ConcurrentCoreState(CLIB_OpenEpiCentre__Global::stat_CONVERT_unsignedLongLong_to_ByteArray(static_cast<int>(concurrent_threadID))))) {
                 case false: {
                     break;
                 }
                 case true: {
-                    if (obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Data()->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre__Data__Control()->dyn_REG_get_Item_flag_isLoaded_Stack_InputAction() == true)
+                    if (obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Data()->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre__Data__Control()->dyn_REG_get_Item_FLAG_isLoaded_Stack_InputAction() == true)
                     {
                         CLIBWriteQueAtServerInputReceive::CLIB_WriteEnableForThreadsAt_ServerInputReceive::CLIB_WriteEnableForThreadsAt_ServerInputReceive__App_FUNCT_write_Start(CLIB_OpenEpiCentre__Global::stat_CONVERT_unsignedLongLong_to_ByteArray(static_cast<unsigned long>(static_cast<int>(concurrent_threadID) + 1)));
                         //todo
@@ -125,9 +125,9 @@
                         CLIBWriteQueAtServerOutputSend::CLIB_WriteEnableForThreadsAt_ServerOutputSend::CLIB_WriteEnableForThreadsAt_ServerOutputSend__App_FUNCT_write_Start(CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::stat_CONVERT_unsignedLongLong_to_ByteArray(static_cast<unsigned long>(static_cast<int>(concurrent_threadID) + 1)));
                         obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Data()->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre__Data__Control()->app_FUNCT_push_To_STACK_Of_Output(obj, concurrent_threadID);
                         CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server__app_FUNCT_thread_End(CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::stat_CONVERT_unsignedLongLong_to_ByteArray(static_cast<int>(concurrent_threadID)));
-                        if (obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Data()->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre__Data__Control()->dyn_REG_get_Item_flag_isLoaded_Stack_OutputSend() == true)
+                        if (obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Data()->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre__Data__Control()->dyn_REG_get_Item_FLAG_isLoaded_Stack_OutputSend() == true)
                         {
-                            if (CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server__app_REG_get_Flag_ConcurrentCoreState(CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server__app_REG_get_coreId_To_launch()) == CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server__app_REG_get_Flag_Idle())
+                            if (CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server__app_REG_get_FLAG_ConcurrentCoreState(CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server__app_REG_get_coreId_To_launch()) == CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server__app_REG_get_FLAG_Idle())
                             {
                                 CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server__app_FUNCT_request_Wait_launch(CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server__app_REG_get_coreId_To_launch());
                             }

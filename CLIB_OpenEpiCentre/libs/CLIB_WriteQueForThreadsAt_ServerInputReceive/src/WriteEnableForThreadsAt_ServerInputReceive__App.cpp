@@ -5,7 +5,7 @@
 #include <cstdint>
 #include <iostream>
 #include <ostream>
-    CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceive__Control* CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceive__App::_stat_CLASS_ptr_WriteEnableForThreadsAt_ServerInputReceive__App__Control = NULL;
+    CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceive__Control* CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceive__App::_stat_CLASS_ptr_WriteEnableForThreadsAt_ServerInputReceive__App__Control;
     CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceive__App::WriteEnableForThreadsAt_ServerInputReceive__App()
     {
         CLASS_boot0_DECLARE_WriteEnableForThreadsAt_ServerInputReceive__App();
@@ -62,24 +62,37 @@
     {
         //if thread primed and system initialised, exit, else wait.
     }
-    void CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceive__App::dyn_APP_FUNCT_write_End(WriteEnableForThreadsAt_ServerInputReceive__Framework* obj, std::byte coreId)
+    void CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceive__App::dyn_APP_FUNCT_write_End(WriteEnableForThreadsAt_ServerInputReceive__Framework* obj, uint8_t coreId)
     {
-        obj->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerInputReceive__App()->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerInputReceive__App__Control()->dyn_REG_set_Item_On_list_Of_WriteEnableForThreadsAt_ServerInputReceive__Control__2bit_flag_WriteState(coreId, obj->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerInputReceive__Global()->dyn_REG_get_ptr_CONST_WriteEnableForThreadsAt_ServerInputReceive__2bitFLAG_IDLE());
-        obj->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerInputReceive__App()->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerInputReceive__App__Control()->dyn_REG_set_WriteEnableForThreadsAt_ServerInputReceive__Control__new_writeCycle_Try_ThreadId_Index(static_cast<std::byte>(static_cast<int>(obj->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerInputReceive__App()->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerInputReceive__App__Control()->dyn_REG_get_Item_WriteEnableForThreadsAt_ServerInputReceive__Control__writeCycle_Try_ThreadId_Index()) + 1));
-        if (static_cast<int>(obj->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerInputReceive__App()->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerInputReceive__App__Control()->dyn_REG_get_Item_WriteEnableForThreadsAt_ServerInputReceive__Control__new_writeCycle_Try_ThreadId_Index()) == 3)
-        {
-            obj->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerInputReceive__App()->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerInputReceive__App__Control()->dyn_REG_set_WriteEnableForThreadsAt_ServerInputReceive__Control__new_writeCycle_Try_ThreadId_Index(static_cast<std::byte>(0));
+        while (obj->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerInputReceive__App()->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerInputReceive__App__Control()->dyn_REG_get_FLAG_WriteEnableForThreadsAt_ServerInputReceive__Control__isWriteEndThreadRELASE_ONE()) {
+            obj->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerInputReceive__App()->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerInputReceive__App__Control()->dyn_APP_FUNCT_WriteEnableForThreadsAt_ServerInputReceive__Control__dynamicIn(obj, coreId);
+            obj->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerInputReceive__App()->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerInputReceive__App__Control()->dyn_REG_set_FLAG_WriteEnableForThreadsAt_ServerInputReceive__Control__isWriteEndThreadRELASE_ONE(false);
+        }
+        obj->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerInputReceive__App()->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerInputReceive__App__Control()->dyn_REG_set_FLAG_WriteEnableForThreadsAt_ServerInputReceive__Control__isWriteEndThreadRELASE_ONE(true);
+        obj->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerInputReceive__App()->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerInputReceive__App__Control()->dyn_REG_set_FLAG_WriteEnableForThreadsAt_ServerInputReceive__Control__writeCycle_Try_WriteEndThreadId_Index(obj->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerInputReceive__App()->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerInputReceive__App__Control()->dyn_REG_get_FLAG_WriteEnableForThreadsAt_ServerInputReceive__Control__writeCycle_Try_WriteEndThreadId_Index()+1);
+        if (obj->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerInputReceive__App()->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerInputReceive__App__Control()->dyn_REG_get_FLAG_WriteEnableForThreadsAt_ServerInputReceive__Control__writeCycle_Try_WriteEndThreadId_Index() == obj->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerInputReceive__Global()->dyn_REG_get_WriteEnableForThreadsAt_ServerInputReceive__number_Of_Implemented_Threads()) {
+            obj->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerInputReceive__App()->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerInputReceive__App__Control()->dyn_REG_set_FLAG_WriteEnableForThreadsAt_ServerInputReceive__Control__writeCycle_Try_WriteEndThreadId_Index(0);
+        }
+        obj->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerInputReceive__App()->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerInputReceive__App__Control()->dyn_REG_set_Item_On_list_Of_WriteEnableForThreadsAt_ServerInputReceive__Control__2ibt_FLAG_WriteState(coreId, obj->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerInputReceive__Global()->dyn_REG_get_ptr_CONST_WriteEnableForThreadsAt_ServerInputReceive__2bitFLAG_IDLE());
+        obj->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerInputReceive__App()->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerInputReceive__App__Control()->dyn_APP_FUNCT_WriteEnableForThreadsAt_ServerInputReceive__Control__writeQue_Update(obj);
+        obj->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerInputReceive__App()->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerInputReceive__App__Control()->dyn_APP_FUNCT_WriteEnableForThreadsAt_ServerInputReceive__Control__writeEnable_SortQue(obj);
+        obj->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerInputReceive__App()->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerInputReceive__App__Control()->dyn_REG_set_FLAG_WriteEnableForThreadsAt_ServerInputReceive__Control__isWriteStartThreadRELASE_REMAINING(true);
+    }
+    void CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceive__App::dyn_APP_FUNCT_write_Start(WriteEnableForThreadsAt_ServerInputReceive__Framework* obj, uint8_t coreId)
+    {
+        while (obj->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerInputReceive__App()->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerInputReceive__App__Control()->dyn_REG_get_FLAG_WriteEnableForThreadsAt_ServerInputReceive__Control__isWriteStartThreadRELASE_ONE()) {
+            obj->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerInputReceive__App()->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerInputReceive__App__Control()->dyn_APP_FUNCT_WriteEnableForThreadsAt_ServerInputReceive__Control__dynamicIn(obj, coreId);
+            obj->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerInputReceive__App()->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerInputReceive__App__Control()->dyn_REG_set_FLAG_WriteEnableForThreadsAt_ServerInputReceive__Control__isWriteStartThreadRELASE_ONE(false);
+        }
+        obj->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerInputReceive__App()->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerInputReceive__App__Control()->dyn_REG_set_FLAG_WriteEnableForThreadsAt_ServerInputReceive__Control__isWriteStartThreadRELASE_ONE(true);
+        obj->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerInputReceive__App()->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerInputReceive__App__Control()->dyn_REG_set_FLAG_WriteEnableForThreadsAt_ServerInputReceive__Control__writeCycle_Try_WriteStartThreadId_Index(obj->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerInputReceive__App()->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerInputReceive__App__Control()->dyn_REG_get_FLAG_WriteEnableForThreadsAt_ServerInputReceive__Control__writeCycle_Try_WriteStartThreadId_Index()+1);
+        if (obj->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerInputReceive__App()->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerInputReceive__App__Control()->dyn_REG_get_FLAG_WriteEnableForThreadsAt_ServerInputReceive__Control__writeCycle_Try_WriteStartThreadId_Index() == obj->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerInputReceive__Global()->dyn_REG_get_WriteEnableForThreadsAt_ServerInputReceive__number_Of_Implemented_Threads()) {
+            obj->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerInputReceive__App()->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerInputReceive__App__Control()->dyn_REG_set_FLAG_WriteEnableForThreadsAt_ServerInputReceive__Control__writeCycle_Try_WriteStartThreadId_Index(0);
         }
         obj->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerInputReceive__App()->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerInputReceive__App__Control()->dyn_APP_FUNCT_WriteEnableForThreadsAt_ServerInputReceive__Control__writeQue_Update(obj);
         obj->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerInputReceive__App()->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerInputReceive__App__Control()->dyn_APP_FUNCT_WriteEnableForThreadsAt_ServerInputReceive__Control__writeEnable_SortQue(obj);
-        obj->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerInputReceive__App()->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerInputReceive__App__Control()->dyn_REG_set_flag_WriteEnableForThreadsAt_ServerInputReceive__Control__praisingWrite(false);
-    }
-    void CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceive__App::dyn_APP_FUNCT_write_Start(WriteEnableForThreadsAt_ServerInputReceive__Framework* obj, std::byte coreId)
-    {
-        obj->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerInputReceive__App()->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerInputReceive__App__Control()->dyn_APP_FUNCT_WriteEnableForThreadsAt_ServerInputReceive__Control__writeEnable_Request(obj, coreId);
-        obj->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerInputReceive__App()->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerInputReceive__App__Control()->dyn_APP_FUNCT_WriteEnableForThreadsAt_ServerInputReceive__Control__writeQue_Update(obj);
-        obj->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerInputReceive__App()->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerInputReceive__App__Control()->dyn_APP_FUNCT_WriteEnableForThreadsAt_ServerInputReceive__Control__writeEnable_SortQue(obj);
         obj->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerInputReceive__App()->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerInputReceive__App__Control()->dyn_APP_FUNCT_WriteEnableForThreadsAt_ServerInputReceive__Control__writeEnable_Activate(obj, coreId);
+        obj->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerInputReceive__App()->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerInputReceive__App__Control()->dyn_REG_set_FLAG_WriteEnableForThreadsAt_ServerInputReceive__Control__isWriteStartThreadRELASE_REMAINING(true);
     }
     CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceive__Control* CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceive__App::dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerInputReceive__App__Control()
     {
@@ -88,13 +101,13 @@
 
     void CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceive__App::stat_CLASS_boot1_DEFINE_WriteEnableForThreadsAt_ServerInputReceive__App__Control()
     {
-        _stat_CLASS_ptr_WriteEnableForThreadsAt_ServerInputReceive__App__Control = NULL;
+        _stat_CLASS_ptr_WriteEnableForThreadsAt_ServerInputReceive__App__Control = nullptr;
     }
 
     void CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceive__App::stat_CLASS_boot3_INITIALISE_WriteEnableForThreadsAt_ServerInputReceive__App__Control()
     {
         _stat_CLASS_ptr_WriteEnableForThreadsAt_ServerInputReceive__App__Control = new class CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceive__Control();
-        while (stat_CLASS_get_ptr_WriteEnableForThreadsAt_ServerInputReceive__App__Control() == NULL) {}
+        while (stat_CLASS_get_ptr_WriteEnableForThreadsAt_ServerInputReceive__App__Control() == nullptr) {}
     }
     CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceive__Control* CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceive__App::stat_CLASS_get_ptr_WriteEnableForThreadsAt_ServerInputReceive__App__Control()
     {

@@ -1,170 +1,119 @@
-#include "../include/CLIB_LaunchEnableForConcurrentThreadsAt_Server.h"
-#include "../include/LaunchEnableForConcurrentThreadsAt_Server__App.h"
 #include "../include/LaunchEnableForConcurrentThreadsAt_Server__Global.h"
-#include <array>
-#include <cstdint>
 #include <cstring>
 #include <iostream>
-bool* CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Global::_stat_REG_ptr_flag_LaunchEnableForConcurrentThreadsAt_Server__thread_2STATE;
-std::byte* CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Global::_stat_REG_ptr_LaunchEnableForConcurrentThreadsAt_Server__number_Implemented_Threads;
+    std::array<bool, 3>* CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Global::_stat_REG_LaunchEnableForConcurrentThreadsAt_Server__Global__ptr_FLAG_thread_2STATE;
+    uint8_t* CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Global::_stat_REG_LaunchEnableForConcurrentThreadsAt_Server__Global__ptr_number_Implemented_Threads;
 // public.
-CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Global::LaunchEnableForConcurrentThreadsAt_Server__Global()
-    {
+    CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Global::LaunchEnableForConcurrentThreadsAt_Server__Global() {
+        boot0_CLASS_DECLARE_LaunchEnableForConcurrentThreadsAt_Server__Global();
+        boot1_CLASS_DEFINE_LaunchEnableForConcurrentThreadsAt_Server__Global();
+        boot3_CLASS_INITIALISE_LaunchEnableForConcurrentThreadsAt_Server__Global();
+        boot0_REG_DECLARE_LaunchEnableForConcurrentThreadsAt_Server__Global();
+    }
+    CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Global::~LaunchEnableForConcurrentThreadsAt_Server__Global() {
+        delete _stat_REG_LaunchEnableForConcurrentThreadsAt_Server__Global__ptr_FLAG_thread_2STATE;
+        delete _stat_REG_LaunchEnableForConcurrentThreadsAt_Server__Global__ptr_number_Implemented_Threads;
+    }
+    void CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Global::boot0_CLASS_DECLARE_LaunchEnableForConcurrentThreadsAt_Server__Global() {
+        std::cout << "entered boot0_CLASS_DECLARE_LaunchEnableForConcurrentThreadsAt_Server__Global()." << std::endl;
+        std::cout << "exiting boot0_CLASS_DECLARE_LaunchEnableForConcurrentThreadsAt_Server__Global()." << std::endl;
+    }
+    void CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Global::boot1_CLASS_DEFINE_LaunchEnableForConcurrentThreadsAt_Server__Global() {
+        std::cout << "entered boot1_CLASS_DEFINE_LaunchEnableForConcurrentThreadsAt_Server__Global()." << std::endl;
+        std::cout << "exiting boot1_CLASS_DEFINE_LaunchEnableForConcurrentThreadsAt_Server__Global()." << std::endl;
+    }
+    void CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Global::boot3_CLASS_INITIALISE_LaunchEnableForConcurrentThreadsAt_Server__Global() {
+        std::cout << "entered boot3_CLASS_INITIALISE_LaunchEnableForConcurrentThreadsAt_Server__Global()" << std::endl;
+        std::cout << "exiting boot3_CLASS_INITIALISE_LaunchEnableForConcurrentThreadsAt_Server__Global()" << std::endl;
+    }
+    void CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Global::boot0_REG_DECLARE_LaunchEnableForConcurrentThreadsAt_Server__Global() {
+        std::cout << "entered boot0_REG_DECLARE_LaunchEnableForConcurrentThreadsAt_Server__Global()" << std::endl;
+        std::cout << "exiting boot0_REG_DECLARE_LaunchEnableForConcurrentThreadsAt_Server__Global()" << std::endl;
+    }
+    void CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Global::boot1_REG_DEFINE_LaunchEnableForConcurrentThreadsAt_Server__Global() {
+        std::cout << "entered boot1_REG_DEFINE_LaunchEnableForConcurrentThreadsAt_Server__Global()" << std::endl;
+        std::cout << "exiting boot1_REG_DEFINE_LaunchEnableForConcurrentThreadsAt_Server__Global()" << std::endl;
+    }
+    void CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Global::boot2_REG_SUBSTANTIATE_LaunchEnableForConcurrentThreadsAt_Server__Global() {
+        std::cout << "entered boot2_REG_SUBSTANTIATE_LaunchEnableForConcurrentThreadsAt_Server__Global()" << std::endl;
+        std::cout << "exiting boot2_REG_SUBSTANTIATE_LaunchEnableForConcurrentThreadsAt_Server__Global()" << std::endl;
+    }
+    void CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Global::boot3_REG_INITIALISE_LaunchEnableForConcurrentThreadsAt_Server__Global() {
+        std::cout << "entered boot3_REG_INITIALISE_LaunchEnableForConcurrentThreadsAt_Server__Global()" << std::endl;
+        std::cout << "exiting boot3_REG_INITIALISE_LaunchEnableForConcurrentThreadsAt_Server__Global()" << std::endl;
+    }
+    void CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Global::boot4_PGM_INSTANTIATION_LaunchEnableForConcurrentThreadsAt_Server__Global() {
 
     }
-CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Global::~LaunchEnableForConcurrentThreadsAt_Server__Global()
-{
-    delete _stat_REG_ptr_flag_LaunchEnableForConcurrentThreadsAt_Server__thread_2STATE;
-    delete _stat_REG_ptr_LaunchEnableForConcurrentThreadsAt_Server__number_Implemented_Threads;
-}
-void CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Global::dyn_REG_boot1_DEFINE_LaunchEnableForConcurrentThreadsAt_Server_Global()
-{
-    std::cout << "entered dyn_REG_boot1_DEFINE_LaunchEnableForConcurrentThreadsAt_Server_Global()" << std::endl;
-    stat_dyn_REG_boot1_DEFINE_flag_LaunchEnableForConcurrentThreadsAt_Server__thread_2STATE();
-    stat_dyn_REG_boot1_DEFINE_LaunchEnableForConcurrentThreadsAt_Server__number_Implemented_Threads();
-    std::cout << "exiting dyn_REG_boot1_DEFINE_LaunchEnableForConcurrentThreadsAt_Server_Global()" << std::endl;
-}
-void CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Global::dyn_REG_boot2_SUBSTANTIATE_LaunchEnableForConcurrentThreadsAt_Server_Global()
-{
-    std::cout << "entered dyn_REG_boot2_SUBSTANTIATE_LaunchEnableForConcurrentThreadsAt_Server_Global()" << std::endl;
-    stat_REG_boot2_SUBSTANTIATE_flag_LaunchEnableForConcurrentThreadsAt_Server__thread_2STATE();
-    stat_REG_boot2_SUBSTANTIATE_LaunchEnableForConcurrentThreadsAt_Server__number_Implemented_Threads();
-    std::cout << "exiting dyn_REG_boot2_SUBSTANTIATE_LaunchEnableForConcurrentThreadsAt_Server_Global()" << std::endl;
-}
-void CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Global::dyn_REG_boot3_INITIALISE_LaunchEnableForConcurrentThreadsAt_Server_Global()
-{
-    std::cout << "entered dyn_REG_boot3_INITIALISE_LaunchEnableForConcurrentThreadsAt_Server_Global()" << std::endl;
-    stat_REG_boot3_INITIALISE_flag_LaunchEnableForConcurrentThreadsAt_Server__thread_2STATE();
-    stat_REG_boot3_INITIALISE_LaunchEnableForConcurrentThreadsAt_Server__number_Implemented_Threads();
-    std::cout << "exiting dyn_REG_boot3_INITIALISE_LaunchEnableForConcurrentThreadsAt_Server_Global()" << std::endl;
-}
-bool CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Global::dyn_REG_get_ptr_flag_LaunchEnableForConcurrentThreadsAt_Server__thread_2STATE_ACTIVE() {
-    return *stat_REG_get_ptr_flag_LaunchEnableForConcurrentThreadsAt_Server__thread_2STATE();
-}
-bool CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Global::dyn_REG_get_ptr_flag_LaunchEnableForConcurrentThreadsAt_Server__thread_2STATE_IDLE() {
-    return !*stat_REG_get_ptr_flag_LaunchEnableForConcurrentThreadsAt_Server__thread_2STATE();
-}
-std::byte CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Global::dyn_REG_get_LaunchEnableForConcurrentThreadsAt_Server__number_Implemented_Threads()
-{
-    return *stat_REG_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__number_Implemented_Threads();
-}
-    int CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Global::stat_CONVERT_LaunchEnableForConcurrentThreadsAt_Server__Bool_To_Int(bool value)
-    {
-        int* temp = nullptr;
-        *temp = 2;
-        if (value) {
-            *temp = 1;;
-        }
-        if (!value) {
-            *temp = 0;
-        }
-        return *temp;
+    bool CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Global::dyn_REG_get_LaunchEnableForConcurrentThreadsAt_Server__Global__ptr_FLAG_thread_2STATE_ACTIVE() {
+        return true;
     }
-    unsigned char* CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Global::stat_CONVERT_LaunchEnableForConcurrentThreadsAt_Server__MsbBoolean_To_MsbByteArray(bool value)
-    {
-        unsigned char* buffer = nullptr;
-        for (int bitIndex = 0; bitIndex < sizeof(unsigned char); bitIndex++) {
-            buffer[bitIndex] = static_cast<unsigned char>(value);
-        }
-        return buffer;
+    bool CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Global::dyn_REG_get_LaunchEnableForConcurrentThreadsAt_Server__Global__ptr_FLAG_thread_2STATE_IDLE() {
+        return false;
     }
-    bool CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Global::stat_CONVERT_LaunchEnableForConcurrentThreadsAt_Server__MsbByteArray_To_MsbBoolean(const unsigned char* byteArray)
-    {
-        return (byteArray[7] & 1) != 0;
+
+    uint8_t CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Global::dyn_REG_get_LaunchEnableForConcurrentThreadsAt_Server__Global__number_Implemented_Threads() {
+        return *stat_REG_get_LaunchEnableForConcurrentThreadsAt_Server__Global__ptr_number_Implemented_Threads();
     }
-    std::byte CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Global::stat_CONVERT_LaunchEnableForConcurrentThreadsAt_Server__MsbByteArray_To_MsbByte(const unsigned char* byteArray)
-    {
-        std::byte temp;
-        std::memcpy(&temp, byteArray, sizeof(std::byte));
-        return temp;
+    unsigned char* CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Global::stat_CONVERT_LaunchEnableForConcurrentThreadsAt_Server__Global__bool_to_ByteArray(bool bool_Value) {
+        return reinterpret_cast<unsigned char*>(bool_Value);
     }
-    double CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Global::stat_CONVERT_LaunchEnableForConcurrentThreadsAt_Server__MsbByteArray_To_MsbDouble(const unsigned char* byteArray)
-    {
-        double temp;
-        std::memcpy(&temp, byteArray, sizeof(double));
-        return temp;
+    unsigned char* CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Global::stat_CONVERT_LaunchEnableForConcurrentThreadsAt_Server__Global__uint8_t_To_ByteArray(uint8_t uint8_t_Value) {
+        unsigned char* bytes_array;
+        std::memcpy(&bytes_array, &uint8_t_Value, sizeof(uint8_t_Value));
+        return bytes_array;
     }
-    float CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Global::stat_CONVERT_LaunchEnableForConcurrentThreadsAt_Server__MsbByteArray_To_MsbFloat(const unsigned char* byteArray)
-    {
-        float temp;
-        std::memcpy(&temp, byteArray, sizeof(float));
-        return temp;
+    bool CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Global::stat_CONVERT_LaunchEnableForConcurrentThreadsAt_Server__Global__ByteArray_To_bool(unsigned char* bytes) {
+        return bytes[1] != 0;
     }
-    unsigned long long CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Global::stat_CONVERT_LaunchEnableForConcurrentThreadsAt_Server__MsbByteArray_To_MsbunsignedLongLong(const unsigned char* byteArray)
-    {
-        unsigned long long temp;
-        std::memcpy(&temp, byteArray, sizeof(unsigned long));
-        return temp;
-    }
-    unsigned char* CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Global::stat_CONVERT_LaunchEnableForConcurrentThreadsAt_Server__MsbByte_To_MsbByteArray(std::byte byte) {
-        unsigned char* temp;
-        std::memcpy(&temp, &byte, sizeof(std::byte));
-        return temp;
-    }
-    unsigned char* CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Global::stat_CONVERT_LaunchEnableForConcurrentThreadsAt_Server__MsbFloat_To_MsbByteArray(float value)
-    {
-        unsigned char* buffer = nullptr;
-        std::memcpy(buffer, &value, sizeof(float));
-        return buffer;
-    }
-    unsigned char* CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Global::stat_CONVERT_LaunchEnableForConcurrentThreadsAt_Server__MsbDouble_To_MsbByteArray(double value)
-    {
-        unsigned char* buffer = nullptr;
-        std::memcpy(buffer, &value, sizeof(double));
-        return buffer;
-    }
-    unsigned char* CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Global::stat_CONVERT_LaunchEnableForConcurrentThreadsAt_Server__unsignedLongLong_to_ByteArray(unsigned long long value)
-    {
-        unsigned char* buffer = nullptr;
-        std::memcpy(buffer, &value, sizeof(unsigned long));
-        return buffer;
+    uint8_t CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Global::stat_CONVERT_LaunchEnableForConcurrentThreadsAt_Server__Global__ByteArray_To_uint8_t(unsigned char* bytes) {
+        uint8_t cpp_uint8_t_value;
+        std::memcpy(&cpp_uint8_t_value, bytes, sizeof(cpp_uint8_t_value));
+        return cpp_uint8_t_value;
     }
 // private.
-void CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Global::stat_dyn_REG_boot1_DEFINE_flag_LaunchEnableForConcurrentThreadsAt_Server__thread_2STATE()
-{
-    _stat_REG_ptr_flag_LaunchEnableForConcurrentThreadsAt_Server__thread_2STATE = NULL;
-}
-void CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Global::stat_dyn_REG_boot1_DEFINE_LaunchEnableForConcurrentThreadsAt_Server__number_Implemented_Threads()
-{
-    _stat_REG_ptr_LaunchEnableForConcurrentThreadsAt_Server__number_Implemented_Threads = NULL;
-}
-void CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Global::stat_REG_boot2_SUBSTANTIATE_flag_LaunchEnableForConcurrentThreadsAt_Server__thread_2STATE()
-{
-    std::cout << "entered stat_REG_boot2_SUBSTANTIATE_flag_thread_2STATE()" << std::endl;
-    _stat_REG_ptr_flag_LaunchEnableForConcurrentThreadsAt_Server__thread_2STATE = new bool();
-    *_stat_REG_ptr_flag_LaunchEnableForConcurrentThreadsAt_Server__thread_2STATE = true;
-    std::cout << "exiting stat_REG_boot2_SUBSTANTIATE_flag_thread_2STATE()" << std::endl;
-}
-void CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Global::stat_REG_boot2_SUBSTANTIATE_LaunchEnableForConcurrentThreadsAt_Server__number_Implemented_Threads()
-{
-    std::cout << "entered stat_REG_boot2_SUBSTANTIATE_number_Implemented_Threads()" << std::endl;
-    _stat_REG_ptr_LaunchEnableForConcurrentThreadsAt_Server__number_Implemented_Threads = new std::byte();
-    *_stat_REG_ptr_LaunchEnableForConcurrentThreadsAt_Server__number_Implemented_Threads = static_cast<std::byte>(255);;
-    std::cout << "exiting stat_REG_boot2_SUBSTANTIATE_number_Implemented_Threads()" << std::endl;
-}
-void CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Global::stat_REG_boot3_INITIALISE_flag_LaunchEnableForConcurrentThreadsAt_Server__thread_2STATE()
-{
-    std::cout << "entered stat_REG_boot3_INITIALISE_flag_thread_2STATE()" << std::endl;
-    *_stat_REG_ptr_flag_LaunchEnableForConcurrentThreadsAt_Server__thread_2STATE = true;
-    std::cout << "exiting stat_REG_boot3_INITIALISE_flag_thread_2STATE()" << std::endl;
-}
-void CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Global::stat_REG_boot3_INITIALISE_LaunchEnableForConcurrentThreadsAt_Server__number_Implemented_Threads()
-{
-    *_stat_REG_ptr_LaunchEnableForConcurrentThreadsAt_Server__number_Implemented_Threads = static_cast<std::byte>(3);;
-}
-bool* CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Global::stat_REG_get_ptr_flag_LaunchEnableForConcurrentThreadsAt_Server__thread_2STATE()
-{
-    return _stat_REG_ptr_flag_LaunchEnableForConcurrentThreadsAt_Server__thread_2STATE;
-}
-std::byte* CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Global::stat_REG_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__number_Implemented_Threads()
-{
-    return _stat_REG_ptr_LaunchEnableForConcurrentThreadsAt_Server__number_Implemented_Threads;
-}
-void CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Global::stat_REG_set_flag_LaunchEnableForConcurrentThreadsAt_Server__thread_2STATE(bool bit)
-{
-    *_stat_REG_ptr_flag_LaunchEnableForConcurrentThreadsAt_Server__thread_2STATE = bit;
-}
-void CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Global::stat_REG_set_LaunchEnableForConcurrentThreadsAt_Server__number_Implemented_Threads(std::byte number_Implemented_Threads)
-{
-	*_stat_REG_ptr_LaunchEnableForConcurrentThreadsAt_Server__number_Implemented_Threads = number_Implemented_Threads;
-}
+    void CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Global::stat_REG_boot1_DEFINE_FLAG_LaunchEnableForConcurrentThreadsAt_Server__Global__thread_2STATE() {
+        _stat_REG_LaunchEnableForConcurrentThreadsAt_Server__Global__ptr_FLAG_thread_2STATE = nullptr;
+    }
+    void CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Global::stat_REG_boot1_DEFINE_LaunchEnableForConcurrentThreadsAt_Server__Global__number_Implemented_Threads()
+    {
+        _stat_REG_LaunchEnableForConcurrentThreadsAt_Server__Global__ptr_number_Implemented_Threads = nullptr;
+    }
+    void CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Global::stat_REG_boot2_SUBSTANTIATE_FLAG_LaunchEnableForConcurrentThreadsAt_Server__Global__thread_2STATE() {
+        std::cout << "entered stat_REG_boot2_SUBSTANTIATE_flag_thread_2STATE()" << std::endl;
+        _stat_REG_LaunchEnableForConcurrentThreadsAt_Server__Global__ptr_FLAG_thread_2STATE = new std::array<bool, 3>();//todo: number of concurrent threads.
+        while (_stat_REG_LaunchEnableForConcurrentThreadsAt_Server__Global__ptr_FLAG_thread_2STATE == nullptr) {
+
+        }
+        for (int index = 0; index < *stat_REG_get_LaunchEnableForConcurrentThreadsAt_Server__Global__ptr_number_Implemented_Threads(); index++) {
+            stat_REG_set_Item_On_Array_Of_FLAG_LaunchEnableForConcurrentThreadsAt_Server__Global__thread_2STATE_ACTIVE(index, true);
+        }
+        std::cout << "exiting stat_REG_boot2_SUBSTANTIATE_flag_thread_2STATE()" << std::endl;
+    }
+    void CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Global::stat_REG_boot2_SUBSTANTIATE_LaunchEnableForConcurrentThreadsAt_Server__Global__number_Implemented_Threads() {
+        std::cout << "entered stat_REG_boot2_SUBSTANTIATE_number_Implemented_Threads()" << std::endl;
+        _stat_REG_LaunchEnableForConcurrentThreadsAt_Server__Global__ptr_number_Implemented_Threads = new uint8_t(UINT8_MAX);
+        std::cout << "exiting stat_REG_boot2_SUBSTANTIATE_number_Implemented_Threads()" << std::endl;
+    }
+    void CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Global::stat_REG_boot3_INITIALISE_FLAG_LaunchEnableForConcurrentThreadsAt_Server__Global__thread_2STATE() {
+        std::cout << "entered stat_REG_boot3_INITIALISE_flag_thread_2STATE()" << std::endl;
+        for (int index = 0; index < *stat_REG_get_LaunchEnableForConcurrentThreadsAt_Server__Global__ptr_number_Implemented_Threads(); index++) {
+            stat_REG_set_Item_On_Array_Of_FLAG_LaunchEnableForConcurrentThreadsAt_Server__Global__thread_2STATE_ACTIVE(index, false);
+        }
+        std::cout << "exiting stat_REG_boot3_INITIALISE_flag_thread_2STATE()" << std::endl;
+    }
+    void CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Global::stat_REG_boot3_INITIALISE_LaunchEnableForConcurrentThreadsAt_Server__Global__number_Implemented_Threads() {
+        *_stat_REG_LaunchEnableForConcurrentThreadsAt_Server__Global__ptr_number_Implemented_Threads = static_cast<uint8_t>(3);//todo: number of concurrent threads.
+    }
+    bool CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Global::stat_REG_get_Item_On_Array_Of_FLAG_LaunchEnableForConcurrentThreadsAt_Server__Global__thread_2STATE(uint8_t concurrentThreadId) {
+        return _stat_REG_LaunchEnableForConcurrentThreadsAt_Server__Global__ptr_FLAG_thread_2STATE->at(concurrentThreadId);
+    }
+    uint8_t* CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Global::stat_REG_get_LaunchEnableForConcurrentThreadsAt_Server__Global__ptr_number_Implemented_Threads() {
+        return _stat_REG_LaunchEnableForConcurrentThreadsAt_Server__Global__ptr_number_Implemented_Threads;
+    }
+    void CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Global::stat_REG_set_Item_On_Array_Of_FLAG_LaunchEnableForConcurrentThreadsAt_Server__Global__thread_2STATE_ACTIVE(uint8_t concurrentThreadId, bool FLAG_bool) {
+        _stat_REG_LaunchEnableForConcurrentThreadsAt_Server__Global__ptr_FLAG_thread_2STATE->at(concurrentThreadId) = FLAG_bool;
+    }
+    void CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Global::stat_REG_set_LaunchEnableForConcurrentThreadsAt_Server__Global__number_Implemented_Threads(uint8_t number_Implemented_Threads) {
+	    *_stat_REG_LaunchEnableForConcurrentThreadsAt_Server__Global__ptr_number_Implemented_Threads = number_Implemented_Threads;
+    }

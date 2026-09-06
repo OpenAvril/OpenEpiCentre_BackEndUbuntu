@@ -6,7 +6,7 @@ static void stat_APP_boot4_INSTANTIATE_CLIB_OpenEpiCentre() {
 	auto* doubleDEFAULT = reinterpret_cast<unsigned char*>(new double(0));
     CLIBOpenEpiCentre::CLIBConcurrentServerIO::CLIBConcurrentServerIO__app_FUNCT_flip_Input_DoubleBuffer();
 	//void* CLIBOpenEpiCentre::CLIBConcurrentServerIO::CLIBConcurrentServerIO__app_FUNCT_generate_Program();
-	unsigned char* tempA = CLIBOpenEpiCentre::CLIBConcurrentServerIO::CLIBConcurrentServerIO__app_FUNCT_get_flag_isPGM_INSTANTIATED();
+	unsigned char* tempA = CLIBOpenEpiCentre::CLIBConcurrentServerIO::CLIBConcurrentServerIO__app_FUNCT_get_FLAG_isPGM_INSTANTIATED();
 	CLIBOpenEpiCentre::CLIBConcurrentServerIO::CLIBConcurrentServerIO__app_FUNCT_select_set_Intput_Subset(praiseIdDEFAULT);
 	CLIBOpenEpiCentre::CLIBConcurrentServerIO::CLIBConcurrentServerIO__app_FUNCT_terminate_Program();
 	CLIBOpenEpiCentre::CLIBConcurrentServerIO::CLIBConcurrentServerIO__app_FUNCT_pop_From_Stack_Of_Output();
@@ -15,9 +15,9 @@ static void stat_APP_boot4_INSTANTIATE_CLIB_OpenEpiCentre() {
 	CLIBOpenEpiCentre::CLIBConcurrentServerIO::CLIBConcurrentServerIO__dyn_PGM_WriteEnableStack_ServerInputReceive_Injection__write_Start();
 	CLIBOpenEpiCentre::CLIBConcurrentServerIO::CLIBConcurrentServerIO__dyn_PGM_WriteEnableStack_ServerOutputSend_Extraction__write_End();
 	CLIBOpenEpiCentre::CLIBConcurrentServerIO::CLIBConcurrentServerIO__dyn_PGM_WriteEnableStack_ServerOutputSend_Extraction__write_Start();
-	unsigned char* tempB = CLIBOpenEpiCentre::CLIBConcurrentServerIO::CLIBConcurrentServerIO__dyn_REG_get_flag_isStackLoaded_ServerInputReceive();
-	unsigned char* tempC = CLIBOpenEpiCentre::CLIBConcurrentServerIO::CLIBConcurrentServerIO__dyn_REG_get_flag_isStackLoaded_ServerOutputSend();
-	unsigned char* tempD = CLIBOpenEpiCentre::CLIBConcurrentServerIO::CLIBConcurrentServerIO__dyn_REG_get_flag_IsInitialised_CLIBOpenEpiCentre();
+	unsigned char* tempB = CLIBOpenEpiCentre::CLIBConcurrentServerIO::CLIBConcurrentServerIO__dyn_REG_get_FLAG_isStackLoaded_ServerInputReceive();
+	unsigned char* tempC = CLIBOpenEpiCentre::CLIBConcurrentServerIO::CLIBConcurrentServerIO__dyn_REG_get_FLAG_isStackLoaded_ServerOutputSend();
+	unsigned char* tempD = CLIBOpenEpiCentre::CLIBConcurrentServerIO::CLIBConcurrentServerIO__dyn_REG_get_FLAG_IsInitialised_CLIBOpenEpiCentre();
 	unsigned char* tempE = CLIBOpenEpiCentre::CLIBConcurrentServerIO::CLIBConcurrentServerIO__io_PRAISE_get_Item_CLIB_OpenEpiCentre_STRUCT__Output_praise0_Value();
 	unsigned char* tempF = CLIBOpenEpiCentre::CLIBConcurrentServerIO::CLIBConcurrentServerIO__io_PRAISE_get_Item_CLIB_OpenEpiCentre_STRUCT__Output_praise1_Value();
 	unsigned char* tempG = CLIBOpenEpiCentre::CLIBConcurrentServerIO::CLIBConcurrentServerIO__io_PRAISE_get_Item_CLIB_OpenEpiCentre_STRUCT__Output_praise2_Value();
@@ -37,7 +37,7 @@ int main() {
     CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Framework* obj = nullptr;
     obj = static_cast<CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Framework*>(CLIBOpenEpiCentre::CLIBConcurrentServerIO::CLIBConcurrentServerIO__app_FUNCT_generate_Program());
 	stat_APP_boot4_INSTANTIATE_CLIB_OpenEpiCentre();
-	if (CLIBOpenEpiCentre::CLIBConcurrentServerIO::CLIBConcurrentServerIO__app_FUNCT_get_flag_isPGM_INSTANTIATED())	{
+	if (CLIBOpenEpiCentre::CLIBConcurrentServerIO::CLIBConcurrentServerIO__app_FUNCT_get_FLAG_isPGM_INSTANTIATED())	{
 
 	}
 	return 0;

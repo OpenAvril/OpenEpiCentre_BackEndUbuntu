@@ -9,7 +9,7 @@ extern "C"
 		public:
 			static void CLIBConcurrentServerIO__app_FUNCT_flip_Input_DoubleBuffer();
 			static void* CLIBConcurrentServerIO__app_FUNCT_generate_Program();
-			static unsigned char* CLIBConcurrentServerIO__app_FUNCT_get_flag_isPGM_INSTANTIATED();
+			static unsigned char* CLIBConcurrentServerIO__app_FUNCT_get_FLAG_isPGM_INSTANTIATED();
 			static void CLIBConcurrentServerIO__app_FUNCT_select_set_Intput_Subset(unsigned char* bytes);
 			static void CLIBConcurrentServerIO__app_FUNCT_terminate_Program();
 			static void CLIBConcurrentServerIO__app_FUNCT_pop_From_Stack_Of_Output();
@@ -18,9 +18,9 @@ extern "C"
 			static void CLIBConcurrentServerIO__dyn_PGM_WriteEnableStack_ServerInputReceive_Injection__write_Start();
 			static void CLIBConcurrentServerIO__dyn_PGM_WriteEnableStack_ServerOutputSend_Extraction__write_End();
 			static void CLIBConcurrentServerIO__dyn_PGM_WriteEnableStack_ServerOutputSend_Extraction__write_Start();
-			static unsigned char* CLIBConcurrentServerIO__dyn_REG_get_flag_isStackLoaded_ServerInputReceive();
-			static unsigned char* CLIBConcurrentServerIO__dyn_REG_get_flag_isStackLoaded_ServerOutputSend();
-			static unsigned char* CLIBConcurrentServerIO__dyn_REG_get_flag_IsInitialised_CLIBOpenEpiCentre();
+			static unsigned char* CLIBConcurrentServerIO__dyn_REG_get_FLAG_isStackLoaded_ServerInputReceive();
+			static unsigned char* CLIBConcurrentServerIO__dyn_REG_get_FLAG_isStackLoaded_ServerOutputSend();
+			static unsigned char* CLIBConcurrentServerIO__dyn_REG_get_FLAG_IsInitialised_CLIBOpenEpiCentre();
 			static unsigned char* CLIBConcurrentServerIO__io_PRAISE_get_Item_CLIB_OpenEpiCentre_STRUCT__Output_praise0_Value();
 			static unsigned char* CLIBConcurrentServerIO__io_PRAISE_get_Item_CLIB_OpenEpiCentre_STRUCT__Output_praise1_Value();
 			static unsigned char* CLIBConcurrentServerIO__io_PRAISE_get_Item_CLIB_OpenEpiCentre_STRUCT__Output_praise2_Value();
@@ -40,10 +40,10 @@ extern "C"
 			static void CLIBConcurrentServerIO__stat_CLASS_boot1_DEFINE_Framework();
 			static void CLIBConcurrentServerIO__stat_CLASS_boot3_INITIALISE_Framework();
 			static class CLIB_OpenEpiCentre__Framework* CLIBConcurrentServerIO__stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework();
-			static void CLIBConcurrentServerIO__stat_REG_boot1_DEFINE_CLIB_OpenEpiCentre_isFlagINSTANTIATED();
-			static void CLIBConcurrentServerIO__stat_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_isFlagINSTANTIATED();
-			static void CLIBConcurrentServerIO__stat_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_isFlagINSTANTIATED();
-			static bool* CLIBConcurrentServerIO__stat_REG_get_ptr_CLIB_OpenEpiCentre_isFlagINSTANTIATED();
+			static void CLIBConcurrentServerIO__stat_REG_boot1_DEFINE_CLIB_OpenEpiCentre_isFLAG_INSTANTIATED();
+			static void CLIBConcurrentServerIO__stat_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_isFLAG_INSTANTIATED();
+			static void CLIBConcurrentServerIO__stat_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_isFLAG_INSTANTIATED();
+			static bool* CLIBConcurrentServerIO__stat_REG_get_ptr_CLIB_OpenEpiCentre_isFLAG_INSTANTIATED();
 		};
 	}
 }

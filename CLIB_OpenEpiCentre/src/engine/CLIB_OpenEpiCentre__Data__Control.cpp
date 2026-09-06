@@ -3,8 +3,8 @@
 #include "../../include/engine/CLIB_OpenEpiCentre__Data.h"
 #include "../../include/structs/CLIB_OpenEpiCentre_STRUCT__Input.h"
 #include "../../include/structs/CLIB_OpenEpiCentre_STRUCT__Output.h"
-bool* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data__Control::_stat_REG_ptr_flag_isLoaded_Stack_InputAction;
-    bool* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data__Control::_stat_REG_ptr_flag_isLoaded_Stack_OutputSend;
+bool* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data__Control::_stat_REG_ptr_FLAG_isLoaded_Stack_InputAction;
+    bool* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data__Control::_stat_REG_ptr_FLAG_isLoaded_Stack_OutputSend;
     bool* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data__Control::_stat_REG_ptr_side_To_Write_For_doubleBuffer_Input;
     bool* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data__Control::_stat_REG_ptr_side_To_Write_For_doubleBuffer_Output;
 // public.
@@ -18,8 +18,8 @@ bool* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data__Control::_stat_REG_ptr_flag_i
     }
     CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data__Control::~CLIB_OpenEpiCentre__Data__Control()
     {
-        delete _stat_REG_ptr_flag_isLoaded_Stack_InputAction;
-        delete _stat_REG_ptr_flag_isLoaded_Stack_OutputSend;
+        delete _stat_REG_ptr_FLAG_isLoaded_Stack_InputAction;
+        delete _stat_REG_ptr_FLAG_isLoaded_Stack_OutputSend;
         delete _stat_REG_ptr_side_To_Write_For_doubleBuffer_Input;
         delete _stat_REG_ptr_side_To_Write_For_doubleBuffer_Output;
     }
@@ -38,11 +38,11 @@ bool* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data__Control::_stat_REG_ptr_flag_i
         ptr_inputStack->erase(ptr_inputStack->begin()+1);
         if (sizeof(ptr_inputStack) < 2)
         {
-            stat_REG_set_Item_flag_isLoaded_Stack_InputAction(false);
+            stat_REG_set_Item_FLAG_isLoaded_Stack_InputAction(false);
         }
         else
         {
-            stat_REG_set_Item_flag_isLoaded_Stack_InputAction(true);
+            stat_REG_set_Item_FLAG_isLoaded_Stack_InputAction(true);
         }
         delete ptr_inputStack;
     }
@@ -53,11 +53,11 @@ bool* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data__Control::_stat_REG_ptr_flag_i
         ptr_outputStack->erase(ptr_outputStack->begin()+1);
         if (sizeof(ptr_outputStack) < 2)
         {
-            stat_REG_set_Item_flag_isLoaded_Stack_OutputSend(false);
+            stat_REG_set_Item_FLAG_isLoaded_Stack_OutputSend(false);
         }
         else
         {
-            stat_REG_set_Item_flag_isLoaded_Stack_OutputSend(true);
+            stat_REG_set_Item_FLAG_isLoaded_Stack_OutputSend(true);
         }
         delete ptr_outputStack;
     }
@@ -68,11 +68,11 @@ bool* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data__Control::_stat_REG_ptr_flag_i
         ptr_InputStack->at(ptr_InputStack->size()) = obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Data()->dyn_REG_get_ptr_Item_array_Of_doubleBuffer_Input_WRITE(obj);
         if (sizeof(ptr_InputStack) < 2)
         {
-            stat_REG_set_Item_flag_isLoaded_Stack_InputAction(false);
+            stat_REG_set_Item_FLAG_isLoaded_Stack_InputAction(false);
         }
         else
         {
-            stat_REG_set_Item_flag_isLoaded_Stack_InputAction(true);
+            stat_REG_set_Item_FLAG_isLoaded_Stack_InputAction(true);
         }
         delete ptr_InputStack;
     }
@@ -83,32 +83,32 @@ bool* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data__Control::_stat_REG_ptr_flag_i
         ptr_outputStack->at(ptr_outputStack->size()) = obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Data()->dyn_REG_get_ptr_Item_Of_list_Of_ptr_array_Of_buffer_Output_ReferenceForThread(concurrentThreadId);
         if (sizeof(ptr_outputStack) < 2)
         {
-            stat_REG_set_Item_flag_isLoaded_Stack_OutputSend(false);
+            stat_REG_set_Item_FLAG_isLoaded_Stack_OutputSend(false);
         }
         else
         {
-            stat_REG_set_Item_flag_isLoaded_Stack_OutputSend(true);
+            stat_REG_set_Item_FLAG_isLoaded_Stack_OutputSend(true);
         }
         delete ptr_outputStack;
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data__Control::dyn_REG_boot1_DEFINE_CLIB_OpenEpiCentre__Data__Control(CLIB_OpenEpiCentre__Framework* obj)
     {
-        stat_REG_boot1_DEFINE_flag_isLoaded_Stack_InputAction();
-        stat_REG_boot1_DEFINE_flag_isLoaded_Stack_OutputSend();
+        stat_REG_boot1_DEFINE_FLAG_isLoaded_Stack_InputAction();
+        stat_REG_boot1_DEFINE_FLAG_isLoaded_Stack_OutputSend();
         stat_REG_boot1_DEFINE_array_Of_doubleBuffer_Input();
         stat_REG_boot1_DEFINE_array_Of_doubleBuffer_Output();
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data__Control::dyn_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre__Data__Control(CLIB_OpenEpiCentre__Framework* obj)
     {
-       stat_REG_boot2_SUBSTANTIATE_flag_isLoaded_Stack_InputAction();
-       stat_REG_boot2_SUBSTANTIATE_flag_isLoaded_Stack_OutputSend();
+       stat_REG_boot2_SUBSTANTIATE_FLAG_isLoaded_Stack_InputAction();
+       stat_REG_boot2_SUBSTANTIATE_FLAG_isLoaded_Stack_OutputSend();
        stat_REG_boot2_SUBSTANTIATE_array_Of_doubleBuffer_Input();
        stat_REG_boot2_SUBSTANTIATE_array_Of_doubleBuffer_Output();
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data__Control::dyn_REG_boot3_INITIALISE_CLIB_OpenEpiCentre__Data__Control(CLIB_OpenEpiCentre__Framework* obj)
     {
-       stat_REG_boot3_INITIALISE_flag_isLoaded_Stack_InputAction();
-       stat_REG_boot3_INITIALISE_flag_isLoaded_Stack_OutputSend();
+       stat_REG_boot3_INITIALISE_FLAG_isLoaded_Stack_InputAction();
+       stat_REG_boot3_INITIALISE_FLAG_isLoaded_Stack_OutputSend();
        stat_REG_boot3_INITIALISE_array_Of_doubleBuffer_Input();
        stat_REG_boot3_INITIALISE_array_Of_doubleBuffer_Output();
     }
@@ -116,13 +116,13 @@ bool* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data__Control::_stat_REG_ptr_flag_i
     {
 
     }
-    bool CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data__Control::dyn_REG_get_Item_flag_isLoaded_Stack_InputAction()
+    bool CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data__Control::dyn_REG_get_Item_FLAG_isLoaded_Stack_InputAction()
     {
-    return stat_REG_get_ptr_flag_isLoaded_Stack_InputAction();
+    return stat_REG_get_ptr_FLAG_isLoaded_Stack_InputAction();
     }
-    bool CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data__Control::dyn_REG_get_Item_flag_isLoaded_Stack_OutputSend()
+    bool CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data__Control::dyn_REG_get_Item_FLAG_isLoaded_Stack_OutputSend()
     {
-    return stat_REG_get_ptr_flag_isLoaded_Stack_OutputSend();
+    return stat_REG_get_ptr_FLAG_isLoaded_Stack_OutputSend();
     }
     bool CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data__Control::dyn_REG_get_Item_side_To_Write_For_array_Of_doubleBuffer_Input()
     {
@@ -132,13 +132,13 @@ bool* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data__Control::_stat_REG_ptr_flag_i
     {
     return stat_REG_get_ptr_side_To_Write_For_array_Of_doubleBuffer_Output();
     }
-    void CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data__Control::dyn_REG_set_ptr_flag_isLoaded_Stack_InputAction(bool value)
+    void CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data__Control::dyn_REG_set_ptr_FLAG_isLoaded_Stack_InputAction(bool value)
     {
-        stat_REG_set_Item_flag_isLoaded_Stack_InputAction(value);
+        stat_REG_set_Item_FLAG_isLoaded_Stack_InputAction(value);
     }
-    void CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data__Control::dyn_REG_set_ptr_flag_isLoaded_Stack_OutputSend(bool value)
+    void CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data__Control::dyn_REG_set_ptr_FLAG_isLoaded_Stack_OutputSend(bool value)
     {
-        stat_REG_set_Item_flag_isLoaded_Stack_OutputSend(value);
+        stat_REG_set_Item_FLAG_isLoaded_Stack_OutputSend(value);
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data__Control::dyn_REG_set_ptr_side_To_Write_For_array_Of_doubleBuffer_Input(bool new_Bool)
     {
@@ -169,13 +169,13 @@ bool* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data__Control::_stat_REG_ptr_flag_i
 
     }
     // private.
-    void CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data__Control::stat_REG_boot1_DEFINE_flag_isLoaded_Stack_InputAction()
+    void CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data__Control::stat_REG_boot1_DEFINE_FLAG_isLoaded_Stack_InputAction()
     {
-        _stat_REG_ptr_flag_isLoaded_Stack_InputAction = nullptr;
+        _stat_REG_ptr_FLAG_isLoaded_Stack_InputAction = nullptr;
     }
-    void CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data__Control::stat_REG_boot1_DEFINE_flag_isLoaded_Stack_OutputSend()
+    void CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data__Control::stat_REG_boot1_DEFINE_FLAG_isLoaded_Stack_OutputSend()
     {
-        _stat_REG_ptr_flag_isLoaded_Stack_OutputSend = nullptr;
+        _stat_REG_ptr_FLAG_isLoaded_Stack_OutputSend = nullptr;
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data__Control::stat_REG_boot1_DEFINE_array_Of_doubleBuffer_Input()
     {
@@ -185,13 +185,13 @@ bool* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data__Control::_stat_REG_ptr_flag_i
     {
         _stat_REG_ptr_side_To_Write_For_doubleBuffer_Output = nullptr;
     }
-    void CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data__Control::stat_REG_boot2_SUBSTANTIATE_flag_isLoaded_Stack_InputAction()
+    void CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data__Control::stat_REG_boot2_SUBSTANTIATE_FLAG_isLoaded_Stack_InputAction()
     {
-        *_stat_REG_ptr_flag_isLoaded_Stack_InputAction = true;
+        *_stat_REG_ptr_FLAG_isLoaded_Stack_InputAction = true;
     }
-    void CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data__Control::stat_REG_boot2_SUBSTANTIATE_flag_isLoaded_Stack_OutputSend()
+    void CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data__Control::stat_REG_boot2_SUBSTANTIATE_FLAG_isLoaded_Stack_OutputSend()
     {
-        *_stat_REG_ptr_flag_isLoaded_Stack_OutputSend = true;
+        *_stat_REG_ptr_FLAG_isLoaded_Stack_OutputSend = true;
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data__Control::stat_REG_boot2_SUBSTANTIATE_array_Of_doubleBuffer_Input()
     {
@@ -201,13 +201,13 @@ bool* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data__Control::_stat_REG_ptr_flag_i
     {
         *_stat_REG_ptr_side_To_Write_For_doubleBuffer_Output = true;
     }
-    void CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data__Control::stat_REG_boot3_INITIALISE_flag_isLoaded_Stack_InputAction()
+    void CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data__Control::stat_REG_boot3_INITIALISE_FLAG_isLoaded_Stack_InputAction()
     {
-        *_stat_REG_ptr_flag_isLoaded_Stack_InputAction = false;
+        *_stat_REG_ptr_FLAG_isLoaded_Stack_InputAction = false;
     }
-    void CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data__Control::stat_REG_boot3_INITIALISE_flag_isLoaded_Stack_OutputSend()
+    void CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data__Control::stat_REG_boot3_INITIALISE_FLAG_isLoaded_Stack_OutputSend()
     {
-        *_stat_REG_ptr_flag_isLoaded_Stack_OutputSend = false;
+        *_stat_REG_ptr_FLAG_isLoaded_Stack_OutputSend = false;
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data__Control::stat_REG_boot3_INITIALISE_array_Of_doubleBuffer_Input()
     {
@@ -217,13 +217,13 @@ bool* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data__Control::_stat_REG_ptr_flag_i
     {
         *_stat_REG_ptr_side_To_Write_For_doubleBuffer_Output = false;
     }
-    bool* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data__Control::stat_REG_get_ptr_flag_isLoaded_Stack_InputAction()
+    bool* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data__Control::stat_REG_get_ptr_FLAG_isLoaded_Stack_InputAction()
     {
-    return _stat_REG_ptr_flag_isLoaded_Stack_InputAction;
+    return _stat_REG_ptr_FLAG_isLoaded_Stack_InputAction;
     }
-    bool* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data__Control::stat_REG_get_ptr_flag_isLoaded_Stack_OutputSend()
+    bool* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data__Control::stat_REG_get_ptr_FLAG_isLoaded_Stack_OutputSend()
     {
-    return _stat_REG_ptr_flag_isLoaded_Stack_OutputSend;
+    return _stat_REG_ptr_FLAG_isLoaded_Stack_OutputSend;
     }
     bool* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data__Control::stat_REG_get_ptr_side_To_Write_For_array_Of_doubleBuffer_Input()
     {
@@ -233,13 +233,13 @@ bool* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data__Control::_stat_REG_ptr_flag_i
     {
     return _stat_REG_ptr_side_To_Write_For_doubleBuffer_Output;
     }
-    void CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data__Control::stat_REG_set_Item_flag_isLoaded_Stack_InputAction(bool new_Bool)
+    void CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data__Control::stat_REG_set_Item_FLAG_isLoaded_Stack_InputAction(bool new_Bool)
     {
-        *_stat_REG_ptr_flag_isLoaded_Stack_InputAction = new_Bool;
+        *_stat_REG_ptr_FLAG_isLoaded_Stack_InputAction = new_Bool;
     }
-    void CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data__Control::stat_REG_set_Item_flag_isLoaded_Stack_OutputSend(bool new_Bool)
+    void CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data__Control::stat_REG_set_Item_FLAG_isLoaded_Stack_OutputSend(bool new_Bool)
     {
-        *_stat_REG_ptr_flag_isLoaded_Stack_OutputSend = new_Bool;
+        *_stat_REG_ptr_FLAG_isLoaded_Stack_OutputSend = new_Bool;
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data__Control::stat_REG_set_Item_side_To_Write_For_array_Of_doubleBuffer_Input(bool new_Bool)
     {

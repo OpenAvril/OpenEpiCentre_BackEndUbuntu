@@ -1,82 +1,80 @@
-
 #include "../include/LaunchEnableForConcurrentThreadsAt_Server__App.h"
-#include "../include/LaunchEnableForConcurrentThreadsAt_Server__Control.h"
-#include "../include/LaunchEnableForConcurrentThreadsAt_Server__Global.h"
-#include "../include/LaunchEnableForConcurrentThreadsAt_Server__Framework.h"
 #include <iostream>
-CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Control* CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__App::_stat_CLASS_ptr_LaunchEnableForConcurrentThreadsAt_Server__LaunchConcurrency_Control;
+    CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__App__Control* CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__App::_stat_CLASS_LaunchEnableForConcurrentThreadsAt_Server__App__Control;
+    CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Execute* CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__App::_stat_CLASS_LaunchEnableForConcurrentThreadsAt_Server__App__Ececute;
 // public.
-CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__App::LaunchEnableForConcurrentThreadsAt_Server__App()
-{
-    stat_CLASS_boot1_DEFINE_LaunchEnableForConcurrentThreadsAt_Server__App();
-    stat_CLASS_boot3_INITIALISE_LaunchEnableForConcurrentThreadsAt_Server__App();
-}
-CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__App::~LaunchEnableForConcurrentThreadsAt_Server__App()
-{
-    delete _stat_CLASS_ptr_LaunchEnableForConcurrentThreadsAt_Server__LaunchConcurrency_Control;
-}
-void CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__App::dyn_APP_LaunchEnableForConcurrentThreadsAt_Server__thread_Start(CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Framework* obj, std::byte concurrentThreadId)
-{
-    obj->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__App()->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__Control()->dyn_App_LaunchEnableForConcurrentThreadsAt_Server__Control__launchEnable_Request(obj, concurrentThreadId);
-    obj->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__App()->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__Control()->dyn_App_LaunchEnableForConcurrentThreadsAt_Server__Control__launchQue_Update(obj, obj->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__Global()->dyn_REG_get_LaunchEnableForConcurrentThreadsAt_Server__number_Implemented_Threads());
-    obj->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__App()->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__Control()->dyn_App_LaunchEnableForConcurrentThreadsAt_Server__Control__launchEnable_SortQue(obj, obj->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__Global()->dyn_REG_get_LaunchEnableForConcurrentThreadsAt_Server__number_Implemented_Threads());
-    obj->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__App()->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__Control()->dyn_App_LaunchEnableForConcurrentThreadsAt_Server__Control__launchEnable_Activate(obj);
-    obj->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__App()->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__Control()->dyn_App_LaunchEnableForConcurrentThreadsAt_Server__Control__launchQue_Update(obj, obj->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__Global()->dyn_REG_get_LaunchEnableForConcurrentThreadsAt_Server__number_Implemented_Threads());
-    obj->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__App()->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__Control()->dyn_App_LaunchEnableForConcurrentThreadsAt_Server__Control__launchEnable_SortQue(obj, obj->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__Global()->dyn_REG_get_LaunchEnableForConcurrentThreadsAt_Server__number_Implemented_Threads());
-    obj->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__App()->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__Control()->dyn_REG_set_flag_LaunchEnableForConcurrentThreadsAt_Server__praisinglaunch(false);
-}
-void CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__App::dyn_APP_LaunchEnableForConcurrentThreadsAt_Server__thread_End(CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Framework* obj, std::byte concurrentThreadId)
-{
-    while (obj->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__App()->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__Control()->dyn_REG_get_flag_LaunchEnableForConcurrentThreadsAt_Server__praisinglaunch() == true)
-    {
-
+    CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__App::LaunchEnableForConcurrentThreadsAt_Server__App() {
+        stat_CALSS_boot0_DECLARE_LaunchEnableForConcurrentThreadsAt_Server__App();
+        stat_CALSS_boot1_DEFINE_LaunchEnableForConcurrentThreadsAt_Server__App();
+        stat_CALSS_boot1_DEFINE_LaunchEnableForConcurrentThreadsAt_Server__App();
+        stat_CALSS_boot3_INITIALISE_LaunchEnableForConcurrentThreadsAt_Server__App();
     }
-    obj->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__App()->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__Control()->dyn_REG_set_flag_LaunchEnableForConcurrentThreadsAt_Server__praisinglaunch(true);
-    obj->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__App()->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__Control()->dyn_REG_set_LaunchEnableForConcurrentThreadsAt_Server__concurrentCycle_Try_CoreId_Index(obj->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__App()->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__Control()->dyn_REG_get_LaunchEnableForConcurrentThreadsAt_Server__new_concurrentCycle_Try_CoreId_Index());
-    if (obj->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__App()->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__Control()->dyn_REG_get_LaunchEnableForConcurrentThreadsAt_Server__concurrentCycle_Try_CoreId_Index() == concurrentThreadId)
-    {
-        obj->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__App()->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__Control()->dyn_REG_set_LaunchEnableForConcurrentThreadsAt_Server__Item_On_list_Of_STATE_For_ConcurrentCore(concurrentThreadId, obj->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__Global()->dyn_REG_get_ptr_flag_LaunchEnableForConcurrentThreadsAt_Server__thread_2STATE_IDLE());
+    CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__App::~LaunchEnableForConcurrentThreadsAt_Server__App() {
+        delete _stat_CLASS_LaunchEnableForConcurrentThreadsAt_Server__App__Control;
+        delete _stat_CLASS_LaunchEnableForConcurrentThreadsAt_Server__App__Ececute;
     }
-    else
-    {
-        obj->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__App()->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__Control()->dyn_REG_set_LaunchEnableForConcurrentThreadsAt_Server__new_concurrentCycle_Try_CoreId_Index(
-            static_cast<std::byte>(std::to_integer<int>(obj->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__App()->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__Control()->dyn_REG_get_LaunchEnableForConcurrentThreadsAt_Server__concurrentCycle_Try_CoreId_Index()) + 1));
-
-        if (static_cast<int>(obj->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__App()->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__Control()->dyn_REG_get_LaunchEnableForConcurrentThreadsAt_Server__new_concurrentCycle_Try_CoreId_Index()) == 3)//NUMBER OF CONCURNT CORES
-        {
-            obj->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__App()->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__Control()->dyn_REG_set_LaunchEnableForConcurrentThreadsAt_Server__new_concurrentCycle_Try_CoreId_Index(static_cast<std::byte>(0));
-        }
-        obj->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__App()->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__Control()->dyn_REG_set_flag_LaunchEnableForConcurrentThreadsAt_Server__praisinglaunch(false);
-        obj->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__App()->dyn_APP_LaunchEnableForConcurrentThreadsAt_Server__thread_End(obj, concurrentThreadId);
+    void CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__App::dyn_APP_FUNCT_LaunchEnableForConcurrentThreadsAt_Server__thread_Start(LaunchEnableForConcurrentThreadsAt_Server__Framework* obj, uint8_t concurrentThreadID) {
+        obj->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__App()->dyn_CLASS_get_LaunchEnableForConcurrentThreadsAt_Server__App__Control()->dyn_REG_set_LaunchEnableForConcurrentThreadsAt_Server__Item_On_list_Of_STATE_For_ConcurrentCore(obj->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__App()->dyn_CLASS_get_LaunchEnableForConcurrentThreadsAt_Server__App__Control()->dyn_REG_get_LaunchEnableForConcurrentThreadsAt_Server__Item_On_list_Of_STATE_For_ConcurrentCore(0), obj->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__Global()->dyn_REG_get_LaunchEnableForConcurrentThreadsAt_Server__Global__ptr_FLAG_thread_2STATE_ACTIVE());
+        obj->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__App()->dyn_CLASS_get_LaunchEnableForConcurrentThreadsAt_Server__App__Control()->dyn_App_FUNCT_LaunchEnableForConcurrentThreadsAt_Server__App__Control__launchQue_Update(obj, obj->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__Global()->dyn_REG_get_LaunchEnableForConcurrentThreadsAt_Server__Global__number_Implemented_Threads());
+        obj->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__App()->dyn_CLASS_get_LaunchEnableForConcurrentThreadsAt_Server__App__Control()->dyn_App_FUNCT_LaunchEnableForConcurrentThreadsAt_Server__App__Control__launchEnable_SortQue(obj, obj->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__Global()->dyn_REG_get_LaunchEnableForConcurrentThreadsAt_Server__Global__number_Implemented_Threads());
     }
-}
-CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Control* CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__App::dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__Control()
-{
-    return stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__Control();
-}
-void CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__App::stat_CLASS_boot1_DEFINE_LaunchEnableForConcurrentThreadsAt_Server__App()
-{
-	std::cout << "entered CLASS_boot1_DEFINE_LaunchEnableForConcurrentThreadsAt_Server__App()." << std::endl;
-    stat_CLASS_boot1_DEFINE_LaunchEnableForConcurrentThreadsAt_Server__Control();
-	std::cout << "exiting CLASS_boot1_DEFINE_LaunchEnableForConcurrentThreadsAt_Server__App()." << std::endl;
-}
-void CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__App::stat_CLASS_boot3_INITIALISE_LaunchEnableForConcurrentThreadsAt_Server__App()
-{
-	std::cout << "entered CLASS_boot3_INITIALISE_LaunchEnableForConcurrentThreadsAt_Server__App()." << std::endl;
-    stat_CLASS_boot3_INITIALISE_LaunchEnableForConcurrentThreadsAt_Server__Control();
-	std::cout << "exiting CLASS_boot3_INITIALISE_LaunchEnableForConcurrentThreadsAt_Server__App()." << std::endl;
-}
+    void CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__App::dyn_APP_FUNCT_LaunchEnableForConcurrentThreadsAt_Server__thread_Server(LaunchEnableForConcurrentThreadsAt_Server__Framework* obj, uint8_t concurrentThreadID) {
+        obj->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__App()->dyn_CLASS_get_LaunchEnableForConcurrentThreadsAt_Server__App__Control()->dyn_REG_set_LaunchEnableForConcurrentThreadsAt_Server__Item_On_list_Of_STATE_For_ConcurrentCore(concurrentThreadID, obj->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__Global()->dyn_REG_get_LaunchEnableForConcurrentThreadsAt_Server__Global__ptr_FLAG_thread_2STATE_IDLE());
+        obj->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__App()->dyn_CLASS_get_LaunchEnableForConcurrentThreadsAt_Server__App__Control()->dyn_App_FUNCT_LaunchEnableForConcurrentThreadsAt_Server__App__Control__launchQue_Update(obj, obj->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__Global()->dyn_REG_get_LaunchEnableForConcurrentThreadsAt_Server__Global__number_Implemented_Threads());
+        obj->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__App()->dyn_CLASS_get_LaunchEnableForConcurrentThreadsAt_Server__App__Control()->dyn_App_FUNCT_LaunchEnableForConcurrentThreadsAt_Server__App__Control__launchEnable_SortQue(obj, obj->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__Global()->dyn_REG_get_LaunchEnableForConcurrentThreadsAt_Server__Global__number_Implemented_Threads());
+    }
+    CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__App__Control* CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__App::dyn_CLASS_get_LaunchEnableForConcurrentThreadsAt_Server__App__Control() {
+        return stat_CLASS_get_LaunchEnableForConcurrentThreadsAt_Server__App__WriteEnable_Control();
+    }
+    CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Execute* CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__App::dyn_CLASS_get_LaunchEnableForConcurrentThreadsAt_Server__Execute() {
+        return stat_CLASS_get_LaunchEnableForConcurrentThreadsAt_Server__Execute();
+    }
+    void CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__App::dyn_REG_boot1_REG_DEFINE_LaunchEnableForConcurrentThreadsAt_Server__App() {
+	    std::cout << "entered dyn_REG_boot1_REG_DEFINE_LaunchEnableForConcurrentThreadsAt_Server__App()." << std::endl;
+	    std::cout << "exiting dyn_REG_boot1_REG_DEFINE_LaunchEnableForConcurrentThreadsAt_Server__App()." << std::endl;
+    }
+    void CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__App::dyn_REG_boot2_REG_SUBSTANTIATE_LaunchEnableForConcurrentThreadsAt_Server__App() {
+	    std::cout << "entered dyn_REG_boot2_REG_SUBSTANTIATE_LaunchEnableForConcurrentThreadsAt_Server__App()." << std::endl;
+	    std::cout << "exiting dyn_REG_boot2_REG_SUBSTANTIATE_LaunchEnableForConcurrentThreadsAt_Server__App()." << std::endl;
+    }
+    void CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__App::dyn_REG_boot3_REG_INITIALISE_LaunchEnableForConcurrentThreadsAt_Server__App() {
+	    std::cout << "entered dyn_REG_boot3_REG_INITIALISE_LaunchEnableForConcurrentThreadsAt_Server__App()." << std::endl;
+	    std::cout << "exiting dyn_REG_boot3_REG_INITIALISE_LaunchEnableForConcurrentThreadsAt_Server__App()." << std::endl;
+    }
+    void CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__App::stat_CALSS_boot0_DECLARE_LaunchEnableForConcurrentThreadsAt_Server__App() {
+        std::cout << "entered stat_CALSS_boot0_DECLARE_LaunchEnableForConcurrentThreadsAt_Server__App()." << std::endl;
+        std::cout << "exiting stat_CALSS_boot0_DECLARE_LaunchEnableForConcurrentThreadsAt_Server__App()." << std::endl;
+    }
+    void CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__App::stat_CALSS_boot1_DEFINE_LaunchEnableForConcurrentThreadsAt_Server__App() {
+        std::cout << "entered stat_CALSS_boot1_DEFINE_LaunchEnableForConcurrentThreadsAt_Server__App()." << std::endl;
+        stat_CLASS_boot1_DEFINE_LaunchEnableForConcurrentThreadsAt_Server__App__WriteEnable_Control();
+        stat_CLASS_boot1_DEFINE_LaunchEnableForConcurrentThreadsAt_Server__Execute();
+        std::cout << "exiting stat_CALSS_boot1_DEFINE_LaunchEnableForConcurrentThreadsAt_Server__App()." << std::endl;
+    }
+    void CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__App::stat_CALSS_boot3_INITIALISE_LaunchEnableForConcurrentThreadsAt_Server__App() {
+        std::cout << "entered stat_CALSS_boot3_INITIALISE_LaunchEnableForConcurrentThreadsAt_Server__App()." << std::endl;
+        stat_CLASS_boot3_INITIALISE_LaunchEnableForConcurrentThreadsAt_Server__App__WriteEnable_Control();
+        stat_CLASS_boot3_INITIALISE_LaunchEnableForConcurrentThreadsAt_Server__Execute();
+        std::cout << "exiting stat_CALSS_boot3_INITIALISE_LaunchEnableForConcurrentThreadsAt_Server__App()." << std::endl;
+    }
 // private.
-void CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__App::stat_CLASS_boot1_DEFINE_LaunchEnableForConcurrentThreadsAt_Server__Control()
-{
-    _stat_CLASS_ptr_LaunchEnableForConcurrentThreadsAt_Server__LaunchConcurrency_Control = NULL;
-}
-void CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__App::stat_CLASS_boot3_INITIALISE_LaunchEnableForConcurrentThreadsAt_Server__Control()
-{
-    _stat_CLASS_ptr_LaunchEnableForConcurrentThreadsAt_Server__LaunchConcurrency_Control = new CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Control();
-    while (stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__Control() == nullptr) { }
-}
-CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Control* CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__App::stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__Control()
-{
-	return _stat_CLASS_ptr_LaunchEnableForConcurrentThreadsAt_Server__LaunchConcurrency_Control;
-}
+    void CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__App::stat_CLASS_boot1_DEFINE_LaunchEnableForConcurrentThreadsAt_Server__App__WriteEnable_Control() {
+        _stat_CLASS_LaunchEnableForConcurrentThreadsAt_Server__App__Control = nullptr;
+    }
+    void CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__App::stat_CLASS_boot1_DEFINE_LaunchEnableForConcurrentThreadsAt_Server__Execute() {
+        _stat_CLASS_LaunchEnableForConcurrentThreadsAt_Server__App__Ececute = nullptr;
+    }
+    void CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__App::stat_CLASS_boot3_INITIALISE_LaunchEnableForConcurrentThreadsAt_Server__App__WriteEnable_Control() {
+        _stat_CLASS_LaunchEnableForConcurrentThreadsAt_Server__App__Control = new CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__App__Control();
+        while (stat_CLASS_get_LaunchEnableForConcurrentThreadsAt_Server__App__WriteEnable_Control() == nullptr) { }
+    }
+    void CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__App::stat_CLASS_boot3_INITIALISE_LaunchEnableForConcurrentThreadsAt_Server__Execute() {
+        _stat_CLASS_LaunchEnableForConcurrentThreadsAt_Server__App__Ececute = new CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Execute();
+        while (stat_CLASS_get_LaunchEnableForConcurrentThreadsAt_Server__Execute() == nullptr) { }
+    }
+    CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__App__Control* CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__App::stat_CLASS_get_LaunchEnableForConcurrentThreadsAt_Server__App__WriteEnable_Control() {
+        return _stat_CLASS_LaunchEnableForConcurrentThreadsAt_Server__App__Control;
+    }
+    CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Execute* CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__App::stat_CLASS_get_LaunchEnableForConcurrentThreadsAt_Server__Execute() {
+        return _stat_CLASS_LaunchEnableForConcurrentThreadsAt_Server__App__Ececute;
+    }
