@@ -31,9 +31,6 @@
         stat_PGM_boot4_INSTANTIATE_LaunchEnableForConcurrentThreadsAt_Server__Execute(obj);
         std::cout << "exiting dyn_REG_boot4_INSTANTIATE_Execute()" << std::endl;
     }
-    void* CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Execute::dyn_PGM_get_WriteQueForThreadsAt_ServerLaunchQue_ConditionCode(){
-        return stat_PGM_get_ptr_WriteQueForThreadsAt_ServerLaunchQue_ConditionCode();
-    }
     void CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Execute::stat_CLASS_boot0_DECLARE_LaunchEnableForConcurrentThreadsAt_Server__Execute(){
         std::cout << "entered stat_CLASS_boot0_DECLARE_Execute()" << std::endl;
         std::cout << "exiting stat_CLASS_boot0_DECLARE_Execute()" << std::endl;
@@ -53,11 +50,11 @@
         std::cout << "entered stat_CLASS_boot4_INSTANTIATE_Execute()" << std::endl;
         unsigned char* bytes = reinterpret_cast<unsigned char*>(new uint8_t(255));
         std::cout << "entered CHECK member function of CLIB_WriteEnableForThreadsAt_Server_LaunchQueConditionCode() " << std::endl;
-        //CLIBWriteQueAtServer_LaunchQueConditionCode::CLIB_WriteEnableForThreadsAt_Server_LaunchQueConditionCode::CLIB_WriteEnableForThreadsAt_Server_LaunchQueConditionCode__App_FUNCT_generate_Program();
-        unsigned char* tempA = CLIBWriteQueAtServer_LaunchQueConditionCode::CLIB_WriteEnableForThreadsAt_Server_LaunchQueConditionCode::CLIB_WriteEnableForThreadsAt_Server_LaunchQueConditionCode::CLIB_WriteEnableForThreadsAt_Server_LaunchQueConditionCode__App_FUNCT_get_FLAG_isPGM_INSTANTIATED();
-        CLIBWriteQueAtServer_LaunchQueConditionCode::CLIB_WriteEnableForThreadsAt_Server_LaunchQueConditionCode::CLIB_WriteEnableForThreadsAt_Server_LaunchQueConditionCode__App_FUNCT_terminate_Program();
-        CLIBWriteQueAtServer_LaunchQueConditionCode::CLIB_WriteEnableForThreadsAt_Server_LaunchQueConditionCode::CLIB_WriteEnableForThreadsAt_Server_LaunchQueConditionCode__App_FUNCT_write_Server(bytes);
-        CLIBWriteQueAtServer_LaunchQueConditionCode::CLIB_WriteEnableForThreadsAt_Server_LaunchQueConditionCode::CLIB_WriteEnableForThreadsAt_Server_LaunchQueConditionCode__App_FUNCT_write_Start(bytes);
+        //CLIBWriteQueAt_Server_LaunchQueConditionCode::CLIB_WriteEnableForThreadsAt_Server_LaunchQueConditionCode::CLIB_WriteEnableForThreadsAt_Server_LaunchQueConditionCode__App_FUNCT_generate_Program();
+        unsigned char* tempA = CLIBWriteQueAt_Server_LaunchQueConditionCode::CLIB_WriteEnableForThreadsAt_Server_LaunchQueConditionCode::CLIB_WriteEnableForThreadsAt_Server_LaunchQueConditionCode::CLIB_WriteEnableForThreadsAt_Server_LaunchQueConditionCode__App_FUNCT_get_FLAG_isPGM_INSTANTIATED();
+        CLIBWriteQueAt_Server_LaunchQueConditionCode::CLIB_WriteEnableForThreadsAt_Server_LaunchQueConditionCode::CLIB_WriteEnableForThreadsAt_Server_LaunchQueConditionCode__App_FUNCT_terminate_Program();
+        CLIBWriteQueAt_Server_LaunchQueConditionCode::CLIB_WriteEnableForThreadsAt_Server_LaunchQueConditionCode::CLIB_WriteEnableForThreadsAt_Server_LaunchQueConditionCode__App_FUNCT_write_Server(bytes);
+        CLIBWriteQueAt_Server_LaunchQueConditionCode::CLIB_WriteEnableForThreadsAt_Server_LaunchQueConditionCode::CLIB_WriteEnableForThreadsAt_Server_LaunchQueConditionCode__App_FUNCT_write_Start(bytes);
         std::cout << "done CHECK member function of CLIB_WriteEnableForThreadsAt_Server_LaunchQueConditionCode() " << std::endl;
         delete bytes;
         delete tempA;
@@ -74,7 +71,7 @@
     }
     void CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Execute::stat_PGM_boot3_INITIALISE_WriteQueForThreadsAt_ServerLaunchQue_ConditionCode()
     {
-        _stat_PGM_CLIB_WriteQueForThreadsAt_ServerLaunchQue_ConditionCode = CLIBWriteQueAtServer_LaunchQueConditionCode::CLIB_WriteEnableForThreadsAt_Server_LaunchQueConditionCode::CLIB_WriteEnableForThreadsAt_Server_LaunchQueConditionCode__App_FUNCT_generate_Program();
+        _stat_PGM_CLIB_WriteQueForThreadsAt_ServerLaunchQue_ConditionCode = CLIBWriteQueAt_Server_LaunchQueConditionCode::CLIB_WriteEnableForThreadsAt_Server_LaunchQueConditionCode::CLIB_WriteEnableForThreadsAt_Server_LaunchQueConditionCode__App_FUNCT_generate_Program();
         while (stat_PGM_get_ptr_WriteQueForThreadsAt_ServerLaunchQue_ConditionCode() == nullptr) {}
     }
     void* CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Execute::stat_PGM_get_ptr_WriteQueForThreadsAt_ServerLaunchQue_ConditionCode()

@@ -2,7 +2,7 @@
 #define CLIB_WRITEENABLEFORTHREADSAT_Server_LaunchQueConditionCode_H
 #include "../include/WriteEnableForThreadsAt_Server_LaunchQueConditionCode__Framework.h"
 extern "C" {
-    namespace CLIBWriteQueAtServer_LaunchQueConditionCode {
+    namespace CLIBWriteQueAt_Server_LaunchQueConditionCode {
         class CLIB_WriteEnableForThreadsAt_Server_LaunchQueConditionCode {
         public:
             static void* CLIB_WriteEnableForThreadsAt_Server_LaunchQueConditionCode__App_FUNCT_generate_Program();

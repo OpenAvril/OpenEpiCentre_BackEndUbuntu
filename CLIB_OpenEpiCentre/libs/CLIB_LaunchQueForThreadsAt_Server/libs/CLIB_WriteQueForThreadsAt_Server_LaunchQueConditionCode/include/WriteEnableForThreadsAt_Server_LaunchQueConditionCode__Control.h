@@ -2,7 +2,7 @@
 #define CLIB_WRITEENABLEFORTHREADSAT_Server_LaunchQueConditionCode_WRITEENABLEFORTHREADSAT_Server_LaunchQueConditionCode__Control_H
 #include <cstdint>
 #include <list>
-namespace CLIBWriteQueAtServer_LaunchQueConditionCode
+namespace CLIBWriteQueAt_Server_LaunchQueConditionCode
 {
     class WriteEnableForThreadsAt_Server_LaunchQueConditionCode__Control
     {

@@ -2,7 +2,7 @@
 #define CLIB_WRITEENABLEFORTHREADSAT_Server_LaunchQueConditionCode_WRITEENABLEFORTHREADSAT_Server_LaunchQueConditionCode__FRAMEWORK__GLOBAL_H
 #include <array>
 #include <cstdint>
-namespace CLIBWriteQueAtServer_LaunchQueConditionCode {
+namespace CLIBWriteQueAt_Server_LaunchQueConditionCode {
     class WriteEnableForThreadsAt_Server_LaunchQueConditionCode__Global {
     public:
         WriteEnableForThreadsAt_Server_LaunchQueConditionCode__Global();

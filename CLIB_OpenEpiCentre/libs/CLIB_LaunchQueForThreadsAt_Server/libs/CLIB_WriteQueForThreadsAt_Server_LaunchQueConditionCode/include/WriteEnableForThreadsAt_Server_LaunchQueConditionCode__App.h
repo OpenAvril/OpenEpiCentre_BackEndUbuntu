@@ -2,7 +2,7 @@
 #define CLIB_WriteEnableForThreadsAt_Server_LaunchQueConditionCode__App_WriteEnableForThreadsAt_Server_LaunchQueConditionCode__App__APP_H
 #include "../include/WriteEnableForThreadsAt_Server_LaunchQueConditionCode__Control.h"
 #include <cstdint>
-namespace CLIBWriteQueAtServer_LaunchQueConditionCode
+namespace CLIBWriteQueAt_Server_LaunchQueConditionCode
 {
     class WriteEnableForThreadsAt_Server_LaunchQueConditionCode__App
     {
