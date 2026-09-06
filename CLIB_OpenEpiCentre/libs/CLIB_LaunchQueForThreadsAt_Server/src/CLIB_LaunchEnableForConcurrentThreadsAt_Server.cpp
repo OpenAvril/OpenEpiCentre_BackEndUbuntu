@@ -81,10 +81,10 @@
             CLIB_LaunchEnableForConcurrentThreadsAt_Server__stat_app_FUNCT_Calc_IsAllINSTANTIATED();
         }
     }
-    void CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server__App_FUNCT_thread_Server(unsigned char* bytes)
+    void CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server__App_FUNCT_thread_End(unsigned char* bytes)
     {
         if (!CLIB_LaunchEnableForConcurrentThreadsAt_Server__stat_REG_get_ptr_FLAG_Array_isMemberFunctionINSTANTIATED()[0]) {
-            CLIB_LaunchEnableForConcurrentThreadsAt_Server__stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__Framework()->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__App()->dyn_APP_FUNCT_LaunchEnableForConcurrentThreadsAt_Server__thread_Server(CLIB_LaunchEnableForConcurrentThreadsAt_Server__stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__Framework(), (uint8_t)*bytes);
+            CLIB_LaunchEnableForConcurrentThreadsAt_Server__stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__Framework()->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__App()->dyn_APP_FUNCT_LaunchEnableForConcurrentThreadsAt_Server__thread_End(CLIB_LaunchEnableForConcurrentThreadsAt_Server__stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server__Framework(), (uint8_t)*bytes);
         }
         else {
             CLIB_LaunchEnableForConcurrentThreadsAt_Server__stat_REG_get_ptr_FLAG_Array_isMemberFunctionINSTANTIATED()[3] = !CLIB_LaunchEnableForConcurrentThreadsAt_Server__stat_REG_get_ptr_FLAG_Array_isMemberFunctionINSTANTIATED()[0];

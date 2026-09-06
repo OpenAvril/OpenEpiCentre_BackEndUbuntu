@@ -8,7 +8,9 @@
 #include "../../include/engine/CLIB_OpenEpiCentre__Global.h"
 #include "../../include/structs/CLIB_OpenEpiCentre_STRUCT__Concurrent.h"
 #include <iostream>
-    CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Execute__Control* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Execute::_stat_CLASS_CLIB_OpenEpiCentre__Execute__Control;
+
+#include "../../libs/CLIB_WriteQueForThreadsAt_ServerConditionCode/include/CLIB_WriteEnableForThreadsAt_ServerConditionCode.h"
+CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Execute__Control* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Execute::_stat_CLASS_CLIB_OpenEpiCentre__Execute__Control;
     std::list<std::thread*>* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Execute::_stat_REG_List_Of_Threads;
     void* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Execute::_stat_PGM_ConcurrentQue_Server;
     void* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Execute::_stat_PGM_WriteEnable_ServerInputReceive;
@@ -94,12 +96,14 @@
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Execute::stat_CLASS_boot4_INSTANTIATE_CLIB_OpenEpiCentre_Execute()
     {
-    std::cout << "entered stat_CLASS_boot4_INSTANTIATE_Execute()" << std::endl;
+        std::cout << "entered stat_CLASS_boot4_INSTANTIATE_Execute()" << std::endl;
         unsigned char* bytes_unsignedLongLong = CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::stat_CONVERT_unsignedLongLong_to_ByteArray(UINT8_MAX);
+        unsigned char* byte_uint8_t = CLIB_OpenEpiCentre__Global::stat_CONVERT_MsbByte_To_MsbByteArray(static_cast<std::byte>(255));
+        unsigned char* byte_bool = CLIB_OpenEpiCentre__Global::stat_CONVERT_MsbBoolean_To_MsbByteArray(true);
 
-       std::cout << "entered CHECK member function of CLIB_WriteEnableForThreadsAt_ServerInputReceive() " << std::endl;
+        std::cout << "entered CHECK member function of CLIB_WriteEnableForThreadsAt_ServerInputReceive() " << std::endl;
         //CLIBWriteQueAtServerInputReceive::CLIBWriteEnableForThreadsAtServerInputReceive::CLIB_WriteEnableForThreadsAt_ServerInputReceive__app_FUNCT_generate_Program();
-        CLIBWriteQueAtServerInputReceive::CLIB_WriteEnableForThreadsAt_ServerInputReceive::CLIB_WriteEnableForThreadsAt_ServerInputReceive__APP_REG_get_FLAG_isPGM_INSTANTIATED();
+        CLIBWriteQueAtServerInputReceive::CLIB_WriteEnableForThreadsAt_ServerInputReceive::CLIB_WriteEnableForThreadsAt_ServerInputReceive__App_FUNCT_get_FLAG_isPGM_INSTANTIATED();
         CLIBWriteQueAtServerInputReceive::CLIB_WriteEnableForThreadsAt_ServerInputReceive::CLIB_WriteEnableForThreadsAt_ServerInputReceive__App_FUNCT_terminate_Program();
         CLIBWriteQueAtServerInputReceive::CLIB_WriteEnableForThreadsAt_ServerInputReceive::CLIB_WriteEnableForThreadsAt_ServerInputReceive__App_FUNCT_write_End(bytes_unsignedLongLong);
         CLIBWriteQueAtServerInputReceive::CLIB_WriteEnableForThreadsAt_ServerInputReceive::CLIB_WriteEnableForThreadsAt_ServerInputReceive__App_FUNCT_write_Start(bytes_unsignedLongLong);
@@ -107,28 +111,50 @@
 
         std::cout << "entered CHECK member function of CLIB_WriteEnableForThreadsAt_ServerOutputSend() " << std::endl;
         //CLIBWriteQueAtServerOutputSend::CLIBWriteEnableForThreadsAtServerOutputSend::CLIB_WriteEnableForThreadsAt_ServerOutputSend__app_FUNCT_generate_Program();
-        CLIBWriteQueAtServerOutputSend::CLIB_WriteEnableForThreadsAt_ServerOutputSend::CLIB_WriteEnableForThreadsAt_ServerOutputSend__APP_REG_get_FLAG_isPGM_INSTANTIATED();
+        CLIBWriteQueAtServerOutputSend::CLIB_WriteEnableForThreadsAt_ServerOutputSend::CLIB_WriteEnableForThreadsAt_ServerOutputSend__App_FUNCT_get_FLAG_isPGM_INSTANTIATED();
         CLIBWriteQueAtServerOutputSend::CLIB_WriteEnableForThreadsAt_ServerOutputSend::CLIB_WriteEnableForThreadsAt_ServerOutputSend__App_FUNCT_terminate_Program();
         CLIBWriteQueAtServerOutputSend::CLIB_WriteEnableForThreadsAt_ServerOutputSend::CLIB_WriteEnableForThreadsAt_ServerOutputSend__App_FUNCT_write_End(bytes_unsignedLongLong);
         CLIBWriteQueAtServerOutputSend::CLIB_WriteEnableForThreadsAt_ServerOutputSend::CLIB_WriteEnableForThreadsAt_ServerOutputSend__App_FUNCT_write_Start(bytes_unsignedLongLong);
         std::cout << "done CHECK member function of CLIB_WriteEnableForThreadsAt_ServerOutputSend() " << std::endl;
 
+        std::cout << "entered CHECK member function of CLIB_LaunchEnableForConcurrentThreadsAt_Server() " << std::endl;
+        //CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server__App_FUNCT_generate_Program();
+        CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server__App_FUNCT_request_Wait_launch(byte_uint8_t);
+        CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server__App_FUNCT_terminate_Progaram();
+        CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server__App_FUNCT_thread_End(byte_uint8_t);
+        unsigned char* tempA = CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server__App_REG_get_coreId_To_launch();
+        unsigned char* tempB = CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server__App_REG_get_Flag_Active();
+        unsigned char* tempC = CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server__App_REG_get_Flag_ConcurrentCoreState(byte_uint8_t);
+        unsigned char* tempD = CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server__App_REG_get_Flag_Idle();
+        unsigned char* tempE = CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server__App_REG_get_FLAG_isPGM_INSTANTIATED();
+        unsigned char* tempF = CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server__App_REG_get_State_launchBit();
+        CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server__App_REG_set_Flag_ConcurrentCoreState(byte_uint8_t, byte_bool);
+        std::cout << "done CHECK member function of CLIB_LaunchEnableForConcurrentThreadsAt_Server() " << std::endl;
+
+        std::cout << "entered CHECK member function of CLIB_WriteEnableForThreadsAt_ServerConditionCode() " << std::endl;
+        //CLIBWriteQueAtServerConditionCode::CLIB_WriteEnableForThreadsAt_ServerConditionCode::CLIB_WriteEnableForThreadsAt_ServerConditionCode__App_FUNCT_generate_Program();
+        CLIBWriteQueAtServerConditionCode::CLIB_WriteEnableForThreadsAt_ServerConditionCode::CLIB_WriteEnableForThreadsAt_ServerConditionCode__App_FUNCT_get_FLAG_isPGM_INSTANTIATED();
+        CLIBWriteQueAtServerConditionCode::CLIB_WriteEnableForThreadsAt_ServerConditionCode::CLIB_WriteEnableForThreadsAt_ServerConditionCode__App_FUNCT_terminate_Program();
+        CLIBWriteQueAtServerConditionCode::CLIB_WriteEnableForThreadsAt_ServerConditionCode::CLIB_WriteEnableForThreadsAt_ServerConditionCode__App_FUNCT_write_End(bytes_unsignedLongLong);
+        CLIBWriteQueAtServerConditionCode::CLIB_WriteEnableForThreadsAt_ServerConditionCode::CLIB_WriteEnableForThreadsAt_ServerConditionCode__App_FUNCT_write_Start(bytes_unsignedLongLong);
+        std::cout << "done CHECK member function of CLIB_WriteEnableForThreadsAt_ServerConditionCode() " << std::endl;
+
         std::cout << "entered CHECK member function of CLIBLaunchEnableForConcurrentThreadsAtServer() " << std::endl;
         //CLIBLaunchQueAtServer::CLIBLaunchEnableForConcurrentThreadsAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server__app_FUNCT_generate_Program();
-        CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server__app_FUNCT_get_FLAG_isPGM_INSTANTIATED();
-        CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server__app_FUNCT_request_Wait_launch(bytes_unsignedLongLong);
-        CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server__app_FUNCT_terminate_Program();
-        CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server__app_FUNCT_thread_End(bytes_unsignedLongLong);
-        CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server__app_REG_get_coreId_To_launch();
-        CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server__app_REG_get_FLAG_Active();
-        CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server__app_REG_get_FLAG_ConcurrentCoreState(bytes_unsignedLongLong);
-        CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server__app_REG_get_FLAG_Idle();
-        CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server__app_REG_get_State_launchBit();
-        CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server__app_REG_get_FLAG_ConcurrentCoreState(bytes_unsignedLongLong);
+        CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server__App_REG_get_FLAG_isPGM_INSTANTIATED();
+        CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server__App_FUNCT_request_Wait_launch(bytes_unsignedLongLong);
+        CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server__App_FUNCT_terminate_Progaram();
+        CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server__App_FUNCT_thread_End(bytes_unsignedLongLong);
+        CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server__App_REG_get_coreId_To_launch();
+        CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server__App_REG_get_Flag_Active();
+        CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server__App_REG_get_Flag_ConcurrentCoreState(bytes_unsignedLongLong);
+        CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server__App_REG_get_Flag_Idle();
+        CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server__App_REG_get_State_launchBit();
+        CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server__App_REG_get_Flag_ConcurrentCoreState(bytes_unsignedLongLong);
         std::cout << "done CHECK member function of CLIBLaunchEnableForConcurrentThreadsAtServer() " << std::endl;
 
         delete bytes_unsignedLongLong;
-    std::cout << "exiting stat_CLASS_boot4_INSTANTIATE_Execute()" << std::endl;
+        std::cout << "exiting stat_CLASS_boot4_INSTANTIATE_Execute()" << std::endl;
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Execute::stat_REG_boot0_DECLARE_CLIB_OpenEpiCentre_Execute()
     {
@@ -192,7 +218,7 @@
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Execute::stat_PGM_boot3_INITIALISE_ConcurrentQue_Server()
     {
-        _stat_PGM_ConcurrentQue_Server = CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server__app_FUNCT_generate_Program();
+        _stat_PGM_ConcurrentQue_Server = CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server__App_FUNCT_generate_Program();
         while (stat_PGM_get_ptr_ConcurrentQue_Server() == nullptr) {}
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Execute::stat_PGM_boot3_INITIALISE_ServerInputReceive()

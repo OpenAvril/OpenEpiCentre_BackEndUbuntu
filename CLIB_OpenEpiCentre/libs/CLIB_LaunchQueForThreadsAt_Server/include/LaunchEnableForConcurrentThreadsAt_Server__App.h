@@ -9,7 +9,7 @@ namespace CLIBLaunchQueAtServer {
         LaunchEnableForConcurrentThreadsAt_Server__App();
         virtual ~LaunchEnableForConcurrentThreadsAt_Server__App();
         void dyn_APP_FUNCT_LaunchEnableForConcurrentThreadsAt_Server__thread_Start(class LaunchEnableForConcurrentThreadsAt_Server__Framework* obj, uint8_t concurrentThreadID);
-        void dyn_APP_FUNCT_LaunchEnableForConcurrentThreadsAt_Server__thread_Server(class LaunchEnableForConcurrentThreadsAt_Server__Framework* obj, uint8_t concurrentThreadID);
+        void dyn_APP_FUNCT_LaunchEnableForConcurrentThreadsAt_Server__thread_End(class LaunchEnableForConcurrentThreadsAt_Server__Framework* obj, uint8_t concurrentThreadID);
         class LaunchEnableForConcurrentThreadsAt_Server__App__Control* dyn_CLASS_get_LaunchEnableForConcurrentThreadsAt_Server__App__Control();
         class LaunchEnableForConcurrentThreadsAt_Server__Execute* dyn_CLASS_get_LaunchEnableForConcurrentThreadsAt_Server__Execute();
         void dyn_REG_boot1_REG_DEFINE_LaunchEnableForConcurrentThreadsAt_Server__App();

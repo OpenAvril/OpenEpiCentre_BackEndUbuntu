@@ -8,7 +8,7 @@ extern "C" {
             static void* CLIB_LaunchEnableForConcurrentThreadsAt_Server__App_FUNCT_generate_Program();
             static void CLIB_LaunchEnableForConcurrentThreadsAt_Server__App_FUNCT_request_Wait_launch(unsigned char* bytes);
             static void CLIB_LaunchEnableForConcurrentThreadsAt_Server__App_FUNCT_terminate_Progaram();
-            static void CLIB_LaunchEnableForConcurrentThreadsAt_Server__App_FUNCT_thread_Server(unsigned char* bytes);
+            static void CLIB_LaunchEnableForConcurrentThreadsAt_Server__App_FUNCT_thread_End(unsigned char* bytes);
             static unsigned char* CLIB_LaunchEnableForConcurrentThreadsAt_Server__App_REG_get_coreId_To_launch();
             static unsigned char* CLIB_LaunchEnableForConcurrentThreadsAt_Server__App_REG_get_Flag_Active();
             static unsigned char* CLIB_LaunchEnableForConcurrentThreadsAt_Server__App_REG_get_Flag_ConcurrentCoreState(unsigned char* bytes);
