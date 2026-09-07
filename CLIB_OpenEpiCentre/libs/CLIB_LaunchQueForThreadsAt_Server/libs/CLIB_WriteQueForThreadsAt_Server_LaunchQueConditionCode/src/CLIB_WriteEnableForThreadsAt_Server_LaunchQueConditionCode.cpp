@@ -1,9 +1,7 @@
 #include "../include/CLIB_WriteEnableForThreadsAt_Server_LaunchQueConditionCode.h"
-#include "../include/WriteEnableForThreadsAt_Server_LaunchQueConditionCode__Framework.h"
+#include "../include/WriteEnableForThreadsAt_Server_LaunchQueConditionCode__App.h"
 #include "../include/WriteEnableForThreadsAt_Server_LaunchQueConditionCode__Global.h"
-#include <cstdint>
 #include <iostream>
-#include <span>
 	CLIBWriteQueAt_Server_LaunchQueConditionCode::WriteEnableForThreadsAt_Server_LaunchQueConditionCode__Framework* _stat_REG_ptr_Framework_WriteEnableForThreadsAt_Server_LaunchQueConditionCode;
 	bool* _stat_REG_FLAG_CLIB_WriteEnableForThreadsAt_Server_LaunchQueConditionCode__isMemberFunctionINSTANTIATED;
 // public.
