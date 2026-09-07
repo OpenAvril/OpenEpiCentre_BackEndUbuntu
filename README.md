@@ -50,6 +50,9 @@ cmake -B build
 cmake --build build
 ````
 *** manual copy lib from build to testbench. ***
+
+*** Reload Root CMake Project. ***
+
 ````
 cmake -B build
 ````
