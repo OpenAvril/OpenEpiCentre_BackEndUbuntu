@@ -1,11 +1,9 @@
-# CLIBOpenEpiCentre.
-# BackEndUbuntu.
-# SiliconLifeHub
+# CLIBOpenEpiCentre / BackEndUbuntu / SiliconLife-Hub
 
 ---
 ## Branches.
- - main.
- - **DEVELOPMENT.**
+ - **main.**
+ - DEVELOPMENT.
    
 ---
 ## Using.
@@ -51,7 +49,14 @@ cmake -B build
 ````
 cmake --build build
 ````
-
+*** manual copy lib from build to testbench. ***
+````
+cmake -B build
+````
+````
+cmake --build build
+````
+*** run TESTBENCH_CLIB_OpenOpicentre. ***
 
 ---
 ## Implementation.
