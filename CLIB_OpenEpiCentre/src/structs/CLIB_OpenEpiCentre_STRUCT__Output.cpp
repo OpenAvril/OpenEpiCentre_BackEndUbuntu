@@ -54,7 +54,7 @@
         std::cout << "entered dyn_REG_boot3_INITIALISE_Output()" << std::endl;
         stat_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_STRUCT__Output_praiseEventId();
         stat_REG_boot3_INITIALISE_Output_playerId();
-        stat_REG_boot3_INITIALISE_List_Of_PraiseOutputSubset(obj, (unsigned long)(0));
+        stat_REG_boot3_INITIALISE_List_Of_PraiseOutputSubset(obj);
         std::cout << "exiting dyn_REG_boot3_INITIALISE_Output()" << std::endl;
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT__Output::dyn_REG_boot4_INSTANTIATE_Output()
@@ -174,17 +174,20 @@
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT__Output::stat_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_STRUCT__Output_praiseEventId()
     {
-        *_REG_ptr_CLIB_OpenEpiCentre_STRUCT__Output_praiseEventId = static_cast<unsigned long long>(0);
+        _REG_ptr_CLIB_OpenEpiCentre_STRUCT__Output_praiseEventId = reinterpret_cast<unsigned long long*>(0);
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT__Output::stat_REG_boot3_INITIALISE_Output_playerId()
     {
-        *_REG_ptr_Output_playerId = static_cast<std::byte>(0);
+        _REG_ptr_Output_playerId = reinterpret_cast<std::byte*>(0);
     }
-    void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT__Output::stat_REG_boot3_INITIALISE_List_Of_PraiseOutputSubset(CLIB_OpenEpiCentre__Framework* obj, unsigned long long praiseId)
+    void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT__Output::stat_REG_boot3_INITIALISE_List_Of_PraiseOutputSubset(CLIB_OpenEpiCentre__Framework* obj)
     {
-        auto temp = stat_REG_get_ptr_Item_Of_ptr_Outputs_Subset()->begin();
-        std::advance(temp, static_cast<unsigned long long>(0));
-        *temp = obj->dyn_STRUCT_get_User_Output()->dyn_CLASS_get_Item_On_List_Of_ptr_PraiseOutputSubsets(praiseId);
+        for (uint64_t index =0; index < obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_Global()->dyn_REG_get_Item_number_Of_Praise_Events(); index++) {
+            auto temp = stat_REG_get_ptr_Item_Of_ptr_Outputs_Subset()->begin();
+            std::advance(temp, index);
+            *temp = obj->dyn_STRUCT_get_User_Output()->dyn_CLASS_get_Item_On_List_Of_ptr_PraiseOutputSubsets(index);
+        }
+
     }
     unsigned long long* CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT__Output::stat_REG_get_ptr_CLIB_OpenEpiCentre_STRUCT__Output_praiseEventId()
     {

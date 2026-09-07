@@ -61,7 +61,7 @@
     {
         std::cout << "entered dyn_REG_boot2_SUBSTANTIATE_Concurrent()" << std::endl;
         _stat_REG_CLIB_OpenEpiCentre__Concurrent__threadId = new std::byte();
-        *_stat_REG_CLIB_OpenEpiCentre__Concurrent__threadId = static_cast<std::byte>(255);
+        _stat_REG_CLIB_OpenEpiCentre__Concurrent__threadId = reinterpret_cast<std::byte*>(255);
         std::cout << "exiting dyn_REG_boot2_SUBSTANTIATE_Concurrent()" << std::endl;
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT__Concurrent::dyn_REG_boot3_INITIALISE_Concurrent(CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Framework* obj)

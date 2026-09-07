@@ -44,7 +44,7 @@ namespace CLIBOpenEpiCentre
         static void stat_REG_boot2_SUBSTANTIATE_List_Of_PraiseInputSubset();
         static void stat_REG_boot3_INITIALISE_Input_praiseEventId();
         static void stat_REG_boot3_INITIALISE_Input_playerId();
-        static void stat_REG_boot3_INITIALISE_List_Of_PraiseInputSubset(CLIB_OpenEpiCentre__Framework* obj, unsigned long long praiseId);
+        static void stat_REG_boot3_INITIALISE_List_Of_PraiseInputSubset(CLIB_OpenEpiCentre__Framework* obj);
         static std::byte* stat_REG_get_ptr_Input_playerId();
         static unsigned long long* stat_REG_get_ptr_Input_praiseEventId();
         static std::list<Object*>* stat_REG_get_ptr_Item_Of_ptr_Inputs_Subset();
