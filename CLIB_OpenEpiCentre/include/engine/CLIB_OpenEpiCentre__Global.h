@@ -2,10 +2,8 @@
 #define OPENEPICENTRE_BACKENDUBUNTU_CLIB_OPENEPICENTRE__GLOBAL_H
 #include <cstddef>
 #include <cstdint>
-namespace CLIBOpenEpiCentre
-{
-    class CLIB_OpenEpiCentre__Global
-    {
+namespace CLIBOpenEpiCentre {
+    class CLIB_OpenEpiCentre__Global {
     public:
         CLIB_OpenEpiCentre__Global();
         virtual ~CLIB_OpenEpiCentre__Global();

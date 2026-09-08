@@ -1,11 +1,10 @@
 #ifndef CLIBOpenEpiCentre_CLIBConcurrentServerIO_H
 #define CLIBOpenEpiCentre_CLIBConcurrentServerIO_H
-extern "C"
-{
-	namespace CLIBOpenEpiCentre
-	{
-		class CLIBConcurrentServerIO
-		{
+#include <array>
+
+extern "C" {
+	namespace CLIBOpenEpiCentre	{
+		class CLIBConcurrentServerIO {
 		public:
 			static void CLIBConcurrentServerIO__app_FUNCT_flip_Input_DoubleBuffer();
 			static void* CLIBConcurrentServerIO__app_FUNCT_generate_Program();
@@ -43,7 +42,7 @@ extern "C"
 			static void CLIBConcurrentServerIO__stat_REG_boot1_DEFINE_CLIB_OpenEpiCentre_isFLAG_INSTANTIATED();
 			static void CLIBConcurrentServerIO__stat_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_isFLAG_INSTANTIATED();
 			static void CLIBConcurrentServerIO__stat_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_isFLAG_INSTANTIATED();
-			static bool* CLIBConcurrentServerIO__stat_REG_get_ptr_CLIB_OpenEpiCentre_isFLAG_INSTANTIATED();
+			static std::array<bool, 30>* CLIBConcurrentServerIO__stat_REG_get_ptr_CLIB_OpenEpiCentre_isFLAG_INSTANTIATED();
 		};
 	}
 }
