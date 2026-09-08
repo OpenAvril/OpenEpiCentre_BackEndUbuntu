@@ -106,10 +106,10 @@ enum Axis
         }
         return *temp;
     }
-    unsigned char* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::stat_CONVERT_MsbBoolean_To_MsbByteArray(bool value)
-    {
+    unsigned char* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::stat_CONVERT_MsbBoolean_To_MsbByteArray(bool value) {
         unsigned char* buffer = nullptr;
-        for (int bitIndex = 0; bitIndex < sizeof(unsigned char); bitIndex++) {
+        buffer = new unsigned char();
+        for (int bitIndex = 0; bitIndex < sizeof(std::byte); bitIndex++) {
             buffer[bitIndex] = static_cast<unsigned char>(value);
         }
         return buffer;
