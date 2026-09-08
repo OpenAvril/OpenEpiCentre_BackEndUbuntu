@@ -90,9 +90,9 @@
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Execute::stat_CLASS_boot4_INSTANTIATE_CLIB_OpenEpiCentre_Execute()
     {
         std::cout << "entered stat_CLASS_boot4_INSTANTIATE_Execute()" << std::endl;
-        unsigned char* bytes_unsignedLongLong = CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::stat_CONVERT_unsignedLongLong_to_ByteArray(UINT8_MAX);
-        unsigned char* byte_uint8_t = CLIB_OpenEpiCentre__Global::stat_CONVERT_MsbByte_To_MsbByteArray(static_cast<std::byte>(255));
-        unsigned char* byte_bool = CLIB_OpenEpiCentre__Global::stat_CONVERT_MsbBoolean_To_MsbByteArray(true);
+        unsigned char* bytes_unsignedLongLong = CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::stat_CONVERT_CLIB_OpenEpiCentre_Global__unsignedLongLong_to_ByteArray(UINT8_MAX);
+        unsigned char* byte_uint8_t = CLIB_OpenEpiCentre__Global::stat_CONVERT_CLIB_OpenEpiCentre_Global__Msbuint8_t_To_MsbByteArray(static_cast<uint8_t>(255));
+        unsigned char* byte_bool = CLIB_OpenEpiCentre__Global::stat_CONVERT_CLIB_OpenEpiCentre_Global__Msbbool_to_MsbByteArray(true);
 
         std::cout << "entered CHECK member function of CLIB_WriteEnableForThreadsAt_ServerInputReceive() " << std::endl;
         //CLIBWriteQueAtServerInputReceive::CLIBWriteEnableForThreadsAtServerInputReceive::CLIB_WriteEnableForThreadsAt_ServerInputReceive__app_FUNCT_generate_Program();

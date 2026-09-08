@@ -1,7 +1,6 @@
 #ifndef CLIBOpenEpiCentre_CLIBConcurrentServerIO_H
 #define CLIBOpenEpiCentre_CLIBConcurrentServerIO_H
 #include <array>
-
 extern "C" {
 	namespace CLIBOpenEpiCentre	{
 		class CLIBConcurrentServerIO {

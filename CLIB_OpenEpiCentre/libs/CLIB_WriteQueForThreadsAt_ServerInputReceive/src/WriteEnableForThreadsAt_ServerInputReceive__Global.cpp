@@ -70,8 +70,8 @@ int CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceive
 {
     return pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__Bool_To_Int(value);
 }
-unsigned char* CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceive__Global::stat_APP_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__MsbFloat_To_MsbByteArray(float value) {
-    return pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__MsbFloat_To_MsbByteArray(value);
+unsigned char* CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceive__Global::stat_APP_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__Msbdouble_To_MsbByteArray(double value) {
+    return pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__Msbdouble_To_MsbByteArray(value);
 }
 unsigned char* CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceive__Global::stat_APP_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__MsbDouble_To_MsbByteArray(double value) {
     return pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__MsbDouble_To_MsbByteArray(value);
@@ -91,9 +91,9 @@ double CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputRece
 {
     return pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__MsbByteArray_To_MsbDouble(byteArray);
 }
-float CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceive__Global::stat_APP_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__MsbByteArray_To_MsbFloat(const unsigned char* byteArray)
+double CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceive__Global::stat_APP_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__MsbByteArray_To_Msbdouble(const unsigned char* byteArray)
 {
-    return pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__MsbByteArray_To_MsbFloat(byteArray);
+    return pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__MsbByteArray_To_Msbdouble(byteArray);
 }
 uint8_t CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceive__Global::stat_APP_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__MsbByteArray_To_Msbuint8_t(const unsigned char* byteArray)
 {
@@ -126,9 +126,9 @@ double CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputRece
     std::memcpy(&temp, byteArray, sizeof(double));
     return temp;
 }
-float CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceive__Global::pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__MsbByteArray_To_MsbFloat(const unsigned char* byteArray) {
-    float temp;
-    std::memcpy(&temp, byteArray, sizeof(float));
+double CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceive__Global::pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__MsbByteArray_To_Msbdouble(const unsigned char* byteArray) {
+    double temp;
+    std::memcpy(&temp, byteArray, sizeof(double));
     return temp;
 }
 uint8_t CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceive__Global::pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__MsbByteArray_To_Msbuint8_t(const unsigned char* byteArray) {
@@ -136,10 +136,10 @@ uint8_t CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputRec
     std::memcpy(&temp, byteArray, sizeof(uint8_t));
     return temp;
 }
-unsigned char* CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceive__Global::pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__MsbFloat_To_MsbByteArray(float value) {
+unsigned char* CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceive__Global::pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__Msbdouble_To_MsbByteArray(double value) {
     unsigned char* buffer = nullptr;
     buffer = new unsigned char[4] { UCHAR_MAX, UCHAR_MAX, UCHAR_MAX, UCHAR_MAX};
-    std::memcpy(buffer, &value, sizeof(float));
+    std::memcpy(buffer, &value, sizeof(double));
     return buffer;
 }
 unsigned char* CLIBWriteQueAtServerInputReceive::WriteEnableForThreadsAt_ServerInputReceive__Global::pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerInputReceive__MsbDouble_To_MsbByteArray(double value) {
