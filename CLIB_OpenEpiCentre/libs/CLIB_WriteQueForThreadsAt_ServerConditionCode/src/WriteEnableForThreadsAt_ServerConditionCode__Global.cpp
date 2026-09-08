@@ -70,8 +70,8 @@ int CLIBWriteQueAtServerConditionCode::WriteEnableForThreadsAt_ServerConditionCo
 {
     return pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerConditionCode__Bool_To_Int(value);
 }
-unsigned char* CLIBWriteQueAtServerConditionCode::WriteEnableForThreadsAt_ServerConditionCode__Global::stat_APP_CONVERT_WriteEnableForThreadsAt_ServerConditionCode__MsbFloat_To_MsbByteArray(float value) {
-    return pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerConditionCode__MsbFloat_To_MsbByteArray(value);
+unsigned char* CLIBWriteQueAtServerConditionCode::WriteEnableForThreadsAt_ServerConditionCode__Global::stat_APP_CONVERT_WriteEnableForThreadsAt_ServerConditionCode__Msbdouble_To_MsbByteArray(double value) {
+    return pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerConditionCode__Msbdouble_To_MsbByteArray(value);
 }
 unsigned char* CLIBWriteQueAtServerConditionCode::WriteEnableForThreadsAt_ServerConditionCode__Global::stat_APP_CONVERT_WriteEnableForThreadsAt_ServerConditionCode__MsbDouble_To_MsbByteArray(double value) {
     return pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerConditionCode__MsbDouble_To_MsbByteArray(value);
@@ -91,9 +91,9 @@ double CLIBWriteQueAtServerConditionCode::WriteEnableForThreadsAt_ServerConditio
 {
     return pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerConditionCode__MsbByteArray_To_MsbDouble(byteArray);
 }
-float CLIBWriteQueAtServerConditionCode::WriteEnableForThreadsAt_ServerConditionCode__Global::stat_APP_CONVERT_WriteEnableForThreadsAt_ServerConditionCode__MsbByteArray_To_MsbFloat(const unsigned char* byteArray)
+double CLIBWriteQueAtServerConditionCode::WriteEnableForThreadsAt_ServerConditionCode__Global::stat_APP_CONVERT_WriteEnableForThreadsAt_ServerConditionCode__MsbByteArray_To_Msbdouble(const unsigned char* byteArray)
 {
-    return pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerConditionCode__MsbByteArray_To_MsbFloat(byteArray);
+    return pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerConditionCode__MsbByteArray_To_Msbdouble(byteArray);
 }
 uint8_t CLIBWriteQueAtServerConditionCode::WriteEnableForThreadsAt_ServerConditionCode__Global::stat_APP_CONVERT_WriteEnableForThreadsAt_ServerConditionCode__MsbByteArray_To_Msbuint8_t(const unsigned char* byteArray)
 {
@@ -126,9 +126,9 @@ double CLIBWriteQueAtServerConditionCode::WriteEnableForThreadsAt_ServerConditio
     std::memcpy(&temp, byteArray, sizeof(double));
     return temp;
 }
-float CLIBWriteQueAtServerConditionCode::WriteEnableForThreadsAt_ServerConditionCode__Global::pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerConditionCode__MsbByteArray_To_MsbFloat(const unsigned char* byteArray) {
-    float temp;
-    std::memcpy(&temp, byteArray, sizeof(float));
+double CLIBWriteQueAtServerConditionCode::WriteEnableForThreadsAt_ServerConditionCode__Global::pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerConditionCode__MsbByteArray_To_Msbdouble(const unsigned char* byteArray) {
+    double temp;
+    std::memcpy(&temp, byteArray, sizeof(double));
     return temp;
 }
 uint8_t CLIBWriteQueAtServerConditionCode::WriteEnableForThreadsAt_ServerConditionCode__Global::pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerConditionCode__MsbByteArray_To_Msbuint8_t(const unsigned char* byteArray) {
@@ -136,22 +136,28 @@ uint8_t CLIBWriteQueAtServerConditionCode::WriteEnableForThreadsAt_ServerConditi
     std::memcpy(&temp, byteArray, sizeof(uint8_t));
     return temp;
 }
-unsigned char* CLIBWriteQueAtServerConditionCode::WriteEnableForThreadsAt_ServerConditionCode__Global::pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerConditionCode__MsbFloat_To_MsbByteArray(float value) {
+unsigned char* CLIBWriteQueAtServerConditionCode::WriteEnableForThreadsAt_ServerConditionCode__Global::pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerConditionCode__Msbdouble_To_MsbByteArray(double value) {
     unsigned char* buffer = nullptr;
-    buffer = new unsigned char[4] { UCHAR_MAX, UCHAR_MAX, UCHAR_MAX, UCHAR_MAX};
-    std::memcpy(buffer, &value, sizeof(float));
-    return buffer;
-}
-unsigned char* CLIBWriteQueAtServerConditionCode::WriteEnableForThreadsAt_ServerConditionCode__Global::pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerConditionCode__MsbDouble_To_MsbByteArray(double value) {
-    unsigned char* buffer = nullptr;
-    buffer = new unsigned char[8] { UCHAR_MAX, UCHAR_MAX, UCHAR_MAX, UCHAR_MAX, UCHAR_MAX, UCHAR_MAX, UCHAR_MAX, UCHAR_MAX};
+    buffer = new unsigned char[4] { UINT8_MAX, UINT8_MAX, UINT8_MAX, UINT8_MAX};
     std::memcpy(buffer, &value, sizeof(double));
     return buffer;
 }
-unsigned char* CLIBWriteQueAtServerConditionCode::WriteEnableForThreadsAt_ServerConditionCode__Global::pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerConditionCode__Msb_uint8_t_to_MsbByteArray(uint8_t value) {
+unsigned char* CLIBWriteQueAtServerConditionCode::WriteEnableForThreadsAt_ServerConditionCode__Global::pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerConditionCode__MsbDouble_To_MsbByteArray(double value) {
+    std::cout << "entered Global static :: pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerConditionCode__MsbDouble_To_MsbByteArray()." << std::endl;
     unsigned char* buffer = nullptr;
-    buffer = new unsigned char[1] { UCHAR_MAX };
+    std::cout << "entered Global static :: MEGA : CHARLIE : ALPHA." << std::endl;
+    buffer = new unsigned char[8] { UINT8_MAX, UINT8_MAX, UINT8_MAX, UINT8_MAX, UINT8_MAX, UINT8_MAX, UINT8_MAX, UINT8_MAX};
+    std::cout << "entered Global static :: MEGA : CHARLIE : BRAVO." << std::endl;
+    std::memcpy(buffer, &value, sizeof(double));
+    return buffer;
+    std::cout << "exiting Global static :: pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerConditionCode__MsbDouble_To_MsbByteArray()." << std::endl;
+}
+unsigned char* CLIBWriteQueAtServerConditionCode::WriteEnableForThreadsAt_ServerConditionCode__Global::pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerConditionCode__Msb_uint8_t_to_MsbByteArray(uint8_t value) {
+    std::cout << "entered Global static :: pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerConditionCode__Msb_uint8_t_to_MsbByteArray()." << std::endl;
+    unsigned char* buffer = nullptr;
+    buffer = new unsigned char[1] { UINT8_MAX };
     std::memcpy(buffer, &value, sizeof(uint8_t));
+    std::cout << "exiting Global static :: pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerConditionCode__Msb_uint8_t_to_MsbByteArray()." << std::endl;
     return buffer;
 }
 void CLIBWriteQueAtServerConditionCode::WriteEnableForThreadsAt_ServerConditionCode__Global::stat_REG_boot1_DEFINE_CONST_WriteEnableForThreadsAt_ServerConditionCode__2bitFLAG_IDLE()

@@ -70,8 +70,8 @@ int CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Gl
 {
     return pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerOutputSend__Bool_To_Int(value);
 }
-unsigned char* CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Global::stat_APP_CONVERT_WriteEnableForThreadsAt_ServerOutputSend__MsbFloat_To_MsbByteArray(float value) {
-    return pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerOutputSend__MsbFloat_To_MsbByteArray(value);
+unsigned char* CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Global::stat_APP_CONVERT_WriteEnableForThreadsAt_ServerOutputSend__Msbdouble_To_MsbByteArray(double value) {
+    return pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerOutputSend__Msbdouble_To_MsbByteArray(value);
 }
 unsigned char* CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Global::stat_APP_CONVERT_WriteEnableForThreadsAt_ServerOutputSend__MsbDouble_To_MsbByteArray(double value) {
     return pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerOutputSend__MsbDouble_To_MsbByteArray(value);
@@ -91,9 +91,9 @@ double CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend_
 {
     return pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerOutputSend__MsbByteArray_To_MsbDouble(byteArray);
 }
-float CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Global::stat_APP_CONVERT_WriteEnableForThreadsAt_ServerOutputSend__MsbByteArray_To_MsbFloat(const unsigned char* byteArray)
+double CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Global::stat_APP_CONVERT_WriteEnableForThreadsAt_ServerOutputSend__MsbByteArray_To_Msbdouble(const unsigned char* byteArray)
 {
-    return pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerOutputSend__MsbByteArray_To_MsbFloat(byteArray);
+    return pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerOutputSend__MsbByteArray_To_Msbdouble(byteArray);
 }
 uint8_t CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Global::stat_APP_CONVERT_WriteEnableForThreadsAt_ServerOutputSend__MsbByteArray_To_Msbuint8_t(const unsigned char* byteArray)
 {
@@ -126,9 +126,9 @@ double CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend_
     std::memcpy(&temp, byteArray, sizeof(double));
     return temp;
 }
-float CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Global::pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerOutputSend__MsbByteArray_To_MsbFloat(const unsigned char* byteArray) {
-    float temp;
-    std::memcpy(&temp, byteArray, sizeof(float));
+double CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Global::pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerOutputSend__MsbByteArray_To_Msbdouble(const unsigned char* byteArray) {
+    double temp;
+    std::memcpy(&temp, byteArray, sizeof(double));
     return temp;
 }
 uint8_t CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Global::pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerOutputSend__MsbByteArray_To_Msbuint8_t(const unsigned char* byteArray) {
@@ -136,10 +136,10 @@ uint8_t CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend
     std::memcpy(&temp, byteArray, sizeof(uint8_t));
     return temp;
 }
-unsigned char* CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Global::pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerOutputSend__MsbFloat_To_MsbByteArray(float value) {
+unsigned char* CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Global::pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerOutputSend__Msbdouble_To_MsbByteArray(double value) {
     unsigned char* buffer = nullptr;
     buffer = new unsigned char[4] { UCHAR_MAX, UCHAR_MAX, UCHAR_MAX, UCHAR_MAX};
-    std::memcpy(buffer, &value, sizeof(float));
+    std::memcpy(buffer, &value, sizeof(double));
     return buffer;
 }
 unsigned char* CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend__Global::pr_stat_APP_CONVERT_WriteEnableForThreadsAt_ServerOutputSend__MsbDouble_To_MsbByteArray(double value) {

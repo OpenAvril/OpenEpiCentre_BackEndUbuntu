@@ -3,7 +3,7 @@
 #include "../CLIB_OpenEpiCentre/include/engine/CLIB_OpenEpiCentre__Framework.h"
 #include "../CLIB_OpenEpiCentre/include/engine/CLIB_OpenEpiCentre__Global.h"
 static void stat_APP_boot4_INSTANTIATE_CLIB_OpenEpiCentre() {
-		unsigned char* byte_uint8_t = CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::stat_CONVERT_MsbByte_To_MsbByteArray(static_cast<std::byte>(255));
+		unsigned char* byte_uint8_t = CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::stat_CONVERT_CLIB_OpenEpiCentre_Global__Msbuint8_t_To_MsbByteArray(static_cast<uint8_t>(255));
         std::cout << "entered CHECK member function of stat_APP_boot4_INSTANTIATE_CLIB_OpenEpiCentre() " << std::endl;
         CLIBOpenEpiCentre::CLIBConcurrentServerIO::CLIBConcurrentServerIO__app_FUNCT_flip_Input_DoubleBuffer();
 		std::cout << "test point :: ALPHA." << std::endl;
