@@ -63,12 +63,8 @@
 	{
 		std::cout << "entered dyn_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_Framework()" << std::endl;
 		obj->stat_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_App();
-		obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_Global()->dyn_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_Global();
 		obj->stat_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Algorithms()->dyn_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_Algorithm(obj);
-		for (int concurrentThreadId = 0; concurrentThreadId < 3; concurrentThreadId++)//NUMBER OF CONCURRENT THREADS.
-		{
-			obj->stat_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Algorithms()->dyn_STRUCT_get_Item_On_list_Of_ptr_Concurrent(static_cast<std::byte>(concurrentThreadId))->dyn_REG_boot2_SUBSTANTIATE_Concurrent();
-		}
+		obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Data()->dyn_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre__Data(obj);
 		obj->stat_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Data()->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre__Data__Control()->dyn_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre__Data__Control(obj);
 		obj->stat_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Execute()->dyn_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_Execute(obj);
 		obj->stat_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Execute()->dyn_CLASS_get_ptr_Execute_Control()->dyn_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre__Execute__Control(obj);
@@ -78,13 +74,8 @@
 	{
 		std::cout << "entered dyn_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_Framework()" << std::endl;
 		obj->stat_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_App();
-		obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_Global()->dyn_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_Global();
 		obj->stat_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Algorithms()->dyn_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_Algorithm(obj, stat_STRUCT_get_Concurrent());
-		for (int concurrentThreadId = 0; concurrentThreadId < 3; concurrentThreadId++)//NUMBER OF CONCURRENT THREADS.
-		{
-			obj->stat_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Algorithms()->dyn_STRUCT_get_Item_On_list_Of_ptr_Concurrent(static_cast<std::byte>(concurrentThreadId))->dyn_REG_boot3_INITIALISE_Concurrent(obj);
-		}
-		obj->stat_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Data()->dyn_REG_boot1_DEFINE_CLIB_OpenEpiCentre__Data(obj);
+		obj->stat_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Data()->dyn_REG_boot3_INITIALISE_CLIB_OpenEpiCentre__Data(obj, stat_STRUCT_get_Input(), stat_STRUCT_get_Output());
 		obj->stat_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Data()->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre__Data__Control()->dyn_REG_boot3_INITIALISE_CLIB_OpenEpiCentre__Data__Control(obj);
 		obj->stat_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Execute()->dyn_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_Execute(obj);
 		obj->stat_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Execute()->dyn_CLASS_get_ptr_Execute_Control()->dyn_REG_boot3_INITIALISE_CLIB_OpenEpiCentre__Execute__Control(obj);
