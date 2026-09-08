@@ -62,11 +62,14 @@ static void stat_APP_boot4_INSTANTIATE_CLIB_OpenEpiCentre() {
     std::cout << "done CHECK member function of stat_APP_boot4_INSTANTIATE_CLIB_OpenEpiCentre() " << std::endl;
 }
 int main() {
+	int threadId = 0;
     CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Framework* obj = nullptr;
     obj = static_cast<CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Framework*>(CLIBOpenEpiCentre::CLIBConcurrentServerIO::CLIBConcurrentServerIO__app_FUNCT_generate_Program());
 	stat_APP_boot4_INSTANTIATE_CLIB_OpenEpiCentre();
 	std::cout << "SIMULATION :: start." << std::endl;
-
+	if (CLIBOpenEpiCentre::CLIBConcurrentServerIO::CLIBConcurrentServerIO__app_FUNCT_get_FLAG_isPGM_INSTANTIATED()) {
+		std::cout << "thread "  << threadId << " :: SIMULATION : <= CLIBConcurrentServerIO__app_FUNCT_get_FLAG_isPGM_INSTANTIATED() = Check&Running." << std::endl;
+	}
 	std::cout << "SIMULATION :: end." << std::endl;
 	delete obj;
 	return 0;
