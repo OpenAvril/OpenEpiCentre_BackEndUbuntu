@@ -252,22 +252,17 @@
 		return CLIB_OpenEpiCentre__Global::stat_CONVERT_CLIB_OpenEpiCentre_Global__Msbbool_to_MsbByteArray(*temp);
 	}
 	unsigned char* CLIBOpenEpiCentre::CLIBConcurrentServerIO::CLIBConcurrentServerIO__io_PRAISE_get_Item_CLIB_OpenEpiCentre_STRUCT__Output_praise0_Value() {
-		std::cout << "test point :: MEGA : ALPHA." << std::endl;
 		double* temp = nullptr;
 		temp = new double();
 		*temp = DBL_MAX;
-		std::cout << "test point :: MEGA : BRAVO." << std::endl;
 		if (!CLIBConcurrentServerIO__stat_REG_get_ptr_CLIB_OpenEpiCentre_isFLAG_INSTANTIATED()->at(0)) {
-			std::cout << "test point :: MEGA : CHARLIE PRIMED." << std::endl;
 			objOutput_praise0 = reinterpret_cast<CLIB_OpenEpiCentre_STRUCT__Output_praise0*>(CLIBConcurrentServerIO__stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework()->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Data()->dyn_REG_get_ptr_Item_array_Of_doubleBuffer_Output_READ(CLIBConcurrentServerIO__stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework()));
 			*temp = objOutput_praise0->dyn_REG_get_CLIB_OpenEpiCentre_STRUCT__Output_praise0_Value();
 		}
 		else {
-			std::cout << "test point :: MEGA : CHARLIE PRIMING." << std::endl;
 			CLIBConcurrentServerIO__stat_REG_get_ptr_CLIB_OpenEpiCentre_isFLAG_INSTANTIATED()->at(20) = !CLIBConcurrentServerIO__stat_REG_get_ptr_CLIB_OpenEpiCentre_isFLAG_INSTANTIATED()->at(0) ;
 			CLIBConcurrentServerIO__stat_app_FUNCT_Calc_IsAllINSTANTIATED();
 		}
-		std::cout << "test point :: MEGA : CHARLIE." << std::endl;
 		return CLIB_OpenEpiCentre__Global::stat_CONVERT_CLIB_OpenEpiCentre_Global__MsbDouble_To_MsbByteArray(*temp);
 	}
 	unsigned char* CLIBOpenEpiCentre::CLIBConcurrentServerIO::CLIBConcurrentServerIO__io_PRAISE_get_Item_CLIB_OpenEpiCentre_STRUCT__Output_praise1_Value() {

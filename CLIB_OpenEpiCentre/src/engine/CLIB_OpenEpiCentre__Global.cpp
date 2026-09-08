@@ -104,35 +104,40 @@ enum Axis
         return (byteArray[7] & 1) != 0;
     }
    uint8_t CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::stat_CONVERT_CLIB_OpenEpiCentre_Global__MsbByteArray_To_Msbuint8_t(const unsigned char* byteArray) {
-        uint8_t temp;
+        uint8_t* temp;
+        temp = new uint8_t();
         std::memcpy(&temp, byteArray, sizeof(uint8_t));
-        return temp;
+        return *temp;
     }
     double CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::stat_CONVERT_CLIB_OpenEpiCentre_Global__MsbByteArray_To_MsbDouble(const unsigned char* byteArray) {
-        double temp;
+        double* temp;
+        temp = new double();
         std::memcpy(&temp, byteArray, sizeof(double));
-        return temp;
+        return *temp;
     }
     unsigned long long CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::stat_CONVERT_CLIB_OpenEpiCentre_Global__MsbByteArray_To_MsbunsignedLongLong(const unsigned char* byteArray)
     {
-        unsigned long long temp;
+        unsigned long long* temp;
+        temp = new unsigned long long();
         std::memcpy(&temp, byteArray, sizeof(unsigned long long));
-        return temp;
+        return *temp;
     }
     unsigned char* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::stat_CONVERT_CLIB_OpenEpiCentre_Global__Msbuint8_t_To_MsbByteArray(uint8_t byte) {
         unsigned char* temp;
+        temp = new unsigned char();
         std::memcpy(&temp, &byte, sizeof(uint8_t));
         return temp;
     }
-    unsigned char* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::stat_CONVERT_CLIB_OpenEpiCentre_Global__MsbDouble_To_MsbByteArray(double value)
-    {
+    unsigned char* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::stat_CONVERT_CLIB_OpenEpiCentre_Global__MsbDouble_To_MsbByteArray(double value) {
         unsigned char* buffer = nullptr;
+        buffer = new unsigned char();
         std::memcpy(buffer, &value, sizeof(double));
         return buffer;
     }
     unsigned char* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::stat_CONVERT_CLIB_OpenEpiCentre_Global__unsignedLongLong_to_ByteArray(unsigned long long value)
     {
         unsigned char* buffer = nullptr;
+        buffer = new unsigned char();
         std::memcpy(buffer, &value, sizeof(unsigned long long));
         return buffer;
     }
