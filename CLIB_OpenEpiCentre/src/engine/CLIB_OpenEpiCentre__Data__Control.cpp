@@ -1,4 +1,7 @@
 #include "../../include/engine/CLIB_OpenEpiCentre__Data__Control.h"
+
+#include <iostream>
+
 #include "../../include/engine/CLIB_OpenEpiCentre__App.h"
 #include "../../include/engine/CLIB_OpenEpiCentre__Data.h"
 #include "../../include/structs/CLIB_OpenEpiCentre_STRUCT__Input.h"
@@ -98,12 +101,13 @@ bool* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data__Control::_stat_REG_ptr_FLAG_i
         stat_REG_boot1_DEFINE_array_Of_doubleBuffer_Input();
         stat_REG_boot1_DEFINE_array_Of_doubleBuffer_Output();
     }
-    void CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data__Control::dyn_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre__Data__Control(CLIB_OpenEpiCentre__Framework* obj)
-    {
-       stat_REG_boot2_SUBSTANTIATE_FLAG_isLoaded_Stack_InputAction();
-       stat_REG_boot2_SUBSTANTIATE_FLAG_isLoaded_Stack_OutputSend();
-       stat_REG_boot2_SUBSTANTIATE_array_Of_doubleBuffer_Input();
-       stat_REG_boot2_SUBSTANTIATE_array_Of_doubleBuffer_Output();
+    void CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data__Control::dyn_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre__Data__Control(CLIB_OpenEpiCentre__Framework* obj) {
+        std::cout << "entered dyn_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre__Data__Control()" << std::endl;
+        stat_REG_boot2_SUBSTANTIATE_FLAG_isLoaded_Stack_InputAction();
+        stat_REG_boot2_SUBSTANTIATE_FLAG_isLoaded_Stack_OutputSend();
+        stat_REG_boot2_SUBSTANTIATE_array_Of_doubleBuffer_Input();
+        stat_REG_boot2_SUBSTANTIATE_array_Of_doubleBuffer_Output();
+        std::cout << "entered dyn_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre__Data__Control()" << std::endl;
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data__Control::dyn_REG_boot3_INITIALISE_CLIB_OpenEpiCentre__Data__Control(CLIB_OpenEpiCentre__Framework* obj)
     {
@@ -185,21 +189,29 @@ bool* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data__Control::_stat_REG_ptr_FLAG_i
     {
         _stat_REG_ptr_side_To_Write_For_doubleBuffer_Output = nullptr;
     }
-    void CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data__Control::stat_REG_boot2_SUBSTANTIATE_FLAG_isLoaded_Stack_InputAction()
-    {
+    void CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data__Control::stat_REG_boot2_SUBSTANTIATE_FLAG_isLoaded_Stack_InputAction() {
+        std::cout << "entered stat_REG_boot2_SUBSTANTIATE_FLAG_isLoaded_Stack_InputAction()" << std::endl;
+        _stat_REG_ptr_FLAG_isLoaded_Stack_InputAction = new bool();
         *_stat_REG_ptr_FLAG_isLoaded_Stack_InputAction = true;
+        std::cout << "entered stat_REG_boot2_SUBSTANTIATE_FLAG_isLoaded_Stack_InputAction()" << std::endl;
     }
-    void CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data__Control::stat_REG_boot2_SUBSTANTIATE_FLAG_isLoaded_Stack_OutputSend()
-    {
+    void CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data__Control::stat_REG_boot2_SUBSTANTIATE_FLAG_isLoaded_Stack_OutputSend() {
+        std::cout << "entered stat_REG_boot2_SUBSTANTIATE_FLAG_isLoaded_Stack_OutputSend()" << std::endl;
+        _stat_REG_ptr_FLAG_isLoaded_Stack_OutputSend = new bool();
         *_stat_REG_ptr_FLAG_isLoaded_Stack_OutputSend = true;
+        std::cout << "entered stat_REG_boot2_SUBSTANTIATE_FLAG_isLoaded_Stack_OutputSend()" << std::endl;
     }
-    void CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data__Control::stat_REG_boot2_SUBSTANTIATE_array_Of_doubleBuffer_Input()
-    {
+    void CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data__Control::stat_REG_boot2_SUBSTANTIATE_array_Of_doubleBuffer_Input() {
+        std::cout << "entered stat_REG_boot2_SUBSTANTIATE_array_Of_doubleBuffer_Input()" << std::endl;
+        _stat_REG_ptr_side_To_Write_For_doubleBuffer_Input = new bool();
         *_stat_REG_ptr_side_To_Write_For_doubleBuffer_Input = true;
+        std::cout << "entered stat_REG_boot2_SUBSTANTIATE_array_Of_doubleBuffer_Input()" << std::endl;
     }
-    void CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data__Control::stat_REG_boot2_SUBSTANTIATE_array_Of_doubleBuffer_Output()
-    {
+    void CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data__Control::stat_REG_boot2_SUBSTANTIATE_array_Of_doubleBuffer_Output() {
+        std::cout << "entered stat_REG_boot2_SUBSTANTIATE_array_Of_doubleBuffer_Output()" << std::endl;
+        _stat_REG_ptr_side_To_Write_For_doubleBuffer_Output = new bool();
         *_stat_REG_ptr_side_To_Write_For_doubleBuffer_Output = true;
+        std::cout << "entered stat_REG_boot2_SUBSTANTIATE_array_Of_doubleBuffer_Output()" << std::endl;
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data__Control::stat_REG_boot3_INITIALISE_FLAG_isLoaded_Stack_InputAction()
     {

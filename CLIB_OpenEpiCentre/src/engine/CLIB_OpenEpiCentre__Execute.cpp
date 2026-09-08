@@ -1,5 +1,6 @@
 #include "../../include/engine/CLIB_OpenEpiCentre__Execute.h"
 #include "../../libs/CLIB_LaunchQueForThreadsAt_Server/include/CLIB_LaunchEnableForConcurrentThreadsAt_Server.h"
+#include "../../libs/CLIB_WriteQueForThreadsAt_ServerConditionCode/include/CLIB_WriteEnableForThreadsAt_ServerConditionCode.h"
 #include "../../libs/CLIB_WriteQueForThreadsAt_ServerInputReceive/include/CLIB_WriteEnableForThreadsAt_ServerInputReceive.h"
 #include "../../libs/CLIB_WriteQueForThreadsAt_ServerOutputSend/include/CLIB_WriteEnableForThreadsAt_ServerOutputSend.h"
 #include "../../include/engine/CLIB_OpenEpiCentre__App.h"
@@ -8,27 +9,22 @@
 #include "../../include/engine/CLIB_OpenEpiCentre__Global.h"
 #include "../../include/structs/CLIB_OpenEpiCentre_STRUCT__Concurrent.h"
 #include <iostream>
-
-#include "../../libs/CLIB_WriteQueForThreadsAt_ServerConditionCode/include/CLIB_WriteEnableForThreadsAt_ServerConditionCode.h"
-CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Execute__Control* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Execute::_stat_CLASS_CLIB_OpenEpiCentre__Execute__Control;
-    std::list<std::thread*>* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Execute::_stat_REG_List_Of_Threads;
-    void* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Execute::_stat_PGM_ConcurrentQue_Server;
+    CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Execute__Control* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Execute::_stat_CLASS_CLIB_OpenEpiCentre__Execute__Control;
+    void* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Execute::_stat_PGM_LaunchQue_Server;
     void* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Execute::_stat_PGM_WriteEnable_ServerInputReceive;
     void* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Execute::_stat_PGM_WriteEnable_ServerOutputSend;
 // public.
-    CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Execute::CLIB_OpenEpiCentre__Execute()
-    {
-        std::cout << "entered CONSTRUCTOR of CLIB_OpenEpiCentre_Execute()." << std::endl;
+    CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Execute::CLIB_OpenEpiCentre__Execute() {
+        std::cout << "entered CONSTRUCTOR of CLIB_OpenEpiCentre__Execute()." << std::endl;
         stat_CLASS_boot0_DECLARE_CLIB_OpenEpiCentre_Execute();
         stat_CLASS_boot1_DEFINE_CLIB_OpenEpiCentre_Execute();
         stat_CLASS_boot3_INITIALISE_CLIB_OpenEpiCentre_Execute();
         stat_REG_boot0_DECLARE_CLIB_OpenEpiCentre_Execute();
-        std::cout << "exiting CONSTRUCTOR of CLIB_OpenEpiCentre_Execute()." << std::endl;
+        std::cout << "exiting CONSTRUCTOR of CLIB_OpenEpiCentre__Execute()." << std::endl;
     }
         CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Execute::~CLIB_OpenEpiCentre__Execute()
     {
         delete _stat_CLASS_CLIB_OpenEpiCentre__Execute__Control;
-        delete _stat_REG_List_Of_Threads;
     }
     CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Execute__Control* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Execute::dyn_CLASS_get_ptr_Execute_Control()
     {
@@ -36,27 +32,24 @@ CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Execute__Control* CLIBOpenEpiCentre::CLIB
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Execute::dyn_REG_boot1_DEFINE_CLIB_OpenEpiCentre_Execute(CLIB_OpenEpiCentre__Framework* obj)
     {
-        std::cout << "entered dyn_REG_boot1_DEFINE_Execute()" << std::endl;
-        stat_REG_boot1_DEFINE_List_Of_Threads();
-        std::cout << "exiting dyn_REG_boot1_DEFINE_Execute()" << std::endl;
+        std::cout << "entered dyn_REG_boot1_DEFINE_CLIB_OpenEpiCentre_Execute()" << std::endl;
+        std::cout << "exiting dyn_REG_boot1_DEFINE_CLIB_OpenEpiCentre_Execute()" << std::endl;
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Execute::dyn_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_Execute(CLIB_OpenEpiCentre__Framework* obj)
     {
-        std::cout << "entered dyn_REG_boot2_SUBSTANTIATE_Execute()" << std::endl;
-        stat_REG_boot2_SUBSTANTIATE_List_Of_Threads(obj);
-        std::cout << "exiting dyn_REG_boot2_SUBSTANTIATE_Execute()" << std::endl;
+        std::cout << "entered dyn_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_Execute()" << std::endl;
+        std::cout << "exiting dyn_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_Execute()" << std::endl;
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Execute::dyn_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_Execute(CLIB_OpenEpiCentre__Framework* obj)
     {
-        std::cout << "entered dyn_REG_boot3_INITIALISE_Execute()" << std::endl;
-        stat_REG_boot3_INITIALISE_List_Of_Threads(obj);
-        std::cout << "exiting dyn_REG_boot3_INITIALISE_Execute()" << std::endl;
+        std::cout << "entered dyn_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_Execute()" << std::endl;
+        std::cout << "exiting dyn_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_Execute()" << std::endl;
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Execute::dyn_REG_boot4_INSTANTIATE_CLIB_OpenEpiCentre_Execute(CLIB_OpenEpiCentre__Framework* obj)
     {
-        std::cout << "entered dyn_REG_boot4_INSTANTIATE_Execute()" << std::endl;
+        std::cout << "entered dyn_REG_boot4_INSTANTIATE_CLIB_OpenEpiCentre_Execute()" << std::endl;
 
-        std::cout << "exiting dyn_REG_boot4_INSTANTIATE_Execute()" << std::endl;
+        std::cout << "exiting dyn_REG_boot4_INSTANTIATE_CLIB_OpenEpiCentre_Execute()" << std::endl;
     }
     void* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Execute::dyn_PGM_get_ConcurrentQue_Server()
     {
@@ -72,27 +65,27 @@ CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Execute__Control* CLIBOpenEpiCentre::CLIB
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Execute::stat_CLASS_boot0_DECLARE_CLIB_OpenEpiCentre_Execute()
     {
-        std::cout << "entered stat_CLASS_boot0_DECLARE_Execute()" << std::endl;
+        std::cout << "entered stat_CLASS_boot0_DECLARE_CLIB_OpenEpiCentre_Execute()" << std::endl;
 
-        std::cout << "exiting stat_CLASS_boot0_DECLARE_Execute()" << std::endl;
+        std::cout << "exiting stat_CLASS_boot0_DECLARE_CLIB_OpenEpiCentre_Execute()" << std::endl;
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Execute::stat_CLASS_boot1_DEFINE_CLIB_OpenEpiCentre_Execute()
     {
-        std::cout << "entered stat_CLASS_boot1_DEFINE_Execute()" << std::endl;
+        std::cout << "entered stat_CLASS_boot1_DEFINE_CLIB_OpenEpiCentre_Execute()" << std::endl;
         stat_CLASS_boot1_DEFINE_Execute_Control();
         stat_PGM_boot1_DEFINE_ConcurrentQue_Server();
         stat_PGM_boot1_DEFINE_ServerInputReceive();
         stat_PGM_boot1_DEFINE_ServerOutputSend();
-        std::cout << "exiting stat_CLASS_boot1_DEFINE_Execute()" << std::endl;
+        std::cout << "exiting stat_CLASS_boot1_DEFINE_CLIB_OpenEpiCentre_Execute()" << std::endl;
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Execute::stat_CLASS_boot3_INITIALISE_CLIB_OpenEpiCentre_Execute()
     {
-        std::cout << "entered stat_CLASS_boot3_INITIALISE_Execute()" << std::endl;
+        std::cout << "entered stat_CLASS_boot3_INITIALISE_CLIB_OpenEpiCentre_Execute()" << std::endl;
         stat_CLASS_boot3_INITIALISE_Execute_Control();
         stat_PGM_boot3_INITIALISE_ConcurrentQue_Server();
         stat_PGM_boot3_INITIALISE_ServerInputReceive();
         stat_PGM_boot3_INITIALISE_ServerOutputSend();
-        std::cout << "exiting stat_CLASS_boot3_INITIALISE_Execute()" << std::endl;
+        std::cout << "exiting stat_CLASS_boot3_INITIALISE_CLIB_OpenEpiCentre_Execute()" << std::endl;
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Execute::stat_CLASS_boot4_INSTANTIATE_CLIB_OpenEpiCentre_Execute()
     {
@@ -122,12 +115,12 @@ CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Execute__Control* CLIBOpenEpiCentre::CLIB
         CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server__App_FUNCT_request_Wait_launch(byte_uint8_t);
         CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server__App_FUNCT_terminate_Progaram();
         CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server__App_FUNCT_thread_End(byte_uint8_t);
-        unsigned char* tempA = CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server__App_REG_get_coreId_To_launch();
-        unsigned char* tempB = CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server__App_REG_get_Flag_Active();
-        unsigned char* tempC = CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server__App_REG_get_Flag_ConcurrentCoreState(byte_uint8_t);
-        unsigned char* tempD = CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server__App_REG_get_Flag_Idle();
-        unsigned char* tempE = CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server__App_REG_get_FLAG_isPGM_INSTANTIATED();
-        unsigned char* tempF = CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server__App_REG_get_State_launchBit();
+        unsigned char* tempA0 = CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server__App_REG_get_coreId_To_launch();
+        unsigned char* tempA2 = CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server__App_REG_get_Flag_Active();
+        unsigned char* tempA3 = CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server__App_REG_get_Flag_ConcurrentCoreState(byte_uint8_t);
+        unsigned char* tempA4 = CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server__App_REG_get_Flag_Idle();
+        unsigned char* tempA5 = CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server__App_REG_get_FLAG_isPGM_INSTANTIATED();
+        unsigned char* tempA6 = CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server__App_REG_get_State_launchBit();
         CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server__App_REG_set_Flag_ConcurrentCoreState(byte_uint8_t, byte_bool);
         std::cout << "done CHECK member function of CLIB_LaunchEnableForConcurrentThreadsAt_Server() " << std::endl;
 
@@ -138,20 +131,6 @@ CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Execute__Control* CLIBOpenEpiCentre::CLIB
         CLIBWriteQueAtServerConditionCode::CLIB_WriteEnableForThreadsAt_ServerConditionCode::CLIB_WriteEnableForThreadsAt_ServerConditionCode__App_FUNCT_write_End(bytes_unsignedLongLong);
         CLIBWriteQueAtServerConditionCode::CLIB_WriteEnableForThreadsAt_ServerConditionCode::CLIB_WriteEnableForThreadsAt_ServerConditionCode__App_FUNCT_write_Start(bytes_unsignedLongLong);
         std::cout << "done CHECK member function of CLIB_WriteEnableForThreadsAt_ServerConditionCode() " << std::endl;
-
-        std::cout << "entered CHECK member function of CLIBLaunchEnableForConcurrentThreadsAtServer() " << std::endl;
-        //CLIBLaunchQueAtServer::CLIBLaunchEnableForConcurrentThreadsAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server__app_FUNCT_generate_Program();
-        CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server__App_REG_get_FLAG_isPGM_INSTANTIATED();
-        CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server__App_FUNCT_request_Wait_launch(bytes_unsignedLongLong);
-        CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server__App_FUNCT_terminate_Progaram();
-        CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server__App_FUNCT_thread_End(bytes_unsignedLongLong);
-        CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server__App_REG_get_coreId_To_launch();
-        CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server__App_REG_get_Flag_Active();
-        CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server__App_REG_get_Flag_ConcurrentCoreState(bytes_unsignedLongLong);
-        CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server__App_REG_get_Flag_Idle();
-        CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server__App_REG_get_State_launchBit();
-        CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server__App_REG_get_Flag_ConcurrentCoreState(bytes_unsignedLongLong);
-        std::cout << "done CHECK member function of CLIBLaunchEnableForConcurrentThreadsAtServer() " << std::endl;
 
         delete bytes_unsignedLongLong;
         std::cout << "exiting stat_CLASS_boot4_INSTANTIATE_Execute()" << std::endl;
@@ -174,39 +153,9 @@ CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Execute__Control* CLIBOpenEpiCentre::CLIB
     {
         return _stat_CLASS_CLIB_OpenEpiCentre__Execute__Control;
     }
-    void CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Execute::stat_REG_boot1_DEFINE_List_Of_Threads()
-    {
-        _stat_REG_List_Of_Threads = nullptr;
-    }
-    void CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Execute::stat_REG_boot2_SUBSTANTIATE_List_Of_Threads(CLIB_OpenEpiCentre__Framework* obj)
-    {
-        _stat_REG_List_Of_Threads = new std::list<std::thread*>();
-        while (stat_PGM_get_ptr_List_Of_Threads() == nullptr) { }
-        stat_PGM_get_ptr_List_Of_Threads()->resize(static_cast<int>(obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_Global()->dyn_REG_get_Item_number_Of_Implemented_Cores()) - 1);
-        for (int threadId = 0; threadId < sizeof(*stat_PGM_get_ptr_List_Of_Threads()); threadId++)
-        {
-            auto temp = stat_PGM_get_ptr_List_Of_Threads()->begin();
-            std::advance(temp, threadId);
-            *temp = nullptr;
-        }
-    }
-    void CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Execute::stat_REG_boot3_INITIALISE_List_Of_Threads(CLIB_OpenEpiCentre__Framework* obj)
-    {
-        for (int threadId = 0; threadId < sizeof(*stat_PGM_get_ptr_List_Of_Threads()); threadId++)
-        {
-            obj->dyn_STRUCT_get_Concurrent()->dyn_REG_set_CLIB_OpenEpiCentre__Concurrent__threadId(static_cast<std::byte>(threadId));
-            auto temp = stat_PGM_get_ptr_List_Of_Threads()->begin();
-            std::advance(temp, threadId);
-            *temp = new std::thread(obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Algorithms()->dyn_STRUCT_get_Item_On_list_Of_ptr_Concurrent(obj->dyn_STRUCT_get_Concurrent()->dyn_REG_get_CLIB_OpenEpiCentre__Concurrent__threadId())->stat_app_thread_Concurrency, obj, obj->dyn_STRUCT_get_Concurrent()->dyn_REG_get_CLIB_OpenEpiCentre__Concurrent__threadId());
-        }
-    }
-    std::list<std::thread*>* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Execute::stat_PGM_get_ptr_List_Of_Threads()
-    {
-        return _stat_REG_List_Of_Threads;
-    }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Execute::stat_PGM_boot1_DEFINE_ConcurrentQue_Server()
     {
-        _stat_PGM_ConcurrentQue_Server = nullptr;
+        _stat_PGM_LaunchQue_Server = nullptr;
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Execute::stat_PGM_boot1_DEFINE_ServerInputReceive()
     {
@@ -218,7 +167,7 @@ CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Execute__Control* CLIBOpenEpiCentre::CLIB
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Execute::stat_PGM_boot3_INITIALISE_ConcurrentQue_Server()
     {
-        _stat_PGM_ConcurrentQue_Server = CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server__App_FUNCT_generate_Program();
+        _stat_PGM_LaunchQue_Server = CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server__App_FUNCT_generate_Program();
         while (stat_PGM_get_ptr_ConcurrentQue_Server() == nullptr) {}
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Execute::stat_PGM_boot3_INITIALISE_ServerInputReceive()
@@ -233,7 +182,7 @@ CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Execute__Control* CLIBOpenEpiCentre::CLIB
     }
     void* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Execute::stat_PGM_get_ptr_ConcurrentQue_Server()
     {
-        return _stat_PGM_ConcurrentQue_Server;
+        return _stat_PGM_LaunchQue_Server;
     }
     void* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Execute::stat_PGM_get_ptr_WriteEnable_ServerInputReceive()
     {

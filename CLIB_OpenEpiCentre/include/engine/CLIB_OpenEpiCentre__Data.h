@@ -20,6 +20,7 @@ namespace CLIBOpenEpiCentre
         struct CLIB_OpenEpiCentre_STRUCT__User_Input* dyn_CLASS_get_ptr_User_Input();
         struct CLIB_OpenEpiCentre_STRUCT__User_Output* dyn_CLASS_get_ptr_User_Output();
         void dyn_REG_boot1_DEFINE_CLIB_OpenEpiCentre__Data(class CLIB_OpenEpiCentre__Framework* obj);
+        void dyn_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre__Data(class CLIB_OpenEpiCentre__Framework* obj);
         void dyn_REG_boot3_INITIALISE_CLIB_OpenEpiCentre__Data(class CLIB_OpenEpiCentre__Framework* obj, struct CLIB_OpenEpiCentre_STRUCT__Input* objInput, struct CLIB_OpenEpiCentre_STRUCT__Output* objOutput);
         void dyn_REG_boot4_INSTANTIATE_CLIB_OpenEpiCentre__Data(class CLIB_OpenEpiCentre__Framework* obj);
         struct CLIB_OpenEpiCentre_STRUCT__Input* dyn_REG_get_ptr_Item_array_Of_doubleBuffer_Input_READ(class CLIB_OpenEpiCentre__Framework* obj);
@@ -70,6 +71,12 @@ namespace CLIBOpenEpiCentre
         static void stat_REG_boot1_DEFINE_buffer_doubleBuffer_Output();
         static void stat_REG_boot1_DEFINE_buffer_stack_Of_InputPraise();
         static void stat_REG_boot1_DEFINE_buffer_stack_Of_OutputPraise();
+        static void stat_REG_boot2_SUBSTANTIATE_buffer_Input_ReferenceForThread(CLIB_OpenEpiCentre__Framework* obj);
+        static void stat_REG_boot2_SUBSTANTIATE_buffer_Output_ReferenceForThread(CLIB_OpenEpiCentre__Framework* obj);
+        static void stat_REG_boot2_SUBSTANTIATE_doubleBuffer_Input(CLIB_OpenEpiCentre__Framework* obj) ;
+        static void stat_REG_boot2_SUBSTANTIATE_doubleBuffer_Output(CLIB_OpenEpiCentre__Framework* obj) ;
+        static void stat_REG_boot2_SUBSTANTIATE_stack_Of_InputPraise(CLIB_OpenEpiCentre__Framework* obj) ;
+        static void stat_REG_boot2_SUBSTANTIATE_stack_Of_OutputPraise(CLIB_OpenEpiCentre__Framework* obj) ;
         static void stat_REG_boot3_INITIALISE_buffer_Input_ReferenceForThread(struct CLIB_OpenEpiCentre_STRUCT__Input* objInput);
         static void stat_REG_boot3_INITIALISE_buffer_Output_ReferenceForThread(struct CLIB_OpenEpiCentre_STRUCT__Output* objOutput);
         static void stat_REG_boot3_INITIALISE_doubleBuffer_Input(struct CLIB_OpenEpiCentre_STRUCT__Input* objInput);

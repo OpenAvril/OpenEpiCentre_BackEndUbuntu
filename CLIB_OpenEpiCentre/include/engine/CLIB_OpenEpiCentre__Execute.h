@@ -26,16 +26,12 @@ namespace CLIBOpenEpiCentre
         static void stat_REG_boot0_DECLARE_CLIB_OpenEpiCentre_Execute();
     private:
         static class CLIB_OpenEpiCentre__Execute__Control* _stat_CLASS_CLIB_OpenEpiCentre__Execute__Control;
-        static std::list<std::thread*>* _stat_REG_List_Of_Threads;
-        static void* _stat_PGM_ConcurrentQue_Server;
+        static void* _stat_PGM_LaunchQue_Server;
         static void* _stat_PGM_WriteEnable_ServerInputReceive;
         static void* _stat_PGM_WriteEnable_ServerOutputSend;
         static void stat_CLASS_boot1_DEFINE_Execute_Control();
         static void stat_CLASS_boot3_INITIALISE_Execute_Control();
         static class CLIB_OpenEpiCentre__Execute__Control* stat_CLASS_get_ptr_CLIB_OpenEpiCentre__Execute__Control();
-        static void stat_REG_boot1_DEFINE_List_Of_Threads();
-        static void stat_REG_boot2_SUBSTANTIATE_List_Of_Threads(class CLIB_OpenEpiCentre__Framework* obj);
-        static void stat_REG_boot3_INITIALISE_List_Of_Threads(class CLIB_OpenEpiCentre__Framework* obj);
         static std::list<std::thread*>* stat_PGM_get_ptr_List_Of_Threads();
         static void stat_PGM_boot1_DEFINE_ConcurrentQue_Server();
         static void stat_PGM_boot1_DEFINE_ServerInputReceive();
