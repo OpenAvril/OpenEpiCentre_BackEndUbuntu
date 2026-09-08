@@ -19,16 +19,14 @@ namespace CLIBOpenEpiCentre {
         static void stat_CLASS_boot4_INSTANTIATE_CLIB_OpenEpiCentre_Global();
         static void stat_REG_boot0_DECLARE_CLIB_OpenEpiCentre_Global();
         static int stat_CONVERT_Bool_To_Int(bool value);
-        static unsigned char* stat_CONVERT_MsbBoolean_To_MsbByteArray(bool value);
-        static bool stat_CONVERT_MsbByteArray_To_MsbBoolean(const unsigned char* byteArray);
-        static std::byte stat_CONVERT_MsbByteArray_To_MsbByte(const unsigned char* byteArray);
-        static double stat_CONVERT_MsbByteArray_To_MsbDouble(const unsigned char* byteArray);
-        static float stat_CONVERT_MsbByteArray_To_MsbFloat(const unsigned char* byteArray);
-        static unsigned long long stat_CONVERT_MsbByteArray_To_MsbunsignedLongLong(const unsigned char* byteArray);
-        static unsigned char* stat_CONVERT_MsbByte_To_MsbByteArray(const std::byte byte);
-        static unsigned char* stat_CONVERT_MsbFloat_To_MsbByteArray(float value);
-        static unsigned char* stat_CONVERT_MsbDouble_To_MsbByteArray(double value);
-        static unsigned char* stat_CONVERT_unsignedLongLong_to_ByteArray(unsigned long long value);
+        static unsigned char* stat_CONVERT_CLIB_OpenEpiCentre_Global__Msbbool_to_MsbByteArray(bool bool_Value);
+        static bool stat_CONVERT_CLIB_OpenEpiCentre_Global__MsbByteArray_To_Msbbool(const unsigned char* bytes);
+        static uint8_t stat_CONVERT_CLIB_OpenEpiCentre_Global__MsbByteArray_To_Msbuint8_t(const unsigned char* bytes);
+        static double stat_CONVERT_CLIB_OpenEpiCentre_Global__MsbByteArray_To_MsbDouble(const unsigned char* byteArray);
+        static unsigned long long stat_CONVERT_CLIB_OpenEpiCentre_Global__MsbByteArray_To_MsbunsignedLongLong(const unsigned char* byteArray);
+        static unsigned char* stat_CONVERT_CLIB_OpenEpiCentre_Global__Msbuint8_t_To_MsbByteArray(uint8_t uint8_t_Value);
+        static unsigned char* stat_CONVERT_CLIB_OpenEpiCentre_Global__MsbDouble_To_MsbByteArray(double value);
+        static unsigned char* stat_CONVERT_CLIB_OpenEpiCentre_Global__unsignedLongLong_to_ByteArray(unsigned long long value);
     private:
         static std::byte* _stat_REG_ptr_number_Of_Implemented_Cores;
         static unsigned long long* _stat_REG_ptr_number_Of_Praise_Events;
