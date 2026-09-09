@@ -30,9 +30,11 @@
 	}
 	void CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Framework::dyn_CLASS_create_Architecture()
 	{
+		std::cout << "thread ? :: " << " entered LIB :: CLIBOpenEpiCentre : CLIB_OpenEpiCentre__Framework : dyn_CLASS_create_Architecture()." << std::endl;
 		stat_CLASS_boot1_DEFINE_CLIB_OpenEpiCentre_Framework();
 		stat_CLASS_boot3_INITIALISE_CLIB_OpenEpiCentre_Framework();
 		stat_REG_boot0_DECLARE_CLIB_OpenEpiCentre_Framework();
+		std::cout << "thread ? :: " << " entered LIB :: CLIBOpenEpiCentre : CLIB_OpenEpiCentre__Framework : dyn_CLASS_create_Architecture()." << std::endl;
 	}
 	void CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Framework::dyn_CLASS_create_CLIB_OpenEpiCentre_Global_and_Settings()
 	{
@@ -41,6 +43,8 @@
 	}
 	CLIBOpenEpiCentre::CLIB_OpenEpiCentre__App* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Framework::dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()
 	{
+		std::cout << "thread ? :: " << " entered LIB :: CLIBOpenEpiCentre : CLIB_OpenEpiCentre__Framework : dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()." << std::endl;
+		std::cout << "thread ? :: " << " exiting LIB :: CLIBOpenEpiCentre : CLIB_OpenEpiCentre__Framework : dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()." << std::endl;
 		return stat_CLASS_get_ptr_CLIB_OpenEpiCentre_App();
 	}
 	CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Framework::dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_Global()
@@ -215,13 +219,16 @@
 		_stat_CLASS_ptr_CLIB_OpenEpiCentre_Global = new CLIB_OpenEpiCentre__Global();
 		while (stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Global() == nullptr) {}
 	}
+	CLIBOpenEpiCentre::CLIB_OpenEpiCentre__App* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Framework::stat_CLASS_get_ptr_CLIB_OpenEpiCentre_App()
+	{
+		std::cout << "thread ? :: " << " entered LIB :: CLIBOpenEpiCentre : CLIB_OpenEpiCentre__Framework : stat_CLASS_get_ptr_CLIB_OpenEpiCentre_App()." << std::endl;
+		std::cout << "thread ? :: " << " exiting LIB :: CLIBOpenEpiCentre : CLIB_OpenEpiCentre__Framework : stat_CLASS_get_ptr_CLIB_OpenEpiCentre_App()." << std::endl;
+		return _stat_CLASS_ptr_CLIB_OpenEpiCentre_App;
+	}
+
 	CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Framework::stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Global()
 	{
 		return _stat_CLASS_ptr_CLIB_OpenEpiCentre_Global;
-	}
-	CLIBOpenEpiCentre::CLIB_OpenEpiCentre__App* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Framework::stat_CLASS_get_ptr_CLIB_OpenEpiCentre_App()
-	{
-		return _stat_CLASS_ptr_CLIB_OpenEpiCentre_App;
 	}
 	void CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Framework::stat_STRUCT_boot0_DECLARE_User_Algorithm()
 	{
