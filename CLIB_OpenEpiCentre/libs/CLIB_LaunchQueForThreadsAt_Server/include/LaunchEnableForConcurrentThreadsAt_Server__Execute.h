@@ -19,6 +19,7 @@ namespace CLIBLaunchQueAtServer {
         static void* _stat_PGM_CLIB_WriteQueForThreadsAt_ServerLaunchQue_ConditionCode;
         static void stat_PGM_boot1_DEFINE_WriteQueForThreadsAt_ServerLaunchQue_ConditionCode();
         static void stat_PGM_boot3_INITIALISE_WriteQueForThreadsAt_ServerLaunchQue_ConditionCode();
+        static void stat_PGM_boot4_INSTANTIATE_LaunchEnableForConcurrentThreadsAt_Server__Execute(class LaunchEnableForConcurrentThreadsAt_Server__Framework* obj);
         static void* stat_PGM_get_ptr_WriteQueForThreadsAt_ServerLaunchQue_ConditionCode();
 
 

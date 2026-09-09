@@ -67,19 +67,21 @@ int main() {
     obj = static_cast<CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Framework*>(CLIBOpenEpiCentre::CLIBConcurrentServerIO::CLIBConcurrentServerIO__app_FUNCT_generate_Program());
 	stat_APP_boot4_INSTANTIATE_CLIB_OpenEpiCentre();
 	std::cout << "SIMULATION :: start." << std::endl;
-	unsigned char* praiseId = reinterpret_cast<unsigned char*>(static_cast<uint8_t>(0));
-	unsigned char valueA = static_cast<unsigned char>(static_cast<double>(1.1));
-	unsigned char valueB = static_cast<unsigned char>(static_cast<double>(2.3));
+	unsigned char* praiseId = CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::stat_CONVERT_CLIB_OpenEpiCentre_Global__Msbuint8_t_To_MsbByteArray(0);
+	unsigned char* valueA = CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::stat_CONVERT_CLIB_OpenEpiCentre_Global__MsbDouble_To_MsbByteArray(1.1);
+	unsigned char* valueB = CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::stat_CONVERT_CLIB_OpenEpiCentre_Global__MsbDouble_To_MsbByteArray(2.3);
 	if (CLIBOpenEpiCentre::CLIBConcurrentServerIO::CLIBConcurrentServerIO__app_FUNCT_get_FLAG_isPGM_INSTANTIATED()) {
 		std::cout << "thread "  << threadId << " :: SIMULATION : <= CLIBConcurrentServerIO__app_FUNCT_get_FLAG_isPGM_INSTANTIATED() = Check&Running." << std::endl;
+
 		CLIBOpenEpiCentre::CLIBConcurrentServerIO::CLIBConcurrentServerIO__dyn_PGM_WriteEnableStack_ServerInputReceive_Injection__write_Start();
 		CLIBOpenEpiCentre::CLIBConcurrentServerIO::CLIBConcurrentServerIO__io_PRAISE_set_MetaData_PraiseEventId(praiseId);
 		CLIBOpenEpiCentre::CLIBConcurrentServerIO::CLIBConcurrentServerIO__app_FUNCT_select_set_Intput_Subset(praiseId);
-		CLIBOpenEpiCentre::CLIBConcurrentServerIO::CLIBConcurrentServerIO__io_PRAISE_set_Item_Input_praise0_Value_A(&valueA);
-		CLIBOpenEpiCentre::CLIBConcurrentServerIO::CLIBConcurrentServerIO__io_PRAISE_set_Item_Input_praise0_Value_B(&valueB);
+		CLIBOpenEpiCentre::CLIBConcurrentServerIO::CLIBConcurrentServerIO__io_PRAISE_set_Item_Input_praise0_Value_A(valueA);
+		CLIBOpenEpiCentre::CLIBConcurrentServerIO::CLIBConcurrentServerIO__io_PRAISE_set_Item_Input_praise0_Value_B(valueB);
 		CLIBOpenEpiCentre::CLIBConcurrentServerIO::CLIBConcurrentServerIO__app_FUNCT_flip_Input_DoubleBuffer();
 		CLIBOpenEpiCentre::CLIBConcurrentServerIO::CLIBConcurrentServerIO__app_FUNCT_push_To_STACK_Of_Input();
 		CLIBOpenEpiCentre::CLIBConcurrentServerIO::CLIBConcurrentServerIO__dyn_PGM_WriteEnableStack_ServerInputReceive_Injection__write_End();
+
 		while (!CLIBOpenEpiCentre::CLIBConcurrentServerIO::CLIBConcurrentServerIO__dyn_REG_get_FLAG_isStackLoaded_ServerOutputSend()) {}
 		std::cout << "thread "  << threadId << " :: SIMULATION : <= CLIBConcurrentServerIO__dyn_REG_get_FLAG_isStackLoaded_ServerOutputSend() = RESULT IS READY." << std::endl;
 		CLIBOpenEpiCentre::CLIBConcurrentServerIO::CLIBConcurrentServerIO__dyn_PGM_WriteEnableStack_ServerOutputSend_Extraction__write_Start();
@@ -87,6 +89,7 @@ int main() {
 		unsigned char* result =	CLIBOpenEpiCentre::CLIBConcurrentServerIO::CLIBConcurrentServerIO__io_PRAISE_get_Item_CLIB_OpenEpiCentre_STRUCT__Output_praise0_Value();
 		std::cout << "thread "  << threadId << " :: SIMULATION : <= CLIBConcurrentServerIO__io_PRAISE_get_Item_CLIB_OpenEpiCentre_STRUCT__Output_praise0_Value() = " << CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::stat_CONVERT_CLIB_OpenEpiCentre_Global__MsbByteArray_To_MsbDouble(result) << std::endl;
 		CLIBOpenEpiCentre::CLIBConcurrentServerIO::CLIBConcurrentServerIO__dyn_PGM_WriteEnableStack_ServerOutputSend_Extraction__write_End();
+
 	}
 	std::cout << "SIMULATION :: end." << std::endl;
 	delete obj;

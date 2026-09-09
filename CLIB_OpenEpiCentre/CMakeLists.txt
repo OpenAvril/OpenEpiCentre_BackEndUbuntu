@@ -62,7 +62,6 @@ add_library(CLIB_OpenEpiCentre STATIC
 )
 
 target_include_directories(CLIB_OpenEpiCentre PUBLIC
-        /libs/CLIB_LaunchQueForThreadsAt_Server/libs/CLIB_WriteQueForThreadsAt_Server_LaunchQueConditionCode/include
         /libs/CLIB_LaunchQueForThreadsAt_Server/include
         /libs/CLIB_WriteQueForThreadsAt_ServerConditionCode/include
         /libs/CLIB_WriteQueForThreadsAt_ServerInputReceive/include

@@ -18,7 +18,7 @@ extern "C" {
             static void CLIB_WriteEnableForThreadsAt_ServerOutputSend__stat_REG_boot1_DEFINE_CLIBLaunchQueAtServerOutputSend_isFLAGINSTANTIATED();
             static void CLIB_WriteEnableForThreadsAt_ServerOutputSend__stat_REG_boot2_SUBSTANTIATE_CLIBLaunchQueAtServerOutputSend_isFLAGINSTANTIATED();
             static void CLIB_WriteEnableForThreadsAt_ServerOutputSend__stat_REG_boot3_INITIALISE_CLIBLaunchQueAtServerOutputSend_isFLAGINSTANTIATED();
-            static bool* CLIB_WriteEnableForThreadsAt_ServerOutputSend__stat_REG_get_CLIBLaunchQueAtServerOutputSend_isFLAGINSTANTIATED();
+            static std::array<bool, 5>* CLIB_WriteEnableForThreadsAt_ServerOutputSend__stat_REG_get_CLIBLaunchQueAtServerOutputSend_isFLAGINSTANTIATED();
         };
     }
 }

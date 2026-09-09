@@ -9,7 +9,7 @@ namespace CLIBWriteQueAt_Server_LaunchQueConditionCode
     public:
         WriteEnableForThreadsAt_Server_LaunchQueConditionCode__App();
         virtual ~WriteEnableForThreadsAt_Server_LaunchQueConditionCode__App();
-        void dyn_APP_FUNCT_write_Server(WriteEnableForThreadsAt_Server_LaunchQueConditionCode__Framework* obj, uint8_t coreId);
+        void dyn_APP_FUNCT_write_End(WriteEnableForThreadsAt_Server_LaunchQueConditionCode__Framework* obj, uint8_t coreId);
         void dyn_APP_FUNCT_write_Start(WriteEnableForThreadsAt_Server_LaunchQueConditionCode__Framework* obj, uint8_t coreId);
         WriteEnableForThreadsAt_Server_LaunchQueConditionCode__Control* dyn_CLASS_get_ptr_WriteEnableForThreadsAt_Server_LaunchQueConditionCode__App__Control();
         void REG_boot1_DEFINE_WriteEnableForThreadsAt_Server_LaunchQueConditionCode__App(WriteEnableForThreadsAt_Server_LaunchQueConditionCode__Framework* obj);

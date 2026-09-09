@@ -1,4 +1,5 @@
 #include "../include/LaunchEnableForConcurrentThreadsAt_Server__Execute.h"
+#include "../include/LaunchEnableForConcurrentThreadsAt_Server__Framework.h"
 #include "../libs/CLIB_WriteQueForThreadsAt_Server_LaunchQueConditionCode/include/CLIB_WriteEnableForThreadsAt_Server_LaunchQueConditionCode.h"
 #include <iostream>
     void* CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Execute::_stat_PGM_CLIB_WriteQueForThreadsAt_ServerLaunchQue_ConditionCode;
@@ -28,11 +29,11 @@
     }
     void CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server__Execute::dyn_PGM_boot4_INSTANTIATE_LaunchEnableForConcurrentThreadsAt_Server__Execute(){
         std::cout << "entered dyn_REG_boot4_INSTANTIATE_Execute()" << std::endl;
-        unsigned char* byte_uint8_t = reinterpret_cast<unsigned char*>(static_cast<std::byte>(255));
+        unsigned char* byte_uint8_t = LaunchEnableForConcurrentThreadsAt_Server__Global::stat_CONVERT_LaunchEnableForConcurrentThreadsAt_Server__Global__uint8_t_To_ByteArray(255);
         //CLIBWriteQueAt_Server_LaunchQueConditionCode::CLIB_WriteEnableForThreadsAt_Server_LaunchQueConditionCode::CLIB_WriteEnableForThreadsAt_Server_LaunchQueConditionCode__App_FUNCT_generate_Program();
         unsigned char* tempA0 = CLIBWriteQueAt_Server_LaunchQueConditionCode::CLIB_WriteEnableForThreadsAt_Server_LaunchQueConditionCode::CLIB_WriteEnableForThreadsAt_Server_LaunchQueConditionCode__App_FUNCT_get_FLAG_isPGM_INSTANTIATED();
         CLIBWriteQueAt_Server_LaunchQueConditionCode::CLIB_WriteEnableForThreadsAt_Server_LaunchQueConditionCode::CLIB_WriteEnableForThreadsAt_Server_LaunchQueConditionCode__App_FUNCT_terminate_Program();
-        CLIBWriteQueAt_Server_LaunchQueConditionCode::CLIB_WriteEnableForThreadsAt_Server_LaunchQueConditionCode::CLIB_WriteEnableForThreadsAt_Server_LaunchQueConditionCode__App_FUNCT_write_Server(byte_uint8_t);
+        CLIBWriteQueAt_Server_LaunchQueConditionCode::CLIB_WriteEnableForThreadsAt_Server_LaunchQueConditionCode::CLIB_WriteEnableForThreadsAt_Server_LaunchQueConditionCode__App_FUNCT_write_End(byte_uint8_t);
         CLIBWriteQueAt_Server_LaunchQueConditionCode::CLIB_WriteEnableForThreadsAt_Server_LaunchQueConditionCode::CLIB_WriteEnableForThreadsAt_Server_LaunchQueConditionCode__App_FUNCT_write_Start(byte_uint8_t);
         std::cout << "exiting dyn_REG_boot4_INSTANTIATE_Execute()" << std::endl;
     }

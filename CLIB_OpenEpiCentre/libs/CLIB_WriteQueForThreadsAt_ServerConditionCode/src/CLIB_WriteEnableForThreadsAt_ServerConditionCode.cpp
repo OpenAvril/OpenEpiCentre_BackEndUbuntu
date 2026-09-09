@@ -1,14 +1,13 @@
 #include "../include/CLIB_WriteEnableForThreadsAt_ServerConditionCode.h"
 #include "../include/WriteEnableForThreadsAt_ServerConditionCode__Framework.h"
 #include "../include/WriteEnableForThreadsAt_ServerConditionCode__Global.h"
-#include <cstdint>
 #include <iostream>
 #include <span>
 	CLIBWriteQueAtServerConditionCode::WriteEnableForThreadsAt_ServerConditionCode__Framework* _stat_REG_ptr_Framework_WriteEnableForThreadsAt_ServerConditionCode;
-	bool* _stat_REG_FLAG_CLIB_WriteEnableForThreadsAt_ServerConditionCode__isMemberFunctionINSTANTIATED;
+	std::array<bool, 5>* _stat_REG_FLAG_CLIB_WriteEnableForThreadsAt_ServerConditionCode__isMemberFunctionINSTANTIATED;
 // public.
 	void* CLIBWriteQueAtServerConditionCode::CLIB_WriteEnableForThreadsAt_ServerConditionCode::CLIB_WriteEnableForThreadsAt_ServerConditionCode__App_FUNCT_generate_Program()	{
-		std::cout << "entered app_FUNCT_generate_Program()." << std::endl;
+		std::cout << "thread ?" << " :: entered LIB :: CLIBWriteQueAtServerConditionCode : CLIB_WriteEnableForThreadsAt_ServerConditionCode : CLIB_WriteEnableForThreadsAt_ServerConditionCode__App_FUNCT_generate_Program()." << std::endl;
 
 		std::cout << "started Architecture Framework CLASS - DECLARE DEFINE INITIALISE." << std::endl;
 		CLIB_WriteEnableForThreadsAt_ServerConditionCode__stat_CLASS_boot1_DEFINE_Framework();
@@ -59,62 +58,70 @@
 		std::cout << "|  /    V          ))        V   \\  |" << std::endl;
 		std::cout << "|/                //               \\| " << std::endl;
 		std::cout << "`                 V                 '" << std::endl;
-		std::cout << "exiting app_FUNCT_generate_Program()." << std::endl;
+		std::cout << "thread ?" << " :: exiting LIB :: CLIBWriteQueAtServerConditionCode : CLIB_WriteEnableForThreadsAt_ServerConditionCode : CLIB_WriteEnableForThreadsAt_ServerConditionCode__App_FUNCT_generate_Program()." << std::endl;
 		return (void*)CLIB_WriteEnableForThreadsAt_ServerConditionCode__stat_CLASS_get_ptr_Framework();
 	}
 	unsigned char* CLIBWriteQueAtServerConditionCode::CLIB_WriteEnableForThreadsAt_ServerConditionCode::CLIB_WriteEnableForThreadsAt_ServerConditionCode__App_FUNCT_get_FLAG_isPGM_INSTANTIATED()	{
+		std::cout << "thread ?" << " :: entered LIB :: CLIBWriteQueAtServerConditionCode : CLIB_WriteEnableForThreadsAt_ServerConditionCode : CLIB_WriteEnableForThreadsAt_ServerConditionCode__App_FUNCT_get_FLAG_isPGM_INSTANTIATED()." << std::endl;
 		bool* result = nullptr;
 		result = new bool();
 		*result = true;
-		if (!CLIB_WriteEnableForThreadsAt_ServerConditionCode__stat_REG_get_CLIBLaunchQueAtServerConditionCode_isFLAGINSTANTIATED()[0]) {
-			*result = CLIB_WriteEnableForThreadsAt_ServerConditionCode__stat_REG_get_CLIBLaunchQueAtServerConditionCode_isFLAGINSTANTIATED()[0];
+		if (!CLIB_WriteEnableForThreadsAt_ServerConditionCode__stat_REG_get_CLIBLaunchQueAtServerConditionCode_isFLAGINSTANTIATED()->at(0)) {
+			*result = CLIB_WriteEnableForThreadsAt_ServerConditionCode__stat_REG_get_CLIBLaunchQueAtServerConditionCode_isFLAGINSTANTIATED()->at(0);
 		}
 		else {
-			CLIB_WriteEnableForThreadsAt_ServerConditionCode__stat_REG_get_CLIBLaunchQueAtServerConditionCode_isFLAGINSTANTIATED()[1] = false;
+			CLIB_WriteEnableForThreadsAt_ServerConditionCode__stat_REG_get_CLIBLaunchQueAtServerConditionCode_isFLAGINSTANTIATED()->at(1) = !CLIB_WriteEnableForThreadsAt_ServerConditionCode__stat_REG_get_CLIBLaunchQueAtServerConditionCode_isFLAGINSTANTIATED()->at(0);
 			CLIB_WriteEnableForThreadsAt_ServerConditionCode__stat_REG_get_CLIBLaunchQueAtServerConditionCode_isFLAGINSTANTIATED();
 		}
+		std::cout << "thread ?" << " :: exiting LIB :: CLIBWriteQueAtServerConditionCode : CLIB_WriteEnableForThreadsAt_ServerConditionCode : CLIB_WriteEnableForThreadsAt_ServerConditionCode__App_FUNCT_get_FLAG_isPGM_INSTANTIATED()." << std::endl;
 		return WriteEnableForThreadsAt_ServerConditionCode__Global::stat_APP_CONVERT_WriteEnableForThreadsAt_ServerConditionCode__MsbBoolean_To_MsbByteArray(*result);
 	}
 	void CLIBWriteQueAtServerConditionCode::CLIB_WriteEnableForThreadsAt_ServerConditionCode::CLIB_WriteEnableForThreadsAt_ServerConditionCode__App_FUNCT_terminate_Program()	{
-		if (!CLIB_WriteEnableForThreadsAt_ServerConditionCode__stat_REG_get_CLIBLaunchQueAtServerConditionCode_isFLAGINSTANTIATED()[0]) {
+		std::cout << "thread ?" << " :: entered LIB :: CLIBWriteQueAtServerConditionCode : CLIB_WriteEnableForThreadsAt_ServerConditionCode : CLIB_WriteEnableForThreadsAt_ServerConditionCode__App_FUNCT_terminate_Program()." << std::endl;
+		if (!CLIB_WriteEnableForThreadsAt_ServerConditionCode__stat_REG_get_CLIBLaunchQueAtServerConditionCode_isFLAGINSTANTIATED()->at(0)) {
 			delete _stat_REG_ptr_Framework_WriteEnableForThreadsAt_ServerConditionCode;
 			while (CLIB_WriteEnableForThreadsAt_ServerConditionCode__stat_CLASS_get_ptr_Framework() != nullptr) {}
 		}
 		else {
-			CLIB_WriteEnableForThreadsAt_ServerConditionCode__stat_REG_get_CLIBLaunchQueAtServerConditionCode_isFLAGINSTANTIATED()[2] = false;
+			CLIB_WriteEnableForThreadsAt_ServerConditionCode__stat_REG_get_CLIBLaunchQueAtServerConditionCode_isFLAGINSTANTIATED()->at(2) = !CLIB_WriteEnableForThreadsAt_ServerConditionCode__stat_REG_get_CLIBLaunchQueAtServerConditionCode_isFLAGINSTANTIATED()->at(0);
 			CLIB_WriteEnableForThreadsAt_ServerConditionCode__stat_REG_get_CLIBLaunchQueAtServerConditionCode_isFLAGINSTANTIATED();
 		}
+		std::cout << "thread ?" << " :: exiting LIB :: CLIBWriteQueAtServerConditionCode : CLIB_WriteEnableForThreadsAt_ServerConditionCode : CLIB_WriteEnableForThreadsAt_ServerConditionCode__App_FUNCT_terminate_Program()." << std::endl;
 	}
 
 	void CLIBWriteQueAtServerConditionCode::CLIB_WriteEnableForThreadsAt_ServerConditionCode::CLIB_WriteEnableForThreadsAt_ServerConditionCode__App_FUNCT_write_End(unsigned char* bytes)	{
-		if (!CLIB_WriteEnableForThreadsAt_ServerConditionCode__stat_REG_get_CLIBLaunchQueAtServerConditionCode_isFLAGINSTANTIATED()[0]) {
+		std::cout << "thread ?" << " :: entered LIB :: CLIBWriteQueAtServerConditionCode : CLIB_WriteEnableForThreadsAt_ServerConditionCode : CLIB_WriteEnableForThreadsAt_ServerConditionCode__App_FUNCT_write_End()." << std::endl;
+		if (!CLIB_WriteEnableForThreadsAt_ServerConditionCode__stat_REG_get_CLIBLaunchQueAtServerConditionCode_isFLAGINSTANTIATED()->at(0)) {
 			CLIB_WriteEnableForThreadsAt_ServerConditionCode__stat_CLASS_get_ptr_Framework()->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerConditionCode__App()->dyn_APP_FUNCT_write_End(CLIBWriteQueAtServerConditionCode::CLIB_WriteEnableForThreadsAt_ServerConditionCode::CLIB_WriteEnableForThreadsAt_ServerConditionCode__stat_CLASS_get_ptr_Framework(), WriteEnableForThreadsAt_ServerConditionCode__Global::stat_APP_CONVERT_WriteEnableForThreadsAt_ServerConditionCode__MsbByteArray_To_Msbuint8_t(bytes));
 			CLIB_WriteEnableForThreadsAt_ServerConditionCode__stat_CLASS_get_ptr_Framework()->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerConditionCode__App()->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerConditionCode__App__Control()->dyn_REG_set_FLAG_WriteEnableForThreadsAt_ServerConditionCode__Control__isWriteEndThreadRELASE_REMAINING(true);
 		}
 		else {
-			CLIB_WriteEnableForThreadsAt_ServerConditionCode__stat_REG_get_CLIBLaunchQueAtServerConditionCode_isFLAGINSTANTIATED()[3] = false;
+			CLIB_WriteEnableForThreadsAt_ServerConditionCode__stat_REG_get_CLIBLaunchQueAtServerConditionCode_isFLAGINSTANTIATED()->at(3) = !CLIB_WriteEnableForThreadsAt_ServerConditionCode__stat_REG_get_CLIBLaunchQueAtServerConditionCode_isFLAGINSTANTIATED()->at(0);
 			CLIB_WriteEnableForThreadsAt_ServerConditionCode__stat_REG_get_CLIBLaunchQueAtServerConditionCode_isFLAGINSTANTIATED();
 		}
+		std::cout << "thread ?" << " :: exiting LIB :: CLIBWriteQueAtServerConditionCode : CLIB_WriteEnableForThreadsAt_ServerConditionCode : CLIB_WriteEnableForThreadsAt_ServerConditionCode__App_FUNCT_write_End()." << std::endl;
 	}
 	void CLIBWriteQueAtServerConditionCode::CLIB_WriteEnableForThreadsAt_ServerConditionCode::CLIB_WriteEnableForThreadsAt_ServerConditionCode__App_FUNCT_write_Start(unsigned char* bytes) {
-		if (!CLIB_WriteEnableForThreadsAt_ServerConditionCode__stat_REG_get_CLIBLaunchQueAtServerConditionCode_isFLAGINSTANTIATED()[0]) {
+		std::cout << "thread ?" << " :: entered LIB :: CLIBWriteQueAtServerConditionCode : CLIB_WriteEnableForThreadsAt_ServerConditionCode : CLIB_WriteEnableForThreadsAt_ServerConditionCode__App_FUNCT_write_Start()." << std::endl;
+		if (!CLIB_WriteEnableForThreadsAt_ServerConditionCode__stat_REG_get_CLIBLaunchQueAtServerConditionCode_isFLAGINSTANTIATED()->at(0)) {
 			CLIB_WriteEnableForThreadsAt_ServerConditionCode__stat_CLASS_get_ptr_Framework()->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerConditionCode__App()->dyn_APP_FUNCT_write_Start(CLIBWriteQueAtServerConditionCode::CLIB_WriteEnableForThreadsAt_ServerConditionCode::CLIB_WriteEnableForThreadsAt_ServerConditionCode__stat_CLASS_get_ptr_Framework(), WriteEnableForThreadsAt_ServerConditionCode__Global::stat_APP_CONVERT_WriteEnableForThreadsAt_ServerConditionCode__MsbByteArray_To_Msbuint8_t(bytes));
 			CLIB_WriteEnableForThreadsAt_ServerConditionCode__stat_CLASS_get_ptr_Framework()->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerConditionCode__App()->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerConditionCode__App__Control()->dyn_REG_set_FLAG_WriteEnableForThreadsAt_ServerConditionCode__Control__isWriteStartThreadRELASE_REMAINING(true);
 		}
 		else {
-			CLIB_WriteEnableForThreadsAt_ServerConditionCode__stat_REG_get_CLIBLaunchQueAtServerConditionCode_isFLAGINSTANTIATED()[4] = false;
+			CLIB_WriteEnableForThreadsAt_ServerConditionCode__stat_REG_get_CLIBLaunchQueAtServerConditionCode_isFLAGINSTANTIATED()->at(4) = !CLIB_WriteEnableForThreadsAt_ServerConditionCode__stat_REG_get_CLIBLaunchQueAtServerConditionCode_isFLAGINSTANTIATED()->at(0);
 			CLIB_WriteEnableForThreadsAt_ServerConditionCode__stat_REG_get_CLIBLaunchQueAtServerConditionCode_isFLAGINSTANTIATED();
 		}
+		std::cout << "thread ?" << " :: exiting LIB :: CLIBWriteQueAtServerConditionCode : CLIB_WriteEnableForThreadsAt_ServerConditionCode : CLIB_WriteEnableForThreadsAt_ServerConditionCode__App_FUNCT_write_Start()." << std::endl;
 	}
 	bool CLIBWriteQueAtServerConditionCode::CLIB_WriteEnableForThreadsAt_ServerConditionCode::CLIB_WriteEnableForThreadsAt_ServerConditionCode__stat_APP_FUNCT_Calc_IsAllINSTANTIATED() {
-		_stat_REG_FLAG_CLIB_WriteEnableForThreadsAt_ServerConditionCode__isMemberFunctionINSTANTIATED[0] = false;
+		CLIB_WriteEnableForThreadsAt_ServerConditionCode__stat_REG_get_CLIBLaunchQueAtServerConditionCode_isFLAGINSTANTIATED()->at(0) = false;
 		for(int index = 1; index < 5; index++) {
-			if (_stat_REG_FLAG_CLIB_WriteEnableForThreadsAt_ServerConditionCode__isMemberFunctionINSTANTIATED[index]) {
-				_stat_REG_FLAG_CLIB_WriteEnableForThreadsAt_ServerConditionCode__isMemberFunctionINSTANTIATED[0] = _stat_REG_FLAG_CLIB_WriteEnableForThreadsAt_ServerConditionCode__isMemberFunctionINSTANTIATED[index];
+			if (CLIB_WriteEnableForThreadsAt_ServerConditionCode__stat_REG_get_CLIBLaunchQueAtServerConditionCode_isFLAGINSTANTIATED()->at(index)) {
+				CLIB_WriteEnableForThreadsAt_ServerConditionCode__stat_REG_get_CLIBLaunchQueAtServerConditionCode_isFLAGINSTANTIATED()->at(0) = CLIB_WriteEnableForThreadsAt_ServerConditionCode__stat_REG_get_CLIBLaunchQueAtServerConditionCode_isFLAGINSTANTIATED()->at(index);
 				break;
 			}
 		}
-		return _stat_REG_FLAG_CLIB_WriteEnableForThreadsAt_ServerConditionCode__isMemberFunctionINSTANTIATED[0];
+		return CLIB_WriteEnableForThreadsAt_ServerConditionCode__stat_REG_get_CLIBLaunchQueAtServerConditionCode_isFLAGINSTANTIATED()->at(0);
 	}
 	void CLIBWriteQueAtServerConditionCode::CLIB_WriteEnableForThreadsAt_ServerConditionCode::CLIB_WriteEnableForThreadsAt_ServerConditionCode__stat_CLASS_boot1_DEFINE_Framework() {
 		_stat_REG_ptr_Framework_WriteEnableForThreadsAt_ServerConditionCode = nullptr;
@@ -130,17 +137,17 @@
 		_stat_REG_FLAG_CLIB_WriteEnableForThreadsAt_ServerConditionCode__isMemberFunctionINSTANTIATED = nullptr;
 	}
 	void CLIBWriteQueAtServerConditionCode::CLIB_WriteEnableForThreadsAt_ServerConditionCode::CLIB_WriteEnableForThreadsAt_ServerConditionCode__stat_REG_boot2_SUBSTANTIATE_CLIBLaunchQueAtServerConditionCode_isFLAGINSTANTIATED() {
-		_stat_REG_FLAG_CLIB_WriteEnableForThreadsAt_ServerConditionCode__isMemberFunctionINSTANTIATED = new bool[5]();
+		_stat_REG_FLAG_CLIB_WriteEnableForThreadsAt_ServerConditionCode__isMemberFunctionINSTANTIATED = new std::array<bool, 5>();
 		while (CLIB_WriteEnableForThreadsAt_ServerConditionCode__stat_REG_get_CLIBLaunchQueAtServerConditionCode_isFLAGINSTANTIATED() == nullptr) {}
 		for (int index = 0; index < sizeof(*CLIB_WriteEnableForThreadsAt_ServerConditionCode__stat_REG_get_CLIBLaunchQueAtServerConditionCode_isFLAGINSTANTIATED()); index++) {
-			_stat_REG_FLAG_CLIB_WriteEnableForThreadsAt_ServerConditionCode__isMemberFunctionINSTANTIATED[index] = true;
+			CLIB_WriteEnableForThreadsAt_ServerConditionCode__stat_REG_get_CLIBLaunchQueAtServerConditionCode_isFLAGINSTANTIATED()->at(index) = true;
 		}
 	}
 	void CLIBWriteQueAtServerConditionCode::CLIB_WriteEnableForThreadsAt_ServerConditionCode::CLIB_WriteEnableForThreadsAt_ServerConditionCode__stat_REG_boot3_INITIALISE_CLIBLaunchQueAtServerConditionCode_isFLAGINSTANTIATED() {
 		for (int index = 0; index < sizeof(*CLIB_WriteEnableForThreadsAt_ServerConditionCode__stat_REG_get_CLIBLaunchQueAtServerConditionCode_isFLAGINSTANTIATED()); index++) {
-			_stat_REG_FLAG_CLIB_WriteEnableForThreadsAt_ServerConditionCode__isMemberFunctionINSTANTIATED[index] = true;
+			CLIB_WriteEnableForThreadsAt_ServerConditionCode__stat_REG_get_CLIBLaunchQueAtServerConditionCode_isFLAGINSTANTIATED()->at(index) = true;
 		}
 	}
-	bool* CLIBWriteQueAtServerConditionCode::CLIB_WriteEnableForThreadsAt_ServerConditionCode::CLIB_WriteEnableForThreadsAt_ServerConditionCode__stat_REG_get_CLIBLaunchQueAtServerConditionCode_isFLAGINSTANTIATED() {
+	std::array<bool, 5>* CLIBWriteQueAtServerConditionCode::CLIB_WriteEnableForThreadsAt_ServerConditionCode::CLIB_WriteEnableForThreadsAt_ServerConditionCode__stat_REG_get_CLIBLaunchQueAtServerConditionCode_isFLAGINSTANTIATED() {
 		return _stat_REG_FLAG_CLIB_WriteEnableForThreadsAt_ServerConditionCode__isMemberFunctionINSTANTIATED;
 	}
