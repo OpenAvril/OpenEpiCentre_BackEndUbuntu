@@ -41,7 +41,7 @@ extern "C" {
 			static void CLIBConcurrentServerIO__stat_REG_boot1_DEFINE_CLIB_OpenEpiCentre_isFLAG_INSTANTIATED();
 			static void CLIBConcurrentServerIO__stat_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_isFLAG_INSTANTIATED();
 			static void CLIBConcurrentServerIO__stat_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_isFLAG_INSTANTIATED();
-			static std::array<bool, 30>* CLIBConcurrentServerIO__stat_REG_get_ptr_CLIB_OpenEpiCentre_isFLAG_INSTANTIATED();
+			static std::array<bool, 28>* CLIBConcurrentServerIO__stat_REG_get_ptr_CLIB_OpenEpiCentre_isFLAG_INSTANTIATED();
 		};
 	}
 }

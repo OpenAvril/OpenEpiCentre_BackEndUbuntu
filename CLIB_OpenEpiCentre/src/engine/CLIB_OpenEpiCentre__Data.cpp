@@ -93,11 +93,12 @@
     std::advance(temp, CLIB_OpenEpiCentre__Global::stat_CONVERT_Bool_To_Int(!obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Data()->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre__Data__Control()->dyn_REG_get_Item_side_To_Write_For_array_Of_doubleBuffer_Input()));
     return *temp;
     }
-    CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT__Input* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data::dyn_REG_get_ptr_Item_array_Of_doubleBuffer_Input_WRITE(CLIB_OpenEpiCentre__Framework* obj)
-    {
-    auto temp = stat_get_REG_ptr_array_Of_doubleBuffer_Input()->begin();
-    std::advance(temp, CLIB_OpenEpiCentre__Global::stat_CONVERT_Bool_To_Int(obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Data()->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre__Data__Control()->dyn_REG_get_Item_side_To_Write_For_array_Of_doubleBuffer_Input()));
-    return *temp;
+    CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT__Input* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data::dyn_REG_get_ptr_Item_array_Of_doubleBuffer_Input_WRITE(CLIB_OpenEpiCentre__Framework* obj) {
+        std::cout << "thread ? :: " << " entered LIB :: CLIBOpenEpiCentre : CLIB_OpenEpiCentre__Data : dyn_REG_get_ptr_Item_array_Of_doubleBuffer_Input_WRITE()." << std::endl;
+        auto temp = stat_get_REG_ptr_array_Of_doubleBuffer_Input()->begin();
+        std::advance(temp, CLIB_OpenEpiCentre__Global::stat_CONVERT_Bool_To_Int(obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Data()->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre__Data__Control()->dyn_REG_get_Item_side_To_Write_For_array_Of_doubleBuffer_Input()));
+        std::cout << "thread ? :: " << " exiting LIB :: CLIBOpenEpiCentre : CLIB_OpenEpiCentre__Data : dyn_REG_get_ptr_Item_array_Of_doubleBuffer_Input_WRITE()." << std::endl;
+        return *temp;
     }
     CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT__Output* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data::dyn_REG_get_ptr_Item_array_Of_doubleBuffer_Output_READ(CLIB_OpenEpiCentre__Framework* obj)
     {

@@ -85,9 +85,11 @@
     {
         *stat_REG_get_ptr_Input_playerId() = newPlayerId;
     }
-    void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT__Input::dyn_REG_set_ptr_Input_praiseEventId(unsigned long long new_unsignedLongLong)
-    {
+    void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT__Input::dyn_REG_set_ptr_Input_praiseEventId(unsigned long long new_unsignedLongLong) {
+        std::cout << "thread ? :: " << " entered LIB :: CLIBOpenEpiCentre : CLIB_OpenEpiCentre_STRUCT__Input : dyn_REG_set_ptr_Input_praiseEventId()." << std::endl;
         *stat_REG_get_ptr_Input_praiseEventId() = new_unsignedLongLong;
+        std::cout << "thread ? :: " << " entered LIB :: <= CLIBOpenEpiCentre : CLIB_OpenEpiCentre_STRUCT__Input : dyn_REG_set_ptr_Input_praiseEventId() = " << new_unsignedLongLong << std::endl;
+        std::cout << "thread ? :: " << " exiting LIB :: CLIBOpenEpiCentre : CLIB_OpenEpiCentre_STRUCT__Input : dyn_REG_set_ptr_Input_praiseEventId()." << std::endl;
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT__Input::dyn_REG_set_ptr_Item_Of_ptr_Inputs_Subset(CLIB_OpenEpiCentre_STRUCT__Input_praise0* objInputSubset)
     {
