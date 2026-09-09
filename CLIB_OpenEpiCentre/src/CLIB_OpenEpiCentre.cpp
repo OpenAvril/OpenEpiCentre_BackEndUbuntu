@@ -454,7 +454,9 @@
 		std::cout << "thread ? :: " << " entered LIB :: CLIBOpenEpiCentre : CLIBConcurrentServerIO : CLIBConcurrentServerIO__io_PRAISE_set_MetaData_PraiseEventId()." << std::endl;
 		if (!CLIBConcurrentServerIO__stat_REG_get_ptr_CLIB_OpenEpiCentre_isFLAG_INSTANTIATED()->at(0)) {
 			std::cout << "thread ? :: " << " entered LIB :: <= CLIBOpenEpiCentre : CLIBConcurrentServerIO : CLIBConcurrentServerIO__io_PRAISE_set_MetaData_PraiseEventId() = PRIMED." << std::endl;
-			CLIBConcurrentServerIO__stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework()->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Data()->dyn_REG_get_ptr_Item_array_Of_doubleBuffer_Input_WRITE(CLIBConcurrentServerIO__stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework())->dyn_REG_set_ptr_Input_praiseEventId(CLIB_OpenEpiCentre__Global::stat_CONVERT_CLIB_OpenEpiCentre_Global__MsbByteArray_To_MsbunsignedLongLong(bytes));
+			auto* tempObj = CLIBConcurrentServerIO__stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework()->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Data()->dyn_REG_get_ptr_Item_array_Of_doubleBuffer_Input_WRITE(CLIBConcurrentServerIO__stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework());
+			while (tempObj == nullptr) { std::cout << "wait loop." << tempObj << std::endl; }
+			tempObj->dyn_REG_set_ptr_Input_praiseEventId(CLIB_OpenEpiCentre__Global::stat_CONVERT_CLIB_OpenEpiCentre_Global__MsbByteArray_To_MsbunsignedLongLong(bytes));
 		}
 		else {
 			std::cout << "thread ? :: " << " entered LIB :: <= CLIBOpenEpiCentre : CLIBConcurrentServerIO : CLIBConcurrentServerIO__io_PRAISE_set_MetaData_PraiseEventId() = PRIMING." << std::endl;
