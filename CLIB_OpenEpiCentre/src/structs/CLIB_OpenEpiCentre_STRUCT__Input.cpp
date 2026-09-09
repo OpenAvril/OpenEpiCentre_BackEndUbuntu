@@ -83,13 +83,10 @@
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT__Input::dyn_REG_set_Input_playerId(std::byte newPlayerId)
     {
-        *stat_REG_get_ptr_Input_playerId() = newPlayerId;
+        stat_REG_get_ptr_Input_playerId(newPlayerId);
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT__Input::dyn_REG_set_ptr_Input_praiseEventId(unsigned long long new_unsignedLongLong) {
-        std::cout << "thread ? :: " << " entered LIB :: CLIBOpenEpiCentre : CLIB_OpenEpiCentre_STRUCT__Input : dyn_REG_set_ptr_Input_praiseEventId()." << std::endl;
-        *stat_REG_get_ptr_Input_praiseEventId() = new_unsignedLongLong;
-        std::cout << "thread ? :: " << " entered LIB :: <= CLIBOpenEpiCentre : CLIB_OpenEpiCentre_STRUCT__Input : dyn_REG_set_ptr_Input_praiseEventId() = " << new_unsignedLongLong << std::endl;
-        std::cout << "thread ? :: " << " exiting LIB :: CLIBOpenEpiCentre : CLIB_OpenEpiCentre_STRUCT__Input : dyn_REG_set_ptr_Input_praiseEventId()." << std::endl;
+        stat_REG_get_ptr_Input_praiseEventId(new_unsignedLongLong);
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT__Input::dyn_REG_set_ptr_Item_Of_ptr_Inputs_Subset(CLIB_OpenEpiCentre_STRUCT__Input_praise0* objInputSubset)
     {
@@ -193,6 +190,7 @@
             *temp = obj->dyn_STRUCT_get_User_Input()->dyn_CLASS_get_Item_On_List_Of_ptr_PraiseInputSubsets(index);
         }
     }
+
     unsigned long long* CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT__Input::stat_REG_get_ptr_Input_praiseEventId()
     {
         return _REG_ptr_Input_praiseEventId;
@@ -204,4 +202,13 @@
     std::list<CLIBOpenEpiCentre::Object*>* CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT__Input::stat_REG_get_ptr_Item_Of_ptr_Inputs_Subset()
     {
         return _REG_ptr_List_Of_PraiseInputSubset;
+    }
+    void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT__Input::stat_REG_get_ptr_Input_praiseEventId(unsigned long long value) {
+        std::cout << "thread ? :: " << " entered LIB :: CLIBOpenEpiCentre : CLIB_OpenEpiCentre_STRUCT__Input : stat_REG_get_ptr_Input_praiseEventId()." << std::endl;
+        *_REG_ptr_Input_praiseEventId = value;
+        std::cout << "thread ? :: " << " => :: Input_praiseEventId = " << _REG_ptr_Input_praiseEventId << std::endl;
+        std::cout << "thread ? :: " << " exiting LIB :: CLIBOpenEpiCentre : CLIB_OpenEpiCentre_STRUCT__Input : stat_REG_get_ptr_Input_praiseEventId()." << std::endl;
+    }
+    void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT__Input::stat_REG_get_ptr_Input_playerId(std::byte value) {
+        *_REG_ptr_Input_playerId = value;
     }

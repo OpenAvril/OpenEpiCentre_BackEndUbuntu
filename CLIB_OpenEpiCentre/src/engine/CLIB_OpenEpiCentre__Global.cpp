@@ -83,6 +83,7 @@ enum Axis
     }
     int CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::stat_CONVERT_Bool_To_Int(bool value) {
         int* temp = nullptr;
+        temp = new int();
         *temp = 2;
         if (value) {
             *temp = 1;;
@@ -117,7 +118,7 @@ enum Axis
     }
     unsigned long long CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::stat_CONVERT_CLIB_OpenEpiCentre_Global__MsbByteArray_To_MsbunsignedLongLong(const unsigned char* byteArray)
     {
-        unsigned long long* temp;
+        unsigned long long* temp = nullptr;
         temp = new unsigned long long();
         std::memcpy(&temp, byteArray, sizeof(unsigned long long));
         return *temp;

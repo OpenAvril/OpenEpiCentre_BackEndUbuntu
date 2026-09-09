@@ -48,6 +48,8 @@ namespace CLIBOpenEpiCentre
         static std::byte* stat_REG_get_ptr_Input_playerId();
         static unsigned long long* stat_REG_get_ptr_Input_praiseEventId();
         static std::list<Object*>* stat_REG_get_ptr_Item_Of_ptr_Inputs_Subset();
+        static void stat_REG_get_ptr_Input_praiseEventId(unsigned long long value);
+        static void stat_REG_get_ptr_Input_playerId(std::byte value);
     };
 }
 #endif

@@ -26,8 +26,6 @@
     }
     CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__App::dyn_CLASS_get_ptr_Data()
     {
-        std::cout << "thread ? :: " << " entered LIB :: CLIBOpenEpiCentre : CLIB_OpenEpiCentre__App : dyn_CLASS_get_ptr_Data()." << std::endl;
-        std::cout << "thread ? :: " << " exiting LIB :: CLIBOpenEpiCentre : CLIB_OpenEpiCentre__App : dyn_CLASS_get_ptr_Data()." << std::endl;
         return stat_CLASS_get_ptr_CLIB_OpenEpiCentre__Data();
     }
     CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Execute* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__App::dyn_CLASS_get_ptr_Execute()
@@ -125,8 +123,6 @@
         return _stat_CLASS_ptr_CLIB_OpenEpiCentre_Algorithms;
     }
     CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__App::stat_CLASS_get_ptr_CLIB_OpenEpiCentre__Data() {
-        std::cout << "thread ? :: " << " entered LIB :: CLIBOpenEpiCentre : CLIB_OpenEpiCentre__App : stat_CLASS_get_ptr_CLIB_OpenEpiCentre__Data()." << std::endl;
-        std::cout << "thread ? :: " << " exiting LIB :: CLIBOpenEpiCentre : CLIB_OpenEpiCentre__App : stat_CLASS_get_ptr_CLIB_OpenEpiCentre__Data()." << std::endl;
         return _stat_CLASS_ptr_CLIB_OpenEpiCentre__Data;
     }
     CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Execute* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__App::stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Execute()

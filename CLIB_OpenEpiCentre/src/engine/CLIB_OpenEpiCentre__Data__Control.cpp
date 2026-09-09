@@ -128,8 +128,6 @@ bool* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data__Control::_stat_REG_ptr_FLAG_i
     return stat_REG_get_ptr_FLAG_isLoaded_Stack_OutputSend();
     }
     bool CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data__Control::dyn_REG_get_Item_side_To_Write_For_array_Of_doubleBuffer_Input() {
-        std::cout << "thread ? :: " << " entered LIB :: CLIBOpenEpiCentre : CLIB_OpenEpiCentre__Data__Control : dyn_REG_get_Item_side_To_Write_For_array_Of_doubleBuffer_Input()." << std::endl;
-        std::cout << "thread ? :: " << " exiting LIB :: CLIBOpenEpiCentre : CLIB_OpenEpiCentre__Data__Control : dyn_REG_get_Item_side_To_Write_For_array_Of_doubleBuffer_Input()." << std::endl;
         return stat_REG_get_ptr_side_To_Write_For_array_Of_doubleBuffer_Input();
     }
     bool CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data__Control::dyn_REG_get_Item_side_To_Write_For_array_Of_doubleBuffer_Output()
@@ -234,8 +232,6 @@ bool* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data__Control::_stat_REG_ptr_FLAG_i
     return _stat_REG_ptr_FLAG_isLoaded_Stack_OutputSend;
     }
     bool* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data__Control::stat_REG_get_ptr_side_To_Write_For_array_Of_doubleBuffer_Input() {
-        std::cout << "thread ? :: " << " entered LIB :: CLIBOpenEpiCentre : CLIB_OpenEpiCentre__Data__Control : stat_REG_get_ptr_side_To_Write_For_array_Of_doubleBuffer_Input()." << std::endl;
-        std::cout << "thread ? :: " << " exiting LIB :: CLIBOpenEpiCentre : CLIB_OpenEpiCentre__Data__Control : stat_REG_get_ptr_side_To_Write_For_array_Of_doubleBuffer_Input()." << std::endl;
         return _stat_REG_ptr_side_To_Write_For_doubleBuffer_Input;
     }
     bool* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data__Control::stat_REG_get_ptr_side_To_Write_For_array_Of_doubleBuffer_Output()

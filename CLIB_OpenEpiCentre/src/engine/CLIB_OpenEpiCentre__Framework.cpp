@@ -43,8 +43,6 @@
 	}
 	CLIBOpenEpiCentre::CLIB_OpenEpiCentre__App* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Framework::dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()
 	{
-		std::cout << "thread ? :: " << " entered LIB :: CLIBOpenEpiCentre : CLIB_OpenEpiCentre__Framework : dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()." << std::endl;
-		std::cout << "thread ? :: " << " exiting LIB :: CLIBOpenEpiCentre : CLIB_OpenEpiCentre__Framework : dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()." << std::endl;
 		return stat_CLASS_get_ptr_CLIB_OpenEpiCentre_App();
 	}
 	CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Framework::dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_Global()
@@ -87,9 +85,7 @@
 	}
 	void CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Framework::dyn_PGM_boot4_INSTANTIATE_CLIB_OpenEpiCentre_Framework(CLIB_OpenEpiCentre__Framework* obj)
 	{
-		std::cout << "entered dyn_PGM_boot4_INSTANTIATE_CLIB_OpenEpiCentre_Framework()" << std::endl;
 		obj->stat_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Execute()->dyn_REG_boot4_INSTANTIATE_CLIB_OpenEpiCentre_Execute(obj);
-		std::cout << "exiting dyn_PGM_boot4_INSTANTIATE_CLIB_OpenEpiCentre_Framework()" << std::endl;
 	}
 	void CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Framework::dyn_STRUCT_boot0_DECLARE_User_Algorithm() {
 		stat_STRUCT_boot0_DECLARE_User_Algorithm();
@@ -221,8 +217,6 @@
 	}
 	CLIBOpenEpiCentre::CLIB_OpenEpiCentre__App* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Framework::stat_CLASS_get_ptr_CLIB_OpenEpiCentre_App()
 	{
-		std::cout << "thread ? :: " << " entered LIB :: CLIBOpenEpiCentre : CLIB_OpenEpiCentre__Framework : stat_CLASS_get_ptr_CLIB_OpenEpiCentre_App()." << std::endl;
-		std::cout << "thread ? :: " << " exiting LIB :: CLIBOpenEpiCentre : CLIB_OpenEpiCentre__Framework : stat_CLASS_get_ptr_CLIB_OpenEpiCentre_App()." << std::endl;
 		return _stat_CLASS_ptr_CLIB_OpenEpiCentre_App;
 	}
 
