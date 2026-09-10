@@ -1,36 +1,37 @@
 #include "../../include/structs/CLIB_OpenEpiCentre_STRUCT__User_Input.h"
-#include <cstdint>
 #include <iostream>
 	CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT__Input_praise0* CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT__User_Input::_stat_CLASS_ptr_Input_praise0;
 	CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT__Input_praise1* CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT__User_Input::_stat_CLASS_ptr_Input_praise1;
 	CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT__Input_praise2* CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT__User_Input::_stat_CLASS_ptr_Input_praise2;
 	CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT__Input_praise3* CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT__User_Input::_stat_CLASS_ptr_Input_praise3;
 // public.
-	CLIBOpenEpiCentre::Object* CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT__User_Input::dyn_CLASS_get_Item_On_List_Of_ptr_PraiseInputSubsets(unsigned long long praiseId)
+	std::list<CLIBOpenEpiCentre::Object*>* CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT__User_Input::dyn_CLASS_get_Item_On_List_Of_ptr_PraiseInputSubsets(unsigned long long praiseId)
 	{
+		auto* result = new  std::list<CLIBOpenEpiCentre::Object*>(1);
+		auto temp = result->begin();
+		std::advance(temp, 0);
 		switch (praiseId)
 		{
 		case 0:
-			return reinterpret_cast<Object *>(stat_CLASS_get_ptr_Input_praise0());
+			*temp = reinterpret_cast<CLIBOpenEpiCentre::Object *>(stat_CLASS_get_ptr_Input_praise0());
 			break;
 
 		case 1:
-			return reinterpret_cast<Object *>(stat_CLASS_get_ptr_Input_praise1());
+			*temp = reinterpret_cast<CLIBOpenEpiCentre::Object *>(stat_CLASS_get_ptr_Input_praise1());
 			break;
 
 		case 2:
-			return reinterpret_cast<Object *>(stat_CLASS_get_ptr_Input_praise2());
+			*temp = reinterpret_cast<CLIBOpenEpiCentre::Object *>(stat_CLASS_get_ptr_Input_praise2());
 			break;
 
 		case 3:
-			return reinterpret_cast<Object *>(stat_CLASS_get_ptr_Input_praise3());
+			*temp = reinterpret_cast<CLIBOpenEpiCentre::Object *>(stat_CLASS_get_ptr_Input_praise3());
 			break;
 
 		default:
-			return 0;
 			break;
 		}
-
+		return result;
 	}
 
 	void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT__User_Input::dyn_REG_boot1_DEFINE_User_Input()

@@ -41,12 +41,12 @@ namespace CLIBOpenEpiCentre
         void dyn_STRUCT_boot3_INITIALISE_Concurrent();
         void dyn_STRUCT_boot3_INITIALISE_Input();
         void dyn_STRUCT_boot3_INITIALISE_Output();
-        static struct CLIB_OpenEpiCentre_STRUCT__Concurrent* dyn_STRUCT_get_Concurrent();
-        static struct CLIB_OpenEpiCentre_STRUCT__Input* dyn_STRUCT_get_Input();
-        static struct CLIB_OpenEpiCentre_STRUCT__Output* dyn_STRUCT_get_Output();
-        static struct CLIB_OpenEpiCentre_STRUCT__User_Algorithm* dyn_STRUCT_get_User_Algorithm();
-        static struct CLIB_OpenEpiCentre_STRUCT__User_Input* dyn_STRUCT_get_User_Input();
-        static struct CLIB_OpenEpiCentre_STRUCT__User_Output* dyn_STRUCT_get_User_Output();
+        struct CLIB_OpenEpiCentre_STRUCT__Concurrent* dyn_STRUCT_get_Concurrent();
+        struct CLIB_OpenEpiCentre_STRUCT__Input* dyn_STRUCT_get_Input();
+        struct CLIB_OpenEpiCentre_STRUCT__Output* dyn_STRUCT_get_Output();
+        struct CLIB_OpenEpiCentre_STRUCT__User_Algorithm* dyn_STRUCT_get_User_Algorithm();
+        struct CLIB_OpenEpiCentre_STRUCT__User_Input* dyn_STRUCT_get_User_Input();
+        struct CLIB_OpenEpiCentre_STRUCT__User_Output* dyn_STRUCT_get_User_Output();
         static void stat_CLASS_boot0_DECLARE_CLIB_OpenEpiCentre_Framework();
         static void stat_CLASS_boot1_DEFINE_CLIB_OpenEpiCentre_Framework();
         static void stat_CLASS_boot3_INITIALISE_CLIB_OpenEpiCentre_Framework();

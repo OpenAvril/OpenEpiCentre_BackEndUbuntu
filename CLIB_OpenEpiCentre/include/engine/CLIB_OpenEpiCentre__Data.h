@@ -7,12 +7,9 @@
 #include "../structs/CLIB_OpenEpiCentre_STRUCT__Input.h"
 #include "../structs/CLIB_OpenEpiCentre_STRUCT__Output.h"
 #include <array>
-#include <cstdint>
 #include <vector>
-namespace CLIBOpenEpiCentre
-{
-    class CLIB_OpenEpiCentre__Data
-    {
+namespace CLIBOpenEpiCentre {
+    class CLIB_OpenEpiCentre__Data {
      public:
         CLIB_OpenEpiCentre__Data();
         virtual ~CLIB_OpenEpiCentre__Data();
@@ -22,7 +19,6 @@ namespace CLIBOpenEpiCentre
         void dyn_REG_boot1_DEFINE_CLIB_OpenEpiCentre__Data(class CLIB_OpenEpiCentre__Framework* obj);
         void dyn_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre__Data(class CLIB_OpenEpiCentre__Framework* obj);
         void dyn_REG_boot3_INITIALISE_CLIB_OpenEpiCentre__Data(class CLIB_OpenEpiCentre__Framework* obj, struct CLIB_OpenEpiCentre_STRUCT__Input* objInput, struct CLIB_OpenEpiCentre_STRUCT__Output* objOutput);
-        void dyn_REG_boot4_INSTANTIATE_CLIB_OpenEpiCentre__Data(class CLIB_OpenEpiCentre__Framework* obj);
         struct CLIB_OpenEpiCentre_STRUCT__Input* dyn_REG_get_ptr_Item_array_Of_doubleBuffer_Input_READ(class CLIB_OpenEpiCentre__Framework* obj);
         struct CLIB_OpenEpiCentre_STRUCT__Input* dyn_REG_get_ptr_Item_array_Of_doubleBuffer_Input_WRITE(class CLIB_OpenEpiCentre__Framework* obj);
         struct CLIB_OpenEpiCentre_STRUCT__Output* dyn_REG_get_ptr_Item_array_Of_doubleBuffer_Output_READ(class CLIB_OpenEpiCentre__Framework* obj);
@@ -73,14 +69,14 @@ namespace CLIBOpenEpiCentre
         static void stat_REG_boot1_DEFINE_buffer_stack_Of_OutputPraise();
         static void stat_REG_boot2_SUBSTANTIATE_buffer_Input_ReferenceForThread(CLIB_OpenEpiCentre__Framework* obj);
         static void stat_REG_boot2_SUBSTANTIATE_buffer_Output_ReferenceForThread(CLIB_OpenEpiCentre__Framework* obj);
-        static void stat_REG_boot2_SUBSTANTIATE_doubleBuffer_Input(CLIB_OpenEpiCentre__Framework* obj) ;
-        static void stat_REG_boot2_SUBSTANTIATE_doubleBuffer_Output(CLIB_OpenEpiCentre__Framework* obj) ;
+        static void stat_REG_boot2_SUBSTANTIATE__array_Of_doubleBuffer_Input(CLIB_OpenEpiCentre__Framework* obj) ;
+        static void stat_REG_boot2_SUBSTANTIATE__array_Of_doubleBuffer_Output(CLIB_OpenEpiCentre__Framework* obj) ;
         static void stat_REG_boot2_SUBSTANTIATE_stack_Of_InputPraise(CLIB_OpenEpiCentre__Framework* obj) ;
         static void stat_REG_boot2_SUBSTANTIATE_stack_Of_OutputPraise(CLIB_OpenEpiCentre__Framework* obj) ;
         static void stat_REG_boot3_INITIALISE_buffer_Input_ReferenceForThread(struct CLIB_OpenEpiCentre_STRUCT__Input* objInput);
         static void stat_REG_boot3_INITIALISE_buffer_Output_ReferenceForThread(struct CLIB_OpenEpiCentre_STRUCT__Output* objOutput);
-        static void stat_REG_boot3_INITIALISE_doubleBuffer_Input(struct CLIB_OpenEpiCentre_STRUCT__Input* objInput);
-        static void stat_REG_boot3_INITIALISE_doubleBuffer_Output(struct CLIB_OpenEpiCentre_STRUCT__Output* objOutput);
+        static void stat_REG_boot3_INITIALISE_array_Of_doubleBuffer_Input(CLIB_OpenEpiCentre__Framework* obj, struct CLIB_OpenEpiCentre_STRUCT__Input* objInput);
+        static void stat_REG_boot3_INITIALISE_array_Of_doubleBuffer_Output(CLIB_OpenEpiCentre__Framework* obj, struct CLIB_OpenEpiCentre_STRUCT__Output* objOutput);
         static void stat_REG_boot3_INITIALISE_stack_Of_InputPraise(struct CLIB_OpenEpiCentre_STRUCT__Input* objInput);
         static void stat_REG_boot3_INITIALISE_stack_Of_OutputPraise(struct CLIB_OpenEpiCentre_STRUCT__Output* objOutput);
         static std::array<struct CLIB_OpenEpiCentre_STRUCT__Input*, 3>* stat_REG_get_ptr_Array_Of_buffer_Input_ReferenceForThread();//NUMBER OF CONCURRENT THREADS.
