@@ -52,11 +52,8 @@
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT__Input::dyn_REG_boot3_INITIALISE_Input(CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Framework* obj)
     {
         std::cout << "entered dyn_REG_boot3_INITIALISE_Input()" << std::endl;
-        std::cout << "testpoint: ALPHA." << std::endl;
         stat_REG_boot3_INITIALISE_Input_praiseEventId();
-        std::cout << "testpoint: BRAVO." << std::endl;
         stat_REG_boot3_INITIALISE_Input_playerId();
-        std::cout << "testpoint: CHARLIE." << std::endl;
         stat_REG_boot3_INITIALISE_List_Of_PraiseInputSubset(obj);
         std::cout << "exiting dyn_REG_boot3_INITIALISE_Input()" << std::endl;
     }

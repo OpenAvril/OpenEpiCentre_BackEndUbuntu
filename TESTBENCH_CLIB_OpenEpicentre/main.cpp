@@ -67,6 +67,11 @@ int main() {
     obj = static_cast<CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Framework*>(CLIBOpenEpiCentre::CLIBConcurrentServerIO::CLIBConcurrentServerIO__app_FUNCT_generate_Program());
 	stat_APP_boot4_INSTANTIATE_CLIB_OpenEpiCentre();
 	std::cout << "SIMULATION :: start." << std::endl;
+	auto* temp = obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Data()->dyn_REG_get_ptr_Item_array_Of_doubleBuffer_Input_WRITE(obj);
+	if (temp == nullptr) {
+		std::cout << "dyn_REG_get_ptr_Item_array_Of_doubleBuffer_Input_WRITE = nullptr" << std::endl;
+	}
+/*
 	unsigned char* praiseId = CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::stat_CONVERT_CLIB_OpenEpiCentre_Global__Msbuint8_t_To_MsbByteArray(0);
 	unsigned char* valueA = CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::stat_CONVERT_CLIB_OpenEpiCentre_Global__MsbDouble_To_MsbByteArray(1.1);
 	unsigned char* valueB = CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::stat_CONVERT_CLIB_OpenEpiCentre_Global__MsbDouble_To_MsbByteArray(2.3);
@@ -91,6 +96,7 @@ int main() {
 		CLIBOpenEpiCentre::CLIBConcurrentServerIO::CLIBConcurrentServerIO__dyn_PGM_WriteEnableStack_ServerOutputSend_Extraction__write_End();
 
 	}
+*/
 	std::cout << "SIMULATION :: end." << std::endl;
 	delete obj;
 	return 0;
