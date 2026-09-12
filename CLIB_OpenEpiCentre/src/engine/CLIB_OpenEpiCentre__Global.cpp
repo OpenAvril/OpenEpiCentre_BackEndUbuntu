@@ -82,15 +82,17 @@ enum Axis
         std::cout << "exiting stat_REG_boot0_DECLARE_CLIB_OpenEpiCentre_Global()" << std::endl;
     }
     int CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::stat_CONVERT_Bool_To_Int(bool value) {
+        std::cout << "entered stat_CONVERT_Bool_To_Int()" << std::endl;
         int* temp = nullptr;
-        temp = new int();
-        *temp = 2;
+        temp = new int(INT_MAX);
         if (value) {
             *temp = 1;;
         }
-        if (!value) {
+        else {
             *temp = 0;
         }
+        std::cout << "<= int = " << *temp << std::endl;
+        std::cout << "exiting stat_CONVERT_Bool_To_Int()" << std::endl;
         return *temp;
     }
     unsigned char* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::stat_CONVERT_CLIB_OpenEpiCentre_Global__Msbbool_to_MsbByteArray(bool value) {

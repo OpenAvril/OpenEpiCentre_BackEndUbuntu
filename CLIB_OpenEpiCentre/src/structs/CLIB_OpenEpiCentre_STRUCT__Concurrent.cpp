@@ -22,33 +22,27 @@
 #include <iostream>
     std::byte* CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT__Concurrent::_stat_REG_CLIB_OpenEpiCentre__Concurrent__threadId;
 // public.
-    void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT__Concurrent::app_do_Concurrent_Algorithm_For_PraiseEventId(CLIB_OpenEpiCentre__Framework* obj, std::byte playerId, unsigned long long praiseEventId, Object* ptr_Input_Subset, Object* ptr_Output_Subset)
-    {
-        switch (praiseEventId)
-        {
-        case 0: {
-            CLIB_OpenEpiCentre_STRUCT__Algorithm_praise0* _stat_STRUCT_Algorithm_praise0_Subset = obj->dyn_STRUCT_get_User_Algorithm()->dyn_CLASS_get_ptr_Algorithm_praise0();
-            _stat_STRUCT_Algorithm_praise0_Subset->app_Do_Praise(reinterpret_cast<CLIB_OpenEpiCentre_STRUCT__Input_praise0*>(ptr_Input_Subset), reinterpret_cast<CLIB_OpenEpiCentre_STRUCT__Output_praise0*>(ptr_Output_Subset));
-            break;
-        }
-        case 1: {
-            CLIB_OpenEpiCentre_STRUCT__Algorithm_praise1* _stat_STRUCT_Algorithm_praise1_Subset = obj->dyn_STRUCT_get_User_Algorithm()->dyn_CLASS_get_ptr_Algorithm_praise1();
-            _stat_STRUCT_Algorithm_praise1_Subset->app_Do_Praise(reinterpret_cast<CLIB_OpenEpiCentre_STRUCT__Input_praise1*>(ptr_Input_Subset), reinterpret_cast<CLIB_OpenEpiCentre_STRUCT__Output_praise1*>(ptr_Output_Subset));
-            break;
-        }
-        case 2: {
-            CLIB_OpenEpiCentre_STRUCT__Algorithm_praise2* _stat_STRUCT_Algorithm_praise2_Subset = obj->dyn_STRUCT_get_User_Algorithm()->dyn_CLASS_get_ptr_Algorithm_praise2();
-            _stat_STRUCT_Algorithm_praise2_Subset->app_Do_Praise(reinterpret_cast<CLIB_OpenEpiCentre_STRUCT__Input_praise2*>(ptr_Input_Subset), reinterpret_cast<CLIB_OpenEpiCentre_STRUCT__Output_praise2*>(ptr_Output_Subset));
-            break;
-        }
-        case 3: {
-            CLIB_OpenEpiCentre_STRUCT__Algorithm_praise3* _stat_STRUCT_Algorithm_praise3_Subset = obj->dyn_STRUCT_get_User_Algorithm()->dyn_CLASS_get_ptr_Algorithm_praise3();
-            _stat_STRUCT_Algorithm_praise3_Subset->app_Do_Praise(reinterpret_cast<CLIB_OpenEpiCentre_STRUCT__Input_praise3*>(ptr_Input_Subset), reinterpret_cast<CLIB_OpenEpiCentre_STRUCT__Output_praise3*>(ptr_Output_Subset));
-            break;
-        }
-        default: {
-            break;
-        }
+    void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT__Concurrent::app_do_Concurrent_Algorithm_For_PraiseEventId(CLIB_OpenEpiCentre__Framework* obj, std::byte playerId, unsigned long long praiseEventId, Object* ptr_Input_Subset, Object* ptr_Output_Subset) {
+        switch (praiseEventId) {
+            case 0: {
+                obj->dyn_STRUCT_get_CLIB_OpenEpiCentre__Framework__User_Algorithm()->dyn_CLASS_get_ptr_Algorithm_praise0()->app_Do_Praise(reinterpret_cast<CLIB_OpenEpiCentre_STRUCT__Input_praise0*>(ptr_Input_Subset), reinterpret_cast<CLIB_OpenEpiCentre_STRUCT__Output_praise0*>(ptr_Output_Subset));
+                break;
+            }
+            case 1: {
+                obj->dyn_STRUCT_get_CLIB_OpenEpiCentre__Framework__User_Algorithm()->dyn_CLASS_get_ptr_Algorithm_praise1()->app_Do_Praise(reinterpret_cast<CLIB_OpenEpiCentre_STRUCT__Input_praise1*>(ptr_Input_Subset), reinterpret_cast<CLIB_OpenEpiCentre_STRUCT__Output_praise1*>(ptr_Output_Subset));
+                break;
+            }
+            case 2: {
+                obj->dyn_STRUCT_get_CLIB_OpenEpiCentre__Framework__User_Algorithm()->dyn_CLASS_get_ptr_Algorithm_praise2()->app_Do_Praise(reinterpret_cast<CLIB_OpenEpiCentre_STRUCT__Input_praise2*>(ptr_Input_Subset), reinterpret_cast<CLIB_OpenEpiCentre_STRUCT__Output_praise2*>(ptr_Output_Subset));
+                break;
+            }
+            case 3: {
+                obj->dyn_STRUCT_get_CLIB_OpenEpiCentre__Framework__User_Algorithm()->dyn_CLASS_get_ptr_Algorithm_praise3()->app_Do_Praise(reinterpret_cast<CLIB_OpenEpiCentre_STRUCT__Input_praise3*>(ptr_Input_Subset), reinterpret_cast<CLIB_OpenEpiCentre_STRUCT__Output_praise3*>(ptr_Output_Subset));
+                break;
+            }
+            default: {
+                break;
+            }
         }
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT__Concurrent::dyn_REG_boot1_DEFINE_Concurrent()
@@ -87,7 +81,7 @@
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT__Concurrent::stat_app_thread_Concurrency(CLIB_OpenEpiCentre__Framework* obj, std::byte concurrent_threadID)
     {
         bool* doneOnce = new bool(true);
-        while (obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Execute()->dyn_CLASS_get_ptr_Execute_Control()->dyn_REG_get_Item_On_List_Of_FLAG_ThreadInitialised(static_cast<int>(concurrent_threadID)) == true)
+        while (obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre__Framework__App()->dyn_CLASS_get_ptr_Execute()->dyn_CLASS_get_ptr_Execute_Control()->dyn_REG_get_Item_On_List_Of_FLAG_ThreadInitialised(static_cast<int>(concurrent_threadID)) == true)
         {
             if (*doneOnce == true)
             {
@@ -96,36 +90,36 @@
             }
         }
         //std::cout << "Thread Initialised: ID=" << (concurrent_threadID) << " => Thread_Concurrency()" << std::endl;//TestBench
-        while (obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Execute()->dyn_CLASS_get_ptr_Execute_Control()->dyn_REG_get_FLAG_is_SystemInitialised() == true)
+        while (obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre__Framework__App()->dyn_CLASS_get_ptr_Execute()->dyn_CLASS_get_ptr_Execute_Control()->dyn_REG_get_FLAG_is_SystemInitialised() == true)
         {
 
         }
         //std::cout << "Thread Starting " << (concurrent_threadID) << " => Thread_Concurrency()" << std::endl;//TestBench
-        while (obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Execute()->dyn_CLASS_get_ptr_Execute_Control()->dyn_REG_get_Item_On_List_Of_FLAG_ThreadInitialised(static_cast<int>(concurrent_threadID)) == false)
+        while (obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre__Framework__App()->dyn_CLASS_get_ptr_Execute()->dyn_CLASS_get_ptr_Execute_Control()->dyn_REG_get_Item_On_List_Of_FLAG_ThreadInitialised(static_cast<int>(concurrent_threadID)) == false)
         {
             switch (CLIB_OpenEpiCentre__Global::stat_CONVERT_CLIB_OpenEpiCentre_Global__MsbByteArray_To_MsbunsignedLongLong(CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server__App_REG_get_Flag_ConcurrentCoreState(CLIB_OpenEpiCentre__Global::stat_CONVERT_CLIB_OpenEpiCentre_Global__unsignedLongLong_to_ByteArray(static_cast<int>(concurrent_threadID))))) {
                 case false: {
                     break;
                 }
                 case true: {
-                    if (obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Data()->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre__Data__Control()->dyn_REG_get_Item_FLAG_isLoaded_Stack_InputAction() == true)
+                    if (obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre__Framework__App()->dyn_CLASS_get_ptr_Data()->dyn_CLASS_get_ptr_dyn_STRUCT_get_ptr_CLIB_OpenEpiCentre__Data__Control()->dyn_REG_get_Item_FLAG_isLoaded_Stack_InputAction() == true)
                     {
                         CLIBWriteQueAtServerInputReceive::CLIB_WriteEnableForThreadsAt_ServerInputReceive::CLIB_WriteEnableForThreadsAt_ServerInputReceive__App_FUNCT_write_Start(CLIB_OpenEpiCentre__Global::stat_CONVERT_CLIB_OpenEpiCentre_Global__unsignedLongLong_to_ByteArray(static_cast<unsigned long>(static_cast<int>(concurrent_threadID) + 1)));
                         //todo
-                        obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Data()->dyn_REG_get_ptr_Item_Of_list_Of_ptr_array_Of_buffer_Output_ReferenceForThread(concurrent_threadID)->app_select_And_Set_Output_Subset(obj, obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Data()->dyn_REG_get_ptr_Item_Of_list_Of_ptr_array_Of_buffer_Output_ReferenceForThread(concurrent_threadID)->dyn_REG_get_ptr_CLIB_OpenEpiCentre_STRUCT__Output_praiseEventId());
-                        obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Data()->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre__Data__Control()->app_FUNCT_pop_From_Stack_Of_Input(obj, concurrent_threadID);
+                        obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre__Framework__App()->dyn_CLASS_get_ptr_Data()->dyn_REG_get_ptr_CLIB_OpenEpiCentre__Data__Item_Of_list_Of_ptr_array_Of_buffer_Output_ReferenceForThread(concurrent_threadID)->app_select_And_Set_Output_Subset(obj, obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre__Framework__App()->dyn_CLASS_get_ptr_Data()->dyn_REG_get_ptr_CLIB_OpenEpiCentre__Data__Item_Of_list_Of_ptr_array_Of_buffer_Output_ReferenceForThread(concurrent_threadID)->dyn_REG_get_ptr_CLIB_OpenEpiCentre_STRUCT__Output_praiseEventId());
+                        obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre__Framework__App()->dyn_CLASS_get_ptr_Data()->dyn_CLASS_get_ptr_dyn_STRUCT_get_ptr_CLIB_OpenEpiCentre__Data__Control()->app_FUNCT_pop_CLIB_OpenEpiCentre__Data__Control__STACK_Of_Input(obj, concurrent_threadID);
                         CLIBWriteQueAtServerInputReceive::CLIB_WriteEnableForThreadsAt_ServerInputReceive::CLIB_WriteEnableForThreadsAt_ServerInputReceive__App_FUNCT_write_End(CLIB_OpenEpiCentre__Global::stat_CONVERT_CLIB_OpenEpiCentre_Global__unsignedLongLong_to_ByteArray(static_cast<unsigned long>(static_cast<int>(concurrent_threadID) + 1)));
-                        obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Algorithms()->dyn_STRUCT_get_Item_On_list_Of_ptr_Concurrent(concurrent_threadID)->app_do_Concurrent_Algorithm_For_PraiseEventId(
+                        obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre__Framework__App()->dyn_CLASS_get_ptr_Algorithms()->dyn_STRUCT_get_Item_On_list_Of_ptr_Concurrent(concurrent_threadID)->app_do_Concurrent_Algorithm_For_PraiseEventId(
                             obj,
-                            obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Data()->dyn_REG_get_ptr_Item_Of_list_Of_ptr_array_Of_buffer_Input_ReferenceForThread(concurrent_threadID)->dyn_REG_get_ptr_Input_playerId(),
-                            obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Data()->dyn_REG_get_ptr_Item_Of_list_Of_ptr_array_Of_buffer_Input_ReferenceForThread(concurrent_threadID)->dyn_REG_get_ptr_Input_praiseEventId(),
-                            obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Data()->dyn_REG_get_ptr_Item_Of_list_Of_ptr_array_Of_buffer_Input_ReferenceForThread(concurrent_threadID)->dyn_REG_get_ptr_Item_Of_ptr_Inputs_Subset(),
-                            obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Data()->dyn_REG_get_ptr_Item_Of_list_Of_ptr_array_Of_buffer_Output_ReferenceForThread(concurrent_threadID)->dyn_REG_get_ptr_Item_Of_ptr_Outputs_Subset()
+                            obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre__Framework__App()->dyn_CLASS_get_ptr_Data()->dyn_REG_get_ptr_CLIB_OpenEpiCentre__Data__Item_Of_list_Of_ptr_array_Of_buffer_Input_ReferenceForThread(concurrent_threadID)->dyn_REG_get_ptr_Input_playerId(),
+                            obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre__Framework__App()->dyn_CLASS_get_ptr_Data()->dyn_REG_get_ptr_CLIB_OpenEpiCentre__Data__Item_Of_list_Of_ptr_array_Of_buffer_Input_ReferenceForThread(concurrent_threadID)->dyn_REG_get_ptr_Input_praiseEventId(),
+                            obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre__Framework__App()->dyn_CLASS_get_ptr_Data()->dyn_REG_get_ptr_CLIB_OpenEpiCentre__Data__Item_Of_list_Of_ptr_array_Of_buffer_Input_ReferenceForThread(concurrent_threadID)->dyn_REG_get_ptr_Item_Of_ptr_Inputs_Subset(),
+                            obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre__Framework__App()->dyn_CLASS_get_ptr_Data()->dyn_REG_get_ptr_CLIB_OpenEpiCentre__Data__Item_Of_list_Of_ptr_array_Of_buffer_Output_ReferenceForThread(concurrent_threadID)->dyn_REG_get_ptr_Item_Of_ptr_Outputs_Subset()
                         );
                         CLIBWriteQueAtServerOutputSend::CLIB_WriteEnableForThreadsAt_ServerOutputSend::CLIB_WriteEnableForThreadsAt_ServerOutputSend__App_FUNCT_write_Start(CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::stat_CONVERT_CLIB_OpenEpiCentre_Global__unsignedLongLong_to_ByteArray(static_cast<unsigned long>(static_cast<int>(concurrent_threadID) + 1)));
-                        obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Data()->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre__Data__Control()->app_FUNCT_push_To_STACK_Of_Output(obj, concurrent_threadID);
+                        obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre__Framework__App()->dyn_CLASS_get_ptr_Data()->dyn_CLASS_get_ptr_dyn_STRUCT_get_ptr_CLIB_OpenEpiCentre__Data__Control()->app_FUNCT_push_CLIB_OpenEpiCentre__Data__Control__STACK_Of_Output(obj, concurrent_threadID);
                         CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server__App_FUNCT_thread_End(CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::stat_CONVERT_CLIB_OpenEpiCentre_Global__unsignedLongLong_to_ByteArray(static_cast<int>(concurrent_threadID)));
-                        if (obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_App()->dyn_CLASS_get_ptr_Data()->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre__Data__Control()->dyn_REG_get_Item_FLAG_isLoaded_Stack_OutputSend() == true)
+                        if (obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre__Framework__App()->dyn_CLASS_get_ptr_Data()->dyn_CLASS_get_ptr_dyn_STRUCT_get_ptr_CLIB_OpenEpiCentre__Data__Control()->dyn_REG_get_Item_FLAG_isLoaded_Stack_OutputSend() == true)
                         {
                             if (CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server__App_REG_get_Flag_ConcurrentCoreState(CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server__App_REG_get_coreId_To_launch()) == CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server__App_REG_get_Flag_Idle())
                             {

@@ -5,7 +5,7 @@ extern "C" {
 	namespace CLIBOpenEpiCentre	{
 		class CLIBConcurrentServerIO {
 		public:
-			static void CLIBConcurrentServerIO__app_FUNCT_flip_Input_DoubleBuffer();
+			static void CLIBConcurrentServerIO__app_FUNCT_flip_CLIB_OpenEpiCentre__Data__Control__REG_Input_DoubleBuffer();
 			static void* CLIBConcurrentServerIO__app_FUNCT_generate_Program();
 			static unsigned char* CLIBConcurrentServerIO__app_FUNCT_get_FLAG_isPGM_INSTANTIATED();
 			static void CLIBConcurrentServerIO__app_FUNCT_select_set_Intput_Subset(unsigned char* bytes);
