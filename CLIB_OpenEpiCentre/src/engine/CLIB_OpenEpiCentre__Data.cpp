@@ -59,8 +59,6 @@
         stat_REG_boot3_INITIALISE_CLIB_OpenEpiCentre__Data__side_To_Write_For_doubleBuffer_Output(obj, objOutput);
         stat_REG_boot3_INITIALISE_CLIB_OpenEpiCentre__Data__stack_Of_InputPraise(objInput);
         stat_REG_boot3_INITIALISE_CLIB_OpenEpiCentre__Data__stack_Of_OutputPraise(objOutput);
-        stat_REG_boot3_INITIALISE_CLIB_OpenEpiCentre__Data__buffer_User_Input(obj);
-        stat_REG_boot3_INITIALISE_CLIB_OpenEpiCentre__Data__buffer_User_Output(obj);
         std::cout << "exiting dyn_REG_boot3_INITIALISE_CLIB_OpenEpiCentre__Data()" << std::endl;
     }
     CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT__Input* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Data::dyn_REG_get_ptr_CLIB_OpenEpiCentre__Data__Item_side_To_Write_For_doubleBuffer_Input_READ(CLIB_OpenEpiCentre__Framework* obj) {
