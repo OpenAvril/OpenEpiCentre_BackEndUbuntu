@@ -294,7 +294,7 @@
 		temp = new bool();
 		*temp = true;
 		if (!CLIBConcurrentServerIO__stat_REG_flag_CLIB_OpenEpiCentre_array_isINSTANTIATED()->at(0)) {
-			*temp = CLIBConcurrentServerIO__stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework()->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre__Framework__App()->dyn_CLASS_get_ptr_Execute()->dyn_CLASS_get_ptr_Execute_Control()->dyn_REG_get_FLAG_is_SystemInitialised();
+			*temp = CLIBConcurrentServerIO__stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework()->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre__Framework__App()->dyn_CLASS_get_ptr_Execute()->dyn_CLASS_get_ptr_Execute_Control()->dyn_REG_get_FLAG_CLIB_OpenEpiCentre__Execute__Control__isSystemInitialised();
 		}
 		else {
 			CLIBConcurrentServerIO__stat_REG_flag_CLIB_OpenEpiCentre_array_isINSTANTIATED()->at(13) = !CLIBConcurrentServerIO__stat_REG_flag_CLIB_OpenEpiCentre_array_isINSTANTIATED()->at(0) ;

@@ -19,8 +19,8 @@ namespace CLIBOpenEpiCentre {
         struct CLIB_OpenEpiCentre_STRUCT__Input* dyn_REG_get_ptr_CLIB_OpenEpiCentre__Data__Input_at_ItemSideToWRITE_For_doubleBufferInput(class CLIB_OpenEpiCentre__Framework* obj);
         struct CLIB_OpenEpiCentre_STRUCT__Output* dyn_REG_get_ptr_CLIB_OpenEpiCentre__Data__Output_at_ItemSideToREAD_For_doubleBufferOutput(class CLIB_OpenEpiCentre__Framework* obj);
         struct CLIB_OpenEpiCentre_STRUCT__Output* dyn_REG_get_ptr_CLIB_OpenEpiCentre__Data__Output_at_ItemSideToWRITE_For_doubleBufferOutput(class CLIB_OpenEpiCentre__Framework *obj);
-        struct CLIB_OpenEpiCentre_STRUCT__Input* dyn_REG_get_ptr_CLIB_OpenEpiCentre__Data__Item_Of_list_Of_ptr_array_Of_buffer_Input_ReferenceForThread(std::byte concurrentThreadId);
-        struct CLIB_OpenEpiCentre_STRUCT__Output* dyn_REG_get_ptr_CLIB_OpenEpiCentre__Data__Item_Of_list_Of_ptr_array_Of_buffer_Output_ReferenceForThread(std::byte concurrentThreadId);
+        struct CLIB_OpenEpiCentre_STRUCT__Input* dyn_REG_get_ptr_CLIB_OpenEpiCentre__Data__Item_Of_list_Of_ptr_array_Of_buffer_Input_ReferenceForThread(uint8_t concurrentThreadId);
+        struct CLIB_OpenEpiCentre_STRUCT__Output* dyn_REG_get_ptr_CLIB_OpenEpiCentre__Data__Item_Of_list_Of_ptr_array_Of_buffer_Output_ReferenceForThread(uint8_t concurrentThreadId);
         struct CLIB_OpenEpiCentre_STRUCT__Input* dyn_REG_get_ptr_CLIB_OpenEpiCentre__Data__Item_On_vector_Of_stack_Of_InputPraise(unsigned long long slot);
         struct CLIB_OpenEpiCentre_STRUCT__Output* dyn_REG_get_ptr_CLIB_OpenEpiCentre__Data__Item_On_vector_Of_stack_Of_OutputPraise(unsigned long long slot);
         std::vector<struct CLIB_OpenEpiCentre_STRUCT__Input*>* dyn_REG_get_ptr_CLIB_OpenEpiCentre__Data__vector_Of_stack_Of_InputPraise();
@@ -29,8 +29,8 @@ namespace CLIBOpenEpiCentre {
         void dyn_REG_set_ptr_CLIB_OpenEpiCentre__Data__Input_at_ItemSideToWRITE_For_doubleBufferInput(class CLIB_OpenEpiCentre__Framework* obj, struct CLIB_OpenEpiCentre_STRUCT__Input* newClass);
         void dyn_REG_set_ptr_CLIB_OpenEpiCentre__Data__Output_at_ItemSideToREAD_For_doubleBufferOutput(class CLIB_OpenEpiCentre__Framework* obj, struct CLIB_OpenEpiCentre_STRUCT__Output* newClass);
         void dyn_REG_set_ptr_CLIB_OpenEpiCentre__Data__Output_at_ItemSideToWRITE_For_doubleBufferOutput(class CLIB_OpenEpiCentre__Framework* obj, struct CLIB_OpenEpiCentre_STRUCT__Output* newClass);
-        void dyn_REG_set_CLIB_OpenEpiCentre__Data__Item_On_Array_Of_buffer_Input_ReferenceForThread(std::byte concurrentThreadId, struct CLIB_OpenEpiCentre_STRUCT__Input* newClass);
-        void dyn_REG_set_CLIB_OpenEpiCentre__Data__Item_On_Array_Of_buffer_Output_ReferenceForThread(std::byte concurrentThreadId, struct CLIB_OpenEpiCentre_STRUCT__Output* newClass);
+        void dyn_REG_set_CLIB_OpenEpiCentre__Data__Item_On_Array_Of_buffer_Input_ReferenceForThread(uint8_t concurrentThreadId, struct CLIB_OpenEpiCentre_STRUCT__Input* newClass);
+        void dyn_REG_set_CLIB_OpenEpiCentre__Data__Item_On_Array_Of_buffer_Output_ReferenceForThread(uint8_t concurrentThreadId, struct CLIB_OpenEpiCentre_STRUCT__Output* newClass);
         void dyn_REG_set_CLIB_OpenEpiCentre__Data__Item_On_Vector_Of_stack_Of_InputPraise(unsigned long long slot, struct CLIB_OpenEpiCentre_STRUCT__Input* newClass);
         void dyn_REG_set_CLIB_OpenEpiCentre__Data__Item_On_Vector_Of_stack_Of_OutputPraise(unsigned long long slot, struct CLIB_OpenEpiCentre_STRUCT__Output* newClass);
         static void stat_CLASS_boot0_DECLARE_CLIB_OpenEpiCentre__Data();
@@ -75,8 +75,8 @@ namespace CLIBOpenEpiCentre {
         static std::array<struct CLIB_OpenEpiCentre_STRUCT__Output*, 2>* stat_get_REG_ptr_CLIB_OpenEpiCentre__Data__array_Of_buffer_ItemSide_For_doubleBufferOutput();
         static std::vector<struct CLIB_OpenEpiCentre_STRUCT__Input*>* stat_REG_get_ptr_CLIB_OpenEpiCentre__Data__vector_Of_stack_Of_InputPraise();
         static std::vector<struct CLIB_OpenEpiCentre_STRUCT__Output*>* stat_REG_get_ptr_CLIB_OpenEpiCentre__Data__vector_Of_stack_Of_OutputPraise();
-        static void stat_REG_set_CLIB_OpenEpiCentre__Data__Item_On_Array_Of_buffer_Input_ReferenceForThread(std::byte concurrentThreadId, struct CLIB_OpenEpiCentre_STRUCT__Input* newClass);
-        static void stat_REG_set_CLIB_OpenEpiCentre__Data__Item_On_Array_Of_buffer_Output_ReferenceForThread(std::byte concurrentThreadId, struct CLIB_OpenEpiCentre_STRUCT__Output* newClass);
+        static void stat_REG_set_CLIB_OpenEpiCentre__Data__Item_On_Array_Of_buffer_Input_ReferenceForThread(uint8_t concurrentThreadId, struct CLIB_OpenEpiCentre_STRUCT__Input* newClass);
+        static void stat_REG_set_CLIB_OpenEpiCentre__Data__Item_On_Array_Of_buffer_Output_ReferenceForThread(uint8_t concurrentThreadId, struct CLIB_OpenEpiCentre_STRUCT__Output* newClass);
         static void stat_REG_set_CLIB_OpenEpiCentre__Data__Item_On_Vector_Of_stack_Of_InputPraise(unsigned long long slot, struct CLIB_OpenEpiCentre_STRUCT__Input* newClass);
         static void stat_REG_set_CLIB_OpenEpiCentre__Data__Item_On_Vector_Of_stack_Of_OutputPraise(unsigned long long slot, struct CLIB_OpenEpiCentre_STRUCT__Output* newClass);
     };

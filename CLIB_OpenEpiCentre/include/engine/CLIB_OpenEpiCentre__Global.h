@@ -11,7 +11,7 @@ namespace CLIBOpenEpiCentre {
         void dyn_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_Global();
         void dyn_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_Global();
         void dyn_REG_boot4_INSTANTIATE_CLIB_OpenEpiCentre_Global();
-        std::byte dyn_REG_get_Item_number_Of_Implemented_Cores();
+        uint8_t dyn_REG_get_Item_number_Of_Implemented_Cores();
         unsigned long long dyn_REG_get_Item_number_Of_Praise_Events();
         static void stat_CLASS_boot0_DECLARE_CLIB_OpenEpiCentre_Global();
         static void stat_CLASS_boot1_DEFINE_CLIB_OpenEpiCentre_Global();
@@ -28,7 +28,7 @@ namespace CLIBOpenEpiCentre {
         static unsigned char* stat_CONVERT_CLIB_OpenEpiCentre_Global__MsbDouble_To_MsbByteArray(double value);
         static unsigned char* stat_CONVERT_CLIB_OpenEpiCentre_Global__unsignedLongLong_to_ByteArray(unsigned long long value);
     private:
-        static std::byte* _stat_REG_ptr_number_Of_Implemented_Cores;
+        static uint8_t* _stat_REG_ptr_number_Of_Implemented_Cores;
         static unsigned long long* _stat_REG_ptr_number_Of_Praise_Events;
         static void stat_REG_boot1_DEFINE_number_Of_Implemented_Cores();
         static void stat_REG_boot1_DEFINE_number_Of_Praise_Events();
@@ -36,7 +36,7 @@ namespace CLIBOpenEpiCentre {
         static void stat_REG_boot2_SUBSTANTIATE_number_Of_Praise_Events();
         static void stat_REG_boot3_INITIALISE_number_Of_Implemented_Cores();
         static void stat_REG_boot3_INITIALISE_number_Of_Praise_Events();
-        static std::byte* stat_REG_get_Ptr_number_Of_Implemented_Cores();
+        static uint8_t* stat_REG_get_Ptr_number_Of_Implemented_Cores();
         static unsigned long long* stat_REG_get_Ptr_number_Of_Praise_Events();
     };
 }

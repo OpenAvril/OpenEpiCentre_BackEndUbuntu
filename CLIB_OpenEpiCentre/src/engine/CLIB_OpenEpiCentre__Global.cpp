@@ -12,7 +12,7 @@ enum Axis
     {
         ADDER
     };
-    std::byte* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::_stat_REG_ptr_number_Of_Implemented_Cores;
+    uint8_t* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::_stat_REG_ptr_number_Of_Implemented_Cores;
     unsigned long long* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::_stat_REG_ptr_number_Of_Praise_Events;
 // public.
     CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::CLIB_OpenEpiCentre__Global() {
@@ -50,7 +50,7 @@ enum Axis
 
         std::cout << "exiting dyn_REG_boot4_INSTANTIATE_CLIB_OpenEpiCentre_Global()" << std::endl;
     }
-    std::byte CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::dyn_REG_get_Item_number_Of_Implemented_Cores() {
+    uint8_t CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::dyn_REG_get_Item_number_Of_Implemented_Cores() {
         return *stat_REG_get_Ptr_number_Of_Implemented_Cores();
     }
     unsigned long long CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::dyn_REG_get_Item_number_Of_Praise_Events() {
@@ -98,7 +98,7 @@ enum Axis
     unsigned char* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::stat_CONVERT_CLIB_OpenEpiCentre_Global__Msbbool_to_MsbByteArray(bool value) {
         unsigned char* buffer = nullptr;
         buffer = new unsigned char();
-        for (int bitIndex = 0; bitIndex < sizeof(std::byte); bitIndex++) {
+        for (int bitIndex = 0; bitIndex < sizeof(uint8_t); bitIndex++) {
             buffer[bitIndex] = static_cast<unsigned char>(value);
         }
         return buffer;
@@ -156,8 +156,8 @@ enum Axis
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::stat_REG_boot2_SUBSTANTIATE_number_Of_Implemented_Cores()
     {
-        _stat_REG_ptr_number_Of_Implemented_Cores = new std::byte();
-        *_stat_REG_ptr_number_Of_Implemented_Cores = static_cast<std::byte>(255);
+        _stat_REG_ptr_number_Of_Implemented_Cores = new uint8_t();
+        *_stat_REG_ptr_number_Of_Implemented_Cores = static_cast<uint8_t>(255);
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::stat_REG_boot2_SUBSTANTIATE_number_Of_Praise_Events()
     {
@@ -166,13 +166,13 @@ enum Axis
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::stat_REG_boot3_INITIALISE_number_Of_Implemented_Cores()
     {
-        *_stat_REG_ptr_number_Of_Implemented_Cores = static_cast<std::byte>(4);
+        *_stat_REG_ptr_number_Of_Implemented_Cores = static_cast<uint8_t>(4);
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::stat_REG_boot3_INITIALISE_number_Of_Praise_Events()
     {
         *_stat_REG_ptr_number_Of_Praise_Events = static_cast<unsigned long long>(1);
     }
-    std::byte* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::stat_REG_get_Ptr_number_Of_Implemented_Cores()
+    uint8_t* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::stat_REG_get_Ptr_number_Of_Implemented_Cores()
     {
         return _stat_REG_ptr_number_Of_Implemented_Cores;
     }

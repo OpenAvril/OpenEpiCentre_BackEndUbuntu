@@ -15,10 +15,10 @@
     {
         delete _stat_REG_ptr_list_Of_ptr_Concurrent;
     }
-    CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT__Concurrent* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Algorithms::dyn_STRUCT_get_Item_On_list_Of_ptr_Concurrent(std::byte concurrentThreadId)
+    CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT__Concurrent* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Algorithms::dyn_STRUCT_get_Item_On_list_Of_ptr_Concurrent(uint8_t concurrentThreadId)
     {
         auto temp = stat_REG_get_ptr_list_Of_ptr_Concurrent()->begin();
-        std::advance(temp, static_cast<int>(concurrentThreadId));
+        std::advance(temp, concurrentThreadId);
         return *temp;
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Algorithms::dyn_REG_boot1_DEFINE_CLIB_OpenEpiCentre_Algorithm(CLIB_OpenEpiCentre__Framework* obj)

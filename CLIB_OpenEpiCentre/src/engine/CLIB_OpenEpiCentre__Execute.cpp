@@ -124,13 +124,13 @@
         CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server__App_REG_set_Flag_ConcurrentCoreState(byte_uint8_t, byte_bool);
         std::cout << "done CHECK member function of CLIB_LaunchEnableForConcurrentThreadsAt_Server() " << std::endl;
 
-        std::cout << "entered CHECK member function of CLIB_WriteEnableForThreadsAt_ServerConditionCode() " << std::endl;
-        //CLIBWriteQueAtServerConditionCode::CLIB_WriteEnableForThreadsAt_ServerConditionCode::CLIB_WriteEnableForThreadsAt_ServerConditionCode__App_FUNCT_generate_Program();
-        CLIBWriteQueAtServerConditionCode::CLIB_WriteEnableForThreadsAt_ServerConditionCode::CLIB_WriteEnableForThreadsAt_ServerConditionCode__App_FUNCT_get_FLAG_isPGM_INSTANTIATED();
-        CLIBWriteQueAtServerConditionCode::CLIB_WriteEnableForThreadsAt_ServerConditionCode::CLIB_WriteEnableForThreadsAt_ServerConditionCode__App_FUNCT_terminate_Program();
-        CLIBWriteQueAtServerConditionCode::CLIB_WriteEnableForThreadsAt_ServerConditionCode::CLIB_WriteEnableForThreadsAt_ServerConditionCode__App_FUNCT_write_End(bytes_unsignedLongLong);
-        CLIBWriteQueAtServerConditionCode::CLIB_WriteEnableForThreadsAt_ServerConditionCode::CLIB_WriteEnableForThreadsAt_ServerConditionCode__App_FUNCT_write_Start(bytes_unsignedLongLong);
-        std::cout << "done CHECK member function of CLIB_WriteEnableForThreadsAt_ServerConditionCode() " << std::endl;
+        std::cout << "entered CHECK member function of CLIBWriteEnableForThreadsAtServerConditionCode() " << std::endl;
+        //CLIBWriteQueAtServerConditionCode::CLIBWriteEnableForThreadsAtServerConditionCode::CLIBWriteEnableForThreadsAtServerConditionCode__App_FUNCT_generate_Program();
+        CLIBWriteQueAtServerConditionCode::CLIBWriteEnableForThreadsAtServerConditionCode::CLIBWriteEnableForThreadsAtServerConditionCode__App_FUNCT_get_FLAG_isPGM_INSTANTIATED();
+        CLIBWriteQueAtServerConditionCode::CLIBWriteEnableForThreadsAtServerConditionCode::CLIBWriteEnableForThreadsAtServerConditionCode__App_FUNCT_terminate_Program();
+        CLIBWriteQueAtServerConditionCode::CLIBWriteEnableForThreadsAtServerConditionCode::CLIBWriteEnableForThreadsAtServerConditionCode__App_FUNCT_write_End(bytes_unsignedLongLong);
+        CLIBWriteQueAtServerConditionCode::CLIBWriteEnableForThreadsAtServerConditionCode::CLIBWriteEnableForThreadsAtServerConditionCode__App_FUNCT_write_Start(bytes_unsignedLongLong);
+        std::cout << "done CHECK member function of CLIBWriteEnableForThreadsAtServerConditionCode() " << std::endl;
 
         delete bytes_unsignedLongLong;
         std::cout << "exiting stat_CLASS_boot4_INSTANTIATE_Execute()" << std::endl;
