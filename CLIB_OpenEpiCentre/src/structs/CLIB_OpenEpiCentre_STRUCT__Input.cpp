@@ -11,19 +11,19 @@
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT__Input::dyn_APP_select_And_Set_OpenEpiCentre_STRUCT__Input_Subset(CLIB_OpenEpiCentre__Framework* obj, unsigned long long praiseEventId) {
         switch (praiseEventId) {
             case 0:
-                obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre__Framework__App()->dyn_CLASS_get_ptr_Data()->dyn_REG_get_ptr_CLIB_OpenEpiCentre__Data__Item_side_To_Write_For_doubleBuffer_Input_WRITE(obj)->dyn_REG_set_ptr_CLIB_OpenEpiCentre_STRUCT__Input__Item_Of_ptr_Inputs_Subset(reinterpret_cast<CLIB_OpenEpiCentre_STRUCT__Input_praise0*>(obj->dyn_STRUCT_get_CLIB_OpenEpiCentre__Framework__User_Input()->dyn_CLASS_get_CLIB_OpenEpiCentre_STRUCT__UserInput__Item_On_List_Of_ptr_PraiseInputSubsets(praiseEventId)));
+                obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre__Framework__App()->dyn_CLASS_get_ptr_Data()->dyn_REG_get_ptr_CLIB_OpenEpiCentre__Data__Input_at_ItemSideToWRITE_For_doubleBufferInput(obj)->dyn_REG_set_ptr_CLIB_OpenEpiCentre_STRUCT__Input__Item_Of_ptr_Inputs_Subset(reinterpret_cast<CLIB_OpenEpiCentre_STRUCT__Input_praise0*>(obj->dyn_STRUCT_get_CLIB_OpenEpiCentre__Framework__User_Input()->dyn_CLASS_get_CLIB_OpenEpiCentre_STRUCT__UserInput__Item_On_List_Of_ptr_PraiseInputSubsets(praiseEventId)));
                 break;
 
             case 1:
-                obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre__Framework__App()->dyn_CLASS_get_ptr_Data()->dyn_REG_get_ptr_CLIB_OpenEpiCentre__Data__Item_side_To_Write_For_doubleBuffer_Input_WRITE(obj)->dyn_REG_set_ptr_CLIB_OpenEpiCentre_STRUCT__Input__Item_Of_ptr_Inputs_Subset(reinterpret_cast<CLIB_OpenEpiCentre_STRUCT__Input_praise1*>(obj->dyn_STRUCT_get_CLIB_OpenEpiCentre__Framework__User_Input()->dyn_CLASS_get_CLIB_OpenEpiCentre_STRUCT__UserInput__Item_On_List_Of_ptr_PraiseInputSubsets(praiseEventId)));
+                obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre__Framework__App()->dyn_CLASS_get_ptr_Data()->dyn_REG_get_ptr_CLIB_OpenEpiCentre__Data__Input_at_ItemSideToWRITE_For_doubleBufferInput(obj)->dyn_REG_set_ptr_CLIB_OpenEpiCentre_STRUCT__Input__Item_Of_ptr_Inputs_Subset(reinterpret_cast<CLIB_OpenEpiCentre_STRUCT__Input_praise1*>(obj->dyn_STRUCT_get_CLIB_OpenEpiCentre__Framework__User_Input()->dyn_CLASS_get_CLIB_OpenEpiCentre_STRUCT__UserInput__Item_On_List_Of_ptr_PraiseInputSubsets(praiseEventId)));
                 break;
 
             case 2:
-                obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre__Framework__App()->dyn_CLASS_get_ptr_Data()->dyn_REG_get_ptr_CLIB_OpenEpiCentre__Data__Item_side_To_Write_For_doubleBuffer_Input_WRITE(obj)->dyn_REG_set_ptr_CLIB_OpenEpiCentre_STRUCT__Input__Item_Of_ptr_Inputs_Subset(reinterpret_cast<CLIB_OpenEpiCentre_STRUCT__Input_praise2*>(obj->dyn_STRUCT_get_CLIB_OpenEpiCentre__Framework__User_Input()->dyn_CLASS_get_CLIB_OpenEpiCentre_STRUCT__UserInput__Item_On_List_Of_ptr_PraiseInputSubsets(praiseEventId)));
+                obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre__Framework__App()->dyn_CLASS_get_ptr_Data()->dyn_REG_get_ptr_CLIB_OpenEpiCentre__Data__Input_at_ItemSideToWRITE_For_doubleBufferInput(obj)->dyn_REG_set_ptr_CLIB_OpenEpiCentre_STRUCT__Input__Item_Of_ptr_Inputs_Subset(reinterpret_cast<CLIB_OpenEpiCentre_STRUCT__Input_praise2*>(obj->dyn_STRUCT_get_CLIB_OpenEpiCentre__Framework__User_Input()->dyn_CLASS_get_CLIB_OpenEpiCentre_STRUCT__UserInput__Item_On_List_Of_ptr_PraiseInputSubsets(praiseEventId)));
                 break;
 
             case 3:
-                obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre__Framework__App()->dyn_CLASS_get_ptr_Data()->dyn_REG_get_ptr_CLIB_OpenEpiCentre__Data__Item_side_To_Write_For_doubleBuffer_Input_WRITE(obj)->dyn_REG_set_ptr_CLIB_OpenEpiCentre_STRUCT__Input__Item_Of_ptr_Inputs_Subset(reinterpret_cast<CLIB_OpenEpiCentre_STRUCT__Input_praise3*>(obj->dyn_STRUCT_get_CLIB_OpenEpiCentre__Framework__User_Input()->dyn_CLASS_get_CLIB_OpenEpiCentre_STRUCT__UserInput__Item_On_List_Of_ptr_PraiseInputSubsets(praiseEventId)));
+                obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre__Framework__App()->dyn_CLASS_get_ptr_Data()->dyn_REG_get_ptr_CLIB_OpenEpiCentre__Data__Input_at_ItemSideToWRITE_For_doubleBufferInput(obj)->dyn_REG_set_ptr_CLIB_OpenEpiCentre_STRUCT__Input__Item_Of_ptr_Inputs_Subset(reinterpret_cast<CLIB_OpenEpiCentre_STRUCT__Input_praise3*>(obj->dyn_STRUCT_get_CLIB_OpenEpiCentre__Framework__User_Input()->dyn_CLASS_get_CLIB_OpenEpiCentre_STRUCT__UserInput__Item_On_List_Of_ptr_PraiseInputSubsets(praiseEventId)));
                 break;
 
             default:

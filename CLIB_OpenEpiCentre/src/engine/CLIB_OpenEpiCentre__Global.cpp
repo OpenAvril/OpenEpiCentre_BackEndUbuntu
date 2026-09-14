@@ -137,12 +137,13 @@ enum Axis
         std::memcpy(buffer, &value, sizeof(double));
         return buffer;
     }
-    unsigned char* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::stat_CONVERT_CLIB_OpenEpiCentre_Global__unsignedLongLong_to_ByteArray(unsigned long long value)
-    {
+    unsigned char* CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::stat_CONVERT_CLIB_OpenEpiCentre_Global__unsignedLongLong_to_ByteArray(unsigned long long value) {
+        std::cout << "entered stat_CONVERT_CLIB_OpenEpiCentre_Global__unsignedLongLong_to_ByteArray()" << std::endl;
         unsigned char* buffer = nullptr;
         buffer = new unsigned char();
         std::memcpy(buffer, &value, sizeof(unsigned long long));
         return buffer;
+        std::cout << "entered stat_CONVERT_CLIB_OpenEpiCentre_Global__unsignedLongLong_to_ByteArray()" << std::endl;
     }
 // private.
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre__Global::stat_REG_boot1_DEFINE_number_Of_Implemented_Cores()

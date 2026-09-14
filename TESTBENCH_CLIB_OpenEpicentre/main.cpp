@@ -74,6 +74,9 @@ int main() {
 		std::cout << "thread "  << threadId << " :: SIMULATION : <= CLIBConcurrentServerIO__app_FUNCT_get_FLAG_isPGM_INSTANTIATED() = Check&Running." << std::endl;
 
 		CLIBOpenEpiCentre::CLIBConcurrentServerIO::CLIBConcurrentServerIO__dyn_PGM_WriteEnableStack_ServerInputReceive_Injection__write_Start();
+		auto temp = obj->dyn_STRUCT_get_CLIB_OpenEpiCentre__Framework__Input();
+		obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre__Framework__App()->dyn_CLASS_get_ptr_Data()->dyn_REG_set_ptr_CLIB_OpenEpiCentre__Data__Input_at_ItemSideToWRITE_For_doubleBufferInput(obj, temp);
+		delete temp;
 		CLIBOpenEpiCentre::CLIBConcurrentServerIO::CLIBConcurrentServerIO__io_PRAISE_set_MetaData_PraiseEventId(praiseId);
 		CLIBOpenEpiCentre::CLIBConcurrentServerIO::CLIBConcurrentServerIO__app_FUNCT_select_set_Intput_Subset(praiseId);
 		CLIBOpenEpiCentre::CLIBConcurrentServerIO::CLIBConcurrentServerIO__io_PRAISE_set_Item_Input_praise0_Value_A(valueA);
@@ -92,6 +95,7 @@ int main() {
 
 	}
 	std::cout << "SIMULATION :: end." << std::endl;
+	CLIBOpenEpiCentre::CLIBConcurrentServerIO::CLIBConcurrentServerIO__app_FUNCT_terminate_Program();
 	delete obj;
 	return 0;
 }
