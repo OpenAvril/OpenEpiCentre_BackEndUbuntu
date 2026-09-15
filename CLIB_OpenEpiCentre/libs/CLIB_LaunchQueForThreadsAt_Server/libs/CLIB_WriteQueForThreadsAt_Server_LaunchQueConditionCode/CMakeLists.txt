@@ -6,10 +6,10 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 add_library(CLIB_WriteQueForThreadsAt_Server_LaunchQueConditionCode STATIC
         src/CLIB_WriteEnableForThreadsAt_Server_LaunchQueConditionCode.cpp
-        src/WriteEnableForThreadsAt_Server_LaunchQueConditionCode__Framework.cpp
-        src/WriteEnableForThreadsAt_Server_LaunchQueConditionCode__Global.cpp
-        src/WriteEnableForThreadsAt_Server_LaunchQueConditionCode__App.cpp
-        src/WriteEnableForThreadsAt_Server_LaunchQueConditionCode__Control.cpp
+        src/WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Framework.cpp
+        src/WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Global.cpp
+        src/WriteEnableForThreadsAt_Server_LaunchQueConditionCode_App.cpp
+        src/WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Control.cpp
 )
 
 target_include_directories(${PROJECT_NAME}
