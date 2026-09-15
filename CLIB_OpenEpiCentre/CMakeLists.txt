@@ -53,11 +53,11 @@ add_library(CLIB_OpenEpiCentre STATIC
         libs/CLIB_LaunchQueForThreadsAt_Server/src/LaunchEnableForConcurrentThreadsAt_Server__App.cpp
         libs/CLIB_LaunchQueForThreadsAt_Server/src/LaunchEnableForConcurrentThreadsAt_Server__App__Control.cpp
         libs/CLIB_LaunchQueForThreadsAt_Server/src/LaunchEnableForConcurrentThreadsAt_Server__Execute.cpp
-        libs/CLIB_WriteQueForThreadsAt_ServerConditionCode/src/CLIB_WriteEnableForThreadsAt_ServerConditionCode.cpp
-        libs/CLIB_WriteQueForThreadsAt_ServerConditionCode/src/WriteEnableForThreadsAt_ServerConditionCode__Framework.cpp
-        libs/CLIB_WriteQueForThreadsAt_ServerConditionCode/src/WriteEnableForThreadsAt_ServerConditionCode__Global.cpp
-        libs/CLIB_WriteQueForThreadsAt_ServerConditionCode/src/WriteEnableForThreadsAt_ServerConditionCode__App.cpp
-        libs/CLIB_WriteQueForThreadsAt_ServerConditionCode/src/WriteEnableForThreadsAt_ServerConditionCode__Control.cpp
+        libs/CLIB_WriteQueForThreadsAt_OpenEpiCentre_ConditionCode/src/CLIB_WriteEnableForThreadsAt_OpenEpiCentre_ConditionCode.cpp
+        libs/CLIB_WriteQueForThreadsAt_OpenEpiCentre_ConditionCode/src/WriteEnableForThreadsAt_OpenEpiCentre_ConditionCode__Framework.cpp
+        libs/CLIB_WriteQueForThreadsAt_OpenEpiCentre_ConditionCode/src/WriteEnableForThreadsAt_OpenEpiCentre_ConditionCode__Global.cpp
+        libs/CLIB_WriteQueForThreadsAt_OpenEpiCentre_ConditionCode/src/WriteEnableForThreadsAt_OpenEpiCentre_ConditionCode__App.cpp
+        libs/CLIB_WriteQueForThreadsAt_OpenEpiCentre_ConditionCode/src/WriteEnableForThreadsAt_OpenEpiCentre_ConditionCode__Control.cpp
         src/engine/CLIB_OpenEpiCentre__Execute__Control.cpp
 )
 

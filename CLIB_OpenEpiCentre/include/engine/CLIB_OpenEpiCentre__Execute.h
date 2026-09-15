@@ -26,22 +26,26 @@ namespace CLIBOpenEpiCentre
         static void stat_REG_boot0_DECLARE_CLIB_OpenEpiCentre_Execute();
     private:
         static class CLIB_OpenEpiCentre__Execute__Control* _stat_CLASS_CLIB_OpenEpiCentre__Execute__Control;
-        static void* _stat_PGM_LaunchQue_Server;
-        static void* _stat_PGM_WriteEnable_ServerInputReceive;
-        static void* _stat_PGM_WriteEnable_ServerOutputSend;
+        static void* _stat_PGM_CLIB_LaunchQueForThreadsAt_Server;
+        static void* _stat_PGM_CLIB_WriteQueForThreadsAt_OpenEpiCentre_ConditionCode;
+        static void* _stat_PGM_CLIB_WriteQueForThreadsAt_ServerInputReceive;
+        static void* _stat_PGM_CLIB_WriteQueForThreadsAt_ServerOutputSend;
         static void stat_CLASS_boot1_DEFINE_Execute_Control();
         static void stat_CLASS_boot3_INITIALISE_Execute_Control();
         static class CLIB_OpenEpiCentre__Execute__Control* stat_CLASS_get_ptr_CLIB_OpenEpiCentre__Execute__Control();
         static std::list<std::thread*>* stat_PGM_get_ptr_List_Of_Threads();
-        static void stat_PGM_boot1_DEFINE_ConcurrentQue_Server();
-        static void stat_PGM_boot1_DEFINE_ServerInputReceive();
-        static void stat_PGM_boot1_DEFINE_ServerOutputSend();
-        static void stat_PGM_boot3_INITIALISE_ConcurrentQue_Server();
-        static void stat_PGM_boot3_INITIALISE_ServerInputReceive();
-        static void stat_PGM_boot3_INITIALISE_ServerOutputSend();
-        static void* stat_PGM_get_ptr_ConcurrentQue_Server();
-        static void* stat_PGM_get_ptr_WriteEnable_ServerInputReceive();
-        static void* stat_PGM_get_ptr_WriteEnable_ServerOutputSend();
+        static void stat_PGM_boot1_DEFINE_CLIB_LaunchQueForThreadsAt_Server();
+        static void stat_PGM_boot1_DEFINE_CLIB_WriteQueForThreadsAt_OpenEpiCentre_ConditionCode();
+        static void stat_PGM_boot1_DEFINE_CLIB_WriteQueForThreadsAt_ServerInputReceive();
+        static void stat_PGM_boot1_DEFINE_CLIB_WriteQueForThreadsAt_ServerOutputSend();
+        static void stat_PGM_boot3_INITIALISE_CLIB_LaunchQueForThreadsAt_Server();
+        static void stat_PGM_boot3_INITIALISE_CLIB_WriteQueForThreadsAt_OpenEpiCentre_ConditionCode();
+        static void stat_PGM_boot3_INITIALISE_CLIB_WriteQueForThreadsAt_ServerInputReceive();
+        static void stat_PGM_boot3_INITIALISE_CLIB_WriteQueForThreadsAt_ServerOutputSend();
+        static void* stat_PGM_get_ptr_CLIB_LaunchQueForThreadsAt_Server();
+        static void* stat_PGM_get_ptr_CLIB_WriteQueForThreadsAt_OpenEpiCentre_ConditionCode();
+        static void* stat_PGM_get_ptr_CLIB_WriteQueForThreadsAt_ServerInputReceive();
+        static void* stat_PGM_get_ptr_CLIB_WriteQueForThreadsAt_ServerOutputSend();
     };
 };
 #endif //OPENEPICENTRE_BACKENDUBUNTU_CLIB_OPENEPICENTRE_EXECUTE_H
