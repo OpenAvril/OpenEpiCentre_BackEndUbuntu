@@ -3,6 +3,22 @@
 #include <cstddef>
 #include <cstdint>
 namespace CLIBOpenEpiCentre {
+    enum Axis
+    {
+        X,
+        Y,
+        Z
+    };
+    enum Praise
+    {
+        ADDER
+    };
+    enum class Thread_At_OpenEpiCentre_ConditionCode : uint8_t {
+        concurrent_0 = 0,
+        concurrent_1 = 1,
+        concurrent_2 = 2,
+        IO = 3
+    };
     class CLIB_OpenEpiCentre_Global {
     public:
         CLIB_OpenEpiCentre_Global();

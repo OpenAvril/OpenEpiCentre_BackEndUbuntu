@@ -2,16 +2,6 @@
 #include <climits>
 #include <cstring>
 #include <iostream>
-enum Axis
-    {
-        X,
-        Y,
-        Z
-    };
-    enum Praise
-    {
-        ADDER
-    };
     uint8_t* CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Global::_stat_REG_ptr_number_Of_Implemented_Cores;
     unsigned long long* CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Global::_stat_REG_ptr_number_Of_Praise_Events;
 // public.
