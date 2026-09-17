@@ -14,7 +14,6 @@ namespace CLIB_ThreadLogs {
         void dyn_REG_boot4_INSTANTIATE_CLIB_ThreadLogs_Framework_App(uint8_t threadId);
         class CLIB_ThreadLogs_Framework_App_Algorithms* dyn_CLASS_ptr_CLIB_ThreadLogs_Framework_App_Algorithms(uint8_t threadId);
         class CLIB_ThreadLogs_Framework_App_Data* dyn_CLASS_ptr_CLIB_ThreadLogs_Data(uint8_t threadId);
-
         static void stat_CLASS_boot0_DECLAIRE_CLIB_ThreadLogs_Framework_App(uint8_t threadId);
         static void stat_CLASS_boot1_DEFINE_CLIB_ThreadLogs_Framework_App(uint8_t threadId);
         static void stat_CLASS_boot3_INITIALISE_CLIB_ThreadLogs_Framework_App(uint8_t threadId);
