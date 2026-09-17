@@ -1,14 +1,12 @@
-#ifndef CLIB_CLIB_ThreadLogs_CLIB_ThreadLogs_Framework_H
-#define CLIB_CLIB_ThreadLogs_CLIB_ThreadLogs_Framework_H
+#ifndef CLIB_THEADLOGS_CLIB_ThreadLogs_FRAMEWORK H
+#define CLIB_THEADLOGS_CLIB_ThreadLogs_FRAMEWORK
 #include "CLIB_ThreadLogs_Framework_App.h"
 #include "CLIB_ThreadLogs_Framework_Global.h"
 #include "CLIB_ThreadLogs_Framework_App_Data_Input.h"
 #include "CLIB_ThreadLogs_Framework_App_Data_Output.h"
 #include <cstdint>
-namespace CLIB_ThreadLogs
-{
-    class CLIB_ThreadLogs_Framework
-    {
+namespace CLIB_ThreadLogs {
+    class CLIB_ThreadLogs_Framework {
     public:
         CLIB_ThreadLogs_Framework(uint8_t threadId);
         virtual ~CLIB_ThreadLogs_Framework();
@@ -17,9 +15,8 @@ namespace CLIB_ThreadLogs
         void dyn_REG_boot1_DEFINE_CLIB_ThreadLogs_Framework(uint8_t threadId);
         void dyn_REG_boot2_SUBSTANTIATE_CLIB_ThreadLogs_Framework(uint8_t threadId);
         void dyn_REG_boot3_INITIALISE_CLIB_ThreadLogs_Framework(uint8_t threadId);
-        void dyn_REG_boot4_INSTANTIATE_CLIB_ThreadLogs_Framework(uint8_t threadId);
         class CLIB_ThreadLogs_Framework_App* dyn_CLASS_get_ptr_CLIB_ThreadLogs_Framework_App(uint8_t threadId);
-        static class CLIB_ThreadLogs_Framework_Global* dyn_CLASS_get_ptr_CLIB_ThreadLogs_Framework_Global(uint8_t threadId);
+        class CLIB_ThreadLogs_Framework_Global* dyn_CLASS_get_ptr_CLIB_ThreadLogs_Framework_Global(uint8_t threadId);
         struct CLIB_ThreadLogs_Framework_App_Data_Input* dyn_STRUCT_get_REG_CLIB_ThreadLogs_Framework_App_Data_Input(uint8_t threadId);
         struct CLIB_ThreadLogs_Framework_App_Data_Output* dyn_STRUCT_get_REG_CLIB_ThreadLogs_Framework_App_Data_Output(uint8_t threadId);
         static void stat_CLASS_boot0_DECLAIRE_CLIB_ThreadLogs_Framework(uint8_t threadId);

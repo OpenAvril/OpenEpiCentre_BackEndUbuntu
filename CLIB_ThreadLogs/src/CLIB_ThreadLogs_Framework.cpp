@@ -1,6 +1,4 @@
 #include "../include/CLIB_ThreadLogs_Framework.h"
-#include "../include/CLIB_ThreadLogs_Framework_App.h"
-#include "../include/CLIB_ThreadLogs_Framework_App_Data_Input.h"
 #include <iostream>
 	CLIB_ThreadLogs::CLIB_ThreadLogs_Framework_App* CLIB_ThreadLogs::CLIB_ThreadLogs_Framework::_stat_CLASS_ptr_CLIB_ThreadLogs_Framework_App;
 	CLIB_ThreadLogs::CLIB_ThreadLogs_Framework_Global* CLIB_ThreadLogs::CLIB_ThreadLogs_Framework::_stat_CLASS_ptr_CLIB_ThreadLogs_Framework_Global;

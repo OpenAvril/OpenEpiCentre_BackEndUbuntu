@@ -1,5 +1,5 @@
-#ifndef CPP_CLIB_ThreadLogsCLIB_ThreadLogs_H
-#define CPP_CLIB_ThreadLogsCLIB_ThreadLogs_H
+#ifndef CLIB_THEADLOGS_CLIB_ThreadLogs_H
+#define CLIB_THEADLOGS_CLIB_ThreadLogs_H
 #include <cstdint>
 #include <list>
 #include <string>
@@ -23,4 +23,4 @@ extern "C" {
         };
     }
 }
-#endif //CPP_CLIB_ThreadLogsCLIB_ThreadLogs_H
+#endif
