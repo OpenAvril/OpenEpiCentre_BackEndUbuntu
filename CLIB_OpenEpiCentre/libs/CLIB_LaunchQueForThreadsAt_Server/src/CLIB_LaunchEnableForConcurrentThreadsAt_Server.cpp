@@ -10,57 +10,57 @@
     bool* CLIB_LaunchEnableForConcurrentThreadsAt_Server_stat_REG_flag_isMemberFunctionINSTANTIATED;
 // public.
     void* CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server_App_FUNCT_generate_Program() {
-		std::cout << "entered app_FUNCT_generate_Program()." << std::endl;
+		std::cout << "thread "  << threadId << " :: entered app_FUNCT_generate_Program()." << std::endl;
 
-		std::cout << "started Architecture Framework CLASS - DECLARE DEFINE INITIALISE." << std::endl;
+		std::cout << "thread "  << threadId << " :: started Architecture Framework CLASS - DECLARE DEFINE INITIALISE." << std::endl;
 		CLIB_LaunchEnableForConcurrentThreadsAt_Server_stat_boot1_CLASS_DEFINE_LaunchEnableForConcurrentThreadsAt_Server_Framework();
 		CLIB_LaunchEnableForConcurrentThreadsAt_Server_stat_boot3_CLASS_INITIALISE_LaunchEnableForConcurrentThreadsAt_Server_Framework();
-		std::cout << "started Architecture Framework CLASS - DECLARE DEFINE INITIALISE." << std::endl;
+		std::cout << "thread "  << threadId << " :: started Architecture Framework CLASS - DECLARE DEFINE INITIALISE." << std::endl;
 
-		std::cout << "started LaunchEnableForConcurrentThreadsAt_Server_Global Meta-Data and Settings." << std::endl;
+		std::cout << "thread "  << threadId << " :: started LaunchEnableForConcurrentThreadsAt_Server_Global Meta-Data and Settings." << std::endl;
 		CLIB_LaunchEnableForConcurrentThreadsAt_Server_stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server_Framework()->dyn_CLASS_create_LaunchEnableForConcurrentThreadsAt_Server_Global_and_Settings();
 		CLIB_LaunchEnableForConcurrentThreadsAt_Server_stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server_Framework()->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server_Global()->boot1_REG_DEFINE_LaunchEnableForConcurrentThreadsAt_Server_Global();
 		CLIB_LaunchEnableForConcurrentThreadsAt_Server_stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server_Framework()->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server_Global()->boot2_REG_SUBSTANTIATE_LaunchEnableForConcurrentThreadsAt_Server_Global();
 		CLIB_LaunchEnableForConcurrentThreadsAt_Server_stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server_Framework()->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server_Global()->boot3_REG_INITIALISE_LaunchEnableForConcurrentThreadsAt_Server_Global();
-		std::cout << "done LaunchEnableForConcurrentThreadsAt_Server_Global Meta-Data and Settings." << std::endl;
+		std::cout << "thread "  << threadId << " :: done LaunchEnableForConcurrentThreadsAt_Server_Global Meta-Data and Settings." << std::endl;
 
-		std::cout << "started IndepServerent STRUCT(s) - DECLARE DEFINE INITIALISE, Registers - DECLARE SUBSTANTIATE INITIALISE." << std::endl;
-		std::cout << "done IndepServerent STRUCT(s) - DECLARE DEFINE INITIALISE, Registers - DECLARE SUBSTANTIATE INITIALISE." << std::endl;
+		std::cout << "thread "  << threadId << " :: started IndepServerent STRUCT(s) - DECLARE DEFINE INITIALISE, Registers - DECLARE SUBSTANTIATE INITIALISE." << std::endl;
+		std::cout << "thread "  << threadId << " :: done IndepServerent STRUCT(s) - DECLARE DEFINE INITIALISE, Registers - DECLARE SUBSTANTIATE INITIALISE." << std::endl;
 
-		std::cout << "started Architecture Application CLASS(s) - DECLARE DEFINE INITIALISE, Registers - DECLARE SUBSTANTIATE INITIALISE." << std::endl;
+		std::cout << "thread "  << threadId << " :: started Architecture Application CLASS(s) - DECLARE DEFINE INITIALISE, Registers - DECLARE SUBSTANTIATE INITIALISE." << std::endl;
 		CLIB_LaunchEnableForConcurrentThreadsAt_Server_stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server_Framework()->dyn_CLASS_create_Architecture();
-		std::cout << "started Registers - DEFINE" << std::endl;
+		std::cout << "thread "  << threadId << " :: started Registers - DEFINE" << std::endl;
 		CLIB_LaunchEnableForConcurrentThreadsAt_Server_stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server_Framework()->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server_App()->dyn_CLASS_get_LaunchEnableForConcurrentThreadsAt_Server_App_Control()->dyn_REG_boot1_DEFINE_LaunchEnableForConcurrentThreadsAt_Server_App_Control();
-		std::cout << "done Registers - DEFINE." << std::endl;
-		std::cout << "started Registers - SUBSTANTIATE." << std::endl;
+		std::cout << "thread "  << threadId << " :: done Registers - DEFINE." << std::endl;
+		std::cout << "thread "  << threadId << " :: started Registers - SUBSTANTIATE." << std::endl;
 		CLIB_LaunchEnableForConcurrentThreadsAt_Server_stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server_Framework()->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server_App()->dyn_CLASS_get_LaunchEnableForConcurrentThreadsAt_Server_App_Control()->dyn_REG_boot2_SUBSTANTIATE_LaunchEnableForConcurrentThreadsAt_Server_App_Control(CLIB_LaunchEnableForConcurrentThreadsAt_Server_stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server_Framework());
-		std::cout << "done Registers - SUBSTANTIATE." << std::endl;
-		std::cout << "started Registers - INITIALISE." << std::endl;
+		std::cout << "thread "  << threadId << " :: done Registers - SUBSTANTIATE." << std::endl;
+		std::cout << "thread "  << threadId << " :: started Registers - INITIALISE." << std::endl;
 		CLIB_LaunchEnableForConcurrentThreadsAt_Server_stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server_Framework()->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server_App()->dyn_CLASS_get_LaunchEnableForConcurrentThreadsAt_Server_App_Control()->dyn_REG_boot3_INITIALISE_LaunchEnableForConcurrentThreadsAt_Server_App_Control();
-		std::cout << "done Registers - INITIALISE." << std::endl;
-		std::cout << "done Architecture Application CLASS(s) - DECLARE DEFINE INITIALISE, Registers - DECLARE SUBSTANTIATE INITIALISE." << std::endl;
+		std::cout << "thread "  << threadId << " :: done Registers - INITIALISE." << std::endl;
+		std::cout << "thread "  << threadId << " :: done Architecture Application CLASS(s) - DECLARE DEFINE INITIALISE, Registers - DECLARE SUBSTANTIATE INITIALISE." << std::endl;
 
-		std::cout << "started Program - INSTANTIATION." << std::endl;
+		std::cout << "thread "  << threadId << " :: started Program - INSTANTIATION." << std::endl;
 		CLIB_LaunchEnableForConcurrentThreadsAt_Server_stat_REG_boot1_DEFINE_flag_isMemberFunctionINSTANTIATED();
 		CLIB_LaunchEnableForConcurrentThreadsAt_Server_stat_REG_boot2_SUBSTANTIATE_flag_isMemberFunctionINSTANTIATED();
 		CLIB_LaunchEnableForConcurrentThreadsAt_Server_stat_REG_boot3_INITIALISE_flag_isMemberFunctionINSTANTIATED();
         CLIB_LaunchEnableForConcurrentThreadsAt_Server_stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server_Framework()->dyn_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server_App()->dyn_CLASS_get_LaunchEnableForConcurrentThreadsAt_Server_Execute()->dyn_PGM_boot4_INSTANTIATE_LaunchEnableForConcurrentThreadsAt_Server_Execute();
-		std::cout << "done Program - INSTANTIATION." << std::endl;
+		std::cout << "thread "  << threadId << " :: done Program - INSTANTIATION." << std::endl;
 
-    std::cout << "" << std::endl;
-    std::cout << "        ,     \\      /      ," << std::endl;
-    std::cout << "       / \\    )\\ _ /(     / \\ " << std::endl;
-    std::cout << "      /   \\   (_\\  /_)    /   \\ " << std::endl;
-    std::cout << "__ / __\\_ \\@  @/ __/___\\___" << std::endl;
-    std::cout << "|              |\\../|               |" << std::endl;
-    std::cout << "|               \\VV/                |" << std::endl;
-    std::cout << "|        MIT Launch Que .dll        |" << std::endl;
-    std::cout << "|__________________|" << std::endl;
-    std::cout << "|    / \\ /        \\\\        \\ /\\    |" << std::endl;
-    std::cout << "|  /    V          ))        V   \\  |" << std::endl;
-    std::cout << "|/                //               \\| " << std::endl;
-    std::cout << "`                 V                 '" << std::endl;
-    std::cout << "" << std::endl;
+    std::cout << "thread "  << threadId << " :: " << std::endl;
+    std::cout << "thread "  << threadId << " ::         ,     \\      /      ," << std::endl;
+    std::cout << "thread "  << threadId << " ::        / \\    )\\ _ /(     / \\ " << std::endl;
+    std::cout << "thread "  << threadId << " ::       /   \\   (_\\  /_)    /   \\ " << std::endl;
+    std::cout << "thread "  << threadId << " :: __ / __\\_ \\@  @/ __/___\\___" << std::endl;
+    std::cout << "thread "  << threadId << " :: |              |\\../|               |" << std::endl;
+    std::cout << "thread "  << threadId << " :: |               \\VV/                |" << std::endl;
+    std::cout << "thread "  << threadId << " :: |        MIT Launch Que .dll        |" << std::endl;
+    std::cout << "thread "  << threadId << " :: |__________________|" << std::endl;
+    std::cout << "thread "  << threadId << " :: |    / \\ /        \\\\        \\ /\\    |" << std::endl;
+    std::cout << "thread "  << threadId << " :: |  /    V          ))        V   \\  |" << std::endl;
+    std::cout << "thread "  << threadId << " :: |/                //               \\| " << std::endl;
+    std::cout << "thread "  << threadId << " :: `                 V                 '" << std::endl;
+    std::cout << "thread "  << threadId << " :: " << std::endl;
     return (void*)CLIB_LaunchEnableForConcurrentThreadsAt_Server_stat_CLASS_get_ptr_LaunchEnableForConcurrentThreadsAt_Server_Framework();
     }
     void CLIBLaunchQueAtServer::CLIB_LaunchEnableForConcurrentThreadsAt_Server::CLIB_LaunchEnableForConcurrentThreadsAt_Server_App_FUNCT_request_Wait_launch(unsigned char* bytes)

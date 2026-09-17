@@ -6,4 +6,5 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 add_executable(TESTBENCH_CLIB_OpenEpicentre main.cpp)
 
+target_link_libraries(TESTBENCH_CLIB_OpenEpicentre PRIVATE CLIB_ThreadLogs)
 target_link_libraries(TESTBENCH_CLIB_OpenEpicentre PRIVATE CLIB_OpenEpiCentre)

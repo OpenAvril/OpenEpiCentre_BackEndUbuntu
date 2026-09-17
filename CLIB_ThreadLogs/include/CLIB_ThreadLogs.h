@@ -1,0 +1,25 @@
+#ifndef CPP_CLIB_ThreadLogsCLIB_ThreadLogs_H
+#define CPP_CLIB_ThreadLogsCLIB_ThreadLogs_H
+#include <cstdint>
+#include <string>
+extern "C" {
+    namespace CLIB_ThreadLogs {
+        class CLIB_ThreadLogs {
+            public:
+            static void* stat_App_FUNCT_CLIB_ThreadLogs_generate_Program(uint8_t threadId);
+            static unsigned char* stat_App_FUNCT_CLIB_ThreadLogs_get_flag_isPGM_INSTANTIATED(uint8_t threadId);
+            static void printLog(uint8_t threadId, std::pmr::string[] stringForLogPrint);
+            static void stat_App_FUNCT_CLIB_ThreadLogs_terminate_Program(uint8_t threadId);
+        private:
+            static void stat_APP_FUNCT_CLIB_ThreadLogs_Calc_IsAllINSTANTIATED(uint8_t threadId);
+            static void stat_CLASS_boot1_DEFINE_CLIB_ThreadLogs_Framework(uint8_t threadId);
+            static void stat_CLASS_boot3_INITIALISE_CLIB_ThreadLogs_Framework(uint8_t threadId);
+            static class CLIB_ThreadLogs_Framework* stat_CLASS_get_ptr_CLIB_ThreadLogs_Framework(uint8_t threadId);
+            static void stat_REG_boot1_DEFINE_CLIB_ThreadLogs_isFlagINSTANTIATED(uint8_t threadId);
+            static void stat_REG_boot2_SUBSTANTIATE_CLIB_ThreadLogs_isFlagINSTANTIATED(uint8_t threadId);
+            static void stat_REG_boot3_INITIALISE_CLIB_ThreadLogs_isFlagINSTANTIATED(uint8_t threadId);
+            static std::array<bool, 4>* stat_REG_get_CLIB_ThreadLogs_isFlagINSTANTIATED(uint8_t threadId);
+        };
+    }
+}
+#endif //CPP_CLIB_ThreadLogsCLIB_ThreadLogs_H

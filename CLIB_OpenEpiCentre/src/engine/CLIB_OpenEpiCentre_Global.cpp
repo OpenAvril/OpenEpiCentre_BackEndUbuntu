@@ -6,39 +6,39 @@
     unsigned long long* CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Global::_stat_REG_ptr_number_Of_Praise_Events;
 // public.
     CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Global::CLIB_OpenEpiCentre_Global() {
-        std::cout << "entered CONSTRUCTOR of CLIB_OpenEpiCentre_Global()." << std::endl;
+        std::cout << "thread "  << threadId << " :: entered CONSTRUCTOR of CLIB_OpenEpiCentre_Global()." << std::endl;
         stat_CLASS_boot0_DECLARE_CLIB_OpenEpiCentre_Global();
         stat_CLASS_boot1_DEFINE_CLIB_OpenEpiCentre_Global();
         stat_CLASS_boot3_INITIALISE_CLIB_OpenEpiCentre_Global();
         stat_REG_boot0_DECLARE_CLIB_OpenEpiCentre_Global();
-        std::cout << "exiting CONSTRUCTOR of CLIB_OpenEpiCentre_Global()." << std::endl;
+        std::cout << "thread "  << threadId << " :: exiting CONSTRUCTOR of CLIB_OpenEpiCentre_Global()." << std::endl;
     }
     CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Global::~CLIB_OpenEpiCentre_Global() {
         delete _stat_REG_ptr_number_Of_Implemented_Cores;
         delete _stat_REG_ptr_number_Of_Praise_Events;
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Global::dyn_REG_boot1_DEFINE_CLIB_OpenEpiCentre_Global() {
-        std::cout << "entered dyn_REG_boot1_DEFINE_CLIB_OpenEpiCentre_Global()" << std::endl;
+        std::cout << "thread "  << threadId << " :: entered dyn_REG_boot1_DEFINE_CLIB_OpenEpiCentre_Global()" << std::endl;
         stat_REG_boot1_DEFINE_number_Of_Implemented_Cores();
         stat_REG_boot1_DEFINE_number_Of_Praise_Events();
-        std::cout << "exiting dyn_REG_boot1_DEFINE_CLIB_OpenEpiCentre_Global()" << std::endl;
+        std::cout << "thread "  << threadId << " :: exiting dyn_REG_boot1_DEFINE_CLIB_OpenEpiCentre_Global()" << std::endl;
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Global::dyn_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_Global() {
-        std::cout << "entered dyn_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_Global()" << std::endl;
+        std::cout << "thread "  << threadId << " :: entered dyn_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_Global()" << std::endl;
         stat_REG_boot2_SUBSTANTIATE_number_Of_Implemented_Cores();
         stat_REG_boot2_SUBSTANTIATE_number_Of_Praise_Events();
-        std::cout << "exiting dyn_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_Global()" << std::endl;
+        std::cout << "thread "  << threadId << " :: exiting dyn_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_Global()" << std::endl;
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Global::dyn_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_Global() {
-        std::cout << "entered dyn_REG_boot3_INITIALISE_dyn_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_GlobalCLIB_OpenEpiCentre_Global()" << std::endl;
+        std::cout << "thread "  << threadId << " :: entered dyn_REG_boot3_INITIALISE_dyn_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_GlobalCLIB_OpenEpiCentre_Global()" << std::endl;
         stat_REG_boot3_INITIALISE_number_Of_Implemented_Cores();
         stat_REG_boot3_INITIALISE_number_Of_Praise_Events();
-        std::cout << "exiting dyn_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_Global()" << std::endl;
+        std::cout << "thread "  << threadId << " :: exiting dyn_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_Global()" << std::endl;
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Global::dyn_REG_boot4_INSTANTIATE_CLIB_OpenEpiCentre_Global() {
-        std::cout << "entered dyn_REG_boot4_INSTANTIATE_CLIB_OpenEpiCentre_Global()" << std::endl;
+        std::cout << "thread "  << threadId << " :: entered dyn_REG_boot4_INSTANTIATE_CLIB_OpenEpiCentre_Global()" << std::endl;
 
-        std::cout << "exiting dyn_REG_boot4_INSTANTIATE_CLIB_OpenEpiCentre_Global()" << std::endl;
+        std::cout << "thread "  << threadId << " :: exiting dyn_REG_boot4_INSTANTIATE_CLIB_OpenEpiCentre_Global()" << std::endl;
     }
     uint8_t CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Global::dyn_REG_get_Item_number_Of_Implemented_Cores() {
         return *stat_REG_get_Ptr_number_Of_Implemented_Cores();
@@ -47,32 +47,32 @@
         return *stat_REG_get_Ptr_number_Of_Praise_Events();
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Global::stat_CLASS_boot0_DECLARE_CLIB_OpenEpiCentre_Global() {
-        std::cout << "entered stat_CLASS_boot0_DECLARE_CLIB_OpenEpiCentre_Global()" << std::endl;
+        std::cout << "thread "  << threadId << " :: entered stat_CLASS_boot0_DECLARE_CLIB_OpenEpiCentre_Global()" << std::endl;
 
-        std::cout << "exiting stat_CLASS_boot0_DECLARE_CLIB_OpenEpiCentre_Global()" << std::endl;
+        std::cout << "thread "  << threadId << " :: exiting stat_CLASS_boot0_DECLARE_CLIB_OpenEpiCentre_Global()" << std::endl;
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Global::stat_CLASS_boot1_DEFINE_CLIB_OpenEpiCentre_Global() {
-        std::cout << "entered stat_CLASS_boot1_DEFINE_CLIB_OpenEpiCentre_Global()" << std::endl;
+        std::cout << "thread "  << threadId << " :: entered stat_CLASS_boot1_DEFINE_CLIB_OpenEpiCentre_Global()" << std::endl;
 
-        std::cout << "exiting stat_CLASS_boot1_DEFINE_CLIB_OpenEpiCentre_Global()" << std::endl;
+        std::cout << "thread "  << threadId << " :: exiting stat_CLASS_boot1_DEFINE_CLIB_OpenEpiCentre_Global()" << std::endl;
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Global::stat_CLASS_boot3_INITIALISE_CLIB_OpenEpiCentre_Global() {
-        std::cout << "entered stat_CLASS_boot3_INITIALISE_CLIB_OpenEpiCentre_Global()" << std::endl;
+        std::cout << "thread "  << threadId << " :: entered stat_CLASS_boot3_INITIALISE_CLIB_OpenEpiCentre_Global()" << std::endl;
 
-        std::cout << "exiting stat_CLASS_boot3_INITIALISE_CLIB_OpenEpiCentre_Global()" << std::endl;
+        std::cout << "thread "  << threadId << " :: exiting stat_CLASS_boot3_INITIALISE_CLIB_OpenEpiCentre_Global()" << std::endl;
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Global::stat_CLASS_boot4_INSTANTIATE_CLIB_OpenEpiCentre_Global() {
-        std::cout << "entered stat_CLASS_boot4_INSTANTIATE_CLIB_OpenEpiCentre_Global()" << std::endl;
+        std::cout << "thread "  << threadId << " :: entered stat_CLASS_boot4_INSTANTIATE_CLIB_OpenEpiCentre_Global()" << std::endl;
 
-        std::cout << "exiting stat_CLASS_boot4_INSTANTIATE_CLIB_OpenEpiCentre_Global()" << std::endl;
+        std::cout << "thread "  << threadId << " :: exiting stat_CLASS_boot4_INSTANTIATE_CLIB_OpenEpiCentre_Global()" << std::endl;
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Global::stat_REG_boot0_DECLARE_CLIB_OpenEpiCentre_Global() {
-        std::cout << "entered stat_REG_boot0_DECLARE_CLIB_OpenEpiCentre_Global()" << std::endl;
+        std::cout << "thread "  << threadId << " :: entered stat_REG_boot0_DECLARE_CLIB_OpenEpiCentre_Global()" << std::endl;
 
-        std::cout << "exiting stat_REG_boot0_DECLARE_CLIB_OpenEpiCentre_Global()" << std::endl;
+        std::cout << "thread "  << threadId << " :: exiting stat_REG_boot0_DECLARE_CLIB_OpenEpiCentre_Global()" << std::endl;
     }
     int CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Global::stat_CONVERT_Bool_To_Int(bool value) {
-        std::cout << "entered stat_CONVERT_Bool_To_Int()" << std::endl;
+        std::cout << "thread "  << threadId << " :: entered stat_CONVERT_Bool_To_Int()" << std::endl;
         int* temp = nullptr;
         temp = new int(INT_MAX);
         if (value) {
@@ -81,8 +81,8 @@
         else {
             *temp = 0;
         }
-        std::cout << "<= int = " << *temp << std::endl;
-        std::cout << "exiting stat_CONVERT_Bool_To_Int()" << std::endl;
+        std::cout << "thread "  << threadId << " :: <= int = " << *temp << std::endl;
+        std::cout << "thread "  << threadId << " :: exiting stat_CONVERT_Bool_To_Int()" << std::endl;
         return *temp;
     }
     unsigned char* CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Global::stat_CONVERT_CLIB_OpenEpiCentre_Global_Msbbool_to_MsbByteArray(bool value) {
@@ -128,12 +128,12 @@
         return buffer;
     }
     unsigned char* CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Global::stat_CONVERT_CLIB_OpenEpiCentre_Global_unsignedLongLong_to_ByteArray(unsigned long long value) {
-        std::cout << "entered stat_CONVERT_CLIB_OpenEpiCentre_Global_unsignedLongLong_to_ByteArray()" << std::endl;
+        std::cout << "thread "  << threadId << " :: entered stat_CONVERT_CLIB_OpenEpiCentre_Global_unsignedLongLong_to_ByteArray()" << std::endl;
         unsigned char* buffer = nullptr;
         buffer = new unsigned char();
         std::memcpy(buffer, &value, sizeof(unsigned long long));
         return buffer;
-        std::cout << "entered stat_CONVERT_CLIB_OpenEpiCentre_Global_unsignedLongLong_to_ByteArray()" << std::endl;
+        std::cout << "thread "  << threadId << " :: entered stat_CONVERT_CLIB_OpenEpiCentre_Global_unsignedLongLong_to_ByteArray()" << std::endl;
     }
 // private.
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Global::stat_REG_boot1_DEFINE_number_Of_Implemented_Cores()

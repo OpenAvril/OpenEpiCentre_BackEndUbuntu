@@ -32,32 +32,32 @@
         return stat_CLASS_get_LaunchEnableForConcurrentThreadsAt_Server_Execute();
     }
     void CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server_App::dyn_REG_boot1_REG_DEFINE_LaunchEnableForConcurrentThreadsAt_Server_App() {
-	    std::cout << "entered dyn_REG_boot1_REG_DEFINE_LaunchEnableForConcurrentThreadsAt_Server_App()." << std::endl;
-	    std::cout << "exiting dyn_REG_boot1_REG_DEFINE_LaunchEnableForConcurrentThreadsAt_Server_App()." << std::endl;
+	    std::cout << "thread "  << threadId << " :: entered dyn_REG_boot1_REG_DEFINE_LaunchEnableForConcurrentThreadsAt_Server_App()." << std::endl;
+	    std::cout << "thread "  << threadId << " :: exiting dyn_REG_boot1_REG_DEFINE_LaunchEnableForConcurrentThreadsAt_Server_App()." << std::endl;
     }
     void CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server_App::dyn_REG_boot2_REG_SUBSTANTIATE_LaunchEnableForConcurrentThreadsAt_Server_App() {
-	    std::cout << "entered dyn_REG_boot2_REG_SUBSTANTIATE_LaunchEnableForConcurrentThreadsAt_Server_App()." << std::endl;
-	    std::cout << "exiting dyn_REG_boot2_REG_SUBSTANTIATE_LaunchEnableForConcurrentThreadsAt_Server_App()." << std::endl;
+	    std::cout << "thread "  << threadId << " :: entered dyn_REG_boot2_REG_SUBSTANTIATE_LaunchEnableForConcurrentThreadsAt_Server_App()." << std::endl;
+	    std::cout << "thread "  << threadId << " :: exiting dyn_REG_boot2_REG_SUBSTANTIATE_LaunchEnableForConcurrentThreadsAt_Server_App()." << std::endl;
     }
     void CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server_App::dyn_REG_boot3_REG_INITIALISE_LaunchEnableForConcurrentThreadsAt_Server_App() {
-	    std::cout << "entered dyn_REG_boot3_REG_INITIALISE_LaunchEnableForConcurrentThreadsAt_Server_App()." << std::endl;
-	    std::cout << "exiting dyn_REG_boot3_REG_INITIALISE_LaunchEnableForConcurrentThreadsAt_Server_App()." << std::endl;
+	    std::cout << "thread "  << threadId << " :: entered dyn_REG_boot3_REG_INITIALISE_LaunchEnableForConcurrentThreadsAt_Server_App()." << std::endl;
+	    std::cout << "thread "  << threadId << " :: exiting dyn_REG_boot3_REG_INITIALISE_LaunchEnableForConcurrentThreadsAt_Server_App()." << std::endl;
     }
     void CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server_App::stat_CALSS_boot0_DECLARE_LaunchEnableForConcurrentThreadsAt_Server_App() {
-        std::cout << "entered stat_CALSS_boot0_DECLARE_LaunchEnableForConcurrentThreadsAt_Server_App()." << std::endl;
-        std::cout << "exiting stat_CALSS_boot0_DECLARE_LaunchEnableForConcurrentThreadsAt_Server_App()." << std::endl;
+        std::cout << "thread "  << threadId << " :: entered stat_CALSS_boot0_DECLARE_LaunchEnableForConcurrentThreadsAt_Server_App()." << std::endl;
+        std::cout << "thread "  << threadId << " :: exiting stat_CALSS_boot0_DECLARE_LaunchEnableForConcurrentThreadsAt_Server_App()." << std::endl;
     }
     void CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server_App::stat_CALSS_boot1_DEFINE_LaunchEnableForConcurrentThreadsAt_Server_App() {
-        std::cout << "entered stat_CALSS_boot1_DEFINE_LaunchEnableForConcurrentThreadsAt_Server_App()." << std::endl;
+        std::cout << "thread "  << threadId << " :: entered stat_CALSS_boot1_DEFINE_LaunchEnableForConcurrentThreadsAt_Server_App()." << std::endl;
         stat_CLASS_boot1_DEFINE_LaunchEnableForConcurrentThreadsAt_Server_App_WriteEnable_Control();
         stat_CLASS_boot1_DEFINE_LaunchEnableForConcurrentThreadsAt_Server_Execute();
-        std::cout << "exiting stat_CALSS_boot1_DEFINE_LaunchEnableForConcurrentThreadsAt_Server_App()." << std::endl;
+        std::cout << "thread "  << threadId << " :: exiting stat_CALSS_boot1_DEFINE_LaunchEnableForConcurrentThreadsAt_Server_App()." << std::endl;
     }
     void CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server_App::stat_CALSS_boot3_INITIALISE_LaunchEnableForConcurrentThreadsAt_Server_App() {
-        std::cout << "entered stat_CALSS_boot3_INITIALISE_LaunchEnableForConcurrentThreadsAt_Server_App()." << std::endl;
+        std::cout << "thread "  << threadId << " :: entered stat_CALSS_boot3_INITIALISE_LaunchEnableForConcurrentThreadsAt_Server_App()." << std::endl;
         stat_CLASS_boot3_INITIALISE_LaunchEnableForConcurrentThreadsAt_Server_App_WriteEnable_Control();
         stat_CLASS_boot3_INITIALISE_LaunchEnableForConcurrentThreadsAt_Server_Execute();
-        std::cout << "exiting stat_CALSS_boot3_INITIALISE_LaunchEnableForConcurrentThreadsAt_Server_App()." << std::endl;
+        std::cout << "thread "  << threadId << " :: exiting stat_CALSS_boot3_INITIALISE_LaunchEnableForConcurrentThreadsAt_Server_App()." << std::endl;
     }
 // private.
     void CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server_App::stat_CLASS_boot1_DEFINE_LaunchEnableForConcurrentThreadsAt_Server_App_WriteEnable_Control() {

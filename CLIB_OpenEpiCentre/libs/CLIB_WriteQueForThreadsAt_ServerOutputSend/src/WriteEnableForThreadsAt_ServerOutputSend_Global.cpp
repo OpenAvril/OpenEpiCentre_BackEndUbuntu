@@ -20,35 +20,35 @@ CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend_Global:
 }
 void CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend_Global::dyn_REG_boot0_DECLARE_WriteEnableForThreadsAt_ServerOutputSend_Global()
 {
-    std::cout << "entered dyn_REG_boot0_DECLARE_WriteEnableForThreadsAt_ServerOutputSend_Global()." << std::endl;
-    std::cout << "exiting dyn_REG_boot0_DECLARE_WriteEnableForThreadsAt_ServerOutputSend_Global()." << std::endl;
+    std::cout << "thread "  << threadId << " :: entered dyn_REG_boot0_DECLARE_WriteEnableForThreadsAt_ServerOutputSend_Global()." << std::endl;
+    std::cout << "thread "  << threadId << " :: exiting dyn_REG_boot0_DECLARE_WriteEnableForThreadsAt_ServerOutputSend_Global()." << std::endl;
 }
 void CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend_Global::dyn_REG_boot1_DEFINE_WriteEnableForThreadsAt_ServerOutputSend_Global()
 {
-    std::cout << "entered dyn_REG_boot1_DEFINE_WriteEnableForThreadsAt_ServerOutputSend_Global()." << std::endl;
+    std::cout << "thread "  << threadId << " :: entered dyn_REG_boot1_DEFINE_WriteEnableForThreadsAt_ServerOutputSend_Global()." << std::endl;
     stat_REG_boot1_DEFINE_ptr_WriteEnableForThreadsAt_ServerOutputSend_number_Of_Implemented_Threads();
     stat_REG_boot1_DEFINE_CONST_WriteEnableForThreadsAt_ServerOutputSend_2bitFLAG_IDLE();
     stat_REG_boot1_DEFINE_CONST_WriteEnableForThreadsAt_ServerOutputSend_2bitFLAG_WAIT();
     stat_REG_boot1_DEFINE_CONST_WriteEnableForThreadsAt_ServerOutputSend_2bitFLAG_WRITE();
-    std::cout << "exiting dyn_REG_boot1_DEFINE_WriteEnableForThreadsAt_ServerOutputSend_Global()." << std::endl;
+    std::cout << "thread "  << threadId << " :: exiting dyn_REG_boot1_DEFINE_WriteEnableForThreadsAt_ServerOutputSend_Global()." << std::endl;
 }
 void CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend_Global::dyn_REG_boot2_SUBSTANTIATE_WriteEnableForThreadsAt_ServerOutputSend_Global()
 {
-    std::cout << "entered dyn_REG_boot2_SUBSTANTIATE_WriteEnableForThreadsAt_ServerOutputSend_Global()." << std::endl;
+    std::cout << "thread "  << threadId << " :: entered dyn_REG_boot2_SUBSTANTIATE_WriteEnableForThreadsAt_ServerOutputSend_Global()." << std::endl;
     stat_REG_boot2_SUBSTANTIATE_CONST_WriteEnableForThreadsAt_ServerOutputSend_2bitFLAG_IDLE();
     stat_REG_boot2_SUBSTANTIATE_CONST_WriteEnableForThreadsAt_ServerOutputSend_2bitFLAG_WAIT();
     stat_REG_boot2_SUBSTANTIATE_CONST_WriteEnableForThreadsAt_ServerOutputSend_2bitFLAG_WRITE();
     stat_REG_boot2_SUBSTANTIATE_ptr_WriteEnableForThreadsAt_ServerOutputSend_number_Of_Implemented_Threads();
-    std::cout << "exiting dyn_REG_boot2_SUBSTANTIATE_WriteEnableForThreadsAt_ServerOutputSend_Global()." << std::endl;
+    std::cout << "thread "  << threadId << " :: exiting dyn_REG_boot2_SUBSTANTIATE_WriteEnableForThreadsAt_ServerOutputSend_Global()." << std::endl;
 }
 void CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend_Global::dyn_REG_boot3_INITIALISE_WriteEnableForThreadsAt_ServerOutputSend_Global()
 {
-    std::cout << "entered dyn_REG_boot3_INITIALISE_WriteEnableForThreadsAt_ServerOutputSend_Global()" << std::endl;
+    std::cout << "thread "  << threadId << " :: entered dyn_REG_boot3_INITIALISE_WriteEnableForThreadsAt_ServerOutputSend_Global()" << std::endl;
     stat_REG_boot3_INITIALISE_CONST_WriteEnableForThreadsAt_ServerOutputSend_2bitFLAG_IDLE();
     stat_REG_boot3_INITIALISE_CONST_WriteEnableForThreadsAt_ServerOutputSend_2bitFLAG_WAIT();
     stat_REG_boot3_INITIALISE_CONST_WriteEnableForThreadsAt_ServerOutputSend_2bitFLAG_WRITE();
     stat_REG_boot3_INITIALISE_ptr_WriteEnableForThreadsAt_ServerOutputSend_number_Of_Implemented_Threads();
-    std::cout << "exiting dyn_REG_boot3_INITIALISE_WriteEnableForThreadsAt_ServerOutputSend_Global()" << std::endl;
+    std::cout << "thread "  << threadId << " :: exiting dyn_REG_boot3_INITIALISE_WriteEnableForThreadsAt_ServerOutputSend_Global()" << std::endl;
 }
 std::array<bool,2> CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend_Global::dyn_REG_get_ptr_CONST_WriteEnableForThreadsAt_ServerOutputSend_2bitFLAG_IDLE()
 {

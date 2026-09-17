@@ -6,24 +6,24 @@
 // public.
 	void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT_Input_praise3::dyn_REG_boot1_DEFINE_Input_praise3()
 	{
-		std::cout << "entered dyn_REG_boot1_DEFINE_Input_praise3()" << std::endl;
+		std::cout << "thread "  << threadId << " :: entered dyn_REG_boot1_DEFINE_Input_praise3()" << std::endl;
 		stat_REG_boot1_DEFINE_Input_praise3_valueA();
 		stat_REG_boot1_DEFINE_Input_praise3_valueB();
-		std::cout << "exiting dyn_REG_boot1_DEFINE_Input_praise3()" << std::endl;
+		std::cout << "thread "  << threadId << " :: exiting dyn_REG_boot1_DEFINE_Input_praise3()" << std::endl;
 	}
 	void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT_Input_praise3::dyn_REG_boot2_SUBSTANTIATE_Input_praise3()
 	{
-		std::cout << "entered dyn_REG_boot2_SUBSTANTIATE_Input_praise3()" << std::endl;
+		std::cout << "thread "  << threadId << " :: entered dyn_REG_boot2_SUBSTANTIATE_Input_praise3()" << std::endl;
 		stat_REG_boot2_SUBSTANTIATE_Input_praise3_valueA();
 		stat_REG_boot2_SUBSTANTIATE_Input_praise3_valueB();
-		std::cout << "exiting dyn_REG_boot2_SUBSTANTIATE_Input_praise3()" << std::endl;
+		std::cout << "thread "  << threadId << " :: exiting dyn_REG_boot2_SUBSTANTIATE_Input_praise3()" << std::endl;
 	}
 	void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT_Input_praise3::dyn_REG_boot3_INITIALISE_Input_praise3()
 	{
-		std::cout << "entered dyn_REG_boot3_INITIALISE_Input_praise3()" << std::endl;
+		std::cout << "thread "  << threadId << " :: entered dyn_REG_boot3_INITIALISE_Input_praise3()" << std::endl;
 		stat_REG_boot3_INITIALISE_Input_praise3_valueA();
 		stat_REG_boot3_INITIALISE_Input_praise3_valueB();
-		std::cout << "exiting dyn_REG_boot3_INITIALISE_Input_praise3()" << std::endl;
+		std::cout << "thread "  << threadId << " :: exiting dyn_REG_boot3_INITIALISE_Input_praise3()" << std::endl;
 	}
 	double CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT_Input_praise3::dyn_REG_get_Item_Input_praise3_valueA()
 	{
