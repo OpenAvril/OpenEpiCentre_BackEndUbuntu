@@ -1,35 +1,34 @@
 #include "../include/CLIB_ThreadLogs.h"
 #include "../include/CLIB_ThreadLogs_Framework.h"
 #include <array>
-#include <cfloat>
 #include <cstdint>
 #include <iostream>
 	static CLIB_ThreadLogs::CLIB_ThreadLogs_Framework* _stat_REG_CLIB_ThreadLogs_Framework;
 	static std::array<bool, 4>* _stat_REG_flag_CLIB_ThreadLogs_isMemberFunctionINSTANTIATED;
 // public.
-	void* CLIB_ThreadLogs::CLIB_ThreadLogs::stat_App_FUNCT_CLIB_ThreadLogs_generate_Program() {
+	void* CLIB_ThreadLogs::CLIB_ThreadLogs::stat_App_FUNCT_CLIB_ThreadLogs_generate_Program(uint8_t threadId) {
 		std::cout << "started Classes - DECLARE, DEFINE INITIALISE, Registers - DECLARE." << std::endl;
-		stat_CLASS_boot1_DEFINE_CLIB_ThreadLogs_Framework();
-		stat_CLASS_boot3_INITIALISE_CLIB_ThreadLogs_Framework();
+		stat_CLASS_boot1_DEFINE_CLIB_ThreadLogs_Framework(threadId);
+		stat_CLASS_boot3_INITIALISE_CLIB_ThreadLogs_Framework(threadId);
 		std::cout << "done Classes - DECLARE, DEFINE INITIALISE, Registers - DECLARE." << std::endl;
 
 		std::cout << "started Registers - DEFINE" << std::endl;
-		stat_CLASS_get_ptr_CLIB_ThreadLogs_Framework()->dyn_REG_boot1_DEFINE_CLIB_ThreadLogs_Framework();
+		stat_CLASS_get_ptr_CLIB_ThreadLogs_Framework(threadId)->dyn_REG_boot1_DEFINE_CLIB_ThreadLogs_Framework(threadId);
 		std::cout << "done Registers - DEFINE." << std::endl;
 
 		std::cout << "started Registers - SUBSTANTIATE." << std::endl;
-		stat_CLASS_get_ptr_CLIB_ThreadLogs_Framework()->dyn_REG_boot2_SUBSTANTIATE_CLIB_ThreadLogs_Framework();
+		stat_CLASS_get_ptr_CLIB_ThreadLogs_Framework(threadId)->dyn_REG_boot2_SUBSTANTIATE_CLIB_ThreadLogs_Framework(threadId);
 		std::cout << "done Registers - SUBSTANTIATE." << std::endl;
 
 		std::cout << "started Registers - INITIALISE." << std::endl;
-		stat_CLASS_get_ptr_CLIB_ThreadLogs_Framework()->dyn_REG_boot3_INITIALISE_CLIB_ThreadLogs_Framework();
+		stat_CLASS_get_ptr_CLIB_ThreadLogs_Framework(threadId)->dyn_REG_boot3_INITIALISE_CLIB_ThreadLogs_Framework(threadId);
 		std::cout << "done Registers - INITIALISE." << std::endl;
 
 		std::cout << "started Program - INSTANTIATION." << std::endl;
-		stat_REG_boot1_DEFINE_CLIB_ThreadLogs_isFlagINSTANTIATED();
-		stat_REG_boot2_SUBSTANTIATE_CLIB_ThreadLogs_isFlagINSTANTIATED();
-		stat_REG_boot3_INITIALISE_CLIB_ThreadLogs_isFlagINSTANTIATED();
-		stat_CLASS_get_ptr_CLIB_ThreadLogs_Framework()->dyn_REG_boot3_INITIALISE_CLIB_ThreadLogs_Framework();
+		stat_REG_boot1_DEFINE_CLIB_ThreadLogs_array_Of_flag_isINSTANTIATED(threadId);
+		stat_REG_boot2_SUBSTANTIATE_CLIB_ThreadLogs_array_Of_flag_isINSTANTIATED(threadId);
+		stat_REG_boot3_INITIALISE_CLIB_ThreadLogs_array_Of_flag_isINSTANTIATED(threadId);
+		stat_CLASS_get_ptr_CLIB_ThreadLogs_Framework(threadId)->dyn_REG_boot3_INITIALISE_CLIB_ThreadLogs_Framework(threadId);
 		std::cout << "done Program - INSTANTIATION." << std::endl;
 
 		std::cout << "" << std::endl;
@@ -47,68 +46,81 @@
 		std::cout << "|/                //               \\| " << std::endl;
 		std::cout << "`                 V                 '" << std::endl;
 		std::cout << "" << std::endl;
-		return (void*)stat_CLASS_get_ptr_CLIB_ThreadLogs_Framework();
+		return (void*)stat_CLASS_get_ptr_CLIB_ThreadLogs_Framework(threadId);
 	}
-	unsigned char* CLIB_ThreadLogs::CLIB_ThreadLogs::stat_App_FUNCT_CLIB_ThreadLogs_get_flag_isPGM_INSTANTIATED()
+	unsigned char* CLIB_ThreadLogs::CLIB_ThreadLogs::stat_App_FUNCT_CLIB_ThreadLogs_get_flag_isPGM_INSTANTIATED(uint8_t threadId)
 	{
-		std::cout << "thread "  << threadId << " :: entered LIB :: CLIB_ThreadLogs : CLIB_ThreadLogs : stat_App_FUNCT_CLIB_ThreadLogs_get_flag_isPGM_INSTANTIATED()." << std::endl;
+		std::cout << "thread "  << threadId << " :: entered LIB :: CLIB_ThreadLogs : CLIB_ThreadLogs : stat_App_FUNCT_CLIB_ThreadLogs_get_flag_isPGM_INSTANTIATED(threadId)." << std::endl;
 		bool* result = nullptr;
-		result = new bool();
+		result = new bool(threadId);
 		*result = true;
-		if (!CLIB_ThreadLogs_stat_REG_get_CLIB_ThreadLogs_isFLAGINSTANTIATED()->at(0)) {
-			*result = CLIB_ThreadLogs_stat_REG_get_CLIB_ThreadLogs_isFLAGINSTANTIATED()->at(0);
+		if (!stat_REG_get_CLIB_ThreadLogs_array_Of_flag_isINSTANTIATED(threadId)->at(0)) {
+			*result = stat_REG_get_CLIB_ThreadLogs_array_Of_flag_isINSTANTIATED(threadId)->at(0);
 		}
 		else {
-			CLIB_ThreadLogs_stat_REG_get_CLIB_ThreadLogs_isFLAGINSTANTIATED()->at(1) = !CLIB_ThreadLogs_stat_REG_get_CLIB_ThreadLogs_isFLAGINSTANTIATED()->at(0);
-			CLIB_ThreadLogs_stat_REG_get_CLIB_ThreadLogs_isFLAGINSTANTIATED();
+			stat_REG_get_CLIB_ThreadLogs_array_Of_flag_isINSTANTIATED(threadId)->at(1) = !stat_REG_get_CLIB_ThreadLogs_array_Of_flag_isINSTANTIATED(threadId)->at(0);
+			stat_REG_get_CLIB_ThreadLogs_array_Of_flag_isINSTANTIATED(threadId);
 		}
-		std::cout << "thread "  << threadId << " ::  exiting LIB :: CLIB_ThreadLogs : CLIB_ThreadLogs : stat_App_FUNCT_CLIB_ThreadLogs_get_flag_isPGM_INSTANTIATED()." << std::endl;
+		std::cout << "thread "  << threadId << " ::  exiting LIB :: CLIB_ThreadLogs : CLIB_ThreadLogs : stat_App_FUNCT_CLIB_ThreadLogs_get_flag_isPGM_INSTANTIATED(threadId)." << std::endl;
 		return WriteEnableForThreadsAt_ServerInputReceive_Global::stat_APP_CONVERT_WriteEnableForThreadsAt_ServerInputReceive_MsbBoolean_To_MsbByteArray(*result);}
-	void CLIB_ThreadLogs::CLIB_ThreadLogs::stat_App_FUNCT_CLIB_ThreadLogs_terminate_Program() {
-		if (stat_REG_get_CLIB_ThreadLogs_isFlagINSTANTIATED()[2] == false) {
+	void CLIB_ThreadLogs::CLIB_ThreadLogs::stat_App_FUNCT_CLIB_ThreadLogs_terminate_Program(uint8_t threadId) {
+		std::cout << "thread "  << threadId << " :: exiting LIB :: CLIB_ThreadLogs : CLIB_ThreadLogs : stat_App_FUNCT_CLIB_ThreadLogs_terminate_Program(threadId)." << std::endl;
+		if (!stat_REG_get_CLIB_ThreadLogs_array_Of_flag_isINSTANTIATED(threadId)->at(2)) {
 			delete _stat_REG_CLIB_ThreadLogs_Framework;
 			delete _stat_REG_flag_CLIB_ThreadLogs_isMemberFunctionINSTANTIATED;
 		}
 		else {
-			stat_REG_get_CLIB_ThreadLogs_isFlagINSTANTIATED()[2] = false;
+			stat_REG_get_CLIB_ThreadLogs_array_Of_flag_isINSTANTIATED(threadId)->at(2) = !stat_REG_get_CLIB_ThreadLogs_array_Of_flag_isINSTANTIATED(threadId)->at(2);
 		}
+		std::cout << "thread "  << threadId << " :: exiting LIB :: CLIB_ThreadLogs : CLIB_ThreadLogs : stat_App_FUNCT_CLIB_ThreadLogs_terminate_Program(threadId)." << std::endl;
 	}
 // private.
-void CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_Calc_IsAllINSTANTIATED() {
-	stat_REG_get_CLIB_ThreadLogs_isFlagINSTANTIATED()[0] = false;
-	for (uint8_t memberFunctionId = 1; memberFunctionId < sizeof(_stat_REG_flag_CLIB_ThreadLogs_isMemberFunctionINSTANTIATED); memberFunctionId++)
-	{
-		if (stat_REG_get_CLIB_ThreadLogs_isFlagINSTANTIATED()[memberFunctionId] == true)
-		{
-			stat_REG_get_CLIB_ThreadLogs_isFlagINSTANTIATED()[0] = true;
-		}
+void CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_Calc_IsAllINSTANTIATED(uint8_t threadId) {
+	std::cout << "thread "  << threadId << " :: entered LIB :: CLIB_ThreadLogs : CLIB_ThreadLogs : stat_APP_FUNCT_CLIB_ThreadLogs_Calc_IsAllINSTANTIATED(threadId)." << std::endl;
+	stat_REG_get_CLIB_ThreadLogs_array_Of_flag_isINSTANTIATED(threadId)->at(0) = false;
+	for (uint8_t memberFunctionId = 1; memberFunctionId < stat_REG_get_CLIB_ThreadLogs_array_Of_flag_isINSTANTIATED()->size(); memberFunctionId++) {
+		if (stat_REG_get_CLIB_ThreadLogs_array_Of_flag_isINSTANTIATED(threadId)->at(memberFunctionId)) stat_REG_get_CLIB_ThreadLogs_array_Of_flag_isINSTANTIATED(threadId)->at(0) = stat_REG_get_CLIB_ThreadLogs_array_Of_flag_isINSTANTIATED(threadId)->at(memberFunctionId);
+		break;
 	}
+	std::cout << "thread "  << threadId << " :: exiting LIB :: CLIB_ThreadLogs : CLIB_ThreadLogs : stat_APP_FUNCT_CLIB_ThreadLogs_Calc_IsAllINSTANTIATED(threadId)." << std::endl;
+
 }
-void CLIB_ThreadLogs::CLIB_ThreadLogs::stat_CLASS_boot1_DEFINE_CLIB_ThreadLogs_Framework() {
+void CLIB_ThreadLogs::CLIB_ThreadLogs::stat_CLASS_boot1_DEFINE_CLIB_ThreadLogs_Framework(uint8_t threadId) {
+	std::cout << "thread "  << threadId << " :: entered LIB :: CLIB_ThreadLogs : CLIB_ThreadLogs : stat_CLASS_boot1_DEFINE_CLIB_ThreadLogs_Framework(threadId)." << std::endl;
 	_stat_REG_CLIB_ThreadLogs_Framework = nullptr;
+	std::cout << "thread "  << threadId << " :: exiting LIB :: CLIB_ThreadLogs : CLIB_ThreadLogs : stat_CLASS_boot1_DEFINE_CLIB_ThreadLogs_Framework(threadId)." << std::endl;
 }
 void CLIB_ThreadLogs::CLIB_ThreadLogs::stat_CLASS_boot3_INITIALISE_CLIB_ThreadLogs_Framework(uint8_t threadId) {
+	std::cout << "thread "  << threadId << " :: entered LIB :: CLIB_ThreadLogs : CLIB_ThreadLogs : stat_CLASS_boot3_INITIALISE_CLIB_ThreadLogs_Framework(threadId)." << std::endl;
 	_stat_REG_CLIB_ThreadLogs_Framework = new class CLIB_ThreadLogs::CLIB_ThreadLogs_Framework();
-	while (stat_CLASS_get_ptr_CLIB_ThreadLogs_Framework() == NULL) {}
+	while (stat_CLASS_get_ptr_CLIB_ThreadLogs_Framework(threadId) == nullptr) {}
+	std::cout << "thread "  << threadId << " :: exiting LIB :: CLIB_ThreadLogs : CLIB_ThreadLogs : stat_CLASS_boot3_INITIALISE_CLIB_ThreadLogs_Framework(threadId)." << std::endl;
 }
-CLIB_ThreadLogs::CLIB_ThreadLogs_Framework* CLIB_ThreadLogs::CLIB_ThreadLogs::stat_CLASS_get_ptr_CLIB_ThreadLogs_Framework() {
+CLIB_ThreadLogs::CLIB_ThreadLogs_Framework* CLIB_ThreadLogs::CLIB_ThreadLogs::stat_CLASS_get_ptr_CLIB_ThreadLogs_Framework(uint8_t threadId) {
 	return _stat_REG_CLIB_ThreadLogs_Framework;
 }
-void CLIB_ThreadLogs::CLIB_ThreadLogs::stat_REG_boot1_DEFINE_CLIB_ThreadLogs_isFlagINSTANTIATED() {
-	_stat_REG_flag_CLIB_ThreadLogs_isMemberFunctionINSTANTIATED = NULL;
+void CLIB_ThreadLogs::CLIB_ThreadLogs::stat_REG_boot1_DEFINE_CLIB_ThreadLogs_array_Of_flag_isINSTANTIATED(uint8_t threadId) {
+	std::cout << "thread "  << threadId << " :: entered LIB :: CLIB_ThreadLogs : CLIB_ThreadLogs : stat_REG_boot1_DEFINE_CLIB_ThreadLogs_array_Of_flag_isINSTANTIATED(threadId)." << std::endl;
+	_stat_REG_flag_CLIB_ThreadLogs_isMemberFunctionINSTANTIATED = nullptr;
+	std::cout << "thread "  << threadId << " :: exiting LIB :: CLIB_ThreadLogs : CLIB_ThreadLogs : stat_REG_boot1_DEFINE_CLIB_ThreadLogs_array_Of_flag_isINSTANTIATED(threadId)." << std::endl;
 }
-void CLIB_ThreadLogs::CLIB_ThreadLogs::stat_REG_boot2_SUBSTANTIATE_CLIB_ThreadLogs_isFlagINSTANTIATED() {
+void CLIB_ThreadLogs::CLIB_ThreadLogs::stat_REG_boot2_SUBSTANTIATE_CLIB_ThreadLogs_array_Of_flag_isINSTANTIATED(uint8_t threadId) {
+	std::cout << "thread "  << threadId << " :: entered LIB :: CLIB_ThreadLogs : CLIB_ThreadLogs : stat_REG_boot2_SUBSTANTIATE_CLIB_ThreadLogs_array_Of_flag_isINSTANTIATED(threadId)." << std::endl;
 	_stat_REG_flag_CLIB_ThreadLogs_isMemberFunctionINSTANTIATED = new std::array<bool, 4>();
-	while (stat_REG_get_CLIB_ThreadLogs_isFlagINSTANTIATED() == nullptr) {}
-	for (uint8_t index = 0; index < stat_REG_get_CLIB_ThreadLogs_isFlagINSTANTIATED()->size(); index++)	{
-		stat_REG_get_CLIB_ThreadLogs_isFlagINSTANTIATED()->at(index) = true;
+	while (stat_REG_get_CLIB_ThreadLogs_array_Of_flag_isINSTANTIATED(threadId) == nullptr) {}
+	for (uint8_t index = 0; index < static_cast<uint8_t>(stat_REG_get_CLIB_ThreadLogs_array_Of_flag_isINSTANTIATED(threadId)->size()); index++)	{
+		stat_REG_get_CLIB_ThreadLogs_array_Of_flag_isINSTANTIATED(threadId)->at(index) = true;
 	}
+	std::cout << "thread "  << threadId << " :: exiting LIB :: CLIB_ThreadLogs : CLIB_ThreadLogs : stat_REG_boot2_SUBSTANTIATE_CLIB_ThreadLogs_array_Of_flag_isINSTANTIATED(threadId)." << std::endl;
 }
-void CLIB_ThreadLogs::CLIB_ThreadLogs::stat_REG_boot3_INITIALISE_CLIB_ThreadLogs_isFlagINSTANTIATED() {
-	for (uint8_t index = 0; index < stat_REG_get_CLIB_ThreadLogs_isFlagINSTANTIATED()->size(); index++)	{
-		stat_REG_get_CLIB_ThreadLogs_isFlagINSTANTIATED()->at(index) = true;
+void CLIB_ThreadLogs::CLIB_ThreadLogs::stat_REG_boot3_INITIALISE_CLIB_ThreadLogs_array_Of_flag_isINSTANTIATED(uint8_t threadId) {
+	std::cout << "thread "  << threadId << " :: entered LIB :: CLIB_ThreadLogs : CLIB_ThreadLogs : stat_REG_boot3_INITIALISE_CLIB_ThreadLogs_array_Of_flag_isINSTANTIATED(threadId)." << std::endl;
+	for (uint8_t index = 0; index < static_cast<uint8_t>(stat_REG_get_CLIB_ThreadLogs_array_Of_flag_isINSTANTIATED(threadId)->size()); index++)	{
+		stat_REG_get_CLIB_ThreadLogs_array_Of_flag_isINSTANTIATED(threadId)->at(index) = true;
 	}
+	std::cout << "thread "  << threadId << " :: exiting LIB :: CLIB_ThreadLogs : CLIB_ThreadLogs : stat_REG_boot3_INITIALISE_CLIB_ThreadLogs_array_Of_flag_isINSTANTIATED(threadId)." << std::endl;
 }
-std::array<bool, 4>*  CLIB_ThreadLogs::CLIB_ThreadLogs::stat_REG_get_CLIB_ThreadLogs_isFlagINSTANTIATED() {
+std::array<bool, 4>*  CLIB_ThreadLogs::CLIB_ThreadLogs::stat_REG_get_CLIB_ThreadLogs_array_Of_flag_isINSTANTIATED(uint8_t threadId) {
+	std::cout << "thread "  << threadId << " :: <= std::array<bool, 4>* : stat_REG_get_CLIB_ThreadLogs_array_Of_flag_isINSTANTIATED(uint8_t threadId) = " << _stat_REG_flag_CLIB_ThreadLogs_isMemberFunctionINSTANTIATED << std::endl;
 	return _stat_REG_flag_CLIB_ThreadLogs_isMemberFunctionINSTANTIATED;
 }
