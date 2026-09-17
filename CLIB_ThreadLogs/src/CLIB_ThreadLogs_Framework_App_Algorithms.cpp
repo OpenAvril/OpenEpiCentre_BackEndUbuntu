@@ -33,7 +33,7 @@
 		std::cout << "thread "  << threadId << " :: * APP_FUNCT : dyn_APP_FUNCT_CLIB_ThreadLogs_printLog(threadId)." << std::endl;
 		stat_APP_FUNCT_CLIB_ThreadLogs_printLog(threadId, message);
 	}
-// private/
+// private.
 	void CLIB_ThreadLogs::CLIB_ThreadLogs_Framework_App_Algorithms::stat_CLASS_boot0_DECLAIRE_CLIB_ThreadLogs_Framework_App_Algorithms(uint8_t threadId) {
 		std::cout << "thread "  << threadId << " :: entered LIB :: CLIB_ThreadLogs : CLIB_ThreadLogs_Framework_App_Algorithms : stat_CLASS_boot0_DECLAIRE_CLIB_ThreadLogs_Framework_App_Algorithms(threadId)." << std::endl;
 		std::cout << "thread "  << threadId << " :: exiting LIB :: CLIB_ThreadLogs : CLIB_ThreadLogs_Framework_App_Algorithms : stat_CLASS_boot0_DECLAIRE_CLIB_ThreadLogs_Framework_App_Algorithms(threadId)." << std::endl;
@@ -63,6 +63,6 @@
 	}
 	void CLIB_ThreadLogs::CLIB_ThreadLogs_Framework_App_Algorithms::stat_APP_FUNCT_CLIB_ThreadLogs_printLog(uint8_t threadId, std::list<std::string>* message)	{
 		std::cout << "thread "  << threadId << " :: * APP_FUNCT : dyn_APP_FUNCT_CLIB_ThreadLogs_printLog(threadId)." << std::endl;
-
+		//todo log file
 	}
 
