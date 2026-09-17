@@ -26,7 +26,7 @@
 		std::cout << "thread "  << threadId << " :: exiting LIB :: CLIB_ThreadLogs : CLIB_ThreadLogs_Framework_App_Algorithms : dyn_REG_boot3_INITIALISE_CLIB_ThreadLogs_Framework_App_Algorithms(threadId)." << std::endl;
 	}
 	void CLIB_ThreadLogs::CLIB_ThreadLogs_Framework_App_Algorithms::dyn_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(uint8_t threadId, std::list<std::string>* message)	{
-		std::cout << "thread "  << threadId << " :: * APP_FUNCT : dyn_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId)." << std::endl;
+		//std::cout << "thread "  << threadId << " :: * APP_FUNCT : dyn_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId)." << std::endl;
 		stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, message);
 	}
 	void CLIB_ThreadLogs::CLIB_ThreadLogs_Framework_App_Algorithms::dyn_APP_FUNCT_CLIB_ThreadLogs_printLog(uint8_t threadId, std::list<std::string>* message)	{
@@ -51,7 +51,7 @@
 		std::cout << "thread "  << threadId << " :: exiting LIB :: CLIB_ThreadLogs : CLIB_ThreadLogs_Framework_App_Algorithms : stat_REG_boot0_DECLAIRE_CLIB_ThreadLogs_Framework_App_Algorithms(threadId)." << std::endl;
 	}
 	void CLIB_ThreadLogs::CLIB_ThreadLogs_Framework_App_Algorithms::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(uint8_t threadId, std::list<std::string>* message)	{
-		std::cout << "thread "  << threadId << " :: * APP_FUNCT : dyn_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId)." << std::endl;
+		//std::cout << "thread "  << threadId << " :: * APP_FUNCT : dyn_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId)." << std::endl;
 		stat_APP_FUNCT_CLIB_ThreadLogs_printLog(threadId, message);
 		std::cout << "thread "  << threadId << " :: ";
 		for (uint8_t index = 0; index < static_cast<uint8_t>(message->size()); index++) {
