@@ -1,5 +1,6 @@
 #ifndef CLIB_THEADLOGS_CLIB_ThreadLogs_H
 #define CLIB_THEADLOGS_CLIB_ThreadLogs_H
+#include "../include/CLIB_ThreadLogs_Framework.h"
 #include <cstdint>
 #include <list>
 #include <string>
@@ -9,10 +10,12 @@ extern "C" {
             public:
             static void* stat_App_FUNCT_CLIB_ThreadLogs_generate_Program(uint8_t threadId);
             static unsigned char* stat_App_FUNCT_CLIB_ThreadLogs_get_flag_isPGM_INSTANTIATED(uint8_t threadId);
-            static void printLog(uint8_t threadId, std::list<std::string> stringForLogPrint);
+            static void stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(uint8_t threadId, std::string* stringForLogPrint);
+            static void stat_APP_FUNCT_CLIB_ThreadLogs_messageBuilder(uint8_t threadId, std::string* stringForLogPrint);
             static void stat_App_FUNCT_CLIB_ThreadLogs_terminate_Program(uint8_t threadId);
         private:
             static void stat_APP_FUNCT_CLIB_ThreadLogs_Calc_IsAllINSTANTIATED(uint8_t threadId);
+            static void pr_stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(uint8_t threadId, std::string* stringForLogPrint);
             static void stat_CLASS_boot1_DEFINE_CLIB_ThreadLogs_Framework(uint8_t threadId);
             static void stat_CLASS_boot3_INITIALISE_CLIB_ThreadLogs_Framework(uint8_t threadId);
             static class CLIB_ThreadLogs_Framework* stat_CLASS_get_ptr_CLIB_ThreadLogs_Framework(uint8_t threadId);

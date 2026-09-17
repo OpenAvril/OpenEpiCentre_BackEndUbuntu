@@ -2,8 +2,6 @@
 #include <iostream>
 	CLIB_ThreadLogs::CLIB_ThreadLogs_Framework_App* CLIB_ThreadLogs::CLIB_ThreadLogs_Framework::_stat_CLASS_ptr_CLIB_ThreadLogs_Framework_App;
 	CLIB_ThreadLogs::CLIB_ThreadLogs_Framework_Global* CLIB_ThreadLogs::CLIB_ThreadLogs_Framework::_stat_CLASS_ptr_CLIB_ThreadLogs_Framework_Global;
-	CLIB_ThreadLogs::CLIB_ThreadLogs_Framework_App_Data_Input* CLIB_ThreadLogs::CLIB_ThreadLogs_Framework::_stat_STRUCT_CLIB_ThreadLogs_Framework_App_Data_Input;
-	CLIB_ThreadLogs::CLIB_ThreadLogs_Framework_App_Data_Output* CLIB_ThreadLogs::CLIB_ThreadLogs_Framework::_stat_STRUCT_CLIB_ThreadLogs_Framework_App_Data_Output;
 // private.
 	CLIB_ThreadLogs::CLIB_ThreadLogs_Framework::CLIB_ThreadLogs_Framework(uint8_t threadId)	{
 		std::cout << "thread "  << threadId << " :: entered LIB :: CLIB_ThreadLogs : CLIB_ThreadLogs_Framework : CLIB_ThreadLogs_Framework(threadId)." << std::endl;
@@ -17,20 +15,14 @@
 		std::cout << "thread ? :: entered LIB :: CLIB_ThreadLogs : CLIB_ThreadLogs_Framework : ~CLIB_ThreadLogs_Framework()." << std::endl;
 		delete _stat_CLASS_ptr_CLIB_ThreadLogs_Framework_App;
 		delete _stat_CLASS_ptr_CLIB_ThreadLogs_Framework_Global;
-		delete _stat_STRUCT_CLIB_ThreadLogs_Framework_App_Data_Input;
-		delete _stat_STRUCT_CLIB_ThreadLogs_Framework_App_Data_Output;
 		std::cout << "thread ? :: exiting LIB :: CLIB_ThreadLogs : CLIB_ThreadLogs_Framework : ~CLIB_ThreadLogs_Framework()." << std::endl;
 	}
 	void CLIB_ThreadLogs::CLIB_ThreadLogs_Framework::dyn_APP_CLIB_ThreadLogs_stat_STRUCT_boot1_DEFINE(uint8_t threadId) {
 		std::cout << "thread "  << threadId << " :: entered LIB :: CLIB_ThreadLogs : CLIB_ThreadLogs_Framework : dyn_APP_CLIB_ThreadLogs_stat_STRUCT_boot1_DEFINE(threadId)." << std::endl;
-		stat_STRUCT_boot1_DEFINE_User_CLIB_ThreadLogs_Framework_App_Data_Input(threadId);
-		stat_STRUCT_boot1_DEFINE_User_CLIB_ThreadLogs_Framework_App_Data_Output(threadId);
 		std::cout << "thread "  << threadId << " :: exiting LIB :: CLIB_ThreadLogs : CLIB_ThreadLogs_Framework : dyn_APP_CLIB_ThreadLogs_stat_STRUCT_boot1_DEFINE(threadId)." << std::endl;
 	}
 	void CLIB_ThreadLogs::CLIB_ThreadLogs_Framework::dyn_APP_CLIB_ThreadLogs_stat_STRUCT_boot3_INITIALISE(uint8_t threadId)	{
 		std::cout << "thread "  << threadId << " :: entered LIB :: CLIB_ThreadLogs : CLIB_ThreadLogs_Framework : dyn_APP_CLIB_ThreadLogs_stat_STRUCT_boot3_INITIALISE(threadId)." << std::endl;
-		stat_STRUCT_boot3_INITIALISE_User_CLIB_ThreadLogs_Framework_App_Data_Input(threadId);
-		stat_STRUCT_boot3_INITIALISE_User_CLIB_ThreadLogs_Framework_App_Data_Output(threadId);
 		std::cout << "thread "  << threadId << " :: exiting LIB :: CLIB_ThreadLogs : CLIB_ThreadLogs_Framework : dyn_APP_CLIB_ThreadLogs_stat_STRUCT_boot3_INITIALISE(threadId)." << std::endl;
 	}
 	void CLIB_ThreadLogs::CLIB_ThreadLogs_Framework::dyn_REG_boot1_DEFINE_CLIB_ThreadLogs_Framework(uint8_t threadId) {
@@ -52,14 +44,6 @@
 	CLIB_ThreadLogs::CLIB_ThreadLogs_Framework_Global* CLIB_ThreadLogs::CLIB_ThreadLogs_Framework::dyn_CLASS_get_ptr_CLIB_ThreadLogs_Framework_Global(uint8_t threadId) {
 		std::cout << "thread "  << threadId << " :: <= class : dyn_CLASS_get_ptr_CLIB_ThreadLogs_Framework_Global(threadId)." << std::endl;
 		return stat_CLASS_get_ptr_CLIB_ThreadLogs_Framework_Global(threadId);
-	}
-	CLIB_ThreadLogs::CLIB_ThreadLogs_Framework_App_Data_Input* CLIB_ThreadLogs::CLIB_ThreadLogs_Framework::dyn_STRUCT_get_REG_CLIB_ThreadLogs_Framework_App_Data_Input(uint8_t threadId) {
-		std::cout << "thread "  << threadId << " :: <= class : dyn_STRUCT_get_REG_CLIB_ThreadLogs_Framework_App_Data_Input(threadId)." << std::endl;
-		return stat_STRUCT_get_CLIB_ThreadLogs_Framework_App_Data_Input(threadId);
-	}
-	CLIB_ThreadLogs::CLIB_ThreadLogs_Framework_App_Data_Output* CLIB_ThreadLogs::CLIB_ThreadLogs_Framework::dyn_STRUCT_get_REG_CLIB_ThreadLogs_Framework_App_Data_Output(uint8_t threadId) {
-		std::cout << "thread "  << threadId << " :: <= class : dyn_STRUCT_get_REG_CLIB_ThreadLogs_Framework_App_Data_Output(threadId)." << std::endl;
-		return stat_STRUCT_get_CLIB_ThreadLogs_Framework_App_Data_Output(threadId);
 	}
 // private.
 	void CLIB_ThreadLogs::CLIB_ThreadLogs_Framework::stat_CLASS_boot0_DECLAIRE_CLIB_ThreadLogs_Framework(uint8_t threadId) {
@@ -91,41 +75,11 @@
 	}
 	void CLIB_ThreadLogs::CLIB_ThreadLogs_Framework::stat_CLASS_boot3_INITIALISE_CLIB_ThreadLogs_Framework_App(uint8_t threadId) {
 		std::cout << "thread "  << threadId << " :: entered LIB :: CLIB_ThreadLogs : CLIB_ThreadLogs_Framework : stat_CLASS_boot3_INITIALISE_CLIB_ThreadLogs_Framework_App(threadId)." << std::endl;
-		_stat_CLASS_ptr_CLIB_ThreadLogs_Framework_App = new class CLIB_ThreadLogs::CLIB_ThreadLogs_Framework_App();
+		_stat_CLASS_ptr_CLIB_ThreadLogs_Framework_App = new class CLIB_ThreadLogs::CLIB_ThreadLogs_Framework_App(threadId);
 		while (stat_CLASS_get_ptr_CLIB_ThreadLogs_Framework_App(threadId) == nullptr) {}
 		std::cout << "thread "  << threadId << " :: exiting LIB :: CLIB_ThreadLogs : CLIB_ThreadLogs_Framework : stat_CLASS_boot3_INITIALISE_CLIB_ThreadLogs_Framework_App(threadId)." << std::endl;
 	}
 	CLIB_ThreadLogs::CLIB_ThreadLogs_Framework_App* CLIB_ThreadLogs::CLIB_ThreadLogs_Framework::stat_CLASS_get_ptr_CLIB_ThreadLogs_Framework_App(uint8_t threadId) {
 		std::cout << "thread "  << threadId << " :: <= class : stat_CLASS_get_ptr_CLIB_ThreadLogs_Framework_App(threadId)." << std::endl;
 		return _stat_CLASS_ptr_CLIB_ThreadLogs_Framework_App;
-	}
-	void CLIB_ThreadLogs::CLIB_ThreadLogs_Framework::stat_STRUCT_boot1_DEFINE_User_CLIB_ThreadLogs_Framework_App_Data_Input(uint8_t threadId) {
-		std::cout << "thread "  << threadId << " :: entered LIB :: CLIB_ThreadLogs : CLIB_ThreadLogs_Framework : stat_STRUCT_boot1_DEFINE_User_CLIB_ThreadLogs_Framework_App_Data_Input(threadId)." << std::endl;
-		_stat_STRUCT_CLIB_ThreadLogs_Framework_App_Data_Input = nullptr;
-		std::cout << "thread "  << threadId << " :: exiting LIB :: CLIB_ThreadLogs : CLIB_ThreadLogs_Framework : stat_STRUCT_boot1_DEFINE_User_CLIB_ThreadLogs_Framework_App_Data_Input(threadId)." << std::endl;
-	}
-	void CLIB_ThreadLogs::CLIB_ThreadLogs_Framework::stat_STRUCT_boot1_DEFINE_User_CLIB_ThreadLogs_Framework_App_Data_Output(uint8_t threadId) {
-		std::cout << "thread "  << threadId << " :: entered LIB :: CLIB_ThreadLogs : CLIB_ThreadLogs_Framework : stat_STRUCT_boot1_DEFINE_User_CLIB_ThreadLogs_Framework_App_Data_Output(threadId)." << std::endl;
-		_stat_STRUCT_CLIB_ThreadLogs_Framework_App_Data_Output = nullptr;
-		std::cout << "thread "  << threadId << " :: exiting LIB :: CLIB_ThreadLogs : CLIB_ThreadLogs_Framework : stat_STRUCT_boot1_DEFINE_User_CLIB_ThreadLogs_Framework_App_Data_Output(threadId)." << std::endl;
-	}
-	void CLIB_ThreadLogs::CLIB_ThreadLogs_Framework::stat_STRUCT_boot3_INITIALISE_User_CLIB_ThreadLogs_Framework_App_Data_Input(uint8_t threadId) {
-		std::cout << "thread "  << threadId << " :: entered LIB :: CLIB_ThreadLogs : CLIB_ThreadLogs_Framework : stat_STRUCT_boot3_INITIALISE_User_CLIB_ThreadLogs_Framework_App_Data_Input(threadId)." << std::endl;
-		_stat_STRUCT_CLIB_ThreadLogs_Framework_App_Data_Input = new struct CLIB_ThreadLogs::CLIB_ThreadLogs_Framework_App_Data_Input();
-		while (stat_STRUCT_get_CLIB_ThreadLogs_Framework_App_Data_Input(threadId) == nullptr) {}
-		std::cout << "thread "  << threadId << " :: exiting LIB :: CLIB_ThreadLogs : CLIB_ThreadLogs_Framework : stat_STRUCT_boot3_INITIALISE_User_CLIB_ThreadLogs_Framework_App_Data_Input(threadId)." << std::endl;
-	}
-	void CLIB_ThreadLogs::CLIB_ThreadLogs_Framework::stat_STRUCT_boot3_INITIALISE_User_CLIB_ThreadLogs_Framework_App_Data_Output(uint8_t threadId) {
-		std::cout << "thread "  << threadId << " :: entered LIB :: CLIB_ThreadLogs : CLIB_ThreadLogs_Framework : stat_STRUCT_boot3_INITIALISE_User_CLIB_ThreadLogs_Framework_App_Data_Output(threadId)." << std::endl;
-		_stat_STRUCT_CLIB_ThreadLogs_Framework_App_Data_Output = new struct CLIB_ThreadLogs::CLIB_ThreadLogs_Framework_App_Data_Output();
-		while (stat_STRUCT_get_CLIB_ThreadLogs_Framework_App_Data_Output(threadId) == nullptr) {}
-		std::cout << "thread "  << threadId << " :: exiting LIB :: CLIB_ThreadLogs : CLIB_ThreadLogs_Framework : stat_STRUCT_boot3_INITIALISE_User_CLIB_ThreadLogs_Framework_App_Data_Output(threadId)." << std::endl;
-	}
-	CLIB_ThreadLogs::CLIB_ThreadLogs_Framework_App_Data_Input* CLIB_ThreadLogs::CLIB_ThreadLogs_Framework::stat_STRUCT_get_CLIB_ThreadLogs_Framework_App_Data_Input(uint8_t threadId) {
-		std::cout << "thread "  << threadId << " :: <= class : stat_STRUCT_get_CLIB_ThreadLogs_Framework_App_Data_Input(threadId)." << std::endl;
-		return _stat_STRUCT_CLIB_ThreadLogs_Framework_App_Data_Input;
-	}
-	CLIB_ThreadLogs::CLIB_ThreadLogs_Framework_App_Data_Output* CLIB_ThreadLogs::CLIB_ThreadLogs_Framework::stat_STRUCT_get_CLIB_ThreadLogs_Framework_App_Data_Output(uint8_t threadId)	{
-		std::cout << "thread "  << threadId << " :: <= class : stat_STRUCT_get_CLIB_ThreadLogs_Framework_App_Data_Output(threadId)." << std::endl;
-		return _stat_STRUCT_CLIB_ThreadLogs_Framework_App_Data_Output;
 	}

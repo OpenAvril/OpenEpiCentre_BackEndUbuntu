@@ -10,7 +10,4 @@ add_library(CLIB_ThreadLogs STATIC
         src/CLIB_ThreadLogs_Framework_Global.cpp
         src/CLIB_ThreadLogs_Framework_App.cpp
         src/CLIB_ThreadLogs_Framework_App_Algorithms.cpp
-        src/CLIB_ThreadLogs_Framework_App_Data.cpp
-        src/CLIB_ThreadLogs_Framework_App_Data_Input.cpp
-        src/CLIB_ThreadLogs_Framework_App_Data_Output.cpp
 )

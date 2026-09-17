@@ -1,7 +1,6 @@
 #ifndef CLIB_CLIB_ThreadLogs_CLIB_ThreadLogs_Framework_App_H
 #define CLIB_CLIB_ThreadLogs_CLIB_ThreadLogs_Framework_App_H
 #include "../include/CLIB_ThreadLogs_Framework_App_Algorithms.h"
-#include "../include/CLIB_ThreadLogs_Framework_App_Data.h"
 #include <cstdint>
 namespace CLIB_ThreadLogs {
     class CLIB_ThreadLogs_Framework_App {
