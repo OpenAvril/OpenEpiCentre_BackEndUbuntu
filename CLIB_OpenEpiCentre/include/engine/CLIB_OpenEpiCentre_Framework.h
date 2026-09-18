@@ -44,9 +44,6 @@ namespace CLIBOpenEpiCentre {
         static void stat_CLASS_boot3_INITIALISE_CLIB_OpenEpiCentre_Framework(uint8_t threadId);
         static void stat_CLASS_boot4_INSTANTIATE_CLIB_OpenEpiCentre_Framework(uint8_t threadId);
         static void stat_REG_boot0_DECLARE_CLIB_OpenEpiCentre_Framework(uint8_t threadId);
-        static void stat_STRUCT_boot0_DECLARE_CLIB_OpenEpiCentre_Framework(uint8_t threadId);
-        static void stat_STRUCT_boot1_DEFINE_CLIB_OpenEpiCentre_Framework(uint8_t threadId);
-        static void stat_STRUCT_boot3_INITIALISE_CLIB_OpenEpiCentre_Framework(uint8_t threadId);
     private:
         static struct CLIB_OpenEpiCentre_App* _stat_CLASS_ptr_CLIB_OpenEpiCentre_Framework_App;
         static struct CLIB_OpenEpiCentre_Global* _stat_CLASS_ptr_CLIB_OpenEpiCentre_Framework_Global;
@@ -62,7 +59,6 @@ namespace CLIBOpenEpiCentre {
         static void stat_CLASS_boot3_INITIALISE_CLIB_OpenEpiCentre_Framework_Global(uint8_t threadId);
         static struct CLIB_OpenEpiCentre_App* stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App(uint8_t threadId);
         static struct CLIB_OpenEpiCentre_Global* stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_Global(uint8_t threadId);
-
         static void stat_STRUCT_boot1_DEFINE_CLIB_OpenEpiCentre_Framework_User_Algorithm(uint8_t threadId);
         static void stat_STRUCT_boot1_DEFINE_CLIB_OpenEpiCentre_Framework_User_Input(uint8_t threadId);
         static void stat_STRUCT_boot1_DEFINE_CLIB_OpenEpiCentre_Framework_User_Output(uint8_t threadId);
@@ -83,4 +79,4 @@ namespace CLIBOpenEpiCentre {
         static struct CLIB_OpenEpiCentre_STRUCT_User_Output* stat_STRUCT_get_CLIB_OpenEpiCentre_Framework_User_Output(uint8_t threadId);
     };
 }
-#endif //TESTBENCH_CLIB_OPENEPICENTRE_FRAMEWORK_H
+#endif

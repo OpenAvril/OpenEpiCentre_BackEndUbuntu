@@ -23,7 +23,6 @@ namespace CLIB_ThreadLogs {
         static void stat_CLASS_boot1_DEFINE_CLIB_ThreadLogs_Framework_Global(uint8_t threadId);
         static void stat_CLASS_boot3_INITIALISE_CLIB_ThreadLogs_Framework_Global(uint8_t threadId);
         static void stat_REG_boot0_DECLAIRE_CLIB_ThreadLogs_Framework_Global(uint8_t threadId);
-
     };
 }
 #endif

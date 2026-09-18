@@ -1,4 +1,5 @@
 #include "../include/CLIB_ThreadLogs_Framework_Global.h"
+#include "../../CLIB_ThreadLogs/include/CLIB_ThreadLogs.h"
 #include <climits>
 #include <cstdint>
 #include <cstring>
@@ -13,8 +14,8 @@
         std::cout << "thread "  << threadId << " :: exiting LIB :: CLIB_ThreadLogs : CLIB_ThreadLogs_Framework_Global : CLIB_ThreadLogs_Framework_Global(threadId)." << std::endl;
     }
     CLIB_ThreadLogs::CLIB_ThreadLogs_Framework_Global::~CLIB_ThreadLogs_Framework_Global() {
-        std::cout << "thread ? :: entered LIB :: CLIB_ThreadLogs : CLIB_ThreadLogs_Framework_Global : ~CLIB_ThreadLogs_Framework_Global()." << std::endl;
-        std::cout << "thread ? :: exiting LIB :: CLIB_ThreadLogs : CLIB_ThreadLogs_Framework_Global : ~CLIB_ThreadLogs_Framework_Global()." << std::endl;
+        std::cout << "thread "  << 0 << " :: entered LIB :: CLIB_ThreadLogs : CLIB_ThreadLogs_Framework_Global : ~CLIB_ThreadLogs_Framework_Global()." << std::endl;
+        std::cout << "thread "  << 0 << " :: exiting LIB :: CLIB_ThreadLogs : CLIB_ThreadLogs_Framework_Global : ~CLIB_ThreadLogs_Framework_Global()." << std::endl;
     }
     unsigned char* CLIB_ThreadLogs::CLIB_ThreadLogs_Framework_Global::stat_APP_CONVERT_WriteEnableForThreadsAt_STACK_Msbdouble_To_MsbByteArray(uint8_t threadId, double value) {
         std::cout << "thread "  << threadId << " :: <= CONVERT : stat_APP_CONVERT_WriteEnableForThreadsAt_STACK_Msbdouble_To_MsbByteArray(threadId, value)." << std::endl;
@@ -61,7 +62,7 @@
     unsigned char* CLIB_ThreadLogs::CLIB_ThreadLogs_Framework_Global::pr_stat_APP_CONVERT_WriteEnableForThreadsAt_STACK_Msbdouble_To_MsbByteArray(uint8_t threadId, double value) {
         unsigned char* buffer = nullptr;
         buffer = new unsigned char[4] { UCHAR_MAX, UCHAR_MAX, UCHAR_MAX, UCHAR_MAX };
-        std::memcpy(buffer, &value, sizeof(double));
+        std::memcpy(buffer, &value, sizeof(double << std::endl;
         std::cout << "thread "  << threadId << " :: <= CONVERT : pr_stat_APP_CONVERT_WriteEnableForThreadsAt_STACK_Msbdouble_To_MsbByteArray(threadId)." << std::endl;
         return buffer;
     }
@@ -71,7 +72,7 @@
     }
     double CLIB_ThreadLogs::CLIB_ThreadLogs_Framework_Global::pr_stat_APP_CONVERT_WriteEnableForThreadsAt_STACK_MsbByteArray_To_Msbdouble(uint8_t threadId, const unsigned char* byteArray) {
         double temp;
-        std::memcpy(&temp, byteArray, sizeof(double));
+        std::memcpy(&temp, byteArray, sizeof(double << std::endl;
         std::cout << "thread "  << threadId << " :: <= CONVERT : pr_stat_APP_CONVERT_WriteEnableForThreadsAt_STACK_MsbByteArray_To_Msbdouble(threadId)." << std::endl;
         return temp;
     }

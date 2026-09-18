@@ -1,10 +1,10 @@
-#include "../include/LaunchEnableForConcurrentThreadsAt_Server_Execute.h"
+#include "../include/WriteEnableForThreadsAt_ThreadLogsId_Execute.h"
 #include "../include/LaunchEnableForConcurrentThreadsAt_Server_Framework.h"
 #include "../libs/CLIB_WriteQueForThreadsAt_Server_LaunchQueConditionCode/include/CLIB_WriteEnableForThreadsAt_Server_LaunchQueConditionCode.h"
 #include <iostream>
-    void* CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server_Execute::_stat_PGM_CLIB_WriteQueForThreadsAt_ServerLaunchQue_ConditionCode;
+    void* CLIBLaunchQueAtServer::WriteEnableForThreadsAt_ThreadLogsId_Execute::_stat_PGM_CLIB_WriteQueForThreadsAt_ServerLaunchQue_ConditionCode;
 // public.
-    CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server_Execute::LaunchEnableForConcurrentThreadsAt_Server_Execute() {
+    CLIBLaunchQueAtServer::WriteEnableForThreadsAt_ThreadLogsId_Execute::WriteEnableForThreadsAt_ThreadLogsId_Execute() {
         std::cout << "thread "  << threadId << " :: entered CONSTRUCTOR of LaunchEnableForConcurrentThreadsAt_Server_Execute()." << std::endl;
         stat_CLASS_boot0_DECLARE_LaunchEnableForConcurrentThreadsAt_Server_Execute();
         stat_CLASS_boot1_DEFINE_LaunchEnableForConcurrentThreadsAt_Server_Execute();
@@ -12,22 +12,22 @@
         stat_REG_boot0_DECLARE_LaunchEnableForConcurrentThreadsAt_Server_Execute();
         std::cout << "thread "  << threadId << " :: exiting CONSTRUCTOR of LaunchEnableForConcurrentThreadsAt_Server_Execute()." << std::endl;
     }
-    CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server_Execute::~LaunchEnableForConcurrentThreadsAt_Server_Execute() {
+    CLIBLaunchQueAtServer::WriteEnableForThreadsAt_ThreadLogsId_Execute::~WriteEnableForThreadsAt_ThreadLogsId_Execute() {
         delete _stat_PGM_CLIB_WriteQueForThreadsAt_ServerLaunchQue_ConditionCode;
     }
-    void CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server_Execute::dyn_REG_boot1_DEFINE_LaunchEnableForConcurrentThreadsAt_Server_Execute(){
+    void CLIBLaunchQueAtServer::WriteEnableForThreadsAt_ThreadLogsId_Execute::dyn_REG_boot1_DEFINE_LaunchEnableForConcurrentThreadsAt_Server_Execute(){
         std::cout << "thread "  << threadId << " :: entered dyn_REG_boot1_DEFINE_Execute()" << std::endl;
         std::cout << "thread "  << threadId << " :: exiting dyn_REG_boot1_DEFINE_Execute()" << std::endl;
     }
-    void CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server_Execute::dyn_REG_boot2_SUBSTANTIATE_LaunchEnableForConcurrentThreadsAt_Server_Execute(){
+    void CLIBLaunchQueAtServer::WriteEnableForThreadsAt_ThreadLogsId_Execute::dyn_REG_boot2_SUBSTANTIATE_LaunchEnableForConcurrentThreadsAt_Server_Execute(){
         std::cout << "thread "  << threadId << " :: entered dyn_REG_boot2_SUBSTANTIATE_Execute()" << std::endl;
         std::cout << "thread "  << threadId << " :: exiting dyn_REG_boot2_SUBSTANTIATE_Execute()" << std::endl;
     }
-    void CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server_Execute::dyn_REG_boot3_INITIALISE_LaunchEnableForConcurrentThreadsAt_Server_Execute(){
+    void CLIBLaunchQueAtServer::WriteEnableForThreadsAt_ThreadLogsId_Execute::dyn_REG_boot3_INITIALISE_LaunchEnableForConcurrentThreadsAt_Server_Execute(){
         std::cout << "thread "  << threadId << " :: entered dyn_REG_boot3_INITIALISE_Execute()" << std::endl;
         std::cout << "thread "  << threadId << " :: exiting dyn_REG_boot3_INITIALISE_Execute()" << std::endl;
     }
-    void CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server_Execute::dyn_PGM_boot4_INSTANTIATE_LaunchEnableForConcurrentThreadsAt_Server_Execute(){
+    void CLIBLaunchQueAtServer::WriteEnableForThreadsAt_ThreadLogsId_Execute::dyn_PGM_boot4_INSTANTIATE_LaunchEnableForConcurrentThreadsAt_Server_Execute(){
         std::cout << "thread "  << threadId << " :: entered dyn_REG_boot4_INSTANTIATE_Execute()" << std::endl;
         unsigned char* byte_uint8_t = LaunchEnableForConcurrentThreadsAt_Server_Global::stat_CONVERT_LaunchEnableForConcurrentThreadsAt_Server_Global_uint8_t_To_ByteArray(255);
         //CLIBWriteQueAt_Server_LaunchQueConditionCode::CLIB_WriteEnableForThreadsAt_Server_LaunchQueConditionCode::CLIB_WriteEnableForThreadsAt_Server_LaunchQueConditionCode_App_FUNCT_generate_Program();
@@ -37,36 +37,36 @@
         CLIBWriteQueAt_Server_LaunchQueConditionCode::CLIB_WriteEnableForThreadsAt_Server_LaunchQueConditionCode::CLIB_WriteEnableForThreadsAt_Server_LaunchQueConditionCode_App_FUNCT_write_Start(byte_uint8_t);
         std::cout << "thread "  << threadId << " :: exiting dyn_REG_boot4_INSTANTIATE_Execute()" << std::endl;
     }
-    void CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server_Execute::stat_CLASS_boot0_DECLARE_LaunchEnableForConcurrentThreadsAt_Server_Execute(){
+    void CLIBLaunchQueAtServer::WriteEnableForThreadsAt_ThreadLogsId_Execute::stat_CLASS_boot0_DECLARE_LaunchEnableForConcurrentThreadsAt_Server_Execute(){
         std::cout << "thread "  << threadId << " :: entered stat_CLASS_boot0_DECLARE_Execute()" << std::endl;
         std::cout << "thread "  << threadId << " :: exiting stat_CLASS_boot0_DECLARE_Execute()" << std::endl;
     }
-    void CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server_Execute::stat_CLASS_boot1_DEFINE_LaunchEnableForConcurrentThreadsAt_Server_Execute(){
+    void CLIBLaunchQueAtServer::WriteEnableForThreadsAt_ThreadLogsId_Execute::stat_CLASS_boot1_DEFINE_LaunchEnableForConcurrentThreadsAt_Server_Execute(){
         std::cout << "thread "  << threadId << " :: entered stat_CLASS_boot1_DEFINE_Execute()" << std::endl;
         stat_PGM_boot1_DEFINE_WriteQueForThreadsAt_ServerLaunchQue_ConditionCode();
         std::cout << "thread "  << threadId << " :: exiting stat_CLASS_boot1_DEFINE_Execute()" << std::endl;
     }
-    void CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server_Execute::stat_CLASS_boot3_INITIALISE_LaunchEnableForConcurrentThreadsAt_Server_Execute()
+    void CLIBLaunchQueAtServer::WriteEnableForThreadsAt_ThreadLogsId_Execute::stat_CLASS_boot3_INITIALISE_LaunchEnableForConcurrentThreadsAt_Server_Execute()
     {
         std::cout << "thread "  << threadId << " :: entered stat_CLASS_boot3_INITIALISE_Execute()" << std::endl;
         stat_PGM_boot3_INITIALISE_WriteQueForThreadsAt_ServerLaunchQue_ConditionCode();
         std::cout << "thread "  << threadId << " :: exiting stat_CLASS_boot3_INITIALISE_Execute()" << std::endl;
     }
-    void CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server_Execute::stat_REG_boot0_DECLARE_LaunchEnableForConcurrentThreadsAt_Server_Execute()
+    void CLIBLaunchQueAtServer::WriteEnableForThreadsAt_ThreadLogsId_Execute::stat_REG_boot0_DECLARE_LaunchEnableForConcurrentThreadsAt_Server_Execute()
     {
 
     }
 // private.
-    void CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server_Execute::stat_PGM_boot1_DEFINE_WriteQueForThreadsAt_ServerLaunchQue_ConditionCode()
+    void CLIBLaunchQueAtServer::WriteEnableForThreadsAt_ThreadLogsId_Execute::stat_PGM_boot1_DEFINE_WriteQueForThreadsAt_ServerLaunchQue_ConditionCode()
     {
         _stat_PGM_CLIB_WriteQueForThreadsAt_ServerLaunchQue_ConditionCode = nullptr;
     }
-    void CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server_Execute::stat_PGM_boot3_INITIALISE_WriteQueForThreadsAt_ServerLaunchQue_ConditionCode()
+    void CLIBLaunchQueAtServer::WriteEnableForThreadsAt_ThreadLogsId_Execute::stat_PGM_boot3_INITIALISE_WriteQueForThreadsAt_ServerLaunchQue_ConditionCode()
     {
         _stat_PGM_CLIB_WriteQueForThreadsAt_ServerLaunchQue_ConditionCode = CLIBWriteQueAt_Server_LaunchQueConditionCode::CLIB_WriteEnableForThreadsAt_Server_LaunchQueConditionCode::CLIB_WriteEnableForThreadsAt_Server_LaunchQueConditionCode_App_FUNCT_generate_Program();
         while (stat_PGM_get_ptr_WriteQueForThreadsAt_ServerLaunchQue_ConditionCode() == nullptr) {}
     }
-    void* CLIBLaunchQueAtServer::LaunchEnableForConcurrentThreadsAt_Server_Execute::stat_PGM_get_ptr_WriteQueForThreadsAt_ServerLaunchQue_ConditionCode()
+    void* CLIBLaunchQueAtServer::WriteEnableForThreadsAt_ThreadLogsId_Execute::stat_PGM_get_ptr_WriteQueForThreadsAt_ServerLaunchQue_ConditionCode()
     {
         return _stat_PGM_CLIB_WriteQueForThreadsAt_ServerLaunchQue_ConditionCode;
     }

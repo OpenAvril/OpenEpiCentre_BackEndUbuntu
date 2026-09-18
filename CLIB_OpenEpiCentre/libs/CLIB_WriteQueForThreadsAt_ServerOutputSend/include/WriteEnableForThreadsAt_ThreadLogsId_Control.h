@@ -4,21 +4,21 @@
 #include <list>
 namespace CLIBWriteQueAtServerOutputSend
 {
-    class WriteEnableForThreadsAt_ServerOutputSend_Control
+    class WriteEnableForThreadsAt_ThreadLogsId_Control
     {
     public:
-        WriteEnableForThreadsAt_ServerOutputSend_Control();
-        ~WriteEnableForThreadsAt_ServerOutputSend_Control();
-        void dyn_APP_FUNCT_WriteEnableForThreadsAt_ServerOutputSend_Control_dynamicIn(class WriteEnableForThreadsAt_ServerOutputSend_Framework* obj, uint8_t coreId);
-        void dyn_APP_FUNCT_WriteEnableForThreadsAt_ServerOutputSend_Control_dynamicOut(class WriteEnableForThreadsAt_ServerOutputSend_Framework* obj, uint8_t coreId);
-        void dyn_APP_FUNCT_WriteEnableForThreadsAt_ServerOutputSend_Control_writeEnable_Activate(class WriteEnableForThreadsAt_ServerOutputSend_Framework* obj, uint8_t coreId);
-        void dyn_APP_FUNCT_WriteEnableForThreadsAt_ServerOutputSend_Control_writeEnable_ShiftQueValues(class WriteEnableForThreadsAt_ServerOutputSend_Framework* obj, uint8_t coreId_A, uint8_t coreId_B);
-        void dyn_APP_FUNCT_WriteEnableForThreadsAt_ServerOutputSend_Control_writeEnable_SortQue(class WriteEnableForThreadsAt_ServerOutputSend_Framework* obj);
-        void dyn_APP_FUNCT_WriteEnableForThreadsAt_ServerOutputSend_Control_writeEnable_Request(class WriteEnableForThreadsAt_ServerOutputSend_Framework* obj, uint8_t coreId);
-        void dyn_APP_FUNCT_WriteEnableForThreadsAt_ServerOutputSend_Control_writeQue_Update(class WriteEnableForThreadsAt_ServerOutputSend_Framework* obj);
-        void dyn_REG_boot1_DEFINE_WriteEnableForThreadsAt_ServerOutputSend_Control(class WriteEnableForThreadsAt_ServerOutputSend_Framework* obj);
-        void dyn_REG_boot2_SUBSTANTIATE_WriteEnableForThreadsAt_ServerOutputSend_Control(class WriteEnableForThreadsAt_ServerOutputSend_Framework* obj);
-        void dyn_REG_boot3_INITIALISE_WriteEnableForThreadsAt_ServerOutputSend_Control(class WriteEnableForThreadsAt_ServerOutputSend_Framework* obj);
+        WriteEnableForThreadsAt_ThreadLogsId_Control();
+        ~WriteEnableForThreadsAt_ThreadLogsId_Control();
+        void dyn_APP_FUNCT_WriteEnableForThreadsAt_ServerOutputSend_Control_dynamicIn(class WriteEnableForThreadsAt_ThreadLogsId_Framework* obj, uint8_t coreId);
+        void dyn_APP_FUNCT_WriteEnableForThreadsAt_ServerOutputSend_Control_dynamicOut(class WriteEnableForThreadsAt_ThreadLogsId_Framework* obj, uint8_t coreId);
+        void dyn_APP_FUNCT_WriteEnableForThreadsAt_ServerOutputSend_Control_writeEnable_Activate(class WriteEnableForThreadsAt_ThreadLogsId_Framework* obj, uint8_t coreId);
+        void dyn_APP_FUNCT_WriteEnableForThreadsAt_ServerOutputSend_Control_writeEnable_ShiftQueValues(class WriteEnableForThreadsAt_ThreadLogsId_Framework* obj, uint8_t coreId_A, uint8_t coreId_B);
+        void dyn_APP_FUNCT_WriteEnableForThreadsAt_ServerOutputSend_Control_writeEnable_SortQue(class WriteEnableForThreadsAt_ThreadLogsId_Framework* obj);
+        void dyn_APP_FUNCT_WriteEnableForThreadsAt_ServerOutputSend_Control_writeEnable_Request(class WriteEnableForThreadsAt_ThreadLogsId_Framework* obj, uint8_t coreId);
+        void dyn_APP_FUNCT_WriteEnableForThreadsAt_ServerOutputSend_Control_writeQue_Update(class WriteEnableForThreadsAt_ThreadLogsId_Framework* obj);
+        void dyn_REG_boot1_DEFINE_WriteEnableForThreadsAt_ServerOutputSend_Control(class WriteEnableForThreadsAt_ThreadLogsId_Framework* obj);
+        void dyn_REG_boot2_SUBSTANTIATE_WriteEnableForThreadsAt_ServerOutputSend_Control(class WriteEnableForThreadsAt_ThreadLogsId_Framework* obj);
+        void dyn_REG_boot3_INITIALISE_WriteEnableForThreadsAt_ServerOutputSend_Control(class WriteEnableForThreadsAt_ThreadLogsId_Framework* obj);
         bool dyn_REG_get_FLAG_WriteEnableForThreadsAt_ServerOutputSend_Control_isWriteStartThreadRELASE_ONE();
         bool dyn_REG_get_FLAG_WriteEnableForThreadsAt_ServerOutputSend_Control_isWriteStartThreadRELASE_REMAINING();
         bool dyn_REG_get_FLAG_WriteEnableForThreadsAt_ServerOutputSend_Control_isWriteEndThreadRELASE_ONE();
@@ -69,10 +69,10 @@ namespace CLIBWriteQueAtServerOutputSend
         static void stat_REG_boot2_SUBSTANTIATE_ptr_FLAG_WriteEnableForThreadsAt_ServerOutputSend_Control_isWriteEndThreadRELASE_ONE();
         static void stat_REG_boot2_SUBSTANTIATE_ptr_FLAG_WriteEnableForThreadsAt_ServerOutputSend_Control_isWriteEndThreadRELASE_REMAINING();
         static void stat_REG_boot2_SUBSTANTIATE_ptr_WriteEnableForThreadsAt_ServerOutputSend_Control_3STATE_FLAG_WriteState();
-        static void stat_REG_boot2_SUBSTANTIATE_ptr_WriteEnableForThreadsAt_ServerOutputSend_Control_WriteACTIVE_Count_For_ThreadId(class WriteEnableForThreadsAt_ServerOutputSend_Framework* obj);
-        static void stat_REG_boot2_SUBSTANTIATE_ptr_WriteEnableForThreadsAt_ServerOutputSend_Control_WriteIDLE_Count_For_ThreadId(class WriteEnableForThreadsAt_ServerOutputSend_Framework* obj);
-        static void stat_REG_boot2_SUBSTANTIATE_ptr_WriteEnableForThreadsAt_ServerOutputSend_Control_WriteWAIT_Count_For_ThreadId(class WriteEnableForThreadsAt_ServerOutputSend_Framework* obj);
-        static void stat_REG_boot2_SUBSTANTIATE_ptr_WriteEnableForThreadsAt_ServerOutputSend_Control_ptr_QUE_Of_ThreadID_To_WRITE(class WriteEnableForThreadsAt_ServerOutputSend_Framework* obj);
+        static void stat_REG_boot2_SUBSTANTIATE_ptr_WriteEnableForThreadsAt_ServerOutputSend_Control_WriteACTIVE_Count_For_ThreadId(class WriteEnableForThreadsAt_ThreadLogsId_Framework* obj);
+        static void stat_REG_boot2_SUBSTANTIATE_ptr_WriteEnableForThreadsAt_ServerOutputSend_Control_WriteIDLE_Count_For_ThreadId(class WriteEnableForThreadsAt_ThreadLogsId_Framework* obj);
+        static void stat_REG_boot2_SUBSTANTIATE_ptr_WriteEnableForThreadsAt_ServerOutputSend_Control_WriteWAIT_Count_For_ThreadId(class WriteEnableForThreadsAt_ThreadLogsId_Framework* obj);
+        static void stat_REG_boot2_SUBSTANTIATE_ptr_WriteEnableForThreadsAt_ServerOutputSend_Control_ptr_QUE_Of_ThreadID_To_WRITE(class WriteEnableForThreadsAt_ThreadLogsId_Framework* obj);
         static void stat_REG_boot2_SUBSTANTIATE_ptr_WriteEnableForThreadsAt_ServerOutputSend_Control_writeCycle_Try_WriteStartThreadId_Index();
         static void stat_REG_boot2_SUBSTANTIATE_ptr_WriteEnableForThreadsAt_ServerOutputSend_Control_writeCycle_Try_WriteEndThreadId_Index();
         static void stat_REG_boot3_INITIALISE_ptr_FLAG_WriteEnableForThreadsAt_ServerOutputSend_Control_isWriteStartThreadRELASE_ONE();

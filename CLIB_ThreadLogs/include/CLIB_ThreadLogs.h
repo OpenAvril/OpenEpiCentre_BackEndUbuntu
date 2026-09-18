@@ -11,7 +11,6 @@ extern "C" {
             static void* stat_App_FUNCT_CLIB_ThreadLogs_generate_Program(uint8_t threadId);
             static unsigned char* stat_App_FUNCT_CLIB_ThreadLogs_get_flag_isPGM_INSTANTIATED(uint8_t threadId);
             static void stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(uint8_t threadId, std::string* stringForLogPrint);
-            static void stat_APP_FUNCT_CLIB_ThreadLogs_messageBuilder(uint8_t threadId, std::string* stringForLogPrint);
             static void stat_App_FUNCT_CLIB_ThreadLogs_terminate_Program(uint8_t threadId);
         private:
             static void stat_APP_FUNCT_CLIB_ThreadLogs_Calc_IsAllINSTANTIATED(uint8_t threadId);

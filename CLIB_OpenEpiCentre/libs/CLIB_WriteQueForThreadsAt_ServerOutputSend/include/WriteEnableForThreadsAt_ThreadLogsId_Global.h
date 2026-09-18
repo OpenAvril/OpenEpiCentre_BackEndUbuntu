@@ -3,10 +3,10 @@
 #include <array>
 #include <cstdint>
 namespace CLIBWriteQueAtServerOutputSend {
-    class WriteEnableForThreadsAt_ServerOutputSend_Global {
+    class WriteEnableForThreadsAt_ThreadLogsId_Global {
     public:
-        WriteEnableForThreadsAt_ServerOutputSend_Global();
-        ~WriteEnableForThreadsAt_ServerOutputSend_Global();
+        WriteEnableForThreadsAt_ThreadLogsId_Global();
+        ~WriteEnableForThreadsAt_ThreadLogsId_Global();
         void dyn_REG_boot0_DECLARE_WriteEnableForThreadsAt_ServerOutputSend_Global();
         void dyn_REG_boot1_DEFINE_WriteEnableForThreadsAt_ServerOutputSend_Global();
         void dyn_REG_boot2_SUBSTANTIATE_WriteEnableForThreadsAt_ServerOutputSend_Global();

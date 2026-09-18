@@ -15,9 +15,10 @@
 #include "../../CLIB_ThreadLogs/include/CLIB_ThreadLogs.h"
 #include "../libs/CLIB_WriteQueForThreadsAt_OpenEpiCentre_ConditionCode/include/CLIB_WriteEnableForThreadsAt_OpenEpiCentre_ConditionCode.h"
 #include "../libs/CLIB_WriteQueForThreadsAt_ServerInputReceive/include/CLIB_WriteEnableForThreadsAt_ServerInputReceive.h"
-#include "../libs/CLIB_WriteQueForThreadsAt_ServerOutputSend/include/CLIB_WriteEnableForThreadsAt_ServerOutputSend.h"
+#include "../libs/CLIB_WriteQueForThreadsAt_ServerOutputSend/include/CLIB_WriteEnableForThreadsAt_ThreadLogsId.h"
 #include <cfloat>
 #include <cstdint>
+#include <iostream>
 #include <string>
 	static CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Framework* stat_CLASS_CLIB_OpenEpiCentre_Framework = nullptr;
 	static std::array<bool, 28>* stat_REG_flag_CLIB_OpenEpiCentre_array_isINSTANTIATED = nullptr;
@@ -124,22 +125,24 @@
 		CLIB_OpenEpiCentre_stat_REG_boot1_DEFINE_CLIB_OpenEpiCentre_isFLAG_INSTANTIATED(threadId);
 		CLIB_OpenEpiCentre_stat_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_isFLAG_INSTANTIATED(threadId);
 		CLIB_OpenEpiCentre_stat_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_isFLAG_INSTANTIATED(threadId);
-		CLIB_OpenEpiCentre_stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework(threadId)->dyn_PGM_boot4_INSTANTIATE_CLIB_OpenEpiCentre_Framework(CLIB_OpenEpiCentre_stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework(threadId));
+		CLIB_OpenEpiCentre_stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework(threadId)->dyn_PGM_boot4_INSTANTIATE_CLIB_OpenEpiCentre_Framework(threadId, CLIB_OpenEpiCentre_stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework(threadId));
 		CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: done Program - INSTANTIATE."));
 
-		std::cout << "        ,     \\      /      ,"));
-		std::cout << "        ,     \\      /      ,"));
-		std::cout << "       / \\    )\\ __ /(     / \\ "));
-		std::cout << "      /   \\   (_\\  /_)    /   \\ "));
-		std::cout << "____ / ____\\__ \\@  @/ ___/_____\\_____"));
-		std::cout << "|              |\\../|               |"));
-		std::cout << "|               \\VV/                |"));
-		std::cout << "|        MIT OpenEpicentre .dll      |"));
-		std::cout << "|___________________________________|"));
-		std::cout << "|    / \\ /        \\\\        \\ /\\    |"));
-		std::cout << "|  /    V          ))        V   \\  |"));
-		std::cout << "|/                //               \\| "));
-		std::cout << "`                 V                 '"));
+		std::cout << "thread "  << threadId << " :: " << std::endl;
+		std::cout << "thread "  << threadId << " ::         ,     \\      /      ," << std::endl;
+		std::cout << "thread "  << threadId << " ::         ,     \\      /      ," << std::endl;
+		std::cout << "thread "  << threadId << " ::        / \\    )\\ _ /(     / \\ " << std::endl;
+		std::cout << "thread "  << threadId << " ::       /   \\   (_\\  /_)    /   \\ " << std::endl;
+		std::cout << "thread "  << threadId << " :: __ / __\\_ \\@  @/ __/___\\___" << std::endl;
+		std::cout << "thread "  << threadId << " :: |              |\\../|               |" << std::endl;
+		std::cout << "thread "  << threadId << " :: |               \\VV/                |" << std::endl;
+		std::cout << "thread "  << threadId << " :: |      Open Source MIT Package       |" << std::endl;
+		std::cout << "thread "  << threadId << " :: |     OpenAvril : OpenEpicentre      |" << std::endl;
+		std::cout << "thread "  << threadId << " :: |__________________|" << std::endl;
+		std::cout << "thread "  << threadId << " :: |    / \\ /        \\\\        \\ /\\    |" << std::endl;
+		std::cout << "thread "  << threadId << " :: |  /    V          ))        V   \\  |" << std::endl;
+		std::cout << "thread "  << threadId << " :: |/                //               \\| " << std::endl;
+		std::cout << "thread "  << threadId << " :: `                 V                 '" << std::endl;
 		CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: exiting LIB :: CLIBOpenEpiCentre : CLIB_OpenEpiCentre : CLIB_OpenEpiCentre_app_FUNCT_generate_Program(threadId)."));
 		return (void*)CLIB_OpenEpiCentre_stat_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework(threadId);
 	}
@@ -242,7 +245,7 @@
 	void CLIBOpenEpiCentre::CLIB_OpenEpiCentre::CLIB_OpenEpiCentre_dyn_PGM_WriteEnableStack_ServerOutputSend_Extraction_write_End(uint8_t threadId) {
 		CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: entered LIB :: CLIBOpenEpiCentre : CLIB_OpenEpiCentre : CLIB_OpenEpiCentre_dyn_PGM_WriteEnableStack_ServerOutputSend_Extraction_write_End(threadId)."));
 		if (!CLIB_OpenEpiCentre_stat_REG_flag_CLIB_OpenEpiCentre_array_isINSTANTIATED(threadId)->at(0)) {
-			CLIBWriteQueAtServerOutputSend::CLIB_WriteEnableForThreadsAt_ServerOutputSend::CLIB_WriteEnableForThreadsAt_ServerOutputSend_App_FUNCT_write_End(0);
+			CLIBWriteQueAtServerOutputSend::CLIB_WriteEnableForThreadsAt_ThreadLogsId::CLIB_WriteEnableForThreadsAt_ServerOutputSend_App_FUNCT_write_End(0);
 		}
 		else {
 			CLIB_OpenEpiCentre_stat_REG_flag_CLIB_OpenEpiCentre_array_isINSTANTIATED(threadId)->at(9) = !CLIB_OpenEpiCentre_stat_REG_flag_CLIB_OpenEpiCentre_array_isINSTANTIATED(threadId)->at(0) ;
@@ -253,7 +256,7 @@
 	void CLIBOpenEpiCentre::CLIB_OpenEpiCentre::CLIB_OpenEpiCentre_dyn_PGM_WriteEnableStack_ServerOutputSend_Extraction_write_Start(uint8_t threadId)	{
 		CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: entered LIB :: CLIBOpenEpiCentre : CLIB_OpenEpiCentre : CLIB_OpenEpiCentre_dyn_PGM_WriteEnableStack_ServerOutputSend_Extraction_write_Start(threadId)."));
 		if (!CLIB_OpenEpiCentre_stat_REG_flag_CLIB_OpenEpiCentre_array_isINSTANTIATED(threadId)->at(0)) {
-			CLIBWriteQueAtServerOutputSend::CLIB_WriteEnableForThreadsAt_ServerOutputSend::CLIB_WriteEnableForThreadsAt_ServerOutputSend_App_FUNCT_write_Start(0);
+			CLIBWriteQueAtServerOutputSend::CLIB_WriteEnableForThreadsAt_ThreadLogsId::CLIB_WriteEnableForThreadsAt_ServerOutputSend_App_FUNCT_write_Start(0);
 		}
 		else {
 			CLIB_OpenEpiCentre_stat_REG_flag_CLIB_OpenEpiCentre_array_isINSTANTIATED(threadId)->at(10) = !CLIB_OpenEpiCentre_stat_REG_flag_CLIB_OpenEpiCentre_array_isINSTANTIATED(threadId)->at(0) ;

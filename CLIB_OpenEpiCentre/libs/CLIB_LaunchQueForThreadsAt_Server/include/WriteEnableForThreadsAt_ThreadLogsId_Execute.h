@@ -1,10 +1,10 @@
 #ifndef OPENEPICENTRE_BACKServerUBUNTU_LaunchEnableForConcurrentThreadsAt_Server_Execute_H
 #define OPENEPICENTRE_BACKServerUBUNTU_LaunchEnableForConcurrentThreadsAt_Server_Execute_H
 namespace CLIBLaunchQueAtServer {
-    class LaunchEnableForConcurrentThreadsAt_Server_Execute {
+    class WriteEnableForThreadsAt_ThreadLogsId_Execute {
     public:
-        LaunchEnableForConcurrentThreadsAt_Server_Execute();
-        virtual ~LaunchEnableForConcurrentThreadsAt_Server_Execute();
+        WriteEnableForThreadsAt_ThreadLogsId_Execute();
+        virtual ~WriteEnableForThreadsAt_ThreadLogsId_Execute();
         void dyn_REG_boot1_DEFINE_LaunchEnableForConcurrentThreadsAt_Server_Execute();
         void dyn_REG_boot2_SUBSTANTIATE_LaunchEnableForConcurrentThreadsAt_Server_Execute();
         void dyn_REG_boot3_INITIALISE_LaunchEnableForConcurrentThreadsAt_Server_Execute();

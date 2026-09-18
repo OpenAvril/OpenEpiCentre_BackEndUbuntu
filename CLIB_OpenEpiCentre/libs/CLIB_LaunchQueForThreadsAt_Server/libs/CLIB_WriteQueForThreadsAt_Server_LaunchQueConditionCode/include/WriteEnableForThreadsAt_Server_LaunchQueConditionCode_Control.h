@@ -21,7 +21,7 @@ namespace CLIBWriteQueAt_Server_LaunchQueConditionCode
         void dyn_REG_boot3_INITIALISE_WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Control(class WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Framework* obj);
         bool dyn_REG_get_FLAG_WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Control_isWriteStartThreadRELASE_ONE();
         bool dyn_REG_get_FLAG_WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Control_isWriteStartThreadRELASE_REMAINING();
-        bool dyn_REG_get_FLAG_WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Control_iswriteEndThreadRELASE_ONE();
+        bool dyn_REG_get_FLAG_WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Control_isWriteEndThreadRELASE_ONE();
         bool dyn_REG_get_FLAG_WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Control_iswriteEndThreadRELASE_REMAINING();
         bool dyn_REG_get_FLAG_WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Control_writeCycle_Try_WriteStartThreadId_Index();
         bool dyn_REG_get_FLAG_WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Control_writeCycle_Try_writeEndThreadId_Index();
@@ -100,8 +100,8 @@ namespace CLIBWriteQueAt_Server_LaunchQueConditionCode
         static uint8_t* stat_REG_get_ptr_WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Control_writeCycle_Try_writeEndThreadId_Index();
         static void stat_REG_set_FLAG_WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Control_isWriteStartThreadRELASE_ONE(bool newFLAG);
         static void stat_REG_set_FLAG_WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Control_isWriteStartThreadRELASE_REMAINING(bool newFLAG);
-        static void stat_REG_set_FLAG_WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Control_iswriteEndThreadRELASE_ONE(bool newFLAG);
-        static void stat_REG_set_FLAG_WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Control_iswriteEndThreadRELASE_REMAINING(bool newFLAG);
+        static void stat_REG_set_FLAG_WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Control_isWiteEndThreadRELASE_ONE(bool newFLAG);
+        static void stat_REG_set_FLAG_WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Control_isWriteEndThreadRELASE_REMAINING(bool newFLAG);
         static void stat_REG_set_FLAG_WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Control_isCurrentThreadRELEASED(bool FLAGState);
         static void stat_REG_set_Item_On_Of_WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Control_3STATE_FLAG_WriteState(uint8_t concurrentThreadID, std::array<bool, 2> new2bitState);
         static void stat_REG_set_Item_On_list_Of_WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Control_WriteACTIVE_Count_For_ThreadId(uint8_t concurrentThreadID, unsigned long long newCount);

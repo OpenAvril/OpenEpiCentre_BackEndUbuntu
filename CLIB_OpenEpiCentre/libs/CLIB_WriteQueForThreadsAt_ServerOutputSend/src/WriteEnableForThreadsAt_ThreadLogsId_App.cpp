@@ -76,6 +76,7 @@
         obj->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerOutputSend_App()->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerOutputSend_App_Control()->dyn_REG_set_Item_On_list_Of_WriteEnableForThreadsAt_ServerOutputSend_Control_2ibt_FLAG_WriteState(coreId, obj->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerOutputSend_Global()->dyn_REG_get_ptr_CONST_WriteEnableForThreadsAt_ServerOutputSend_2bitFLAG_IDLE());
         obj->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerOutputSend_App()->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerOutputSend_App_Control()->dyn_APP_FUNCT_WriteEnableForThreadsAt_ServerOutputSend_Control_writeQue_Update(obj);
         obj->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerOutputSend_App()->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerOutputSend_App_Control()->dyn_APP_FUNCT_WriteEnableForThreadsAt_ServerOutputSend_Control_writeEnable_SortQue(obj);
+        obj->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerOutputSend_App()->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerOutputSend_App_Control()->dyn_REG_set_FLAG_WriteEnableForThreadsAt_ServerOutputSend_Control_isWriteEndThreadRELASE_REMAINING(true);
         obj->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerOutputSend_App()->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerOutputSend_App_Control()->dyn_REG_set_FLAG_WriteEnableForThreadsAt_ServerOutputSend_Control_isWriteStartThreadRELASE_REMAINING(true);
     }
     void CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend_App::dyn_APP_FUNCT_write_Start(WriteEnableForThreadsAt_ServerOutputSend_Framework* obj, uint8_t coreId)
@@ -92,7 +93,6 @@
         obj->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerOutputSend_App()->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerOutputSend_App_Control()->dyn_APP_FUNCT_WriteEnableForThreadsAt_ServerOutputSend_Control_writeQue_Update(obj);
         obj->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerOutputSend_App()->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerOutputSend_App_Control()->dyn_APP_FUNCT_WriteEnableForThreadsAt_ServerOutputSend_Control_writeEnable_SortQue(obj);
         obj->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerOutputSend_App()->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerOutputSend_App_Control()->dyn_APP_FUNCT_WriteEnableForThreadsAt_ServerOutputSend_Control_writeEnable_Activate(obj, coreId);
-        obj->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerOutputSend_App()->dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerOutputSend_App_Control()->dyn_REG_set_FLAG_WriteEnableForThreadsAt_ServerOutputSend_Control_isWriteStartThreadRELASE_REMAINING(true);
     }
     CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend_Control* CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend_App::dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ServerOutputSend_App_Control()
     {
