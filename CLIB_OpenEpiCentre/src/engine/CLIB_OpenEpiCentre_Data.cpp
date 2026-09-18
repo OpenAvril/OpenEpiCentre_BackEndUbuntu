@@ -77,14 +77,14 @@
         std::advance(temp, CLIB_OpenEpiCentre_Global::stat_CONVERT_Bool_To_Int(obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App()->dyn_CLASS_get_ptr_Data()->dyn_CLASS_get_ptr_dyn_STRUCT_get_ptr_CLIB_OpenEpiCentre_Data_Control()->dyn_REG_get_ItemSideToWRITE_For_doubleBufferOfOutput()));
         return *temp;
     }
-    CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT_Input* CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data::dyn_REG_get_ptr_CLIB_OpenEpiCentre_Data_Item_Of_list_Of_ptr_array_Of_buffer_Input_ReferenceForThread(uint8_t concurrentThreadId) {
+    CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT_Input* CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data::dyn_REG_get_ptr_CLIB_OpenEpiCentre_Data_Item_Of_list_Of_ptr_array_Of_buffer_Input_ReferenceForThread(uint8_t concurrentthreadId) {
         auto temp = stat_REG_get_ptr_CLIB_OpenEpiCentre_Data_array_Of_buffer_Input_ReferenceForThread()->begin();
-        std::advance(temp, concurrentThreadId);
+        std::advance(temp, concurrentthreadId);
         return *temp;
     }
-    CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT_Output* CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data::dyn_REG_get_ptr_CLIB_OpenEpiCentre_Data_Item_Of_list_Of_ptr_array_Of_buffer_Output_ReferenceForThread(uint8_t concurrentThreadId) {
+    CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT_Output* CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data::dyn_REG_get_ptr_CLIB_OpenEpiCentre_Data_Item_Of_list_Of_ptr_array_Of_buffer_Output_ReferenceForThread(uint8_t concurrentthreadId) {
         auto temp = stat_REG_get_ptr_CLIB_OpenEpiCentre_Data_array_Of_buffer_Output_ReferenceForThread()->begin();
-        std::advance(temp, concurrentThreadId);
+        std::advance(temp, concurrentthreadId);
         return *temp;
     }
     CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT_Input* CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data::dyn_REG_get_ptr_CLIB_OpenEpiCentre_Data_Item_On_vector_Of_stack_Of_InputPraise(unsigned long long slot) {
@@ -115,11 +115,11 @@
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data::dyn_REG_set_ptr_CLIB_OpenEpiCentre_Data_Output_at_ItemSideToWRITE_For_doubleBufferOutput(class CLIB_OpenEpiCentre_Framework* obj, struct CLIB_OpenEpiCentre_STRUCT_Output* newClass) {
         stat_get_REG_ptr_CLIB_OpenEpiCentre_Data_array_Of_buffer_ItemSide_For_doubleBufferOutput()->at(obj->dyn_CLASS_get_ptr_CLIB_OpenEpiCentre_Framework_App()->dyn_CLASS_get_ptr_Data()->dyn_CLASS_get_ptr_dyn_STRUCT_get_ptr_CLIB_OpenEpiCentre_Data_Control()->dyn_REG_get_ItemSideToWRITE_For_doubleBufferOfOutput()) = newClass;
     }
-    void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data::dyn_REG_set_CLIB_OpenEpiCentre_Data_Item_On_Array_Of_buffer_Input_ReferenceForThread(uint8_t concurrentThreadId, CLIB_OpenEpiCentre_STRUCT_Input* newClass) {
-        stat_REG_set_CLIB_OpenEpiCentre_Data_Item_On_Array_Of_buffer_Input_ReferenceForThread(concurrentThreadId, newClass);
+    void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data::dyn_REG_set_CLIB_OpenEpiCentre_Data_Item_On_Array_Of_buffer_Input_ReferenceForThread(uint8_t concurrentthreadId, CLIB_OpenEpiCentre_STRUCT_Input* newClass) {
+        stat_REG_set_CLIB_OpenEpiCentre_Data_Item_On_Array_Of_buffer_Input_ReferenceForThread(concurrentthreadId, newClass);
     }
-    void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data::dyn_REG_set_CLIB_OpenEpiCentre_Data_Item_On_Array_Of_buffer_Output_ReferenceForThread(uint8_t concurrentThreadId, CLIB_OpenEpiCentre_STRUCT_Output* newClass) {
-        stat_REG_set_CLIB_OpenEpiCentre_Data_Item_On_Array_Of_buffer_Output_ReferenceForThread(concurrentThreadId, newClass);
+    void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data::dyn_REG_set_CLIB_OpenEpiCentre_Data_Item_On_Array_Of_buffer_Output_ReferenceForThread(uint8_t concurrentthreadId, CLIB_OpenEpiCentre_STRUCT_Output* newClass) {
+        stat_REG_set_CLIB_OpenEpiCentre_Data_Item_On_Array_Of_buffer_Output_ReferenceForThread(concurrentthreadId, newClass);
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data::dyn_REG_set_CLIB_OpenEpiCentre_Data_Item_On_Vector_Of_stack_Of_InputPraise(unsigned long long slot, CLIB_OpenEpiCentre_STRUCT_Input* newClass) {
         stat_REG_set_CLIB_OpenEpiCentre_Data_Item_On_Vector_Of_stack_Of_InputPraise(slot, newClass);
@@ -294,17 +294,17 @@
     std::vector<struct CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT_Output*>* CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data::stat_REG_get_ptr_CLIB_OpenEpiCentre_Data_vector_Of_stack_Of_OutputPraise() {
         return _stat_REG_ptr_vector_Of_stack_Of_OutputPraise;
     }
-    void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data::stat_REG_set_CLIB_OpenEpiCentre_Data_Item_On_Array_Of_buffer_Input_ReferenceForThread(uint8_t concurrentThreadId, CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT_Input* newClass) {
+    void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data::stat_REG_set_CLIB_OpenEpiCentre_Data_Item_On_Array_Of_buffer_Input_ReferenceForThread(uint8_t concurrentthreadId, CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT_Input* newClass) {
         std::cout << "thread "  << threadId << " :: entered stat_REG_set_CLIB_OpenEpiCentre_Data_Item_On_Array_Of_buffer_Input_ReferenceForThread()" << std::endl;
         auto temp = stat_REG_get_ptr_CLIB_OpenEpiCentre_Data_array_Of_buffer_Input_ReferenceForThread()->begin();
-        std::advance(temp, concurrentThreadId);
+        std::advance(temp, concurrentthreadId);
         *temp = newClass;
         std::cout << "thread "  << threadId << " :: exiting stat_REG_set_CLIB_OpenEpiCentre_Data_Item_On_Array_Of_buffer_Input_ReferenceForThread()" << std::endl;
     }
-    void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data::stat_REG_set_CLIB_OpenEpiCentre_Data_Item_On_Array_Of_buffer_Output_ReferenceForThread(uint8_t concurrentThreadId, CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT_Output* newClass) {
+    void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data::stat_REG_set_CLIB_OpenEpiCentre_Data_Item_On_Array_Of_buffer_Output_ReferenceForThread(uint8_t concurrentthreadId, CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT_Output* newClass) {
         std::cout << "thread "  << threadId << " :: entered stat_REG_set_CLIB_OpenEpiCentre_Data_Item_On_Array_Of_buffer_Output_ReferenceForThread()" << std::endl;
         auto temp = stat_REG_get_ptr_CLIB_OpenEpiCentre_Data_array_Of_buffer_Output_ReferenceForThread()->begin();
-        std::advance(temp, concurrentThreadId);
+        std::advance(temp, concurrentthreadId);
         *temp = newClass;
         std::cout << "thread "  << threadId << " :: exiting stat_REG_set_CLIB_OpenEpiCentre_Data_Item_On_Array_Of_buffer_Output_ReferenceForThread()" << std::endl;
     }

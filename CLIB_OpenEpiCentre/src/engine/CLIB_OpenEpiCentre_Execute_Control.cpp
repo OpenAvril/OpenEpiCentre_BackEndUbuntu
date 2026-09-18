@@ -48,16 +48,16 @@
 	bool CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Execute_Control::dyn_REG_get_FLAG_CLIB_OpenEpiCentre_Execute_Control_isSystemInitialised() {
 		return stat_REG_get_ptr_FLAG_CLIB_OpenEpiCentre_Execute_Control_isSystemInitialised();
 	}
-	bool CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Execute_Control::dyn_REG_get_OpenEpiCentre_Execute_Control_ItemOnListOf_FLAGisThreadInitialised(uint8_t concurrnetThreadID)	{
+	bool CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Execute_Control::dyn_REG_get_OpenEpiCentre_Execute_Control_ItemOnListOf_FLAGisThreadInitialised(uint8_t concurrnetthreadId)	{
 		auto temp = stat_get_ptr_CLIB_OpenEpiCentre_Execute_Control_ListOf_FLAGisThreadInitialised()->begin();
-		std::advance(temp, concurrnetThreadID);
+		std::advance(temp, concurrnetthreadId);
 		return *temp;
 	}
 	void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Execute_Control::dyn_REG_set_FLAG_CLIB_OpenEpiCentre_Execute_Control_isSystemInitialised(bool state) {
 		*stat_REG_get_ptr_FLAG_CLIB_OpenEpiCentre_Execute_Control_isSystemInitialised() = state;
 	}
-	void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Execute_Control::dyn_REG_set_OpenEpiCentre_Execute_Control_ItemOnListOf_FLAGisThreadInitialised(uint8_t concurrnetThreadID, bool state)	{
-		stat_set_ptr_CLIB_OpenEpiCentre_Execute_Control_ItemOnListOf_FLAGisThreadInitialised(concurrnetThreadID, state);
+	void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Execute_Control::dyn_REG_set_OpenEpiCentre_Execute_Control_ItemOnListOf_FLAGisThreadInitialised(uint8_t concurrnetthreadId, bool state)	{
+		stat_set_ptr_CLIB_OpenEpiCentre_Execute_Control_ItemOnListOf_FLAGisThreadInitialised(concurrnetthreadId, state);
 	}
 
 	void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Execute_Control::stat_CLASS_boot0_DECLARE_CLIB_OpenEpiCentre_Execute_Control() {
@@ -131,19 +131,19 @@
 		}
 	}
 	void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Execute_Control::stat_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_Execute_Control_ListOf_Threads(class CLIB_OpenEpiCentre_Framework* obj) {
-		for (uint8_t concurrentThreadId = 0; concurrentThreadId < _stat_REG_ptr_CLIB_OpenEpiCentre_Execute_Control_ListOf_Threads->size(); concurrentThreadId++) {
+		for (uint8_t concurrentthreadId = 0; concurrentthreadId < _stat_REG_ptr_CLIB_OpenEpiCentre_Execute_Control_ListOf_Threads->size(); concurrentthreadId++) {
 			auto temp = _stat_REG_ptr_CLIB_OpenEpiCentre_Execute_Control_ListOf_Threads->begin();
-			std::advance(temp, concurrentThreadId);
-			*temp = new std::thread(CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT_Concurrent::stat_app_thread_Concurrency, obj, concurrentThreadId);
+			std::advance(temp, concurrentthreadId);
+			*temp = new std::thread(CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT_Concurrent::stat_app_thread_Concurrency, obj, concurrentthreadId);
 		}
 	}
 	bool* CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Execute_Control::stat_REG_get_ptr_FLAG_CLIB_OpenEpiCentre_Execute_Control_isSystemInitialised()
 	{
 		bool* result = nullptr;
 		result = new bool(false);
-		for (uint8_t threadID = 0; threadID < sizeof(*_stat_REG_ptr_CLIB_OpenEpiCentre_Execute_Control_isSystemInitialised); threadID++) {
+		for (uint8_t threadId = 0; threadId < sizeof(*_stat_REG_ptr_CLIB_OpenEpiCentre_Execute_Control_isSystemInitialised); threadId++) {
 			auto temp = stat_get_ptr_CLIB_OpenEpiCentre_Execute_Control_ListOf_FLAGisThreadInitialised()->begin();
-			std::advance(temp, threadID);
+			std::advance(temp, threadId);
 			if (*temp == true) {
 				*result = true;
 				break;
@@ -160,6 +160,6 @@
 	{
 		*_stat_REG_ptr_CLIB_OpenEpiCentre_Execute_Control_isSystemInitialised = newFLAG_;
 	}
-	void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Execute_Control::stat_set_ptr_CLIB_OpenEpiCentre_Execute_Control_ItemOnListOf_FLAGisThreadInitialised(uint8_t threadID, bool state) {
-		_stat_REG_ptr_CLIB_OpenEpiCentre_Execute_Control_ListOf_FLAGisThreadInitialised->at(threadID) = state;
+	void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Execute_Control::stat_set_ptr_CLIB_OpenEpiCentre_Execute_Control_ItemOnListOf_FLAGisThreadInitialised(uint8_t threadId, bool state) {
+		_stat_REG_ptr_CLIB_OpenEpiCentre_Execute_Control_ListOf_FLAGisThreadInitialised->at(threadId) = state;
 	}

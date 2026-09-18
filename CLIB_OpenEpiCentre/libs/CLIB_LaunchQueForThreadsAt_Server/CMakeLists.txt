@@ -15,7 +15,7 @@ add_library(CLIB_LaunchQueForThreadsAt_Server STATIC
         src/LaunchEnableForConcurrentThreadsAt_Server_Global.cpp
         src/LaunchEnableForConcurrentThreadsAt_Server_App.cpp
         src/LaunchEnableForConcurrentThreadsAt_Server_App_Control.cpp
-        src/WriteEnableForThreadsAt_ThreadLogsId_Execute.cpp
+        src/LaunchEnableForConcurrentThreadsAt_Server_Execute.cpp
 )
 
 target_include_directories(CLIB_LaunchQueForThreadsAt_Server PUBLIC

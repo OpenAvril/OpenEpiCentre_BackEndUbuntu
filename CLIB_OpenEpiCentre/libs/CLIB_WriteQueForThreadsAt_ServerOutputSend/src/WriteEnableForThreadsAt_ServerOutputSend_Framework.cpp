@@ -63,13 +63,13 @@
 	}
 	void CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend_Framework::stat_CLASS_boot3_INITIALISE_WriteEnableForThreadsAt_ServerOutputSend_App(uint8_t threadId)	{
 		std::cout << "thread "  << threadId << " :: thread ?" << " :: entered LIB :: CLIBWriteQueAtServerOutputSend : WriteEnableForThreadsAt_ServerOutputSend_Framework : stat_CLASS_boot3_INITIALISE_WriteEnableForThreadsAt_ServerOutputSend_App(threadId)." << std::endl;
-		_stat_CLASS_get_ptr_WriteEnableForThreadsAt_ServerOutputSend_Framework_App = new class CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend_Framework_App();
+		_stat_CLASS_get_ptr_WriteEnableForThreadsAt_ServerOutputSend_Framework_App = new class CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend_Framework_App(threadId);
 		while (stat_CLASS_get_ptr_WriteEnableForThreadsAt_ServerOutputSend_App(threadId) == nullptr) {}
 		std::cout << "thread "  << threadId << " :: thread ?" << " :: entered LIB :: CLIBWriteQueAtServerOutputSend : WriteEnableForThreadsAt_ServerOutputSend_Framework : stat_CLASS_boot3_INITIALISE_WriteEnableForThreadsAt_ServerOutputSend_App(threadId)." << std::endl;
 	}
 	void CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend_Framework::pr_stat_CLASS_boot3_INITIALISE_WriteEnableForThreadsAt_ServerOutputSend_Global(uint8_t threadId) {
 		std::cout << "thread "  << threadId << " :: thread ?" << " :: entered LIB :: CLIBWriteQueAtServerOutputSend : WriteEnableForThreadsAt_ServerOutputSend_Framework : pr_stat_CLASS_boot3_INITIALISE_WriteEnableForThreadsAt_ServerOutputSend_Global(threadId)." << std::endl;
-		_stat_CLASS_ptr_WriteEnableForThreadsAt_ServerOutputSend_Framework_Global = new class CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend_Framework_Global();
+		_stat_CLASS_ptr_WriteEnableForThreadsAt_ServerOutputSend_Framework_Global = new class CLIBWriteQueAtServerOutputSend::WriteEnableForThreadsAt_ServerOutputSend_Framework_Global(threadId);
 		while (stat_CLASS_get_ptr_WriteEnableForThreadsAt_ServerOutputSend_Global(threadId) == nullptr) {}
 		std::cout << "thread "  << threadId << " :: thread ?" << " :: entered LIB :: CLIBWriteQueAtServerOutputSend : WriteEnableForThreadsAt_ServerOutputSend_Framework : pr_stat_CLASS_boot3_INITIALISE_WriteEnableForThreadsAt_ServerOutputSend_Global(threadId)." << std::endl;
 	}

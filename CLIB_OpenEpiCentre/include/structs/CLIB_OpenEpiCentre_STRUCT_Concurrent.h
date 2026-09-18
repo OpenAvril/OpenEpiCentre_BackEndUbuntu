@@ -14,7 +14,7 @@ namespace CLIBOpenEpiCentre
         void dyn_REG_boot4_INSTANTIATE_Concurrent();
         uint8_t dyn_REG_get_CLIB_OpenEpiCentre_Concurrent_threadId();
         void dyn_REG_set_CLIB_OpenEpiCentre_Concurrent_threadId(uint8_t praiseId);
-        static void stat_app_thread_Concurrency(CLIB_OpenEpiCentre_Framework* obj, uint8_t concurrentThreadId);
+        static void stat_app_thread_Concurrency(CLIB_OpenEpiCentre_Framework* obj, uint8_t concurrentthreadId);
         static void stat_CLASS_boot0_DECLARE_Concurrent();
         static void stat_CLASS_boot1_DEFINE_Concurrent();
         static void stat_CLASS_boot3_INITIALISE_Concurrent();

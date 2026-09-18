@@ -2,7 +2,7 @@
 #define CLIB_WRITEENABLEFORTHREADSAT_ThreadLogsId_H
 #include "../include/WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Framework.h"
 extern "C" {
-    namespace CLIBWriteQueAtThreadLogsId {
+    namespace CLIBLaunchQueAtServer {
         class CLIB_WriteEnableForThreadsAt_Server_LaunchQueConditionCode {
         public:
             static void* CLIB_WriteEnableForThreadsAt_ThreadLogsId_App_FUNCT_generate_Program(uint8_t threadId);
