@@ -28,31 +28,27 @@
     void CLIBWriteQueAtThreadLogsId::WriteEnableForThreadsAt_ThreadLogsId_Global::dyn_REG_boot1_DEFINE_WriteEnableForThreadsAt_ThreadLogsId_Global(uint8_t threadId)
     {
         std::cout << "thread "  << threadId << " :: entered LIB :: CLIBWriteQueAtThreadLogsId : WriteEnableForThreadsAt_ThreadLogsId_Global : dyn_REG_boot1_DEFINE_WriteEnableForThreadsAt_ThreadLogsId_Global(threadId)." << std::endl;
-        std::cout << "thread "  << threadId << " :: entered LIB :: CLIBWriteQueAtThreadLogsId : WriteEnableForThreadsAt_ThreadLogsId_Global : dyn_REG_boot1_DEFINE_WriteEnableForThreadsAt_ThreadLogsId_Global(threadId)." << std::endl;
         stat_REG_boot1_DEFINE_ptr_WriteEnableForThreadsAt_ThreadLogsId_number_Of_Implemented_Threads(threadId);
         stat_REG_boot1_DEFINE_CONST_WriteEnableForThreadsAt_ThreadLogsId_2bitFLAG_IDLE(threadId);
         stat_REG_boot1_DEFINE_CONST_WriteEnableForThreadsAt_ThreadLogsId_2bitFLAG_WAIT(threadId);
         stat_REG_boot1_DEFINE_CONST_WriteEnableForThreadsAt_ThreadLogsId_2bitFLAG_WRITE(threadId);
-        std::cout << "thread "  << threadId << " :: exiting dyn_REG_boot1_DEFINE_WriteEnableForThreadsAt_ThreadLogsId_Global(uint8_t threadId)." << std::endl;
-    }
+        std::cout << "thread "  << threadId << " :: entered LIB :: CLIBWriteQueAtThreadLogsId : WriteEnableForThreadsAt_ThreadLogsId_Global : dyn_REG_boot1_DEFINE_WriteEnableForThreadsAt_ThreadLogsId_Global(threadId)." << std::endl;    }
     void CLIBWriteQueAtThreadLogsId::WriteEnableForThreadsAt_ThreadLogsId_Global::dyn_REG_boot2_SUBSTANTIATE_WriteEnableForThreadsAt_ThreadLogsId_Global(uint8_t threadId)
     {
-        std::cout << "thread "  << threadId << " :: entered LIB :: CLIBWriteQueAtThreadLogsId : WriteEnableForThreadsAt_ThreadLogsId_Global : dyn_REG_boot2_SUBSTANTIATE_WriteEnableForThreadsAt_ThreadLogsId_Global(threadId)." << std::endl;
         std::cout << "thread "  << threadId << " :: entered LIB :: CLIBWriteQueAtThreadLogsId : WriteEnableForThreadsAt_ThreadLogsId_Global : dyn_REG_boot2_SUBSTANTIATE_WriteEnableForThreadsAt_ThreadLogsId_Global(threadId)." << std::endl;
         stat_REG_boot2_SUBSTANTIATE_CONST_WriteEnableForThreadsAt_ThreadLogsId_2bitFLAG_IDLE(threadId);
         stat_REG_boot2_SUBSTANTIATE_CONST_WriteEnableForThreadsAt_ThreadLogsId_2bitFLAG_WAIT(threadId);
         stat_REG_boot2_SUBSTANTIATE_CONST_WriteEnableForThreadsAt_ThreadLogsId_2bitFLAG_WRITE(threadId);
         stat_REG_boot2_SUBSTANTIATE_ptr_WriteEnableForThreadsAt_ThreadLogsId_number_Of_Implemented_Threads(threadId);
-        std::cout << "thread "  << threadId << " :: exiting dyn_REG_boot2_SUBSTANTIATE_WriteEnableForThreadsAt_ThreadLogsId_Global(uint8_t threadId)." << std::endl;
-    }
+        std::cout << "thread "  << threadId << " :: entered LIB :: CLIBWriteQueAtThreadLogsId : WriteEnableForThreadsAt_ThreadLogsId_Global : dyn_REG_boot2_SUBSTANTIATE_WriteEnableForThreadsAt_ThreadLogsId_Global(threadId)." << std::endl;    }
     void CLIBWriteQueAtThreadLogsId::WriteEnableForThreadsAt_ThreadLogsId_Global::dyn_REG_boot3_INITIALISE_WriteEnableForThreadsAt_ThreadLogsId_Global(uint8_t threadId)
     {
-        std::cout << "thread "  << threadId << " :: entered LIB :: CLIBWriteQueAtThreadLogsId : WriteEnableForThreadsAt_ThreadLogsId_Global : dyn_REG_boot3_INITIALISE_WriteEnableForThreadsAt_ThreadLogsId_Global(threadId)." << std::endl;
         std::cout << "thread "  << threadId << " :: entered LIB :: CLIBWriteQueAtThreadLogsId : WriteEnableForThreadsAt_ThreadLogsId_Global : dyn_REG_boot3_INITIALISE_WriteEnableForThreadsAt_ThreadLogsId_Global(threadId)." << std::endl;
         stat_REG_boot3_INITIALISE_CONST_WriteEnableForThreadsAt_ThreadLogsId_2bitFLAG_IDLE(threadId);
         stat_REG_boot3_INITIALISE_CONST_WriteEnableForThreadsAt_ThreadLogsId_2bitFLAG_WAIT(threadId);
         stat_REG_boot3_INITIALISE_CONST_WriteEnableForThreadsAt_ThreadLogsId_2bitFLAG_WRITE(threadId);
         stat_REG_boot3_INITIALISE_ptr_WriteEnableForThreadsAt_ThreadLogsId_number_Of_Implemented_Threads(threadId);
+        std::cout << "thread "  << threadId << " :: entered LIB :: CLIBWriteQueAtThreadLogsId : WriteEnableForThreadsAt_ThreadLogsId_Global : dyn_REG_boot3_INITIALISE_WriteEnableForThreadsAt_ThreadLogsId_Global(threadId)." << std::endl;
     }
     std::array<bool,2> CLIBWriteQueAtThreadLogsId::WriteEnableForThreadsAt_ThreadLogsId_Global::dyn_REG_get_ptr_CONST_WriteEnableForThreadsAt_ThreadLogsId_2bitFLAG_IDLE(uint8_t threadId)
     {
