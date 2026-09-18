@@ -7,9 +7,9 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 add_library(CLIB_WriteQueForThreadsAt_ServerInputReceive STATIC
         src/CLIB_WriteEnableForThreadsAt_ServerInputReceive.cpp
         src/WriteEnableForThreadsAt_ServerInputReceive_Framework.cpp
-        src/WriteEnableForThreadsAt_ServerInputReceive_Global.cpp
-        src/WriteEnableForThreadsAt_ServerInputReceive_App.cpp
-        src/WriteEnableForThreadsAt_ServerInputReceive_Control.cpp
+        src/WriteEnableForThreadsAt_ServerInputReceive_Framework_Global.cpp
+        src/WriteEnableForThreadsAt_ServerInputReceive_Framework_App.cpp
+        src/WriteEnableForThreadsAt_ServerInputReceive_Framework_App_Control.cpp
 )
 
 target_include_directories(${PROJECT_NAME}

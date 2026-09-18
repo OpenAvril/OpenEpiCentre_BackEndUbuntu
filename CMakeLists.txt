@@ -10,5 +10,6 @@ add_subdirectory(CLIB_OpenEpiCentre/libs/CLIB_LaunchQueForThreadsAt_Server/libs/
 add_subdirectory(CLIB_OpenEpiCentre/libs/CLIB_LaunchQueForThreadsAt_Server)
 add_subdirectory(CLIB_OpenEpiCentre/libs/CLIB_WriteQueForThreadsAt_OpenEpiCentre_ConditionCode)
 add_subdirectory(CLIB_OpenEpiCentre)
+add_subdirectory(CLIB_ThreadLogs/libs/CLIB_WriteQueForThreadsAt_ThreadLogsId)
 add_subdirectory(CLIB_ThreadLogs)
 add_subdirectory(TESTBENCH_CLIB_OpenEpicentre)

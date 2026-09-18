@@ -12,9 +12,9 @@ add_library(CLIB_ThreadLogs STATIC
         src/CLIB_ThreadLogs_Framework_App_Algorithms.cpp
         src/CLIB_ThreadLogs_Framework_App_Execute.cpp
         libs/CLIB_WriteQueForThreadsAt_ThreadLogsId/src/WriteEnableForThreadsAt_ThreadLogsId_Framework.cpp
-        libs/CLIB_WriteQueForThreadsAt_ThreadLogsId/src/WriteEnableForThreadsAt_ThreadLogsId_Global.cpp
-        libs/CLIB_WriteQueForThreadsAt_ThreadLogsId/src/WriteEnableForThreadsAt_ThreadLogsId_App.cpp
-        libs/CLIB_WriteQueForThreadsAt_ThreadLogsId/src/WriteEnableForThreadsAt_ThreadLogsId_Control.cpp
+        libs/CLIB_WriteQueForThreadsAt_ThreadLogsId/src/WriteEnableForThreadsAt_ThreadLogsId_Framework_Global.cpp
+        libs/CLIB_WriteQueForThreadsAt_ThreadLogsId/src/WriteEnableForThreadsAt_ThreadLogsId_Framework_App.cpp
+        libs/CLIB_WriteQueForThreadsAt_ThreadLogsId/src/WriteEnableForThreadsAt_ThreadLogsId_Framework_App_Control.cpp
 )
 
 target_include_directories(CLIB_ThreadLogs PUBLIC

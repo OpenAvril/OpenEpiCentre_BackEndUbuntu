@@ -1,63 +1,83 @@
 #include "../include/WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Framework.h"
-	CLIBWriteQueAt_Server_LaunchQueConditionCode::WriteEnableForThreadsAt_Server_LaunchQueConditionCode_App* CLIBWriteQueAt_Server_LaunchQueConditionCode::WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Framework::_stat_CLASS_get_ptr_WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Framework_App;
-	CLIBWriteQueAt_Server_LaunchQueConditionCode::WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Global* CLIBWriteQueAt_Server_LaunchQueConditionCode::WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Framework::_stat_CLASS_ptr_WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Framework_Global;
+#include <iostream>
+	CLIBWriteQueAtThreadLogsId::WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Framework_App* CLIBWriteQueAtThreadLogsId::WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Framework::_stat_CLASS_get_ptr_WriteEnableForThreadsAt_ThreadLogsId_Framework_App;
+	CLIBWriteQueAtThreadLogsId::WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Framework_Global* CLIBWriteQueAtThreadLogsId::WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Framework::_stat_CLASS_ptr_WriteEnableForThreadsAt_ThreadLogsId_Framework_Global;
 // public.
-	CLIBWriteQueAt_Server_LaunchQueConditionCode::WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Framework::WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Framework() {
-
+	CLIBWriteQueAtThreadLogsId::WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Framework::WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Framework(uint8_t threadId) {
+		std::cout << "thread "  << threadId << " :: thread ?" << " :: entered LIB :: CLIBWriteQueAtThreadLogsId : WriteEnableForThreadsAt_ThreadLogsId_Framework : WriteEnableForThreadsAt_ThreadLogsId_Framework(threadId)." << std::endl;
+		std::cout << "thread "  << threadId << " :: thread ?" << " :: entered LIB :: CLIBWriteQueAtThreadLogsId : WriteEnableForThreadsAt_ThreadLogsId_Framework : WriteEnableForThreadsAt_ThreadLogsId_Framework(threadId)." << std::endl;
 	}
-	CLIBWriteQueAt_Server_LaunchQueConditionCode::WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Framework::~WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Framework() {
-		delete _stat_CLASS_get_ptr_WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Framework_App;
-		delete _stat_CLASS_ptr_WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Framework_Global;
+	CLIBWriteQueAtThreadLogsId::WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Framework::~WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Framework() {
+		std::cout << "thread "  << 0 << " :: thread ?" << " :: entered LIB :: CLIBWriteQueAtThreadLogsId : WriteEnableForThreadsAt_ThreadLogsId_Framework : WriteEnableForThreadsAt_ThreadLogsId_Framework(threadId)." << std::endl;
+		delete _stat_CLASS_get_ptr_WriteEnableForThreadsAt_ThreadLogsId_Framework_App;
+		delete _stat_CLASS_ptr_WriteEnableForThreadsAt_ThreadLogsId_Framework_Global;
+		std::cout << "thread "  << 0 << " :: thread ?" << " :: entered LIB :: CLIBWriteQueAtThreadLogsId : WriteEnableForThreadsAt_ThreadLogsId_Framework : WriteEnableForThreadsAt_ThreadLogsId_Framework(threadId)." << std::endl;
 	}
-	void CLIBWriteQueAt_Server_LaunchQueConditionCode::WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Framework::dyn_CLASS_create_WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Architecture() {
-		stat_CLASS_boot1_DEFINE_WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Framework();
-		stat_CLASS_boot3_INITIALISE_WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Framework();
+	void CLIBWriteQueAtThreadLogsId::WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Framework::dyn_CLASS_create_WriteEnableForThreadsAt_ThreadLogsId_Architecture(uint8_t threadId) {
+		std::cout << "thread "  << threadId << " :: thread ?" << " :: entered LIB :: CLIBWriteQueAtThreadLogsId : WriteEnableForThreadsAt_ThreadLogsId_Framework : dyn_CLASS_create_WriteEnableForThreadsAt_ThreadLogsId_Architecture(threadId)." << std::endl;
+		stat_CLASS_boot1_DEFINE_WriteEnableForThreadsAt_ThreadLogsId_Framework(threadId);
+		stat_CLASS_boot3_INITIALISE_WriteEnableForThreadsAt_ThreadLogsId_Framework(threadId);
+		std::cout << "thread "  << threadId << " :: thread ?" << " :: entered LIB :: CLIBWriteQueAtThreadLogsId : WriteEnableForThreadsAt_ThreadLogsId_Framework : dyn_CLASS_create_WriteEnableForThreadsAt_ThreadLogsId_Architecture(threadId)." << std::endl;
 	}
-	void CLIBWriteQueAt_Server_LaunchQueConditionCode::WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Framework::dyn_CLASS_create_WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Global_and_Settings()
+	void CLIBWriteQueAtThreadLogsId::WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Framework::dyn_CLASS_create_WriteEnableForThreadsAt_ThreadLogsId_Global_and_Settings(uint8_t threadId)
 	{
-		stat_CLASS_boot1_DEFINE_WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Global();
-		stat_CLASS_boot3_INITIALISE_WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Global();
+		std::cout << "thread "  << threadId << " :: thread ?" << " :: entered LIB :: CLIBWriteQueAtThreadLogsId : WriteEnableForThreadsAt_ThreadLogsId_Framework : dyn_CLASS_create_WriteEnableForThreadsAt_ThreadLogsId_Global_and_Settings(threadId)." << std::endl;
+		stat_CLASS_boot1_DEFINE_WriteEnableForThreadsAt_ThreadLogsId_Global(threadId);
+		stat_CLASS_boot3_INITIALISE_WriteEnableForThreadsAt_ThreadLogsId_Global(threadId);
+		std::cout << "thread "  << threadId << " :: thread ?" << " :: entered LIB :: CLIBWriteQueAtThreadLogsId : WriteEnableForThreadsAt_ThreadLogsId_Framework : dyn_CLASS_create_WriteEnableForThreadsAt_ThreadLogsId_Global_and_Settings(threadId)." << std::endl;
 	}
-	CLIBWriteQueAt_Server_LaunchQueConditionCode::WriteEnableForThreadsAt_Server_LaunchQueConditionCode_App* CLIBWriteQueAt_Server_LaunchQueConditionCode::WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Framework::dyn_CLASS_get_ptr_WriteEnableForThreadsAt_Server_LaunchQueConditionCode_App() {
-		return stat_CLASS_get_ptr_WriteEnableForThreadsAt_Server_LaunchQueConditionCode_App();
+	CLIBWriteQueAtThreadLogsId::WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Framework_App* CLIBWriteQueAtThreadLogsId::WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Framework::dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ThreadLogsId_App(uint8_t threadId) {
+		std::cout << "thread "  << threadId << " :: <= class : dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ThreadLogsId_App(threadId)." << std::endl;
+		return stat_CLASS_get_ptr_WriteEnableForThreadsAt_ThreadLogsId_App(threadId);
 	}
-	CLIBWriteQueAt_Server_LaunchQueConditionCode::WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Global* CLIBWriteQueAt_Server_LaunchQueConditionCode::WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Framework::dyn_CLASS_get_ptr_WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Global() {
-		return stat_CLASS_get_ptr_WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Global();
+	CLIBWriteQueAtThreadLogsId::WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Framework_Global* CLIBWriteQueAtThreadLogsId::WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Framework::dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ThreadLogsId_Global(uint8_t threadId) {
+		std::cout << "thread "  << threadId << " :: <= class : dyn_CLASS_get_ptr_WriteEnableForThreadsAt_ThreadLogsId_Global(threadId)." << std::endl;
+		return stat_CLASS_get_ptr_WriteEnableForThreadsAt_ThreadLogsId_Global(threadId);
 	}
-	void CLIBWriteQueAt_Server_LaunchQueConditionCode::WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Framework::stat_CLASS_boot1_DEFINE_WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Framework() {
-		stat_CLASS_boot1_DEFINE_WriteEnableForThreadsAt_Server_LaunchQueConditionCode_App();
-		stat_CLASS_boot1_DEFINE_WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Global();
+	void CLIBWriteQueAtThreadLogsId::WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Framework::stat_CLASS_boot1_DEFINE_WriteEnableForThreadsAt_ThreadLogsId_Framework(uint8_t threadId) {
+		std::cout << "thread "  << threadId << " :: thread ?" << " :: entered LIB :: CLIBWriteQueAtThreadLogsId : WriteEnableForThreadsAt_ThreadLogsId_Framework : stat_CLASS_boot1_DEFINE_WriteEnableForThreadsAt_ThreadLogsId_Framework(threadId)." << std::endl;
+		stat_CLASS_boot1_DEFINE_WriteEnableForThreadsAt_ThreadLogsId_App(threadId);
+		stat_CLASS_boot1_DEFINE_WriteEnableForThreadsAt_ThreadLogsId_Global(threadId);
+		std::cout << "thread "  << threadId << " :: thread ?" << " :: entered LIB :: CLIBWriteQueAtThreadLogsId : WriteEnableForThreadsAt_ThreadLogsId_Framework : stat_CLASS_boot1_DEFINE_WriteEnableForThreadsAt_ThreadLogsId_Framework(threadId)." << std::endl;
 	}
-	void CLIBWriteQueAt_Server_LaunchQueConditionCode::WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Framework::stat_CLASS_boot3_INITIALISE_WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Framework() {
-		stat_CLASS_boot3_INITIALISE_WriteEnableForThreadsAt_Server_LaunchQueConditionCode_App();
+	void CLIBWriteQueAtThreadLogsId::WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Framework::stat_CLASS_boot3_INITIALISE_WriteEnableForThreadsAt_ThreadLogsId_Framework(uint8_t threadId) {
+		std::cout << "thread "  << threadId << " :: thread ?" << " :: entered LIB :: CLIBWriteQueAtThreadLogsId : WriteEnableForThreadsAt_ThreadLogsId_Framework : stat_CLASS_boot3_INITIALISE_WriteEnableForThreadsAt_ThreadLogsId_Framework(threadId)." << std::endl;
+		stat_CLASS_boot3_INITIALISE_WriteEnableForThreadsAt_ThreadLogsId_App(threadId);
+		std::cout << "thread "  << threadId << " :: thread ?" << " :: entered LIB :: CLIBWriteQueAtThreadLogsId : WriteEnableForThreadsAt_ThreadLogsId_Framework : stat_CLASS_boot3_INITIALISE_WriteEnableForThreadsAt_ThreadLogsId_Framework(threadId)." << std::endl;
 	}
-	void CLIBWriteQueAt_Server_LaunchQueConditionCode::WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Framework::stat_CLASS_boot3_INITIALISE_WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Global() {
-		pr_stat_CLASS_boot3_INITIALISE_WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Global();
+	void CLIBWriteQueAtThreadLogsId::WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Framework::stat_CLASS_boot3_INITIALISE_WriteEnableForThreadsAt_ThreadLogsId_Global(uint8_t threadId) {
+		std::cout << "thread "  << threadId << " :: thread ?" << " :: entered LIB :: CLIBWriteQueAtThreadLogsId : WriteEnableForThreadsAt_ThreadLogsId_Framework : stat_CLASS_boot3_INITIALISE_WriteEnableForThreadsAt_ThreadLogsId_Global(threadId)." << std::endl;
+		pr_stat_CLASS_boot3_INITIALISE_WriteEnableForThreadsAt_ThreadLogsId_Global(threadId);
+		std::cout << "thread "  << threadId << " :: thread ?" << " :: entered LIB :: CLIBWriteQueAtThreadLogsId : WriteEnableForThreadsAt_ThreadLogsId_Framework : stat_CLASS_boot3_INITIALISE_WriteEnableForThreadsAt_ThreadLogsId_Global(threadId)." << std::endl;
 	}
 // private.
-	void CLIBWriteQueAt_Server_LaunchQueConditionCode::WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Framework::stat_CLASS_boot1_DEFINE_WriteEnableForThreadsAt_Server_LaunchQueConditionCode_App()
-	{
-		_stat_CLASS_get_ptr_WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Framework_App = nullptr;
+	void CLIBWriteQueAtThreadLogsId::WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Framework::stat_CLASS_boot1_DEFINE_WriteEnableForThreadsAt_ThreadLogsId_App(uint8_t threadId) {
+		std::cout << "thread "  << threadId << " :: thread ?" << " :: entered LIB :: CLIBWriteQueAtThreadLogsId : WriteEnableForThreadsAt_ThreadLogsId_Framework : stat_CLASS_boot1_DEFINE_WriteEnableForThreadsAt_ThreadLogsId_App(threadId)." << std::endl;
+		_stat_CLASS_get_ptr_WriteEnableForThreadsAt_ThreadLogsId_Framework_App = nullptr;
+		std::cout << "thread "  << threadId << " :: thread ?" << " :: entered LIB :: CLIBWriteQueAtThreadLogsId : WriteEnableForThreadsAt_ThreadLogsId_Framework : stat_CLASS_boot1_DEFINE_WriteEnableForThreadsAt_ThreadLogsId_App(threadId)." << std::endl;
 	}
-	void CLIBWriteQueAt_Server_LaunchQueConditionCode::WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Framework::stat_CLASS_boot1_DEFINE_WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Global()
-	{
-		_stat_CLASS_ptr_WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Framework_Global = nullptr;
+	void CLIBWriteQueAtThreadLogsId::WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Framework::stat_CLASS_boot1_DEFINE_WriteEnableForThreadsAt_ThreadLogsId_Global(uint8_t threadId) {
+		std::cout << "thread "  << threadId << " :: thread ?" << " :: entered LIB :: CLIBWriteQueAtThreadLogsId : WriteEnableForThreadsAt_ThreadLogsId_Framework : stat_CLASS_boot1_DEFINE_WriteEnableForThreadsAt_ThreadLogsId_Global(threadId)." << std::endl;
+		_stat_CLASS_ptr_WriteEnableForThreadsAt_ThreadLogsId_Framework_Global = nullptr;
+		std::cout << "thread "  << threadId << " :: thread ?" << " :: entered LIB :: CLIBWriteQueAtThreadLogsId : WriteEnableForThreadsAt_ThreadLogsId_Framework : stat_CLASS_boot1_DEFINE_WriteEnableForThreadsAt_ThreadLogsId_Global(threadId)." << std::endl;
 	}
-	void CLIBWriteQueAt_Server_LaunchQueConditionCode::WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Framework::stat_CLASS_boot3_INITIALISE_WriteEnableForThreadsAt_Server_LaunchQueConditionCode_App()
-	{
-		_stat_CLASS_get_ptr_WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Framework_App = new class CLIBWriteQueAt_Server_LaunchQueConditionCode::WriteEnableForThreadsAt_Server_LaunchQueConditionCode_App();
-		while (stat_CLASS_get_ptr_WriteEnableForThreadsAt_Server_LaunchQueConditionCode_App() == nullptr) {}
+	void CLIBWriteQueAtThreadLogsId::WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Framework::stat_CLASS_boot3_INITIALISE_WriteEnableForThreadsAt_ThreadLogsId_App(uint8_t threadId)	{
+		std::cout << "thread "  << threadId << " :: thread ?" << " :: entered LIB :: CLIBWriteQueAtThreadLogsId : WriteEnableForThreadsAt_ThreadLogsId_Framework : stat_CLASS_boot3_INITIALISE_WriteEnableForThreadsAt_ThreadLogsId_App(threadId)." << std::endl;
+		_stat_CLASS_get_ptr_WriteEnableForThreadsAt_ThreadLogsId_Framework_App = new class CLIBWriteQueAtThreadLogsId::WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Framework_App();
+		while (stat_CLASS_get_ptr_WriteEnableForThreadsAt_ThreadLogsId_App(threadId) == nullptr) {}
+		std::cout << "thread "  << threadId << " :: thread ?" << " :: entered LIB :: CLIBWriteQueAtThreadLogsId : WriteEnableForThreadsAt_ThreadLogsId_Framework : stat_CLASS_boot3_INITIALISE_WriteEnableForThreadsAt_ThreadLogsId_App(threadId)." << std::endl;
 	}
-	void CLIBWriteQueAt_Server_LaunchQueConditionCode::WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Framework::pr_stat_CLASS_boot3_INITIALISE_WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Global()
-	{
-		_stat_CLASS_ptr_WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Framework_Global = new class CLIBWriteQueAt_Server_LaunchQueConditionCode::WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Global();
-		while (stat_CLASS_get_ptr_WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Global() == nullptr) {}
+	void CLIBWriteQueAtThreadLogsId::WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Framework::pr_stat_CLASS_boot3_INITIALISE_WriteEnableForThreadsAt_ThreadLogsId_Global(uint8_t threadId) {
+		std::cout << "thread "  << threadId << " :: thread ?" << " :: entered LIB :: CLIBWriteQueAtThreadLogsId : WriteEnableForThreadsAt_ThreadLogsId_Framework : pr_stat_CLASS_boot3_INITIALISE_WriteEnableForThreadsAt_ThreadLogsId_Global(threadId)." << std::endl;
+		_stat_CLASS_ptr_WriteEnableForThreadsAt_ThreadLogsId_Framework_Global = new class CLIBWriteQueAtThreadLogsId::WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Framework_Global();
+		while (stat_CLASS_get_ptr_WriteEnableForThreadsAt_ThreadLogsId_Global(threadId) == nullptr) {}
+		std::cout << "thread "  << threadId << " :: thread ?" << " :: entered LIB :: CLIBWriteQueAtThreadLogsId : WriteEnableForThreadsAt_ThreadLogsId_Framework : pr_stat_CLASS_boot3_INITIALISE_WriteEnableForThreadsAt_ThreadLogsId_Global(threadId)." << std::endl;
 	}
-	CLIBWriteQueAt_Server_LaunchQueConditionCode::WriteEnableForThreadsAt_Server_LaunchQueConditionCode_App* CLIBWriteQueAt_Server_LaunchQueConditionCode::WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Framework::stat_CLASS_get_ptr_WriteEnableForThreadsAt_Server_LaunchQueConditionCode_App()
-	{
-		return _stat_CLASS_get_ptr_WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Framework_App;
+	CLIBWriteQueAtThreadLogsId::WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Framework_App* CLIBWriteQueAtThreadLogsId::WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Framework::stat_CLASS_get_ptr_WriteEnableForThreadsAt_ThreadLogsId_App(uint8_t threadId) {
+		std::cout << "thread "  << threadId << " :: <= class : stat_CLASS_get_ptr_WriteEnableForThreadsAt_ThreadLogsId_App(threadId)." << std::endl;
+		return _stat_CLASS_get_ptr_WriteEnableForThreadsAt_ThreadLogsId_Framework_App;
 	}
-	CLIBWriteQueAt_Server_LaunchQueConditionCode::WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Global* CLIBWriteQueAt_Server_LaunchQueConditionCode::WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Framework::stat_CLASS_get_ptr_WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Global()
-	{
-		return _stat_CLASS_ptr_WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Framework_Global;
+	CLIBWriteQueAtThreadLogsId::WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Framework_Global* CLIBWriteQueAtThreadLogsId::WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Framework::stat_CLASS_get_ptr_WriteEnableForThreadsAt_ThreadLogsId_Global(uint8_t threadId) {
+		std::cout << "thread "  << threadId << " :: <= class : stat_CLASS_get_ptr_WriteEnableForThreadsAt_ThreadLogsId_Global(threadId)." << std::endl;
+		return _stat_CLASS_ptr_WriteEnableForThreadsAt_ThreadLogsId_Framework_Global;
 	}

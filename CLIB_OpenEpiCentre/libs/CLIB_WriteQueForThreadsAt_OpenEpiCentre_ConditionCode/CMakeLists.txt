@@ -7,9 +7,9 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 add_library(CLIB_WriteQueForThreadsAt_OpenEpiCentre_ConditionCode STATIC
         src/CLIB_WriteEnableForThreadsAt_OpenEpiCentre_ConditionCode.cpp
         src/WriteEnableForThreadsAt_OpenEpiCentre_ConditionCode_Framework.cpp
-        src/WriteEnableForThreadsAt_OpenEpiCentre_ConditionCode_Global.cpp
-        src/WriteEnableForThreadsAt_OpenEpiCentre_ConditionCode_App.cpp
-        src/WriteEnableForThreadsAt_OpenEpiCentre_ConditionCode_Control.cpp
+        src/WriteEnableForThreadsAt_OpenEpiCentre_ConditionCode_Framework_Global.cpp
+        src/WriteEnableForThreadsAt_OpenEpiCentre_ConditionCode_Framework_App.cpp
+        src/WriteEnableForThreadsAt_OpenEpiCentre_ConditionCode_Framework_App_Control.cpp
 )
 
 target_include_directories(${PROJECT_NAME}

@@ -7,9 +7,9 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 add_library(CLIB_WriteQueForThreadsAt_ThreadLogsId STATIC
         src/CLIB_WriteEnableForThreadsAt_ThreadLogsId.cpp
         src/WriteEnableForThreadsAt_ThreadLogsId_Framework.cpp
-        src/WriteEnableForThreadsAt_ThreadLogsId_Global.cpp
-        src/WriteEnableForThreadsAt_ThreadLogsId_App.cpp
-        src/WriteEnableForThreadsAt_ThreadLogsId_Control.cpp
+        src/WriteEnableForThreadsAt_ThreadLogsId_Framework_Global.cpp
+        src/WriteEnableForThreadsAt_ThreadLogsId_Framework_App.cpp
+        src/WriteEnableForThreadsAt_ThreadLogsId_Framework_App_Control.cpp
 )
 
 target_include_directories(${PROJECT_NAME}
