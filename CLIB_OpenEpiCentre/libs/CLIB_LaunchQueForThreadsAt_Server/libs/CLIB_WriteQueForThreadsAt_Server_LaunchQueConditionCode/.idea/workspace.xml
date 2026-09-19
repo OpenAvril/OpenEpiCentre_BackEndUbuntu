@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BackendCodeEditorMiscSettings">
+    <option name="/Default/Housekeeping/FeatureSuggestion/FeatureSuggestionManager/DisabledSuggesters/=SwitchToGoToActionSuggester/@EntryIndexedValue" value="true" type="bool" />
+    <option name="/Default/Housekeeping/GlobalSettingsUpgraded/IsUpgraded/@EntryValue" value="true" type="bool" />
+    <option name="/Default/RiderDebugger/RiderRestoreDecompile/RestoreDecompileSetting/@EntryValue" value="false" type="bool" />
+  </component>
+  <component name="CMakePresetLoader">{
+  &quot;useNewFormat&quot;: true
+}</component>
+  <component name="CMakeProjectFlavorService">
+    <option name="flavorId" value="CMakePlainProjectFlavor" />
+  </component>
+  <component name="CMakeReloadState">
+    <option name="reloaded" value="true" />
+  </component>
+  <component name="CMakeRunConfigurationManager">
+    <generated>
+      <config projectName="CLIB_WriteQueForThreadsAt_Server_LaunchQueConditionCode" targetName="CLIB_WriteQueForThreadsAt_Server_LaunchQueConditionCode" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7424628b-9c55-40ff-9a78-125c086fd964" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/src/CLIB_WriteEnableForThreadsAt_Server_LaunchQueConditionCode.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/CLIB_WriteEnableForThreadsAt_Server_LaunchQueConditionCode.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CodeWriteEnableForThreadsAt_Server_LaunchQueCondition_Framework_App_Control.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/CodeWriteEnableForThreadsAt_Server_LaunchQueCondition_Framework_App_Control.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Framework.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Framework.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Framework_App.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Framework_App.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Framework_Global.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/WriteEnableForThreadsAt_Server_LaunchQueConditionCode_Framework_Global.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/CLIB_LaunchEnableForConcurrentThreadsAt_Server.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../src/CLIB_LaunchEnableForConcurrentThreadsAt_Server.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/LaunchEnableForConcurrentThreadsAt_Server_App.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../src/LaunchEnableForConcurrentThreadsAt_Server_App.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/LaunchEnableForConcurrentThreadsAt_Server_App_Control.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../src/LaunchEnableForConcurrentThreadsAt_Server_App_Control.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/LaunchEnableForConcurrentThreadsAt_Server_Execute.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../src/LaunchEnableForConcurrentThreadsAt_Server_Execute.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/LaunchEnableForConcurrentThreadsAt_Server_Framework.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../src/LaunchEnableForConcurrentThreadsAt_Server_Framework.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/LaunchEnableForConcurrentThreadsAt_Server_Global.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../src/LaunchEnableForConcurrentThreadsAt_Server_Global.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../CLIB_WriteQueForThreadsAt_OpenEpiCentre_ConditionCode/src/CLIB_WriteEnableForThreadsAt_OpenEpiCentre_ConditionCode.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../CLIB_WriteQueForThreadsAt_OpenEpiCentre_ConditionCode/src/CLIB_WriteEnableForThreadsAt_OpenEpiCentre_ConditionCode.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../CLIB_WriteQueForThreadsAt_OpenEpiCentre_ConditionCode/src/WriteEnableForThreadsAt_OpenEpiCentre_ConditionCode_Framework.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../CLIB_WriteQueForThreadsAt_OpenEpiCentre_ConditionCode/src/WriteEnableForThreadsAt_OpenEpiCentre_ConditionCode_Framework.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../CLIB_WriteQueForThreadsAt_OpenEpiCentre_ConditionCode/src/WriteEnableForThreadsAt_OpenEpiCentre_ConditionCode_Framework_App.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../CLIB_WriteQueForThreadsAt_OpenEpiCentre_ConditionCode/src/WriteEnableForThreadsAt_OpenEpiCentre_ConditionCode_Framework_App.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../CLIB_WriteQueForThreadsAt_OpenEpiCentre_ConditionCode/src/WriteEnableForThreadsAt_OpenEpiCentre_ConditionCode_Framework_App_Control.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../CLIB_WriteQueForThreadsAt_OpenEpiCentre_ConditionCode/src/WriteEnableForThreadsAt_OpenEpiCentre_ConditionCode_Framework_App_Control.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../CLIB_WriteQueForThreadsAt_OpenEpiCentre_ConditionCode/src/WriteEnableForThreadsAt_OpenEpiCentre_ConditionCode_Framework_Global.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../CLIB_WriteQueForThreadsAt_OpenEpiCentre_ConditionCode/src/WriteEnableForThreadsAt_OpenEpiCentre_ConditionCode_Framework_Global.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../CLIB_WriteQueForThreadsAt_ServerInputReceive/src/CLIB_WriteEnableForThreadsAt_ServerInputReceive.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../CLIB_WriteQueForThreadsAt_ServerInputReceive/src/CLIB_WriteEnableForThreadsAt_ServerInputReceive.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../CLIB_WriteQueForThreadsAt_ServerInputReceive/src/WriteEnableForThreadsAt_ServerInputReceive_Framework.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../CLIB_WriteQueForThreadsAt_ServerInputReceive/src/WriteEnableForThreadsAt_ServerInputReceive_Framework.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../CLIB_WriteQueForThreadsAt_ServerInputReceive/src/WriteEnableForThreadsAt_ServerInputReceive_Framework_App.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../CLIB_WriteQueForThreadsAt_ServerInputReceive/src/WriteEnableForThreadsAt_ServerInputReceive_Framework_App.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../CLIB_WriteQueForThreadsAt_ServerInputReceive/src/WriteEnableForThreadsAt_ServerInputReceive_Framework_App_Control.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../CLIB_WriteQueForThreadsAt_ServerInputReceive/src/WriteEnableForThreadsAt_ServerInputReceive_Framework_App_Control.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../CLIB_WriteQueForThreadsAt_ServerInputReceive/src/WriteEnableForThreadsAt_ServerInputReceive_Framework_Global.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../CLIB_WriteQueForThreadsAt_ServerInputReceive/src/WriteEnableForThreadsAt_ServerInputReceive_Framework_Global.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../CLIB_WriteQueForThreadsAt_ServerOutputSend/src/CLIB_WriteEnableForThreadsAt_ServerOutputSend.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../CLIB_WriteQueForThreadsAt_ServerOutputSend/src/CLIB_WriteEnableForThreadsAt_ServerOutputSend.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../CLIB_WriteQueForThreadsAt_ServerOutputSend/src/WriteEnableForThreadsAt_ServerOutputSend_Framework.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../CLIB_WriteQueForThreadsAt_ServerOutputSend/src/WriteEnableForThreadsAt_ServerOutputSend_Framework.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../CLIB_WriteQueForThreadsAt_ServerOutputSend/src/WriteEnableForThreadsAt_ServerOutputSend_Framework_App.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../CLIB_WriteQueForThreadsAt_ServerOutputSend/src/WriteEnableForThreadsAt_ServerOutputSend_Framework_App.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../CLIB_WriteQueForThreadsAt_ServerOutputSend/src/WriteEnableForThreadsAt_ServerOutputSend_Framework_App_Control.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../CLIB_WriteQueForThreadsAt_ServerOutputSend/src/WriteEnableForThreadsAt_ServerOutputSend_Framework_App_Control.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../CLIB_WriteQueForThreadsAt_ServerOutputSend/src/WriteEnableForThreadsAt_ServerOutputSend_Framework_Global.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../CLIB_WriteQueForThreadsAt_ServerOutputSend/src/WriteEnableForThreadsAt_ServerOutputSend_Framework_Global.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../src/CLIB_OpenEpiCentre.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../src/CLIB_OpenEpiCentre.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../src/engine/CLIB_OpenEpiCentre_Algorithms.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../src/engine/CLIB_OpenEpiCentre_Algorithms.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../src/engine/CLIB_OpenEpiCentre_App.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../src/engine/CLIB_OpenEpiCentre_App.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../src/engine/CLIB_OpenEpiCentre_Data.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../src/engine/CLIB_OpenEpiCentre_Data.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../src/engine/CLIB_OpenEpiCentre_Data_Control.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../src/engine/CLIB_OpenEpiCentre_Data_Control.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../src/engine/CLIB_OpenEpiCentre_Execute.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../src/engine/CLIB_OpenEpiCentre_Execute.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../src/engine/CLIB_OpenEpiCentre_Execute_Control.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../src/engine/CLIB_OpenEpiCentre_Execute_Control.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../src/engine/CLIB_OpenEpiCentre_Framework.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../src/engine/CLIB_OpenEpiCentre_Framework.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../src/engine/CLIB_OpenEpiCentre_Global.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../src/engine/CLIB_OpenEpiCentre_Global.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../src/structs/CLIB_OpenEpiCentre_STRUCT_Concurrent.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../src/structs/CLIB_OpenEpiCentre_STRUCT_Concurrent.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../src/structs/CLIB_OpenEpiCentre_STRUCT_Input.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../src/structs/CLIB_OpenEpiCentre_STRUCT_Input.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../src/structs/CLIB_OpenEpiCentre_STRUCT_Output.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../src/structs/CLIB_OpenEpiCentre_STRUCT_Output.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../src/structs/CLIB_OpenEpiCentre_STRUCT_User_Algorithm.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../src/structs/CLIB_OpenEpiCentre_STRUCT_User_Algorithm.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../src/structs/CLIB_OpenEpiCentre_STRUCT_User_Input.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../src/structs/CLIB_OpenEpiCentre_STRUCT_User_Input.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../src/structs/CLIB_OpenEpiCentre_STRUCT_User_Output.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../src/structs/CLIB_OpenEpiCentre_STRUCT_User_Output.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../src/structs/praise_sets/CLIB_OpenEpiCentre_STRUCT_Input_praise0.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../src/structs/praise_sets/CLIB_OpenEpiCentre_STRUCT_Input_praise0.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../src/structs/praise_sets/CLIB_OpenEpiCentre_STRUCT_Input_praise1.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../src/structs/praise_sets/CLIB_OpenEpiCentre_STRUCT_Input_praise1.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../src/structs/praise_sets/CLIB_OpenEpiCentre_STRUCT_Input_praise2.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../src/structs/praise_sets/CLIB_OpenEpiCentre_STRUCT_Input_praise2.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../src/structs/praise_sets/CLIB_OpenEpiCentre_STRUCT_Input_praise3.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../src/structs/praise_sets/CLIB_OpenEpiCentre_STRUCT_Input_praise3.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../src/structs/praise_sets/CLIB_OpenEpiCentre_STRUCT_Output_praise0.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../src/structs/praise_sets/CLIB_OpenEpiCentre_STRUCT_Output_praise0.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../src/structs/praise_sets/CLIB_OpenEpiCentre_STRUCT_Output_praise1.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../src/structs/praise_sets/CLIB_OpenEpiCentre_STRUCT_Output_praise1.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../src/structs/praise_sets/CLIB_OpenEpiCentre_STRUCT_Output_praise2.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../src/structs/praise_sets/CLIB_OpenEpiCentre_STRUCT_Output_praise2.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../src/structs/praise_sets/CLIB_OpenEpiCentre_STRUCT_Output_praise3.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../src/structs/praise_sets/CLIB_OpenEpiCentre_STRUCT_Output_praise3.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../CLIB_ThreadLogs/libs/CLIB_WriteQueForThreadsAt_ThreadLogsId/src/CLIB_WriteEnableForThreadsAt_ThreadLogsId.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../CLIB_ThreadLogs/libs/CLIB_WriteQueForThreadsAt_ThreadLogsId/src/CLIB_WriteEnableForThreadsAt_ThreadLogsId.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../CLIB_ThreadLogs/libs/CLIB_WriteQueForThreadsAt_ThreadLogsId/src/WriteEnableForThreadsAt_ThreadLogsId_Framework.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../CLIB_ThreadLogs/libs/CLIB_WriteQueForThreadsAt_ThreadLogsId/src/WriteEnableForThreadsAt_ThreadLogsId_Framework.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../CLIB_ThreadLogs/libs/CLIB_WriteQueForThreadsAt_ThreadLogsId/src/WriteEnableForThreadsAt_ThreadLogsId_Framework_App.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../CLIB_ThreadLogs/libs/CLIB_WriteQueForThreadsAt_ThreadLogsId/src/WriteEnableForThreadsAt_ThreadLogsId_Framework_App.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../CLIB_ThreadLogs/libs/CLIB_WriteQueForThreadsAt_ThreadLogsId/src/WriteEnableForThreadsAt_ThreadLogsId_Framework_App_Control.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../CLIB_ThreadLogs/libs/CLIB_WriteQueForThreadsAt_ThreadLogsId/src/WriteEnableForThreadsAt_ThreadLogsId_Framework_App_Control.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../CLIB_ThreadLogs/libs/CLIB_WriteQueForThreadsAt_ThreadLogsId/src/WriteEnableForThreadsAt_ThreadLogsId_Framework_Global.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../CLIB_ThreadLogs/libs/CLIB_WriteQueForThreadsAt_ThreadLogsId/src/WriteEnableForThreadsAt_ThreadLogsId_Framework_Global.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../CLIB_ThreadLogs/src/CLIB_ThreadLogs.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../CLIB_ThreadLogs/src/CLIB_ThreadLogs.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../CLIB_ThreadLogs/src/CLIB_ThreadLogs_Framework.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../CLIB_ThreadLogs/src/CLIB_ThreadLogs_Framework.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../CLIB_ThreadLogs/src/CLIB_ThreadLogs_Framework_App.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../CLIB_ThreadLogs/src/CLIB_ThreadLogs_Framework_App.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../CLIB_ThreadLogs/src/CLIB_ThreadLogs_Framework_App_Algorithms.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../CLIB_ThreadLogs/src/CLIB_ThreadLogs_Framework_App_Algorithms.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../CLIB_ThreadLogs/src/CLIB_ThreadLogs_Framework_App_Execute.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../CLIB_ThreadLogs/src/CLIB_ThreadLogs_Framework_App_Execute.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../CLIB_ThreadLogs/src/CLIB_ThreadLogs_Framework_Global.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../CLIB_ThreadLogs/src/CLIB_ThreadLogs_Framework_Global.cpp" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;OpenAvril&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/OpenAvril/OpenEpiCentre_BackEndUbuntu.git&quot;,
+    &quot;accountId&quot;: &quot;011e383a-389a-4b43-8711-8e20c0307fb9&quot;
+  }
+}</component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="DDakYqOY" />
+  </component>
+  <component name="ProjectApplicationVersion">
+    <option name="ide" value="CLion" />
+    <option name="majorVersion" value="2026" />
+    <option name="minorVersion" value="2.2" />
+    <option name="productBranch" value="Classic" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="3JUvADAhZkYvoiR20r7wsvdZAch" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "CidrDebugProfileConversion": "true",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.RadMigrateCodeStyle": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "DEVELOPMENT",
+    "last_opened_file_path": "/home/brenton-james/CLionProjects/OpenEpiCentre_BackEndUbuntu/CLIB_OpenEpiCentre",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "python.packages.toolwindow.project.migrated.to.right.top.v2": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="CLIB_WriteQueForThreadsAt_Server_LaunchQueConditionCode" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CLIB_WriteQueForThreadsAt_Server_LaunchQueConditionCode" TARGET_NAME="CLIB_WriteQueForThreadsAt_Server_LaunchQueConditionCode" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SelectedDebugProfileService">{
+  &quot;profileIdByStamp&quot;: [
+    {
+      &quot;first&quot;: {
+        &quot;##RUN_CONFIGURATION##&quot;: &quot;CMake Application.CLIB_WriteQueForThreadsAt_Server_LaunchQueConditionCode&quot;,
+        &quot;cmake&quot;: &quot;CMakeBuildProfile:Debug&quot;
+      },
+      &quot;second&quot;: &quot;a3c78f29-7d84-4f77-bb13-cf2db45d2c5c&quot;
+    }
+  ],
+  &quot;modificationCount&quot;: 2
+}</component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7424628b-9c55-40ff-9a78-125c086fd964" name="Changes" comment="" />
+      <created>1789728315626</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1789728315626</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
