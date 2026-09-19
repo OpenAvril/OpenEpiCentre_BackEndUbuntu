@@ -5,27 +5,27 @@ double* CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT_Output_praise2::_REG_ptr_CL
 // public.
 	void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT_Output_praise2::dyn_REG_boot1_DEFINE_CLIB_OpenEpiCentre_STRUCT_Output_praise2()
 	{
-		std::cout << "thread "  << threadId << " :: entered dyn_REG_boot1_DEFINE_CLIB_OpenEpiCentre_STRUCT_Output_praise2()" << std::endl;
+		CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: entered dyn_REG_boot1_DEFINE_CLIB_OpenEpiCentre_STRUCT_Output_praise2()"));
 		stat_REG_boot1_DEFINE_CLIB_OpenEpiCentre_STRUCT_Output_praise2_Value();
-		std::cout << "thread "  << threadId << " :: exiting dyn_REG_boot1_DEFINE_CLIB_OpenEpiCentre_STRUCT_Output_praise2()" << std::endl;
+		CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: exiting dyn_REG_boot1_DEFINE_CLIB_OpenEpiCentre_STRUCT_Output_praise2()"));
 	}
 	void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT_Output_praise2::dyn_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_STRUCT_Output_praise2()
 	{
-		std::cout << "thread "  << threadId << " :: entered dyn_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_STRUCT_Output_praise2()" << std::endl;
+		CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: entered dyn_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_STRUCT_Output_praise2()"));
 		stat_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_STRUCT_Output_praise2_Value();
-		std::cout << "thread "  << threadId << " :: exiting dyn_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_STRUCT_Output_praise2()" << std::endl;
+		CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: exiting dyn_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_STRUCT_Output_praise2()"));
 	}
 	void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT_Output_praise2::dyn_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_STRUCT_Output_praise2()
 	{
-		std::cout << "thread "  << threadId << " :: entered dyn_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_STRUCT_Output_praise2()" << std::endl;
+		CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: entered dyn_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_STRUCT_Output_praise2()"));
 		stat_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_STRUCT_Output_praise2_Value();
-		std::cout << "thread "  << threadId << " :: exiting dyn_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_STRUCT_Output_praise2()" << std::endl;
+		CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: exiting dyn_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_STRUCT_Output_praise2()"));
 	}
 	void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT_Output_praise2::dyn_REG_boot4_INSTANTIATE_CLIB_OpenEpiCentre_STRUCT_Output_praise2()
 	{
-		std::cout << "thread "  << threadId << " :: entered dyn_REG_boot4_INSTANTIATE_CLIB_OpenEpiCentre_STRUCT_Output_praise2()" << std::endl;
+		CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: entered dyn_REG_boot4_INSTANTIATE_CLIB_OpenEpiCentre_STRUCT_Output_praise2()"));
 
-		std::cout << "thread "  << threadId << " :: exiting dyn_REG_boot4_INSTANTIATE_CLIB_OpenEpiCentre_STRUCT_Output_praise2()" << std::endl;
+		CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: exiting dyn_REG_boot4_INSTANTIATE_CLIB_OpenEpiCentre_STRUCT_Output_praise2()"));
 	}
 	double CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT_Output_praise2::dyn_REG_get_CLIB_OpenEpiCentre_STRUCT_Output_praise2_Value()
 	{
@@ -37,33 +37,33 @@ double* CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT_Output_praise2::_REG_ptr_CL
 	}
 	void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT_Output_praise2::stat_CLASS_boot0_DECLARE_CLIB_OpenEpiCentre_STRUCT_Output_praise2()
 	{
-		std::cout << "thread "  << threadId << " :: entered stat_CLASS_boot2_DECLARE_CLIB_OpenEpiCentre_STRUCT_Output_praise2()" << std::endl;
+		CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: entered stat_CLASS_boot2_DECLARE_CLIB_OpenEpiCentre_STRUCT_Output_praise2()"));
 
-		std::cout << "thread "  << threadId << " :: exiting stat_CLASS_boot2_DECLARE_CLIB_OpenEpiCentre_STRUCT_Output_praise2()" << std::endl;
+		CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: exiting stat_CLASS_boot2_DECLARE_CLIB_OpenEpiCentre_STRUCT_Output_praise2()"));
 	}
 	void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT_Output_praise2::stat_CLASS_boot1_DEFINE_CLIB_OpenEpiCentre_STRUCT_Output_praise2()
 	{
-		std::cout << "thread "  << threadId << " :: entered stat_CLASS_boot1_DEFINE_CLIB_OpenEpiCentre_STRUCT_Output_praise2()" << std::endl;
+		CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: entered stat_CLASS_boot1_DEFINE_CLIB_OpenEpiCentre_STRUCT_Output_praise2()"));
 
-		std::cout << "thread "  << threadId << " :: exiting stat_CLASS_boot1_DEFINE_CLIB_OpenEpiCentre_STRUCT_Output_praise2()" << std::endl;
+		CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: exiting stat_CLASS_boot1_DEFINE_CLIB_OpenEpiCentre_STRUCT_Output_praise2()"));
 	}
 	void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT_Output_praise2::stat_CLASS_boot3_INITIALISE_CLIB_OpenEpiCentre_STRUCT_Output_praise2()
 	{
-		std::cout << "thread "  << threadId << " :: entered stat_CLASS_boot3_INITIALISE_CLIB_OpenEpiCentre_STRUCT_Output_praise2()" << std::endl;
+		CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: entered stat_CLASS_boot3_INITIALISE_CLIB_OpenEpiCentre_STRUCT_Output_praise2()"));
 
-		std::cout << "thread "  << threadId << " :: exiting stat_CLASS_boot3_INITIALISE_CLIB_OpenEpiCentre_STRUCT_Output_praise2()" << std::endl;
+		CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: exiting stat_CLASS_boot3_INITIALISE_CLIB_OpenEpiCentre_STRUCT_Output_praise2()"));
 	}
 	void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT_Output_praise2::stat_CLASS_boot4_INSTANTIATE_CLIB_OpenEpiCentre_STRUCT_Output_praise2()
 	{
-		std::cout << "thread "  << threadId << " :: entered stat_CLASS_boot4_INSTANTIATE_CLIB_OpenEpiCentre_STRUCT_Output_praise2()" << std::endl;
+		CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: entered stat_CLASS_boot4_INSTANTIATE_CLIB_OpenEpiCentre_STRUCT_Output_praise2()"));
 
-		std::cout << "thread "  << threadId << " :: exiting stat_CLASS_boot4_INSTANTIATE_CLIB_OpenEpiCentre_STRUCT_Output_praise2()" << std::endl;
+		CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: exiting stat_CLASS_boot4_INSTANTIATE_CLIB_OpenEpiCentre_STRUCT_Output_praise2()"));
 	}
 	void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT_Output_praise2::stat_REG_boot0_DECLARE_CLIB_OpenEpiCentre_STRUCT_Output_praise2()
 	{
-		std::cout << "thread "  << threadId << " :: entered stat_REG_boot2_DECLARE_CLIB_OpenEpiCentre_STRUCT_Output_praise2()" << std::endl;
+		CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: entered stat_REG_boot2_DECLARE_CLIB_OpenEpiCentre_STRUCT_Output_praise2()"));
 
-		std::cout << "thread "  << threadId << " :: exiting stat_REG_boot2_DECLARE_CLIB_OpenEpiCentre_STRUCT_Output_praise2()" << std::endl;
+		CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: exiting stat_REG_boot2_DECLARE_CLIB_OpenEpiCentre_STRUCT_Output_praise2()"));
 	}
 // private.
 	void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_STRUCT_Output_praise2::stat_REG_boot1_DEFINE_CLIB_OpenEpiCentre_STRUCT_Output_praise2_Value()

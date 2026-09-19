@@ -63,28 +63,28 @@
         }
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data_Control::dyn_REG_boot1_DEFINE_CLIB_OpenEpiCentre_Data_Control(CLIB_OpenEpiCentre_Framework* obj) {
-        std::cout << "thread "  << threadId << " :: entered dyn_REG_boot1_DEFINE_CLIB_OpenEpiCentre_Data_Control()" << std::endl;
+        CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: entered dyn_REG_boot1_DEFINE_CLIB_OpenEpiCentre_Data_Control()"));
         stat_REG_boot1_DEFINE_FLAG_isLoaded_Stack_InputAction();
         stat_REG_boot1_DEFINE_FLAG_isLoaded_Stack_OutputSend();
         stat_REG_boot1_DEFINE_ItemSideToWRITE_For_doubleBufferOfInput();
         stat_REG_boot1_DEFINE_ItemSideToWRITE_For_doubleBufferOfOutput();
-        std::cout << "thread "  << threadId << " :: exiting dyn_REG_boot1_DEFINE_CLIB_OpenEpiCentre_Data_Control()" << std::endl;
+        CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: exiting dyn_REG_boot1_DEFINE_CLIB_OpenEpiCentre_Data_Control()"));
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data_Control::dyn_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_Data_Control(CLIB_OpenEpiCentre_Framework* obj) {
-        std::cout << "thread "  << threadId << " :: entered dyn_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_Data_Control()" << std::endl;
+        CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: entered dyn_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_Data_Control()"));
         stat_REG_boot2_SUBSTANTIATE_FLAG_isLoaded_Stack_InputAction();
         stat_REG_boot2_SUBSTANTIATE_FLAG_isLoaded_Stack_OutputSend();
         stat_REG_boot2_SUBSTANTIATE_ItemSideToWRITE_For_doubleBufferOfInput();
         stat_REG_boot2_SUBSTANTIATE_ItemSideToWRITE_For_doubleBufferOfOutput();
-        std::cout << "thread "  << threadId << " :: exiting dyn_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_Data_Control()" << std::endl;
+        CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: exiting dyn_REG_boot2_SUBSTANTIATE_CLIB_OpenEpiCentre_Data_Control()"));
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data_Control::dyn_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_Data_Control(CLIB_OpenEpiCentre_Framework* obj) {
-        std::cout << "thread "  << threadId << " :: entered dyn_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_Data_Control()" << std::endl;
+        CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: entered dyn_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_Data_Control()"));
         stat_REG_boot3_INITIALISE_FLAG_isLoaded_Stack_InputAction();
         stat_REG_boot3_INITIALISE_FLAG_isLoaded_Stack_OutputSend();
         stat_REG_boot3_INITIALISE_ItemSideToWRITE_For_doubleBufferOfInput();
         stat_REG_boot3_INITIALISE_ItemSideToWRITE_For_doubleBufferOfOutput();
-        std::cout << "thread "  << threadId << " :: exiting dyn_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_Data_Control()" << std::endl;
+        CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: exiting dyn_REG_boot3_INITIALISE_CLIB_OpenEpiCentre_Data_Control()"));
     }
     bool CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data_Control::dyn_REG_get_Item_FLAG_isLoaded_Stack_InputAction() {
         return stat_REG_get_ptr_FLAG_isLoaded_Stack_InputAction();
@@ -111,135 +111,135 @@
         stat_REG_set_Item_FLAG_isLoaded_Stack_OutputSend(value);
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data_Control::stat_CLASS_boot0_DECLARE_CLIB_OpenEpiCentre_Data_Control() {
-        std::cout << "thread "  << threadId << " :: entered stat_CLASS_boot0_DECLARE_CLIB_OpenEpiCentre_Data_Control()" << std::endl;
-        std::cout << "thread "  << threadId << " :: exiting stat_CLASS_boot0_DECLARE_CLIB_OpenEpiCentre_Data_Control()" << std::endl;
+        CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: entered stat_CLASS_boot0_DECLARE_CLIB_OpenEpiCentre_Data_Control()"));
+        CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: exiting stat_CLASS_boot0_DECLARE_CLIB_OpenEpiCentre_Data_Control()"));
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data_Control::stat_CLASS_boot1_DEFINE_CLIB_OpenEpiCentre_Data_Control() {
-        std::cout << "thread "  << threadId << " :: entered stat_CLASS_boot1_DEFINE_CLIB_OpenEpiCentre_Data_Control()" << std::endl;
-        std::cout << "thread "  << threadId << " :: exiting stat_CLASS_boot1_DEFINE_CLIB_OpenEpiCentre_Data_Control()" << std::endl;
+        CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: entered stat_CLASS_boot1_DEFINE_CLIB_OpenEpiCentre_Data_Control()"));
+        CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: exiting stat_CLASS_boot1_DEFINE_CLIB_OpenEpiCentre_Data_Control()"));
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data_Control::stat_CLASS_boot3_INITIALISE_CLIB_OpenEpiCentre_Data_Control() {
-        std::cout << "thread "  << threadId << " :: entered stat_CLASS_boot3_INITIALISE_CLIB_OpenEpiCentre_Data_Control()" << std::endl;
-        std::cout << "thread "  << threadId << " :: exiting stat_CLASS_boot3_INITIALISE_CLIB_OpenEpiCentre_Data_Control()" << std::endl;
+        CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: entered stat_CLASS_boot3_INITIALISE_CLIB_OpenEpiCentre_Data_Control()"));
+        CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: exiting stat_CLASS_boot3_INITIALISE_CLIB_OpenEpiCentre_Data_Control()"));
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data_Control::stat_CLASS_boot4_INSTANTIATE_CLIB_OpenEpiCentre_Data_Control() {
-        std::cout << "thread "  << threadId << " :: entered stat_CLASS_boot4_INSTANTIATE_CLIB_OpenEpiCentre_Data_Control()" << std::endl;
-        std::cout << "thread "  << threadId << " :: exiting stat_CLASS_boot4_INSTANTIATE_CLIB_OpenEpiCentre_Data_Control()" << std::endl;
+        CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: entered stat_CLASS_boot4_INSTANTIATE_CLIB_OpenEpiCentre_Data_Control()"));
+        CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: exiting stat_CLASS_boot4_INSTANTIATE_CLIB_OpenEpiCentre_Data_Control()"));
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data_Control::stat_REG_boot0_DECLARE_CLIB_OpenEpiCentre_Data_Control() {
-        std::cout << "thread "  << threadId << " :: entered stat_REG_boot0_DECLARE_CLIB_OpenEpiCentre_Data_Control()" << std::endl;
-        std::cout << "thread "  << threadId << " :: exiting stat_REG_boot0_DECLARE_CLIB_OpenEpiCentre_Data_Control()" << std::endl;
+        CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: entered stat_REG_boot0_DECLARE_CLIB_OpenEpiCentre_Data_Control()"));
+        CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: exiting stat_REG_boot0_DECLARE_CLIB_OpenEpiCentre_Data_Control()"));
     }
 // private.
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data_Control::stat_REG_boot1_DEFINE_FLAG_isLoaded_Stack_InputAction() {
-        std::cout << "thread "  << threadId << " :: entered stat_REG_boot1_DEFINE_FLAG_isLoaded_Stack_InputAction()" << std::endl;
+        CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: entered stat_REG_boot1_DEFINE_FLAG_isLoaded_Stack_InputAction()"));
         _stat_REG_ptr_FLAG_CLIB_OpenEpiCentre_Data_Control_isLoaded_Stack_InputAction = nullptr;
-        std::cout << "thread "  << threadId << " :: exiting stat_REG_boot1_DEFINE_FLAG_isLoaded_Stack_InputAction()" << std::endl;
+        CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: exiting stat_REG_boot1_DEFINE_FLAG_isLoaded_Stack_InputAction()"));
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data_Control::stat_REG_boot1_DEFINE_FLAG_isLoaded_Stack_OutputSend() {
-        std::cout << "thread "  << threadId << " :: entered stat_REG_boot1_DEFINE_FLAG_isLoaded_Stack_OutputSend()" << std::endl;
+        CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: entered stat_REG_boot1_DEFINE_FLAG_isLoaded_Stack_OutputSend()"));
         _stat_REG_ptr_FLAG_CLIB_OpenEpiCentre_Data_Control_isLoaded_Stack_OutputSend = nullptr;
-        std::cout << "thread "  << threadId << " :: exiting stat_REG_boot1_DEFINE_FLAG_isLoaded_Stack_OutputSend()" << std::endl;
+        CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: exiting stat_REG_boot1_DEFINE_FLAG_isLoaded_Stack_OutputSend()"));
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data_Control::stat_REG_boot1_DEFINE_ItemSideToWRITE_For_doubleBufferOfInput() {
-        std::cout << "thread "  << threadId << " :: entered stat_REG_boot1_DEFINE_side_To_Write_For_doubleBuffer_Input()" << std::endl;
+        CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: entered stat_REG_boot1_DEFINE_side_To_Write_For_doubleBuffer_Input()"));
         _stat_REG_ptr_CLIB_OpenEpiCentre_Data_Control_ItemSideToWRITE_For_doubleBufferOfInput = nullptr;
-        std::cout << "thread "  << threadId << " :: exiting stat_REG_boot1_DEFINE_side_To_Write_For_doubleBuffer_Input()" << std::endl;
+        CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: exiting stat_REG_boot1_DEFINE_side_To_Write_For_doubleBuffer_Input()"));
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data_Control::stat_REG_boot1_DEFINE_ItemSideToWRITE_For_doubleBufferOfOutput() {
-        std::cout << "thread "  << threadId << " :: entered stat_REG_boot1_DEFINE_side_To_Write_For_doubleBuffer_Output()" << std::endl;
+        CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: entered stat_REG_boot1_DEFINE_side_To_Write_For_doubleBuffer_Output()"));
         _stat_REG_ptr_CLIB_OpenEpiCentre_Data_Control_ItemSideToWRITE_For_doubleBufferOfOutput = nullptr;
-        std::cout << "thread "  << threadId << " :: exiting stat_REG_boot1_DEFINE_side_To_Write_For_doubleBuffer_Output()" << std::endl;
+        CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: exiting stat_REG_boot1_DEFINE_side_To_Write_For_doubleBuffer_Output()"));
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data_Control::stat_REG_boot2_SUBSTANTIATE_FLAG_isLoaded_Stack_InputAction() {
-        std::cout << "thread "  << threadId << " :: entered stat_REG_boot2_SUBSTANTIATE_FLAG_isLoaded_Stack_InputAction()" << std::endl;
+        CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: entered stat_REG_boot2_SUBSTANTIATE_FLAG_isLoaded_Stack_InputAction()"));
         _stat_REG_ptr_FLAG_CLIB_OpenEpiCentre_Data_Control_isLoaded_Stack_InputAction = new bool();
         stat_REG_set_Item_FLAG_isLoaded_Stack_InputAction(true);
-        std::cout << "thread "  << threadId << " :: exiting stat_REG_boot2_SUBSTANTIATE_FLAG_isLoaded_Stack_InputAction()" << std::endl;
+        CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: exiting stat_REG_boot2_SUBSTANTIATE_FLAG_isLoaded_Stack_InputAction()"));
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data_Control::stat_REG_boot2_SUBSTANTIATE_FLAG_isLoaded_Stack_OutputSend() {
-        std::cout << "thread "  << threadId << " :: entered stat_REG_boot2_SUBSTANTIATE_FLAG_isLoaded_Stack_OutputSend()" << std::endl;
+        CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: entered stat_REG_boot2_SUBSTANTIATE_FLAG_isLoaded_Stack_OutputSend()"));
         _stat_REG_ptr_FLAG_CLIB_OpenEpiCentre_Data_Control_isLoaded_Stack_OutputSend = new bool();
         stat_REG_set_Item_FLAG_isLoaded_Stack_OutputSend(true);
-        std::cout << "thread "  << threadId << " :: exiting stat_REG_boot2_SUBSTANTIATE_FLAG_isLoaded_Stack_OutputSend()" << std::endl;
+        CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: exiting stat_REG_boot2_SUBSTANTIATE_FLAG_isLoaded_Stack_OutputSend()"));
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data_Control::stat_REG_boot2_SUBSTANTIATE_ItemSideToWRITE_For_doubleBufferOfInput() {
-        std::cout << "thread "  << threadId << " :: entered stat_REG_boot2_SUBSTANTIATE_side_To_Write_For_doubleBuffer_Input()" << std::endl;
+        CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: entered stat_REG_boot2_SUBSTANTIATE_side_To_Write_For_doubleBuffer_Input()"));
         _stat_REG_ptr_CLIB_OpenEpiCentre_Data_Control_ItemSideToWRITE_For_doubleBufferOfInput = new bool();
         stat_REG_set_Item_ItemSideToWRITE_For_doubleBufferOfInput(true);
-        std::cout << "thread "  << threadId << " :: exiting stat_REG_boot2_SUBSTANTIATE_side_To_Write_For_doubleBuffer_Input()" << std::endl;
+        CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: exiting stat_REG_boot2_SUBSTANTIATE_side_To_Write_For_doubleBuffer_Input()"));
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data_Control::stat_REG_boot2_SUBSTANTIATE_ItemSideToWRITE_For_doubleBufferOfOutput() {
-        std::cout << "thread "  << threadId << " :: entered stat_REG_boot2_SUBSTANTIATE_side_To_Write_For_doubleBuffer_Output()" << std::endl;
+        CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: entered stat_REG_boot2_SUBSTANTIATE_side_To_Write_For_doubleBuffer_Output()"));
         _stat_REG_ptr_CLIB_OpenEpiCentre_Data_Control_ItemSideToWRITE_For_doubleBufferOfOutput = new bool();
         stat_REG_set_Item_ItemSideToWRITE_For_doubleBufferOfOutput(true);
-        std::cout << "thread "  << threadId << " :: exiting stat_REG_boot2_SUBSTANTIATE_side_To_Write_For_doubleBuffer_Output()" << std::endl;
+        CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: exiting stat_REG_boot2_SUBSTANTIATE_side_To_Write_For_doubleBuffer_Output()"));
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data_Control::stat_REG_boot3_INITIALISE_FLAG_isLoaded_Stack_InputAction() {
-        std::cout << "thread "  << threadId << " :: entered stat_REG_boot3_INITIALISE_FLAG_isLoaded_Stack_InputAction()" << std::endl;
+        CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: entered stat_REG_boot3_INITIALISE_FLAG_isLoaded_Stack_InputAction()"));
         stat_REG_set_Item_FLAG_isLoaded_Stack_InputAction(false);
-        std::cout << "thread "  << threadId << " :: exiting stat_REG_boot3_INITIALISE_FLAG_isLoaded_Stack_InputAction()" << std::endl;
+        CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: exiting stat_REG_boot3_INITIALISE_FLAG_isLoaded_Stack_InputAction()"));
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data_Control::stat_REG_boot3_INITIALISE_FLAG_isLoaded_Stack_OutputSend() {
-        std::cout << "thread "  << threadId << " :: entered stat_REG_boot3_INITIALISE_FLAG_isLoaded_Stack_OutputSend()" << std::endl;
+        CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: entered stat_REG_boot3_INITIALISE_FLAG_isLoaded_Stack_OutputSend()"));
         stat_REG_set_Item_FLAG_isLoaded_Stack_OutputSend(false);
-        std::cout << "thread "  << threadId << " :: exiting stat_REG_boot3_INITIALISE_FLAG_isLoaded_Stack_OutputSend()" << std::endl;
+        CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: exiting stat_REG_boot3_INITIALISE_FLAG_isLoaded_Stack_OutputSend()"));
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data_Control::stat_REG_boot3_INITIALISE_ItemSideToWRITE_For_doubleBufferOfInput() {
-        std::cout << "thread "  << threadId << " :: entered stat_REG_boot3_INITIALISE_side_To_Write_For_doubleBuffer_Input()" << std::endl;
+        CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: entered stat_REG_boot3_INITIALISE_side_To_Write_For_doubleBuffer_Input()"));
         stat_REG_set_Item_ItemSideToWRITE_For_doubleBufferOfInput(false);
-        std::cout << "thread "  << threadId << " :: exiting stat_REG_boot3_INITIALISE_side_To_Write_For_doubleBuffer_Input()" << std::endl;
+        CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: exiting stat_REG_boot3_INITIALISE_side_To_Write_For_doubleBuffer_Input()"));
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data_Control::stat_REG_boot3_INITIALISE_ItemSideToWRITE_For_doubleBufferOfOutput() {
-        std::cout << "thread "  << threadId << " :: entered stat_REG_boot3_INITIALISE_side_To_Write_For_doubleBuffer_Output()" << std::endl;
+        CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: entered stat_REG_boot3_INITIALISE_side_To_Write_For_doubleBuffer_Output()"));
         stat_REG_set_Item_ItemSideToWRITE_For_doubleBufferOfOutput(false);
-        std::cout << "thread "  << threadId << " :: exiting stat_REG_boot3_INITIALISE_side_To_Write_For_doubleBuffer_Output()" << std::endl;
+        CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: exiting stat_REG_boot3_INITIALISE_side_To_Write_For_doubleBuffer_Output()"));
     }
     bool* CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data_Control::stat_REG_get_ptr_FLAG_isLoaded_Stack_InputAction() {
-        std::cout << "thread "  << threadId << " :: entered stat_REG_get_ptr_FLAG_isLoaded_Stack_InputAction()" << std::endl;
-        std::cout << "thread "  << threadId << " :: thread ? :: <= _stat_REG_ptr_FLAG_isLoaded_Stack_InputAction = " << *_stat_REG_ptr_FLAG_CLIB_OpenEpiCentre_Data_Control_isLoaded_Stack_InputAction << std::endl;
-        std::cout << "thread "  << threadId << " :: exiting stat_REG_get_ptr_FLAG_isLoaded_Stack_InputAction()" << std::endl;
+        CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: entered stat_REG_get_ptr_FLAG_isLoaded_Stack_InputAction()"));
+        CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: thread ? :: <= _stat_REG_ptr_FLAG_isLoaded_Stack_InputAction = " << *_stat_REG_ptr_FLAG_CLIB_OpenEpiCentre_Data_Control_isLoaded_Stack_InputAction));
+        CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: exiting stat_REG_get_ptr_FLAG_isLoaded_Stack_InputAction()"));
         return _stat_REG_ptr_FLAG_CLIB_OpenEpiCentre_Data_Control_isLoaded_Stack_InputAction;
     }
     bool* CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data_Control::stat_REG_get_ptr_FLAG_isLoaded_Stack_OutputSend() {
-        std::cout << "thread "  << threadId << " :: entered stat_REG_get_ptr_FLAG_isLoaded_Stack_OutputSend()" << std::endl;
-        std::cout << "thread "  << threadId << " :: thread ? :: <= _stat_REG_ptr_FLAG_isLoaded_Stack_OutputSend = " << *_stat_REG_ptr_FLAG_CLIB_OpenEpiCentre_Data_Control_isLoaded_Stack_OutputSend << std::endl;
-        std::cout << "thread "  << threadId << " :: exiting stat_REG_get_ptr_FLAG_isLoaded_Stack_OutputSend()" << std::endl;
+        CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: entered stat_REG_get_ptr_FLAG_isLoaded_Stack_OutputSend()"));
+        CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: thread ? :: <= _stat_REG_ptr_FLAG_isLoaded_Stack_OutputSend = " << *_stat_REG_ptr_FLAG_CLIB_OpenEpiCentre_Data_Control_isLoaded_Stack_OutputSend));
+        CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: exiting stat_REG_get_ptr_FLAG_isLoaded_Stack_OutputSend()"));
         return _stat_REG_ptr_FLAG_CLIB_OpenEpiCentre_Data_Control_isLoaded_Stack_OutputSend;
     }
     bool* CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data_Control::stat_REG_get_ptr_ItemSideToWRITE_For_doubleBufferOfInput() {
-        std::cout << "thread "  << threadId << " :: entered stat_REG_get_ptr_side_To_Write_For_side_To_Write_For_doubleBuffer_Input()" << std::endl;
-        std::cout << "thread "  << threadId << " :: thread ? :: <= _stat_REG_ptr_side_To_Write_For_doubleBuffer_Input = " << *_stat_REG_ptr_CLIB_OpenEpiCentre_Data_Control_ItemSideToWRITE_For_doubleBufferOfInput << std::endl;
-        std::cout << "thread "  << threadId << " :: exiting stat_REG_get_ptr_side_To_Write_For_side_To_Write_For_doubleBuffer_Input()" << std::endl;
+        CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: entered stat_REG_get_ptr_side_To_Write_For_side_To_Write_For_doubleBuffer_Input()"));
+        CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: thread ? :: <= _stat_REG_ptr_side_To_Write_For_doubleBuffer_Input = " << *_stat_REG_ptr_CLIB_OpenEpiCentre_Data_Control_ItemSideToWRITE_For_doubleBufferOfInput));
+        CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: exiting stat_REG_get_ptr_side_To_Write_For_side_To_Write_For_doubleBuffer_Input()"));
         return _stat_REG_ptr_CLIB_OpenEpiCentre_Data_Control_ItemSideToWRITE_For_doubleBufferOfInput;
     }
     bool* CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data_Control::stat_REG_get_ptr_ItemSideToWRITE_For_doubleBufferOfOutput() {
-        std::cout << "thread "  << threadId << " :: entered stat_REG_get_ptr_side_To_Write_For_side_To_Write_For_doubleBuffer_Output()" << std::endl;
-        std::cout << "thread "  << threadId << " :: thread ? :: <= _stat_REG_ptr_side_To_Write_For_doubleBuffer_Output = " << *_stat_REG_ptr_CLIB_OpenEpiCentre_Data_Control_ItemSideToWRITE_For_doubleBufferOfOutput << std::endl;
-        std::cout << "thread "  << threadId << " :: exiting stat_REG_get_ptr_side_To_Write_For_side_To_Write_For_doubleBuffer_Output()" << std::endl;
+        CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: entered stat_REG_get_ptr_side_To_Write_For_side_To_Write_For_doubleBuffer_Output()"));
+        CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: thread ? :: <= _stat_REG_ptr_side_To_Write_For_doubleBuffer_Output = " << *_stat_REG_ptr_CLIB_OpenEpiCentre_Data_Control_ItemSideToWRITE_For_doubleBufferOfOutput));
+        CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: exiting stat_REG_get_ptr_side_To_Write_For_side_To_Write_For_doubleBuffer_Output()"));
         return _stat_REG_ptr_CLIB_OpenEpiCentre_Data_Control_ItemSideToWRITE_For_doubleBufferOfOutput;
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data_Control::stat_REG_set_Item_FLAG_isLoaded_Stack_InputAction(bool new_Bool) {
-        std::cout << "thread "  << threadId << " :: entered stat_REG_set_Item_FLAG_isLoaded_Stack_InputAction()" << std::endl;
+        CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: entered stat_REG_set_Item_FLAG_isLoaded_Stack_InputAction()"));
         *_stat_REG_ptr_FLAG_CLIB_OpenEpiCentre_Data_Control_isLoaded_Stack_InputAction = new_Bool;
-        std::cout << "thread "  << threadId << " :: thread ? :: => _stat_REG_ptr_side_To_Write_For_doubleBuffer_Output = " << *_stat_REG_ptr_FLAG_CLIB_OpenEpiCentre_Data_Control_isLoaded_Stack_InputAction << std::endl;
-        std::cout << "thread "  << threadId << " :: exiting stat_REG_set_Item_FLAG_isLoaded_Stack_InputAction()" << std::endl;
+        CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: thread ? :: => _stat_REG_ptr_side_To_Write_For_doubleBuffer_Output = " << *_stat_REG_ptr_FLAG_CLIB_OpenEpiCentre_Data_Control_isLoaded_Stack_InputAction));
+        CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: exiting stat_REG_set_Item_FLAG_isLoaded_Stack_InputAction()"));
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data_Control::stat_REG_set_Item_FLAG_isLoaded_Stack_OutputSend(bool new_Bool) {
-        std::cout << "thread "  << threadId << " :: entered stat_REG_set_Item_FLAG_isLoaded_Stack_OutputSend()" << std::endl;
+        CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: entered stat_REG_set_Item_FLAG_isLoaded_Stack_OutputSend()"));
         *_stat_REG_ptr_FLAG_CLIB_OpenEpiCentre_Data_Control_isLoaded_Stack_OutputSend = new_Bool;
-        std::cout << "thread "  << threadId << " :: thread ? :: => _stat_REG_ptr_side_To_Write_For_doubleBuffer_Output = " << *_stat_REG_ptr_FLAG_CLIB_OpenEpiCentre_Data_Control_isLoaded_Stack_OutputSend << std::endl;
-        std::cout << "thread "  << threadId << " :: exiting stat_REG_set_Item_FLAG_isLoaded_Stack_OutputSend()" << std::endl;
+        CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: thread ? :: => _stat_REG_ptr_side_To_Write_For_doubleBuffer_Output = " << *_stat_REG_ptr_FLAG_CLIB_OpenEpiCentre_Data_Control_isLoaded_Stack_OutputSend));
+        CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: exiting stat_REG_set_Item_FLAG_isLoaded_Stack_OutputSend()"));
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data_Control::stat_REG_set_Item_ItemSideToWRITE_For_doubleBufferOfInput(bool new_Bool) {
-        std::cout << "thread "  << threadId << " :: entered stat_REG_set_Item_side_To_Write_For_side_To_Write_For_doubleBuffer_Input()" << std::endl;
+        CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: entered stat_REG_set_Item_side_To_Write_For_side_To_Write_For_doubleBuffer_Input()"));
         *_stat_REG_ptr_CLIB_OpenEpiCentre_Data_Control_ItemSideToWRITE_For_doubleBufferOfInput = new_Bool;
-        std::cout << "thread "  << threadId << " :: thread ? :: => _stat_REG_ptr_side_To_Write_For_doubleBuffer_Output = " << *_stat_REG_ptr_CLIB_OpenEpiCentre_Data_Control_ItemSideToWRITE_For_doubleBufferOfInput << std::endl;
-        std::cout << "thread "  << threadId << " :: exiting stat_REG_set_Item_side_To_Write_For_side_To_Write_For_doubleBuffer_Input()" << std::endl;
+        CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: thread ? :: => _stat_REG_ptr_side_To_Write_For_doubleBuffer_Output = " << *_stat_REG_ptr_CLIB_OpenEpiCentre_Data_Control_ItemSideToWRITE_For_doubleBufferOfInput));
+        CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: exiting stat_REG_set_Item_side_To_Write_For_side_To_Write_For_doubleBuffer_Input()"));
     }
     void CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Data_Control::stat_REG_set_Item_ItemSideToWRITE_For_doubleBufferOfOutput(bool new_Bool) {
-        std::cout << "thread "  << threadId << " :: entered stat_REG_set_Item_side_To_Write_For_side_To_Write_For_doubleBuffer_Output()" << std::endl;
+        CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: entered stat_REG_set_Item_side_To_Write_For_side_To_Write_For_doubleBuffer_Output()"));
         *_stat_REG_ptr_CLIB_OpenEpiCentre_Data_Control_ItemSideToWRITE_For_doubleBufferOfOutput = new_Bool;
-        std::cout << "thread "  << threadId << " :: thread ? :: => _stat_REG_ptr_side_To_Write_For_doubleBuffer_Output = " << *_stat_REG_ptr_CLIB_OpenEpiCentre_Data_Control_ItemSideToWRITE_For_doubleBufferOfOutput << std::endl;
-        std::cout << "thread "  << threadId << " :: exiting stat_REG_set_Item_side_To_Write_For_side_To_Write_For_doubleBuffer_Output()" << std::endl;
+        CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: thread ? :: => _stat_REG_ptr_side_To_Write_For_doubleBuffer_Output = " << *_stat_REG_ptr_CLIB_OpenEpiCentre_Data_Control_ItemSideToWRITE_For_doubleBufferOfOutput));
+        CLIB_ThreadLogs::CLIB_ThreadLogs::stat_APP_FUNCT_CLIB_ThreadLogs_printConsoleAndLog(threadId, new std::string(" :: exiting stat_REG_set_Item_side_To_Write_For_side_To_Write_For_doubleBuffer_Output()"));
     }

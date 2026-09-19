@@ -7,7 +7,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 add_library(CLIB_OpenEpiCentre STATIC
         src/CLIB_OpenEpiCentre.cpp
         src/engine/CLIB_OpenEpiCentre_Framework.cpp
-        src/engine/CLIB_OpenEpiCentre_Global.cpp
+        src/engine/CLIB_OpenEpiCentre_Framework_Global.cpp
         src/structs/CLIB_OpenEpiCentre_STRUCT_Input.cpp
         src/structs/CLIB_OpenEpiCentre_STRUCT_Output.cpp
         src/structs/CLIB_OpenEpiCentre_STRUCT_Concurrent.cpp
