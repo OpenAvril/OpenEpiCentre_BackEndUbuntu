@@ -1,5 +1,5 @@
 #include "../../include/engine/CLIB_OpenEpiCentre_Framework_Global.h"
-#include "../../../CLIB_ThreadLogs/include/CLIB_ThreadLogs.h"
+#include "../../libs/CLIB_ThreadLogs/include/CLIB_ThreadLogs.h"
 #include <climits>
 #include <cstring>
 #include <iostream>
