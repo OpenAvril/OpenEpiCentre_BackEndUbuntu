@@ -1,6 +1,6 @@
 #include "../../include/engine/CLIB_OpenEpiCentre_Framework.h"
 #include "../../include/engine/CLIB_OpenEpiCentre_Execute.h"
-#include "../../../CLIB_ThreadLogs/include/CLIB_ThreadLogs.h"
+#include "../../libs/CLIB_ThreadLogs/include/CLIB_ThreadLogs.h"
 #include <iostream>
 	CLIBOpenEpiCentre::CLIB_OpenEpiCentre_App* CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Framework::_stat_CLASS_ptr_CLIB_OpenEpiCentre_Framework_App;
 	CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Framework_Global* CLIBOpenEpiCentre::CLIB_OpenEpiCentre_Framework::_stat_CLASS_ptr_CLIB_OpenEpiCentre_Framework_Global;
